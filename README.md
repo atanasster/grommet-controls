@@ -18,9 +18,8 @@ Before opening an issue or pull request, please read the [Contributing](https://
 
 ### Install
 
-  You can install Grommet using either of the methods below.
+  To install Grommet Controls:
 
-  For NPM users:
   ```
     $ npm install grommet-controls
   ```
