@@ -1,7 +1,6 @@
 ## Notification
 A Box to display notification messages.
 
-[![]([object Object])](https://github.com/atanasster/grommet-nextjs)
 ## Usage
 
 ```javascript

@@ -1,10 +1,8 @@
 import { describe, PropTypes } from 'react-desc';
 import { a11yTitlePropType } from 'grommet/utils';
-import getAvailableAtGitHub from '../../utils/doc';
 
 export default (Element) => {
   const DocumentedElement = describe(Element)
-    .availableAt(getAvailableAtGitHub({ url: 'https://github.com/atanasster/grommet-nextjs' }))
     .description('A tag control with a label and icon.')
     .usage(
       `$ npm install grommet-controls 

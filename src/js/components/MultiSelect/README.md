@@ -1,7 +1,6 @@
 ## MultiSelect
 A multi-select clone of Grommet 2 Select.
 
-[![]([object Object])](https://github.com/atanasster/grommet-nextjs)
 ## Usage
 
 ```javascript

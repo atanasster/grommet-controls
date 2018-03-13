@@ -3,7 +3,6 @@ A passord field with show/hide password toggle.
       All properties of DropInput apply
       
 
-[![]([object Object])](https://github.com/atanasster/grommet-nextjs)
 ## Usage
 
 ```javascript

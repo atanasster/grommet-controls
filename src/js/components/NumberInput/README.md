@@ -3,7 +3,6 @@ A masked number input, with widgets to increment/decrement the value. Automatica
       Additionally, all properties of MaskedInput apply
       
 
-[![]([object Object])](https://github.com/atanasster/grommet-nextjs)
 ## Usage
 
 ```javascript

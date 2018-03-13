@@ -1,9 +1,9 @@
 {
   "name": "grommet-controls",
-  "version": "0.13.6",
-  "main": "dist/index.js",
-  "module": "dist/es6/index.js",
-  "jsnext:main": "dist/es6/index.js",
+  "version": "0.13.9",
+  "main": "index.js",
+  "module": "es6/index.js",
+  "jsnext:main": "es6/index.js",
   "description": "grommet 2 controls",
   "authors": [
     "Atanas Stoyanov"
@@ -27,7 +27,7 @@
     "test-update": "grommet check -t -- --updateSnapshot",
     "test-watch": "grommet check -t -- --watchAll",
     "pack": "babel-node ./tools/pack",
-    "prepublish": "npm run dist"
+    "pub": "pushd ./ && npm run dist && cd dist && npm publish && popd"
   },
   "peerDependencies": {
     "react": ">= 15.3.0 < 16 || 16.x",

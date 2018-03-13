@@ -1,7 +1,6 @@
 ## Tag
 A tag control with a label and icon.
 
-[![]([object Object])](https://github.com/atanasster/grommet-nextjs)
 ## Usage
 
 ```javascript

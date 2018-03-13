@@ -1,9 +1,7 @@
 import { describe, PropTypes } from 'react-desc';
-import getAvailableAtGitHub from '../../utils/doc';
 
 export default (Select) => {
   const DocumentedSelect = describe(Select)
-    .availableAt(getAvailableAtGitHub({ url: 'https://github.com/atanasster/grommet-nextjs' }))
     .description(
       'A multi-select clone of Grommet 2 Select.'
     ).usage(`

@@ -1,9 +1,7 @@
 import { describe, PropTypes } from 'react-desc';
-import getAvailableAtGitHub from '../../utils/doc';
 
 export default (Element) => {
   const DocumentedElement = describe(Element)
-    .availableAt(getAvailableAtGitHub({ url: 'https://github.com/atanasster/grommet-nextjs' }))
     .description(
       `A masked number input, with widgets to increment/decrement the value. Automatically converts the value to a numeric type, so you dont have to parse strings in your onChange event.
       Additionally, all properties of MaskedInput apply

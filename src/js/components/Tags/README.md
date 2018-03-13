@@ -1,7 +1,6 @@
 ## Tags
 A list of tags that can be removed.
 
-[![]([object Object])](https://github.com/atanasster/grommet-nextjs)
 ## Usage
 
 ```javascript

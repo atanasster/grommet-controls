@@ -1,7 +1,6 @@
 ## MaskedInput
 A masked Input control with an optional drop button with the specified 'dropContent'.
 
-[![]([object Object])](https://github.com/atanasster/grommet-nextjs)
 ## Usage
 
 ```javascript

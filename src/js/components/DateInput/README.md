@@ -3,7 +3,6 @@ A masked date entry field with a drop down calendar.
       All properties of MaskedInput apply
       
 
-[![]([object Object])](https://github.com/atanasster/grommet-nextjs)
 ## Usage
 
 ```javascript

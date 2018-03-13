@@ -1,10 +1,8 @@
 import { describe, PropTypes } from 'react-desc';
 import { a11yTitlePropType } from 'grommet/utils';
-import getAvailableAtGitHub from '../../utils/doc';
 
 export default (Element) => {
   const DocumentedElement = describe(Element)
-    .availableAt(getAvailableAtGitHub({ url: 'https://github.com/atanasster/grommet-nextjs' }))
     .description('An Input control with an optional drop button with the specified \'dropContent\' or widgets.').usage(`
     $ npm install grommet-controls 
     import { DropInput } from 'grommet-controls';

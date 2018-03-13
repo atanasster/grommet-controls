@@ -8,9 +8,6 @@ node_modules/**
 #coverage
 coverage/**
 
-#pack
-grommet-controls*
-
 #lint
 .eslint*
 

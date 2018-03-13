@@ -1,7 +1,6 @@
 ## DropInput
 An Input control with an optional drop button with the specified 'dropContent' or widgets.
 
-[![]([object Object])](https://github.com/atanasster/grommet-nextjs)
 ## Usage
 
 ```javascript

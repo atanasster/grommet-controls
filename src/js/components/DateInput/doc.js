@@ -1,9 +1,7 @@
 import { describe, PropTypes } from 'react-desc';
-import getAvailableAtGitHub from '../../utils/doc';
 
 export default (Element) => {
   const DocumentedElement = describe(Element)
-    .availableAt(getAvailableAtGitHub({ url: 'https://github.com/atanasster/grommet-nextjs' }))
     .description(
       `A masked date entry field with a drop down calendar.
       All properties of MaskedInput apply

@@ -1,9 +1,7 @@
 import { describe, PropTypes } from 'react-desc';
-import getAvailableAtGitHub from '../../utils/doc';
 
 export default (Element) => {
   const DocumentedElement = describe(Element)
-    .availableAt(getAvailableAtGitHub({ url: 'https://github.com/atanasster/grommet-nextjs' }))
     .description(
       `A passord field with show/hide password toggle.
       All properties of DropInput apply

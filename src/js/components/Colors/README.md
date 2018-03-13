@@ -2,7 +2,6 @@
 A color selection element, with custom color palettes.
       
 
-[![]([object Object])](https://github.com/atanasster/grommet-nextjs)
 ## Usage
 
 ```javascript

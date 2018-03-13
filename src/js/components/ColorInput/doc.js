@@ -1,17 +1,15 @@
 import { describe, PropTypes } from 'react-desc';
-import getAvailableAtGitHub from '../../utils/doc';
 
 export default (Element) => {
   const DocumentedElement = describe(Element)
-    .availableAt(getAvailableAtGitHub({ url: 'https://github.com/atanasster/grommet-nextjs' }))
     .description(
       `A masked color entry field, with a drop button to select a color.
       All properties of MaskedInput apply
       `
     ).usage(`
       $ npm install grommet-controls \n 
-      import { PasswordInput } from 'grommet-controls'; \n
-      <PasswordInput value={...} />
+      import { ColorInput } from 'grommet-controls'; \n
+      <ColorInput colors={...} value={...} />
     `);
 
   DocumentedElement.propTypes = {
