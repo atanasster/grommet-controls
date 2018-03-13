@@ -1,0 +1,11 @@
+.idea/**
+node_modules/**
+dist/**
+.eslintcache
+coverage
+.vscode
+npm-debug.log
+package-lock.json
+yarn-error.log
+.DS_Store
+.tmp/
