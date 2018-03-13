@@ -1,6 +1,6 @@
 {
   "name": "grommet-controls",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "main": "index.js",
   "module": "es6/index.js",
   "jsnext:main": "es6/index.js",
@@ -27,7 +27,8 @@
     "test": "grommet check -t",
     "test-update": "grommet check -t -- --updateSnapshot",
     "test-watch": "grommet check -t -- --watchAll",
-    "pack": "babel-node ./tools/pack"
+    "pack": "babel-node ./tools/pack",
+    "prepublish": "npm run dist"
   },
   "peerDependencies": {
     "react": ">= 15.3.0 < 16 || 16.x",
