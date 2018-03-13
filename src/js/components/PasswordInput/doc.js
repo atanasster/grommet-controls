@@ -3,7 +3,7 @@ import { describe, PropTypes } from 'react-desc';
 export default (Element) => {
   const DocumentedElement = describe(Element)
     .description(
-      `A passord field with show/hide password toggle.
+      `A password field with show/hide password toggle.
       All properties of DropInput apply
       `
     ).usage(`
