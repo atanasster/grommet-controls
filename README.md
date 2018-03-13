@@ -14,7 +14,7 @@ Before opening an issue or pull request, please read the [Contributing](https://
 
 ### Sample App 
 
-  The quickest way to get started is to clone the [Grommet Controls Sample](https://grommet.github.io/docs/hello-world) page.
+  The quickest way to get started is to clone the [Grommet Controls Sample](https://github.com/atanasster/grommet-controls-sample) page.
 
 ### Install
 
