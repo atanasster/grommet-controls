@@ -2,7 +2,7 @@
 
 :warning: Early version subject to changes.
 
-Visit the [Grommet 2 Website](https://v2.grommet.io) website if you are not familiar with Grommet.
+Visit the [Grommet 2](https://v2.grommet.io) website if you are not familiar with Grommet.
 
 ### Documentation
 
