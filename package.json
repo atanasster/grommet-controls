@@ -1,6 +1,6 @@
 {
   "name": "grommet-controls",
-  "version": "0.13.5",
+  "version": "0.13.6",
   "main": "dist/index.js",
   "module": "dist/es6/index.js",
   "jsnext:main": "dist/es6/index.js",
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "babel-plugin-grommet": "^0.5.1",
-    "grommet": "https://github.com/grommet/grommet/tarball/NEXT-stable",
+    "grommet": "https://github.com/grommet/grommet/tarball/NEXT-stable/",
     "grommet-icons": "^0.16.0",
     "markdown-to-jsx": "^5.4.2",
     "node-emoji": "^1.8.1",
