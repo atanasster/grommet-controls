@@ -33,7 +33,8 @@ class MultiSelect extends Component {
 
   render() {
     const {
-      a11yTitle, children, multiple, label, onClose, onChange, placeholder, plain, value, ...rest
+      a11yTitle, children, multiple, label, onClose, onChange, placeholder, plain, value,
+      id, name, ...rest
     } = this.props;
     const { open } = this.state;
     const val = multiple && Array.isArray(value) && value.length === 1 ? value[0] : value;
@@ -68,6 +69,8 @@ class MultiSelect extends Component {
                 ref={(ref) => { this.inputRef = ref; }}
                 {...rest}
                 tabIndex='-1'
+                id={id}
+                name={name}
                 type='text'
                 placeholder={placeholder}
                 plain={true}

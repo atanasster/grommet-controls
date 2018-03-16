@@ -3,6 +3,7 @@ export * from './Colors';
 export * from './DateInput';
 export * from './DropInput';
 export * from './EmailInput';
+export * from './Form';
 export * from './MaskedInput';
 export * from './MultiSelect';
 export * from './Notification';
