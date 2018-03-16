@@ -38,6 +38,7 @@ Before opening an issue or pull request, please read the [Contributing](https://
  * [EmailInput](https://grommet-nextjs.herokuapp.com/add-ons/emailinput) A masked input with a default mask for handling email addresses.
  * [ColorInput](https://grommet-nextjs.herokuapp.com/add-ons/colorinput) A masked color entry field, with a drop button to select a color.
  * [Form](https://grommet-nextjs.herokuapp.com/add-ons/form) A Form with built-in validation.
+ * [Spinning](https://grommet-nextjs.herokuapp.com/add-ons/spinning) A spinning process indicator.
  
 ### Themes
 
