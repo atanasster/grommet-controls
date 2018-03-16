@@ -14,6 +14,7 @@ export default (Element) => {
 
   DocumentedElement.propTypes = {
     a11yTitle: a11yTitlePropType,
+    focusFirstChild: PropTypes.bool.description('Whether to focus the first form control on mounting.').defaultValue('true'),
     onSubmit: PropTypes.func.description('A function called when the user successfully submits the form.'),
     onChange: PropTypes.func.description('A function invoked when any of the values in the form are changing.'),
     onSubmitError: PropTypes.func.description('A function invoked when an error occured during submitting.'),
