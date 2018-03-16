@@ -43,8 +43,8 @@ Before opening an issue or pull request, please read the [Contributing](https://
 ### Themes
 
  * [Black](https://grommet-nextjs.herokuapp.com/?theme=black)
- * [Material Light](https://grommet-nextjs.herokuapp.com/?theme=material_light)
- * [Material Dark](https://grommet-nextjs.herokuapp.com/?theme=material_dark)
+ * [Material Light](https://grommet-nextjs.herokuapp.com/?theme=materiallight)
+ * [Material Dark](https://grommet-nextjs.herokuapp.com/?theme=materialdark)
  * [Metro](https://grommet-nextjs.herokuapp.com/?theme=metro)
   
  
