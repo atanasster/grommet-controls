@@ -24,6 +24,25 @@ Before opening an issue or pull request, please read the [Contributing](https://
     $ npm install grommet-controls
   ```
 
+### Configuration
+  
+  To avoid the entire library being pulled into your bundles when using member imports, you can use [babel-plugin-transform-imports](https://www.npmjs.com/package/babel-plugin-transform-imports)
+  and configure your `.babelrc` file:
+    ```
+      ...
+      "env": {
+        ...
+        "production": {
+              "plugins": [
+                ["grommet"],
+                ["transform-imports", { "grommet-controls": {
+                  "transform": "grommet-controls/components/${member}",
+                  "preventFullImport": true }}]
+              ]
+            }
+        ...
+  ```
+
 ### Components
 
  * [Tag](https://grommet-nextjs.herokuapp.com/add-ons/tag) A tag control with a label and icon.
