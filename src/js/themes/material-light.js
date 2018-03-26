@@ -140,4 +140,7 @@ export default deepFreeze({
       },
     },
   },
+  heading: {
+    font: false,
+  },
 });

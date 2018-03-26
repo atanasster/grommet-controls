@@ -127,4 +127,7 @@ export default deepFreeze({
   icon: {
     color: textColor,
   },
+  heading: {
+    font: false,
+  },
 });
