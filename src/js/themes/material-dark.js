@@ -15,13 +15,15 @@ const light = ['#333333', '#555555', '#666666', '#777777', '#999999', '#AAAAAA']
 const dark = ['#F6F6F6', '#EEEEEE', '#DDDDDD', '#CCCCCC', '#BBBBBB', '#AAAAAA'];
 const backgroundColor = '#5e5e5e';
 const textColor = '#ebebeb';
-const borderColor = 'rgba(255, 255, 255, 0.15)';
-const activeColor = 'rgba(35, 35, 35, 0.15)';
+const borderColor = 'rgba(255, 255, 255, 0.33)';
 const shadowColor = 'rgba(200, 200, 200, 0.50)';
+const activeColor = 'rgba(235, 235, 235, 0.33)';
+const focusColor = accentColors[4];
 
 export default deepFreeze({
   global: {
     colors: {
+      focus: focusColor,
       active: activeColor,
       accent: accentColors,
       background: '#444444',
@@ -35,7 +37,10 @@ export default deepFreeze({
       text: textColor,
     },
     drop: {
-      backgroundColor,
+      backgroundColor: {
+        light: '#f8f8f8',
+        dark: '#222222',
+      },
       border: {
         width: '0px',
         radius: '0px',
@@ -125,7 +130,7 @@ export default deepFreeze({
     border: {
       color: {
         light: 'rgba(255, 255, 255, 0.5)',
-        dark: 'rgba(0, 0, 0, 0.15)',
+        dark: 'rgba(0, 0, 0, 0.5)',
       },
       radius: '0px',
     },
@@ -149,7 +154,7 @@ export default deepFreeze({
     border: {
       color: {
         light: 'rgba(255, 255, 255, 0.5)',
-        dark: 'rgba(0, 0, 0, 0.15)',
+        dark: 'rgba(0, 0, 0, 0.5)',
       },
     },
   },

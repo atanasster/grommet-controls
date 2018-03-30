@@ -14,6 +14,7 @@ const statusColors = {
   disabled: '#999999',
 };
 const shadowColor = 'rgba(0, 86, 150, 0.50)';
+const textColor = '#333333';
 
 export default deepFreeze({
   global: {
@@ -23,9 +24,19 @@ export default deepFreeze({
       neutral: neutralColors,
       status: statusColors,
       black: brandColor,
+      darkBackground: {
+        text: '#fff',
+      },
+      lightBackground: {
+        text: textColor,
+      },
+      text: textColor,
     },
     drop: {
-      backgroundColor: '#005696',
+      backgroundColor: {
+        light: '#eef3fc',
+        dark: '#005696',
+      },
       border: {
         width: '0px',
         radius: '0px',
@@ -119,7 +130,7 @@ export default deepFreeze({
     },
   },
   layer: {
-    backgroundColor: '#005696',
+    backgroundColor: '#eef3fc',
     border: {
       radius: '0px',
     },

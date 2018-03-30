@@ -1,12 +1,15 @@
 {
   "name": "grommet-controls",
-  "version": "0.14.8",
+  "version": "0.15.0",
   "main": "index.js",
   "module": "es6/index.js",
   "jsnext:main": "es6/index.js",
   "description": "grommet 2 controls",
   "authors": [
     "Atanas Stoyanov"
+  ],
+  "keywords": [
+    "grommet", "react", "grommet-next", "react ui"
   ],
   "homepage": "https://grommet-nextjs.herokuapp.com/add-ons",
   "bugs": "https://github.com/atanasster/grommet-controls/issues",
