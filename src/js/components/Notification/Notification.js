@@ -46,7 +46,7 @@ class Notification extends Component {
     message: 'Notification...',
     icon: true,
     animation: 'fadeIn',
-    closer: <Close />,
+    closer: undefined,
     pad: 'small',
     margin: 'small',
     locale: 'en-us',
@@ -64,14 +64,16 @@ class Notification extends Component {
       (theme.notification && theme.notification.border ?
         theme.notification.border.round : undefined);
     let closeBtn;
-    if (onClose && closer) {
+    if (onClose) {
+      const closeIcon = closer || <Close size={sizeLevel.size} />;
       closeBtn = (
         <Box pad={pad}>
           <Button
             a11yTitle={a11yTitle}
-            icon={closer}
             onClick={onClose || (() => {})}
-          />
+          >
+            {closeIcon}
+          </Button>
         </Box>
       );
     }
@@ -83,11 +85,7 @@ class Notification extends Component {
     if (icon) {
       const StatusIcon = StatusIcons[status];
       statusIcon = (
-        <Box pad={pad}>
-          <Heading level={sizeLevel.level} margin={margin}>
-            {React.isValidElement(icon) ? icon : <StatusIcon size='sizeLevel.size' />}
-          </Heading>
-        </Box>
+        React.isValidElement(icon) ? icon : <StatusIcon size={sizeLevel.size} />
       );
     }
     let progress;
@@ -129,10 +127,12 @@ class Notification extends Component {
         {...rest}
 
       >
-        {statusIcon}
         <Box flex='grow' pad={pad}>
-          <Heading level={sizeLevel.level} margin={margin}>
-            {heading}
+          <Heading level={sizeLevel.level} margin={margin} style={{ maxWidth: '100%' }}>
+            <Box direction={reverse ? 'row-reverse' : 'row'} align='center' gap='small'>
+              {statusIcon}
+              {heading}
+            </Box>
           </Heading>
           <Text size={sizeLevel.size}>
             {state}
