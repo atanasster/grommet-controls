@@ -5,6 +5,8 @@ import { filterByFocusable } from 'grommet/utils/DOM';
 import FormState from './FormState';
 import StyledForm from './StyledForm';
 
+import doc from './doc';
+
 const styledComponents = {
   form: StyledForm,
 };
@@ -19,22 +21,12 @@ export default class Form extends Component {
     onValidForm: undefined,
     object: {},
     tag: 'form',
-
+    basis: 'medium',
   };
 
   static childContextTypes = {
     form: PropTypes.object,
   }
-
-  static propTypes = {
-    object: PropTypes.object,
-    onChange: PropTypes.func,
-    onSubmit: PropTypes.func,
-    onSubmitError: PropTypes.func,
-    onInvalidForm: PropTypes.func,
-    onValidForm: PropTypes.func,
-    focusFirstChild: PropTypes.bool,
-  };
 
   constructor(props, context) {
     super(props, context);
@@ -134,12 +126,18 @@ export default class Form extends Component {
         onSubmit={this.onSubmit}
         aria-label={a11yTitle}
       >
-        <Box {...rest}>
-          <div ref={(ref) => { this.containerRef = ref; }}>
-            {children}
-          </div>
+        <Box direction='row'>
+          <Box {...rest}>
+            <div ref={(ref) => { this.containerRef = ref; }}>
+              {children}
+            </div>
+          </Box>
         </Box>
       </StyledComponent>
     );
   }
+}
+
+if (process.env.NODE_ENV !== 'production') {
+  doc(Form);
 }
