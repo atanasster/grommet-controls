@@ -27,7 +27,7 @@ class Tags extends Component {
       } else {
         tags = [tags];
       }
-      onChange({ target: findDOMNode(this.inputRef), option: tags });
+      onChange({ target: findDOMNode(this.inputRef), option: selected, value: tags });
     }
   }
 

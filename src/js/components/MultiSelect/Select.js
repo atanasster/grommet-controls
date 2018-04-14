@@ -1,23 +1,19 @@
 import React, { Component } from 'react';
-import { FormDown } from 'grommet-icons';
-import { Box, DropButton, Keyboard, TextInput } from 'grommet';
+import { compose } from 'recompose';
 
-import MultiSelectContainer from './SelectContainer';
+import { Box, DropButton, Keyboard, TextInput } from 'grommet';
+import { withTheme } from 'grommet/components/hocs';
+
+import SelectContainer from './SelectContainer';
 import doc from './doc';
 
-class MultiSelect extends Component {
-  state = { open: false }
-
-  componentWillReceiveProps(nextProps) {
-    const { onClose, value } = nextProps;
-    const { open } = this.state;
-    if (value !== this.props.value) {
-      this.setState({ open: false });
-      if (onClose && open) {
-        onClose();
-      }
-    }
+class Select extends Component {
+  static defaultProps = {
+    dropAlign: { top: 'bottom', left: 'left' },
+    messages: { multiple: 'multiple' },
   }
+
+  state = { open: false }
 
   onOpen = () => {
     this.setState({ open: true });
@@ -33,28 +29,68 @@ class MultiSelect extends Component {
 
   render() {
     const {
-      a11yTitle, children, multiple, label, onClose, onChange, placeholder, plain, value,
-      id, name, ...rest
+      a11yTitle,
+      children,
+      disabled,
+      dropAlign,
+      dropTarget,
+      messages,
+      onChange,
+      onClose,
+      placeholder,
+      plain,
+      size,
+      theme,
+      value,
+      label,
+      ...rest
     } = this.props;
     const { open } = this.state;
-    const val = multiple && Array.isArray(value) && value.length === 1 ? value[0] : value;
-    let selectLabel;
-    if (typeof label === 'function') {
-      selectLabel = label({ placeholder, value, onChange });
+
+    const onSelectChange = (event, ...args) => {
+      this.onClose();
+      if (onChange) {
+        onChange(event, ...args);
+      }
+    };
+
+    const SelectIcon = theme.select.icons.down;
+    let selectValue;
+    let textValue;
+    if (!React.isValidElement(value)) {
+      if (typeof label === 'function') {
+        selectValue = label({ placeholder, value, onChange });
+      } else if (Array.isArray(value)) {
+        if (value.length > 1) {
+          textValue = messages.multiple;
+        } else if (value.length === 1) {
+          if (React.isValidElement(value[0])) {
+            selectValue = value[0];
+          } else {
+            textValue = value[0];
+          }
+        } else {
+          textValue = '';
+        }
+      } else {
+        textValue = value;
+      }
     } else {
-      selectLabel = Array.isArray(val) ? val.join(', ') : val;
+      selectValue = value;
     }
+
     return (
       <Keyboard onDown={this.onOpen} onUp={this.onOpen}>
         <DropButton
-          dropAlign={{ top: 'bottom', left: 'left' }}
+          disabled={disabled}
+          dropAlign={dropAlign}
+          dropTarget={dropTarget}
           {...rest}
-          onChange={onChange}
           open={open}
           onOpen={this.onOpen}
           onClose={this.onClose}
-          a11yTitle={`${a11yTitle}${typeof selectLabel === 'string' ? `, ${selectLabel}` : ''}`}
-          dropContent={<MultiSelectContainer {...this.props} />}
+          a11yTitle={`${a11yTitle}${typeof value === 'string' ? `, ${value}` : ''}`}
+          dropContent={<SelectContainer {...this.props} onChange={onSelectChange} />}
         >
           <Box
             aria-hidden={true}
@@ -63,19 +99,18 @@ class MultiSelect extends Component {
             direction='row'
             justify='between'
           >
-            {React.isValidElement(selectLabel) ? selectLabel : (
+            {selectValue || (
               <TextInput
                 style={{ cursor: 'pointer' }}
                 ref={(ref) => { this.inputRef = ref; }}
                 {...rest}
                 tabIndex='-1'
-                id={id}
-                name={name}
                 type='text'
                 placeholder={placeholder}
                 plain={true}
+                size={size}
                 readOnly={true}
-                value={selectLabel}
+                value={textValue}
               />
             )}
             <Box
@@ -83,7 +118,7 @@ class MultiSelect extends Component {
               flex={false}
               style={{ minWidth: 'auto' }}
             >
-              <FormDown />
+              <SelectIcon color='brand' size={size} />
             </Box>
           </Box>
         </DropButton>
@@ -93,7 +128,9 @@ class MultiSelect extends Component {
 }
 
 if (process.env.NODE_ENV !== 'production') {
-  doc(MultiSelect);
+  doc(Select);
 }
 
-export default MultiSelect;
+export default compose(
+  withTheme,
+)(Select);

@@ -1,29 +1,21 @@
-## MultiSelect
-A multi-select clone of Grommet 2 Select.
+## Select
+Grommet 2 Select with custom label editor.
 
 ## Usage
 
 ```javascript
 
     $ npm install grommet-controls 
-    import { Multiselect } from 'grommet-controls';
-    <Multiselect />
+    import { Select } from 'grommet-controls';
+    <Select />
     
 ```
 
 ## Properties
 
-**multiple**
-
-Whether to allow multiple options to be selected.
-
-```
-boolean
-```
-
 **label**
 
-A function to render the selected items. `({ placeholder, value, onChange }) => {}`
+A function to render/edit the selected items. `({ placeholder, value, onChange }) => {}`
 
 ```
 function

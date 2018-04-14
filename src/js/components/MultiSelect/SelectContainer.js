@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
+import { Box, Button, InfiniteScroll, Keyboard, Text, TextInput } from 'grommet';
 import { debounce } from 'grommet/utils';
-import { Box, Button, Keyboard, Text, TextInput } from 'grommet';
 
-class MultiSelectContainer extends Component {
+class SelectContainer extends Component {
   state = {
-    selectedOptionIndex: -1,
+    activeIndex: -1, // for tracking keyboard interaction
     search: '',
-  };
+  }
   static defaultProps = {
     value: '',
-  };
-
-  optionsRef = {};
+  }
+  optionsRef = {}
 
   componentDidMount() {
     const { onSearch } = this.props;
@@ -21,88 +20,106 @@ class MultiSelectContainer extends Component {
     setTimeout(() => {
       if (onSearch) {
         findDOMNode(this.searchRef).querySelector('input').focus();
-      } else {
+      } else if (this.selectRef) {
         findDOMNode(this.selectRef).focus();
       }
     }, 0);
   }
 
   componentDidUpdate() {
-    const { selectedOptionIndex } = this.state;
-    const buttonNode = findDOMNode(this.optionsRef[selectedOptionIndex]);
-    if (selectedOptionIndex >= 0 && buttonNode && buttonNode.scrollIntoView) {
+    const { activeIndex } = this.state;
+    const buttonNode = findDOMNode(this.optionsRef[activeIndex]);
+    if (activeIndex >= 0 && buttonNode && buttonNode.scrollIntoView) {
       buttonNode.scrollIntoView();
     }
   }
 
   onInput = (event) => {
     this.setState(
-      { search: event.target.value, selectedOptionIndex: -1 },
+      { search: event.target.value, selected: undefined },
       () => this.onSearch(this.state.search)
     );
-  };
+  }
 
   onSearch = debounce(search => this.props.onSearch(search), 150)
 
-  selectOption = (selected) => {
-    const { onChange, multiple, value } = this.props;
+  selectOption = (option, index) => {
+    const { multiple, onChange, options, selected, value } = this.props;
     if (onChange) {
-      let option = selected;
+      let nextValue = option;
+      let nextSelected = index;
       if (multiple) {
-        if (Array.isArray(value)) {
-          const index = value.indexOf(option);
-          if (index !== -1) {
-            option = value.filter(item => item !== selected);
+        nextValue = [];
+        nextSelected = [];
+        let removed = false;
+        let alreadySelected = [];
+        if (Array.isArray(selected)) {
+          alreadySelected = selected;
+        } else if (Array.isArray(value) && Array.isArray(options)) {
+          alreadySelected = value.map(val => options.indexOf(val));
+        }
+        alreadySelected.forEach((selectedIndex) => {
+          if (selectedIndex === index) {
+            removed = true;
           } else {
-            option = [...value, option];
+            nextValue.push(options[selectedIndex]);
+            nextSelected.push(selectedIndex);
           }
-        } else {
-          option = [option];
+        });
+        if (!removed) {
+          nextValue.push(option);
+          nextSelected.push(index);
         }
       }
-      onChange({ target: findDOMNode(this.inputRef), option });
+
+      onChange({
+        target: findDOMNode(this.inputRef),
+        option,
+        value: nextValue,
+        selected: nextSelected,
+      });
     }
   }
 
   onNextOption = (event) => {
     const { options } = this.props;
-    const { selectedOptionIndex } = this.state;
+    const { activeIndex } = this.state;
     event.preventDefault();
-    const index = Math.min(selectedOptionIndex + 1, options.length - 1);
-    this.setState({ selectedOptionIndex: index });
+    const index = Math.min(activeIndex + 1, options.length - 1);
+    this.setState({ activeIndex: index });
   }
 
   onPreviousOption = (event) => {
-    const { selectedOptionIndex } = this.state;
+    const { activeIndex } = this.state;
     event.preventDefault();
-    const index = Math.max(selectedOptionIndex - 1, 0);
-    this.setState({ selectedOptionIndex: index });
+    const index = Math.max(activeIndex - 1, 0);
+    this.setState({ activeIndex: index });
   }
 
   onSelectOption = (event) => {
     const { options } = this.props;
-    const { selectedOptionIndex } = this.state;
-    if (selectedOptionIndex >= 0) {
+    const { activeIndex } = this.state;
+    if (activeIndex >= 0) {
       event.preventDefault(); // prevent submitting forms
-      this.selectOption(options[selectedOptionIndex]);
+      this.selectOption(options[activeIndex], activeIndex);
     }
   }
 
   render() {
     const {
-      activeOptionIndex,
       children,
       dropBackground,
-      dropSize,
       id,
       name,
       onKeyDown,
       onSearch,
       options,
       searchPlaceholder,
+      selected,
       value,
     } = this.props;
-    const { selectedOptionIndex, search } = this.state;
+    const { activeIndex, search } = this.state;
+
     return (
       <Keyboard
         onEnter={this.onSelectOption}
@@ -118,7 +135,6 @@ class MultiSelectContainer extends Component {
             <Box pad='xsmall'>
               <TextInput
                 focusIndicator={true}
-                plain={true}
                 size='small'
                 ref={(ref) => { this.searchRef = ref; }}
                 type='search'
@@ -129,35 +145,39 @@ class MultiSelectContainer extends Component {
             </Box>
           ) : undefined}
 
-          <Box basis={dropSize} overflow='auto'>
-            <Box
-              flex={false}
-              role='menubar'
-              tabIndex='-1'
-              ref={(ref) => { this.selectRef = ref; }}
-            >
-              {options.map((option, index) => (
+          <Box
+            flex={false}
+            role='menubar'
+            tabIndex='-1'
+            ref={(ref) => { this.selectRef = ref; }}
+          >
+            <InfiniteScroll items={options} step={20}>
+              {(option, index) => (
                 <Button
                   role='menuitem'
                   ref={(ref) => { this.optionsRef[index] = ref; }}
                   active={
-                    activeOptionIndex === index ||
-                    selectedOptionIndex === index ||
-                    (option &&
-                      (Array.isArray(value) ? value.indexOf(option) !== -1 : option === value))
+                    selected === index ||
+                    (Array.isArray(selected) && selected.indexOf(index) !== -1) ||
+                    activeIndex === index ||
+                    (option && option === value) ||
+                    (option && Array.isArray(value) && value.indexOf(option) !== -1)
                   }
                   key={`option_${name || ''}_${index}`}
-                  onClick={() => this.selectOption(option)}
+                  onClick={() => this.selectOption(option, index)}
                   hoverIndicator='background'
                 >
                   {children ? children(option, index, options) : (
                     <Box align='start' pad='small'>
-                      <Text margin='none'>{option ? option.toString() : undefined}</Text>
+                      <Text margin='none'>
+                        {(option !== null && option !== undefined) ?
+                          option.toString() : undefined}
+                      </Text>
                     </Box>
                   )}
                 </Button>
-              ))}
-            </Box>
+              )}
+            </InfiniteScroll>
           </Box>
         </Box>
       </Keyboard>
@@ -165,4 +185,4 @@ class MultiSelectContainer extends Component {
   }
 }
 
-export default MultiSelectContainer;
+export default SelectContainer;
