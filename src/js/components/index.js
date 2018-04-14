@@ -5,7 +5,7 @@ export * from './DropInput';
 export * from './EmailInput';
 export * from './Form';
 export * from './MaskedInput';
-export * from './MultiSelect';
+export * from './Select';
 export * from './Notification';
 export * from './NumberInput';
 export * from './PasswordInput';
