@@ -49,6 +49,7 @@ Before opening an issue or pull request, please read the [Contributing](https://
  * [Tags](https://grommet-nextjs.herokuapp.com/add-ons/tags) A list of tags that can be removed.
  * [Notification](https://grommet-nextjs.herokuapp.com/add-ons/notification) A Box to display notification messages.
  * [Colors](https://grommet-nextjs.herokuapp.com/add-ons/colors) A color selection element, with custom color palettes.
+ * [ImageStamp](https://grommet-nextjs.herokuapp.com/add-ons/imagestamp) A small image stamp used for avatars or image thumbnails.
  * [DropInput](https://grommet-nextjs.herokuapp.com/add-ons/dropinput) An Input control with an optional drop button with the specified 'dropContent' or widgets.
  * [MaskedInput](https://grommet-nextjs.herokuapp.com/add-ons/maskedinput) A masked Input control with an optional drop button with the specified 'dropContent'.
  * [DateInput](https://grommet-nextjs.herokuapp.com/add-ons/dateinput) A masked date entry field with a drop down calendar.
