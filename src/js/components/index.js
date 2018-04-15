@@ -4,6 +4,7 @@ export * from './DateInput';
 export * from './DropInput';
 export * from './EmailInput';
 export * from './Form';
+export * from './ImageStamp';
 export * from './MaskedInput';
 export * from './Select';
 export * from './Notification';
