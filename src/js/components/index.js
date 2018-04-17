@@ -9,6 +9,7 @@ export * from './MaskedInput';
 export * from './Select';
 export * from './Notification';
 export * from './NumberInput';
+export * from './PagingTable';
 export * from './PasswordInput';
 export * from './Spinning';
 export * from './Tag';

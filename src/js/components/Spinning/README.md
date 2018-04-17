@@ -5,9 +5,9 @@ A spinning process indicator.
 
 ```javascript
 
-      $ npm install grommet-controls 
+      $ npm install grommet-controls
  
-      import { Spinning } from 'grommet-controls'; 
+      import { Spinning } from 'grommet-controls';
 
       <Spinning />
     

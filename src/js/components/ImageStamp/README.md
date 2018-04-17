@@ -6,9 +6,9 @@ A small image stamp used for avatars or image thumbnails.
 
 ```javascript
 
-      $ npm install grommet-controls 
+      $ npm install grommet-controls
  
-      import { ImageStamp } from 'grommet-controls'; 
+      import { ImageStamp } from 'grommet-controls';
 
       <ImageStamp src='...' />
     

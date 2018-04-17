@@ -7,9 +7,9 @@ A masked input with a default mask for handling email addresses.
 
 ```javascript
 
-      $ npm install grommet-controls 
+      $ npm install grommet-controls
  
-      import { EmailInput } from 'grommet-controls'; 
+      import { EmailInput } from 'grommet-controls';
 
       <EmailInput value={...} />
     

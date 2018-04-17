@@ -5,8 +5,8 @@ export default (Element) => {
   const DocumentedElement = describe(Element)
     .description('A tag control with a label and icon.')
     .usage(
-      `$ npm install grommet-controls 
-    import { Tag } from 'grommet-controls';
+      `$ npm install grommet-controls\n
+    import { Tag } from 'grommet-controls';\n
     <Tag label={...} icon={...} />`
     );
 

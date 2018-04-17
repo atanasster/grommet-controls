@@ -6,8 +6,8 @@ export default (Element) => {
     .description(
       'A list of tags that can be removed.'
     ).usage(`
-    $ npm install grommet-controls 
-    import { Tags } from 'grommet-controls';
+    $ npm install grommet-controls\n
+    import { Tags } from 'grommet-controls';\n
     <Tags />
     `);
 

@@ -6,9 +6,9 @@ A Form with built-in validation.
 
 ```javascript
 
-      $ npm install grommet-controls 
+      $ npm install grommet-controls
  
-      import { Form } from 'grommet-controls'; 
+      import { Form } from 'grommet-controls';
 
       <Form onSubmit={...} />
     

@@ -7,8 +7,8 @@ export default (Element) => {
       All properties of DropInput apply
       `
     ).usage(`
-      $ npm install grommet-controls \n 
-      import { PasswordInput } from 'grommet-controls'; \n
+      $ npm install grommet-controls\n 
+      import { PasswordInput } from 'grommet-controls';\n
       <PasswordInput value={...} />
     `);
 

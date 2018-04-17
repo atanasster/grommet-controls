@@ -7,8 +7,8 @@ export default (Element) => {
       `A Form with built-in validation.
       `
     ).usage(`
-      $ npm install grommet-controls \n 
-      import { Form } from 'grommet-controls'; \n
+      $ npm install grommet-controls\n 
+      import { Form } from 'grommet-controls';\n
       <Form onSubmit={...} />
     `);
 

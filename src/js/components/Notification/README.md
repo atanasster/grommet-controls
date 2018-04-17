@@ -4,8 +4,10 @@ A Box to display notification messages.
 ## Usage
 
 ```javascript
-$ npm install grommet-controls 
+$ npm install grommet-controls
+ 
     import { Notification } from 'grommet-controls';
+
     <Notification message={...} onClose={...} />
 ```
 

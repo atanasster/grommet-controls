@@ -4,8 +4,8 @@ import { a11yTitlePropType } from 'grommet/utils';
 export default (Element) => {
   const DocumentedElement = describe(Element)
     .description('A masked Input control with an optional drop button with the specified \'dropContent\'.').usage(`
-    $ npm install grommet-controls 
-    import { MakedInput } from 'grommet-controls';
+    $ npm install grommet-controls\n
+    import { MakedInput } from 'grommet-controls';\n
     <MakedInput mask={...} />
     `);
 

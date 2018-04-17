@@ -6,8 +6,8 @@ export default (Element) => {
       `A color selection element, with custom color palettes.
       `
     ).usage(`
-      $ npm install grommet-controls \n 
-      import { Colors } from 'grommet-controls'; \n
+      $ npm install grommet-controls\n 
+      import { Colors } from 'grommet-controls';\n
       <Colors colors={...} />
     `);
 

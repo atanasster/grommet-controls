@@ -5,8 +5,8 @@ export default (Select) => {
     .description(
       'Grommet 2 Select with custom label editor.'
     ).usage(`
-    $ npm install grommet-controls 
-    import { Select } from 'grommet-controls';
+    $ npm install grommet-controls\n
+    import { Select } from 'grommet-controls';\n
     <Select />
     `);
 

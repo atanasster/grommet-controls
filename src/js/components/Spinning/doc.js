@@ -4,8 +4,8 @@ export default (Element) => {
   const DocumentedElement = describe(Element)
     .description('A spinning process indicator.'
     ).usage(`
-      $ npm install grommet-controls \n 
-      import { Spinning } from 'grommet-controls'; \n
+      $ npm install grommet-controls\n 
+      import { Spinning } from 'grommet-controls';\n
       <Spinning />
     `);
 

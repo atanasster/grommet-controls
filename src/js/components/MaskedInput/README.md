@@ -5,8 +5,10 @@ A masked Input control with an optional drop button with the specified 'dropCont
 
 ```javascript
 
-    $ npm install grommet-controls 
+    $ npm install grommet-controls
+
     import { MakedInput } from 'grommet-controls';
+
     <MakedInput mask={...} />
     
 ```

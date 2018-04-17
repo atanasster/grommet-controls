@@ -7,9 +7,9 @@ A masked number input, with widgets to increment/decrement the value. Automatica
 
 ```javascript
 
-      $ npm install grommet-controls 
+      $ npm install grommet-controls
  
-      import { NumberInput } from 'grommet-controls'; 
+      import { NumberInput } from 'grommet-controls';
 
       <NumberInput value={...} />
     

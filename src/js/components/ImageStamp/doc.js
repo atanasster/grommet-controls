@@ -6,8 +6,8 @@ export default (Element) => {
       `A small image stamp used for avatars or image thumbnails.
       `
     ).usage(`
-      $ npm install grommet-controls \n 
-      import { ImageStamp } from 'grommet-controls'; \n
+      $ npm install grommet-controls\n 
+      import { ImageStamp } from 'grommet-controls';\n
       <ImageStamp src='...' />
     `);
 

@@ -7,8 +7,8 @@ export default (Element) => {
       Additionally, all properties of MaskedInput apply
       `
     ).usage(`
-      $ npm install grommet-controls \n 
-      import { NumberInput } from 'grommet-controls'; \n
+      $ npm install grommet-controls\n 
+      import { NumberInput } from 'grommet-controls';\n
       <NumberInput value={...} />
     `);
 

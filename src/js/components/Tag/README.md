@@ -4,8 +4,10 @@ A tag control with a label and icon.
 ## Usage
 
 ```javascript
-$ npm install grommet-controls 
+$ npm install grommet-controls
+
     import { Tag } from 'grommet-controls';
+
     <Tag label={...} icon={...} />
 ```
 

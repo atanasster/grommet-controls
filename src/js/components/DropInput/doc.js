@@ -4,8 +4,8 @@ import { a11yTitlePropType } from 'grommet/utils';
 export default (Element) => {
   const DocumentedElement = describe(Element)
     .description('An Input control with an optional drop button with the specified \'dropContent\' or widgets.').usage(`
-    $ npm install grommet-controls 
-    import { DropInput } from 'grommet-controls';
+    $ npm install grommet-controls\n
+    import { DropInput } from 'grommet-controls';\n
     <DropInput dropContent={...} />
     `);
 

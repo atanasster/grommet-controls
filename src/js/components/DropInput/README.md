@@ -5,8 +5,10 @@ An Input control with an optional drop button with the specified 'dropContent' o
 
 ```javascript
 
-    $ npm install grommet-controls 
+    $ npm install grommet-controls
+
     import { DropInput } from 'grommet-controls';
+
     <DropInput dropContent={...} />
     
 ```

@@ -6,8 +6,8 @@ export default (Element) => {
   const DocumentedElement = describe(Element)
     .description('A Box to display notification messages.')
     .usage(
-      `$ npm install grommet-controls 
-    import { Notification } from 'grommet-controls';
+      `$ npm install grommet-controls\n 
+    import { Notification } from 'grommet-controls';\n
     <Notification message={...} onClose={...} />`
     );
   DocumentedElement.propTypes = {

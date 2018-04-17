@@ -6,9 +6,9 @@ A color selection element, with custom color palettes.
 
 ```javascript
 
-      $ npm install grommet-controls 
+      $ npm install grommet-controls
  
-      import { Colors } from 'grommet-controls'; 
+      import { Colors } from 'grommet-controls';
 
       <Colors colors={...} />
     

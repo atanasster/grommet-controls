@@ -7,8 +7,8 @@ export default (Element) => {
       All properties of MaskedInput apply
       `
     ).usage(`
-    $ npm install grommet-controls 
-    import { DateInput } from 'grommet-controls';
+    $ npm install grommet-controls\n
+    import { DateInput } from 'grommet-controls';\n
     <DateInput value={...} />
     `);
 

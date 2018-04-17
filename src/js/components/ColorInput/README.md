@@ -7,9 +7,9 @@ A masked color entry field, with a drop button to select a color.
 
 ```javascript
 
-      $ npm install grommet-controls 
+      $ npm install grommet-controls
  
-      import { ColorInput } from 'grommet-controls'; 
+      import { ColorInput } from 'grommet-controls';
 
       <ColorInput colors={...} value={...} />
     

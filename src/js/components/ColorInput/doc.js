@@ -7,8 +7,8 @@ export default (Element) => {
       All properties of MaskedInput apply
       `
     ).usage(`
-      $ npm install grommet-controls \n 
-      import { ColorInput } from 'grommet-controls'; \n
+      $ npm install grommet-controls\n 
+      import { ColorInput } from 'grommet-controls';\n
       <ColorInput colors={...} value={...} />
     `);
 

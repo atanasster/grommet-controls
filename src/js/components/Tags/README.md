@@ -5,8 +5,10 @@ A list of tags that can be removed.
 
 ```javascript
 
-    $ npm install grommet-controls 
+    $ npm install grommet-controls
+
     import { Tags } from 'grommet-controls';
+
     <Tags />
     
 ```

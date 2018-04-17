@@ -7,8 +7,10 @@ A masked date entry field with a drop down calendar.
 
 ```javascript
 
-    $ npm install grommet-controls 
+    $ npm install grommet-controls
+
     import { DateInput } from 'grommet-controls';
+
     <DateInput value={...} />
     
 ```

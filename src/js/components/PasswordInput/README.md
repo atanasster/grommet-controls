@@ -7,9 +7,9 @@ A password field with show/hide password toggle.
 
 ```javascript
 
-      $ npm install grommet-controls 
+      $ npm install grommet-controls
  
-      import { PasswordInput } from 'grommet-controls'; 
+      import { PasswordInput } from 'grommet-controls';
 
       <PasswordInput value={...} />
     

@@ -5,8 +5,10 @@ Grommet 2 Select with custom label editor.
 
 ```javascript
 
-    $ npm install grommet-controls 
+    $ npm install grommet-controls
+
     import { Select } from 'grommet-controls';
+
     <Select />
     
 ```
