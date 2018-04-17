@@ -21,7 +21,7 @@ export default ({
       SortIcon = sortAsc ? LinkUp : LinkDown;
     }
     content = (
-      <Box direction='row' gap='xsmall'>
+      <Box direction='row' gap='xsmall' align='center'>
         {childRendered}
         <Button onClick={e => (toggleSort && toggleSort(e))}><SortIcon /></Button>
       </Box>
