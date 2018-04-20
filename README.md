@@ -46,6 +46,7 @@ Before opening an issue or pull request, please read the [Contributing](https://
 ### Components
 
  * [PagingTable](https://grommet-nextjs.herokuapp.com/add-ons/paging-table) A Grommet 2 table component with pagination, filtering, footer, child rows and grouping.
+ * [Card](https://grommet-nextjs.herokuapp.com/add-ons/card) A Card-type container.
  * [Tag](https://grommet-nextjs.herokuapp.com/add-ons/tag) A tag control with a label and icon.
  * [Tags](https://grommet-nextjs.herokuapp.com/add-ons/tags) A list of tags that can be removed.
  * [Notification](https://grommet-nextjs.herokuapp.com/add-ons/notification) A Box to display notification messages.
