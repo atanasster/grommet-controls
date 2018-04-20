@@ -19,6 +19,9 @@ export const StyledCard = styled(Box)`
   position: relative;
   ${props => props.sizeHeight && `flex-basis: ${BASIS_MAP[props.sizeHeight] || props.theme.global.size[props.sizeHeight] || props.sizeHeight};`}
   ${props => props.sizeWidth && `width: ${BASIS_MAP[props.sizeWidth] || props.theme.global.size.narrow[props.sizeWidth] || props.sizeWidth};`}
+  @media (max-width: ${props => props.theme.global.breakpoints.narrow}px) {
+    flex-basis: 100%;
+  }
 `;
 
 
