@@ -13,7 +13,7 @@ const statusColors = {
   disabled: '#9E9E9E',
 };
 const shadowColor = 'rgba(50, 50, 50, 0.50)';
-const borderColor = 'rgba(255, 255, 255, 0.33)';
+const borderColor = 'rgba(0, 0, 0, 0.33)';
 const focusColor = accentColors[0];
 const activeColor = rgba('#666666', 0.5);
 
