@@ -12,7 +12,7 @@ Visit the [grommet-nextjs](https://grommet-nextjs.herokuapp.com/add-ons) website
 
 Before opening an issue or pull request, please read the [Contributing](https://github.com/atanasster/grommet-controls/blob/master/CONTRIBUTING.md) guide.
 
-### Sample App 
+### Sample App
 
   The quickest way to get started is to clone the [Grommet Controls Sample](https://github.com/atanasster/grommet-controls-sample) page.
 
@@ -25,21 +25,25 @@ Before opening an issue or pull request, please read the [Contributing](https://
   ```
 
 ### Configuration
-  
+
   To avoid the entire library being pulled into your bundles when using member imports, you can use [babel-plugin-transform-imports](https://www.npmjs.com/package/babel-plugin-transform-imports)
   and configure your `.babelrc` file:
   ```
+    $npm install -save-dev babel-plugin-transform-imports
+
+    edit .babelrc:
       ...
       "env": {
         ...
         "production": {
-              "plugins": [
-                ["grommet"],
-                ["transform-imports", { "grommet-controls": {
-                  "transform": "grommet-controls/components/${member}",
-                  "preventFullImport": true }}]
-              ]
-            }
+          "plugins": [
+            ["transform-imports", {
+                "grommet-controls": {"transform": "grommet-controls/components/${member}", "preventFullImport": true },
+                "grommet": {"transform": "grommet/components/${member}", "preventFullImport": true },
+                "grommet-icons": {"transform": "grommet-icons/icons/${member}", "preventFullImport": true }
+             }]
+          ]
+        }
         ...
   ```
 
@@ -61,12 +65,12 @@ Before opening an issue or pull request, please read the [Contributing](https://
  * [ColorInput](https://grommet-nextjs.herokuapp.com/add-ons/colorinput) A masked color entry field, with a drop button to select a color.
  * [Form](https://grommet-nextjs.herokuapp.com/add-ons/form) A Form with built-in validation.
  * [Spinning](https://grommet-nextjs.herokuapp.com/add-ons/spinning) A spinning process indicator.
- 
+
 ### Themes
 
  * [Black](https://grommet-nextjs.herokuapp.com/?theme=black)
  * [Material Light](https://grommet-nextjs.herokuapp.com/?theme=materiallight)
  * [Material Dark](https://grommet-nextjs.herokuapp.com/?theme=materialdark)
  * [Metro](https://grommet-nextjs.herokuapp.com/?theme=metro)
-  
- 
+
+
