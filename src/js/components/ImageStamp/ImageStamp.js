@@ -12,7 +12,7 @@ class ImageStamp extends Component {
   }
   render() {
     return (
-      <StyledImageStamp {...this.props} />
+      this.props.src ? <StyledImageStamp {...this.props} /> : null
     );
   }
 }
