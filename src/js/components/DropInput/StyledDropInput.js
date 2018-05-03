@@ -24,7 +24,6 @@ export const StyledWidgetsContainer = styled(Box)`
   position: absolute;
   right: 0;
   top: 0;
-  height: 100%;
 `;
 
 export default StyledDropInput.extend`
