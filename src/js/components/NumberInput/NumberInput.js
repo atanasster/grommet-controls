@@ -38,7 +38,7 @@ class NumberInput extends Component {
     const {
       max, min, step, value,
     } = this.props;
-    let val = this.valueToNumber(value) + step;
+    let val = value !== undefined ? this.valueToNumber(value) + step : (min || 0);
     if (Number.isNaN(val)) {
       if (min !== undefined) {
         val = min;
@@ -52,11 +52,11 @@ class NumberInput extends Component {
   }
 
   subtractStep = () => {
-    const { min, step, value } = this.props;
-    let val = this.valueToNumber(value) - step;
+    const { max, min, step, value } = this.props;
+    let val = value !== undefined ? this.valueToNumber(value) - step : (max || 0);
     if (Number.isNaN(val)) {
-      if (min !== undefined) {
-        val = min;
+      if (max !== undefined) {
+        val = max;
       } else {
         val = undefined;
       }
