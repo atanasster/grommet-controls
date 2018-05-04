@@ -59,7 +59,7 @@ class NumberInput extends Component {
     const {
       max, min, step, value,
     } = this.props;
-    let val = value !== undefined ?
+    let val = (typeof value === 'number' && value !== undefined) ?
       (this.valueToNumber(value) + step).toFixed(precision(step)) : (min || 0);
     if (Number.isNaN(val)) {
       if (min !== undefined) {
@@ -75,7 +75,7 @@ class NumberInput extends Component {
 
   subtractStep = () => {
     const { max, min, step, value } = this.props;
-    let val = value !== undefined ?
+    let val = (typeof value === 'number' && value !== undefined) ?
       (this.valueToNumber(value) - step).toFixed(precision(step)) : (max || 0);
     if (Number.isNaN(val)) {
       if (max !== undefined) {
