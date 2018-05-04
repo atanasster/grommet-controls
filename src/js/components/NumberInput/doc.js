@@ -15,6 +15,7 @@ export default (Element) => {
   DocumentedElement.propTypes = {
     a11yIncrement: PropTypes.string.description('Custom increment button title to be used by screen readers.'),
     a11yDecrement: PropTypes.string.description('Custom increment button title to be used by screen readers.'),
+    decimals: PropTypes.number.description('How many digits to allow after the decimal.').defaultValue('null'),
     min: PropTypes.number.description('Minimum value.'),
     max: PropTypes.number.description('Maximum value.'),
     step: PropTypes.number.description('Steps to increase and decrease by.').defaultValue('1'),
@@ -25,8 +26,7 @@ export default (Element) => {
     prefix: PropTypes.string.description('What to display in front of the value.'),
     suffix: PropTypes.string.description('What to display at the end of the value.'),
     thousandsSeparatorSymbol: PropTypes.string.description('A character with which to separate thousands.'),
-    decimalLimit: PropTypes.number.description('How many digits to allow after the decimal.').defaultValue('2'),
-    integerLimit: PropTypes.number.description('Limit on the length of the integer number.').defaultValue('unlimited'),
+    integers: PropTypes.number.description('Limit on the length of the integer number.').defaultValue('unlimited'),
     updateToString: PropTypes.bool.description('Whether pass the value as a string in the onChange event.').defaultValue('false'),
   };
 

@@ -6,6 +6,27 @@ import {
 } from '../MaskedInput';
 import doc from './doc';
 
+const precision = (n) => {
+  if (!isFinite(n)) return 0;
+  let e = 1;
+  let p = 0;
+  while (Math.round(n * e) / e !== n) {
+    e *= 10;
+    p += 1;
+  }
+  return p;
+};
+
+const minMax = ({ value, min, max }) => {
+  let val = value;
+  if (min !== undefined) {
+    val = Math.max(val, min);
+  }
+  if (max !== undefined) {
+    val = Math.min(val, max);
+  }
+  return val;
+};
 
 class NumberInput extends Component {
   static defaultProps = {
@@ -17,8 +38,8 @@ class NumberInput extends Component {
     suffix: '',
     thousandsSeparatorSymbol: '',
     decimalSymbol: '.',
-    decimalLimit: 2,
-    integerLimit: null,
+    decimals: null,
+    integers: null,
     updateToString: false,
     a11yIncrement: 'Increment by',
     a11yDecrement: 'Decrement by',
@@ -38,30 +59,32 @@ class NumberInput extends Component {
     const {
       max, min, step, value,
     } = this.props;
-    let val = value !== undefined ? this.valueToNumber(value) + step : (min || 0);
+    let val = value !== undefined ?
+      (this.valueToNumber(value) + step).toFixed(precision(step)) : (min || 0);
     if (Number.isNaN(val)) {
       if (min !== undefined) {
         val = min;
       } else {
         val = undefined;
       }
-    } else if (max !== undefined) {
-      val = Math.min(val, max);
+    } else {
+      val = minMax({ value: val, min, max });
     }
     this.upDateValue(val);
   }
 
   subtractStep = () => {
     const { max, min, step, value } = this.props;
-    let val = value !== undefined ? this.valueToNumber(value) - step : (max || 0);
+    let val = value !== undefined ?
+      (this.valueToNumber(value) - step).toFixed(precision(step)) : (max || 0);
     if (Number.isNaN(val)) {
       if (max !== undefined) {
         val = max;
       } else {
         val = undefined;
       }
-    } else if (min !== undefined) {
-      val = Math.max(val, min);
+    } else {
+      val = minMax({ value: val, min, max });
     }
     this.upDateValue(val);
   }
@@ -84,13 +107,13 @@ class NumberInput extends Component {
     const {
       onChange, min, max, step, pipe: userPipe, updateToString,
       prefix, suffix, thousandsSeparatorSymbol,
-      decimalSymbol, decimalLimit, integerLimit,
+      decimalSymbol, decimals, integers,
       a11yIncrement, a11yDecrement,
       mask: userMask, addIcon, subtractIcon, disabled, ...rest
     } = this.props;
     const allowNegative = typeof min !== 'number' || min < 0;
     const includeThousandsSeparator = !!thousandsSeparatorSymbol;
-    const allowDecimal = typeof decimalLimit === 'number' && decimalLimit > 0;
+    const allowDecimal = (decimals === null) || (typeof decimals === 'number' && decimals > 0);
     const mask = userMask || createNumberMask({
       prefix,
       suffix,
@@ -98,8 +121,8 @@ class NumberInput extends Component {
       thousandsSeparatorSymbol,
       allowDecimal,
       decimalSymbol,
-      decimalLimit,
-      integerLimit,
+      decimalLimit: decimals,
+      integerLimit: integers,
       allowNegative,
     });
     const pipe = userPipe || createMinMaxInputPipe({

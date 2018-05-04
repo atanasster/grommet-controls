@@ -33,6 +33,14 @@ Custom increment button title to be used by screen readers. Defaults to `Decreme
 string
 ```
 
+**decimals**
+
+How many digits to allow after the decimal. Defaults to `null`.
+
+```
+number
+```
+
 **min**
 
 Minimum value.
@@ -125,15 +133,7 @@ A character with which to separate thousands.
 string
 ```
 
-**decimalLimit**
-
-How many digits to allow after the decimal. Defaults to `2`.
-
-```
-number
-```
-
-**integerLimit**
+**integers**
 
 Limit on the length of the integer number. Defaults to `unlimited`.
 
