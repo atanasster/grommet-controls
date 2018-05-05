@@ -14,7 +14,6 @@ class Tag extends Component {
   };
   static defaultProps = {
     label: 'Text',
-    icon: <FormClose />,
     pad: { horizontal: 'xsmall' },
     focusable: true,
   }
@@ -46,10 +45,10 @@ class Tag extends Component {
     const tagRound = round || (theme.tag && theme.tag.border ? theme.tag.border.round : undefined);
     const canFocus = focusable && !disabled && !!(onClick || onChange);
     let closeIcon;
-    if (icon) {
+    if (icon || onChange) {
       closeIcon = (
         <StyledIcon theme={theme} disabled={disabled} onClick={onChange}>
-          {icon}
+          {icon || <FormClose />}
         </StyledIcon>
       );
     }
@@ -77,13 +76,15 @@ class Tag extends Component {
 
         >
           {reverse && closeIcon}
-          <Text
-            color={color}
-            size={size}
-            truncate={truncate}
-          >
-            {label && label.toString()}
-          </Text>
+          {React.isValidElement(label) ? label : (
+            <Text
+              color={color}
+              size={size}
+              truncate={truncate}
+            >
+              {label && label.toString()}
+            </Text>
+          )}
           {!reverse && closeIcon}
         </StyledTag>
       </Keyboard>
