@@ -12,6 +12,7 @@ export default (Element) => {
     `);
 
   DocumentedElement.propTypes = {
+    contain: PropTypes.oneOf(['width', 'height']).description('Adjust width/heigh if image is not square. By default, the image is cut off square').defaultValue(null),
     round: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'full']).description(
       'How much to round the corners of the stamp.'
     ),

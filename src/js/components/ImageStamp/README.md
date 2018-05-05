@@ -16,6 +16,15 @@ A small image stamp used for avatars or image thumbnails.
 
 ## Properties
 
+**contain**
+
+Adjust width/heigh if image is not square. By default, the image is cut off square
+
+```
+width
+height
+```
+
 **round**
 
 How much to round the corners of the stamp.
