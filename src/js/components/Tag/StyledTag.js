@@ -12,11 +12,12 @@ export const StyledIcon = styled.span`
   > * {
     vertical-align: bottom;
   }
+  ${props => !props.diabled && 'cursor: pointer;'}
 `;
 
 export const StyledTagContainer = styled(Box)`
   ${props => backgroundStyle(props.background || 'brand', props.theme)}
-  ${props => props.canFocus && 'cursor: pointer;'}
+  ${props => props.onClick && 'cursor: pointer;'}
   user-select: none;
   ${props => props.disabled && disabledStyle}
 `;

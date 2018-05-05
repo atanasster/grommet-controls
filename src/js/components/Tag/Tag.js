@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { compose } from 'recompose';
 import { Text, Keyboard } from 'grommet';
 import { withFocus, withTheme } from 'grommet/components/hocs';
-import { deepMerge } from 'grommet/utils/object';
 import { FormClose } from 'grommet-icons';
 import StyledTag, { StyledIcon } from './StyledTag';
 
@@ -32,24 +31,24 @@ class Tag extends Component {
   toggleTag = (e) => {
     const { onChange, disabled } = this.props;
     if (!disabled && onChange) {
+      e.preventDefault();
+      e.stopPropagation();
       onChange(e);
     }
-    e.preventDefault();
-    e.stopPropagation();
   };
 
   render() {
     const {
-      disabled, label, a11yTitle, reverse, background, border,
+      disabled, label, a11yTitle, reverse, background, onClick, onChange,
       theme, icon, color, focusable, round, size, truncate, focus, ...rest
     } = this.props;
     const { grommet } = this.context;
-    const tagBorder = deepMerge(theme.tag ? theme.tag.border : {}, border);
     const tagRound = round || (theme.tag && theme.tag.border ? theme.tag.border.round : undefined);
+    const canFocus = focusable && !disabled && !!(onClick || onChange);
     let closeIcon;
     if (icon) {
       closeIcon = (
-        <StyledIcon theme={theme} onClick={this.toggleTag}>
+        <StyledIcon theme={theme} disabled={disabled} onClick={onChange}>
           {icon}
         </StyledIcon>
       );
@@ -63,19 +62,17 @@ class Tag extends Component {
           direction='row'
           align='center'
           a11yTitle={a11yTitle}
-          border={tagBorder}
           round={tagRound}
-          onClick={this.clickTag}
+          onClick={onClick && this.clickTag}
           role='checkbox'
           aria-checked={true}
-          canFocus={focusable}
-          tabIndex={disabled || !focusable ? undefined : '-1'}
+          focus={focus}
+          tabIndex={canFocus ? '0' : undefined}
           background={background}
           disabled={disabled}
           reverse={reverse}
           theme={theme}
           grommet={grommet}
-          focus={focus}
           {...rest}
 
         >
