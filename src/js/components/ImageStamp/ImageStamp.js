@@ -6,13 +6,22 @@ import { withTheme } from 'grommet/components/hocs';
 import StyledImageStamp from './StyledImageStamp';
 import doc from './doc';
 
+const SIZE_MAP = {
+  small: 'medium',
+  medium: 'large',
+  large: 'xlarge',
+  xlarge: 'xxlarge',
+};
+
 class ImageStamp extends Component {
   static defaultProps = {
-    size: 'large',
+    size: 'medium',
   }
   render() {
+    const { size, ...rest } = this.props;
+
     return (
-      this.props.src ? <StyledImageStamp {...this.props} /> : null
+      this.props.src ? <StyledImageStamp size={SIZE_MAP[size]} {...rest} /> : null
     );
   }
 }

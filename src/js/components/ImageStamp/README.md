@@ -30,13 +30,12 @@ full
 
 **size**
 
-The size of the image stamp. Defaults to `large`.
+The size of the image stamp. Defaults to `medium`.
 
 ```
 small
 medium
 large
 xlarge
-xxlarge
 ```
   

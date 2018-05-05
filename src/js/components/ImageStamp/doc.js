@@ -15,8 +15,8 @@ export default (Element) => {
     round: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'full']).description(
       'How much to round the corners of the stamp.'
     ),
-    size: PropTypes.oneOf(['small', 'medium', 'large', 'xlarge', 'xxlarge'])
-      .description('The size of the image stamp.').defaultValue('large'),
+    size: PropTypes.oneOf(['small', 'medium', 'large', 'xlarge'])
+      .description('The size of the image stamp.').defaultValue('medium'),
   };
 
   return DocumentedElement;
