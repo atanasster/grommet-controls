@@ -1,6 +1,6 @@
 {
   "name": "grommet-controls",
-  "version": "0.26.3",
+  "version": "0.30.1",
   "main": "index.js",
   "module": "es6/index.js",
   "jsnext:main": "es6/index.js",
@@ -36,14 +36,14 @@
     "pub": "pushd ./ && npm run dist && cd dist && npm publish && popd"
   },
   "peerDependencies": {
-    "react": ">= 15.3.0 < 16 || 16.x",
-    "react-dom": ">= 15.3.0 < 16 || 16.x",
+    "react": ">= 16.3",
+    "react-dom": ">= 16.3",
     "styled-components": ">= 2.1.1"
   },
   "dependencies": {
     "babel-plugin-grommet": "^0.5.1",
-    "grommet": "https://github.com/grommet/grommet/tarball/NEXT-stable/",
-    "grommet-icons": "^0.16.0",
+    "grommet": "^2.0.0-beta.2",
+    "grommet-icons": "^1.0.0",
     "markdown-to-jsx": "^5.4.2",
     "node-emoji": "^1.8.1",
     "polished": "^1.3.0",
