@@ -127,7 +127,7 @@ class Card extends Component {
           onMouseOver={flipOnHover ? () => this.onHover(true) : undefined}
           onMouseLeave={flipOnHover ? () => this.onHover(false) : undefined}
         >
-          <Stack fill={true}>
+          <Stack>
             <StyledFlipCard
               align={align}
               gap={gap}

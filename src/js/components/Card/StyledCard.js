@@ -17,7 +17,7 @@ export const StyledCardContent = styled(Box)`
 
 export const StyledCard = styled(Box)`
   position: relative;
-  ${props => props.sizeHeight && `flex-basis: ${BASIS_MAP[props.sizeHeight] || props.theme.global.size[props.sizeHeight] || props.sizeHeight};`}
+  ${props => props.sizeHeight && `min-height: ${BASIS_MAP[props.sizeHeight] || props.theme.global.size[props.sizeHeight] || props.sizeHeight};`}
   ${props => props.sizeWidth && `width: ${BASIS_MAP[props.sizeWidth] || props.theme.global.size.narrow[props.sizeWidth] || props.sizeWidth};`}
   @media (max-width: ${props => props.theme.global.breakpoints.narrow}px) {
     flex-basis: 100%;
@@ -29,7 +29,7 @@ const showCardProps = show => `${show ? 0 : '-180deg'}`;
 
 export const StyledFlipCard = styled(Box)`
   overflow: auto;
-  mac-height: 100%;
+  max-height: 100%;
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
