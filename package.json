@@ -1,6 +1,6 @@
 {
   "name": "grommet-controls",
-  "version": "0.30.7",
+  "version": "0.30.8",
   "main": "index.js",
   "module": "es6/index.js",
   "jsnext:main": "es6/index.js",
@@ -39,7 +39,7 @@
     "react": ">= 16.4.1",
     "react-dom": ">= 16.4.1",
     "styled-components": ">= 2.1.1",
-    "grommet": ">= 2.0.0-beta.2",
+    "grommet": ">= 2.0.0-beta.4",
     "grommet-icons": ">= 1.0.0"
   },
   "dependencies": {
