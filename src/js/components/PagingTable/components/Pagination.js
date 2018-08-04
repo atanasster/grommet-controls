@@ -11,6 +11,7 @@ const defaultButton = ({
     icon={<Icon />}
     onClick={disabled ? undefined : onClick}
     label={label}
+    plain={true}
     {...other}
   />
 );
