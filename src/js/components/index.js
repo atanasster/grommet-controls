@@ -15,4 +15,5 @@ export * from './PasswordInput';
 export * from './Spinning';
 export * from './Tag';
 export * from './Tags';
+export * from './Value';
 

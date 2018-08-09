@@ -17,7 +17,7 @@ const backgroundColor = '#5e5e5e';
 const textColor = '#ebebeb';
 const borderColor = 'rgba(255, 255, 255, 0.33)';
 const shadowColor = 'rgba(200, 200, 200, 0.50)';
-const activeColor = 'rgba(235, 235, 235, 0.33)';
+const activeColor = 'rgba(156, 156, 156, 0.5)';
 const focusColor = accentColors[4];
 
 export default deepFreeze({

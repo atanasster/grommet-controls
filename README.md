@@ -65,6 +65,7 @@ Before opening an issue or pull request, please read the [Contributing](https://
  * [ColorInput](https://grommet-nextjs.herokuapp.com/add-ons/colorinput) A masked color entry field, with a drop button to select a color.
  * [Form](https://grommet-nextjs.herokuapp.com/add-ons/form) A Form with built-in validation.
  * [Spinning](https://grommet-nextjs.herokuapp.com/add-ons/spinning) A spinning process indicator.
+ * [Value](https://grommet-nextjs.herokuapp.com/add-ons/value) A single value with a label.
 
 ### Themes
 

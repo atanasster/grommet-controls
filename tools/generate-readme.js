@@ -10,14 +10,14 @@ const components = folder => fs
   );
 
 const FOLDER = path.resolve('src/js/components');
+
 components(FOLDER).forEach((component) => {
   /* eslint-disable */
-
   const doc = require(path.join(FOLDER, component, 'doc.js')).default;
   const Component = require(path.join(FOLDER, component, 'index.js')).default;
   /* eslint-enable */
 
   const destination = path.join(FOLDER, component, 'README.md');
 
-  del(destination).then(() => fs.writeFile(destination, doc(Component).toMarkdown()));
+  del(destination).then(() => fs.writeFileSync(destination, doc(Component).toMarkdown()));
 });
