@@ -2,7 +2,7 @@ import { describe, PropTypes } from 'react-desc';
 
 export default (Element) => {
   const DocumentedElement = describe(Element)
-    .description('A single value visualization with icon and label.')
+    .description('A single value visualization with a label.')
     .usage(
       `$ npm install grommet-controls\n
     import { Value } from 'grommet-controls';\n
