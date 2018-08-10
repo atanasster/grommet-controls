@@ -1,4 +1,5 @@
 import { deepFreeze } from 'grommet/utils/object';
+import { colorsFromArray, colorsFromObject } from './utils';
 
 const brandColor = '#000000';
 const accentColors = ['#FF4081', '#4eadeb', '#56cf98', '#8e6ee1'];
@@ -11,8 +12,8 @@ const statusColors = {
   unknown: '#868686',
   disabled: '#b0b0b0',
 };
-const light = ['#333333', '#555555', '#666666', '#777777', '#999999', '#AAAAAA'];
-const dark = ['#F6F6F6', '#EEEEEE', '#DDDDDD', '#CCCCCC', '#BBBBBB', '#AAAAAA'];
+const lightColors = ['#333333', '#555555', '#666666', '#777777', '#999999', '#AAAAAA'];
+const darkColors = ['#F6F6F6', '#EEEEEE', '#DDDDDD', '#CCCCCC', '#BBBBBB', '#AAAAAA'];
 
 const backgroundColor = '#5e5e5e';
 const textColor = '#ebebeb';
@@ -20,26 +21,27 @@ const borderColor = 'rgba(255, 255, 255, 0.33)';
 const activeColor = 'rgba(156, 156, 156, 0.5)';
 const shadowColor = 'rgba(200, 200, 200, 0.5)';
 const focusColor = accentColors[1];
+const colors = {
+  active: activeColor,
+  background: '#444444',
+  border: borderColor,
+  brand: brandColor,
+  placeholder: '#AAAAAA',
+  text: textColor,
+  focus: focusColor,
+  darkBackground: {
+    text: '#ffffff',
+  },
+};
+colorsFromArray(colors, accentColors, 'accent');
+colorsFromArray(colors, darkColors, 'dark');
+colorsFromArray(colors, lightColors, 'light');
+colorsFromArray(colors, neutralColors, 'neutral');
+colorsFromObject(colors, statusColors, 'status');
 
 export default deepFreeze({
   global: {
-    colors: {
-      active: activeColor,
-      accent: accentColors,
-      background: '#444444',
-      border: borderColor,
-      brand: brandColor,
-      neutral: neutralColors,
-      placeholder: '#AAAAAA',
-      status: statusColors,
-      text: textColor,
-      focus: focusColor,
-      light,
-      dark,
-      darkBackground: {
-        text: '#ffffff',
-      },
-    },
+    colors,
     drop: {
       backgroundColor: {
         light: '#f8f8f8',
