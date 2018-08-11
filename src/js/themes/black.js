@@ -1,5 +1,7 @@
 import { deepFreeze } from 'grommet/utils/object';
+import { rgba } from 'polished';
 import { colorsFromArray, colorsFromObject } from './utils';
+
 
 const brandColor = '#000000';
 const accentColors = ['#FF4081', '#4eadeb', '#56cf98', '#8e6ee1'];
@@ -17,19 +19,19 @@ const darkColors = ['#F6F6F6', '#EEEEEE', '#DDDDDD', '#CCCCCC', '#BBBBBB', '#AAA
 
 const backgroundColor = '#5e5e5e';
 const textColor = '#ebebeb';
-const borderColor = 'rgba(255, 255, 255, 0.33)';
-const activeColor = 'rgba(156, 156, 156, 0.5)';
+const activeColor = rgba('#9C9C9C', 0.5);
 const shadowColor = 'rgba(200, 200, 200, 0.5)';
 const focusColor = accentColors[1];
 const colors = {
-  active: activeColor,
-  background: '#444444',
-  border: borderColor,
-  brand: brandColor,
-  placeholder: '#AAAAAA',
-  text: textColor,
-  focus: focusColor,
-  darkBackground: {
+  'active': activeColor,
+  'background': '#444444',
+  'border-light': 'rgba(255, 255, 255, 0.33)',
+  'border-dark': 'rgba(0, 0, 0, 0.33)',
+  'brand': brandColor,
+  'placeholder': '#AAAAAA',
+  'text': textColor,
+  'focus': focusColor,
+  'darkBackground': {
     text: '#ffffff',
   },
 };
