@@ -47,15 +47,15 @@ export default deepFreeze({
       },
     },
     drop: {
-      backgroundColor: {
-        light: '#f8f8f8',
-        dark: '#222222',
-      },
+      background: '#222222',
       border: {
         width: '0px',
         radius: '0px',
       },
-      shadow: `0px 3px 8px ${shadowColor}`,
+      shadow: {
+        light: '0px 3px 8px rgba(100, 100, 100, 0.50)',
+        dark: '0px 3px 8px rgba(255, 255, 255, 0.40)',
+      },
     },
     elevation: {
       none: 'none',

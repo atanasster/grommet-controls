@@ -42,15 +42,15 @@ export default deepFreeze({
   global: {
     colors,
     drop: {
-      backgroundColor: {
-        light: '#eef3fc',
-        dark: '#005696',
-      },
+      background: '#005696',
       border: {
         width: '0px',
         radius: '0px',
       },
-      shadow: `0px 3px 8px ${shadowColor}`,
+      shadow: {
+        light: '0px 3px 8px rgba(100, 100, 100, 0.50)',
+        dark: '0px 3px 8px rgba(255, 255, 255, 0.40)',
+      },
     },
     focus: {
       border: {
