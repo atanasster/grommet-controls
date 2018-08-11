@@ -40,6 +40,12 @@ colorsFromObject(colors, statusColors, 'status');
 export default deepFreeze({
   global: {
     colors,
+    text: {
+      color: {
+        dark: '#ffffff',
+        light: textColor,
+      },
+    },
     drop: {
       backgroundColor: {
         light: '#f8f8f8',

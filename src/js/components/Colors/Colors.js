@@ -137,7 +137,7 @@ class Colors extends Component {
           const colorStyle = {
             backgroundColor: color.color,
             color: colorIsDark(color.color) ?
-              theme.global.colors.darkBackground.text : theme.global.colors.text,
+              theme.global.text.color.dark : theme.global.text.color.light,
             left: `${cellSize * colorIndex}px`,
           };
           return (

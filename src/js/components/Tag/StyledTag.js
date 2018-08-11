@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Box } from 'grommet';
-import { backgroundStyle } from '../../utils/styles';
+import { backgroundStyle } from 'grommet/utils/background';
 
 const disabledStyle = `
   opacity: 0.4;
