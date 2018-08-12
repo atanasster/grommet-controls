@@ -130,7 +130,7 @@ export default deepFreeze({
     },
   },
   anchor: {
-    color: '#ffffff',
+    color: '#2196f3',
   },
   button: {
     border: {
