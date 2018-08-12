@@ -43,8 +43,8 @@ export default deepFreeze({
     colors,
     text: {
       color: {
-        dark: '#ffffff',
-        light: textColor,
+        dark: textColor,
+        light: '#333333',
       },
     },
     drop: {
@@ -118,11 +118,13 @@ export default deepFreeze({
     },
   },
   layer: {
-    backgroundColor,
+    background: backgroundColor,
+    overlay: {
+      background: 'rgba(255, 255, 255, 0.5)',
+    },
     border: {
       radius: '0px',
     },
-    overlayBackgroundColor: 'rgba(255, 255, 255, 0.5)',
   },
   radioButton: {
     border: {
