@@ -87,6 +87,7 @@ export default deepFreeze({
       size: '16px',
     },
     hover: {
+      backgroundColor: '#666666',
       textColor: '#ffffff',
     },
     input: {
