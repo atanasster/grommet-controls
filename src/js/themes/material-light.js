@@ -50,6 +50,10 @@ export default deepFreeze({
         dark: '0px 3px 8px rgba(255, 255, 255, 0.40)',
       },
     },
+    hover: {
+      backgroundColor: '#e9e9e9',
+      textColor: '#ffffff',
+    },
     focus: {
       border: {
         color: brandColor,
