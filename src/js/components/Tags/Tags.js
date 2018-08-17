@@ -124,12 +124,12 @@ class Tags extends Component {
                 key={`tag_${name || ''}_${index}`}
                 ariaChecked={true}
                 a11yTitle={`Remove ${tag.toString()}`}
-                label={tag.toString()}
+                label={typeof tag !== 'object' ? tag.toString() : undefined}
                 ref={(ref) => { this.tagRefs[index] = ref; }}
                 onClick={onClick ? e => onClick(e, tag) : undefined}
                 onChange={e => this.onCloseClick(e, tag)}
                 icon={icon}
-                {...tagProps}
+                {...(typeof tag === 'object' ? { ...tagProps, ...tag } : tagProps)}
               />
               )))}
         </Box>
@@ -148,7 +148,7 @@ Tags.defaultProps = {
   margin: { horizontal: 'xsmall', vertical: 'small' },
   value: [],
   gap: 'xsmall',
-  direction: 'row',
+  direction: 'row-responsive',
   icon: <FormClose />,
 };
 
