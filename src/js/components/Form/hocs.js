@@ -62,7 +62,7 @@ export default WrappedField => (
         return field;
       }
       return (
-        <FormField htmlFor={name} label={label || name} error={error} >
+        <FormField htmlFor={name} label={label || (controlLabel === true && name)} error={error} >
           {field}
         </FormField>
       );
