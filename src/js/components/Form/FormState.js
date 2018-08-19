@@ -24,13 +24,13 @@ export default class FormState {
   updateFields = (fields) => { this.fields = fields; };
   getErrors = () => {
     const errors = {};
-    const addError = (key, label, message) => {
+    const addError = (key, field, message) => {
       if (!errors[key]) {
         errors[key] = [];
       }
       let msg;
       if (typeof message === 'function') {
-        msg = message(label || key);
+        msg = message(field.description || field.label || key);
       } else {
         msg = message;
       }
@@ -56,12 +56,12 @@ export default class FormState {
                 }
               });
               if (arrayErrors.length) {
-                addError(key, field.label, arrayErrors);
+                addError(key, field, arrayErrors);
               }
             } else {
               const message = rule(this.proxyObj, this.proxyObj[key]);
               if (message) {
-                addError(key, field.label, message);
+                addError(key, field, message);
               }
             }
           } else if (rule !== null && typeof rule === 'object') {
@@ -69,9 +69,9 @@ export default class FormState {
               const isValid = rule.rule(this.proxyObj, this.proxyObj[key]);
               if (!isValid) {
                 if (typeof rule.message === 'function') {
-                  addError(key, field.label, rule.message(field.label || key));
+                  addError(key, field, rule.message(field.label || key));
                 } else {
-                  addError(key, field.label, rule.message);
+                  addError(key, field, rule.message);
                 }
               }
             }
