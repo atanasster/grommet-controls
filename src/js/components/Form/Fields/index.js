@@ -3,6 +3,8 @@ export { default as ColorInputField } from './ColorInputField';
 export { default as DateInputField } from './DateInputField';
 export { default as EmailInputField } from './EmailInputField';
 export { default as NumberInputField } from './NumberInputField';
+export { default as MaskedInputField } from './MaskedInputField';
 export { default as PasswordInputField } from './PasswordInputField';
 export { default as SelectField } from './SelectField';
+export { default as TextAreaField } from './TextAreaField';
 export { default as TextInputField } from './TextInputField';
