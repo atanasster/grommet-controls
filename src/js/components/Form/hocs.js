@@ -40,7 +40,7 @@ export default WrappedField => (
     }
     render() {
       const {
-        name, validation, inField, label, ...other
+        name, validation, inField, label, passLabel, ...other
       } = this.props;
       const errors = this.context.form.getFieldErrors(name);
       let error = Array.isArray(errors) ? errors[0] : errors;
@@ -52,7 +52,7 @@ export default WrappedField => (
           plain={true}
           id={name}
           name={name}
-          label={inField ? undefined : label}
+          label={inField || !passLabel ? undefined : label}
           value={this.getValue()}
           onChange={this.onChange}
           {...other}
