@@ -6,6 +6,7 @@ export default WrappedField => (
   class GrommetField extends React.Component {
     static defaultProps = {
       validation: undefined,
+      inField: true,
     };
 
     static propTypes = {
@@ -18,8 +19,10 @@ export default WrappedField => (
     };
 
     componentDidMount() {
-      const { validation, label, name } = this.props;
-      this.context.form.attachToForm(name, { label, validation });
+      const {
+        validation, label, description, name,
+      } = this.props;
+      this.context.form.attachToForm(name, { label, description, validation });
     }
     componentWillUnmount() {
       const { name } = this.props;
@@ -29,29 +32,37 @@ export default WrappedField => (
       const { name } = this.props;
       const { onFieldChange } = this.context.form;
       onFieldChange(name, value);
-    }
+    };
     getValue() {
       const { name } = this.props;
       const value = this.context.form.getFieldValue(name);
       return value === undefined ? '' : value;
     }
     render() {
-      const { name, validation, label, ...other } = this.props;
+      const {
+        name, validation, inField, label, ...other
+      } = this.props;
       const errors = this.context.form.getFieldErrors(name);
       let error = Array.isArray(errors) ? errors[0] : errors;
       if (typeof error === 'function') {
         error = error(label || name);
       }
+      const field = (
+        <WrappedField
+          plain={true}
+          id={name}
+          name={name}
+          label={inField ? undefined : label}
+          value={this.getValue()}
+          onChange={this.onChange}
+          {...other}
+        />);
+      if (!inField) {
+        return field;
+      }
       return (
         <FormField htmlFor={name} label={label || name} error={error} >
-          <WrappedField
-            plain={true}
-            id={name}
-            name={name}
-            value={this.getValue()}
-            onChange={this.onChange}
-            {...other}
-          />
+          {field}
         </FormField>
       );
     }
