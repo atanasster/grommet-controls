@@ -114,7 +114,7 @@ class Tags extends Component {
           tabIndex={focusable ? '0' : undefined}
           id={id ? `${id}__tag-container` : undefined}
           direction={direction}
-          overflow='scroll'
+          overflow='auto'
           style={{ minWidth: 'auto' }}
           {...rest}
         >
