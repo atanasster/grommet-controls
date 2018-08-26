@@ -47,7 +47,7 @@ export const CardSubTitle = ({ children, color, size = 'medium', margin, textAli
 );
 
 export const CardContent = ({ children, ...rest }) => (
-  <Box overflow='scroll' justifySelf='stretch' fill='horizontal' {...rest} >
+  <Box overflow='auto' justifySelf='stretch' fill='horizontal' {...rest} >
     {children}
   </Box>
 );
@@ -138,7 +138,7 @@ class Card extends Component {
             </StyledFlipCard>
             {backContent && (
               <StyledFlipCard
-                style={{ overflow: 'scroll' }}
+                style={{ overflow: 'auto' }}
                 show={flipped}
                 flipDuration={flipDuration}
               >
