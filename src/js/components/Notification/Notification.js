@@ -96,8 +96,8 @@ class Notification extends Component {
             size={sizeLevel.meterSize}
             thickness='small'
             values={[{
-              label: percentComplete,
-              value: percentComplete.toFixed(0),
+              label: percentComplete.toFixed(0),
+              value: percentComplete,
               color: 'accent-1',
             }]}
           />
