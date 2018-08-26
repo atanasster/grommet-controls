@@ -126,8 +126,14 @@ export default deepFreeze({
       radius: '0px',
     },
   },
+  icon: {
+    colors,
+  },
   anchor: {
-    color: '#0078D4',
+    color: {
+      light: '#0078D4',
+      dark: '#ffffff',
+    },
   },
   checkBox: {
     border: {

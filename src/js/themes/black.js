@@ -96,8 +96,14 @@ export default deepFreeze({
       },
     },
   },
+  icon: {
+    colors,
+  },
   anchor: {
-    color: '#4eadeb',
+    color: {
+      light: '#0d5b8e',
+      dark: '#4eadeb',
+    },
   },
   button: {
     border: {
@@ -138,9 +144,6 @@ export default deepFreeze({
     track: {
       color: '#4eadeb',
     },
-  },
-  icon: {
-    color: textColor,
   },
   heading: {
     font: false,
