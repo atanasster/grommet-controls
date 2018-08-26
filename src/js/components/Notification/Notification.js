@@ -97,7 +97,7 @@ class Notification extends Component {
             thickness='small'
             values={[{
               label: percentComplete,
-              value: percentComplete,
+              value: percentComplete.toFixed(0),
               color: 'accent-1',
             }]}
           />
