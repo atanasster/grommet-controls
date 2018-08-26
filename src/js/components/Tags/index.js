@@ -1,5 +1,5 @@
 import React from 'react';
-import Tags from './Tags';
+import { Tags } from './Tags';
 
 export const TagsSelect = (props) => {
   const { tagProps, ...rest } = props || {};
@@ -14,6 +14,4 @@ export const TagsSelect = (props) => {
     />);
 };
 
-export { default as Tags } from './Tags';
-
-export default Tags;
+export { Tags };
