@@ -15,14 +15,10 @@ export const StyledIcon = styled.span`
   ${props => !props.diabled && 'cursor: pointer;'}
 `;
 
-export const StyledTagContainer = styled(Box)`
+export const StyledTag = styled(Box)`
   ${props => backgroundStyle(props.background || 'brand', props.theme)}
   ${props => props.onClick && 'cursor: pointer;'}
   user-select: none;
   ${props => props.disabled && disabledStyle}
 `;
 
-
-export default StyledTagContainer.extend`
-  ${props => props.theme.tag && props.theme.tag.extend}
-`;

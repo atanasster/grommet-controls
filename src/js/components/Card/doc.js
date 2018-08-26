@@ -14,7 +14,7 @@ const ANIMATION_SHAPE = PropTypes.shape({
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
 });
 
-export default (Element) => {
+export const doc = (Element) => {
   const DocumentedElement = describe(Element)
     .description('A Card-type container, all props of Box apply.')
     .usage(

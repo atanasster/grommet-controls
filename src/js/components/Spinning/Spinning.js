@@ -2,11 +2,13 @@
 // https://github.com/KyleAMathews/react-spinkit
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { compose } from 'recompose';
 import { withTheme } from 'grommet/components/hocs';
 import { allSpinners } from './spinners';
 import { CircleSpinner, ThreeBounceSpinner, CubeGridSpinner, WaveSpinner,
   FoldingCubeSpinner, DoubleBounceSpinner, WanderingCubesSpinner, ChasingDotsSpinner,
   RotatingPlaneSpinner, PulseSpinner, WordPressSpinner } from './StyledSpinning';
+import doc from './doc';
 
 const styledComponents = {
   'circle': CircleSpinner,
@@ -23,7 +25,7 @@ const styledComponents = {
 
 };
 
-class Spinner extends Component {
+class Spinning extends Component {
   static defaultProps = {
     kind: 'circle',
     fadeIn: 'full',
@@ -56,4 +58,11 @@ class Spinner extends Component {
   }
 }
 
-export default withTheme(Spinner);
+
+const SpinningWrapper = compose(
+  withTheme,
+)(
+  process.env.NODE_ENV !== 'production' ? doc(Spinning) : Spinning
+);
+
+export { SpinningWrapper as Spinning };

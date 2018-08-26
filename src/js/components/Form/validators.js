@@ -73,7 +73,7 @@ const ruleWrapper = (rule, customMessage, defaultMessage) => (values, value) => 
   return customMessage || defaultMessage;
 };
 
-const validators = {
+export const validators = {
   email: message => (ruleWrapper(isEmail, message, invalidFieldMessage)),
   url: message => (ruleWrapper(isUrl, message, invalidFieldMessage)),
   required: message => (ruleWrapper(required, message, requiredFieldMessage)),
@@ -98,5 +98,3 @@ const validators = {
   smallerOrEqual: (value, message) => (ruleWrapper(isSmallerOrEqual(value), message, label => `${label} must be smaller or equal to ${value}`)),
   startsWith: (value, message) => (ruleWrapper(startsWith(value), message, label => `${label} must start with ${value}`)),
 };
-
-export default validators;

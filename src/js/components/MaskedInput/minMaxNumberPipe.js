@@ -14,7 +14,7 @@ export const maskedNumberValue = ({
   return val;
 };
 
-export default ({
+export const createMinMaxInputPipe = ({
   min, max, mask, ...props
 }) => (
   (conformedValue) => {

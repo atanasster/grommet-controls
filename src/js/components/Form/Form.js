@@ -11,7 +11,7 @@ const styledComponents = {
   form: StyledForm,
 };
 
-export default class Form extends Component {
+class Form extends Component {
   static defaultProps = {
     focusFirstChild: true,
     onChange: undefined,
@@ -138,6 +138,6 @@ export default class Form extends Component {
   }
 }
 
-if (process.env.NODE_ENV !== 'production') {
-  doc(Form);
-}
+const FormWrapper = process.env.NODE_ENV !== 'production' ? doc(Form) : Form;
+
+export { FormWrapper as Form };

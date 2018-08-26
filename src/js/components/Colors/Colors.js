@@ -6,7 +6,7 @@ import { Box, Keyboard } from 'grommet';
 import { withTheme } from 'grommet/components/hocs';
 import { colorIsDark } from 'grommet/utils/colors';
 import { parseMetricToNum } from 'grommet/utils';
-import StyledColors, { StyledColor, StyledColorContainer, StyledRow, StyledRows } from './StyledColors';
+import { StyledColors, StyledColor, StyledColorContainer, StyledRow, StyledRows } from './StyledColors';
 import doc from './doc';
 
 
@@ -194,10 +194,10 @@ class Colors extends Component {
   }
 }
 
-if (process.env.NODE_ENV !== 'production') {
-  doc(Colors);
-}
-
-export default compose(
+const ColorsWrapper = compose(
   withTheme,
-)(Colors);
+)(
+  process.env.NODE_ENV !== 'production' ? doc(Colors) : Colors
+);
+
+export { ColorsWrapper as Colors };

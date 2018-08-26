@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import StyledPagingTable from './StyledPagingTable';
+import { StyledPagingTable } from './StyledPagingTable';
 
-export default class PagingTable extends Component {
+export class PagingTable extends Component {
   render() {
     const { data, ...rest } = this.props;
     const defaults = {

@@ -148,10 +148,11 @@ class Notification extends Component {
   }
 }
 
-if (process.env.NODE_ENV !== 'production') {
-  doc(Notification);
-}
 
-export default compose(
+const NotificationWrapper = compose(
   withTheme,
-)(Notification);
+)(
+  process.env.NODE_ENV !== 'production' ? doc(Notification) : Notification
+);
+
+export { NotificationWrapper as Notification };

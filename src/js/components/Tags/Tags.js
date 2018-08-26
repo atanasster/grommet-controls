@@ -138,9 +138,6 @@ class Tags extends Component {
   }
 }
 
-if (process.env.NODE_ENV !== 'production') {
-  doc(Tags);
-}
 
 Tags.defaultProps = {
   pad: 'small',
@@ -152,4 +149,6 @@ Tags.defaultProps = {
   icon: <FormClose />,
 };
 
-export default Tags;
+const TagsWrapper = process.env.NODE_ENV !== 'production' ? doc(Tags) : Tags;
+
+export { TagsWrapper as Tags };

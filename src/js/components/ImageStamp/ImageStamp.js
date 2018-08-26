@@ -3,7 +3,7 @@ import { compose } from 'recompose';
 
 import { withTheme } from 'grommet/components/hocs';
 
-import StyledImageStamp from './StyledImageStamp';
+import { StyledImageStamp } from './StyledImageStamp';
 import doc from './doc';
 
 const SIZE_MAP = {
@@ -26,10 +26,10 @@ class ImageStamp extends Component {
   }
 }
 
-if (process.env.NODE_ENV !== 'production') {
-  doc(ImageStamp);
-}
-
-export default compose(
+const ImageStampWrapper = compose(
   withTheme,
-)(ImageStamp);
+)(
+  process.env.NODE_ENV !== 'production' ? doc(ImageStamp) : ImageStamp
+);
+
+export { ImageStampWrapper as ImageStamp };

@@ -4,7 +4,7 @@ import { FormDown } from 'grommet-icons';
 import { compose } from 'recompose';
 import { DropButton, Keyboard, Button } from 'grommet';
 import { withTheme } from 'grommet/components/hocs';
-import StyledDropInput, { StyledDropInputContainer, StyledWidgetsContainer } from './StyledDropInput';
+import { StyledDropInput, StyledDropInputContainer, StyledWidgetsContainer } from './StyledDropInput';
 
 import doc from './doc';
 
@@ -128,10 +128,10 @@ class DropInput extends Component {
   }
 }
 
-if (process.env.NODE_ENV !== 'production') {
-  doc(DropInput);
-}
-
-export default compose(
+const DropInputWrapper = compose(
   withTheme,
-)(DropInput);
+)(
+  process.env.NODE_ENV !== 'production' ? doc(DropInput) : DropInput
+);
+
+export { DropInputWrapper as DropInput };

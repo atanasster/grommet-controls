@@ -5,7 +5,7 @@ const ROUND_MAP = {
   'full': '100%',
 };
 
-const StyledImageStamp = styled.img`
+export const StyledImageStamp = styled.img`
   ${props => ((!props.contain || props.contain === 'width') && props.size && edgeStyle('width', props.size, props.responsive, props.theme))}
   ${props => ((!props.contain || props.contain === 'height') && props.size && edgeStyle('height', props.size, props.responsive, props.theme))}
   overflow: hidden;  
@@ -15,6 +15,3 @@ const StyledImageStamp = styled.img`
   -moz-border-radius: ${props => ROUND_MAP[props.round] || props.theme.global.edgeSize[props.round]};
 `;
 
-export default StyledImageStamp.extend`
-  ${props => props.theme.imagestamp && props.theme.imagestamp.extend}
-`;

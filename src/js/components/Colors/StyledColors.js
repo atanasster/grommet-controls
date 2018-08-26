@@ -9,7 +9,7 @@ const sizeStyle = (props) => {
   `;
 };
 
-const StyledColors = styled.div`
+export const StyledColors = styled.div`
   ${props => sizeStyle(props)}
 `;
 
@@ -58,8 +58,4 @@ export const StyledColor = styled(Button)`
       visibility: visible;
     };
   );
-`;
-
-export default StyledColors.extend`
-  ${props => props.theme.calendar && props.theme.calendar.extend}
 `;

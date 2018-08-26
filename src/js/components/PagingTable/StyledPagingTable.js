@@ -113,7 +113,7 @@ export const StyledExpander = styled(Button)`
 export const StyledTfootComponent = styled(Box)`
 `;
 
-export default styled(ReactTable)`
+export const StyledPagingTable = styled(ReactTable)`
   max-width: 100%;
   width: 100%;
   overflow: hidden;

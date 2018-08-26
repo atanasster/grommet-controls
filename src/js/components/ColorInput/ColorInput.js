@@ -5,7 +5,7 @@ import { Box } from 'grommet';
 import { withTheme } from 'grommet/components/hocs';
 import { StopFill } from 'grommet-icons';
 import { MaskedInput } from '../MaskedInput';
-import doc from './doc';
+import { doc } from './doc';
 import { Colors } from '../Colors';
 
 
@@ -78,10 +78,10 @@ class ColorInput extends Component {
   }
 }
 
-if (process.env.NODE_ENV !== 'production') {
-  doc(ColorInput);
-}
-
-export default compose(
+const ColorInputWrapper = compose(
   withTheme,
-)(ColorInput);
+)(
+  process.env.NODE_ENV !== 'production' ? doc(ColorInput) : ColorInput
+);
+
+export { ColorInputWrapper as ColorInput };

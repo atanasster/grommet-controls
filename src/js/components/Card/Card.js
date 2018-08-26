@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { compose } from 'recompose';
 import { Stack, Box, Heading, Text } from 'grommet';
 import { withTheme } from 'grommet/components/hocs';
-import doc from './doc';
+import { doc } from './doc';
 import { StyledCard, StyledCardContent, StyledFlipCard } from './StyledCard';
 
 export const CardActions = ({ children, ...rest }) => (
@@ -118,7 +117,7 @@ class Card extends Component {
         sizeHeight={sizeHeight}
         sizeWidth={sizeWidth}
         overflow='hidden'
-        justify='stretch'
+        align='stretch'
         {...rest}
       >
         <StyledCardContent
@@ -152,14 +151,11 @@ class Card extends Component {
   }
 }
 
-Card.propTypes = {
-  subTitle: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
-};
 
-if (process.env.NODE_ENV !== 'production') {
-  doc(Card);
-}
-
-export default compose(
+const CardWrapper = compose(
   withTheme,
-)(Card);
+)(
+  process.env.NODE_ENV !== 'production' ? doc(Card) : Card
+);
+
+export { CardWrapper as Card };

@@ -4,7 +4,7 @@ import { compose } from 'recompose';
 import { Text, Keyboard } from 'grommet';
 import { withFocus, withTheme } from 'grommet/components/hocs';
 import { FormClose } from 'grommet-icons';
-import StyledTag, { StyledIcon } from './StyledTag';
+import { StyledTag, StyledIcon } from './StyledTag';
 
 import doc from './doc';
 
@@ -92,11 +92,11 @@ class Tag extends Component {
   }
 }
 
-if (process.env.NODE_ENV !== 'production') {
-  doc(Tag);
-}
-
-export default compose(
-  withFocus,
+const TagWrapper = compose(
   withTheme,
-)(Tag);
+  withFocus,
+)(
+  process.env.NODE_ENV !== 'production' ? doc(Tag) : Tag
+);
+
+export { TagWrapper as Tag };
