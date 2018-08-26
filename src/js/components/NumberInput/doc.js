@@ -19,7 +19,7 @@ export default (Element) => {
     min: PropTypes.number.description('Minimum value.'),
     max: PropTypes.number.description('Maximum value.'),
     step: PropTypes.number.description('Steps to increase and decrease by.').defaultValue('1'),
-    value: PropTypes.string.description('The numeric value'),
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).description('The numeric value'),
     disabled: PropTypes.bool.description('Setting to true causes the input to be disabled.'),
     addIcon: PropTypes.element.description('Icon for button to increment by step.'),
     subtractIcon: PropTypes.element.description('Icon for button to subtract a step.'),

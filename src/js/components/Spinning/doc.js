@@ -12,7 +12,7 @@ export default (Element) => {
   DocumentedElement.propTypes = {
     kind: PropTypes.oneOf(['circle', 'pulse', 'three-bounce', 'cube-grid', 'wave', 'folding-cube',
       'double-bounce', 'wandering-cubes', 'chasing-dots', 'rotating-plane'])
-      .description('Kind of spinner.').isRequired.defaultValue('circle'),
+      .description('Kind of spinner.').defaultValue('circle'),
     color: PropTypes.string.description('A color identifier to use for the spinning color.'),
     size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']).description('A size for the spinning.'),
   };
