@@ -29,7 +29,7 @@ class Spinning extends Component {
   static defaultProps = {
     kind: 'circle',
     fadeIn: 'full',
-    color: 'dark-1',
+    color: undefined,
     size: 'medium',
   };
 
@@ -41,17 +41,13 @@ class Spinning extends Component {
   render() {
     const { kind, fadeIn, color, theme, size } = this.props;
     const spinnerInfo = allSpinners[kind] || allSpinners['three-bounce'];
-    /* const classes = cx({
-      'sk-fade-in': this.props.fadeIn === 'full' && !this.props.noFadeIn,
-      'sk-fade-in-half-second': this.props.fadeIn === 'half' && !this.props.noFadeIn,
-      'sk-fade-in-quarter-second': this.props.fadeIn === 'quarter' && !this.props.noFadeIn,
-      'sk-spinner': !this.props.overrideSpinnerClassName,
-      [spinnerInfo.className || this.props.name]: true,
-    }); */
-
+    let spinningColor = color;
+    if (color === undefined) {
+      spinningColor = theme.dark ? 'light-1' : 'dark-1';
+    }
     const StyledSpinning = styledComponents[kind];
     return (
-      <StyledSpinning color={color} fadeIn={fadeIn} theme={theme} size={size}>
+      <StyledSpinning color={spinningColor} fadeIn={fadeIn} theme={theme} size={size}>
         {Array.from(Array(spinnerInfo.divCount).keys()).map((_, idx) => <div key={idx} />)}
       </StyledSpinning>
     );
