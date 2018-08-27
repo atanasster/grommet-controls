@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-export class FormState {
+class FormState {
   constructor(fields, object = {}, onChange) {
     this.fields = fields;
     this.validator = {
@@ -83,3 +83,5 @@ export class FormState {
   };
   isValid = () => !Object.keys(this.getErrors()).length
 }
+
+export { FormState };

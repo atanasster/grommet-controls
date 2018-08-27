@@ -18,7 +18,7 @@ export default (Element) => {
     size: PropTypes.oneOf(['small', 'medium', 'large'])
       .description('What size to make it.'),
     columns: PropTypes.number.description('The maximum number of colors per row, if left emty will be calculated automatically.'),
-    wrap: PropTypes.string.description('If true, will wrap any rows of colors that exceed the columns limit, otherwise will truncate larger rows.'),
+    wrap: PropTypes.bool.description('If true, will wrap any rows of colors that exceed the columns limit, otherwise will truncate larger rows.'),
   };
 
   return DocumentedElement;
