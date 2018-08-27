@@ -85,15 +85,15 @@ class DropInput extends Component {
         drop = (
           <DropButton
             a11yTitle={a11yDropTitle}
+            disabled={disabled}
             dropAlign={dropAlign}
             dropTarget={dropTarget}
             open={open}
             tabIndex='-1'
             focusIndicator={false}
-            onOpen={disabled ? undefined : this.onOpen}
-            onClose={disabled ? undefined : this.onClose}
-            dropContent={disabled ? undefined : dropContent}
-            disabled={disabled}
+            onOpen={this.onOpen}
+            onClose={this.onClose}
+            dropContent={dropContent}
             icon={dropIcon}
           />
         );
