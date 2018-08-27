@@ -111,12 +111,21 @@ class Notification extends Component {
     if (timestamp) {
       timeStamp = longDate(timestamp, locale);
     }
+    let first;
+    let second;
+    if (reverse) {
+      first = heading;
+      second = statusIcon;
+    } else {
+      first = statusIcon;
+      second = heading;
+    }
     const content = (
       <Box flex='grow' pad={pad}>
         <Heading level={sizeLevel.level} margin={margin} style={{ maxWidth: '100%' }}>
-          <Box direction={reverse ? 'row-reverse' : 'row'} align='center' gap='small'>
-            {statusIcon}
-            {heading}
+          <Box direction='row' align='center' gap='small'>
+            {first}
+            {second}
           </Box>
         </Heading>
         <Text size={sizeLevel.size}>
@@ -128,8 +137,6 @@ class Notification extends Component {
         {progress}
       </Box>
     );
-    let first;
-    let second;
     if (reverse) {
       first = closeBtn;
       second = content;
