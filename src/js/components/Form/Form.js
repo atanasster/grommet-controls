@@ -138,6 +138,6 @@ Form.defaultProps = {
   basis: 'medium',
 };
 
-const FormWrapper = process.env.NODE_ENV !== 'production' ? doc(Form) : Form;
+const FormWrapper = (process.env.NODE_ENV !== 'production' ? doc(Form) : Form);
 
 export { FormWrapper as Form };

@@ -17,6 +17,6 @@ class EmailInput extends Component {
   }
 }
 
-const EmailInputWrapper = process.env.NODE_ENV !== 'production' ? doc(EmailInput) : EmailInput;
+const EmailInputWrapper = (process.env.NODE_ENV !== 'production' ? doc(EmailInput) : EmailInput);
 
 export { EmailInputWrapper as EmailInput };

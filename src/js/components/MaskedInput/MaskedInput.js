@@ -86,6 +86,6 @@ class MaskedInput extends Component {
   }
 }
 
-const MaskedInputWrapper = process.env.NODE_ENV !== 'production' ? doc(MaskedInput) : MaskedInput;
+const MaskedInputWrapper = (process.env.NODE_ENV !== 'production' ? doc(MaskedInput) : MaskedInput);
 
 export { MaskedInputWrapper as MaskedInput };

@@ -41,6 +41,6 @@ class PasswordInput extends Component {
 }
 
 
-const PasswordInputWrapper = process.env.NODE_ENV !== 'production' ? doc(PasswordInput) : PasswordInput;
+const PasswordInputWrapper = (process.env.NODE_ENV !== 'production' ? doc(PasswordInput) : PasswordInput);
 
 export { PasswordInputWrapper as PasswordInput };

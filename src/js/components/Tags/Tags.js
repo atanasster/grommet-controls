@@ -149,6 +149,6 @@ Tags.defaultProps = {
   icon: <FormClose />,
 };
 
-const TagsWrapper = process.env.NODE_ENV !== 'production' ? doc(Tags) : Tags;
+const TagsWrapper = (process.env.NODE_ENV !== 'production' ? doc(Tags) : Tags);
 
 export { TagsWrapper as Tags };

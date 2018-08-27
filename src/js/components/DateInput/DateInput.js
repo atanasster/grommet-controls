@@ -59,6 +59,6 @@ class DateInput extends Component {
   }
 }
 
-const DateInputWrapper = process.env.NODE_ENV !== 'production' ? doc(DateInput) : DateInput;
+const DateInputWrapper = (process.env.NODE_ENV !== 'production' ? doc(DateInput) : DateInput);
 
 export { DateInputWrapper as DateInput };

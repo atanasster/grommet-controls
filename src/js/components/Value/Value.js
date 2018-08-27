@@ -52,6 +52,6 @@ Value.propTypes = {
 };
 
 
-const ValueWrapper = process.env.NODE_ENV !== 'production' ? doc(Value) : Value;
+const ValueWrapper = (process.env.NODE_ENV !== 'production' ? doc(Value) : Value);
 
 export { ValueWrapper as Value };

@@ -158,6 +158,6 @@ class NumberInput extends Component {
   }
 }
 
-const NumberInputWrapper = process.env.NODE_ENV !== 'production' ? doc(NumberInput) : NumberInput;
+const NumberInputWrapper = (process.env.NODE_ENV !== 'production' ? doc(NumberInput) : NumberInput);
 
 export { NumberInputWrapper as NumberInput };
