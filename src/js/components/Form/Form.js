@@ -12,18 +12,6 @@ const styledComponents = {
 };
 
 class Form extends Component {
-  static defaultProps = {
-    focusFirstChild: true,
-    onChange: undefined,
-    onSubmit: undefined,
-    onSubmitError: undefined,
-    onInvalidForm: undefined,
-    onValidForm: undefined,
-    object: {},
-    tag: 'form',
-    basis: 'medium',
-  };
-
   static childContextTypes = {
     form: PropTypes.object,
   }
@@ -137,6 +125,18 @@ class Form extends Component {
     );
   }
 }
+
+Form.defaultProps = {
+  focusFirstChild: true,
+  onChange: undefined,
+  onSubmit: undefined,
+  onSubmitError: undefined,
+  onInvalidForm: undefined,
+  onValidForm: undefined,
+  object: {},
+  tag: 'form',
+  basis: 'medium',
+};
 
 const FormWrapper = process.env.NODE_ENV !== 'production' ? doc(Form) : Form;
 
