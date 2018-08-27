@@ -20,7 +20,7 @@ export default (Element) => {
     strong: PropTypes.bool.description('Heading bold state.'),
     message: PropTypes.string.description(
       'Message to be displayed.',
-    ).isRequired,
+    ),
     icon: PropTypes.oneOfType([
       PropTypes.bool,
       PropTypes.element,

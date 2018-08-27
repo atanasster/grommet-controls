@@ -111,9 +111,35 @@ class Notification extends Component {
     if (timestamp) {
       timeStamp = longDate(timestamp, locale);
     }
+    const content = (
+      <Box flex='grow' pad={pad}>
+        <Heading level={sizeLevel.level} margin={margin} style={{ maxWidth: '100%' }}>
+          <Box direction={reverse ? 'row-reverse' : 'row'} align='center' gap='small'>
+            {statusIcon}
+            {heading}
+          </Box>
+        </Heading>
+        <Text size={sizeLevel.size}>
+          {state}
+        </Text>
+        <Text size={sizeLevel.size}>
+          {timeStamp}
+        </Text>
+        {progress}
+      </Box>
+    );
+    let first;
+    let second;
+    if (reverse) {
+      first = closeBtn;
+      second = content;
+    } else {
+      first = content;
+      second = closeBtn;
+    }
     return (
       <Box
-        direction={reverse ? 'row-reverse' : 'row'}
+        direction='row'
         fill='horizontal'
         border={Border}
         round={Round}
@@ -127,22 +153,8 @@ class Notification extends Component {
         {...rest}
 
       >
-        <Box flex='grow' pad={pad}>
-          <Heading level={sizeLevel.level} margin={margin} style={{ maxWidth: '100%' }}>
-            <Box direction={reverse ? 'row-reverse' : 'row'} align='center' gap='small'>
-              {statusIcon}
-              {heading}
-            </Box>
-          </Heading>
-          <Text size={sizeLevel.size}>
-            {state}
-          </Text>
-          <Text size={sizeLevel.size}>
-            {timeStamp}
-          </Text>
-          {progress}
-        </Box>
-        {closeBtn}
+        {first}
+        {second}
       </Box>
     );
   }
