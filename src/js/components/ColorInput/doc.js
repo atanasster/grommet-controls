@@ -1,6 +1,6 @@
 import { describe, PropTypes } from 'react-desc';
 
-export const doc = (Element) => {
+export default (Element) => {
   const DocumentedElement = describe(Element)
     .description(
       `A masked color entry field, with a drop button to select a color.

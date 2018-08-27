@@ -5,7 +5,7 @@ import { Box } from 'grommet';
 import { withTheme } from 'grommet/components/hocs';
 import { StopFill } from 'grommet-icons';
 import { MaskedInput } from '../MaskedInput';
-import { doc } from './doc';
+import doc from './doc';
 import { Colors } from '../Colors';
 
 
