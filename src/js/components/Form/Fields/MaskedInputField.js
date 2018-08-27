@@ -2,6 +2,6 @@ import React from 'react';
 import { MaskedInput } from '../../MaskedInput';
 import withField from '../hocs';
 
-export default withField(props => (
+export const MaskedInputField = withField(props => (
   <MaskedInput {...props} />
 ));

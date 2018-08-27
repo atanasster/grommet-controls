@@ -2,6 +2,6 @@ import React from 'react';
 import { NumberInput } from '../../NumberInput';
 import withField from '../hocs';
 
-export default withField(props => (
+export const NumberInputField = withField(props => (
   <NumberInput {...props} />
 ));

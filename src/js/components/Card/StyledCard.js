@@ -38,7 +38,3 @@ export const StyledFlipCard = styled(Box)`
   transition: transform ${props => props.flipDuration}s;
   ${props => `-webkit-transform: rotateY(${showCardProps(props.show)});`}
 `;
-
-export default StyledCard.extend`
-  ${props => props.theme.card && props.theme.card.extend}
-`;

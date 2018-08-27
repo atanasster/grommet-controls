@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Box } from 'grommet';
 import { filterByFocusable } from 'grommet/utils/DOM';
-import FormState from './FormState';
-import StyledForm from './StyledForm';
+import { FormState } from './FormState';
+import { StyledForm } from './StyledForm';
 
 import doc from './doc';
 

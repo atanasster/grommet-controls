@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-export default class FormState {
+export class FormState {
   constructor(fields, object = {}, onChange) {
     this.fields = fields;
     this.validator = {
