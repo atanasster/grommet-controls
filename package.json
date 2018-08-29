@@ -1,10 +1,11 @@
 {
   "name": "grommet-controls",
-  "version": "0.36.28",
+  "version": "0.36.29",
   "main": "index.js",
   "module": "es6/index.js",
   "jsnext:main": "es6/index.js",
   "description": "grommet 2 controls",
+  "sideEffects": false,
   "authors": [
     "Atanas Stoyanov"
   ],
@@ -23,7 +24,7 @@
   },
   "engine-strict": true,
   "engines": {
-    "node": ">= 4.4.0"
+   "node": ">= 6.11.5"
   },
   "scripts": {
     "build": "webpack --mode production && babel ./src/js/ --ignore '__tests__' --out-dir ./dist && cross-env BABEL_ENV=es6 babel ./src/js/ --ignore '__tests__' --out-dir ./dist/es6",
