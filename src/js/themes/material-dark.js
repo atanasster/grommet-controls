@@ -13,8 +13,8 @@ const statusColors = {
   unknown: '#9E9E9E',
   disabled: '#9E9E9E',
 };
-const lightColors = ['#333333', '#555555', '#666666', '#777777', '#999999', '#AAAAAA'];
-const darkColors = ['#F6F6F6', '#EEEEEE', '#DDDDDD', '#CCCCCC', '#BBBBBB', '#AAAAAA'];
+const darkColors = ['#333333', '#555555', '#666666', '#777777', '#999999', '#AAAAAA'];
+const lightColors = ['#F6F6F6', '#EEEEEE', '#DDDDDD', '#CCCCCC', '#BBBBBB', '#AAAAAA'];
 const backgroundColor = '#5e5e5e';
 const textColor = '#ebebeb';
 const shadowColor = 'rgba(200, 200, 200, 0.50)';
