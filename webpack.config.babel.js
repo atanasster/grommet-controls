@@ -18,7 +18,7 @@ export default {
     path: path.resolve('./dist'),
     filename: 'grommet.min.js',
     libraryTarget: 'var',
-    library: 'Grommet',
+    library: 'GrommetControls',
   },
   externals: {
     'react': 'React',
