@@ -56,14 +56,16 @@
     "text-mask-core": "^5.0.1"
   },
   "devDependencies": {
-    "babel-core": "^6.5.2",
-    "babel-eslint": "^7.1.1",
-    "babel-jest": "^20.0.0",
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^23.0.1",
     "babel-loader": "^7.1.1",
-    "babel-plugin-styled-components": "^1.5.1",
+    "babel-plugin-styled-components": "^1.1.7",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^5.0.1",
     "css": "^2.2.1",
@@ -89,7 +91,8 @@
     "simple-git": "^1.74.1",
     "styled-components": "^3.2.6",
     "tarball-extract": "^0.0.6",
-    "webpack": "^3.4.1"
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.7"
   },
   "jest": {
     "collectCoverage": true,

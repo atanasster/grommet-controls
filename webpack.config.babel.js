@@ -1,46 +1,14 @@
 import path from 'path';
-import webpack from 'webpack';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
-
-const env = 'production';
+import CleanWebpackPlugin from 'clean-webpack-plugin';
 
 const plugins = [
-  new webpack.DefinePlugin({
-    'process.env': {
-      NODE_ENV: JSON.stringify(env),
-    },
-  }),
-  new webpack.optimize.UglifyJsPlugin({
-    compress: {
-      warnings: false,
-      screw_ie8: true,
-      conditionals: true,
-      unused: true,
-      comparisons: true,
-      sequences: true,
-      dead_code: true,
-      evaluate: true,
-      if_return: true,
-      join_vars: true,
-    },
-    mangle: {
-      screw_ie8: true,
-    },
-    output: {
-      comments: false,
-      screw_ie8: true,
-    },
-  }),
-  new webpack.LoaderOptionsPlugin({
-    minimize: true,
-  }),
-  new CopyWebpackPlugin(
-    [
-      { from: './README.md' },
-      { from: './package.json' },
-      { from: './tools', to: 'tools' },
-    ]
-  ),
+  new CleanWebpackPlugin(['dist']),
+  new CopyWebpackPlugin([
+    { from: './README.md' },
+    { from: './package.json' },
+    { from: './tools', to: 'tools' },
+  ]),
 ];
 
 export default {
@@ -48,17 +16,16 @@ export default {
   entry: './src/js/index.js',
   output: {
     path: path.resolve('./dist'),
-    filename: 'grommet-controls.min.js',
+    filename: 'grommet.min.js',
     libraryTarget: 'var',
-    library: 'GrommetControls',
+    library: 'Grommet',
   },
   externals: {
     'react': 'React',
     'react-dom': 'ReactDOM',
-    'react-addons-transition-group': 'React.addons.TransitionGroup',
   },
   resolve: {
-    extensions: ['.js', '.scss', '.css', '.json'],
+    extensions: ['.js', '.json'],
   },
   plugins,
   node: {
@@ -69,7 +36,7 @@ export default {
   module: {
     rules: [
       {
-        test: /\.js/,
+        test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
       },
