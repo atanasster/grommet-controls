@@ -170,7 +170,7 @@ export default deepFreeze({
   anchor: {
     color: {
       light: '#0d5b8e',
-      dark: '#4eadeb',
+      dark: '#cee3eb',
     },
   },
 });
