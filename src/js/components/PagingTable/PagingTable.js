@@ -1,4 +1,6 @@
 import React from 'react';
+import { compose } from 'recompose';
+import { withTheme } from 'grommet/components/hocs';
 import { StyledPagingTable } from './StyledPagingTable';
 import doc from './doc';
 
@@ -17,6 +19,10 @@ const PagingTable = ({ data, ...rest }) => {
   );
 };
 
-const PagingTableWrapper = (process.env.NODE_ENV !== 'production' ? doc(PagingTable) : PagingTable);
+const PagingTableWrapper = compose(
+  withTheme,
+)(
+  (process.env.NODE_ENV !== 'production' ? doc(PagingTable) : PagingTable)
+);
 
 export { PagingTableWrapper as PagingTable };
