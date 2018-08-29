@@ -1,6 +1,6 @@
 {
   "name": "grommet-controls",
-  "version": "0.36.29",
+  "version": "0.36.30",
   "main": "index.js",
   "module": "es6/index.js",
   "jsnext:main": "es6/index.js",
@@ -39,20 +39,18 @@
   "peerDependencies": {
     "react": ">= 16.4.1",
     "react-dom": ">= 16.4.1",
-    "styled-components": ">= 2.1.1",
-    "grommet": ">= 2.0.0-beta.4",
-    "grommet-icons": ">= 1.0.0"
+    "styled-components": ">= 3.2.6",
+    "grommet": ">= 2.0.0-beta.5",
+    "grommet-icons": ">= 2.0.0"
   },
   "dependencies": {
-    "babel-plugin-grommet": "^0.5.1",
-    "grommet": "https://github.com/grommet/grommet/tarball/NEXT-stable",
-    "grommet-icons": "https://github.com/grommet/grommet-icons/tarball/stable",
-    "markdown-to-jsx": "^5.4.2",
+    "babel-plugin-grommet": "^0.5.3",
+    "markdown-to-jsx": "^6.6.6",
     "node-emoji": "^1.8.1",
     "polished": "^1.3.0",
     "prop-types": "^15.5.10",
-    "react-desc": "^3.2.0",
-    "recompose": "^0.25.1",
+    "react-desc": "^3.5.0",
+    "recompose": "^0.27.0",
     "text-mask-addons": "^3.7.2",
     "text-mask-core": "^5.0.1"
   },
@@ -82,6 +80,8 @@
     "eslint-plugin-react": "^7.1.0",
     "fs-extra": "^4.0.0",
     "grommet-cli": "5.1.0",
+    "grommet": "https://github.com/grommet/grommet/tarball/NEXT-stable",
+    "grommet-icons": "https://github.com/grommet/grommet-icons/tarball/stable",
     "jest-styled-components": "^4.10.0",
     "pre-commit": "^1.2.2",
     "react": "^16.4.1",
