@@ -1,7 +1,7 @@
 import React from 'react';
 import { Select } from 'grommet';
-import withField from '../hocs';
+import { withFormField } from '../withFormField';
 
-export const SelectField = withField(({ onChange, ...rest }) => (
+export const SelectField = withFormField(({ onChange, ...rest }) => (
   <Select {...rest} onChange={({ value }) => onChange({ target: { value } })} />
 ));

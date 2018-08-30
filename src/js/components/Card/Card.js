@@ -149,6 +149,10 @@ class Card extends Component {
     );
   }
 }
+Card.CardActions = CardActions;
+Card.CardTitle = CardTitle;
+Card.CardSubTitle = CardSubTitle;
+Card.CardContent = CardContent;
 
 let CarDoc;
 if (process.env.NODE_ENV !== 'production') {
