@@ -1,8 +1,5 @@
 import React from 'react';
-import { compose } from 'recompose';
-import { withTheme } from '../hocs';
 import { StyledPagingTable } from './StyledPagingTable';
-import doc from './doc';
 
 const PagingTable = ({ data, ...rest }) => {
   const defaults = {
@@ -19,10 +16,12 @@ const PagingTable = ({ data, ...rest }) => {
   );
 };
 
-const PagingTableWrapper = compose(
-  withTheme,
-)(
-  (process.env.NODE_ENV !== 'production' ? doc(PagingTable) : PagingTable)
-);
+
+let PagingTableDoc;
+if (process.env.NODE_ENV !== 'production') {
+  PagingTableDoc = require('./doc').doc(PagingTable); // eslint-disable-line global-require
+}
+
+const PagingTableWrapper = PagingTableDoc || PagingTable;
 
 export { PagingTableWrapper as PagingTable };

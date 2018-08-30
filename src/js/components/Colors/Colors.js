@@ -6,7 +6,6 @@ import { colorIsDark } from 'grommet/utils/colors';
 import { parseMetricToNum } from 'grommet/utils';
 import { withTheme } from '../hocs';
 import { StyledColors, StyledColor, StyledColorContainer, StyledRow, StyledRows } from './StyledColors';
-import doc from './doc';
 
 
 const buildState = (props) => {
@@ -193,10 +192,16 @@ class Colors extends Component {
   }
 }
 
+
+let ColorsDoc;
+if (process.env.NODE_ENV !== 'production') {
+  ColorsDoc = require('./doc').doc(Colors); // eslint-disable-line global-require
+}
+
 const ColorsWrapper = compose(
   withTheme,
 )(
-  process.env.NODE_ENV !== 'production' ? doc(Colors) : Colors
+  ColorsDoc || Colors
 );
 
 export { ColorsWrapper as Colors };

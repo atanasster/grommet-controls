@@ -4,7 +4,6 @@ import { createTextMaskInputElement } from 'text-mask-core';
 import { DropInput } from '../DropInput';
 import { transformMaskedValue } from './utils';
 
-import doc from './doc';
 
 export const placeholderChars = {
   whitespace: '\u2000',
@@ -86,6 +85,12 @@ class MaskedInput extends Component {
   }
 }
 
-const MaskedInputWrapper = (process.env.NODE_ENV !== 'production' ? doc(MaskedInput) : MaskedInput);
+
+let MaskedInputDoc;
+if (process.env.NODE_ENV !== 'production') {
+  MaskedInputDoc = require('./doc').doc(MaskedInput); // eslint-disable-line global-require
+}
+
+const MaskedInputWrapper = MaskedInputDoc || MaskedInput;
 
 export { MaskedInputWrapper as MaskedInput };

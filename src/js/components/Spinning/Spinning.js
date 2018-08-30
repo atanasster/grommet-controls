@@ -8,7 +8,6 @@ import { allSpinners } from './spinners';
 import { CircleSpinner, ThreeBounceSpinner, CubeGridSpinner, WaveSpinner,
   FoldingCubeSpinner, DoubleBounceSpinner, WanderingCubesSpinner, ChasingDotsSpinner,
   RotatingPlaneSpinner, PulseSpinner, WordPressSpinner } from './StyledSpinning';
-import doc from './doc';
 
 const styledComponents = {
   'circle': CircleSpinner,
@@ -54,11 +53,15 @@ class Spinning extends Component {
   }
 }
 
+let SpinningDoc;
+if (process.env.NODE_ENV !== 'production') {
+  SpinningDoc = require('./doc').doc(Spinning); // eslint-disable-line global-require
+}
 
 const SpinningWrapper = compose(
   withTheme,
 )(
-  process.env.NODE_ENV !== 'production' ? doc(Spinning) : Spinning
+  SpinningDoc || Spinning
 );
 
 export { SpinningWrapper as Spinning };

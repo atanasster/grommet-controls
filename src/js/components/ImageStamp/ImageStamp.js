@@ -4,7 +4,6 @@ import { compose } from 'recompose';
 import { withTheme } from '../hocs';
 
 import { StyledImageStamp } from './StyledImageStamp';
-import doc from './doc';
 
 const SIZE_MAP = {
   small: 'medium',
@@ -26,10 +25,16 @@ class ImageStamp extends Component {
   }
 }
 
+
+let ImageStampDoc;
+if (process.env.NODE_ENV !== 'production') {
+  ImageStampDoc = require('./doc').doc(ImageStamp); // eslint-disable-line global-require
+}
+
 const ImageStampWrapper = compose(
   withTheme,
 )(
-  process.env.NODE_ENV !== 'production' ? doc(ImageStamp) : ImageStamp
+  ImageStampDoc || ImageStamp
 );
 
 export { ImageStampWrapper as ImageStamp };

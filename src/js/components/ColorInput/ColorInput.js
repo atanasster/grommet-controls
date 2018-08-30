@@ -5,7 +5,6 @@ import { Box } from 'grommet';
 import { StopFill } from 'grommet-icons';
 import { withTheme } from '../hocs';
 import { MaskedInput } from '../MaskedInput';
-import doc from './doc';
 import { Colors } from '../Colors';
 
 
@@ -78,10 +77,15 @@ class ColorInput extends Component {
   }
 }
 
+let ColorInputDoc;
+if (process.env.NODE_ENV !== 'production') {
+  ColorInputDoc = require('./doc').doc(ColorInput); // eslint-disable-line global-require
+}
+
 const ColorInputWrapper = compose(
   withTheme,
 )(
-  process.env.NODE_ENV !== 'production' ? doc(ColorInput) : ColorInput
+  ColorInputDoc || ColorInput
 );
 
 export { ColorInputWrapper as ColorInput };

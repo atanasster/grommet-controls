@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { View } from 'grommet-icons';
 import { DropInput } from '../DropInput';
-import doc from './doc';
-
 
 class PasswordInput extends Component {
   static defaultProps = {
@@ -40,7 +38,11 @@ class PasswordInput extends Component {
   }
 }
 
+let PasswordInputDoc;
+if (process.env.NODE_ENV !== 'production') {
+  PasswordInputDoc = require('./doc').doc(PasswordInput); // eslint-disable-line global-require
+}
 
-const PasswordInputWrapper = (process.env.NODE_ENV !== 'production' ? doc(PasswordInput) : PasswordInput);
+const PasswordInputWrapper = PasswordInputDoc || PasswordInput;
 
 export { PasswordInputWrapper as PasswordInput };

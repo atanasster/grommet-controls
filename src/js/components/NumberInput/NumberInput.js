@@ -4,7 +4,6 @@ import {
   createNumberMask, MaskedInput, maskedNumberValue,
   createMinMaxInputPipe,
 } from '../MaskedInput';
-import doc from './doc';
 
 const precision = (n) => {
   if (!isFinite(n)) return 0;
@@ -158,6 +157,12 @@ class NumberInput extends Component {
   }
 }
 
-const NumberInputWrapper = (process.env.NODE_ENV !== 'production' ? doc(NumberInput) : NumberInput);
+
+let NumberInputDoc;
+if (process.env.NODE_ENV !== 'production') {
+  NumberInputDoc = require('./doc').doc(NumberInput); // eslint-disable-line global-require
+}
+
+const NumberInputWrapper = NumberInputDoc || NumberInput;
 
 export { NumberInputWrapper as NumberInput };

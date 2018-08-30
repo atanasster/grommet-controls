@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { MaskedInput, emailMask } from '../MaskedInput';
-import doc from './doc';
 
 
 class EmailInput extends Component {
@@ -17,6 +16,11 @@ class EmailInput extends Component {
   }
 }
 
-const EmailInputWrapper = (process.env.NODE_ENV !== 'production' ? doc(EmailInput) : EmailInput);
+let EmailInputDoc;
+if (process.env.NODE_ENV !== 'production') {
+  EmailInputDoc = require('./doc').doc(EmailInput); // eslint-disable-line global-require
+}
+
+const EmailInputWrapper = EmailInputDoc || EmailInput;
 
 export { EmailInputWrapper as EmailInput };

@@ -5,8 +5,6 @@ import { FormClose } from 'grommet-icons';
 import { Tag } from '../Tag';
 
 
-import doc from './doc';
-
 class Tags extends Component {
   state = {
     selectedTagIndex: -1,
@@ -149,6 +147,12 @@ Tags.defaultProps = {
   icon: <FormClose />,
 };
 
-const TagsWrapper = (process.env.NODE_ENV !== 'production' ? doc(Tags) : Tags);
+
+let TagsDoc;
+if (process.env.NODE_ENV !== 'production') {
+  TagsDoc = require('./doc').doc(Tags); // eslint-disable-line global-require
+}
+
+const TagsWrapper = TagsDoc || Tags;
 
 export { TagsWrapper as Tags };

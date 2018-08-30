@@ -7,7 +7,6 @@ import { Close, StatusGood, StatusWarning, StatusCritical, StatusUnknown, Status
 import { withTheme } from '../hocs';
 import { longDate } from '../../utils/moment';
 
-import doc from './doc';
 
 const StatusIcons = {
   ok: StatusGood,
@@ -167,11 +166,16 @@ class Notification extends Component {
   }
 }
 
+let NotificationDoc;
+if (process.env.NODE_ENV !== 'production') {
+  NotificationDoc = require('./doc').doc(Notification); // eslint-disable-line global-require
+}
 
 const NotificationWrapper = compose(
   withTheme,
 )(
-  process.env.NODE_ENV !== 'production' ? doc(Notification) : Notification
+  NotificationDoc || Notification
 );
+
 
 export { NotificationWrapper as Notification };

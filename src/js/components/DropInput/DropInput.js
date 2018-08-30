@@ -6,9 +6,6 @@ import { DropButton, Keyboard, Button } from 'grommet';
 import { withTheme } from '../hocs';
 import { StyledDropInput, StyledDropInputContainer, StyledWidgetsContainer } from './StyledDropInput';
 
-import doc from './doc';
-
-
 class DropInput extends Component {
   static defaultProps = {
     dropAlign: { top: 'bottom', right: 'left' },
@@ -128,10 +125,15 @@ class DropInput extends Component {
   }
 }
 
+let DropInputDoc;
+if (process.env.NODE_ENV !== 'production') {
+  DropInputDoc = require('./doc').doc(DropInput); // eslint-disable-line global-require
+}
+
 const DropInputWrapper = compose(
   withTheme,
 )(
-  process.env.NODE_ENV !== 'production' ? doc(DropInput) : DropInput
+  DropInputDoc || DropInput
 );
 
 export { DropInputWrapper as DropInput };

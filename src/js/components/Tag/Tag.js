@@ -6,8 +6,6 @@ import { FormClose } from 'grommet-icons';
 import { withFocus, withTheme } from '../hocs';
 import { StyledTag, StyledIcon } from './StyledTag';
 
-import doc from './doc';
-
 class Tag extends Component {
   static contextTypes = {
     grommet: PropTypes.object,
@@ -92,11 +90,16 @@ class Tag extends Component {
   }
 }
 
+let TagDoc;
+if (process.env.NODE_ENV !== 'production') {
+  TagDoc = require('./doc').doc(Tag); // eslint-disable-line global-require
+}
+
 const TagWrapper = compose(
   withTheme,
   withFocus,
 )(
-  process.env.NODE_ENV !== 'production' ? doc(Tag) : Tag
+  TagDoc || Tag
 );
 
 export { TagWrapper as Tag };

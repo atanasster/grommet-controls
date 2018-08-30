@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { compose } from 'recompose';
 import { Stack, Box, Heading, Text } from 'grommet';
 import { withTheme } from '../hocs';
-import doc from './doc';
 import { StyledCard, StyledCardContent, StyledFlipCard } from './StyledCard';
 
 export const CardActions = ({ children, ...rest }) => (
@@ -151,11 +150,16 @@ class Card extends Component {
   }
 }
 
+let CarDoc;
+if (process.env.NODE_ENV !== 'production') {
+  CarDoc = require('./doc').doc(Card); // eslint-disable-line global-require
+}
 
 const CardWrapper = compose(
   withTheme,
 )(
-  process.env.NODE_ENV !== 'production' ? doc(Card) : Card
+  CarDoc || Card
 );
 
 export { CardWrapper as Card };
+

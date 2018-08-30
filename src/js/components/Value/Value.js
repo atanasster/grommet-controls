@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Box, Text } from 'grommet';
 
-import doc from './doc';
-
 const LABEL_SIZE_MAP = {
   xsmall: 'xsmall',
   small: 'xsmall',
@@ -29,10 +27,6 @@ const Value = ({
   </Box>
 );
 
-if (process.env.NODE_ENV !== 'production') {
-  doc(Value);
-}
-
 Value.defaultProps = {
   label: undefined,
   value: undefined,
@@ -52,6 +46,11 @@ Value.propTypes = {
 };
 
 
-const ValueWrapper = (process.env.NODE_ENV !== 'production' ? doc(Value) : Value);
+let ValueDoc;
+if (process.env.NODE_ENV !== 'production') {
+  ValueDoc = require('./doc').doc(Value); // eslint-disable-line global-require
+}
+
+const ValueWrapper = ValueDoc || Value;
 
 export { ValueWrapper as Value };

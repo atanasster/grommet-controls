@@ -3,7 +3,6 @@ import { Box, Calendar } from 'grommet';
 import { Calendar as CalendarIcon } from 'grommet-icons';
 import { MaskedInput, createAutoCorrectedDatePipe } from '../MaskedInput';
 import { smallDate } from '../../utils/moment';
-import doc from './doc';
 
 
 class DateInput extends Component {
@@ -59,6 +58,11 @@ class DateInput extends Component {
   }
 }
 
-const DateInputWrapper = (process.env.NODE_ENV !== 'production' ? doc(DateInput) : DateInput);
+let DateInputDoc;
+if (process.env.NODE_ENV !== 'production') {
+  DateInputDoc = require('./doc').doc(DateInput); // eslint-disable-line global-require
+}
+
+const DateInputWrapper = DateInputDoc || DateInput;
 
 export { DateInputWrapper as DateInput };

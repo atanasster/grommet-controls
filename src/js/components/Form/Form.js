@@ -5,8 +5,6 @@ import { filterByFocusable } from 'grommet/utils/DOM';
 import { FormState } from './FormState';
 import { StyledForm } from './StyledForm';
 
-import doc from './doc';
-
 const styledComponents = {
   form: StyledForm,
 };
@@ -138,6 +136,11 @@ Form.defaultProps = {
   basis: 'medium',
 };
 
-const FormWrapper = (process.env.NODE_ENV !== 'production' ? doc(Form) : Form);
+let FormDoc;
+if (process.env.NODE_ENV !== 'production') {
+  FormDoc = require('./doc').doc(Form); // eslint-disable-line global-require
+}
+
+const FormWrapper = FormDoc || Form;
 
 export { FormWrapper as Form };
