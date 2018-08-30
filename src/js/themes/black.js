@@ -1,6 +1,7 @@
 import { deepFreeze } from 'grommet/utils/object';
 import { rgba } from 'polished';
-import { colorsFromArray, colorsFromObject } from './utils';
+import colorsFromArray from './colorsFromArray';
+import colorsFromObject from './colorsFromObject';
 
 
 const brandColor = '#000000';

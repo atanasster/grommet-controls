@@ -1,5 +1,7 @@
 import { deepFreeze } from 'grommet/utils/object';
-import { colorsFromArray, colorsFromObject } from './utils';
+import colorsFromArray from './colorsFromArray';
+import colorsFromObject from './colorsFromObject';
+
 
 const brandColor = '#0072c6';
 const accentColors = ['#fa6800', '#128023', '#0050ef', '#d80073', '#008a00', '#00aff0', '#f0a30a', '#825a2c', '#63362f', '#81003c', '#4b0096'];
