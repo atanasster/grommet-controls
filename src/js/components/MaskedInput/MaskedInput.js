@@ -23,8 +23,8 @@ class MaskedInput extends Component {
     type: 'text',
     guide: true,
     showMask: false,
-    placeholderChar: this.placeholderChars.whitespace,
-  }
+    placeholderChar: ' ',
+  };
 
   onInput = (event) => {
     const { onInput } = this.props;
