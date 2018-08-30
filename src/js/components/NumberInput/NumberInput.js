@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Add, Subtract } from 'grommet-icons';
-import {
-  createNumberMask, MaskedInput, maskedNumberValue,
-  createMinMaxInputPipe,
-} from '../MaskedInput';
+import { MaskedInput } from '../MaskedInput';
+
+const { createNumberMask, maskedNumberValue, createMinMaxInputPipe } = MaskedInput;
 
 const precision = (n) => {
   if (!isFinite(n)) return 0;

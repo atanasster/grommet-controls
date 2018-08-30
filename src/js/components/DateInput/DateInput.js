@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Box, Calendar } from 'grommet';
 import { Calendar as CalendarIcon } from 'grommet-icons';
-import { MaskedInput, createAutoCorrectedDatePipe } from '../MaskedInput';
+import { MaskedInput } from '../MaskedInput';
 import { smallDate } from '../../utils/moment';
 
 
@@ -28,7 +28,7 @@ class DateInput extends Component {
     } else if (autocorrect) {
       mask = {
         mask: [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/],
-        pipe: createAutoCorrectedDatePipe(),
+        pipe: MaskedInput.createAutoCorrectedDatePipe(),
         keepCharPositions: true,
       };
     } else {

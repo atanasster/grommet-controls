@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { MaskedInput, emailMask } from '../MaskedInput';
+import { MaskedInput } from '../MaskedInput';
 
 
 class EmailInput extends Component {
   static defaultProps = {
-    mask: emailMask,
+    mask: MaskedInput.emailMask,
   };
   render() {
     return (
