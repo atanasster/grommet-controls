@@ -127,7 +127,7 @@ class DropInput extends Component {
 
 let DropInputDoc;
 if (process.env.NODE_ENV !== 'production') {
-  DropInputDoc = require('./doc').doc(DropInput); // eslint-disable-line global-require
+  DropInputDoc = require('./doc')(DropInput); // eslint-disable-line global-require
 }
 
 const DropInputWrapper = compose(

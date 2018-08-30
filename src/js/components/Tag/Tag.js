@@ -92,7 +92,7 @@ class Tag extends Component {
 
 let TagDoc;
 if (process.env.NODE_ENV !== 'production') {
-  TagDoc = require('./doc').doc(Tag); // eslint-disable-line global-require
+  TagDoc = require('./doc')(Tag); // eslint-disable-line global-require
 }
 
 const TagWrapper = compose(

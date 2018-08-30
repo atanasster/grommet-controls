@@ -79,7 +79,7 @@ class ColorInput extends Component {
 
 let ColorInputDoc;
 if (process.env.NODE_ENV !== 'production') {
-  ColorInputDoc = require('./doc').doc(ColorInput); // eslint-disable-line global-require
+  ColorInputDoc = require('./doc')(ColorInput); // eslint-disable-line global-require
 }
 
 const ColorInputWrapper = compose(

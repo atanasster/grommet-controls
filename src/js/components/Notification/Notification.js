@@ -168,7 +168,7 @@ class Notification extends Component {
 
 let NotificationDoc;
 if (process.env.NODE_ENV !== 'production') {
-  NotificationDoc = require('./doc').doc(Notification); // eslint-disable-line global-require
+  NotificationDoc = require('./doc')(Notification); // eslint-disable-line global-require
 }
 
 const NotificationWrapper = compose(

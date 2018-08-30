@@ -40,7 +40,7 @@ class PasswordInput extends Component {
 
 let PasswordInputDoc;
 if (process.env.NODE_ENV !== 'production') {
-  PasswordInputDoc = require('./doc').doc(PasswordInput); // eslint-disable-line global-require
+  PasswordInputDoc = require('./doc')(PasswordInput); // eslint-disable-line global-require
 }
 
 const PasswordInputWrapper = PasswordInputDoc || PasswordInput;

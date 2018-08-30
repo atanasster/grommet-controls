@@ -195,7 +195,7 @@ class Colors extends Component {
 
 let ColorsDoc;
 if (process.env.NODE_ENV !== 'production') {
-  ColorsDoc = require('./doc').doc(Colors); // eslint-disable-line global-require
+  ColorsDoc = require('./doc')(Colors); // eslint-disable-line global-require
 }
 
 const ColorsWrapper = compose(

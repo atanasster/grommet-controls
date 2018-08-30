@@ -55,7 +55,7 @@ class Spinning extends Component {
 
 let SpinningDoc;
 if (process.env.NODE_ENV !== 'production') {
-  SpinningDoc = require('./doc').doc(Spinning); // eslint-disable-line global-require
+  SpinningDoc = require('./doc')(Spinning); // eslint-disable-line global-require
 }
 
 const SpinningWrapper = compose(

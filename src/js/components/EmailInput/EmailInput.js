@@ -18,7 +18,7 @@ class EmailInput extends Component {
 
 let EmailInputDoc;
 if (process.env.NODE_ENV !== 'production') {
-  EmailInputDoc = require('./doc').doc(EmailInput); // eslint-disable-line global-require
+  EmailInputDoc = require('./doc')(EmailInput); // eslint-disable-line global-require
 }
 
 const EmailInputWrapper = EmailInputDoc || EmailInput;

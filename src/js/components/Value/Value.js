@@ -48,7 +48,7 @@ Value.propTypes = {
 
 let ValueDoc;
 if (process.env.NODE_ENV !== 'production') {
-  ValueDoc = require('./doc').doc(Value); // eslint-disable-line global-require
+  ValueDoc = require('./doc')(Value); // eslint-disable-line global-require
 }
 
 const ValueWrapper = ValueDoc || Value;
