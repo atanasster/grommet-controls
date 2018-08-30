@@ -8,17 +8,6 @@ import { createMinMaxInputPipe, maskedNumberValue } from './minMaxNumberPipe';
 
 
 class MaskedInput extends Component {
-  static alphabetic = /[A-Z]/i;
-  static placeholderChars = {
-    whitespace: '\u2000',
-    underscore: '_',
-  };
-  static digit = /\d/;
-  static createAutoCorrectedDatePipe = createAutoCorrectedDatePipe;
-  static emailMask = emailMask;
-  static createNumberMask = createNumberMask;
-  static createMinMaxInputPipe = createMinMaxInputPipe;
-  static maskedNumberValue = maskedNumberValue;
   static defaultProps = {
     type: 'text',
     guide: true,
@@ -95,5 +84,16 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const MaskedInputWrapper = MaskedInputDoc || MaskedInput;
+MaskedInputWrapper.alphabetic = /[A-Z]/i;
+MaskedInputWrapper.placeholderChars = {
+  whitespace: '\u2000',
+  underscore: '_',
+};
+MaskedInputWrapper.digit = /\d/;
+MaskedInputWrapper.createAutoCorrectedDatePipe = createAutoCorrectedDatePipe;
+MaskedInputWrapper.emailMask = emailMask;
+MaskedInputWrapper.createNumberMask = createNumberMask;
+MaskedInputWrapper.createMinMaxInputPipe = createMinMaxInputPipe;
+MaskedInputWrapper.maskedNumberValue = maskedNumberValue;
 
 export { MaskedInputWrapper as MaskedInput };

@@ -104,12 +104,25 @@ class Card extends Component {
     );
   }
 }
-Card.CardActions = ({ children, ...rest }) => (
+
+
+let CarDoc;
+if (process.env.NODE_ENV !== 'production') {
+  CarDoc = require('./doc').default(Card); // eslint-disable-line global-require
+}
+
+const CardWrapper = compose(
+  withTheme,
+)(
+  CarDoc || Card
+);
+
+CardWrapper.CardActions = ({ children, ...rest }) => (
   <Box justifySelf='end' align='center' gap='small' pad='small' flex={false} fill='horizontal' direction='row' {...rest}>
     {children}
   </Box>
 );
-Card.CardTitle = ({ children, color, size, textAlign, truncate, level = 2, strong = true, margin = 'none', responsive, ...rest }) => (
+CardWrapper.CardTitle = ({ children, color, size, textAlign, truncate, level = 2, strong = true, margin = 'none', responsive, ...rest }) => (
   <Box responsive={responsive} direction='row' align='center' justify='center' gap='small' pad='small' flex={false} {...rest} >
     {typeof children !== 'string' ? children : (
       <Heading
@@ -126,7 +139,7 @@ Card.CardTitle = ({ children, color, size, textAlign, truncate, level = 2, stron
     )}
   </Box>
 );
-Card.CardSubTitle = ({ children, color, size = 'medium', margin, textAlign, truncate, weight, strong = true, ...rest }) => (
+CardWrapper.CardSubTitle = ({ children, color, size = 'medium', margin, textAlign, truncate, weight, strong = true, ...rest }) => (
   <Box direction='row' gap='small' justify='center' pad='small' flex={false} {...rest} >
     {typeof children !== 'string' ? children : (
       <Text
@@ -141,21 +154,10 @@ Card.CardSubTitle = ({ children, color, size = 'medium', margin, textAlign, trun
     )}
   </Box>
 );
-Card.CardContent = ({ children, ...rest }) => (
+CardWrapper.CardContent = ({ children, ...rest }) => (
   <Box overflow='auto' justifySelf='stretch' fill='horizontal' {...rest} >
     {children}
   </Box>
-);
-
-let CarDoc;
-if (process.env.NODE_ENV !== 'production') {
-  CarDoc = require('./doc').default(Card); // eslint-disable-line global-require
-}
-
-const CardWrapper = compose(
-  withTheme,
-)(
-  CarDoc || Card
 );
 
 export { CardWrapper as Card };
