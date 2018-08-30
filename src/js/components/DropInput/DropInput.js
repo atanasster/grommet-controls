@@ -3,7 +3,7 @@ import { findDOMNode } from 'react-dom';
 import { FormDown } from 'grommet-icons';
 import { compose } from 'recompose';
 import { DropButton, Keyboard, Button } from 'grommet';
-import { withTheme } from 'grommet/components/hocs';
+import { withTheme } from '../hocs';
 import { StyledDropInput, StyledDropInputContainer, StyledWidgetsContainer } from './StyledDropInput';
 
 import doc from './doc';

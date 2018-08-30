@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { compose } from 'recompose';
-import { withTheme } from 'grommet/components/hocs';
+import { withTheme } from '../hocs';
 import { allSpinners } from './spinners';
 import { CircleSpinner, ThreeBounceSpinner, CubeGridSpinner, WaveSpinner,
   FoldingCubeSpinner, DoubleBounceSpinner, WanderingCubesSpinner, ChasingDotsSpinner,

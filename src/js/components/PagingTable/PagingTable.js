@@ -1,6 +1,6 @@
 import React from 'react';
 import { compose } from 'recompose';
-import { withTheme } from 'grommet/components/hocs';
+import { withTheme } from '../hocs';
 import { StyledPagingTable } from './StyledPagingTable';
 import doc from './doc';
 

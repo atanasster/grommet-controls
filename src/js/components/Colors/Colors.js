@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { compose } from 'recompose';
 import { Box, Keyboard } from 'grommet';
-import { withTheme } from 'grommet/components/hocs';
 import { colorIsDark } from 'grommet/utils/colors';
 import { parseMetricToNum } from 'grommet/utils';
+import { withTheme } from '../hocs';
 import { StyledColors, StyledColor, StyledColorContainer, StyledRow, StyledRows } from './StyledColors';
 import doc from './doc';
 

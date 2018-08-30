@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { compose } from 'recompose';
 import { Text, Keyboard } from 'grommet';
-import { withFocus, withTheme } from 'grommet/components/hocs';
 import { FormClose } from 'grommet-icons';
+import { withFocus, withTheme } from '../hocs';
 import { StyledTag, StyledIcon } from './StyledTag';
 
 import doc from './doc';

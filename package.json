@@ -1,6 +1,6 @@
 {
   "name": "grommet-controls",
-  "version": "0.36.30",
+  "version": "0.40.00",
   "main": "index.js",
   "module": "es6/index.js",
   "jsnext:main": "es6/index.js",
@@ -24,7 +24,7 @@
   },
   "engine-strict": true,
   "engines": {
-   "node": ">= 6.11.5"
+    "node": ">= 6.11.5"
   },
   "scripts": {
     "build": "webpack --mode production && babel ./src/js/ --ignore '__tests__' --out-dir ./dist && cross-env BABEL_ENV=es6 babel ./src/js/ --ignore '__tests__' --out-dir ./dist/es6",
@@ -41,10 +41,9 @@
     "react-dom": ">= 16.4.1",
     "styled-components": ">= 3.2.6",
     "grommet": ">= 2.0.0-beta.5",
-    "grommet-icons": ">= 2.0.0"
+    "grommet-icons": "^3.0.0"
   },
   "dependencies": {
-    "babel-plugin-grommet": "^0.5.3",
     "markdown-to-jsx": "^6.6.6",
     "node-emoji": "^1.8.1",
     "polished": "^1.3.0",
@@ -61,6 +60,7 @@
     "babel-jest": "^23.0.1",
     "babel-loader": "^7.1.1",
     "babel-plugin-styled-components": "^1.1.7",
+    "babel-plugin-transform-imports": "^1.5.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-1": "^6.24.1",
@@ -81,7 +81,7 @@
     "fs-extra": "^4.0.0",
     "grommet-cli": "5.1.0",
     "grommet": "https://github.com/grommet/grommet/tarball/NEXT-stable",
-    "grommet-icons": "https://github.com/grommet/grommet-icons/tarball/stable",
+    "grommet-icons": "^3.0.0",
     "jest-styled-components": "^4.10.0",
     "pre-commit": "^1.2.2",
     "react": "^16.4.1",
