@@ -7,7 +7,7 @@
     "es6": {
       "plugins": [
         ["transform-imports", {
-        "grommet$": {
+        "grommet": {
              "transform": "grommet/es6/components/${member}",
              "preventFullImport": true,
              "skipDefaultConversion": true
@@ -22,7 +22,7 @@
              "preventFullImport": true,
              "skipDefaultConversion": true
           },
-          "grommet-icons$": {
+          "grommet-icons": {
              "transform": "grommet-icons/es6/icons/${member}",
              "preventFullImport": true,
              "skipDefaultConversion": true
