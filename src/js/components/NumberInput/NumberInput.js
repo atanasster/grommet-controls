@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Add, Subtract } from 'grommet-icons';
 import { MaskedInput } from '../MaskedInput';
 
-const { createNumberMask, maskedNumberValue, createMinMaxInputPipe } = MaskedInput;
-
 const precision = (n) => {
   if (!isFinite(n)) return 0;
   let e = 1;
@@ -48,7 +46,7 @@ class NumberInput extends Component {
     const {
       prefix, suffix, thousandsSeparatorSymbol, decimalSymbol,
     } = this.props;
-    return maskedNumberValue({
+    return MaskedInput.maskedNumberValue({
       value, prefix, suffix, thousandsSeparatorSymbol, decimalSymbol,
     });
   }
@@ -112,7 +110,7 @@ class NumberInput extends Component {
     const allowNegative = typeof min !== 'number' || min < 0;
     const includeThousandsSeparator = !!thousandsSeparatorSymbol;
     const allowDecimal = (decimals === null) || (typeof decimals === 'number' && decimals > 0);
-    const mask = userMask || createNumberMask({
+    const mask = userMask || MaskedInput.createNumberMask({
       prefix,
       suffix,
       includeThousandsSeparator,
@@ -123,7 +121,7 @@ class NumberInput extends Component {
       integerLimit: integers,
       allowNegative,
     });
-    const pipe = userPipe || createMinMaxInputPipe({
+    const pipe = userPipe || MaskedInput.createMinMaxInputPipe({
       mask, prefix, suffix, thousandsSeparatorSymbol, decimalSymbol, min, max, ...rest,
     });
     return (
