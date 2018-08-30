@@ -20,17 +20,16 @@ export default (Element) => {
     .usage(
       `$ npm install grommet-controls\n
     import { Card } from 'grommet-controls';\n
-    import { CardTitle, CardSubTitle, CardContent } from 'grommet-controls/components/Card';\n
     <Card>
-      <CardTitle>
+      <Card.CardTitle>
         Title
-      </CardTitle>
-      <CardSubTitle>
+      </Card.CardTitle>
+      <Card.CardSubTitle>
         Sub title
-      </CardSubTitle>
-      <CardContent>
+      </Card.CardSubTitle>
+      <Card.CardContent>
         card content goes here
-      </CardContent>  
+      </Card.CardContent>  
     </Card>  
 `
     );

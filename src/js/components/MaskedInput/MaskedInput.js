@@ -12,7 +12,7 @@ class MaskedInput extends Component {
     type: 'text',
     guide: true,
     showMask: false,
-    placeholderChar: ' ',
+    placeholderChar: '\u2000',
   };
 
   onInput = (event) => {
