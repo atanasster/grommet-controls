@@ -60,7 +60,7 @@ class DateInput extends Component {
 
 let DateInputDoc;
 if (process.env.NODE_ENV !== 'production') {
-  DateInputDoc = require('./doc')(DateInput); // eslint-disable-line global-require
+  DateInputDoc = require('./doc').default(DateInput); // eslint-disable-line global-require
 }
 
 const DateInputWrapper = DateInputDoc || DateInput;

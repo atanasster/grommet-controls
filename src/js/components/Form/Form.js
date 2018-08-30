@@ -138,7 +138,7 @@ Form.defaultProps = {
 
 let FormDoc;
 if (process.env.NODE_ENV !== 'production') {
-  FormDoc = require('./doc')(Form); // eslint-disable-line global-require
+  FormDoc = require('./doc').default(Form); // eslint-disable-line global-require
 }
 
 const FormWrapper = FormDoc || Form;

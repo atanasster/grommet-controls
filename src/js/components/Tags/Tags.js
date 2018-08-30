@@ -150,7 +150,7 @@ Tags.defaultProps = {
 
 let TagsDoc;
 if (process.env.NODE_ENV !== 'production') {
-  TagsDoc = require('./doc')(Tags); // eslint-disable-line global-require
+  TagsDoc = require('./doc').default(Tags); // eslint-disable-line global-require
 }
 
 const TagsWrapper = TagsDoc || Tags;

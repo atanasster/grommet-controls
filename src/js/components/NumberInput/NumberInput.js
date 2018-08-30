@@ -160,7 +160,7 @@ class NumberInput extends Component {
 
 let NumberInputDoc;
 if (process.env.NODE_ENV !== 'production') {
-  NumberInputDoc = require('./doc')(NumberInput); // eslint-disable-line global-require
+  NumberInputDoc = require('./doc').default(NumberInput); // eslint-disable-line global-require
 }
 
 const NumberInputWrapper = NumberInputDoc || NumberInput;

@@ -28,7 +28,7 @@ class ImageStamp extends Component {
 
 let ImageStampDoc;
 if (process.env.NODE_ENV !== 'production') {
-  ImageStampDoc = require('./doc')(ImageStamp); // eslint-disable-line global-require
+  ImageStampDoc = require('./doc').default(ImageStamp); // eslint-disable-line global-require
 }
 
 const ImageStampWrapper = compose(

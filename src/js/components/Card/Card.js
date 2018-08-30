@@ -152,7 +152,7 @@ class Card extends Component {
 
 let CarDoc;
 if (process.env.NODE_ENV !== 'production') {
-  CarDoc = require('./doc')(Card); // eslint-disable-line global-require
+  CarDoc = require('./doc').default(Card); // eslint-disable-line global-require
 }
 
 const CardWrapper = compose(

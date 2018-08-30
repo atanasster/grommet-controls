@@ -88,7 +88,7 @@ class MaskedInput extends Component {
 
 let MaskedInputDoc;
 if (process.env.NODE_ENV !== 'production') {
-  MaskedInputDoc = require('./doc')(MaskedInput); // eslint-disable-line global-require
+  MaskedInputDoc = require('./doc').default(MaskedInput); // eslint-disable-line global-require
 }
 
 const MaskedInputWrapper = MaskedInputDoc || MaskedInput;

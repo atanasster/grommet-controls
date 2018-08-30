@@ -19,7 +19,7 @@ const PagingTable = ({ data, ...rest }) => {
 
 let PagingTableDoc;
 if (process.env.NODE_ENV !== 'production') {
-  PagingTableDoc = require('./doc')(PagingTable); // eslint-disable-line global-require
+  PagingTableDoc = require('./doc').default(PagingTable); // eslint-disable-line global-require
 }
 
 const PagingTableWrapper = PagingTableDoc || PagingTable;
