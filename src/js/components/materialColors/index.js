@@ -1,0 +1,1 @@
+export { materialColors } from './materialColors';

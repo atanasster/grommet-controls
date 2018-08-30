@@ -4,51 +4,6 @@ import { Stack, Box, Heading, Text } from 'grommet';
 import { withTheme } from '../hocs';
 import { StyledCard, StyledCardContent, StyledFlipCard } from './StyledCard';
 
-export const CardActions = ({ children, ...rest }) => (
-  <Box justifySelf='end' align='center' gap='small' pad='small' flex={false} fill='horizontal' direction='row' {...rest}>
-    {children}
-  </Box>
-);
-
-export const CardTitle = ({ children, color, size, textAlign, truncate, level = 2, strong = true, margin = 'none', responsive, ...rest }) => (
-  <Box responsive={responsive} direction='row' align='center' justify='center' gap='small' pad='small' flex={false} {...rest} >
-    {typeof children !== 'string' ? children : (
-      <Heading
-        level={level}
-        margin={margin}
-        color={color}
-        size={size}
-        textAlign={textAlign}
-        truncate={truncate}
-        responsive={responsive}
-      >
-        {strong ? <strong>{children}</strong> : children}
-      </Heading>
-    )}
-  </Box>
-);
-
-export const CardSubTitle = ({ children, color, size = 'medium', margin, textAlign, truncate, weight, strong = true, ...rest }) => (
-  <Box direction='row' gap='small' justify='center' pad='small' flex={false} {...rest} >
-    {typeof children !== 'string' ? children : (
-      <Text
-        size={size}
-        margin={margin}
-        textAlign={textAlign}
-        truncate={truncate}
-        weight={weight}
-      >
-        {strong ? <strong>{children}</strong> : children}
-      </Text>
-    )}
-  </Box>
-);
-
-export const CardContent = ({ children, ...rest }) => (
-  <Box overflow='auto' justifySelf='stretch' fill='horizontal' {...rest} >
-    {children}
-  </Box>
-);
 
 class Card extends Component {
   static defaultProps = {
@@ -149,10 +104,48 @@ class Card extends Component {
     );
   }
 }
-Card.CardActions = CardActions;
-Card.CardTitle = CardTitle;
-Card.CardSubTitle = CardSubTitle;
-Card.CardContent = CardContent;
+Card.CardActions = ({ children, ...rest }) => (
+  <Box justifySelf='end' align='center' gap='small' pad='small' flex={false} fill='horizontal' direction='row' {...rest}>
+    {children}
+  </Box>
+);
+Card.CardTitle = ({ children, color, size, textAlign, truncate, level = 2, strong = true, margin = 'none', responsive, ...rest }) => (
+  <Box responsive={responsive} direction='row' align='center' justify='center' gap='small' pad='small' flex={false} {...rest} >
+    {typeof children !== 'string' ? children : (
+      <Heading
+        level={level}
+        margin={margin}
+        color={color}
+        size={size}
+        textAlign={textAlign}
+        truncate={truncate}
+        responsive={responsive}
+      >
+        {strong ? <strong>{children}</strong> : children}
+      </Heading>
+    )}
+  </Box>
+);
+Card.CardSubTitle = ({ children, color, size = 'medium', margin, textAlign, truncate, weight, strong = true, ...rest }) => (
+  <Box direction='row' gap='small' justify='center' pad='small' flex={false} {...rest} >
+    {typeof children !== 'string' ? children : (
+      <Text
+        size={size}
+        margin={margin}
+        textAlign={textAlign}
+        truncate={truncate}
+        weight={weight}
+      >
+        {strong ? <strong>{children}</strong> : children}
+      </Text>
+    )}
+  </Box>
+);
+Card.CardContent = ({ children, ...rest }) => (
+  <Box overflow='auto' justifySelf='stretch' fill='horizontal' {...rest} >
+    {children}
+  </Box>
+);
 
 let CarDoc;
 if (process.env.NODE_ENV !== 'production') {

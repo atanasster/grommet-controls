@@ -15,7 +15,7 @@ export const navy = '#000080';
 export const fuchsia = '#ff00ff';
 export const purple = '#800080';
 
-export default {
+export const basicColors = {
   white,
   silver,
   gray,

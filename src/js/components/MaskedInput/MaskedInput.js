@@ -1,26 +1,29 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { createTextMaskInputElement } from 'text-mask-core';
+import { createAutoCorrectedDatePipe, emailMask, createNumberMask } from 'text-mask-addons';
 import { DropInput } from '../DropInput';
 import { transformMaskedValue } from './utils';
-
-
-export const placeholderChars = {
-  whitespace: '\u2000',
-  underscore: '_',
-};
-
-
-export const alphabetic = /[A-Z]/i;
-export const digit = /\d/;
+import { createMinMaxInputPipe, maskedNumberValue } from './minMaxNumberPipe';
 
 
 class MaskedInput extends Component {
+  static alphabetic = /[A-Z]/i;
+  static placeholderChars = {
+    whitespace: '\u2000',
+    underscore: '_',
+  };
+  static digit = /\d/;
+  static createAutoCorrectedDatePipe = createAutoCorrectedDatePipe;
+  static emailMask = emailMask;
+  static createNumberMask = createNumberMask;
+  static createMinMaxInputPipe = createMinMaxInputPipe;
+  static maskedNumberValue = maskedNumberValue;
   static defaultProps = {
     type: 'text',
     guide: true,
     showMask: false,
-    placeholderChar: placeholderChars.whitespace,
+    placeholderChar: this.placeholderChars.whitespace,
   }
 
   onInput = (event) => {

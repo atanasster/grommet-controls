@@ -1,0 +1,1 @@
+export { basicColors } from './basicColors';

@@ -42,7 +42,7 @@ export const silver = '#c0c0c0';
 export const white = '#ffffff';
 export const yellow = '#ffff00';
 
-export default {
+export const uiColors = {
   aqua,
   azure,
   beige,

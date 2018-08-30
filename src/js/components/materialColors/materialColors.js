@@ -66,7 +66,7 @@ export const lightIcons = { 'active': 'rgba(255, 255, 255, 1)', 'inactive': 'rgb
 export const white = '#ffffff';
 export const black = '#000000';
 
-export default {
+export const materialColors = {
   amber,
   blue,
   blueGrey,
