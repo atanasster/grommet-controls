@@ -1,0 +1,1 @@
+export { withChartTheme } from './withChartTheme';

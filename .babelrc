@@ -17,6 +17,11 @@
              "preventFullImport": true,
              "skipDefaultConversion": true
           },
+         "grommet/components/hocs": {
+          "transform": "grommet/es6/components/hocs",
+          "preventFullImport": true,
+          "skipDefaultConversion": true
+        },
         "grommet/themes": {
              "transform": "grommet/es6/themes/${member}",
              "preventFullImport": true,
