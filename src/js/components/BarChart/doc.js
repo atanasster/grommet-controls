@@ -1,5 +1,4 @@
 import { describe } from 'react-desc';
-import chartjsDoc from '../withChartTheme/doc';
 
 export default (Element) => {
   const DocumentedElement = describe(Element)
@@ -12,6 +11,5 @@ export default (Element) => {
       import { BarChart } from 'grommet-controls';\n
       <BarChart data={...} options={...} />
     `);
-  chartjsDoc(DocumentedElement);
   return DocumentedElement;
 };
