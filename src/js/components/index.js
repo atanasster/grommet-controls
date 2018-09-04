@@ -23,6 +23,7 @@ export { PagingTable } from './PagingTable';
 export { PasswordInput } from './PasswordInput';
 export { PasswordInputField } from './PasswordInputField';
 export { PieChart } from './PieChart';
+export { PolarChart } from './PolarChart';
 export { RadarChart } from './RadarChart';
 export { ScatterChart } from './ScatterChart';
 export { SelectField } from './SelectField';
