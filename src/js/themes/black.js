@@ -96,6 +96,12 @@ export default deepFreeze({
         radius: '0px',
       },
     },
+    control: {
+      color: {
+        dark: '#ffffff',
+        light: '#333333',
+      },
+    },
   },
   icon: {
     colors,
