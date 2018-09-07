@@ -2,14 +2,14 @@ import React from 'react';
 import { Text } from 'grommet';
 
 export const extractTextProps = ({
-  value, color, size, truncate, textAlign, ...rest
+  value, color, size, truncate, weight, textAlign, ...rest
 }) => (rest);
 
 
 export const collectTextProps = ({
-  value, color, size, truncate, textAlign,
+  value, color, size, truncate, weight, textAlign,
 }) => ({
-  value, color, size, truncate, textAlign,
+  value, color, size, truncate, weight, textAlign,
 });
 
 export default ({ value, ...rest }) => (

@@ -33,18 +33,51 @@ Before opening an issue or pull request, please read the [Contributing](https://
 
     edit .babelrc:
       ...
-      "env": {
-        ...
-        "production": {
-          "plugins": [
-            ["transform-imports", {
-                "grommet-controls": {"transform": "grommet-controls/components/${member}", "preventFullImport": true, "skipDefaultConversion": true },
-                "grommet": {"transform": "grommet/components/${member}", "preventFullImport": true },
-                "grommet-icons": {"transform": "grommet-icons/icons/${member}", "preventFullImport": true }
-             }]
-          ]
-        }
-        ...
+      "plugins": [
+        ["styled-components", { "ssr": true, "displayName": true, "preprocess": false }],
+        ["transform-imports", {
+          "grommet-controls": {
+            "transform": "grommet-controls/es6/components/${member}",
+            "preventFullImport": true,
+            "skipDefaultConversion": true
+          },
+          "grommet-controls/themes": {
+            "transform": "grommet-controls/es6/themes/${member}",
+            "preventFullImport": true
+          },
+          "grommet": {
+            "transform": "grommet/es6/components/${member}",
+            "preventFullImport": true,
+            "skipDefaultConversion": true
+          },
+          "grommet/contexts": {
+            "transform": "grommet/es6/contexts/${member}",
+            "preventFullImport": true,
+            "skipDefaultConversion": true
+          },
+          "grommet/themes": {
+            "transform": "grommet/es6/themes/${member}",
+            "preventFullImport": true,
+            "skipDefaultConversion": true
+          },
+          "grommet/components/hocs": {
+            "transform": "grommet/es6/components/hocs",
+            "preventFullImport": true,
+            "skipDefaultConversion": true
+          },
+          "grommet-icons/contexts": {
+            "transform": "grommet-icons/es6/contexts/${member}",
+            "preventFullImport": true,
+            "skipDefaultConversion": true
+          },
+          "grommet-icons": {
+             "transform": "grommet-icons/es6/icons/${member}",
+             "preventFullImport": false,
+             "skipDefaultConversion": true
+          }
+        }]
+      ],
+      ...
   ```
 
 ### Components
@@ -67,6 +100,17 @@ Before opening an issue or pull request, please read the [Contributing](https://
  * [Spinning](https://grommet-nextjs.herokuapp.com/add-ons/spinning) A spinning process indicator.
  * [Value](https://grommet-nextjs.herokuapp.com/add-ons/value) A single value with a label.
 
+### Charts ([chart.js](http://www.chartjs.org))
+
+ * [BarChart](https://grommet-nextjs.herokuapp.com/add-ons/barchart)
+ * [HorizontalBarChart](https://grommet-nextjs.herokuapp.com/add-ons/horizontalbarchart)
+ * [LineChart](https://grommet-nextjs.herokuapp.com/add-ons/linechart)
+ * [DoughnutChart](https://grommet-nextjs.herokuapp.com/add-ons/doughnutchart)
+ * [PieChart](https://grommet-nextjs.herokuapp.com/add-ons/piechart)
+ * [PolarChart](https://grommet-nextjs.herokuapp.com/add-ons/polarchart)
+ * [RadarChart](https://grommet-nextjs.herokuapp.com/add-ons/radarchart)
+ * [ScatterChart](https://grommet-nextjs.herokuapp.com/add-ons/scatterchart)
+ 
 ### Themes
 
  * [Black](https://grommet-nextjs.herokuapp.com/?theme=black)

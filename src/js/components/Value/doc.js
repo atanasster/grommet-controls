@@ -10,10 +10,9 @@ export default (Element) => {
     );
 
   DocumentedElement.propTypes = {
-    label: PropTypes.string.description('Value label.'),
+    label: PropTypes.node.description('Value label.'),
     color: PropTypes.string.description('The value color.'),
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.element, PropTypes.number])
-      .description('The value.'),
+    value: PropTypes.node.description('The value.'),
     weight: PropTypes.oneOfType([PropTypes.oneOf(['normal', 'bold']), PropTypes.number])
     .description('Font weight.'),
     gap: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge'])
