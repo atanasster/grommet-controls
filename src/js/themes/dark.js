@@ -23,6 +23,6 @@ export default deepFreeze(deepMerge(deepMerge(dark, base), {
     },
   },
   icon: {
-    color: undefined,
+    color: '#275596',
   },
 }));
