@@ -142,8 +142,8 @@ export default deepFreeze(deepMerge(base, {
   },
   anchor: {
     color: {
-      light: '#2196f3',
-      dark: '#ffffff',
+      light: '#0d5b8e',
+      dark: '#cee3eb',
     },
   },
   button: {
