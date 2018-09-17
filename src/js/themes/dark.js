@@ -5,8 +5,8 @@ import base from './base';
 export default deepFreeze(deepMerge(deepMerge(base, dark), {
   anchor: {
     color: {
-      dark: '#fdfff2',
-      light: '#FFCA58',
+      dark: '#FFCA58',
+      light: '#6194EB',
     },
   },
 }));
