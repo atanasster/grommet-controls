@@ -1,7 +1,6 @@
 import React from 'react';
 import { ThemeContext } from 'grommet/contexts';
-import { deepMerge } from 'grommet/utils/object';
-import { colorForName, normalizeColor, getRGBA } from 'grommet/utils/colors';
+import { deepMerge, colorForName, normalizeColor, getRGBA } from 'grommet/utils';
 import { colorFromIndex } from '../../utils/colors';
 
 // eslint-disable-next-line import/prefer-default-export

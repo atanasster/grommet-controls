@@ -1,4 +1,4 @@
-import { filterByFocusable } from 'grommet/utils/index';
+import { filterByFocusable } from 'grommet/utils';
 
 export const focusableChildren = (parent) => {
   let list = [];

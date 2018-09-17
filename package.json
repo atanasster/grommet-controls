@@ -1,6 +1,6 @@
 {
   "name": "grommet-controls",
-  "version": "0.46.4",
+  "version": "0.46.5",
   "main": "index.js",
   "module": "es6/index.js",
   "jsnext:main": "es6/index.js",
@@ -37,11 +37,9 @@
     "pub": "pushd ./ && npm run build && cd dist && npm publish && popd"
   },
   "peerDependencies": {
-    "chart.js": "^2.7.2",
     "grommet": ">= 2.0.0-beta.5",
     "grommet-icons": "^3.0.0",
     "react": ">= 16.4.1",
-    "react-chartjs-2": "^2.7.4",
     "react-dom": ">= 16.4.1",
     "styled-components": ">= 3.2.6"
   },
@@ -66,6 +64,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-1": "^6.24.1",
+    "chart.js": "^2.7.2",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^5.0.1",
@@ -87,6 +86,7 @@
     "jest-styled-components": "^4.10.0",
     "pre-commit": "^1.2.2",
     "react": "^16.4.1",
+    "react-chartjs-2": "^2.7.4",
     "react-dev-utils": "^0.4.2",
     "react-dom": "^16.4.1",
     "react-test-renderer": "^16.1.0",
