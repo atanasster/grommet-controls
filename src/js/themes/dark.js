@@ -1,5 +1,5 @@
 import { dark } from 'grommet/themes';
-import { deepFreeze, deepMerge } from 'grommet/utils/object';
+import { deepFreeze, deepMerge } from 'grommet/utils';
 import base from './base';
 
 export default deepFreeze(deepMerge(deepMerge(base, dark), {
