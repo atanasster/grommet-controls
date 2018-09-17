@@ -7,7 +7,7 @@ import colorsFromObject from './colorsFromObject';
 
 const brandColor = '#000000';
 const accentColors = ['#FF4081', '#4eadeb', '#56cf98', '#8e6ee1'];
-const neutralColors = ['#b23d07', '#ce4709', '#e74f09', '#f7540a'];
+const neutralColors = ['#a4c400', '#00aba9', '#BF5A15', '#8F6C53', '#9A1616'];
 const statusColors = {
   critical: '#d2293f',
   error: '#d2293f',

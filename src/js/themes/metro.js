@@ -5,10 +5,8 @@ import colorsFromObject from './colorsFromObject';
 
 
 const brandColor = '#0072c6';
-const accentColors = ['#fa6800', '#128023', '#0050ef', '#d80073', '#008a00', '#00aff0', '#f0a30a', '#825a2c', '#63362f', '#81003c', '#4b0096'];
-const neutralColors = ['#a4c400', '#00aba9', '#6d8764', '#647687', '#76608a', '#87794e',
-  '#607D8B', '640024', '#1b6eae', '#00356a', '#004050', '#003e00', '#bf5a15', '#9a1616',
-  '#57169a', '#4390df', '#da5a53', '#7ad61d', '#00ccff', '#45fffd', '#78aa1c', '#ffc194', '#f472d0'];
+const accentColors = ['#fa6800', '#128023', '#0050ef', '#d80073'];
+const neutralColors = ['#a4c400', '#00aba9', '#BF5A15', '#8F6C53', '#9A1616'];
 const statusColors = {
   critical: '#ce352c',
   error: '#a20025',
