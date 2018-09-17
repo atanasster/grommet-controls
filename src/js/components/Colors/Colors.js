@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { compose } from 'recompose';
 import { Box, Keyboard } from 'grommet';
-import { colorIsDark } from 'grommet/utils/colors';
-import { parseMetricToNum } from 'grommet/utils';
+import { colorIsDark, parseMetricToNum } from 'grommet/utils';
 import { withTheme } from '../hocs';
 import { StyledColors, StyledColor, StyledColorContainer, StyledRow, StyledRows } from './StyledColors';
 
