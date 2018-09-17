@@ -4,7 +4,7 @@ import { compose } from 'recompose';
 import { Box, Text, Button, Heading, Meter } from 'grommet';
 import { deepMerge } from 'grommet/utils';
 import { Close, StatusGood, StatusWarning, StatusCritical, StatusUnknown, StatusInfo, StatusDisabled } from 'grommet-icons';
-import { withTheme } from '../hocs';
+import { withTheme } from 'grommet/components/hocs';
 import { longDate } from '../../utils/moment';
 
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { compose } from 'recompose';
 import { Stack, Box, Heading, Text } from 'grommet';
-import { withTheme } from '../hocs';
+import { withTheme } from 'grommet/components/hocs';
 import { StyledCard, StyledCardContent, StyledFlipCard } from './StyledCard';
 
 

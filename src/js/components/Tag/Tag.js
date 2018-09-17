@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { compose } from 'recompose';
 import { Text, Keyboard } from 'grommet';
 import { FormClose } from 'grommet-icons';
-import { withFocus, withTheme } from '../hocs';
+import { withFocus, withTheme } from 'grommet/components/hocs';
 import { StyledTag, StyledIcon } from './StyledTag';
 
 class Tag extends Component {

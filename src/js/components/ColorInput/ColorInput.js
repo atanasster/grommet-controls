@@ -3,7 +3,7 @@ import { compose } from 'recompose';
 import styled from 'styled-components';
 import { Box } from 'grommet';
 import { StopFill } from 'grommet-icons';
-import { withTheme } from '../hocs';
+import { withTheme } from 'grommet/components/hocs';
 import { MaskedInput } from '../MaskedInput';
 import { Colors } from '../Colors';
 

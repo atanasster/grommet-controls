@@ -3,7 +3,7 @@ import { findDOMNode } from 'react-dom';
 import { compose } from 'recompose';
 import { Box, Keyboard } from 'grommet';
 import { colorIsDark, parseMetricToNum } from 'grommet/utils';
-import { withTheme } from '../hocs';
+import { withTheme } from 'grommet/components/hocs';
 import { StyledColors, StyledColor, StyledColorContainer, StyledRow, StyledRows } from './StyledColors';
 
 

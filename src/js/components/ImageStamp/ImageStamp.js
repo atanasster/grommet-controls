@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { compose } from 'recompose';
 
-import { withTheme } from '../hocs';
+import { withTheme } from 'grommet/components/hocs';
 
 import { StyledImageStamp } from './StyledImageStamp';
 
