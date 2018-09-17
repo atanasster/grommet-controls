@@ -1,3 +1,4 @@
+export { default as base } from './base';
 export { default as black } from './black';
 export { default as dark } from './dark';
 export { default as grommet } from './grommet';
