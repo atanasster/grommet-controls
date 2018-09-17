@@ -6,7 +6,7 @@ export default deepFreeze(deepMerge(deepMerge(base, dark), {
   anchor: {
     color: {
       dark: '#FFCA58',
-      light: '#6194EB',
+      light: '#275596',
     },
   },
 }));
