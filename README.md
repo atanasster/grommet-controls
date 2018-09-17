@@ -101,6 +101,10 @@ Before opening an issue or pull request, please read the [Contributing](https://
  * [Value](https://grommet-nextjs.herokuapp.com/add-ons/value) A single value with a label.
 
 ### Charts ([chart.js](http://www.chartjs.org))
+```
+    $ npm install chart.js
+    $ npm install react-chartjs-2
+```
 
  * [BarChart](https://grommet-nextjs.herokuapp.com/add-ons/barchart)
  * [HorizontalBarChart](https://grommet-nextjs.herokuapp.com/add-ons/horizontalbarchart)
