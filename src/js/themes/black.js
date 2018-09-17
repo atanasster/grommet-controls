@@ -6,7 +6,7 @@ import colorsFromObject from './colorsFromObject';
 
 
 const brandColor = '#000000';
-const accentColors = ['#FF4081', '#4eadeb', '#56cf98', '#8e6ee1'];
+const accentColors = ['#FF4081', '#4eadeb', '#56cf98', '#765bba'];
 const neutralColors = ['#a4c400', '#006766', '#f3741c', '#8F6C53', '#e82121'];
 const statusColors = {
   critical: '#d2293f',
@@ -109,8 +109,8 @@ export default deepFreeze(deepMerge(base, {
   },
   anchor: {
     color: {
-      light: '#0d5b8e',
-      dark: '#4eadeb',
+      light: '#0a466e',
+      dark: '#beeaff',
     },
   },
   button: {
