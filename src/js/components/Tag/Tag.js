@@ -57,6 +57,7 @@ class Tag extends Component {
       >
         <StyledTag
           direction='row'
+          justify='between'
           align='center'
           a11yTitle={a11yTitle}
           round={tagRound}
