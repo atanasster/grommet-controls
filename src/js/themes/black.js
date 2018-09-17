@@ -1,5 +1,6 @@
-import { deepFreeze } from 'grommet/utils/object';
+import { deepFreeze, deepMerge } from 'grommet/utils/object';
 import { rgba } from 'polished';
+import base from './base';
 import colorsFromArray from './colorsFromArray';
 import colorsFromObject from './colorsFromObject';
 
@@ -39,7 +40,7 @@ colorsFromArray(colors, lightColors, 'light');
 colorsFromArray(colors, neutralColors, 'neutral');
 colorsFromObject(colors, statusColors, 'status');
 
-export default deepFreeze({
+export default deepFreeze(deepMerge(base, {
   global: {
     colors,
     text: {
@@ -155,4 +156,4 @@ export default deepFreeze({
   heading: {
     font: false,
   },
-});
+}));
