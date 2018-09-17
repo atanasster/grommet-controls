@@ -5,6 +5,9 @@ import { StyledPagingTable } from './StyledPagingTable';
 const responsiveColumns = (size, columns) => (
   Array.isArray(columns) ?
     columns.map((column) => {
+      if (size === undefined) {
+        return column;
+      }
       let show = column.show;
       if (column.responsiveShow) {
         const sizes = Array.isArray(column.responsiveShow) ?
@@ -19,6 +22,9 @@ const responsiveColumns = (size, columns) => (
         if (sizes.indexOf(size) !== -1) {
           show = false;
         }
+      }
+      if (show === undefined) {
+        return column;
       }
       return { ...column, show };
     }) : columns
