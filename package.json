@@ -1,6 +1,6 @@
 {
   "name": "grommet-controls",
-  "version": "0.46.5",
+  "version": "0.46.6",
   "main": "index.js",
   "module": "es6/index.js",
   "jsnext:main": "es6/index.js",
@@ -41,7 +41,7 @@
     "grommet-icons": "^3.0.0",
     "react": ">= 16.4.1",
     "react-dom": ">= 16.4.1",
-    "styled-components": ">= 3.2.6"
+    "styled-components": ">= 4.X"
   },
   "dependencies": {
     "markdown-to-jsx": "^6.6.6",
@@ -59,7 +59,7 @@
     "babel-eslint": "^7.2.3",
     "babel-jest": "^23.0.1",
     "babel-loader": "^7.1.1",
-    "babel-plugin-styled-components": "^1.1.7",
+    "babel-plugin-styled-components": "^1.6.4",
     "babel-plugin-transform-imports": "^1.5.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.16.0",
@@ -83,7 +83,7 @@
     "grommet-cli": "5.1.0",
     "grommet": "https://github.com/grommet/grommet/tarball/NEXT-stable",
     "grommet-icons": "^3.0.0",
-    "jest-styled-components": "^4.10.0",
+    "jest-styled-components": "^6.2.0",
     "pre-commit": "^1.2.2",
     "react": "^16.4.1",
     "react-chartjs-2": "^2.7.4",
@@ -92,7 +92,7 @@
     "react-test-renderer": "^16.1.0",
     "require-reload": "^0.2.2",
     "simple-git": "^1.74.1",
-    "styled-components": "^3.2.6",
+    "styled-components": "^4.0.0-beta.5",
     "tarball-extract": "^0.0.6",
     "webpack": "^4.10.2",
     "webpack-cli": "^3.0.7"

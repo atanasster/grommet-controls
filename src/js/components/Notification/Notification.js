@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { compose } from 'recompose';
 import { Box, Text, Button, Heading, Meter } from 'grommet';
-import { deepMerge } from 'grommet/utils/object';
+import { deepMerge } from 'grommet/utils';
 import { Close, StatusGood, StatusWarning, StatusCritical, StatusUnknown, StatusInfo, StatusDisabled } from 'grommet-icons';
 import { withTheme } from '../hocs';
 import { longDate } from '../../utils/moment';
