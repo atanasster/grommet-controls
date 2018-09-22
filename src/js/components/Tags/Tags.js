@@ -77,7 +77,7 @@ class Tags extends Component {
       id,
       name,
       value,
-      margin,
+      onChange,
       focusable,
       onClick,
       direction,
@@ -125,7 +125,7 @@ class Tags extends Component {
                 label={typeof tag !== 'object' ? tag.toString() : undefined}
                 ref={(ref) => { this.tagRefs[index] = ref; }}
                 onClick={onClick ? e => onClick(e, tag) : undefined}
-                onChange={e => this.onCloseClick(e, tag)}
+                onChange={onChange ? e => this.onCloseClick(e, tag) : undefined}
                 icon={icon}
                 {...(typeof tag === 'object' ? { ...tagProps, ...tag } : tagProps)}
               />
