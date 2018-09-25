@@ -121,5 +121,6 @@ Before opening an issue or pull request, please read the [Contributing](https://
  * [Material Light](https://grommet-nextjs.herokuapp.com/?theme=materiallight)
  * [Material Dark](https://grommet-nextjs.herokuapp.com/?theme=materialdark)
  * [Metro](https://grommet-nextjs.herokuapp.com/?theme=metro)
+ * [Light](https://grommet-nextjs.herokuapp.com/?theme=light)
 
 
