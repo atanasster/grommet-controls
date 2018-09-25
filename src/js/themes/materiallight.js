@@ -24,7 +24,6 @@ const activeColor = rgba('#666666', 0.5);
 const colors = {
   active: activeColor,
   border: borderColor,
-  accent: accentColors,
   brand: brandColor,
   neutral: neutralColors,
   black: brandColor,
