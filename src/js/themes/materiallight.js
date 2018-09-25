@@ -25,7 +25,6 @@ const colors = {
   active: activeColor,
   border: borderColor,
   brand: brandColor,
-  neutral: neutralColors,
   black: brandColor,
   focus: focusColor,
 };
