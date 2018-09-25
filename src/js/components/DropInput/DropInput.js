@@ -111,7 +111,7 @@ class DropInput extends Component {
       <Keyboard onDown={this.onKeyDown} onUp={this.onKeyUp}>
         <StyledDropInputContainer >
           <StyledDropInput
-            ref={(ref) => { this.inputControlRef = ref && findDOMNode(ref).getElementsByTagName('input')[0]; }}
+            ref={(ref) => { this.inputControlRef = ref && findDOMNode(ref); }}
             theme={theme}
             disabled={disabled}
             numWidgets={numWidgets}
