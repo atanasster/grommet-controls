@@ -101,7 +101,8 @@ class Form extends Component {
   }
 
   render() {
-    const { children, a11yTitle, tag, ...rest } = this.props;
+    const { children, a11yTitle, onSubmitError, onValidForm,
+      onInvalidForm, onSubmit, tag, ...rest } = this.props;
     let StyledComponent = styledComponents[tag];
     if (!StyledComponent) {
       StyledComponent = StyledForm.withComponent(tag);

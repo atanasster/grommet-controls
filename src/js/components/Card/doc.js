@@ -24,9 +24,6 @@ export default (Element) => {
       <Card.CardTitle>
         Title
       </Card.CardTitle>
-      <Card.CardSubTitle>
-        Sub title
-      </Card.CardSubTitle>
       <Card.CardContent>
         card content goes here
       </Card.CardContent>  
@@ -46,7 +43,8 @@ export default (Element) => {
         be in milliseconds. 'jiggle' and 'pulse' types are intended for
         small elements, like icons.`),
     backContent: PropTypes.node.description(
-      'Content for the back side of the card, if not specified, the card will not be flippable.'),
+      'Content for the back side of the card, if not specified, the card will not be flippable.'
+    ),
     background: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.shape({
@@ -86,7 +84,7 @@ export default (Element) => {
     flipDuration: PropTypes.number.description('Duration in seconds for the flip transition.')
       .defaultValue(0.3),
     gap: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge'])
-      .description('The amount of spacing between child elements (title, subtitle, content).').defaultValue('small'),
+      .description('The amount of spacing between child elements (title, content).').defaultValue('small'),
     margin: PropTypes.oneOfType([
       PropTypes.oneOf(['none', ...PAD_SIZES]),
       PropTypes.shape({
@@ -118,18 +116,6 @@ export default (Element) => {
         padding, and padding on a particular side of the box`).defaultValue('small'),
     round: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'full'])
       .description('How much to round the corners of the card.').defaultValue('xsmall'),
-    size: PropTypes.oneOfType([
-      PropTypes.oneOf(
-        ['xxsmall', 'xsmall', 'small', 'medium', 'large', 'xlarge', 'full']),
-      PropTypes.shape({
-        height: PropTypes.oneOf(
-          ['xxsmall', 'xsmall', 'small', 'medium', 'large', 'xlarge', 'full']),
-        width: PropTypes.oneOf(
-          ['xxsmall', 'xsmall', 'small', 'medium', 'large', 'xlarge', 'full']),
-      }),
-    ]).description(
-      'The size of the Card.'
-    ).defaultValue({ width: 'large', height: 'medium' }),
   };
 
   return DocumentedElement;
@@ -151,7 +137,8 @@ export const docCardActions = (Element) => {
 
   DocumentedElement.propTypes = {
     children: PropTypes.node.description(
-      'Content of card actions - usually Button or Anchor elements.').isRequired,
+      'Content of card actions - usually Button or Anchor elements.'
+    ).isRequired,
   };
 
   return DocumentedElement;
@@ -162,11 +149,11 @@ export const docCardTitle = (Element) => {
     .description('Card title component. All properties of Box and Heading apply.')
     .usage(
       `$ npm install grommet-controls\n
-    import { CardTitle } from 'grommet-controls/components/Card';\n
+    import { Card } from 'grommet-controls';\n
     <Card>
-      <CardTitle>
+      <Card.CardTitle>
         Title
-      </CardTitle>
+      </Card.CardTitle>
     </Card>
 `
     );
@@ -175,31 +162,8 @@ export const docCardTitle = (Element) => {
     children: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.node]).description(
-      'Content of the title - a string or a react node.').isRequired,
-  };
-
-  return DocumentedElement;
-};
-
-export const docCardSubTitle = (Element) => {
-  const DocumentedElement = describe(Element)
-    .description('Card sub title component. All properties of Box and Text apply.')
-    .usage(
-      `$ npm install grommet-controls\n
-    import { CardSubTitle } from 'grommet-controls/components/Card';\n
-    <Card>
-      <CardSubTitle>
-        Sub title
-      </CardSubTitle>
-    </Card>
-`
-    );
-
-  DocumentedElement.propTypes = {
-    children: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.node]).description(
-      'Content of the sub title - a string or a react node.').isRequired,
+      'Content of the title - a string or a react node.'
+    ).isRequired,
   };
 
   return DocumentedElement;
@@ -221,7 +185,8 @@ export const docCardContent = (Element) => {
 
   DocumentedElement.propTypes = {
     children: PropTypes.node.description(
-      'Content of the sub title - a string or a react node.').isRequired,
+      'Content of the card.'
+    ).isRequired,
   };
 
   return DocumentedElement;

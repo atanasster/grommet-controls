@@ -1,27 +1,21 @@
 import React, { Component } from 'react';
-import { compose } from 'recompose';
-import { Stack, Box, Heading, Text } from 'grommet';
-import { withTheme } from 'grommet/components/hocs';
-import { StyledCard, StyledCardContent, StyledFlipCard } from './StyledCard';
-
+import { Box, Heading } from 'grommet';
+import { ThemeContext } from 'grommet/contexts';
+import { StyledCard } from './StyledCard';
 
 class Card extends Component {
   static defaultProps = {
-    title: undefined,
-    subTitle: undefined,
-    size: { width: 'large', height: 'medium' },
-    margin: 'small',
     align: 'center',
     border: 'all',
     elevation: 'small',
-    pad: 'small',
     round: 'xsmall',
     flex: false,
     gap: 'small',
-    titleLevel: 2,
     backContent: undefined,
     flipped: false,
+    fill: 'horizontal',
     flipOnHover: true,
+    background: 'white',
     flipDuration: 0.3,
   };
 
@@ -50,86 +44,54 @@ class Card extends Component {
         });
       }
     }
-  }
+  };
   onHover = (hover) => {
     this.toggleInnerContent(hover);
-  }
+  };
   render() {
-    const { align, gap, children, flipCard,
-      theme, size, backContent, flipDuration, flipOnHover,
-      ...rest } = this.props;
-    const { flipped } = this.state;
-    let sizeWidth;
-    let sizeHeight;
-    if (size) {
-      sizeWidth = (typeof size === 'string') ? size : size.width;
-      sizeHeight = (typeof size === 'string') ? size : size.height;
-    }
+    const {
+      align, gap, children,
+      ...rest
+    } = this.props;
     return (
-      <StyledCard
-        theme={theme}
-        sizeHeight={sizeHeight}
-        sizeWidth={sizeWidth}
-        overflow='hidden'
-        align='stretch'
-        {...rest}
-      >
-        <StyledCardContent
-          fill='horizontal'
-          flex={true}
-          onMouseOver={flipOnHover ? () => this.onHover(true) : undefined}
-          onMouseLeave={flipOnHover ? () => this.onHover(false) : undefined}
-        >
-          <Stack>
-            <StyledFlipCard
-              align={align}
-              gap={gap}
-              show={!flipped}
-              flipDuration={flipDuration}
-            >
-              {children}
-            </StyledFlipCard>
-            {backContent && (
-              <StyledFlipCard
-                style={{ overflow: 'auto' }}
-                show={flipped}
-                flipDuration={flipDuration}
-              >
-                {backContent}
-              </StyledFlipCard>
-            )}
-          </Stack>
-        </StyledCardContent>
-      </StyledCard>
+      <ThemeContext.Consumer>
+        {theme => (
+          <StyledCard
+            theme={theme}
+            align={align}
+            gap={gap}
+            overflow='hidden'
+            {...rest}
+          >
+            {children}
+          </StyledCard>
+        )}
+      </ThemeContext.Consumer>
     );
   }
 }
 
-
-let CarDoc;
+let CardDoc;
 if (process.env.NODE_ENV !== 'production') {
-  CarDoc = require('./doc').default(Card); // eslint-disable-line global-require
+  CardDoc = require('./doc').default(Card); // eslint-disable-line global-require
 }
+const CardWrapper = CardDoc || Card;
 
-const CardWrapper = compose(
-  withTheme,
-)(
-  CarDoc || Card
-);
-
-CardWrapper.CardActions = ({ children, ...rest }) => (
-  <Box justifySelf='end' align='center' gap='small' pad='small' flex={false} fill='horizontal' direction='row' {...rest}>
+CardWrapper.CardActions = ({ children, pad = 'small', ...rest }) => (
+  <Box justifySelf='end' align='center' pad={pad} gap='small' border='top' flex={false} fill='horizontal' direction='row' {...rest}>
     {children}
   </Box>
 );
-CardWrapper.CardTitle = ({ children, color, size, textAlign, truncate, level = 2, strong = true, margin = 'none', responsive, ...rest }) => (
-  <Box responsive={responsive} direction='row' align='center' justify='center' gap='small' pad='small' flex={false} {...rest} >
+
+CardWrapper.CardTitle = ({
+  children, color, textAlign, truncate, level = 4, pad = 'small', strong = false, responsive, ...rest
+}) => (
+  <Box responsive={responsive} direction='row' fill='horizontal' pad={pad} border='bottom' gap='small' flex={false} {...rest} >
     {typeof children !== 'string' ? children : (
       <Heading
         level={level}
-        margin={margin}
+        margin='none'
         color={color}
-        size={size}
         textAlign={textAlign}
         truncate={truncate}
         responsive={responsive}
@@ -139,26 +101,12 @@ CardWrapper.CardTitle = ({ children, color, size, textAlign, truncate, level = 2
     )}
   </Box>
 );
-CardWrapper.CardSubTitle = ({ children, color, size = 'medium', margin, textAlign, truncate, weight, strong = true, ...rest }) => (
-  <Box direction='row' gap='small' justify='center' pad='small' flex={false} {...rest} >
-    {typeof children !== 'string' ? children : (
-      <Text
-        size={size}
-        margin={margin}
-        textAlign={textAlign}
-        truncate={truncate}
-        weight={weight}
-      >
-        {strong ? <strong>{children}</strong> : children}
-      </Text>
-    )}
-  </Box>
-);
-CardWrapper.CardContent = ({ children, ...rest }) => (
-  <Box overflow='auto' justifySelf='stretch' fill='horizontal' {...rest} >
+
+CardWrapper.CardContent = ({ children, pad = 'small', ...rest }) => (
+  <Box pad={pad} fill={true} flex={true} {...rest} >
     {children}
   </Box>
 );
 
+// eslint-disable-next-line import/prefer-default-export
 export { CardWrapper as Card };
-
