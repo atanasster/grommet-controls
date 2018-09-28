@@ -27,6 +27,7 @@ export { PolarChart } from './PolarChart';
 export { RadarChart } from './RadarChart';
 export { ScatterChart } from './ScatterChart';
 export { SelectField } from './SelectField';
+export { Sidebar } from './Sidebar';
 export { Spinning } from './Spinning';
 export { Tag } from './Tag';
 export { Tags } from './Tags';
