@@ -34,6 +34,7 @@ export { Tags } from './Tags';
 export { TextAreaField } from './TextAreaField';
 export { TextInputField } from './TextInputField';
 export { Value } from './Value';
+export { VerticalMenu } from './VerticalMenu';
 export { basicColors } from './basicColors';
 export { materialColors } from './materialColors';
 export { uiColors } from './uiColors';
