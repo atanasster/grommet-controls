@@ -15,8 +15,6 @@ const statusColors = {
   unknown: '#9E9E9E',
   disabled: '#9E9E9E',
 };
-const darkColors = ['#333333', '#555555', '#666666', '#777777', '#999999', '#AAAAAA'];
-const lightColors = ['#F6F6F6', '#EEEEEE', '#DDDDDD', '#CCCCCC', '#BBBBBB', '#AAAAAA'];
 const backgroundColor = '#5e5e5e';
 const textColor = '#ebebeb';
 const shadowColor = 'rgba(200, 200, 200, 0.50)';
@@ -34,8 +32,6 @@ const colors = {
   'text': textColor,
 };
 colorsFromArray(colors, accentColors, 'accent');
-colorsFromArray(colors, darkColors, 'dark');
-colorsFromArray(colors, lightColors, 'light');
 colorsFromArray(colors, neutralColors, 'neutral');
 colorsFromObject(colors, statusColors, 'status');
 
@@ -154,13 +150,16 @@ export default deepFreeze(deepMerge(base, {
   checkBox: {
     border: {
       color: {
-        light: 'rgba(255, 255, 255, 0.5)',
-        dark: 'rgba(0, 0, 0, 0.5)',
+        dark: 'rgba(255, 255, 255, 0.5)',
+        light: 'rgba(0, 0, 0, 0.5)',
       },
       radius: '0px',
     },
     toggle: {
-      color: '#d9d9d9',
+      color: {
+        dark: '#bdbdbd',
+        light: '#7f7f7f',
+      },
     },
   },
   layer: {
@@ -180,8 +179,8 @@ export default deepFreeze(deepMerge(base, {
   radioButton: {
     border: {
       color: {
-        light: 'rgba(255, 255, 255, 0.5)',
-        dark: 'rgba(0, 0, 0, 0.5)',
+        dark: 'rgba(255, 255, 255, 0.5)',
+        light: 'rgba(0, 0, 0, 0.5)',
       },
     },
   },

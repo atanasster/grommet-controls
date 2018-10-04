@@ -15,8 +15,6 @@ const statusColors = {
   unknown: '#eeeeee',
   disabled: '#999999',
 };
-const darkColors = ['#333333', '#444444', '#555555', '#666666', '#777777', '#999999'];
-const lightColors = ['#F6F6F6', '#EEEEEE', '#DDDDDD', '#CCCCCC', '#BBBBBB', '#AAAAAA'];
 
 const shadowColor = 'rgba(0, 86, 150, 0.50)';
 const textColor = '#333333';
@@ -27,8 +25,6 @@ const colors = {
 };
 
 colorsFromArray(colors, accentColors, 'accent');
-colorsFromArray(colors, darkColors, 'dark');
-colorsFromArray(colors, lightColors, 'light');
 colorsFromArray(colors, neutralColors, 'neutral');
 colorsFromObject(colors, statusColors, 'status');
 
@@ -153,7 +149,10 @@ export default deepFreeze(deepMerge(base, {
       color: brandColor,
     },
     toggle: {
-      color: '#9E9E9E',
+      color: {
+        dark: '#bdbdbd',
+        light: brandColor,
+      },
       radius: '0px',
     },
   },

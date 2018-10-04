@@ -29,6 +29,9 @@ export default (Element) => {
     onSelect: PropTypes.func.description(
       'Function that will be called when the user selects a menu item.'
     ),
+    search: PropTypes.string.description(
+      'If specified, will filter the items by the search terms.'
+    ),
   };
 
   return DocumentedElement;

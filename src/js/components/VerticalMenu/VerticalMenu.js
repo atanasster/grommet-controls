@@ -5,7 +5,7 @@ import { FormDown, FormNext } from 'grommet-icons';
 const isActive = (active, item) => item.id === active.id || item.label === active.label;
 
 const hasActiveChidlren = (active, item) => (
-  isActive(active, item) || (item.items && item.items.find(t => isActive(active, t)))
+  isActive(active, item) || (item.items && item.items.find(t => hasActiveChidlren(active, t)))
 );
 const getExpandedItems = (children, active) =>
   children.reduce((expandedItems, item) => {
@@ -62,22 +62,45 @@ const getChildrenById = (children, id) => {
   return items;
 };
 
+const filterItems = (items, search) => {
+  if (search && search.length) {
+    return items.filter((item) => {
+      const { items: children, label } = item;
+      if (label.toLowerCase().indexOf(search.toLowerCase()) >= 0) {
+        return true;
+      }
+      if (children) {
+        const childItems = filterItems(children, search);
+        // eslint-disable-next-line no-param-reassign
+        item.items = childItems;
+        if (childItems.length) {
+          return true;
+        }
+      }
+      return false;
+    });
+  }
+  return items;
+};
+
 class VerticalMenu extends Component {
   state = { expandedItems: [] };
   static getDerivedStateFromProps(nextProps, prevState = {}) {
-    const { items, expandAll, activeItem } = nextProps;
-    const { originalExpandAll, items: stateItems = [] } = prevState;
+    const { items, expandAll, activeItem, search } = nextProps;
+    const { originalExpandAll, search: stateSearch, items: stateItems = [] } = prevState;
 
     if (
       items.toString() !== stateItems.toString() ||
-      expandAll !== originalExpandAll
+      expandAll !== originalExpandAll ||
+      search !== stateSearch
     ) {
-      const collapsibleItems = getCollapsibleItems(items);
+      const filteredItems = filterItems(items, search);
+      const collapsibleItems = getCollapsibleItems(filteredItems);
       let expandedItems;
-      if (typeof expandAll !== 'undefined') {
-        expandedItems = expandAll ? collapsibleItems : [];
+      if (expandAll || (search && search.length)) {
+        expandedItems = collapsibleItems;
       } else {
-        expandedItems = getExpandedItems(items, activeItem);
+        expandedItems = getExpandedItems(filteredItems, activeItem);
       }
 
       const allExpanded =
@@ -87,6 +110,8 @@ class VerticalMenu extends Component {
       return {
         expandedItems,
         items,
+        filteredItems,
+        search,
         collapsibleItems,
         allExpanded,
         expandAll,
@@ -97,14 +122,13 @@ class VerticalMenu extends Component {
     return null;
   }
   onMenuChange = (id, expanded) => {
-    const { items } = this.props;
-    const { expandedItems } = this.state;
+    const { expandedItems, filteredItems } = this.state;
 
     let newExpandedItems = [...expandedItems];
     if (expanded) {
       const toBeCollapsed = [
         id,
-        ...getFlatChildrenIds(getChildrenById(items, id)),
+        ...getFlatChildrenIds(getChildrenById(filteredItems, id)),
       ];
       newExpandedItems = newExpandedItems.filter(
         item => toBeCollapsed.indexOf(item) < 0
@@ -195,10 +219,10 @@ class VerticalMenu extends Component {
     );
   };
   render() {
-    const { items } = this.props;
+    const { filteredItems } = this.state;
     return (
       <React.Fragment>
-        {items && items.map(item => this.renderItem(item, 1))}
+        {filteredItems && filteredItems.map(item => this.renderItem(item, 1))}
       </React.Fragment>
     );
   }
