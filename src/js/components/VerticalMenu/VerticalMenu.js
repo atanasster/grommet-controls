@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Box, Keyboard, Text, Button } from 'grommet';
 import { FormDown, FormNext } from 'grommet-icons';
 
+const deepCopy = obj => (JSON.parse(JSON.stringify(obj)));
+
 const isActive = (active, item) => item.id === active.id || item.label === active.label;
 
 const hasActiveChidlren = (active, item) => (
@@ -94,7 +96,7 @@ class VerticalMenu extends Component {
       expandAll !== originalExpandAll ||
       search !== stateSearch
     ) {
-      const filteredItems = filterItems(items, search);
+      const filteredItems = filterItems(deepCopy(items), search);
       const collapsibleItems = getCollapsibleItems(filteredItems);
       let expandedItems;
       if (expandAll || (search && search.length)) {
