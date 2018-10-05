@@ -66,7 +66,7 @@ class MaskedInput extends Component {
     return (
       <DropInput
         ref={(ref) => {
-          this.inputControlRef = ref && findDOMNode(ref);
+          this.inputControlRef = ref && findDOMNode(ref).getElementsByTagName('input')[0];
         }}
         value={this.maskedValue(value)}
         defaultValue={this.maskedValue(defaultValue)}
