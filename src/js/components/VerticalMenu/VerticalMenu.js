@@ -12,7 +12,7 @@ const getExpandedItems = (children, active) =>
     const {
       items, expanded, id, label,
     } = item;
-    if (expanded || hasActiveChidlren(active, item)) {
+    if (expanded || (active && hasActiveChidlren(active, item))) {
       expandedItems.push(id || label);
     }
     let childrenExpandedItems = [];
