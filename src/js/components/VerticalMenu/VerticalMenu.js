@@ -144,14 +144,13 @@ class VerticalMenu extends Component {
   };
   renderItem = (item, level = 1) => {
     const { activeItem, onSelect, buttonClass } = this.props;
-    const ButtonClass = buttonClass || Button;
     const { expandedItems } = this.state;
     const {
       items, id, label, widget, icon, ...rest
     } = item;
     const itemId = id || label;
     const isExpanded = expandedItems.includes(itemId);
-
+    const ButtonClass = items ? Button : buttonClass || Button;
     const itemKey = `item_${itemId}_${level}`;
 
     let background;
