@@ -5,10 +5,10 @@ export default (Element) => {
     .description('Collapsible side bar component.')
     .usage(
       `$ npm install grommet-controls\n
-    import { SideBar } from 'grommet-controls';\n
-    <SideBar title='My title'>\n
+    import { Sidebar } from 'grommet-controls';\n
+    <Sidebar title='My title'>\n
         ...
-    </SideBar>
+    </Sidebar>
 `
     );
 
