@@ -2,7 +2,7 @@ import { describe, PropTypes } from 'react-desc';
 
 export default (Element) => {
   const DocumentedElement = describe(Element)
-    .description('A tag control with a label and icon.')
+    .description('Hierarchical collapsible menu.')
     .usage(
       `$ npm install grommet-controls\n
     import { VerticalMenu } from 'grommet-controls';\n
