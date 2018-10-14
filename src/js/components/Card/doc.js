@@ -42,9 +42,6 @@ export default (Element) => {
       .description(`Animation effect(s) to use. 'duration' and 'delay' should
         be in milliseconds. 'jiggle' and 'pulse' types are intended for
         small elements, like icons.`),
-    backContent: PropTypes.node.description(
-      'Content for the back side of the card, if not specified, the card will not be flippable.'
-    ),
     background: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.shape({
@@ -76,13 +73,6 @@ export default (Element) => {
       .description(`Elevated height above the underlying context, indicated
         via a drop shadow.`)
       .defaultValue('small'),
-    flipped: PropTypes.bool.description(
-      'Whether the card should be flipped or not (backContent visible).'
-    ).defaultValue(false),
-    flipOnHover: PropTypes.bool.description('Whether to automatically flip the card content on hover.')
-      .defaultValue(true),
-    flipDuration: PropTypes.number.description('Duration in seconds for the flip transition.')
-      .defaultValue(0.3),
     gap: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge'])
       .description('The amount of spacing between child elements (title, content).').defaultValue('small'),
     margin: PropTypes.oneOfType([
@@ -99,7 +89,6 @@ export default (Element) => {
       .description(`The amount of margin around the card. An object can
         be specified to distinguish horizontal margin, vertical margin, and
         margin on a particular side of the card.`).defaultValue('small'),
-    onFlip: PropTypes.func.description('Callback for when the card is flipped.'),
     pad: PropTypes.oneOfType([
       PropTypes.oneOf(['none', ...PAD_SIZES]),
       PropTypes.shape({
