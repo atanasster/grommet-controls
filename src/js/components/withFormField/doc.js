@@ -1,8 +1,8 @@
 import { describe, PropTypes } from 'react-desc';
 
-export default (Element, Name) => {
+export default (Element, Name, Description) => {
   const DocumentedElement = describe(Element)
-    .description('A CheckBox field with form validation.')
+    .description(Description)
     .usage(
       `$ npm install grommet-controls\n
     import { Form, ${Name} } from 'grommet-controls';\n
@@ -20,7 +20,7 @@ export default (Element, Name) => {
       'String label to be used for the field, will also be used in validation errors.'
     ).defaultValue(false),
     controlLabel: PropTypes.node.description(
-      'To be used if the label is not a string, but a richer react element.'
+      'Can be used if the underlying control has a label property (ie CheckBox).'
     ).defaultValue(false),
     inField: PropTypes.bool.description(
       'Set to false if the field should not be placed inside a FormField.'
