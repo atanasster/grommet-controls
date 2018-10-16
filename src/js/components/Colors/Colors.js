@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { compose } from 'recompose';
 import { Box, Keyboard } from 'grommet';
-import { colorIsDark, parseMetricToNum } from 'grommet/utils';
+import { normalizeColor, parseMetricToNum } from 'grommet/utils';
 import { withTheme } from 'grommet/components/hocs';
 import { StyledColors, StyledColor, StyledColorContainer, StyledRow, StyledRows } from './StyledColors';
 
@@ -133,8 +133,7 @@ class Colors extends Component {
           const isActive = activeRow === rowIndex && activeColor === colorIndex;
           const colorStyle = {
             backgroundColor: color.color,
-            color: colorIsDark(color.color) ?
-              theme.global.text.color.dark : theme.global.text.color.light,
+            color: normalizeColor('text', theme),
             left: `${cellSize * colorIndex}px`,
           };
           return (

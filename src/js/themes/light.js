@@ -1,11 +1,14 @@
 import { deepFreeze, deepMerge } from 'grommet/utils';
 import base from './base';
 
+const borderColor = {
+  dark: 'rgba(255, 255, 255, 0.10)',
+  light: 'rgba(0, 0, 0, 0.10)',
+};
 
 const colors = {
   'brand': '#ffffff',
-  'border-light': 'rgba(0, 0, 0, 0.10)',
-  'border-dark': 'rgba(255, 255, 255, 0.10)',
+  borderColor,
   'focus': '#3679d2',
   'accent-1': '#367bd5',
   'accent-2': '#5ec660',
@@ -16,6 +19,10 @@ const colors = {
   'neutral-3': '#607D8B',
   'neutral-4': '#9cb6d7',
   'neutral-5': '#FF9800',
+  control: {
+    dark: '#ffffff',
+    light: '#333333',
+  },
 };
 
 const baseSpacing = 16;
@@ -23,10 +30,31 @@ const baseSpacing = 16;
 export default deepFreeze(deepMerge(base, {
   global: {
     breakpoints: {
-      narrow: 699,
-      medium: 768,
-      large: 992,
-      xlarge: 1200,
+      small: undefined,
+      medium: undefined,
+      large: undefined,
+      narrow: {
+        value: 699,
+        size: {
+          none: '0',
+          hair: '1px', // for Chart
+          xxsmall: '2px',
+          xsmall: `${baseSpacing / 8}px`, // 3
+          small: `${baseSpacing / 4}px`, // 6
+          medium: `${baseSpacing / 2}px`, // 12
+          large: `${baseSpacing}px`, // 24
+          xlarge: `${baseSpacing * 2}px`, // 48
+        },
+      },
+      screenMedium: {
+        value: 768,
+      },
+      screenLarge: {
+        value: 992,
+      },
+      screenXlarge: {
+        value: 1200,
+      },
     },
     colors,
     font: {
@@ -42,16 +70,6 @@ export default deepFreeze(deepMerge(base, {
       medium: `${baseSpacing}px`, // 24
       large: `${baseSpacing * 2}px`, // 48
       xlarge: `${baseSpacing * 4}px`, // 96
-      narrow: {
-        none: '0',
-        hair: '1px', // for Chart
-        xxsmall: '2px',
-        xsmall: `${baseSpacing / 8}px`, // 3
-        small: `${baseSpacing / 4}px`, // 6
-        medium: `${baseSpacing / 2}px`, // 12
-        large: `${baseSpacing}px`, // 24
-        xlarge: `${baseSpacing * 2}px`, // 48
-      },
     },
     hover: {
       background: {
@@ -67,12 +85,6 @@ export default deepFreeze(deepMerge(base, {
       color: {
         dark: 'white',
         light: 'black',
-      },
-    },
-    control: {
-      color: {
-        dark: '#ffffff',
-        light: '#333333',
       },
     },
   },
@@ -121,15 +133,15 @@ export default deepFreeze(deepMerge(base, {
         dark: 'rgba(255, 255, 255, 0.5)',
         light: 'rgba(0, 0, 0, 0.15)',
       },
-      radius: '4px',
       width: '2px',
     },
     check: {
-      color: {
-        dark: '#ffffff',
-        light: '#333333',
-      },
-      width: '4px',
+      radius: '4px',
+      thickness: '4px',
+    },
+    color: {
+      dark: '#ffffff',
+      light: '#333333',
     },
     icons: {
       // checked: undefined,

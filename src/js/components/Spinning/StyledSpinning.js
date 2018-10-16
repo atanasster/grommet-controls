@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { colorForName } from 'grommet/utils';
+import { normalizeColor } from 'grommet/utils';
 
 
 const animationFadeIn = keyframes`
@@ -97,15 +97,15 @@ const animationInnerCircle = keyframes`
 `;
 
 export const ThreeBounceSpinner = styled.div`
-  ${props => colorForName(props.color, props.theme)}
+  ${props => normalizeColor(props.color, props.theme)}
   & >div {
-    background-color: ${props => colorForName(props.color, props.theme)};
+    background-color: ${props => normalizeColor(props.color, props.theme)};
   }
   height: ${props => props.theme.global.edgeSize[props.size]};
   & >div {
     width: ${props => props.theme.global.edgeSize[props.size]};
     height: ${props => props.theme.global.edgeSize[props.size]};
-    background-color: ${props => colorForName(props.color, props.theme)};
+    background-color: ${props => normalizeColor(props.color, props.theme)};
     border-radius: 100%;
     display: inline-block;
     animation: ${animationBounceDelay} 1.4s infinite ease-in-out;
@@ -141,7 +141,7 @@ export const CircleSpinner = styled.div`
     margin: 0 auto;
     width: 20%;
     height: 20%;
-    background-color: ${props => colorForName(props.color, props.theme)};
+    background-color: ${props => normalizeColor(props.color, props.theme)};
     border-radius: 100%;
     animation: ${animationBounceDelay} 1.2s infinite ease-in-out;
     /* Prevent first frame from flickering when animation starts */
@@ -180,7 +180,7 @@ export const CubeGridSpinner = styled.div`
   & > div {
     width: 33%;
     height: 33%;
-    background-color: ${props => colorForName(props.color, props.theme)};
+    background-color: ${props => normalizeColor(props.color, props.theme)};
     float: left;
     animation: ${animationScaleDelay} 1.3s infinite ease-in-out;
   }
@@ -209,7 +209,7 @@ export const WaveSpinner = styled.div`
   height: 27px;
 
   & > div {
-    background-color: ${props => colorForName(props.color, props.theme)};
+    background-color: ${props => normalizeColor(props.color, props.theme)};
     height: 100%;
     width: 6px;
     display: inline-block;
@@ -259,7 +259,7 @@ export const FoldingCubeSpinner = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: ${props => colorForName(props.color, props.theme)};
+    background-color: ${props => normalizeColor(props.color, props.theme)};
     animation: ${animationFoldCubeAngle} 2.4s infinite linear both;
     transform-origin: 100% 100%;
   }
@@ -292,7 +292,7 @@ export const DoubleBounceSpinner = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: ${props => colorForName(props.color, props.theme)};
+    background-color: ${props => normalizeColor(props.color, props.theme)};
     opacity: 0.6;
     position: absolute;
     top: 0;
@@ -313,7 +313,7 @@ export const WanderingCubesSpinner = styled.div`
   position: relative;
 
   & > div {
-    background-color: ${props => colorForName(props.color, props.theme)};
+    background-color: ${props => normalizeColor(props.color, props.theme)};
     width: 10px;
     height: 10px;
     position: absolute;
@@ -342,7 +342,7 @@ export const ChasingDotsSpinner = styled.div`
     display: inline-block;
     position: absolute;
     top: 0;
-    background-color: ${props => colorForName(props.color, props.theme)};
+    background-color: ${props => normalizeColor(props.color, props.theme)};
     border-radius: 100%;
     animation: ${animationBounce} 2.0s infinite ease-in-out;
   }
@@ -359,7 +359,7 @@ export const ChasingDotsSpinner = styled.div`
 export const RotatingPlaneSpinner = styled.div`
   width: ${props => props.theme.global.edgeSize[props.size]};
   height: ${props => props.theme.global.edgeSize[props.size]};
-  background-color: ${props => colorForName(props.color, props.theme)};
+  background-color: ${props => normalizeColor(props.color, props.theme)};
 
   animation: ${animationRotatePlane} 1.2s infinite ease-in-out;
 `;
@@ -367,7 +367,7 @@ export const RotatingPlaneSpinner = styled.div`
 export const PulseSpinner = styled.div`
   width: ${props => props.theme.global.edgeSize[props.size]};
   height: ${props => props.theme.global.edgeSize[props.size]};
-  background-color: ${props => colorForName(props.color, props.theme)};
+  background-color: ${props => normalizeColor(props.color, props.theme)};
   border-radius: 100%;
   animation: ${animationScaleOut} 1.0s infinite ease-in-out;
 `;
@@ -376,7 +376,7 @@ export const WordPressSpinner = styled.div`
 & > div {
   width:${props => props.theme.global.edgeSize[props.size]};
   height: ${props => props.theme.global.edgeSize[props.size]};
-  background-color: ${props => colorForName(props.color, props.theme)};
+  background-color: ${props => normalizeColor(props.color, props.theme)};
   display: inline-block;
   border-radius: ${props => props.theme.global.edgeSize[props.size]};
   position: relative;

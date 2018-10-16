@@ -16,20 +16,31 @@ const statusColors = {
   disabled: '#9E9E9E',
 };
 const backgroundColor = '#5e5e5e';
-const textColor = '#ebebeb';
+const textColor = {
+  dark: '#ebebeb',
+  light: '#333333',
+};
 const shadowColor = 'rgba(200, 200, 200, 0.50)';
 const activeColor = rgba('#9C9C9C', 0.5);
 const focusColor = accentColors[4];
+
+const borderColor = {
+  dark: 'rgba(255, 255, 255, 0.33)',
+  light: 'rgba(0, 0, 0, 0.33)',
+};
 
 const colors = {
   'focus': focusColor,
   'active': activeColor,
   'background': '#444444',
-  'border-dark': 'rgba(255, 255, 255, 0.33)',
-  'border-light': 'rgba(0, 0, 0, 0.33)',
+  borderColor,
   'brand': brandColor,
   'placeholder': '#AAAAAA',
   'text': textColor,
+  control: {
+    dark: '#ffffff',
+    light: '#333333',
+  },
 };
 colorsFromArray(colors, accentColors, 'accent');
 colorsFromArray(colors, neutralColors, 'neutral');
@@ -38,21 +49,11 @@ colorsFromObject(colors, statusColors, 'status');
 export default deepFreeze(deepMerge(base, {
   global: {
     colors,
-    text: {
-      color: {
-        dark: textColor,
-        light: '#333333',
-      },
-    },
     drop: {
       background: '#222222',
       border: {
         width: '0px',
         radius: '0px',
-      },
-      shadow: {
-        light: '0px 3px 8px rgba(100, 100, 100, 0.50)',
-        dark: '0px 3px 8px rgba(255, 255, 255, 0.40)',
       },
     },
     elevation: {
@@ -126,12 +127,6 @@ export default deepFreeze(deepMerge(base, {
         radius: '0px',
       },
     },
-    control: {
-      color: {
-        dark: '#ffffff',
-        light: '#333333',
-      },
-    },
   },
   icon: {
     colors,
@@ -153,6 +148,8 @@ export default deepFreeze(deepMerge(base, {
         dark: 'rgba(255, 255, 255, 0.5)',
         light: 'rgba(0, 0, 0, 0.5)',
       },
+    },
+    check: {
       radius: '0px',
     },
     toggle: {
