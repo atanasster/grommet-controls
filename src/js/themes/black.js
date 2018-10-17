@@ -37,7 +37,7 @@ const colors = {
   'placeholder': '#AAAAAA',
   'text': textColor,
   'focus': focusColor,
-  control: {
+  'control': {
     dark: '#ffffff',
     light: '#333333',
   },

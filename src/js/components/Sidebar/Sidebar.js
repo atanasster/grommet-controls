@@ -19,7 +19,7 @@ class Sidebar extends React.Component {
     );
     return (
       <ResponsiveContext.Consumer>
-        {size => ((collapsible && size === 'narrow' && collapsed === undefined) || collapsed === true ? (
+        {size => ((collapsible && size === 'small' && collapsed === undefined) || collapsed === true ? (
           <Box align='start'>
             <BtnToggle view='collapsed' />
           </Box>

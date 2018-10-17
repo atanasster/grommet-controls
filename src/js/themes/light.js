@@ -19,7 +19,7 @@ const colors = {
   'neutral-3': '#607D8B',
   'neutral-4': '#9cb6d7',
   'neutral-5': '#FF9800',
-  control: {
+  'control': {
     dark: '#ffffff',
     light: '#333333',
   },
@@ -30,11 +30,7 @@ const baseSpacing = 16;
 export default deepFreeze(deepMerge(base, {
   global: {
     breakpoints: {
-      small: undefined,
-      medium: undefined,
-      large: undefined,
-      narrow: {
-        value: 699,
+      small: {
         size: {
           none: '0',
           hair: '1px', // for Chart
@@ -45,15 +41,6 @@ export default deepFreeze(deepMerge(base, {
           large: `${baseSpacing}px`, // 24
           xlarge: `${baseSpacing * 2}px`, // 48
         },
-      },
-      screenMedium: {
-        value: 768,
-      },
-      screenLarge: {
-        value: 992,
-      },
-      screenXlarge: {
-        value: 1200,
       },
     },
     colors,

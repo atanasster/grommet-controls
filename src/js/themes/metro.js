@@ -25,7 +25,7 @@ const textColor = {
 const colors = {
   'brand': brandColor,
   'text': textColor,
-  control: {
+  'control': {
     dark: '#ffffff',
     light: '#333333',
   },

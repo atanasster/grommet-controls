@@ -1,6 +1,6 @@
 {
   "name": "grommet-controls",
-  "version": "0.48.10",
+  "version": "0.90.0",
   "main": "index.js",
   "module": "es6/index.js",
   "jsnext:main": "es6/index.js",
