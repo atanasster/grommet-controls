@@ -25,6 +25,10 @@ const colors = {
   brand: brandColor,
   black: brandColor,
   focus: focusColor,
+  control: {
+    dark: '#ffffff',
+    light: '#333333',
+  },
 };
 
 colorsFromArray(colors, accentColors, 'accent');
@@ -39,10 +43,6 @@ export default deepFreeze(deepMerge(base, {
       border: {
         width: '0px',
         radius: '0px',
-      },
-      shadow: {
-        light: '0px 3px 8px rgba(100, 100, 100, 0.50)',
-        dark: '0px 3px 8px rgba(255, 255, 255, 0.40)',
       },
     },
     hover: {
@@ -121,12 +121,6 @@ export default deepFreeze(deepMerge(base, {
         radius: '0px',
       },
     },
-    control: {
-      color: {
-        dark: '#ffffff',
-        light: '#333333',
-      },
-    },
   },
   button: {
     border: {
@@ -139,11 +133,11 @@ export default deepFreeze(deepMerge(base, {
         light: 'rgba(0, 188, 212, 0.5)',
         dark: 'rgba(255, 255, 255, 0.5)',
       },
-      radius: '0px',
     },
     check: {
-      color: brandColor,
+      radius: '0px',
     },
+    color: brandColor,
     toggle: {
       color: {
         dark: '#bdbdbd',

@@ -9,7 +9,8 @@ const defaultButton = ({
 }) => (
   <Button
     icon={<Icon />}
-    onClick={disabled ? undefined : onClick}
+    disabled={disabled}
+    onClick={onClick}
     label={label}
     plain={true}
     {...other}

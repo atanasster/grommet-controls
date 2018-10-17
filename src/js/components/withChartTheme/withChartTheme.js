@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeContext } from 'grommet/contexts';
-import { deepMerge, colorForName, normalizeColor, getRGBA } from 'grommet/utils';
+import { deepMerge, normalizeColor, getRGBA } from 'grommet/utils';
 import { colorFromIndex } from '../../utils/colors';
 
 // eslint-disable-next-line import/prefer-default-export
@@ -9,13 +9,13 @@ export const withChartTheme = (WrappedComponent,
   ({ options, data }) => (
     <ThemeContext.Consumer>
       {(theme) => {
-        const textColor = normalizeColor(theme.global.text.color, theme);
+        const textColor = normalizeColor('text', theme);
         const axisColors = {
           ticks: {
             fontColor: textColor,
           },
           gridLines: {
-            color: theme.dark ? theme.global.colors['border-dark'] : theme.global.colors['border-light'],
+            color: normalizeColor('border', theme),
           },
           scaleLabel: {
             fontColor: textColor,
@@ -52,13 +52,13 @@ export const withChartTheme = (WrappedComponent,
               const themeColors = (index, itemOpacity) => {
                 const lineColor = borderColor || color || colorFromIndex(index);
                 const lineColors = Array.isArray(lineColor) ?
-                  lineColor.map(c => colorForName(c, theme)) : colorForName(lineColor, theme);
+                  lineColor.map(c => normalizeColor(c, theme)) : normalizeColor(lineColor, theme);
                 const fillColor = backgroundColor || lineColor;
                 const opacity = itemOpacity || dataset.opacity
                   || (options && options.opacity) || classOpacity;
                 const fillColors = Array.isArray(fillColor) ?
-                  fillColor.map(c => getRGBA(colorForName(c, theme), opacity))
-                  : getRGBA(colorForName(fillColor, theme), opacity);
+                  fillColor.map(c => getRGBA(normalizeColor(c, theme), opacity))
+                  : getRGBA(normalizeColor(fillColor, theme), opacity);
                 return {
                   backgroundColor: fillColors,
                   borderColor: lineColors,

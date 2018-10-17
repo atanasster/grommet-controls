@@ -37,11 +37,11 @@
     "pub": "pushd ./ && npm run build && cd dist && npm publish && popd"
   },
   "peerDependencies": {
-    "grommet": ">= 2.0.0-beta.5",
-    "grommet-icons": "^3.0.0",
+    "grommet": ">= 2.0.0-beta.7",
+    "grommet-icons": ">= 3.1.0",
     "react": ">= 16.4.1",
     "react-dom": ">= 16.4.1",
-    "styled-components": ">= 4.X"
+    "styled-components": ">= 4.0.0"
   },
   "dependencies": {
     "markdown-to-jsx": "^6.6.6",
@@ -81,7 +81,7 @@
     "eslint-plugin-react": "^7.1.0",
     "fs-extra": "^4.0.0",
     "grommet-cli": "5.1.0",
-    "grommet": "https://github.com/grommet/grommet/tarball/NEXT-stable",
+    "grommet": "^2.0.0-beta.7",
     "grommet-icons": "^3.0.0",
     "jest-styled-components": "^6.2.0",
     "pre-commit": "^1.2.2",
@@ -92,7 +92,7 @@
     "react-test-renderer": "^16.1.0",
     "require-reload": "^0.2.2",
     "simple-git": "^1.74.1",
-    "styled-components": "^4.0.0-beta.6",
+    "styled-components": "^4.0.0",
     "tarball-extract": "^0.0.6",
     "webpack": "^4.10.2",
     "webpack-cli": "^3.0.7"

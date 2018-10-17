@@ -69,7 +69,7 @@ class Notification extends Component {
         <Box pad={pad}>
           <Button
             a11yTitle={a11yTitle}
-            onClick={onClose || (() => {})}
+            onClick={onClose}
           >
             {closeIcon}
           </Button>
