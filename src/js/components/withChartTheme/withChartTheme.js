@@ -1,7 +1,9 @@
 import React from 'react';
 import { ThemeContext } from 'grommet/contexts';
 import { deepMerge, normalizeColor, getRGBA } from 'grommet/utils';
-import { colorFromIndex } from '../../utils/colors';
+import { colorFromIndex, colorForName } from '../../utils/colors';
+
+const normalizedColor = (color, theme) => (colorForName(normalizeColor(color, theme), theme));
 
 // eslint-disable-next-line import/prefer-default-export
 export const withChartTheme = (WrappedComponent,
@@ -9,13 +11,13 @@ export const withChartTheme = (WrappedComponent,
   ({ options, data }) => (
     <ThemeContext.Consumer>
       {(theme) => {
-        const textColor = normalizeColor('text', theme);
+        const textColor = normalizedColor('text', theme);
         const axisColors = {
           ticks: {
             fontColor: textColor,
           },
           gridLines: {
-            color: normalizeColor('border', theme),
+            color: normalizedColor('border', theme),
           },
           scaleLabel: {
             fontColor: textColor,
@@ -52,13 +54,13 @@ export const withChartTheme = (WrappedComponent,
               const themeColors = (index, itemOpacity) => {
                 const lineColor = borderColor || color || colorFromIndex(index);
                 const lineColors = Array.isArray(lineColor) ?
-                  lineColor.map(c => normalizeColor(c, theme)) : normalizeColor(lineColor, theme);
+                  lineColor.map(c => normalizedColor(c, theme)) : normalizedColor(lineColor, theme);
                 const fillColor = backgroundColor || lineColor;
                 const opacity = itemOpacity || dataset.opacity
                   || (options && options.opacity) || classOpacity;
                 const fillColors = Array.isArray(fillColor) ?
-                  fillColor.map(c => getRGBA(normalizeColor(c, theme), opacity))
-                  : getRGBA(normalizeColor(fillColor, theme), opacity);
+                  fillColor.map(c => getRGBA(normalizedColor(c, theme), opacity))
+                  : getRGBA(normalizedColor(fillColor, theme), opacity);
                 return {
                   backgroundColor: fillColors,
                   borderColor: lineColors,
