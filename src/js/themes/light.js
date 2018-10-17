@@ -1,14 +1,14 @@
 import { deepFreeze, deepMerge } from 'grommet/utils';
 import base from './base';
 
-const borderColor = {
+const border = {
   dark: 'rgba(255, 255, 255, 0.10)',
   light: 'rgba(0, 0, 0, 0.10)',
 };
 
 const colors = {
   'brand': '#ffffff',
-  borderColor,
+  border,
   'focus': '#3679d2',
   'accent-1': '#367bd5',
   'accent-2': '#5ec660',

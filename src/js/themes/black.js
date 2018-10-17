@@ -22,7 +22,7 @@ const textColor = {
   dark: '#ebebeb',
   light: '#333333',
 };
-const borderColor = {
+const border = {
   dark: 'rgba(255, 255, 255, 0.33)',
   light: 'rgba(0, 0, 0, 0.33)',
 };
@@ -32,7 +32,7 @@ const focusColor = accentColors[1];
 const colors = {
   'active': activeColor,
   'background': '#444444',
-  borderColor,
+  border,
   'brand': brandColor,
   'placeholder': '#AAAAAA',
   'text': textColor,
