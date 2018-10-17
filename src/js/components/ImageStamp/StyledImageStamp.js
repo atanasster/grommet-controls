@@ -6,8 +6,8 @@ const ROUND_MAP = {
 };
 
 export const StyledImageStamp = styled.img`
-  ${props => ((!props.contain || props.contain === 'width') && props.size && edgeStyle('width', props.size, props.responsive, props.theme))}
-  ${props => ((!props.contain || props.contain === 'height') && props.size && edgeStyle('height', props.size, props.responsive, props.theme))}
+  ${props => ((!props.contain || props.contain === 'width') && props.size && edgeStyle('width', props.size, props.responsive, undefined, props.theme))}
+  ${props => ((!props.contain || props.contain === 'height') && props.size && edgeStyle('height', props.size, props.responsive, undefined, props.theme))}
   overflow: hidden;  
   object-fit: cover;
   border-radius: ${props => ROUND_MAP[props.round] || props.theme.global.edgeSize[props.round]};
