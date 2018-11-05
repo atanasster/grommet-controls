@@ -1,6 +1,5 @@
 import React from 'react';
-import { LinkDown, LinkUp } from 'grommet-icons';
-import { Blank } from 'grommet-icons/Blank';
+import { LinkDown, LinkUp, Blank } from 'grommet-icons';
 import { Box, Button } from 'grommet';
 import { StyledThComponent } from '../StyledPagingTable';
 

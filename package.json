@@ -1,6 +1,6 @@
 {
   "name": "grommet-controls",
-  "version": "0.90.7",
+  "version": "0.90.8",
   "main": "index.js",
   "module": "es6/index.js",
   "jsnext:main": "es6/index.js",
@@ -82,7 +82,7 @@
     "fs-extra": "^4.0.0",
     "grommet-cli": "5.1.0",
     "grommet": "https://github.com/grommet/grommet/tarball/NEXT-stable",
-    "grommet-icons": "^3.1.0",
+    "grommet-icons": "^3.2.0",
     "jest-styled-components": "^6.2.0",
     "pre-commit": "^1.2.2",
     "react": "^16.4.1",
