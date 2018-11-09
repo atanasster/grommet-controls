@@ -1,7 +1,5 @@
 # Grommet Controls: a pack of extensions for Grommet 2
 
-:warning: Early version subject to changes.
-
 Visit the [Grommet 2](https://v2.grommet.io) website if you are not familiar with Grommet.
 
 ### Documentation
