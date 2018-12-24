@@ -27,7 +27,7 @@ export default (Element) => {
     onClick: PropTypes.func.description(
       'Function that will be called when the user clicks on a tag.'
     ),
-    direction: PropTypes.oneOf(['row', 'column']).description(
+    direction: PropTypes.oneOf(['row', 'row-responsive', 'column']).description(
       'The orientation to layout the child tags in.'
     ).defaultValue('column'),
     placeholder: PropTypes.string.description(
