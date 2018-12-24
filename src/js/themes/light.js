@@ -1,4 +1,5 @@
 import { deepFreeze, deepMerge } from 'grommet/utils';
+import { rgba } from 'polished';
 import base from './base';
 
 const border = {
@@ -9,6 +10,7 @@ const border = {
 const colors = {
   'brand': '#ffffff',
   border,
+  'active': rgba(102, 102, 102, 0.5),
   'focus': '#3679d2',
   'accent-1': '#367bd5',
   'accent-2': '#5ec660',
@@ -59,21 +61,14 @@ export default deepFreeze(deepMerge(base, {
       xlarge: `${baseSpacing * 4}px`, // 96
     },
     hover: {
-      background: {
-        dark: {
-          color: '#e3e3e3',
-          opacity: 'none',
-        },
-        light: {
-          color: '#316cbe',
-          opacity: 'medium',
-        },
-      },
-      color: {
-        dark: 'white',
-        light: 'black',
-      },
+      background: '#316cbe',
+      color: '#dddddd',
     },
+    selected: {
+      background: '#c4ddfd',
+      color: '#333333',
+    },
+
   },
   text: {
     xsmall: { size: '10px', height: 1.5 },

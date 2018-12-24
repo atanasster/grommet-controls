@@ -50,7 +50,7 @@ export default deepFreeze(deepMerge(base, {
   global: {
     colors,
     drop: {
-      background: '#222222',
+      background: '#444444',
       border: {
         width: '0px',
         radius: '0px',
@@ -119,8 +119,8 @@ export default deepFreeze(deepMerge(base, {
       size: '16px',
     },
     hover: {
-      backgroundColor: '#666666',
-      textColor: '#ffffff',
+      background: '#666666',
+      color: '#ffffff',
     },
     input: {
       border: {

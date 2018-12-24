@@ -46,8 +46,8 @@ export default deepFreeze(deepMerge(base, {
       },
     },
     hover: {
-      backgroundColor: '#0079d3',
-      textColor: '#ffffff',
+      background: '#0079d3',
+      text: '#ffffff',
     },
     focus: {
       border: {
