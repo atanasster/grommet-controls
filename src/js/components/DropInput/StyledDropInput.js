@@ -23,7 +23,7 @@ export const StyledDropInputContainer = styled.div`
 export const StyledWidgetsContainer = styled(Box)`
   position: absolute;
   right: 0;
-  top: ${props => (`${parseMetricToNum(props.theme.global.edgeSize.small) / 2}px`)}
+  top: ${props => (`${parseMetricToNum(props.theme.global.edgeSize.small) / 2}px`)};
   bottom: 0;
 `;
 
