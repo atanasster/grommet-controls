@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Box, Button } from 'grommet';
+import { normalizeColor } from 'grommet/utils';
 import ReactTable from './react-table/ReactTable';
 
 export const StyledTableComponent = styled(Box)`
@@ -83,7 +84,14 @@ export const StyledTrGroupComponent = styled(Box)`
   align-items: stretch;
 `;
 
+
 export const StyledTrComponent = styled(Box)`
+  ${props => props.hover && `
+    &:hover {
+      background-color: ${normalizeColor(props.hover.background || props.theme.global.hover.background, props.theme)};
+      color: ${normalizeColor(props.hover.color || props.theme.global.hover.color, props.theme)};
+    }  
+  `}
 `;
 
 export const StyledTdComponent = styled(Box)`
@@ -117,11 +125,4 @@ export const StyledPagingTable = styled(ReactTable)`
   max-width: 100%;
   width: 100%;
   overflow: hidden;
-  &.-striped .rt-tr.-odd {
-    background: rgba(0, 0, 0, 0.03)
-  }
-
-  &.-highlight .rt-tbody .rt-tr:not(.-padRow):hover {
-    background: rgba(0, 0, 0, 0.05)
-  }
 `;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { ThemeContext } from 'styled-components';
 import { ResponsiveContext } from 'grommet/contexts';
 import { StyledPagingTable } from './StyledPagingTable';
 
@@ -39,11 +40,16 @@ const PagingTable = ({ data, columns, ...rest }) => {
   return (
     <ResponsiveContext.Consumer>
       {size => (
-        <StyledPagingTable
-          data={data || []}
-          columns={responsiveColumns(size, columns)}
-          {...newProps}
-        />
+        <ThemeContext.Consumer>
+          {theme => (
+            <StyledPagingTable
+              data={data || []}
+              columns={responsiveColumns(size, columns)}
+              theme={theme}
+              {...newProps}
+            />
+          )}
+        </ThemeContext.Consumer>
         )}
     </ResponsiveContext.Consumer>
   );

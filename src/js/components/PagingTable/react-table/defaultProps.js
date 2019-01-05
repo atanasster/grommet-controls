@@ -34,7 +34,6 @@ const defaultRowOddProps = {
 };
 
 const defaultRowEvenProps = {};
-const defaultRowProps = {};
 const defaultFooterProps = { background: 'light-1' };
 const defaultPaginationProps = { pad: { vertical: 'medium' } };
 
@@ -148,9 +147,11 @@ export default {
   getTrGroupProps: emptyObj,
   getTrProps: (even, { decorations }) => {
     if (decorations) {
+      if (decorations.row) {
+        return decorations.row;
+      }
       return (even ? decorations.rowEven || defaultRowEvenProps :
-        decorations.rowOdd || defaultRowOddProps) ||
-        decorations.row || defaultRowProps;
+        decorations.rowOdd || defaultRowOddProps);
     }
     return even ? defaultRowEvenProps : defaultRowOddProps;
   },
