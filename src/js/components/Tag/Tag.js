@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { compose } from 'recompose';
+import { ThemeContext } from 'styled-components';
 import { Text, Keyboard } from 'grommet';
 import { FormClose } from 'grommet-icons';
-import { withFocus, withTheme } from 'grommet/components/hocs';
+import { withFocus } from 'grommet/components/hocs';
 import { StyledTag, StyledIcon } from './StyledTag';
 
 class Tag extends Component {
@@ -37,55 +38,61 @@ class Tag extends Component {
   render() {
     const {
       disabled, label, a11yTitle, reverse, background, onClick, onChange,
-      theme, icon, color, focusable, round, size, truncate, focus, ...rest
+      icon, color, focusable, round, size, truncate, focus, ...rest
     } = this.props;
     const { grommet } = this.context;
-    const tagRound = round || (theme.tag && theme.tag.border ? theme.tag.border.round : undefined);
+    const tagRound = round;
     const canFocus = focusable && !disabled && !!(onClick || onChange);
-    let closeIcon;
-    if (icon || onChange) {
-      closeIcon = (
-        <StyledIcon theme={theme} disabled={disabled} onClick={onChange}>
-          {icon || <FormClose />}
-        </StyledIcon>
-      );
-    }
     return (
       <Keyboard
         onEnter={this.clickTag}
         onSpace={this.toggleTag}
       >
-        <StyledTag
-          direction='row'
-          justify='between'
-          align='center'
-          a11yTitle={a11yTitle}
-          round={tagRound}
-          onClick={onClick && this.clickTag}
-          role='checkbox'
-          aria-checked={true}
-          focus={focus}
-          tabIndex={canFocus ? '0' : undefined}
-          background={background}
-          disabled={disabled}
-          reverse={reverse}
-          theme={theme}
-          grommet={grommet}
-          {...rest}
+        <ThemeContext.Consumer>
+          {(theme) => {
+            let closeIcon;
+            if (icon || onChange) {
+              closeIcon = (
+                <StyledIcon theme={theme} disabled={disabled} onClick={onChange}>
+                  {icon || <FormClose />}
+                </StyledIcon>
+              );
+            }
+            return (
+              <StyledTag
+                direction='row'
+                justify='between'
+                align='center'
+                a11yTitle={a11yTitle}
+                round={tagRound}
+                onClick={onClick && this.clickTag}
+                role='checkbox'
+                aria-checked={true}
+                focus={focus}
+                tabIndex={canFocus ? '0' : undefined}
+                background={background}
+                disabled={disabled}
+                reverse={reverse}
+                theme={theme}
+                grommet={grommet}
+                {...rest}
 
-        >
-          {reverse && closeIcon}
-          {React.isValidElement(label) ? label : (
-            <Text
-              color={color}
-              size={size}
-              truncate={truncate}
-            >
-              {label && label.toString()}
-            </Text>
-          )}
-          {!reverse && closeIcon}
-        </StyledTag>
+              >
+                {reverse && closeIcon}
+                {React.isValidElement(label) ? label : (
+                  <Text
+                    color={color}
+                    size={size}
+                    truncate={truncate}
+                  >
+                    {label && label.toString()}
+                  </Text>
+                )}
+                {!reverse && closeIcon}
+              </StyledTag>
+            );
+          }}
+        </ThemeContext.Consumer>
       </Keyboard>
     );
   }
@@ -97,7 +104,6 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const TagWrapper = compose(
-  withTheme,
   withFocus,
 )(
   TagDoc || Tag

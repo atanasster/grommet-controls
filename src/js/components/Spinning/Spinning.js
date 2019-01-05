@@ -2,8 +2,7 @@
 // https://github.com/KyleAMathews/react-spinkit
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { compose } from 'recompose';
-import { withTheme } from 'grommet/components/hocs';
+import { ThemeContext } from 'styled-components';
 import { allSpinners } from './spinners';
 import { CircleSpinner, ThreeBounceSpinner, CubeGridSpinner, WaveSpinner,
   FoldingCubeSpinner, DoubleBounceSpinner, WanderingCubesSpinner, ChasingDotsSpinner,
@@ -38,17 +37,17 @@ class Spinning extends Component {
   };
 
   render() {
-    const { kind, fadeIn, color, theme, size } = this.props;
+    const { kind, fadeIn, color, size } = this.props;
     const spinnerInfo = allSpinners[kind] || allSpinners['three-bounce'];
-    let spinningColor = color;
-    if (color === undefined) {
-      spinningColor = theme.dark ? 'light-1' : 'dark-1';
-    }
     const StyledSpinning = styledComponents[kind];
     return (
-      <StyledSpinning color={spinningColor} fadeIn={fadeIn} theme={theme} size={size}>
-        {Array.from(Array(spinnerInfo.divCount).keys()).map((_, idx) => <div key={idx} />)}
-      </StyledSpinning>
+      <ThemeContext.Consumer>
+        {theme => (
+          <StyledSpinning color={color || theme.dark ? 'light-1' : 'dark-1'} fadeIn={fadeIn} theme={theme} size={size}>
+            {Array.from(Array(spinnerInfo.divCount).keys()).map((_, idx) => <div key={idx} />)}
+          </StyledSpinning>
+        )}
+      </ThemeContext.Consumer>
     );
   }
 }
@@ -58,10 +57,6 @@ if (process.env.NODE_ENV !== 'production') {
   SpinningDoc = require('./doc').default(Spinning); // eslint-disable-line global-require
 }
 
-const SpinningWrapper = compose(
-  withTheme,
-)(
-  SpinningDoc || Spinning
-);
+const SpinningWrapper = SpinningDoc || Spinning;
 
 export { SpinningWrapper as Spinning };

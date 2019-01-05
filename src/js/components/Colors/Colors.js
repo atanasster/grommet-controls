@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { compose } from 'recompose';
+import { ThemeContext } from 'styled-components';
 import { Box, Keyboard } from 'grommet';
 import { normalizeColor, parseMetricToNum } from 'grommet/utils';
-import { withTheme } from 'grommet/components/hocs';
 import { StyledColors, StyledColor, StyledColorContainer, StyledRow, StyledRows } from './StyledColors';
 
 
@@ -123,69 +122,81 @@ class Colors extends Component {
 
   render() {
     const {
-      wrap, column, disabled, onSelect, columns, size, theme, ...rest
+      wrap, column, disabled, onSelect, columns, size, ...rest
     } = this.props;
     const { colorRows, activeRow, activeColor } = this.state;
-    const cellSize = parseMetricToNum(theme.calendar[size].daySize);
-    const colors = colorRows.map((row, rowIndex) => (
-      <StyledRow key={`row_${rowIndex}`} theme={theme} style={{ width: `${cellSize * row.colors.length}px`, height: `${cellSize}px` }}>{
-        row.colors.map((color, colorIndex) => {
-          const isActive = activeRow === rowIndex && activeColor === colorIndex;
-          const colorStyle = {
-            backgroundColor: color.color,
-            color: normalizeColor('text', theme),
-            left: `${cellSize * colorIndex}px`,
-          };
-          return (
-            <StyledColorContainer key={`color_${colorIndex}`} size={size} theme={theme}>
-              <StyledColor
-                // eslint-disable-next-line no-param-reassign
-                ref={(ref) => { color.buttonRef = ref; }}
-                style={colorStyle}
-                size={size}
-                theme={theme}
-                tabIndex={isActive ? '0' : '-1'}
-                a11yTitle={`${row.name !== undefined ? row.name : ''} ${color.name}`}
-                plain={true}
-                active={isActive}
-                hoverIndicator='background'
-                onClick={this.onClickColor({
-                  color: color.color,
-                  rowIndex,
-                  colorIndex,
-                  colorName: color.name,
-                  rowName: row.name,
-                })}
-              >
-                <span>{color.color}</span>
-              </StyledColor>
-            </StyledColorContainer>
-          );
-        })
-      }
+    const colors = (theme, cellSize) => (colorRows.map((row, rowIndex) => (
+      <StyledRow
+        key={`row_${rowIndex}`}
+        theme={theme}
+        style={{ width: `${cellSize * row.colors.length}px`, height: `${cellSize}px` }}
+      >{
+              row.colors.map((color, colorIndex) => {
+                const isActive = activeRow === rowIndex && activeColor === colorIndex;
+                const colorStyle = {
+                  backgroundColor: color.color,
+                  color: normalizeColor('text', theme),
+                  left: `${cellSize * colorIndex}px`,
+                };
+                return (
+                  <StyledColorContainer key={`color_${colorIndex}`} size={size} theme={theme}>
+                    <StyledColor
+                      // eslint-disable-next-line no-param-reassign
+                      ref={(ref) => { color.buttonRef = ref; }}
+                      style={colorStyle}
+                      size={size}
+                      theme={theme}
+                      tabIndex={isActive ? '0' : '-1'}
+                      a11yTitle={`${row.name !== undefined ? row.name : ''} ${color.name}`}
+                      plain={true}
+                      active={isActive}
+                      hoverIndicator='background'
+                      onClick={this.onClickColor({
+                        color: color.color,
+                        rowIndex,
+                        colorIndex,
+                        colorName: color.name,
+                        rowName: row.name,
+                      })}
+                    >
+                      <span>{color.color}</span>
+                    </StyledColor>
+                  </StyledColorContainer>
+                );
+              })
+            }
       </StyledRow>
-    ));
+          )
+      )
+    );
     return (
-      <StyledColors size={size} theme={theme} {...rest}>
-        <Keyboard
-          onUp={(event) => {
-            event.preventDefault();
-            this.setActive({ rowIndex: activeRow - 1, colorIndex: activeColor });
-          }}
-          onDown={(event) => {
-            event.preventDefault();
-            this.setActive({ rowIndex: activeRow + 1, colorIndex: activeColor });
-          }}
-          onLeft={() => this.setActive({ rowIndex: activeRow, colorIndex: activeColor - 1 })}
-          onRight={() => this.setActive({ rowIndex: activeRow, colorIndex: activeColor + 1 })}
-        >
-          <Box>
-            <StyledRows style={{ height: `${cellSize * colorRows.length}px` }}>
-              {colors}
-            </StyledRows>
-          </Box>
-        </Keyboard>
-      </StyledColors>
+      <ThemeContext.Consumer>
+        {(theme) => {
+          const cellSize = parseMetricToNum(theme.calendar[size].daySize);
+          return (
+            <StyledColors size={size} theme={theme} {...rest}>
+              <Keyboard
+                onUp={(event) => {
+                  event.preventDefault();
+                  this.setActive({ rowIndex: activeRow - 1, colorIndex: activeColor });
+                }}
+                onDown={(event) => {
+                  event.preventDefault();
+                  this.setActive({ rowIndex: activeRow + 1, colorIndex: activeColor });
+                }}
+                onLeft={() => this.setActive({ rowIndex: activeRow, colorIndex: activeColor - 1 })}
+                onRight={() => this.setActive({ rowIndex: activeRow, colorIndex: activeColor + 1 })}
+              >
+                <Box>
+                  <StyledRows style={{ height: `${cellSize * colorRows.length}px` }}>
+                    {colors(theme, cellSize)}
+                  </StyledRows>
+                </Box>
+              </Keyboard>
+            </StyledColors>
+          );
+        }}
+      </ThemeContext.Consumer>
     );
   }
 }
@@ -196,10 +207,6 @@ if (process.env.NODE_ENV !== 'production') {
   ColorsDoc = require('./doc').default(Colors); // eslint-disable-line global-require
 }
 
-const ColorsWrapper = compose(
-  withTheme,
-)(
-  ColorsDoc || Colors
-);
+const ColorsWrapper = ColorsDoc || Colors;
 
 export { ColorsWrapper as Colors };

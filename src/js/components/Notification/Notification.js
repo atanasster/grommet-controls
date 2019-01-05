@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { compose } from 'recompose';
 import { Box, Text, Button, Heading, Meter } from 'grommet';
-import { deepMerge } from 'grommet/utils';
 import { Close, StatusGood, StatusWarning, StatusCritical, StatusUnknown, StatusInfo, StatusDisabled } from 'grommet-icons';
-import { withTheme } from 'grommet/components/hocs';
 import { longDate } from '../../utils/moment';
 
 
@@ -54,14 +51,10 @@ class Notification extends Component {
   render() {
     const {
       status, message, locale, closer, margin, reverse, a11yTitle, background, border, timestamp,
-      theme, icon, strong, round, pad, size, state, onClose, percentComplete, ...rest
+      icon, strong, round, pad, size, state, onClose, percentComplete, ...rest
     } = this.props;
     const sizeLevel = SIZE_LEVELS[size];
     const { grommet } = this.context;
-    const Border = deepMerge(theme.notification ? theme.notification.border : {}, border);
-    const Round = round ||
-      (theme.notification && theme.notification.border ?
-        theme.notification.border.round : undefined);
     let closeBtn;
     if (onClose) {
       const closeIcon = closer || <Close size={sizeLevel.size} />;
@@ -147,14 +140,13 @@ class Notification extends Component {
       <Box
         direction='row'
         fill='horizontal'
-        border={Border}
-        round={Round}
+        border={border}
+        round={round}
         onClick={this.clickTag}
         role='checkbox'
         aria-checked={true}
         background={background || `status-${status}`}
         reverse={reverse}
-        theme={theme}
         grommet={grommet}
         {...rest}
 
@@ -171,11 +163,7 @@ if (process.env.NODE_ENV !== 'production') {
   NotificationDoc = require('./doc').default(Notification); // eslint-disable-line global-require
 }
 
-const NotificationWrapper = compose(
-  withTheme,
-)(
-  NotificationDoc || Notification
-);
+const NotificationWrapper = NotificationDoc || Notification;
 
 
 export { NotificationWrapper as Notification };

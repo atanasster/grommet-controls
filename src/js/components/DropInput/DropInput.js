@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
+import { ThemeContext } from 'styled-components';
 import { FormDown } from 'grommet-icons';
-import { compose } from 'recompose';
 import { DropButton, Keyboard, Button } from 'grommet';
-import { withTheme } from 'grommet/components/hocs';
 import { StyledDropInput, StyledDropInputContainer, StyledWidgetsContainer } from './StyledDropInput';
 
 class DropInput extends Component {
@@ -68,7 +67,7 @@ class DropInput extends Component {
       a11yTitle, a11yDropTitle, dropAlign, dropTarget, update, widgets,
       // eslint-disable-next-line no-unused-vars,max-len
       onOpen, onClose, onKeyDown, onKeyUp,
-      dropContent, dropIcon, theme, disabled, ...rest
+      dropContent, dropIcon, disabled, ...rest
     } = this.props;
     const { open } = this.state;
     if (typeof update === 'function') {
@@ -110,14 +109,18 @@ class DropInput extends Component {
     return (
       <Keyboard onDown={this.onKeyDown} onUp={this.onKeyUp}>
         <StyledDropInputContainer >
-          <StyledDropInput
-            ref={(ref) => { this.inputControlRef = ref && findDOMNode(ref); }}
-            theme={theme}
-            disabled={disabled}
-            numWidgets={numWidgets}
-            aria-label={a11yTitle}
-            {...rest}
-          />
+          <ThemeContext.Consumer>
+            {theme => (
+              <StyledDropInput
+                ref={(ref) => { this.inputControlRef = ref && findDOMNode(ref); }}
+                theme={theme}
+                disabled={disabled}
+                numWidgets={numWidgets}
+                aria-label={a11yTitle}
+                {...rest}
+              />
+            )}
+          </ThemeContext.Consumer>
           {decorations}
         </StyledDropInputContainer>
       </Keyboard>
@@ -130,10 +133,6 @@ if (process.env.NODE_ENV !== 'production') {
   DropInputDoc = require('./doc').default(DropInput); // eslint-disable-line global-require
 }
 
-const DropInputWrapper = compose(
-  withTheme,
-)(
-  DropInputDoc || DropInput
-);
+const DropInputWrapper = DropInputDoc || DropInput;
 
 export { DropInputWrapper as DropInput };

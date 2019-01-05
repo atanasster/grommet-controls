@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import { compose } from 'recompose';
-
-import { withTheme } from 'grommet/components/hocs';
-
 import { StyledImageStamp } from './StyledImageStamp';
 
 const SIZE_MAP = {
@@ -31,10 +27,6 @@ if (process.env.NODE_ENV !== 'production') {
   ImageStampDoc = require('./doc').default(ImageStamp); // eslint-disable-line global-require
 }
 
-const ImageStampWrapper = compose(
-  withTheme,
-)(
-  ImageStampDoc || ImageStamp
-);
+const ImageStampWrapper = ImageStampDoc || ImageStamp;
 
 export { ImageStampWrapper as ImageStamp };

@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { compose } from 'recompose';
-import styled from 'styled-components';
+import styled, { ThemeContext } from 'styled-components';
 import { Box } from 'grommet';
 import { StopFill } from 'grommet-icons';
-import { withTheme } from 'grommet/components/hocs';
 import { MaskedInput } from '../MaskedInput';
 import { Colors } from '../Colors';
 
@@ -47,32 +45,36 @@ class ColorInput extends Component {
   }
   render() {
     const {
-      columns, wrap, theme, colors, size, ...rest
+      columns, wrap, colors, size, ...rest
     } = this.props;
     const { selectedColor } = this.state;
     return (
-      <MaskedInput
-        update={(update) => { this.upDateValue = update; }}
-        dropIcon={(
-          <StyledColorButton theme={theme} selectedColor={selectedColor}>
-            <StopFill />
-          </StyledColorButton>
+      <ThemeContext.Consumer>
+        {theme => (
+          <MaskedInput
+            update={(update) => { this.upDateValue = update; }}
+            dropIcon={(
+              <StyledColorButton theme={theme} selectedColor={selectedColor}>
+                <StopFill />
+              </StyledColorButton>
+            )}
+            dropContent={(
+              <Box pad='small'>
+                <Colors
+                  color={selectedColor}
+                  colors={colors}
+                  onSelect={this.onSelect}
+                  columns={columns}
+                  wrap={wrap}
+                  size={size}
+                />
+              </Box>
+            )}
+            onChange={this.onChange}
+            {...rest}
+          />
         )}
-        dropContent={(
-          <Box pad='small'>
-            <Colors
-              color={selectedColor}
-              colors={colors}
-              onSelect={this.onSelect}
-              columns={columns}
-              wrap={wrap}
-              size={size}
-            />
-          </Box>
-        )}
-        onChange={this.onChange}
-        {...rest}
-      />
+      </ThemeContext.Consumer>
     );
   }
 }
@@ -82,10 +84,6 @@ if (process.env.NODE_ENV !== 'production') {
   ColorInputDoc = require('./doc').default(ColorInput); // eslint-disable-line global-require
 }
 
-const ColorInputWrapper = compose(
-  withTheme,
-)(
-  ColorInputDoc || ColorInput
-);
+const ColorInputWrapper = ColorInputDoc || ColorInput;
 
 export { ColorInputWrapper as ColorInput };
