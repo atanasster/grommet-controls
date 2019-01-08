@@ -29,10 +29,11 @@ export const withFormField = WrappedField => (
       const { name } = this.props;
       this.context.form.detachFromForm(name);
     }
-    onChange = ({ target: { value } }) => {
+    onChange = (e) => {
+      const { value, target: { value: targetValue } } = e;
       const { name } = this.props;
       const { onFieldChange } = this.context.form;
-      onFieldChange(name, value);
+      onFieldChange(name, value || targetValue, e);
     };
     getValue() {
       const { name } = this.props;

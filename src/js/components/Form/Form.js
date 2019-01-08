@@ -74,8 +74,14 @@ class Form extends Component {
     }
   }
 
-  updateObject = (name, value) => {
+  updateObject = (name, value, e) => {
     this.state.data[name] = value;
+    if (this.props.onChange) {
+      if (typeof e.stopPropagation === 'function') {
+        e.stopPropagation();
+      }
+      this.props.onChange(e);
+    }
   }
 
   attachToForm = (name, props) => {

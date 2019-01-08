@@ -147,11 +147,13 @@ export default {
   getTrGroupProps: emptyObj,
   getTrProps: (even, { decorations }) => {
     if (decorations) {
-      if (decorations.row) {
-        return decorations.row;
+      let props = { ...decorations.row };
+      if (even) {
+        props = { ...props, ...(decorations.rowEven || defaultRowEvenProps) };
+      } else {
+        props = { ...props, ...(decorations.rowOdd || defaultRowOddProps) };
       }
-      return (even ? decorations.rowEven || defaultRowEvenProps :
-        decorations.rowOdd || defaultRowOddProps);
+      return props;
     }
     return even ? defaultRowEvenProps : defaultRowOddProps;
   },
