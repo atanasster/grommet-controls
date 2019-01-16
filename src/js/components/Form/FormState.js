@@ -1,7 +1,11 @@
 /* eslint-disable no-param-reassign */
 class FormState {
-  constructor(fields, object = {}, onChange) {
+  constructor(fields, object, onChange) {
     this.fields = fields;
+    this.onChange = onChange;
+    this.setObject(object);
+  }
+  setObject = (object = {}) => {
     this.validator = {
       set: (obj, prop, value) => {
         if (Array.isArray(value)) {
@@ -11,15 +15,14 @@ class FormState {
         } else {
           obj[prop] = value;
         }
-        if (onChange) {
-          onChange(prop, value, object);
+        if (this.onChange) {
+          this.onChange(prop, value, object);
         }
         return true;
       },
     };
     this.proxyObj = new Proxy(object, this.validator);
   }
-
   get = () => this.proxyObj;
   updateFields = (fields) => { this.fields = fields; };
   getErrors = () => {

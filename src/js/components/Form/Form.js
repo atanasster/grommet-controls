@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Box } from 'grommet';
-import { filterByFocusable } from 'grommet/utils';
+import { filterByFocusable, deepMerge } from 'grommet/utils';
 import { FormState } from './FormState';
 import { StyledForm } from './StyledForm';
 
@@ -37,8 +37,11 @@ class Form extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.object) {
-      this.setState({ object: { ...this.state.object, ...nextProps.object } });
+    if (nextProps.object &&
+      (JSON.stringify(nextProps.object) !== JSON.stringify(this.state.object))) {
+      const newObject = deepMerge(this.state.data, nextProps.object);
+      this.state.formState.setObject(newObject);
+      this.setState({ data: newObject });
     }
   }
 
