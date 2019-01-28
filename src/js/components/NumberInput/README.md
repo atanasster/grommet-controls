@@ -1,5 +1,5 @@
 ## undefined
-A masked number input, with widgets to increment/decrement the value. Automatically converts the value to a numeric type, so you dont have to parse strings in your onChange event.
+A masked number input, with widgets to increment/decrement the value.
       Additionally, all properties of MaskedInput apply
       
 
@@ -128,13 +128,5 @@ Limit on the length of the integer number. Defaults to `unlimited`.
 
 ```
 number
-```
-
-**updateToString**
-
-Whether pass the value as a string in the onChange event. Defaults to `false`.
-
-```
-boolean
 ```
   

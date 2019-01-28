@@ -77,6 +77,7 @@ The orientation to layout the child tags in. Defaults to `column`.
 
 ```
 row
+row-responsive
 column
 ```
 
