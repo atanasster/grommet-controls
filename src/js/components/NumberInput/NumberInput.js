@@ -36,7 +36,6 @@ class NumberInput extends Component {
     decimalSymbol: '.',
     decimals: null,
     integers: null,
-    updateToString: false,
     a11yIncrement: 'Increment by',
     a11yDecrement: 'Decrement by',
 
@@ -50,12 +49,21 @@ class NumberInput extends Component {
       value, prefix, suffix, thousandsSeparatorSymbol, decimalSymbol,
     });
   }
-
+  isFloat = (val) => {
+    const floatRegex = /^-?\d+(?:[.,]\d*?)?$/;
+    if (!floatRegex.test(val)) {
+      return false;
+    }
+    if (isNaN(parseFloat(val))) {
+      return false;
+    }
+    return true;
+  }
   addStep = () => {
     const {
       max, min, step, value,
     } = this.props;
-    let val = (typeof value === 'number' && value !== undefined) ?
+    let val = this.isFloat(value) ?
       (this.valueToNumber(value) + step).toFixed(precision(step)) : (min || 0);
     if (Number.isNaN(val)) {
       if (min !== undefined) {
@@ -71,7 +79,7 @@ class NumberInput extends Component {
 
   subtractStep = () => {
     const { max, min, step, value } = this.props;
-    let val = (typeof value === 'number' && value !== undefined) ?
+    let val = this.isFloat(value) ?
       (this.valueToNumber(value) - step).toFixed(precision(step)) : (max || 0);
     if (Number.isNaN(val)) {
       if (max !== undefined) {
@@ -86,22 +94,28 @@ class NumberInput extends Component {
   }
 
   onChange = (e) => {
-    const { onChange, updateToString, emptyValue } = this.props;
+    const { onChange, emptyValue } = this.props;
     if (onChange) {
-      let value = updateToString ? e.target.value : this.valueToNumber(e.target.value);
+      let value = e.target.value;
       if (this.value !== value) {
         if (value === undefined) {
           value = emptyValue;
         }
         this.value = value;
-        onChange({ ...e, target: { ...e.target, value } });
+        onChange({
+          ...e,
+          target: {
+            ...e.target,
+            value,
+          },
+        });
       }
     }
   };
 
   render() {
     const {
-      onChange, min, max, step, pipe: userPipe, updateToString,
+      onChange, min, max, step, pipe: userPipe,
       prefix, suffix, thousandsSeparatorSymbol,
       decimalSymbol, decimals, integers,
       a11yIncrement, a11yDecrement,

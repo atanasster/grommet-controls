@@ -27,7 +27,6 @@ export default (Element) => {
     suffix: PropTypes.string.description('What to display at the end of the value.'),
     thousandsSeparatorSymbol: PropTypes.string.description('A character with which to separate thousands.'),
     integers: PropTypes.number.description('Limit on the length of the integer number.').defaultValue('unlimited'),
-    updateToString: PropTypes.bool.description('Whether pass the value as a string in the onChange event.').defaultValue('false'),
   };
 
   return DocumentedElement;
