@@ -3,7 +3,7 @@ import { describe, PropTypes } from 'react-desc';
 export default (Element) => {
   const DocumentedElement = describe(Element)
     .description(
-      `A masked number input, with widgets to increment/decrement the value. Automatically converts the value to a numeric type, so you dont have to parse strings in your onChange event.
+      `A masked number input, with widgets to increment/decrement the value.
       Additionally, all properties of MaskedInput apply
       `
     ).usage(`
