@@ -47,4 +47,12 @@ medium
 large
 xlarge
 ```
+
+**plain**
+
+Whether this is a plain image with no border.
+
+```
+boolean
+```
   
