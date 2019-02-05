@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { ThemeContext } from 'styled-components';
-import { Box, Keyboard } from 'grommet';
-import { normalizeColor, parseMetricToNum } from 'grommet/utils';
+import { Box } from 'grommet/components/Box';
+import { Keyboard } from 'grommet/components/Keyboard';
+import { normalizeColor } from 'grommet/utils/colors';
+import { parseMetricToNum } from 'grommet/utils/mixins';
 import { StyledColors, StyledColor, StyledColorContainer, StyledRow, StyledRows } from './StyledColors';
 
 

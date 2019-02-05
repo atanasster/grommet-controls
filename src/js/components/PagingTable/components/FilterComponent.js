@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextInput } from 'grommet';
+import { TextInput } from 'grommet/components/TextInput';
 
 export default ({
   filter, onChange, column, ...rest

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Add, Subtract } from 'grommet-icons';
+import { Add } from 'grommet-icons/icons/Add';
+import { Subtract } from 'grommet-icons/icons/Subtract';
 import { StyledExpander } from '../StyledPagingTable';
 
 export default ({ isExpanded, children, expanderProps }) => {

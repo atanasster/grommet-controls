@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from 'grommet-icons';
+import { View } from 'grommet-icons/icons/View';
 import { DropInput } from '../DropInput';
 
 class PasswordInput extends Component {

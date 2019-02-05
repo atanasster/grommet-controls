@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { Box, Text, Keyboard } from 'grommet';
-import { FormClose } from 'grommet-icons';
+import { Box } from 'grommet/components/Box';
+import { Keyboard } from 'grommet/components/Keyboard';
+import { Text } from 'grommet/components/Text';
+import { FormClose } from 'grommet-icons/icons/FormClose';
 import { Tag } from '../Tag';
 
 

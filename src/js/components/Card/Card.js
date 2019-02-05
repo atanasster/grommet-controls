@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Box, Heading } from 'grommet';
-import { ThemeContext } from 'grommet/contexts';
+import { Box } from 'grommet/components/Box';
+import { Heading } from 'grommet/components/Heading';
+import { ThemeContext } from 'grommet/contexts/ThemeContext';
 import { StyledCard } from './StyledCard';
 
 class Card extends Component {

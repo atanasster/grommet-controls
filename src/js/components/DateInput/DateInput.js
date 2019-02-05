@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Box, Calendar } from 'grommet';
-import { Calendar as CalendarIcon } from 'grommet-icons';
+import { Box } from 'grommet/components/Box';
+import { Calendar } from 'grommet/components/Calendar';
+import { Calendar as CalendarIcon } from 'grommet-icons/icons/Calendar';
 import { MaskedInput } from '../MaskedInput';
 import { smallDate } from '../../utils/moment';
 

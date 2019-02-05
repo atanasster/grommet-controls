@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import { edgeStyle } from 'grommet/utils';
+import { edgeStyle, controlBorderStyle } from 'grommet/utils/styles';
 
 const ROUND_MAP = {
   'full': '100%',
 };
 
 export const StyledImageStamp = styled.img`
+  ${props => !props.plain && controlBorderStyle};
   ${props => ((!props.contain || props.contain === 'width') && props.size && edgeStyle('width', props.size, props.responsive, undefined, props.theme))}
   ${props => ((!props.contain || props.contain === 'height') && props.size && edgeStyle('height', props.size, props.responsive, undefined, props.theme))}
   overflow: hidden;  

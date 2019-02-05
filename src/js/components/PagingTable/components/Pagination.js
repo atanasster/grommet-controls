@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Box, Button, Select, Text } from 'grommet';
-import { Previous, Next } from 'grommet-icons';
+import { Box } from 'grommet/components/Box';
+import { Button } from 'grommet/components/Button';
+import { Select } from 'grommet/components/Select';
+import { Text } from 'grommet/components/Text';
+import { Previous } from 'grommet-icons/icons/Previous';
+import { Next } from 'grommet-icons/icons/Next';
+
 import { NumberInput } from '../../NumberInput';
 
 const defaultButton = ({

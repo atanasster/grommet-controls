@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from 'grommet';
+import { Box } from 'grommet/components/Box';
 import { Spinning } from '../../Spinning';
 
 export default ({ loading }) => (

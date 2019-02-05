@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Box } from 'grommet';
+import { Box } from 'grommet/components/Box';
 
 // eslint-disable-next-line import/prefer-default-export
 export const StyledCard = styled(Box)`

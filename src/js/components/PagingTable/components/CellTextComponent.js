@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'grommet';
+import { Text } from 'grommet/components/Text';
 
 export const extractTextProps = ({
   value, color, size, truncate, weight, textAlign, ...rest

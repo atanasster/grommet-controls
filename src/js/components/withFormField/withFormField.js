@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormField } from 'grommet';
+import { FormField } from 'grommet/components/FormField';
 
 export const withFormField = WrappedField => (
   class GrommetField extends React.Component {

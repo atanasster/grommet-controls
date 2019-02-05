@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Box } from 'grommet';
-import { filterByFocusable, deepMerge } from 'grommet/utils';
+import { Box } from 'grommet/components/Box';
+import { filterByFocusable } from 'grommet/utils/DOM';
+import { deepMerge } from 'grommet/utils/object';
 import { FormState } from './FormState';
 import { StyledForm } from './StyledForm';
 

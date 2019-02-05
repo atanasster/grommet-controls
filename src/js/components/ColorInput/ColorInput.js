@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled, { ThemeContext } from 'styled-components';
-import { Box } from 'grommet';
-import { StopFill } from 'grommet-icons';
+import { Box } from 'grommet/components/Box';
+import { StopFill } from 'grommet-icons/icons/StopFill';
 import { MaskedInput } from '../MaskedInput';
 import { Colors } from '../Colors';
 

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import { Box, Button } from 'grommet';
-import { normalizeColor } from 'grommet/utils';
+import { Box } from 'grommet/components/Box';
+import { Button } from 'grommet/components/Button';
+import { normalizeColor } from 'grommet/utils/colors';
 import ReactTable from './react-table/ReactTable';
 
 export const StyledTableComponent = styled(Box)`

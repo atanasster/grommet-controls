@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
-import { Box, Keyboard, Text, Button } from 'grommet';
-import { FormDown, FormNext } from 'grommet-icons';
+import { Box } from 'grommet/components/Box';
+import { Button } from 'grommet/components/Button';
+import { Keyboard } from 'grommet/components/Keyboard';
+import { Text } from 'grommet/components/Text';
+import { FormDown } from 'grommet-icons/icons/FormDown';
+import { FormNext } from 'grommet-icons/icons/FormNext';
+
 
 const isActive = (active, item) => item.id === active.id || item.label === active.label;
 

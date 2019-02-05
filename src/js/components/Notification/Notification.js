@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Box, Text, Button, Heading, Meter } from 'grommet';
-import { Close, StatusGood, StatusWarning, StatusCritical, StatusUnknown, StatusInfo, StatusDisabled } from 'grommet-icons';
+import { Box } from 'grommet/components/Box';
+import { Button } from 'grommet/components/Button';
+import { Heading } from 'grommet/components/Heading';
+import { Meter } from 'grommet/components/Meter';
+import { Text } from 'grommet/components/Text';
+import { Close } from 'grommet-icons/icons/Close';
+import { StatusGood } from 'grommet-icons/icons/StatusGood';
+import { StatusWarning } from 'grommet-icons/icons/StatusWarning';
+import { StatusCritical } from 'grommet-icons/icons/StatusCritical';
+import { StatusUnknown } from 'grommet-icons/icons/StatusUnknown';
+import { StatusInfo } from 'grommet-icons/icons/StatusInfo';
+import { StatusDisabled } from 'grommet-icons/icons/StatusDisabled';
 import { longDate } from '../../utils/moment';
 
 

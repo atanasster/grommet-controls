@@ -1,4 +1,4 @@
-import { deepFreeze, deepMerge } from 'grommet/utils';
+import { deepFreeze, deepMerge } from 'grommet/utils/object';
 import base from './base';
 import colorsFromArray from './colorsFromArray';
 import colorsFromObject from './colorsFromObject';

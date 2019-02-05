@@ -1,3 +1,4 @@
+export { Avatar } from './Avatar';
 export { BarChart } from './BarChart';
 export { Card } from './Card';
 export { CheckBoxField } from './CheckBoxField';
@@ -12,6 +13,7 @@ export { EmailInput } from './EmailInput';
 export { EmailInputField } from './EmailInputField';
 export { Form } from './Form';
 export { HorizontalBarChart } from './HorizontalBarChart';
+export { IconButton } from './IconButton';
 export { ImageStamp } from './ImageStamp';
 export { LineChart } from './LineChart';
 export { MaskedInput } from './MaskedInput';

@@ -1,4 +1,4 @@
-import { deepFreeze, deepMerge } from 'grommet/utils';
+import { deepFreeze, deepMerge } from 'grommet/utils/object';
 import { rgba } from 'polished';
 import base from './base';
 

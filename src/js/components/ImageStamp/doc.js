@@ -18,6 +18,9 @@ export default (Element) => {
     ),
     size: PropTypes.oneOf(['small', 'medium', 'large', 'xlarge'])
       .description('The size of the image stamp.').defaultValue('medium'),
+    plain: PropTypes.bool
+      .description('Whether this is a plain image with no border.')
+      .defaultValue(false),
   };
 
   return DocumentedElement;
