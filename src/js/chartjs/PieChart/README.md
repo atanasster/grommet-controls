@@ -1,5 +1,5 @@
 ## undefined
-Radar chart wrapper to chart.js Radar with grommet theming.
+Pie chart wrapper to chart.js Pie with grommet theming.
        For all standard charting options, consult the chart.js docs
       
 
@@ -9,9 +9,9 @@ Radar chart wrapper to chart.js Radar with grommet theming.
 
       $ npm install grommet-controls
  
-      import { RadarChart } from 'grommet-controls';
+      import { PieChart } from 'grommet-controls/chartjs';
 
-      <RadarChart data={...} options={...} />
+      <PieChart data={...} options={...} />
     
 ```
 

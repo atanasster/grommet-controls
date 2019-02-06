@@ -1,5 +1,5 @@
 ## undefined
-Doughnut chart wrapper to chart.js Doughnut with grommet theming.
+Scatter chart wrapper to chart.js Scatter with grommet theming.
        For all standard charting options, consult the chart.js docs
       
 
@@ -9,9 +9,9 @@ Doughnut chart wrapper to chart.js Doughnut with grommet theming.
 
       $ npm install grommet-controls
  
-      import { DoughnutChart } from 'grommet-controls';
+      import { ScatterChart } from 'grommet-controls/chartjs';
 
-      <DoughnutChart data={...} options={...} />
+      <ScatterChart data={...} options={...} />
     
 ```
 

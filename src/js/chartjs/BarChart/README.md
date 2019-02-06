@@ -1,5 +1,5 @@
 ## undefined
-Polar chart wrapper to chart.js Polar with grommet theming.
+Bar chart wrapper to chart.js Bar with grommet theming.
        For all standard charting options, consult the chart.js docs
       
 
@@ -9,9 +9,9 @@ Polar chart wrapper to chart.js Polar with grommet theming.
 
       $ npm install grommet-controls
  
-      import { PolarChart } from 'grommet-controls';
+      import { BarChart } from 'grommet-controls/chartjs';
 
-      <PolarChart data={...} options={...} />
+      <BarChart data={...} options={...} />
     
 ```
 

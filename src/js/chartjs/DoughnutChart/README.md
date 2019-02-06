@@ -1,5 +1,5 @@
 ## undefined
-Bar chart wrapper to chart.js Bar with grommet theming.
+Doughnut chart wrapper to chart.js Doughnut with grommet theming.
        For all standard charting options, consult the chart.js docs
       
 
@@ -9,9 +9,9 @@ Bar chart wrapper to chart.js Bar with grommet theming.
 
       $ npm install grommet-controls
  
-      import { BarChart } from 'grommet-controls';
+      import { DoughnutChart } from 'grommet-controls/chartjs';
 
-      <BarChart data={...} options={...} />
+      <DoughnutChart data={...} options={...} />
     
 ```
 

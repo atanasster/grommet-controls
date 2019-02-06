@@ -3,13 +3,13 @@ import { describe } from 'react-desc';
 export default (Element) => {
   const DocumentedElement = describe(Element)
     .description(
-      `Radar chart wrapper to chart.js Radar with grommet theming.
+      `Pie chart wrapper to chart.js Pie with grommet theming.
        For all standard charting options, consult the chart.js docs
       `
     ).usage(`
       $ npm install grommet-controls\n 
-      import { RadarChart } from 'grommet-controls';\n
-      <RadarChart data={...} options={...} />
+      import { PieChart } from 'grommet-controls/chartjs';\n
+      <PieChart data={...} options={...} />
     `);
   return DocumentedElement;
 };

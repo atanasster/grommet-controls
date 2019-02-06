@@ -1,5 +1,5 @@
 import { HorizontalBar } from 'react-chartjs-2';
-import { withChartTheme } from '../withChartTheme';
+import { withChartTheme } from '../withChartTheme/index';
 
 const HorizontalBarChart = withChartTheme(HorizontalBar, { borderWidth: 3 });
 

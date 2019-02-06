@@ -1,5 +1,5 @@
 import { Doughnut } from 'react-chartjs-2';
-import { withChartTheme } from '../withChartTheme';
+import { withChartTheme } from '../withChartTheme/index';
 
 const DoughnutChart = withChartTheme(Doughnut, { classOpacity: 1, defaultScales: [] });
 

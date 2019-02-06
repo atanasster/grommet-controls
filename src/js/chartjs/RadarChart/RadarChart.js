@@ -1,5 +1,5 @@
 import { Radar } from 'react-chartjs-2';
-import { withChartTheme } from '../withChartTheme';
+import { withChartTheme } from '../withChartTheme/index';
 
 const RadarChart = withChartTheme(Radar, { defaultScales: [] });
 

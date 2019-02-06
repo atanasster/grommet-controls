@@ -1,5 +1,5 @@
 ## undefined
-Scatter chart wrapper to chart.js Scatter with grommet theming.
+Radar chart wrapper to chart.js Radar with grommet theming.
        For all standard charting options, consult the chart.js docs
       
 
@@ -9,9 +9,9 @@ Scatter chart wrapper to chart.js Scatter with grommet theming.
 
       $ npm install grommet-controls
  
-      import { ScatterChart } from 'grommet-controls';
+      import { RadarChart } from 'grommet-controls/chartjs';
 
-      <ScatterChart data={...} options={...} />
+      <RadarChart data={...} options={...} />
     
 ```
 

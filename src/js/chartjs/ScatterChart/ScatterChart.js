@@ -1,5 +1,5 @@
 import { Scatter } from 'react-chartjs-2';
-import { withChartTheme } from '../withChartTheme';
+import { withChartTheme } from '../withChartTheme/index';
 
 const ScatterChart = withChartTheme(Scatter);
 

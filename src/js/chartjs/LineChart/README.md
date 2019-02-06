@@ -9,7 +9,7 @@ Line chart wrapper to chart.js Line with grommet theming.
 
       $ npm install grommet-controls
  
-      import { LineChart } from 'grommet-controls';
+      import { LineChart } from 'grommet-controls/chartjs';
 
       <LineChart data={...} options={...} />
     

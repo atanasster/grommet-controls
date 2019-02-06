@@ -1,5 +1,5 @@
 ## undefined
-Pie chart wrapper to chart.js Pie with grommet theming.
+Polar chart wrapper to chart.js Polar with grommet theming.
        For all standard charting options, consult the chart.js docs
       
 
@@ -9,9 +9,9 @@ Pie chart wrapper to chart.js Pie with grommet theming.
 
       $ npm install grommet-controls
  
-      import { PieChart } from 'grommet-controls';
+      import { PolarChart } from 'grommet-controls/chartjs';
 
-      <PieChart data={...} options={...} />
+      <PolarChart data={...} options={...} />
     
 ```
 

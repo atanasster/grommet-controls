@@ -9,7 +9,7 @@ HorizontalBar chart wrapper to chart.js HorizontalBar with grommet theming.
 
       $ npm install grommet-controls
  
-      import { HorizontalBarChart } from 'grommet-controls';
+      import { HorizontalBarChart } from 'grommet-controls/chartjs';
 
       <HorizontalBarChart data={...} options={...} />
     

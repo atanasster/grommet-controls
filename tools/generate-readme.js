@@ -9,12 +9,16 @@ const components = folder => fs
     fs.existsSync(path.join(folder, file, 'doc.js'))
   );
 
-const FOLDER = path.resolve('src/js/components');
+const generateDocs = (FOLDER) => {
+  components(FOLDER).forEach((component) => {
+    /* eslint-disable */
+    const doc = require(path.join(FOLDER, component, 'doc.js')).default;
+    /* eslint-enable */
+    const destination = path.join(FOLDER, component, 'README.md');
+    del(destination).then(() => fs.writeFileSync(destination, doc({}).toMarkdown()));
+  });
+};
 
-components(FOLDER).forEach((component) => {
-  /* eslint-disable */
-  const doc = require(path.join(FOLDER, component, 'doc.js')).default;
-  /* eslint-enable */
-  const destination = path.join(FOLDER, component, 'README.md');
-  del(destination).then(() => fs.writeFileSync(destination, doc({}).toMarkdown()));
-});
+generateDocs(path.resolve('src/js/components'));
+generateDocs(path.resolve('src/js/chartjs'));
+
