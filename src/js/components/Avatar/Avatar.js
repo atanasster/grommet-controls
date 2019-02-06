@@ -1,7 +1,7 @@
 import React from 'react';
 import { compose } from 'recompose';
-import { Box } from 'grommet/components/Box';
-import { Text } from 'grommet/components/Text';
+import { Box } from 'grommet/es6/components/Box';
+import { Text } from 'grommet/es6/components/Text';
 import { withTheme } from 'styled-components';
 import { ImageStamp } from '../ImageStamp';
 

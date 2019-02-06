@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { edgeStyle, controlBorderStyle } from 'grommet/utils/styles';
+import { edgeStyle, controlBorderStyle } from 'grommet/es6/utils/styles';
 
 const ROUND_MAP = {
   'full': '100%',

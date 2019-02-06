@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { normalizeColor } from 'grommet/utils/colors';
+import { normalizeColor } from 'grommet/es6/utils/colors';
 
 
 const animationFadeIn = keyframes`

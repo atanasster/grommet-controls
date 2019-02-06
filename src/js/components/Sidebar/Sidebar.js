@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box } from 'grommet/components/Box';
-import { Button } from 'grommet/components/Button';
-import { Heading } from 'grommet/components/Heading';
-import { ResponsiveContext } from 'grommet/contexts/ResponsiveContext';
-import { Menu } from 'grommet-icons/icons/Menu';
+import { Box } from 'grommet/es6/components/Box';
+import { Button } from 'grommet/es6/components/Button';
+import { Heading } from 'grommet/es6/components/Heading';
+import { ResponsiveContext } from 'grommet/es6/contexts/ResponsiveContext';
+import { Menu } from 'grommet-icons/es6/icons/Menu';
 
 class Sidebar extends React.Component {
   state = {

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Box } from 'grommet/components/Box';
-import { Button } from 'grommet/components/Button';
-import { Blank } from 'grommet-icons/icons/Blank';
-import { LinkDown } from 'grommet-icons/icons/LinkDown';
-import { LinkUp } from 'grommet-icons/icons/LinkUp';
+import { Box } from 'grommet/es6/components/Box';
+import { Button } from 'grommet/es6/components/Button';
+import { Blank } from 'grommet-icons/es6/icons/Blank';
+import { LinkDown } from 'grommet-icons/es6/icons/LinkDown';
+import { LinkUp } from 'grommet-icons/es6/icons/LinkUp';
 import { StyledThComponent } from '../StyledPagingTable';
 
 export default ({

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeContext } from 'styled-components';
-import { ResponsiveContext } from 'grommet/contexts';
+import { ResponsiveContext } from 'grommet/es6/contexts';
 import { StyledPagingTable } from './StyledPagingTable';
 
 const responsiveColumns = (size, columns) => (

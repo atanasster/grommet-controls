@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Button } from 'grommet/components/Button';
+import { Button } from 'grommet/es6/components/Button';
 
 const sizeStyle = (props) => {
   const data = props.theme.calendar[props.size];

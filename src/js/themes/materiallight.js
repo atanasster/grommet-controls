@@ -1,4 +1,4 @@
-import { deepFreeze, deepMerge } from 'grommet/utils/object';
+import { deepFreeze, deepMerge } from 'grommet/es6/utils/object';
 import { rgba } from 'polished';
 import base from './base';
 import colorsFromArray from './colorsFromArray';
