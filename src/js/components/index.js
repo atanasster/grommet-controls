@@ -10,6 +10,7 @@ export { DropInput } from './DropInput';
 export { EmailInput } from './EmailInput';
 export { EmailInputField } from './EmailInputField';
 export { Form } from './Form';
+export { Header } from './Header';
 export { IconButton } from './IconButton';
 export { ImageStamp } from './ImageStamp';
 export { MaskedInput } from './MaskedInput';
