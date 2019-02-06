@@ -49,7 +49,7 @@
     "node-emoji": "^1.8.1",
     "polished": "^2.0.3",
     "prop-types": "^15.5.10",
-    "react-desc": "^4.1.1",
+    "react-desc": "^4.1.2",
     "recompose": "^0.30.0",
     "text-mask-addons": "^3.7.2",
     "text-mask-core": "^5.0.1"

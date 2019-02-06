@@ -1,5 +1,5 @@
 import { describe, PropTypes } from 'react-desc';
-import { a11yTitlePropType } from 'grommet/es6/utils/prop-types';
+import { a11yTitlePropType } from 'grommet/utils/prop-types';
 
 
 export default (Element) => {
