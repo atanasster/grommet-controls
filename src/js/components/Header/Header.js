@@ -4,18 +4,23 @@ import { StyledHeader } from './StyledHeader';
 const Header = ({ children, ...rest }) => (
   <StyledHeader
     tag='header'
-    direction='row'
-    background='brand'
-    fill='horizontal'
-    justify='between'
-    align='center'
-    elevation='medium'
-    pad='medium'
     {...rest}
   >
     {children}
   </StyledHeader>
 );
+
+Header.defaultProps = {
+  position: 'relative',
+  zIndex: 10,
+  direction: 'row',
+  background: 'brand',
+  fill: 'horizontal',
+  justify: 'between',
+  align: 'center',
+  elevation: 'medium',
+  pad: 'medium',
+};
 
 let HeaderDoc;
 if (process.env.NODE_ENV !== 'production') {
