@@ -39,6 +39,11 @@ Before opening an issue or pull request, please read the [Contributing](https://
             "preventFullImport": true,
             "skipDefaultConversion": true
           },
+          "grommet-controls/chartjs": {
+            "transform": "grommet-controls/es6/chartjs/${member}",
+            "preventFullImport": true,
+            "skipDefaultConversion": true
+          },
           "grommet-controls/themes": {
             "transform": "grommet-controls/es6/themes/${member}",
             "preventFullImport": true
@@ -80,25 +85,25 @@ Before opening an issue or pull request, please read the [Contributing](https://
 
 ### Components
 
- * [PagingTable](https://grommet-nextjs.herokuapp.com/documentation/PagingTable) A Grommet 2 table component with pagination, filtering, footer, child rows and grouping.
- * [Card](https://grommet-nextjs.herokuapp.com/documentation/Card) A Card-type container.
- * [Tag](https://grommet-nextjs.herokuapp.com/documentation/Tag) A tag control with a label and icon.
- * [Tags](https://grommet-nextjs.herokuapp.com/documentation/Tags) A list of tags that can be removed.
- * [Notification](https://grommet-nextjs.herokuapp.com/documentation/Notification) A Box to display notification messages.
- * [Colors](https://grommet-nextjs.herokuapp.com/documentation/Colors) A color selection element, with custom color palettes.
- * [ImageStamp](https://grommet-nextjs.herokuapp.com/documentation/ImageStamp) A small image stamp used for avatars or image thumbnails.
- * [DropInput](https://grommet-nextjs.herokuapp.com/documentation/DropInput) An Input control with an optional drop button with the specified 'dropContent' or widgets.
- * [MaskedInput](https://grommet-nextjs.herokuapp.com/documentation/MaskedInput) A masked Input control with an optional drop button with the specified 'dropContent'.
- * [DateInput](https://grommet-nextjs.herokuapp.com/documentation/DateInput) A masked date entry field with a drop down calendar.
- * [NumberInput](https://grommet-nextjs.herokuapp.com/documentation/NumberInput) A masked number input, with widgets to increment/decrement the value. Automatically converts the value to a numeric type, so you dont have to parse strings in your onChange event.
- * [PasswordInput](https://grommet-nextjs.herokuapp.com/documentation/PasswordInput) A password field with show/hide password toggle.
- * [EmailInput](https://grommet-nextjs.herokuapp.com/documentation/EmailInput) A masked input with a default mask for handling email addresses.
- * [ColorInput](https://grommet-nextjs.herokuapp.com/documentation/ColorInput) A masked color entry field, with a drop button to select a color.
- * [Form](https://grommet-nextjs.herokuapp.com/documentation/Form) A Form with built-in validation.
- * [Spinning](https://grommet-nextjs.herokuapp.com/documentation/Spinning) A spinning process indicator.
- * [Value](https://grommet-nextjs.herokuapp.com/documentation/Value) A single value with a label.
- * [Sidebar](https://grommet-nextjs.herokuapp.com/documentation/Sidebar) Collapsible side bar component.
- * [VerticalMenu](https://grommet-nextjs.herokuapp.com/documentation/VerticalMenu) Hierarchical collapsible menu.
+ * [PagingTable](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/PagingTable) A Grommet 2 table component with pagination, filtering, footer, child rows and grouping.
+ * [Card](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/Card) A Card-type container.
+ * [Tag](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/Tag) A tag control with a label and icon.
+ * [Tags](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/Tags) A list of tags that can be removed.
+ * [Notification](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/Notification) A Box to display notification messages.
+ * [Colors](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/Colors) A color selection element, with custom color palettes.
+ * [ImageStamp](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/ImageStamp) A small image stamp used for avatars or image thumbnails.
+ * [DropInput](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/DropInput) An Input control with an optional drop button with the specified 'dropContent' or widgets.
+ * [MaskedInput](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/MaskedInput) A masked Input control with an optional drop button with the specified 'dropContent'.
+ * [DateInput](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/DateInput) A masked date entry field with a drop down calendar.
+ * [NumberInput](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/NumberInput) A masked number input, with widgets to increment/decrement the value. Automatically converts the value to a numeric type, so you dont have to parse strings in your onChange event.
+ * [PasswordInput](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/PasswordInput) A password field with show/hide password toggle.
+ * [EmailInput](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/EmailInput) A masked input with a default mask for handling email addresses.
+ * [ColorInput](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/ColorInput) A masked color entry field, with a drop button to select a color.
+ * [Form](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/Form) A Form with built-in validation.
+ * [Spinning](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/Spinning) A spinning process indicator.
+ * [Value](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/Value) A single value with a label.
+ * [Sidebar](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/Sidebar) Collapsible side bar component.
+ * [VerticalMenu](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/VerticalMenu) Hierarchical collapsible menu.
 
 ### Charts ([chart.js](http://www.chartjs.org))
 ```
@@ -106,14 +111,14 @@ Before opening an issue or pull request, please read the [Contributing](https://
     $ npm install react-chartjs-2
 ```
 
- * [BarChart](https://grommet-nextjs.herokuapp.com/add-ons/barchart)
- * [HorizontalBarChart](https://grommet-nextjs.herokuapp.com/add-ons/horizontalbarchart)
- * [LineChart](https://grommet-nextjs.herokuapp.com/add-ons/linechart)
- * [DoughnutChart](https://grommet-nextjs.herokuapp.com/add-ons/doughnutchart)
- * [PieChart](https://grommet-nextjs.herokuapp.com/add-ons/piechart)
- * [PolarChart](https://grommet-nextjs.herokuapp.com/add-ons/polarchart)
- * [RadarChart](https://grommet-nextjs.herokuapp.com/add-ons/radarchart)
- * [ScatterChart](https://grommet-nextjs.herokuapp.com/add-ons/scatterchart)
+ * [BarChart](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/BarChart)
+ * [DoughnutChart](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/DoughnutChart)
+ * [HorizontalBarChart](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/HorizontalBarChart)
+ * [LineChart](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/LineChart)
+ * [PieChart](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/PieChart)
+ * [PolarChart](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/PolarChart)
+ * [RadarChart](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/RadarChart)
+ * [ScatterChart](https://grommet-nextjs.herokuapp.com/documentation/grommet-controls/ScatterChart)
  
 ### Themes
 
