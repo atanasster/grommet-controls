@@ -40,7 +40,6 @@ class Tag extends Component {
       disabled, label, a11yTitle, reverse, background, onClick, onChange,
       icon, color, focusable, round, size, truncate, focus, ...rest
     } = this.props;
-    console.log(focus);
     const { grommet } = this.context;
     const tagRound = round;
     const canFocus = focusable && !disabled && !!(onClick || onChange);
