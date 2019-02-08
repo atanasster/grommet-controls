@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { compose } from 'recompose';
 import { ThemeContext } from 'styled-components';
 import { Keyboard } from 'grommet/es6/components/Keyboard';
 import { Text } from 'grommet/es6/components/Text';
@@ -41,6 +40,7 @@ class Tag extends Component {
       disabled, label, a11yTitle, reverse, background, onClick, onChange,
       icon, color, focusable, round, size, truncate, focus, ...rest
     } = this.props;
+    console.log(focus);
     const { grommet } = this.context;
     const tagRound = round;
     const canFocus = focusable && !disabled && !!(onClick || onChange);
@@ -104,10 +104,6 @@ if (process.env.NODE_ENV !== 'production') {
   TagDoc = require('./doc').default(Tag); // eslint-disable-line global-require
 }
 
-const TagWrapper = compose(
-  withFocus,
-)(
-  TagDoc || Tag
-);
+const TagWrapper = withFocus()(TagDoc || Tag);
 
 export { TagWrapper as Tag };
