@@ -5,7 +5,7 @@ import colorsFromArray from './colorsFromArray';
 import colorsFromObject from './colorsFromObject';
 
 const brandColor = '#00ABD4';
-const accentColors = ['#FF4081', '#FFC107', '#9C27B0', '#673AB7'];
+const accentColors = ['#2AD2C9', '#FFC107', '#9C27B0', '#673AB7'];
 const neutralColors = ['#795548', '#009688', '#8BC34A', '#CDDC39', '#FF9800'];
 const statusColors = {
   critical: '#FF4081',
@@ -21,7 +21,6 @@ const activeColor = rgba('#666666', 0.5);
 const colors = {
   active: activeColor,
   brand: brandColor,
-  black: brandColor,
   focus: focusColor,
   control: {
     dark: '#ffffff',
@@ -128,14 +127,17 @@ export default deepFreeze(deepMerge(base, {
   checkBox: {
     border: {
       color: {
-        light: 'rgba(0, 188, 212, 0.5)',
+        light: 'rgba(0, 98, 186, 0.5)',
         dark: 'rgba(255, 255, 255, 0.5)',
       },
     },
     check: {
       radius: '0px',
     },
-    color: brandColor,
+    color: {
+      light: brandColor,
+      dark: '#a7ecff',
+    },
     toggle: {
       color: {
         dark: '#bdbdbd',
@@ -156,7 +158,7 @@ export default deepFreeze(deepMerge(base, {
   radioButton: {
     border: {
       color: {
-        light: 'rgba(0, 188, 212, 0.5)',
+        light: 'rgba(0, 98, 186, 0.5)',
         dark: 'rgba(255, 255, 255, 0.5)',
       },
     },

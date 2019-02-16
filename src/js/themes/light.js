@@ -91,7 +91,10 @@ export default deepFreeze(deepMerge(base, {
     border: {
       // color: { dark: undefined, light: undefined }
       radius: '1px',
-      color: '#28599e',
+      color: {
+        dark: '#fbf9ff',
+        light: '#28599e',
+      },
     },
     // color: { dark: undefined, light: undefined }
     primary: {

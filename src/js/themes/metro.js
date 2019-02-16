@@ -131,14 +131,17 @@ export default deepFreeze(deepMerge(base, {
   checkBox: {
     border: {
       color: {
-        light: 'rgba(0, 188, 212, 0.5)',
+        light: 'rgba(0, 98, 186, 0.5)',
         dark: 'rgba(255, 255, 255, 0.5)',
       },
     },
     check: {
       radius: '0px',
     },
-    color: brandColor,
+    color: {
+      light: brandColor,
+      dark: '#a6cfff',
+    },
     toggle: {
       color: {
         dark: '#bdbdbd',
@@ -156,7 +159,7 @@ export default deepFreeze(deepMerge(base, {
   radioButton: {
     border: {
       color: {
-        light: 'rgba(0, 188, 212, 0.5)',
+        light: 'rgba(0, 98, 186, 0.5)',
         dark: 'rgba(255, 255, 255, 0.5)',
       },
     },
