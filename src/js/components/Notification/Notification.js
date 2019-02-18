@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Box } from 'grommet/es6/components/Box';
-import { Button } from 'grommet/es6/components/Button';
-import { Heading } from 'grommet/es6/components/Heading';
-import { Meter } from 'grommet/es6/components/Meter';
-import { Text } from 'grommet/es6/components/Text';
-import { Close } from 'grommet-icons/es6/icons/Close';
-import { StatusGood } from 'grommet-icons/es6/icons/StatusGood';
-import { StatusWarning } from 'grommet-icons/es6/icons/StatusWarning';
-import { StatusCritical } from 'grommet-icons/es6/icons/StatusCritical';
-import { StatusUnknown } from 'grommet-icons/es6/icons/StatusUnknown';
-import { StatusInfo } from 'grommet-icons/es6/icons/StatusInfo';
-import { StatusDisabled } from 'grommet-icons/es6/icons/StatusDisabled';
+import { Box, Button, Heading, Meter, Text } from 'grommet';
+import { Close } from 'grommet-icons/icons/Close';
+import { StatusGood } from 'grommet-icons/icons/StatusGood';
+import { StatusWarning } from 'grommet-icons/icons/StatusWarning';
+import { StatusCritical } from 'grommet-icons/icons/StatusCritical';
+import { StatusUnknown } from 'grommet-icons/icons/StatusUnknown';
+import { StatusInfo } from 'grommet-icons/icons/StatusInfo';
+import { StatusDisabled } from 'grommet-icons/icons/StatusDisabled';
 import { longDate } from '../../utils/moment';
 
 

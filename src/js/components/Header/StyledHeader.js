@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Box } from 'grommet/es6/components/Box';
+import { Box } from 'grommet';
 
 
 export const StyledHeader = styled(Box)`

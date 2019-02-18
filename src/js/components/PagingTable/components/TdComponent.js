@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from 'grommet/es6/components/Box';
+import { Box } from 'grommet';
 import { StyledTdComponent } from '../StyledPagingTable';
 import { extractTextProps } from './CellTextComponent';
 

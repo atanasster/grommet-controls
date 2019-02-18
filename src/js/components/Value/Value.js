@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box } from 'grommet/es6/components/Box';
-import { Text } from 'grommet/es6/components/Text';
+import { Box, Text } from 'grommet';
 
 const LABEL_SIZE_MAP = {
   xsmall: 'xsmall',

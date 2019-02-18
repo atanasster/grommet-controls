@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { Box } from 'grommet/es6/components/Box';
-import { TextInput } from 'grommet/es6/components/TextInput';
-import { parseMetricToNum } from 'grommet/es6/utils/mixins';
+import { Box, TextInput } from 'grommet';
+import { parseMetricToNum } from 'grommet/utils/mixins';
 
 export const StyledDropInput = styled(TextInput)`
   padding-right: ${(props) => {

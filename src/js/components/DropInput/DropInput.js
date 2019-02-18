@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { ThemeContext } from 'styled-components';
-import { FormDown } from 'grommet-icons/es6/icons/FormDown';
-import { DropButton } from 'grommet/es6/components/DropButton';
-import { Keyboard } from 'grommet/es6/components/Keyboard';
-import { Button } from 'grommet/es6/components/Button';
+import { FormDown } from 'grommet-icons/icons/FormDown';
+import { DropButton, Keyboard, Button } from 'grommet';
 import { StyledDropInput, StyledDropInputContainer, StyledWidgetsContainer } from './StyledDropInput';
 
 class DropInput extends Component {

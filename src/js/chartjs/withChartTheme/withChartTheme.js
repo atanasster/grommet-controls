@@ -1,7 +1,7 @@
 import React from 'react';
-import { ThemeContext } from 'grommet/es6/contexts';
-import { normalizeColor, getRGBA } from 'grommet/es6/utils/colors';
-import { deepMerge } from 'grommet/es6/utils/object';
+import { ThemeContext } from 'grommet';
+import { normalizeColor, getRGBA } from 'grommet/utils/colors';
+import { deepMerge } from 'grommet/utils/object';
 import { colorFromIndex, colorForName } from '../../utils/colors';
 
 const normalizedColor = (color, theme) => (colorForName(normalizeColor(color, theme), theme));

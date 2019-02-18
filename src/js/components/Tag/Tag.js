@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { ThemeContext } from 'styled-components';
-import { Keyboard } from 'grommet/es6/components/Keyboard';
-import { Text } from 'grommet/es6/components/Text';
-import { FormClose } from 'grommet-icons/es6/icons/FormClose';
-import { withFocus } from 'grommet/es6/components/hocs';
+import { Keyboard, Text } from 'grommet';
+import { FormClose } from 'grommet-icons/icons/FormClose';
+import { withFocus } from 'grommet/components/hocs';
 import { StyledTag, StyledIcon } from './StyledTag';
 
 class Tag extends Component {

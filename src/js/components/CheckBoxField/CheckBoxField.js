@@ -1,6 +1,5 @@
 import React from 'react';
-import { Box } from 'grommet/es6/components/Box';
-import { CheckBox } from 'grommet/es6/components/CheckBox';
+import { CheckBox, Box } from 'grommet';
 import { withFormField } from '../withFormField';
 
 export const CheckBoxField = withFormField(({ value, onChange, ...rest }) => (

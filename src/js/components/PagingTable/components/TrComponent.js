@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { Keyboard } from 'grommet/es6/components/Keyboard';
+import { Keyboard } from 'grommet';
 import { focusedChildIndex, focusChildByIndex, focusNextElement, focusPrevElement, hasKeyboardChildren } from '../DOM';
 
 import { StyledTrComponent } from '../StyledPagingTable';

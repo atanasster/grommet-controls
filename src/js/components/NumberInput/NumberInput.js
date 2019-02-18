@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Add } from 'grommet-icons/es6/icons/Add';
-import { Subtract } from 'grommet-icons/es6/icons/Subtract';
+import { Add } from 'grommet-icons/icons/Add';
+import { Subtract } from 'grommet-icons/icons/Subtract';
 import { MaskedInput } from '../MaskedInput';
 
 const precision = (n) => {

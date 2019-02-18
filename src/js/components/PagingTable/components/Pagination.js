@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Box } from 'grommet/es6/components/Box';
-import { Button } from 'grommet/es6/components/Button';
-import { Select } from 'grommet/es6/components/Select';
-import { Text } from 'grommet/es6/components/Text';
-import { Previous } from 'grommet-icons/es6/icons/Previous';
-import { Next } from 'grommet-icons/es6/icons/Next';
+import { Box, Button, Select, Text } from 'grommet';
+import { Previous } from 'grommet-icons/icons/Previous';
+import { Next } from 'grommet-icons/icons/Next';
 
 import { NumberInput } from '../../NumberInput';
 
