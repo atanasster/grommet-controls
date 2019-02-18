@@ -16,7 +16,7 @@ export default {
   entry: './src/js/index.js',
   output: {
     path: path.resolve('./dist'),
-    filename: 'grommet.min.js',
+    filename: 'grommet-controls.min.js',
     libraryTarget: 'var',
     library: 'GrommetControls',
   },
