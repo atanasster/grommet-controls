@@ -43,7 +43,7 @@ class Spinning extends Component {
     return (
       <ThemeContext.Consumer>
         {theme => (
-          <StyledSpinning color={color || theme.dark ? 'light-1' : 'dark-1'} fadeIn={fadeIn} theme={theme} size={size}>
+          <StyledSpinning color={color || (theme.dark ? 'light-1' : 'dark-1')} fadeIn={fadeIn} theme={theme} size={size}>
             {Array.from(Array(spinnerInfo.divCount).keys()).map((_, idx) => <div key={idx} />)}
           </StyledSpinning>
         )}
