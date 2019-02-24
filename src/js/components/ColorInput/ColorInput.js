@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled, { ThemeContext } from 'styled-components';
-import { Box } from 'grommet';
 import { StopFill } from 'grommet-icons/icons/StopFill';
 import { MaskedInput } from '../MaskedInput';
 import { Colors } from '../Colors';
@@ -59,16 +58,14 @@ class ColorInput extends Component {
               </StyledColorButton>
             )}
             dropContent={(
-              <Box pad='small'>
-                <Colors
-                  color={selectedColor}
-                  colors={colors}
-                  onSelect={this.onSelect}
-                  columns={columns}
-                  wrap={wrap}
-                  size={size}
-                />
-              </Box>
+              <Colors
+                color={selectedColor}
+                colors={colors}
+                onSelect={this.onSelect}
+                columns={columns}
+                wrap={wrap}
+                size={size}
+              />
             )}
             onChange={this.onChange}
             {...rest}

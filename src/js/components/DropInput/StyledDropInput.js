@@ -24,6 +24,5 @@ export const StyledWidgetsContainer = styled(Box)`
   position: absolute;
   right: 0;
   top: 0;
-  bottom: 0;
 `;
 

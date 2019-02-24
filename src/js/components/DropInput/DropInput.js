@@ -100,7 +100,7 @@ class DropInput extends Component {
           direction='row'
         >
           {widgets.map((widget, index) => (
-            <Button tabIndex='-1' key={`widget_${index}`} {...widget} />
+            <Button disabled={disabled} tabIndex='-1' key={`widget_${index}`} {...widget} />
             ))}
           {drop}
         </StyledWidgetsContainer>
