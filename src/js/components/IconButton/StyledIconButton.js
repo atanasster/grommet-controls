@@ -3,7 +3,4 @@ import { Button } from 'grommet';
 
 export default styled(Button)`
   border-radius: 50%;
-  &>svg {
-    display: block;
-  }
 `;
