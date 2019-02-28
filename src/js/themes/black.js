@@ -1,94 +1,49 @@
 import { deepFreeze, deepMerge } from 'grommet/utils/object';
-import { rgba } from 'polished';
 import base from './base';
 import colorsFromArray from './colorsFromArray';
-import colorsFromObject from './colorsFromObject';
-
 
 const brandColor = '#000000';
 const accentColors = ['#FF4081', '#4eadeb', '#56cf98', '#765bba'];
 const neutralColors = ['#a4c400', '#006766', '#f3741c', '#8F6C53', '#e82121'];
-const statusColors = {
-  critical: '#d2293f',
-  error: '#d2293f',
-  warning: '#c5a502',
-  ok: '#78ab00',
-  unknown: '#868686',
-  disabled: '#b0b0b0',
-};
-
 const backgroundColor = '#5e5e5e';
-const textColor = {
-  dark: '#ebebeb',
-  light: '#333333',
-};
-const border = {
-  dark: 'rgba(255, 255, 255, 0.33)',
-  light: 'rgba(0, 0, 0, 0.33)',
-};
-const activeColor = rgba('#9C9C9C', 0.5);
-const shadowColor = 'rgba(200, 200, 200, 0.5)';
-const focusColor = accentColors[1];
+
 const colors = {
-  'active': activeColor,
+  'active': {
+    light: '#3a82b1',
+    dark: '#52b7f9',
+  },
   'background': '#444444',
-  border,
   'brand': brandColor,
-  'placeholder': '#AAAAAA',
-  'text': textColor,
-  'focus': focusColor,
+  'focus': accentColors[0],
   'control': {
-    dark: '#ffffff',
-    light: '#333333',
+    'dark': '#f8f8f8',
+    'light': '#444444',
   },
 };
 colorsFromArray(colors, accentColors, 'accent');
 colorsFromArray(colors, neutralColors, 'neutral');
-colorsFromObject(colors, statusColors, 'status');
 
 export default deepFreeze(deepMerge(base, {
   global: {
     colors,
     drop: {
       background: '#444444',
-      border: {
-        width: '0px',
-        radius: '0px',
-      },
-    },
-    elevation: {
-      none: 'none',
-      xsmall: `0px 1px 2px ${shadowColor}`,
-      small: `0px 2px 4px ${shadowColor}`,
-      medium: `0px 3px 8px ${shadowColor}`,
-      large: `0px 6px 12px ${shadowColor}`,
-      xlarge: `0px 8px 16px ${shadowColor}`,
     },
     font: {
       family: "'Inconsolata', monospace",
-      face: `
-        @font-face {
-          font-family: 'Inconsolata';
-          font-style: normal;
-          font-weight: 400;
-          src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url(https://fonts.gstatic.com/s/inconsolata/v16/QldKNThLqRwH-OJ1UHjlKGlZ5qhExfHw.woff2) format('woff2');
-          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-        @font-face {
-          font-family: 'Inconsolata';
-          font-style: normal;
-          font-weight: 700;
-          src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url(https://fonts.gstatic.com/s/inconsolata/v16/QldXNThLqRwH-OJ1UHjlKGHiw71p5_zaDpwm.woff2) format('woff2');
-          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-      `,
       size: '16px',
     },
     hover: {
-      background: '#666666',
-      color: '#ffffff',
+      background: {
+        light: '#3a82b1',
+        dark: '#52b7f9',
+      },
+      color: {
+        dark: '#ffffff',
+        light: '#33333',
+      },
     },
-    input: {
+    control: {
       border: {
         radius: '0px',
       },
@@ -100,55 +55,37 @@ export default deepFreeze(deepMerge(base, {
   anchor: {
     color: {
       light: '#0a466e',
-      dark: '#beeaff',
+      dark: '#4eadeb',
     },
   },
   button: {
     border: {
       radius: '0px',
     },
-  },
-  checkBox: {
-    border: {
+    primary: {
       color: {
-        dark: 'rgba(255, 255, 255, 0.5)',
-        light: 'rgba(0, 0, 0, 0.5)',
+        light: '#0a466e',
+        dark: '#4eadeb',
       },
     },
+  },
+  checkBox: {
     check: {
       radius: '0px',
     },
     toggle: {
-      color: {
-        dark: '#bdbdbd',
-        light: '#7f7f7f',
-      },
       radius: '0px',
     },
   },
   layer: {
     background: backgroundColor,
-    overlay: {
-      background: 'rgba(255, 255, 255, 0.5)',
-    },
-    border: {
-      radius: '0px',
-    },
-  },
-  radioButton: {
-    border: {
-      color: {
-        dark: 'rgba(255, 255, 255, 0.5)',
-        light: 'rgba(0, 0, 0, 0.5)',
-      },
-    },
   },
   rangeInput: {
     track: {
-      color: '#4eadeb',
+      color: {
+        'dark': '#3a82b1',
+        'light': '#52b7f9',
+      },
     },
-  },
-  heading: {
-    font: false,
   },
 }));

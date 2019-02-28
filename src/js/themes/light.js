@@ -1,17 +1,17 @@
 import { deepFreeze, deepMerge } from 'grommet/utils/object';
-import { rgba } from 'polished';
 import base from './base';
-
-const border = {
-  dark: 'rgba(255, 255, 255, 0.10)',
-  light: 'rgba(0, 0, 0, 0.10)',
-};
 
 const colors = {
   'brand': '#ffffff',
-  border,
-  'active': rgba(102, 102, 102, 0.5),
-  'focus': '#3679d2',
+  'active': {
+    light: '#57b457',
+    dark: '#52b7f9',
+  },
+  'control': {
+    dark: '#52b7f9',
+    light: '#4a984a',
+  },
+  'focus': '#5ec660',
   'accent-1': '#367bd5',
   'accent-2': '#5ec660',
   'accent-3': '#d4293d',
@@ -21,10 +21,6 @@ const colors = {
   'neutral-3': '#607D8B',
   'neutral-4': '#9cb6d7',
   'neutral-5': '#FF9800',
-  'control': {
-    dark: '#ffffff',
-    light: '#333333',
-  },
 };
 
 const baseSpacing = 16;
@@ -61,14 +57,15 @@ export default deepFreeze(deepMerge(base, {
       xlarge: `${baseSpacing * 4}px`, // 96
     },
     hover: {
-      background: '#316cbe',
-      color: '#dddddd',
+      background: {
+        light: '#52b7f9',
+        dark: '#52b7f9',
+      },
+      color: {
+        light: '#333333',
+        dark: '#333333',
+      },
     },
-    selected: {
-      background: '#c4ddfd',
-      color: '#333333',
-    },
-
   },
   text: {
     xsmall: { size: '10px', height: 1.5 },
@@ -89,7 +86,6 @@ export default deepFreeze(deepMerge(base, {
   },
   button: {
     border: {
-      // color: { dark: undefined, light: undefined }
       radius: '1px',
       color: {
         dark: '#fbf9ff',
@@ -99,7 +95,7 @@ export default deepFreeze(deepMerge(base, {
     // color: { dark: undefined, light: undefined }
     primary: {
       color: {
-        dark: '#e9e9e9',
+        dark: '#0093ff',
         light: '#316cbe',
       },
     },
@@ -114,22 +110,20 @@ export default deepFreeze(deepMerge(base, {
   },
   checkBox: {
     border: {
-      color: {
-        dark: 'rgba(255, 255, 255, 0.5)',
-        light: 'rgba(0, 0, 0, 0.15)',
-      },
       width: '2px',
     },
     check: {
       radius: '4px',
       thickness: '4px',
     },
-    color: {
-      dark: '#ffffff',
-      light: '#333333',
-    },
-    icons: {
-      // checked: undefined,
+  },
+  rangeInput: {
+    track: {
+      color: {
+        'dark': '#3a82b1',
+        'light': '#52b7f9',
+      },
     },
   },
 }));
+
