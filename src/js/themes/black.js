@@ -39,8 +39,8 @@ export default deepFreeze(deepMerge(base, {
         dark: '#222222',
       },
       color: {
-        dark: '#333333',
-        light: '#cccccc',
+        light: '#333333',
+        dark: '#ffffff',
       },
     },
     control: {
