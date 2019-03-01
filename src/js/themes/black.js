@@ -35,12 +35,12 @@ export default deepFreeze(deepMerge(base, {
     },
     hover: {
       background: {
-        light: '#3a82b1',
-        dark: '#52b7f9',
+        light: '#dddddd',
+        dark: '#222222',
       },
       color: {
-        dark: '#ffffff',
-        light: '#33333',
+        dark: '#333333',
+        light: '#cccccc',
       },
     },
     control: {
