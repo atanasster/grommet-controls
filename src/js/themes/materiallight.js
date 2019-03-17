@@ -22,6 +22,7 @@ const colors = {
     light: '#f50057',
     dark: '#ff4081',
   },
+  background: '#ffffff',
   brand: brandColor,
   focus: focusColor,
   control: {

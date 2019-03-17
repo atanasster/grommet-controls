@@ -8,6 +8,7 @@ const accentColors = ['#fa6800', '#128023', '#0050ef', '#d80073'];
 const neutralColors = ['#a4c400', '#00aba9', '#BF5A15', '#8F6C53', '#9A1616'];
 
 const colors = {
+  'background': '#ffffff',
   'brand': brandColor,
   'control': {
     'dark': '#f8f8f8',

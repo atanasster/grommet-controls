@@ -2,6 +2,7 @@ import { deepFreeze, deepMerge } from 'grommet/utils/object';
 import base from './base';
 
 const colors = {
+  'background': '#ffffff',
   'brand': '#ffffff',
   'active': {
     light: '#57b457',
