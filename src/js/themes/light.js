@@ -66,6 +66,10 @@ export default deepFreeze(deepMerge(base, {
         dark: '#f8f8f8',
       },
     },
+    selected: {
+      background: '#635d60',
+      color: '#f8f8f8',
+    },
   },
   text: {
     xsmall: { size: '10px', height: 1.5 },
