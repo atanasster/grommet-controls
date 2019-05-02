@@ -128,7 +128,7 @@ export default {
   onFetchData: () => null,
 
   // Component decorators
-  getProps: emptyObj,
+  getProps: ({ className }) => ({ className }),
   getTableProps: ({ decorations }) => ((decorations && decorations.table) || defaultTableProps),
   getTheadGroupProps: ({ decorations }) => (
     (decorations && (decorations.headerGroup || decorations.header)) || {}
