@@ -63,6 +63,14 @@ The first day of the week. 0 for Sunday. 1 for Monday.
 1
 ```
 
+**maskFormat**
+
+Mask format - by default this is set to "mm dd yyyy" but can be changed ie "dd mm yyyy".
+
+```
+string
+```
+
 **locale**
 
 The locale to use.

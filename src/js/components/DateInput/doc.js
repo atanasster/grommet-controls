@@ -26,6 +26,7 @@ export default (Element) => {
         selectable. Items that are an array indicate a range of dates.`),
     firstDayOfWeek: PropTypes.oneOf([0, 1])
       .description('The first day of the week. 0 for Sunday. 1 for Monday.'),
+    maskFormat: PropTypes.string.description('Mask format - by default this is set to "mm dd yyyy" but can be changed ie "dd mm yyyy".'),
     locale: PropTypes.string.description('The locale to use.'),
     size: PropTypes.oneOf(['small', 'medium', 'large'])
       .description('Size of the calendar drop.'),

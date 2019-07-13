@@ -20,7 +20,7 @@ class DateInput extends Component {
   render() {
     const {
       value, bounds, dates, disabledDates, autocorrect,
-      firstDayOfWeek, locale, size, mask: userMask, ...rest
+      firstDayOfWeek, locale, size, mask: userMask, maskFormat, ...rest
     } = this.props;
     let mask;
     if (userMask) {
@@ -28,7 +28,7 @@ class DateInput extends Component {
     } else if (autocorrect) {
       mask = {
         mask: [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/],
-        pipe: MaskedInput.createAutoCorrectedDatePipe(),
+        pipe: MaskedInput.createAutoCorrectedDatePipe(maskFormat),
         keepCharPositions: true,
       };
     } else {
