@@ -37,7 +37,7 @@
     "test": "ts-node test/test.ts",
     "pretest": "npm run build",
     "storybook": "start-storybook -p 6006 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o .docs"
+    "build-storybook": "build-storybook -c .storybook -o docs"
   },
   "peerDependencies": {
     "grommet": ">= 2.7.5",
