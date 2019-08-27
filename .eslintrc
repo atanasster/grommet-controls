@@ -1,5 +1,6 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "extends": "airbnb",
   "env": {
     "node": true,
@@ -33,7 +34,11 @@
     "comma-dangle": ["error", "always-multiline"],
     "jsx-quotes": ["error", "prefer-single"],
     "no-console": 0,
+    "no-mixed-operators": 0,
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
     "quote-props": ["error", "consistent"],
+    "react/destructuring-assignment": 0,
     "react/forbid-prop-types": 0,  // Soft requirement now, try hard requ in future
     "react/jsx-boolean-value": [1, "always"],
     "react/jsx-filename-extension": 0,
@@ -48,5 +53,12 @@
     "import/no-extraneous-dependencies": 0,
     "no-alert": 0,
     "jsx-a11y/href-no-hash": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }

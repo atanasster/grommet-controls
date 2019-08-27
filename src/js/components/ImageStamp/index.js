@@ -1,1 +1,0 @@
-export { ImageStamp } from './ImageStamp';

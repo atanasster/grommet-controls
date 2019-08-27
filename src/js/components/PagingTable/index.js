@@ -1,1 +1,0 @@
-export { PagingTable } from './PagingTable';

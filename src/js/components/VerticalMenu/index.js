@@ -1,1 +1,0 @@
-export { VerticalMenu } from './VerticalMenu';
