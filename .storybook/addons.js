@@ -1,1 +1,2 @@
-import './addons/theme/register.js';
+import '@storybook/addon-a11y/register';
+import 'storybook-addon-grommet/register';

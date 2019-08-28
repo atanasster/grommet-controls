@@ -1,6 +1,6 @@
 {
   "name": "grommet-controls",
-  "version": "2.0.0-alpha1",
+  "version": "2.0.0-alpha-2",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "description": "grommet 2 controls",
@@ -33,11 +33,11 @@
     "start-example": "cd example && npm start",
     "deploy-example": "cd example && npm run deploy",
     "dev": "concurrently --kill-others \"npm run build-watch\" \"npm run start-example\"",
-    "tsc": "tsc",
     "test": "ts-node test/test.ts",
     "pretest": "npm run build",
     "storybook": "start-storybook -p 6006 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o docs"
+    "build-storybook": "build-storybook -c .storybook -o docs",
+    "pub": "pushd ./ && npm run build && cd dist && npm publish && popd"
   },
   "peerDependencies": {
     "grommet": ">= 2.7.5",
@@ -52,6 +52,7 @@
     "text-mask-core": "^5.0.1"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^5.1.11",
     "@storybook/addon-docs": "^5.2.0-beta.40",
     "@storybook/react": "^5.2.0-beta.40",
     "@types/react": "^16.9.2",
@@ -81,7 +82,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-typescript2": "^0.22.1",
-    "storybook-addon-jsx": "^7.1.5",
+    "storybook-addon-grommet": "^0.9.1",
     "styled-components": "^4.3.2",
     "typescript": "^3.5.3"
   },

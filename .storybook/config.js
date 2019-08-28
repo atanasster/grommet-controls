@@ -1,16 +1,28 @@
 import React from 'react';
-import { Grommet, Box } from 'grommet';
 import { configure, addDecorator } from '@storybook/react';
-import withGrommetTheme from './addons/theme/withGrommet';
-
-const withGrommet = (story) => (
-  <Grommet>
-    <Box flex={false}>
-      { story() }
-    </Box>
-  </Grommet>
-)
-
+import { withA11y } from '@storybook/addon-a11y';
+import { withGrommet } from 'storybook-addon-grommet';
+import { grommet, dark } from 'grommet';
+import { black, light, materialdark, materiallight, metro } from '../dist/themes';
 
 configure(require.context('../src/', true, /\.stories\.tsx$/), module);
-addDecorator(withGrommetTheme);
+addDecorator(withA11y);
+addDecorator(withGrommet({
+    theme: 'grommet',
+    themes: {
+      grommet,
+      dark,
+      black,
+      light,
+      materialdark,
+      materiallight,
+      metro,
+    },
+    boxProps: {
+      align: 'start',
+    },
+    grommetProps: {
+        full: true,
+    }
+  }
+));
