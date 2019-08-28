@@ -3,7 +3,7 @@ import { configure, addDecorator } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
 import { withGrommet } from 'storybook-addon-grommet';
 import { grommet, dark } from 'grommet';
-import { black, light, materialdark, materiallight, metro } from '../dist/themes';
+import { black, light, materialdark, materiallight, metro } from '../src/themes';
 
 configure(require.context('../src/', true, /\.stories\.tsx$/), module);
 addDecorator(withA11y);
