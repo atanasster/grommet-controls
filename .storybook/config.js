@@ -21,8 +21,5 @@ addDecorator(withGrommet({
     boxProps: {
       align: 'start',
     },
-    grommetProps: {
-        full: true,
-    }
   }
 ));
