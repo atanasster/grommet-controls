@@ -1,7 +1,7 @@
 import copy from 'rollup-plugin-copy-glob';
 import typescript from 'rollup-plugin-typescript2';
 import external from 'rollup-plugin-peer-deps-external';
-import del from 'rollup-plugin-delete'
+import del from 'rollup-plugin-delete';
 
 import pkg from './package.json';
 
