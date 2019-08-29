@@ -5,7 +5,7 @@ import {
 } from '../../../index';
 
 export default {
-  title: 'validation/TextInputField',
+  title: 'CONTROLS|validation/TextInputField',
   component: TextInputField,
 };
 

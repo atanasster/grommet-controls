@@ -5,7 +5,13 @@ import { withGrommet } from 'storybook-addon-grommet';
 import { grommet, dark } from 'grommet';
 import { black, light, materialdark, materiallight, metro } from '../src/themes';
 
-configure(require.context('../src/', true, /\.stories\.tsx$/), module);
+
+configure([
+  require.context('.', true, /\.stories\.mdx$/),
+  require.context('../src/components', true, /\.stories\.tsx$/),
+  require.context('../src/chartjs', true, /\.stories\.tsx$/)
+], module);
+
 addDecorator(withA11y);
 addDecorator(withGrommet({
     theme: 'grommet',

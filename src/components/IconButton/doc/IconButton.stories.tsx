@@ -4,7 +4,7 @@ import { Favorite } from 'grommet-icons';
 import { IconButton } from '../../../index';
 
 export default {
-  title: 'controls/IconButton',
+  title: 'CONTROLS|controls/IconButton',
   component: IconButton,
 };
 

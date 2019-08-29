@@ -8,7 +8,7 @@ import {
 import { ChartjsPointStyleType } from '../../withChartTheme/withChartThemeProps';
 
 export default {
-  title: 'chartjs/LineChart',
+  title: 'CHARTS|chartjs/LineChart',
   component: LineChart,
 };
 

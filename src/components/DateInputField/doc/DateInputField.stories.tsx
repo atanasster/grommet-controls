@@ -6,7 +6,7 @@ import {
 import { smallDate } from '../../../utils/moment';
 
 export default {
-  title: 'validation/DateInputField',
+  title: 'CONTROLS|validation/DateInputField',
   component: DateInputField,
 };
 

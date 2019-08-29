@@ -7,7 +7,7 @@ import { Card, ImageStamp } from '../../../index';
 
 
 export default {
-  title: 'controls/Card',
+  title: 'CONTROLS|controls/Card',
   component: Card,
 };
 

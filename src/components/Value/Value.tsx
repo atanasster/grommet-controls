@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Box, Text } from 'grommet';
 import { IValueProps } from './ValueProps';
 
@@ -41,15 +40,6 @@ Value.defaultProps = {
   gap: 'small',
   size: 'large',
   color: undefined,
-};
-
-Value.propTypes = {
-  label: PropTypes.string,
-  color: PropTypes.string,
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.element, PropTypes.number]),
-  weight: PropTypes.oneOfType([PropTypes.oneOf(['normal', 'bold']), PropTypes.number]),
-  gap: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
-  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge', 'xxlarge']),
 };
 
 export { Value };

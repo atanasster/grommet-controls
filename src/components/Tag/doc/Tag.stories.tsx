@@ -3,7 +3,7 @@ import { Github, Grommet, FormSubtract } from 'grommet-icons';
 import { Tag } from '../index';
 
 export default {
-  title: 'controls/Tag',
+  title: 'CONTROLS|controls/Tag',
   component: Tag,
 };
 

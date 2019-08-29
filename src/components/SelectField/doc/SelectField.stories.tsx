@@ -5,7 +5,7 @@ import {
 } from '../../../index';
 
 export default {
-  title: 'validation/SelectField',
+  title: 'CONTROLS|validation/SelectField',
   component: SelectField,
 };
 

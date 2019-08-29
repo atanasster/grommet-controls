@@ -3,7 +3,7 @@ import { Grommet, CircleQuestion } from 'grommet-icons';
 import { Notification } from '../Notification';
 
 export default {
-  title: 'controls/Notification',
+  title: 'CONTROLS|controls/Notification',
   component: Notification,
 };
 

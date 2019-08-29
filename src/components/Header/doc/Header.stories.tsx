@@ -4,7 +4,7 @@ import { Grommet } from 'grommet-icons';
 import { Header } from '../index';
 
 export default {
-  title: 'layout/Header',
+  title: 'CONTROLS|layout/Header',
   component: Header,
 };
 

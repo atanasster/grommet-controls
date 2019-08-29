@@ -5,7 +5,7 @@ import { MaskedInput } from '../../../index';
 import { smallDate } from '../../../utils/moment';
 
 export default {
-  title: 'input/MaskedInput',
+  title: 'CONTROLS|input/MaskedInput',
   component: MaskedInput,
 };
 

@@ -3,7 +3,7 @@ import { HorizontalBarChart } from '../index';
 import { rndDatasets } from '../../data/data';
 
 export default {
-  title: 'chartjs/HorizontalBarChart',
+  title: 'CHARTS|chartjs/HorizontalBarChart',
   component: HorizontalBarChart,
 };
 

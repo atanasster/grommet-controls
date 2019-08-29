@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
  Box, Button, Heading, ResponsiveContext, BoxProps,
 } from 'grommet';
@@ -60,10 +59,5 @@ Sidebar.defaultProps = {
   collapsible: true,
 };
 
-Sidebar.propTypes = {
-  title: PropTypes.node,
-  width: PropTypes.string,
-  collapsible: PropTypes.bool,
-};
 
 export { Sidebar };

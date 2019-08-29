@@ -3,7 +3,7 @@ import { Box } from 'grommet';
 import { ColorInput, materialColors, uiColors } from '../../../index';
 
 export default {
-  title: 'input/ColorInput',
+  title: 'CONTROLS|input/ColorInput',
   component: ColorInput,
 };
 

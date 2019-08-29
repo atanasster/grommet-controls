@@ -3,7 +3,7 @@ import { Box } from 'grommet';
 import { Avatar } from '../Avatar';
 
 export default {
-  title: 'controls/Avatar',
+  title: 'CONTROLS|controls/Avatar',
   component: Avatar,
 };
 

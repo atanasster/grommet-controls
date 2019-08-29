@@ -1,6 +1,7 @@
 import copy from 'rollup-plugin-copy-glob';
 import typescript from 'rollup-plugin-typescript2';
 import external from 'rollup-plugin-peer-deps-external';
+import del from 'rollup-plugin-delete'
 
 import pkg from './package.json';
 
@@ -9,11 +10,11 @@ export default {
   external: Object.keys(pkg.peerDependencies || {}),
   output: [
     {
-      file: pkg.main,
+      file: 'dist/index.js',
       format: 'cjs',
     },
     {
-      file: pkg.module,
+      file: 'dist/index.es.js',
       format: 'es',
     },
   ],
@@ -28,5 +29,6 @@ export default {
       { files: 'README.md', dest: 'dist' },
       { files: 'package.json', dest: 'dist' },
     ]),
+    del({ targets: 'dist/*' }),
   ],
 };

@@ -6,7 +6,7 @@ import {
 } from '../../../index';
 
 export default {
-  title: 'validation/Form',
+  title: 'CONTROLS|validation/Form',
   component: Form,
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { ImageStamp } from '../../../index';
 
 export default {
-  title: 'controls/ImageStamp',
+  title: 'CONTROLS|controls/ImageStamp',
   component: ImageStamp,
 };
 

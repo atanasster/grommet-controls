@@ -3,7 +3,7 @@ import { Box } from 'grommet';
 import { Spinning } from '../index';
 
 export default {
-  title: 'controls/Spinning',
+  title: 'CONTROLS|controls/Spinning',
   component: Spinning,
 };
 

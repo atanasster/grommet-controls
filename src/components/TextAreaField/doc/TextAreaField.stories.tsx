@@ -5,7 +5,7 @@ import {
 } from '../../../index';
 
 export default {
-  title: 'validation/TextAreaField',
+  title: 'CONTROLS|validation/TextAreaField',
   component: TextAreaField,
 };
 

@@ -3,7 +3,7 @@ import { Box, Text } from 'grommet';
 import { Sidebar } from '../index';
 
 export default {
-  title: 'layout/Sidebar',
+  title: 'CONTROLS|layout/Sidebar',
   component: Sidebar,
 };
 

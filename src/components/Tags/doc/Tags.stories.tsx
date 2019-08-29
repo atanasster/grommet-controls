@@ -4,7 +4,7 @@ import { FormSubtract, Trash } from 'grommet-icons';
 import { Tags } from '../index';
 
 export default {
-  title: 'input/Tags',
+  title: 'CONTROLS|input/Tags',
   component: Tags,
 };
 

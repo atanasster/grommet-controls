@@ -6,7 +6,7 @@ import {
 import { VerticalMenu } from '../index';
 
 export default {
-  title: 'navigation/VerticalMenu',
+  title: 'CONTROLS|navigation/VerticalMenu',
   component: VerticalMenu,
 };
 
