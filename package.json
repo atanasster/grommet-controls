@@ -1,6 +1,6 @@
 {
   "name": "grommet-controls",
-  "version": "2.0.0-alpha-2",
+  "version": "2.0.0-beta-1",
   "main": "index.js",
   "module": "index.es.js",
   "description": "grommet 2 controls",
@@ -52,9 +52,9 @@
     "text-mask-core": "^5.0.1"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^5.1.11",
-    "@storybook/addon-docs": "^5.2.0-beta.40",
-    "@storybook/react": "^5.2.0-beta.40",
+    "@storybook/addon-a11y": "^5.2.0-rc.1",
+    "@storybook/addon-docs": "^5.2.0-rc.1",
+    "@storybook/react": "^5.2.0-rc.1",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "@types/styled-components": "^4.1.18",
