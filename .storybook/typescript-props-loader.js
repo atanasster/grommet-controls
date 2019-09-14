@@ -10,7 +10,7 @@ module.exports.default = async function(source) {
     if (Array.isArray(doc) && doc.length > 0) {
       const j = JSON.stringify(doc[0]);
       newSource = newSource + `
-    ${parsed.name}.__docgenInfo = ${j}
+    ${parsed.name}.__docgenInfo = ${j};
     `;
     }
   }

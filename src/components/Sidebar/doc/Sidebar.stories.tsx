@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Text } from 'grommet';
-import { Sidebar } from '../index';
+import { Sidebar } from '../Sidebar';
 
 export default {
   title: 'CONTROLS|layout/Sidebar',

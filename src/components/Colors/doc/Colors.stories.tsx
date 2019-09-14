@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from 'grommet';
+import { Colors } from '../Colors';
 import {
- Colors,
   materialColors,
   uiColors,
   basicColors,

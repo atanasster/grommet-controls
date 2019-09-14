@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from 'grommet';
-import { DateInput } from '../../../index';
+import { DateInput } from '../DateInput';
 import { smallDate } from '../../../utils/moment';
 
 export default {

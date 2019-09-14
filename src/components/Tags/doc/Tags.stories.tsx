@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Button } from 'grommet';
 import { FormSubtract, Trash } from 'grommet-icons';
-import { Tags } from '../index';
+import { Tags } from '../Tags';
 
 export default {
   title: 'CONTROLS|input/Tags',

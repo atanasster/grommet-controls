@@ -1,5 +1,5 @@
 import React from 'react';
-import { PolarChart } from '../index';
+import { PolarChart } from '../PolarChart';
 import { rndDatasets } from '../../data/data';
 
 export default {

@@ -1,8 +1,7 @@
 import React from 'react';
 import { Box, Button } from 'grommet';
-import {
-  Form, TextAreaField, validators,
-} from '../../../index';
+import { TextAreaField } from '../TextAreaField';
+import { Form, validators } from '../../../index';
 
 export default {
   title: 'CONTROLS|validation/TextAreaField',

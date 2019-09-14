@@ -1,5 +1,5 @@
 import React from 'react';
-import { DoughnutChart } from '../index';
+import { DoughnutChart } from '../DoughnutChart';
 import { rndDatasets } from '../../data/data';
 
 export default {

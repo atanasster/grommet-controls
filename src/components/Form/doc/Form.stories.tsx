@@ -1,7 +1,8 @@
 import React from 'react';
 import { Box, Button, Text } from 'grommet';
+import { Form } from '../Form';
 import {
-  Form, TextInputField, PasswordInputField, SelectField, CheckBoxField,
+  TextInputField, PasswordInputField, SelectField, CheckBoxField,
   NumberInputField, validators,
 } from '../../../index';
 

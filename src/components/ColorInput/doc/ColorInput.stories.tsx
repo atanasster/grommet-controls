@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box } from 'grommet';
-import { ColorInput, materialColors, uiColors } from '../../../index';
+import { ColorInput } from '../ColorInput';
+import { materialColors, uiColors } from '../../../index';
 
 export default {
   title: 'CONTROLS|input/ColorInput',

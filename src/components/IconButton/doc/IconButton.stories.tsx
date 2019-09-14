@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from 'grommet';
 import { Favorite } from 'grommet-icons';
-import { IconButton } from '../../../index';
+import { IconButton } from '../IconButton';
 
 export default {
   title: 'CONTROLS|controls/IconButton',

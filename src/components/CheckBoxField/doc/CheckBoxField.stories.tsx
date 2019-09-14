@@ -1,7 +1,8 @@
 import React from 'react';
 import { Box, Button, Text } from 'grommet';
+import { CheckBoxField } from '../CheckBoxField';
 import {
-  Form, CheckBoxField, validators,
+  Form, validators,
 } from '../../../index';
 
 export default {

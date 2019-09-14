@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart } from '../index';
+import { BarChart } from '../BarChart';
 import { rndDatasets } from '../../data/data';
 
 export default {

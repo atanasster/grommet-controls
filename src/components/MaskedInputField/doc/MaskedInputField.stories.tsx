@@ -1,8 +1,7 @@
 import React from 'react';
 import { Box, Button } from 'grommet';
-import {
-  Form, MaskedInputField, validators,
-} from '../../../index';
+import { MaskedInputField } from '../MaskedInputField';
+import { Form, validators } from '../../../index';
 
 export default {
   title: 'CONTROLS|validation/MaskedInputField',

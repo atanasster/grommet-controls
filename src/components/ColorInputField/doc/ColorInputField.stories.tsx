@@ -1,7 +1,8 @@
 import React from 'react';
 import { Box, Button } from 'grommet';
+import { ColorInputField } from '../ColorInputField';
 import {
-  Form, ColorInputField, validators, uiColors,
+  Form, validators, uiColors,
 } from '../../../index';
 
 export default {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Grommet, FormSubtract } from 'grommet-icons';
-import { Tag } from '../index';
+import { Tag } from '../Tag';
 
 export default {
   title: 'CONTROLS|controls/Tag',

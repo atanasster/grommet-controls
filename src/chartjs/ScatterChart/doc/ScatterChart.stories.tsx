@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScatterChart } from '../index';
+import { ScatterChart } from '../ScatterChart';
 import { rndDatasets2d } from '../../data/data';
 
 export default {

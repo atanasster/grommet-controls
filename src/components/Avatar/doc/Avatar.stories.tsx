@@ -2,6 +2,7 @@ import React from 'react';
 import { Box } from 'grommet';
 import { Avatar } from '../Avatar';
 
+
 export default {
   title: 'CONTROLS|controls/Avatar',
   component: Avatar,

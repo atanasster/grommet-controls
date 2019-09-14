@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from 'grommet';
 import { Lock, Unlock } from 'grommet-icons';
-import { PasswordInput } from '../index';
+import { PasswordInput } from '../PasswordInput';
 
 export default {
   title: 'CONTROLS|input/PasswordInput',

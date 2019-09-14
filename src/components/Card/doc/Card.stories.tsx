@@ -3,7 +3,8 @@ import {
  Box, Button, Heading, Image, Text,
 } from 'grommet';
 import { Add, Bitcoin, Edit } from 'grommet-icons';
-import { Card, ImageStamp } from '../../../index';
+import { Card } from '../Card';
+import { ImageStamp } from '../../ImageStamp';
 
 
 export default {

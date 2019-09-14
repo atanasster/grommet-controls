@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from 'grommet';
-import { EmailInput } from '../../../index';
+import { EmailInput } from '../EmailInput';
 
 export default {
   title: 'CONTROLS|input/EmailInput',

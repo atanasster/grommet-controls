@@ -1,7 +1,8 @@
 import React from 'react';
 import { Box, Button } from 'grommet';
+import { DateInputField } from '../DateInputField';
 import {
-  Form, DateInputField, validators,
+  Form, validators,
 } from '../../../index';
 import { smallDate } from '../../../utils/moment';
 

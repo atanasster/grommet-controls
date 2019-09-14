@@ -1,5 +1,5 @@
 import React from 'react';
-import { HorizontalBarChart } from '../index';
+import { HorizontalBarChart } from '../HorizontalBarChart';
 import { rndDatasets } from '../../data/data';
 
 export default {

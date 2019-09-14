@@ -1,7 +1,8 @@
 import React from 'react';
 import { Box, Button } from 'grommet';
+import { EmailInputField } from '../EmailInputField';
 import {
-  Form, EmailInputField, validators,
+  Form, validators,
 } from '../../../index';
 
 export default {

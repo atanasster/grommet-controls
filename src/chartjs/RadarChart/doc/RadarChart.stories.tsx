@@ -1,5 +1,5 @@
 import React from 'react';
-import { RadarChart } from '../index';
+import { RadarChart } from '../RadarChart';
 import { rndDatasets } from '../../data/data';
 
 export default {

@@ -3,7 +3,7 @@ import { Box, Text } from 'grommet';
 import {
  Inbox, Send, Flag, Star, Document, Tag, Trash,
 } from 'grommet-icons';
-import { VerticalMenu } from '../index';
+import { VerticalMenu } from '../VerticalMenu';
 
 export default {
   title: 'CONTROLS|navigation/VerticalMenu',

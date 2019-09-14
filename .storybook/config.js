@@ -1,16 +1,10 @@
 import React from 'react';
-import { configure, addDecorator } from '@storybook/react';
+import { dependenciesMap } from 'storybook-dep-webpack-plugin/runtime/main';
+import { configure, addDecorator, addParameters } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
 import { withGrommet } from 'storybook-addon-grommet';
 import { grommet, dark } from 'grommet';
 import { black, light, materialdark, materiallight, metro } from '../src/themes';
-
-
-configure([
-  require.context('.', true, /\.stories\.mdx$/),
-  require.context('../src/components', true, /\.stories\.tsx$/),
-  require.context('../src/chartjs', true, /\.stories\.tsx$/)
-], module);
 
 addDecorator(withA11y);
 addDecorator(withGrommet({
@@ -29,3 +23,15 @@ addDecorator(withGrommet({
     },
   }
 ));
+
+addParameters({
+ dependencies: {
+    mapper: dependenciesMap,
+  }
+});
+
+configure([
+  require.context('.', true, /\.stories\.mdx$/),
+  require.context('../src/components', true, /\.stories\.tsx$/),
+  require.context('../src/chartjs', true, /\.stories\.tsx$/)
+], module);

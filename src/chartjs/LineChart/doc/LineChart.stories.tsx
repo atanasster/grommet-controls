@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Text } from 'grommet';
-import { LineChart } from '../index';
+import { LineChart } from '../LineChart';
 import { colorFromIndex } from '../../../utils';
 import {
  rndDatasets, rndDatasets2d, rndRange, timeFormat, daysAfterStr, daysAfter, rndTimeSerie,

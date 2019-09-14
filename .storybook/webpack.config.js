@@ -1,3 +1,5 @@
+const DependenciesPlugin = require('storybook-dep-webpack-plugin');
+
 module.exports = ({ config, mode }) => {
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
@@ -13,5 +15,8 @@ module.exports = ({ config, mode }) => {
     ],
   });
   config.resolve.extensions.push('.ts', '.tsx');
+  config.plugins.push(new DependenciesPlugin({
+    // filter: resource => /\.(stories|story)\.[tj]sx?$/.test(resource) && resource.indexOf('Avatar') > -1.
+  }));
   return config;
 };

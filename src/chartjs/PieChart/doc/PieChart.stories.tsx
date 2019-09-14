@@ -1,5 +1,5 @@
 import React from 'react';
-import { PieChart } from '../index';
+import { PieChart } from '../PieChart';
 import { rndDatasets } from '../../data/data';
 
 export default {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Text } from 'grommet';
 import { Down } from 'grommet-icons';
-import { Value } from '../index';
+import { Value } from '../Value';
 
 export default {
   title: 'CONTROLS|controls/Value',

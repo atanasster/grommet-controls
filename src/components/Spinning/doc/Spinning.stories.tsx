@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from 'grommet';
-import { Spinning } from '../index';
+import { Spinning } from '../Spinning';
 
 export default {
   title: 'CONTROLS|controls/Spinning',

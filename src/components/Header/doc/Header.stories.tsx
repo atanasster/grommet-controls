@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Heading, Image } from 'grommet';
 import { Grommet } from 'grommet-icons';
-import { Header } from '../index';
+import { Header } from '../Header';
 
 export default {
   title: 'CONTROLS|layout/Header',
