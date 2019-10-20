@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import {  Hide, View } from 'grommet-icons/icons/View';
+import { View } from 'grommet-icons/icons/View';
+import { Hide } from 'grommet-icons/icons/Hide';
+
 import { DropInput } from '../DropInput';
 import { IPasswordInputProps } from './PasswordInputProps';
 
