@@ -25,7 +25,10 @@ addDecorator(withGrommet({
 ));
 
 addParameters({
- dependencies: {
+  options: {
+    showPanel: false,
+  },
+  dependencies: {
     mapper: dependenciesMap,
   }
 });
