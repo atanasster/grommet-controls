@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from 'grommet-icons/icons/View';
+import { FormView } from 'grommet-icons/icons/FormView';
 import { Hide } from 'grommet-icons/icons/Hide';
 
 import { DropInput } from '../DropInput';
@@ -13,7 +13,7 @@ import { IPasswordInputProps } from './PasswordInputProps';
 */
 class PasswordInput extends Component<IPasswordInputProps> {
   static defaultProps = {
-    viewIcon: <View />,
+    viewIcon: <FormView />,
     hideIcon: <Hide />,
     a11yViewPassword: 'View password',
     a11yHidePassword: 'Hide password',
