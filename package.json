@@ -40,7 +40,7 @@
     "pub": "pushd ./ && npm run build && cd dist && npm publish && popd"
   },
   "peerDependencies": {
-    "grommet": ">= 2.7.5",
+    "grommet": ">= 2.7.10",
     "grommet-icons": ">= 4.1.0",
     "react": ">= 16.8.0",
     "react-dom": ">= 16.8.0",
@@ -52,10 +52,11 @@
     "text-mask-core": "^5.0.1"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^5.2.0",
-    "@storybook/addon-docs": "^5.2.0",
-    "@storybook/addons": "^5.2.0",
-    "@storybook/react": "^5.2.0",
+    "@storybook/addon-a11y": "^5.2.4",
+    "@storybook/addon-docs": "^5.2.4",
+    "@storybook/addon-google-analytics": "^5.2.4",
+    "@storybook/addons": "^5.2.4",
+    "@storybook/react": "^5.2.4",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "@types/styled-components": "^4.1.18",
@@ -69,7 +70,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
-    "grommet": "^2.7.5",
+    "grommet": "^2.7.10",
     "grommet-icons": "^4.3.0",
     "pre-commit": "^1.2.2",
     "react": "^16.9.0",
