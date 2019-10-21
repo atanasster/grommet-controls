@@ -86,7 +86,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-typescript2": "^0.22.1",
     "storybook-addon-deps": "^0.9.5",
-    "storybook-addon-grommet": "^0.9.4",
+    "storybook-addon-grommet": "^0.9.7",
     "storybook-dep-webpack-plugin": "^0.9.2",
     "styled-components": "^4.3.2",
     "typescript": "^3.5.3"
