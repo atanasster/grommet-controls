@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {
-  Box, Button, ButtonProps, Keyboard, Text,
+ Box, Button, Keyboard, Text,
 } from 'grommet';
 import { FormDown } from 'grommet-icons/icons/FormDown';
 import { FormNext } from 'grommet-icons/icons/FormNext';
-import { IMenuItem, IVerticalMenuProps } from './VerticalMenuProps';
+import { IMenuItem, IVerticalMenuProps, ButtonClassType } from './VerticalMenuProps';
 
 
 const isActive = (active: IMenuItem, item: IMenuItem): boolean => (
@@ -185,7 +185,7 @@ class VerticalMenu extends Component<IVerticalMenuProps, IVerticalMenuState> {
     } = item;
     const itemId = id || label;
     const isExpanded = expandedItems.includes(itemId);
-    const ButtonClass: React.ComponentClass<ButtonProps> = (items ? Button : buttonClass) || Button;
+    const ButtonClass: ButtonClassType = (items ? Button : buttonClass) || Button;
     const itemKey = `item_${itemId}_${level}`;
 
     let background;

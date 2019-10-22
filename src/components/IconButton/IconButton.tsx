@@ -10,18 +10,8 @@ const IconButton = (props: ButtonProps) => (
   <StyledIconButton
     {...props}
     hoverIndicator={{
-          // @ts-ignore
-      dark: {
-        color: 'dark-2',
-        opacity: '1',
-      },
-      light: {
-        color: 'light-2',
-        opacity: '1',
-      },
-      border: {
-        radius: '50%',
-      },
+      dark: 'dark-2',
+      light: 'light-2',
     }}
   />
     );

@@ -14,7 +14,7 @@ export interface IDateInputOwnProps {
   */
   disabledDates?: (string | string[])[],
   /** The first day of the week. 0 for Sunday. 1 for Monday */
-  firstDayOfWeek?: '0' | '1',
+  firstDayOfWeek?: 0 | 1,
   /** Mask format - by default this is set to "mm dd yyyy" but can be changed ie "dd mm yyyy" */
   maskFormat?: string,
   /** The locale to use */

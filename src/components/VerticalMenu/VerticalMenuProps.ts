@@ -20,6 +20,9 @@ export interface IMenuItem {
   onClick?: (id: string) => void,
 }
 
+export type ButtonClassType
+    = (React.ComponentClass<ButtonProps> | React.FunctionComponent<ButtonProps>);
+
 export interface IVerticalMenuProps {
   /** Array of menu items */
   items: IMenuItem[],
@@ -29,7 +32,7 @@ export interface IVerticalMenuProps {
     label?: string,
   },
   /** Custom class to use for the button instead of RoutedButton */
-  buttonClass?: React.ComponentClass<ButtonProps>,
+  buttonClass?: ButtonClassType,
   /** If specified, will expand all items with chidren */
   expandAll?: boolean,
   /** Function that will be called when the user selects a menu item */

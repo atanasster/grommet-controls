@@ -125,7 +125,7 @@ class TableExample extends React.Component {
   };
 
 
-  onChangeFields = ({ value }) => {
+  onChangeFields = ({ value }: any) => {
     const { columns } = this.state;
     this.setState({
       columns: updateColumnShow(columns, value),

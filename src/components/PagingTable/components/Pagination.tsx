@@ -139,7 +139,7 @@ export default class ReactTablePagination extends Component<IPaginationProps, IP
         <Box direction='row'>
           <StyledSelect
             aria-label='Select rows per page'
-            onChange={e => onPageSizeChange(Number(e.option.split(' ')[0]))}
+            onChange={(e: any) => onPageSizeChange(Number(e.option.split(' ')[0]))}
             value={`${pageSize} ${this.props.rowsText}`}
             options={pageSizeOptions.map(option => (`${option} ${this.props.rowsText}`))}
           />
