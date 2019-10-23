@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box } from 'grommet';
+import { action } from '@storybook/addon-actions';
 import { Colors } from '../Colors';
 import {
   materialColors,
@@ -79,7 +80,7 @@ export const main = () => (
     <Box basis='medium'>
       <Colors
         size='small'
-        onSelect={(option) => { alert(JSON.stringify(option)); }}
+        onSelect={action('onSelect')}
         colors={materialColors}
       />
     </Box>
@@ -96,7 +97,7 @@ export const onSelect = () => (
   <Colors
     size='small'
     colors={basicColors}
-    onSelect={(option) => { alert(JSON.stringify(option)); }}
+    onSelect={action('onSelect')}
   />
 );
 export const size = () => (

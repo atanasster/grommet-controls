@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Button } from 'grommet';
+import { action } from '@storybook/addon-actions';
 import { NumberInputField } from '../NumberInputField';
 import { Form, validators } from '../../../index';
 
@@ -11,7 +12,7 @@ export default {
 
 export const main = () => (
   <Form
-    onSubmit={values => alert(JSON.stringify(values))}
+    onSubmit={action('onSubmit')}
     pad={{ horizontal: 'small' }}
     focusFirstChild={false}
   >
@@ -30,7 +31,7 @@ export const main = () => (
 
 export const inField = () => (
   <Form
-    onSubmit={values => alert(JSON.stringify(values))}
+    onSubmit={action('onSubmit')}
     pad={{ horizontal: 'small' }}
     focusFirstChild={false}
   >
@@ -50,7 +51,7 @@ export const inField = () => (
 
 export const validation = () => (
   <Form
-    onSubmit={values => alert(JSON.stringify(values))}
+    onSubmit={action('onSubmit')}
     pad={{ horizontal: 'small' }}
     focusFirstChild={false}
   >

@@ -3,6 +3,7 @@ import { Box, Text } from 'grommet';
 import {
  Inbox, Send, Flag, Star, Document, Tag, Trash,
 } from 'grommet-icons';
+import { action } from '@storybook/addon-actions';
 import { VerticalMenu } from '../VerticalMenu';
 
 export default {
@@ -19,7 +20,7 @@ export const main = () => (
         label: 'Local',
         items: [
           { id: 'c_drive', href: '/c_drive', label: 'C: drive' },
-          { id: 'f_drive', onClick: () => alert('Clicked F drive'), label: 'F: drive' },
+          { id: 'f_drive', onClick: action('onClick'), label: 'F: drive' },
         ],
       },
       {
@@ -27,7 +28,7 @@ export const main = () => (
         label: 'Cloud',
         items: [
           { id: 'drop_box', href: '/drop_box', label: 'DropBox' },
-          { id: 'google_drive', onClick: () => alert('Clicked Google drive'), label: 'Google drive' },
+          { id: 'google_drive', onClick: action('onClick'), label: 'Google drive' },
         ],
 
       },

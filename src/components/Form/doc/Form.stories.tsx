@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Button, Text } from 'grommet';
+import { action } from '@storybook/addon-actions';
 import { Form } from '../Form';
 import {
   TextInputField, PasswordInputField, SelectField, CheckBoxField,
@@ -13,7 +14,7 @@ export default {
 
 export const main = () => (
   <Form
-    onSubmit={values => alert(JSON.stringify(values))}
+    onSubmit={action('onSubmit')}
     pad={{
       horizontal: 'small',
     }}
@@ -31,7 +32,7 @@ export const main = () => (
 );
 
 export const onSubmit = () => (
-  <Form focusFirstChild={false} onSubmit={values => alert(JSON.stringify(values))} basis='small'>
+  <Form focusFirstChild={false} onSubmit={action('onSubmit')} basis='small'>
     <TextInputField label='Text' name='fieldname' />
   </Form>
         );
@@ -59,8 +60,8 @@ export const onSubmitError = () => (
   <Box pad='small'>
     <Form
       focusFirstChild={false}
-      onSubmit={values => alert(JSON.stringify(values))}
-      onSubmitError={errors => alert(JSON.stringify(errors))}
+      onSubmit={action('onSubmit')}
+      onSubmitError={action('onSubmitError')}
       basis='small'
     >
       <TextInputField label='Text' name='errofield' validation={[validators.required(), validators.minLength(8)]} />
@@ -73,7 +74,7 @@ export const onInvalidForm = () => {
     <Box pad='small'>
       <Form
         focusFirstChild={false}
-        onSubmit={values => alert(JSON.stringify(values))}
+        onSubmit={action('onSubmit')}
         onInvalidForm={error => setInvalid(error)}
         onValidForm={() => setInvalid(undefined)}
         basis='small'

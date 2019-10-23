@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Button } from 'grommet';
 import { FormSubtract, Trash } from 'grommet-icons';
+import { action } from '@storybook/addon-actions';
 import { Tags } from '../Tags';
 
 export default {
@@ -82,7 +83,7 @@ export const tagProps = () => (
     }}
   />
           );
-export const onClick = () => <TagsInput onClick={(_event, option) => alert(`Clicked on ${option}`)} />;
+export const onClick = () => <TagsInput onClick={action('onClick')} />;
 export const focusable = () => <TagsInput focusable={false} />;
 export const placeholder = () => <TagsInput placeholder='No selection' />;
 export const value = () => <TagsInput value='tag' />;

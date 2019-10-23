@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grommet, CircleQuestion } from 'grommet-icons';
+import { action } from '@storybook/addon-actions';
 import { Notification } from '../Notification';
 
 export default {
@@ -8,7 +9,7 @@ export default {
 };
 
 
-const onClose = () => alert('Close clicked');
+const onClose = action('Close clicked');
 
 export const main = () => (
   <Notification

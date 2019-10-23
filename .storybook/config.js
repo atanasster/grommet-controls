@@ -28,7 +28,6 @@ addDecorator(withGrommet({
 
 addParameters({
   options: {
-    showPanel: false,
     theme: {
       ...themes.light,
       brandImage: GrommetLogo,

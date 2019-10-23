@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Grommet, FormSubtract } from 'grommet-icons';
+import { action } from '@storybook/addon-actions';
 import { Tag } from '../Tag';
 
 export default {
@@ -11,7 +12,7 @@ const tagIcons = [<Github />, <Grommet />];
 
 
 export const main = () => (
-  <Tag label='Tag' onChange={() => alert('Closing')} />
+  <Tag label='Tag' onChange={action('onChange')}/>
 );
 export const a11yTitle = () => (
   <Tag
@@ -59,7 +60,7 @@ export const round = () => (
 );
 export const onClick = () => (
   <Tag
-    onClick={() => alert('Clicked on label')}
+    onClick={action('onClick')}
   />
 );
 export const onChange = () => {
@@ -70,7 +71,7 @@ export const onChange = () => {
   return (
     <Tag
       icon={tagIcons[iconIndex]}
-      onClick={() => alert('Clicked on label')}
+      onClick={action('onClick')}
       onChange={onToggle}
     />
   );

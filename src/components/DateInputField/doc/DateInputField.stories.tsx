@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Button } from 'grommet';
+import { action } from '@storybook/addon-actions';
 import { DateInputField } from '../DateInputField';
 import {
   Form, validators,
@@ -14,7 +15,7 @@ export default {
 
 export const main = () => (
   <Form
-    onSubmit={values => alert(JSON.stringify(values))}
+    onSubmit={action('onSubmit')}
     pad={{ horizontal: 'small' }}
     focusFirstChild={false}
   >
@@ -31,7 +32,7 @@ export const main = () => (
 
 export const inField = () => (
   <Form
-    onSubmit={values => alert(JSON.stringify(values))}
+    onSubmit={action('onSubmit')}
     pad={{ horizontal: 'small' }}
     focusFirstChild={false}
   >
@@ -52,7 +53,7 @@ export const maskFormat = () => {
   const [form] = React.useState({ date: smallDate(new Date(), 'es-ES') });
   return (
     <Form
-      onSubmit={values => alert(JSON.stringify(values))}
+      onSubmit={action('onSubmit')}
       pad={{ horizontal: 'small' }}
       focusFirstChild={false}
       object={form}
@@ -75,7 +76,7 @@ export const maskFormat = () => {
 
 export const validation = () => (
   <Form
-    onSubmit={values => alert(JSON.stringify(values))}
+    onSubmit={action('onSubmit')}
     pad={{ horizontal: 'small' }}
     focusFirstChild={false}
   >

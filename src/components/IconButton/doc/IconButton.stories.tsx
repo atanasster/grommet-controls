@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box } from 'grommet';
 import { Favorite } from 'grommet-icons';
+import { action } from '@storybook/addon-actions';
 import { IconButton } from '../IconButton';
 
 export default {
@@ -12,7 +13,7 @@ export const main = () => (
   <Box basis='medium' align='center'>
     <IconButton
       icon={<Favorite />}
-      onClick={() => alert('Clicked')}
+      onClick={action('Clicked')}
     />
   </Box>
 );
