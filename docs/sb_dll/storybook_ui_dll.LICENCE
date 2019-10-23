@@ -52,7 +52,7 @@
   http://jedwatson.github.io/classnames
 */
 
-/** @license React v16.8.6
+/** @license React v16.10.1
  * react.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -61,7 +61,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-/** @license React v16.8.6
+/** @license React v16.10.1
  * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -70,7 +70,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-/** @license React v0.13.6
+/** @license React v0.16.2
  * scheduler.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -94,7 +94,7 @@ object-assign
  * http://www.apache.org/licenses/LICENSE-2.0
  */
 
-/** @license React v16.8.6
+/** @license React v16.10.1
  * react-dom.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.

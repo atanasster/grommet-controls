@@ -1,0 +1,83 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Heading, Text, Paragraph } from 'grommet';
+
+<Meta title="Docs|info/typography" />
+
+# `<Heading />`
+heading text structured in levels
+
+<Preview>
+  <Story name="Heading 1">
+    <Heading level={1}>
+      Heading H1
+    </Heading>
+  </Story> 
+  <Story name="Heading 2">
+    <Heading level={2}>
+      Heading H2
+    </Heading>
+  </Story>
+  <Story name="Heading 3">
+    <Heading level={3}>
+      Heading H3
+    </Heading>
+  </Story>
+  <Story name="Heading 4">
+    <Heading level={4}>
+      Heading H4
+    </Heading>
+  </Story>
+  <Story name="Heading 5">
+    <Heading level={5}>
+      Heading H5
+    </Heading> 
+  </Story>
+  <Story name="Heading 6">
+    <Heading level={6}>
+      Heading H6
+    </Heading> 
+  </Story> 
+</Preview>    
+
+# `<Text />`
+arbitrary text
+
+<Preview>
+  <Story name="Text xxlarge">
+    <Text size='xxlarge'>Text xxlarge</Text>
+  </Story>
+  <Story name="Text xlarge">
+    <Text size='xlarge'>Text xlarge</Text>
+  </Story> 
+  <Story name="Text large">
+    <Text size='large'>Text large</Text>
+  </Story> 
+  <Story name="Text medium">
+    <Text size='medium'>Text medium</Text>
+  </Story> 
+  <Story name="Text small">
+    <Text size='small'>Text small</Text>
+  </Story> 
+  <Story name="Text xsmall">
+    <Text size='xsmall'>Text xsmall</Text>
+  </Story>
+  
+</Preview>
+
+# `<Paragraph />`
+a paragraph of text
+
+<Preview>
+  <Story name="Paragraph xlarge">
+    <Paragraph size='xlarge'>Paragraph xlarge</Paragraph>
+  </Story> 
+  <Story name="Paragraph large">
+    <Paragraph size='large'>Paragraph large</Paragraph>
+  </Story> 
+  <Story name="Paragraph medium">
+    <Paragraph size='medium'>Paragraph medium</Paragraph>
+  </Story> 
+  <Story name="Paragraph small">
+    <Paragraph size='small'>Paragraph small</Paragraph>
+  </Story> 
+</Preview>

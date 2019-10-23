@@ -42,6 +42,7 @@ addParameters({
 
 configure([
   require.context('.', true, /\.stories\.mdx$/),
+  require.context('.', true, /\.stories\.tsx$/),
   require.context('../src/components', true, /\.stories\.tsx$/),
   require.context('../src/chartjs', true, /\.stories\.tsx$/)
 ], module);
