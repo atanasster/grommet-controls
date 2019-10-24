@@ -1,6 +1,6 @@
 {
   "name": "grommet-controls",
-  "version": "2.0.0-rc-2",
+  "version": "2.0.0-rc-3",
   "main": "index.js",
   "module": "index.es.js",
   "description": "grommet 2 controls",
@@ -57,6 +57,7 @@
     "@storybook/addon-a11y": "^5.3.0-alpha.26",
     "@storybook/addon-docs": "^5.3.0-alpha.26",
     "@storybook/addon-google-analytics": "^5.3.0-alpha.26",
+    "@storybook/addon-knobs": "^5.3.0-alpha.26",
     "@storybook/addons": "^5.3.0-alpha.26",
     "@storybook/addon-storysource": "^5.3.0-alpha.26",
     "@storybook/react": "^5.3.0-alpha.26",
