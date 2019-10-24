@@ -18,7 +18,7 @@ export const main = () => (
       image='//v2.grommet.io/assets/Wilderpeople_Ricky.jpg'
       title='Adam Smith'
       subTitle='admin'
-      size={select('Size', ['medium', 'large', 'xlarge', 'xxlarge'])}
+      size={select('Size', ['medium', 'large', 'xlarge', 'xxlarge'], 'medium')}
     />
   </Box>
 );
