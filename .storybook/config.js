@@ -1,10 +1,12 @@
 import React from 'react';
 import { dependenciesMap } from 'storybook-dep-webpack-plugin/runtime/main';
+import { DocsPage } from 'storybook-addon-deps/blocks/DocsPage';
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { themes } from '@storybook/theming';
 import { withA11y } from '@storybook/addon-a11y';
 import { withGrommet } from 'storybook-addon-grommet';
 import { grommet, dark } from 'grommet';
+
 import GrommetLogo from './assets/grommet-logo.svg';
 import { black, light, materialdark, materiallight, metro } from '../src/themes';
 
@@ -37,7 +39,8 @@ addParameters({
   },
   dependencies: {
     mapper: dependenciesMap,
-  }
+  },
+  docs: { page: DocsPage }
 });
 
 configure([
