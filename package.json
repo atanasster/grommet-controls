@@ -90,9 +90,9 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-typescript2": "^0.22.1",
-    "storybook-addon-deps": "^0.9.85",
-    "storybook-addon-grommet": "^0.9.8",
-    "storybook-dep-webpack-plugin": "^0.9.71",
+    "storybook-addon-deps": "^0.9.92",
+    "storybook-addon-grommet": "^1.0.0",
+    "storybook-dep-webpack-plugin": "^0.9.92",
     "styled-components": "^4.3.2",
     "typescript": "^3.5.3"
   }

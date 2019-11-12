@@ -1,5 +1,4 @@
 import React from 'react';
-import { dependenciesMap } from 'storybook-dep-webpack-plugin/runtime/main';
 import { DocsPage } from 'storybook-addon-deps/blocks/DocsPage';
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { themes } from '@storybook/theming';
@@ -36,9 +35,6 @@ addParameters({
       brandTitle: 'grommet-controls',
       url: 'https://github.com/atanasster/grommet-controls.git'
     },
-  },
-  dependencies: {
-    mapper: dependenciesMap,
   },
   docs: { page: DocsPage }
 });
