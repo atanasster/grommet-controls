@@ -4,7 +4,7 @@ import { Lock, Unlock } from 'grommet-icons';
 import { PasswordInput } from '../PasswordInput';
 
 export default {
-  title: 'CONTROLS|input/PasswordInput',
+  title: 'CONTROLS/input/PasswordInput',
   component: PasswordInput,
 };
 

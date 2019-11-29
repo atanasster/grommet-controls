@@ -7,7 +7,7 @@ import { action } from '@storybook/addon-actions';
 import { VerticalMenu } from '../VerticalMenu';
 
 export default {
-  title: 'CONTROLS|navigation/VerticalMenu',
+  title: 'CONTROLS/navigation/VerticalMenu',
   component: VerticalMenu,
 };
 

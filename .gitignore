@@ -1,6 +1,6 @@
 .idea/**
-node_modules/**
 dist/**
+.rpt2_cache
 .eslintcache
 coverage
 .vscode
@@ -9,3 +9,4 @@ package-lock.json
 yarn-error.log
 .DS_Store
 .tmp/
+node_modules

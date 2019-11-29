@@ -3,7 +3,7 @@ import { Box } from 'grommet';
 import { EmailInput } from '../EmailInput';
 
 export default {
-  title: 'CONTROLS|input/EmailInput',
+  title: 'CONTROLS/input/EmailInput',
   component: EmailInput,
 };
 

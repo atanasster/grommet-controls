@@ -5,7 +5,7 @@ import { DropInput } from '../DropInput';
 import { smallDate } from '../../../utils/moment';
 
 export default {
-  title: 'CONTROLS|input/DropInput',
+  title: 'CONTROLS/input/DropInput',
   component: DropInput,
 };
 

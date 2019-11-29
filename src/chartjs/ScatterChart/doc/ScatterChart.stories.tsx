@@ -3,7 +3,7 @@ import { ScatterChart } from '../ScatterChart';
 import { rndDatasets2d } from '../../data/data';
 
 export default {
-  title: 'CHARTS|chartjs/ScatterChart',
+  title: 'CHARTS/chartjs/ScatterChart',
   component: ScatterChart,
 };
 

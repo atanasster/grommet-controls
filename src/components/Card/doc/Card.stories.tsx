@@ -8,7 +8,7 @@ import { ImageStamp } from '../../ImageStamp';
 
 
 export default {
-  title: 'CONTROLS|controls/Card',
+  title: 'CONTROLS/controls/Card',
   component: Card,
 };
 

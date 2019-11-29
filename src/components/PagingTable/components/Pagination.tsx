@@ -98,6 +98,7 @@ export default class ReactTablePagination extends Component<IPaginationProps, IP
     let pageJump;
     if (showPageJump) {
       pageJump = (
+        //@ts-ignore
         <StyledPageInput
           aria-label='Select page to jump to'
           onChange={(e) => {

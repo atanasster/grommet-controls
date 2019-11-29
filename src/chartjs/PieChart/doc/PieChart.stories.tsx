@@ -3,7 +3,7 @@ import { PieChart } from '../PieChart';
 import { rndDatasets } from '../../data/data';
 
 export default {
-  title: 'CHARTS|chartjs/PieChart',
+  title: 'CHARTS/chartjs/PieChart',
   component: PieChart,
 };
 

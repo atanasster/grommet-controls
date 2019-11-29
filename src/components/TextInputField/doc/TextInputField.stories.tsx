@@ -5,7 +5,7 @@ import { TextInputField } from '../TextInputField';
 import { Form, validators } from '../../../index';
 
 export default {
-  title: 'CONTROLS|validation/TextInputField',
+  title: 'CONTROLS/validation/TextInputField',
   component: TextInputField,
 };
 

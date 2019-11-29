@@ -5,7 +5,7 @@ import { MaskedInputField } from '../MaskedInputField';
 import { Form, validators } from '../../../index';
 
 export default {
-  title: 'CONTROLS|validation/MaskedInputField',
+  title: 'CONTROLS/validation/MaskedInputField',
   component: MaskedInputField,
 };
 

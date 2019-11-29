@@ -3,7 +3,7 @@ import { RadarChart } from '../RadarChart';
 import { rndDatasets } from '../../data/data';
 
 export default {
-  title: 'CHARTS|chartjs/RadarChart',
+  title: 'CHARTS/chartjs/RadarChart',
   component: RadarChart,
 };
 

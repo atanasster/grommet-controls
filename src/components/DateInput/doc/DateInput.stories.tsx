@@ -4,7 +4,7 @@ import { DateInput } from '../DateInput';
 import { smallDate } from '../../../utils/moment';
 
 export default {
-  title: 'CONTROLS|input/DateInput',
+  title: 'CONTROLS/input/DateInput',
   component: DateInput,
 };
 

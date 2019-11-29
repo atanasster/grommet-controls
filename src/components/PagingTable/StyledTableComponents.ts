@@ -39,7 +39,7 @@ export interface ThComponentProps {
   hidden: boolean,
   expander?: ButtonProps,
   pivot: string | boolean,
-  toggleSort?: (event: MouseEvent<HTMLDivElement>) => void,
+  toggleSort?: (event: MouseEvent<HTMLButtonElement>) => void,
   children: React.ReactNode,
   CellTextComponent?: React.ElementType,
   style: object,

@@ -4,7 +4,7 @@ import { AddCircle, SubtractCircle } from 'grommet-icons';
 import { NumberInput } from '../NumberInput';
 
 export default {
-  title: 'CONTROLS|input/NumberInput',
+  title: 'CONTROLS/input/NumberInput',
   component: NumberInput,
 };
 

@@ -4,7 +4,7 @@ import { Down } from 'grommet-icons';
 import { Value } from '../Value';
 
 export default {
-  title: 'CONTROLS|controls/Value',
+  title: 'CONTROLS/controls/Value',
   component: Value,
 };
 

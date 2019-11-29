@@ -3,7 +3,7 @@ import { PolarChart } from '../PolarChart';
 import { rndDatasets } from '../../data/data';
 
 export default {
-  title: 'CHARTS|chartjs/PolarChart',
+  title: 'CHARTS/chartjs/PolarChart',
   component: PolarChart,
 };
 

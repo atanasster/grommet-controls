@@ -5,7 +5,7 @@ import { PasswordInputField } from '../PasswordInputField';
 import { Form, validators } from '../../../index';
 
 export default {
-  title: 'CONTROLS|validation/PasswordInputField',
+  title: 'CONTROLS/validation/PasswordInputField',
   component: PasswordInputField,
 };
 

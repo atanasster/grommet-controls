@@ -7,7 +7,7 @@ import {
 } from '../../../index';
 
 export default {
-  title: 'CONTROLS|validation/ColorInputField',
+  title: 'CONTROLS/validation/ColorInputField',
   component: ColorInputField,
 };
 

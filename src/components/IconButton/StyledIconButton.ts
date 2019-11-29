@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Button, ButtonProps } from 'grommet';
+import { Button } from 'grommet';
 
-export default styled(Button)<ButtonProps>`
+export default styled(Button)`
   border-radius: 50%;
 `;

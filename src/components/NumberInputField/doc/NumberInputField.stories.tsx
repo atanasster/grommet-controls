@@ -5,7 +5,7 @@ import { NumberInputField } from '../NumberInputField';
 import { Form, validators } from '../../../index';
 
 export default {
-  title: 'CONTROLS|validation/NumberInputField',
+  title: 'CONTROLS/validation/NumberInputField',
   component: NumberInputField,
 };
 

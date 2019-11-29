@@ -7,7 +7,7 @@ import {
 } from '../../../index';
 
 export default {
-  title: 'CONTROLS|validation/CheckBoxField',
+  title: 'CONTROLS/validation/CheckBoxField',
   component: CheckBoxField,
 };
 

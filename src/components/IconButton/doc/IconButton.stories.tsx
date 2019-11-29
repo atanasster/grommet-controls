@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { IconButton } from '../IconButton';
 
 export default {
-  title: 'CONTROLS|controls/IconButton',
+  title: 'CONTROLS/controls/IconButton',
   component: IconButton,
 };
 

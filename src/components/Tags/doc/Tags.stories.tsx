@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { Tags } from '../Tags';
 
 export default {
-  title: 'CONTROLS|input/Tags',
+  title: 'CONTROLS/input/Tags',
   component: Tags,
 };
 

@@ -9,7 +9,7 @@ import {
 } from '../../../index';
 
 export default {
-  title: 'CONTROLS|controls/Colors',
+  title: 'CONTROLS/controls/Colors',
   component: Colors,
 };
 

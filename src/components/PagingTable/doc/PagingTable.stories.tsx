@@ -6,7 +6,7 @@ import { Add, Subtract } from 'grommet-icons';
 import { PagingTable, IPagingTableColumn, IDataObject } from '../index';
 
 export default {
-  title: 'CONTROLS|controls/PagingTable',
+  title: 'CONTROLS/controls/PagingTable',
   component: PagingTable,
 };
 

@@ -8,7 +8,7 @@ import {
 import { smallDate } from '../../../utils/moment';
 
 export default {
-  title: 'CONTROLS|validation/DateInputField',
+  title: 'CONTROLS/validation/DateInputField',
   component: DateInputField,
 };
 

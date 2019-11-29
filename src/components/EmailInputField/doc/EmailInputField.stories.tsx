@@ -7,7 +7,7 @@ import {
 } from '../../../index';
 
 export default {
-  title: 'CONTROLS|validation/EmailInputField',
+  title: 'CONTROLS/validation/EmailInputField',
   component: EmailInputField,
 };
 

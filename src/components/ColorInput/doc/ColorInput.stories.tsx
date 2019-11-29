@@ -4,7 +4,7 @@ import { ColorInput } from '../ColorInput';
 import { materialColors, uiColors } from '../../../index';
 
 export default {
-  title: 'CONTROLS|input/ColorInput',
+  title: 'CONTROLS/input/ColorInput',
   component: ColorInput,
 };
 

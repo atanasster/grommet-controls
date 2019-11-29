@@ -3,7 +3,7 @@ import { BarChart } from '../BarChart';
 import { rndDatasets } from '../../data/data';
 
 export default {
-  title: 'CHARTS|chartjs/BarChart',
+  title: 'CHARTS/chartjs/BarChart',
   component: BarChart,
 };
 

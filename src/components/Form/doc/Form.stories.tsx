@@ -8,7 +8,7 @@ import {
 } from '../../../index';
 
 export default {
-  title: 'CONTROLS|validation/Form',
+  title: 'CONTROLS/validation/Form',
   component: Form,
 };
 
