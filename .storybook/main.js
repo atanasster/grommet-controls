@@ -1,8 +1,12 @@
-const DependenciesPlugin = require('storybook-dep-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  presets: ['@storybook/addon-docs/preset'],
+  presets: ['@storybook/addon-docs/preset', {
+    name: 'storybook-addon-deps/preset',
+    options: {
+      maxLevels: 6,
+    }  
+  }],
   stories: [
     './*.stories.mdx',
     './*.stories.tsx',
@@ -49,13 +53,5 @@ module.exports = {
         "@storybook/theming": path.resolve(path.resolve(__dirname, '..'), "node_modules", "@storybook", "theming"),
       }}
     },
-
-    plugins: [
-      ...config.plugins,
-      new DependenciesPlugin({
-        //reduce levels for speed
-        maxLevels: 6,
-      })
-    ]
   }),
 };
