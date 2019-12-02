@@ -28,11 +28,11 @@
   "scripts": {
     "build": "rollup -c && tsc",
     "build-watch": "rollup -c -w",
-    "generate-docs": "node ./tools/generate-docs",
     "dev": "concurrently --kill-others \"npm run build-watch\" \"npm run start-example\"",
     "storybook": "start-storybook -p 6006 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o docs",
-    "pub": "pushd ./ && npm run build && cd dist && npm publish && popd"
+    "pub": "pushd ./ && npm run build && cd dist && npm publish && popd",
+    "debug": "NODE_OPTIONS=--inspect-brk start-storybook -p 6006 -c .storybook"
   },
   "peerDependencies": {
     "grommet": ">= 2.7.10",
@@ -87,6 +87,7 @@
     "storybook-addon-deps": "^1.0.5",
     "storybook-addon-grommet": "^1.0.1",
     "styled-components": "^4.3.2",
-    "typescript": "^3.5.3"
+    "typescript": "^3.5.3",
+    "webpack-react-docgen-typescript": "^0.9.3"
   }
 }

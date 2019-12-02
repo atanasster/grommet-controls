@@ -1,7 +1,14 @@
 const path = require('path');
 
 module.exports = {
-  presets: ['@storybook/addon-docs/preset', {
+  presets: ['@storybook/addon-docs/preset', 
+  {
+    name: require.resolve('webpack-react-docgen-typescript/preset'),
+    options: {
+      fileNameResolver: ({ resourcePath, cacheFolder }) => path.join(cacheFolder, resourcePath.replace(/[^a-z0-9]/gi, '_')),
+    },
+  },  
+  {
     name: 'storybook-addon-deps/preset',
     options: {
       maxLevels: 6,
@@ -23,27 +30,6 @@ module.exports = {
   ],
   webpack: async (config, { configType }) => ({
     ...config,
-    module: {
-      ...config.module,
-      rules: [
-        ...config.module.rules.slice(1),
-        ...[
-          {
-            test: /\.(ts|tsx)$/,
-            loader: require.resolve('babel-loader'),
-            options: {
-              presets: [['react-app', { flow: false, typescript: true }]],
-            }
-          },
-          {
-            test: /\.(ts|tsx)$/,
-            use: [
-              require.resolve("./typescript-props-loader.js"),
-            ],
-          }
-        ],
-      ],
-    },
     resolve: {
       ...config.resolve,
       extensions: [...(config.resolve.extensions || []), '.ts', '.tsx'],
