@@ -28,7 +28,6 @@ export default {
       typescript: require('typescript'),
     }),
     copy([
-      { files: 'src/**/**/*.{json,md}', dest: 'dist' },
       { files: 'README.md', dest: 'dist' },
       { files: 'package.json', dest: 'dist' },
     ]),

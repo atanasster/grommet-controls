@@ -1,30 +1,16 @@
-import React, {
- ReactElement, ValidationMap,
-} from 'react';
+import React from 'react';
 import { ThemeContext } from 'styled-components';
 import { Keyboard, Text } from 'grommet';
 import { FormClose } from 'grommet-icons/icons/FormClose';
 import { StyledTag, StyledIcon } from './StyledTag';
 import { ITagProps } from './TagProps';
 
-// small hack to addess issue with reavct-docgen-typescript
-// using React.FC<ITagProps> was not generating documentation for props
-export interface TagType {
-  (props: ITagProps, context?: any): ReactElement | null;
-  propTypes?: ITagProps;
-  contextTypes?: ValidationMap<any>;
-  defaultProps?: Partial<ITagProps>;
-  displayName?: string;
-}
 /**
  * A tag control with a label and icon<br/>
  * `import { Tag } from 'grommet-controls';`<br/>
  * `<Tag label={...} icon={...} />`<br/>
  */
-export const Tag:
-    React.ForwardRefExoticComponent<
-        React.RefAttributes<any> & ITagProps
-    > = React.forwardRef<any, TagType>(
+const Tag = React.forwardRef<HTMLDivElement, ITagProps>(
         ({
       disabled, label, a11yTitle, reverse, background, onClick, onChange,
       icon, color, focusable, round, size, truncate, ...rest
@@ -64,7 +50,7 @@ export const Tag:
                   }
                   return (
                     <StyledTag
-                      ref={ref as any}
+                      ref={ref as React.RefObject<HTMLDivElement>}
                       direction={reverse ? 'row-reverse' : 'row'}
                       justify='between'
                       align='center'
@@ -104,3 +90,5 @@ Tag.defaultProps = {
   pad: { horizontal: 'xsmall' },
   focusable: true,
 };
+
+export { Tag }

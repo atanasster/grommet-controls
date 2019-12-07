@@ -23,4 +23,4 @@ export interface ITagOwnProps {
   truncate?: boolean,
 }
 
-export type ITagProps = ITagOwnProps & BoxProps & Omit<JSX.IntrinsicElements['div'], 'ref' | 'onChange'>;
+export type ITagProps = ITagOwnProps & BoxProps & Omit<JSX.IntrinsicElements['div'], 'onChange'>;
