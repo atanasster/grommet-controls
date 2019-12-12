@@ -1,6 +1,6 @@
 {
   "name": "grommet-controls",
-  "version": "2.0.01",
+  "version": "2.0.02",
   "main": "index.js",
   "module": "index.es.js",
   "description": "grommet 2 controls",
