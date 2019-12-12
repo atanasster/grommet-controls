@@ -96,6 +96,32 @@ const filterItems = (items: IMenuItem[], search: string): IMenuItem[] => {
   return items;
 };
 
+const compareItems = (items: IMenuItem[], nextItems: IMenuItem[]): boolean => {
+  if (!items && !nextItems) {
+    return true;
+  }
+  if (!items && nextItems || items && !nextItems) {
+    return false;
+  }
+  if (items.length !== nextItems.length) {
+    return false;
+  }
+  for (let i = 0; i < items.length; i += 1) {
+    if (items[i].expanded !== nextItems[i].expanded
+        || items[i].href !== nextItems[i].href
+        || items[i].icon !== nextItems[i].icon
+        || items[i].label !== nextItems[i].label
+        || items[i].onClick !== nextItems[i].onClick
+        || items[i].widget !== nextItems[i].widget
+        || !compareItems(items[i].items, nextItems[i].items)
+    ) {
+      return false;
+    }
+  }
+  return true;
+};
+
+
 interface IVerticalMenuState {
   expandedItems? : string[],
   originalExpandAll? : boolean,
@@ -125,7 +151,8 @@ class VerticalMenu extends Component<IVerticalMenuProps, IVerticalMenuState> {
     const { originalExpandAll, search: stateSearch, items: stateItems = [] } = prevState;
 
     if (
-      items.toString() !== stateItems.toString()
+      items !== stateItems // when instance are not the same we do not need to do a full compare.
+      || !compareItems(items, stateItems)
       || expandAll !== originalExpandAll
       || search !== stateSearch
     ) {
