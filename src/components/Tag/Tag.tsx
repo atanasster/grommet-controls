@@ -82,7 +82,7 @@ const Tag = React.forwardRef<HTMLDivElement, ITagProps>(
               </ThemeContext.Consumer>
             </Keyboard>
           );
-        }
+        },
 );
 
 Tag.defaultProps = {
@@ -91,4 +91,4 @@ Tag.defaultProps = {
   focusable: true,
 };
 
-export { Tag }
+export { Tag };
