@@ -8,13 +8,21 @@ export default {
   component: Value,
 };
 
-export const main = () => (
+export const main = props => (
   <Box direction='row'>
     <Box basis='small'>
-      <Value value='30%' label='last quarter sales' />
+      <Value {...props} />
     </Box>
   </Box>
 );
+main.story = {
+  parameters: {
+    controls: {
+      value: { type: 'text', value: '30%' },
+      label: { type: 'text', value: 'last quarter sales' },
+    },
+  },
+};
 export const label = () => (
   <Value
     value='30%'

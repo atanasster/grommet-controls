@@ -1,6 +1,4 @@
 import React from 'react';
-import { Box } from 'grommet';
-import { withKnobs, select } from '@storybook/addon-knobs';
 import { Avatar } from '../Avatar';
 
 
@@ -12,17 +10,33 @@ export default {
   },
 };
 
-export const main = () => (
-  <Box basis='medium' align='center'>
-    <Avatar
-      image='//v2.grommet.io/assets/Wilderpeople_Ricky.jpg'
-      title='Adam Smith'
-      subTitle='admin'
-      size={select('Size', ['medium', 'large', 'xlarge', 'xxlarge'], 'medium')}
-    />
-  </Box>
+export const main = ({
+ size, title, subTitle, image,
+}) => (
+  <Avatar
+    image={image}
+    title={title}
+    subTitle={subTitle}
+    size={size}
+  />
 );
 
 main.story = {
-  decorators: [withKnobs],
+  parameters: {
+    controls: {
+      size: {
+        type: 'options', options: ['medium', 'large', 'xlarge', 'xxlarge'], label: 'Size', value: 'medium',
+      },
+      title: {
+        type: 'text', label: 'Title', value: 'Adam Smith',
+      },
+      subTitle: {
+        type: 'text', label: 'Sub-title', value: 'admin',
+      },
+      image: {
+        type: 'text', label: 'Image', value: 'https://s3.amazonaws.com/uifaces/faces/twitter/sta1ex/128.jpg', data: { name: 'internet.avatar' },
+      },
+
+    },
+  },
 };

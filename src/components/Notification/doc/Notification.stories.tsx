@@ -8,23 +8,51 @@ export default {
   component: Notification,
 };
 
-
 const onClose = action('Close clicked');
 
-export const main = () => (
+export const main = props => (
   <Notification
-    border={{
-      side: 'all', color: 'brand', size: 'medium',
-    }}
-    message='Message heading'
-    state='state label'
-    timestamp={new Date()}
-    strong={true}
-    percentComplete={30}
-    status='ok'
-    onClose={onClose}
+    {...props}
   />
 );
+
+main.story = {
+  parameters: {
+    controls: {
+      border: {
+        type: 'object',
+        value: {
+          color: {
+            type: 'color', value: 'brand',
+          },
+          size: {
+            type: 'options', options: ['xsmall', 'small', 'medium', 'large', 'xlarge'], value: 'medium',
+
+          },
+          side: {
+            type: 'options', options: ['top', 'left', 'bottom', 'right', 'horizontal', 'vertical', 'all'], value: 'all',
+          },
+        },
+      },
+      message: { type: 'text', value: 'Message heading' },
+      state: { type: 'text', value: 'state label' },
+      timestamp: { type: 'date', value: new Date() },
+      strong: { type: 'boolean', value: true },
+      percentComplete: {
+        type: 'number', value: 30, min: 0, max: 100, range: true,
+      },
+      status: {
+        type: 'options',
+        options: ['ok', 'info', 'warning', 'error', 'unknown', 'disabled'],
+        value: 'ok',
+
+      },
+      onClose: { type: 'button', value: onClose },
+    },
+  },
+};
+
+
 export const a11yTitle = () => (
   <Notification
     a11yTitle='Close notification'

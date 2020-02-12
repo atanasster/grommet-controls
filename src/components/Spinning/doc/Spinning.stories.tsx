@@ -8,7 +8,23 @@ export default {
 };
 
 
-export const main = () => <Spinning />;
+export const main = props => <Spinning {...props} />;
+
+main.story = {
+  parameters: {
+    controls: {
+      kind: {
+        type: 'options',
+        options: ['circle', 'pulse', 'three-bounce', 'cube-grid', 'wave', 'folding-cube', 'double-bounce', 'wandering-cubes',
+          'chasing-dots', 'rotating-plane'],
+      },
+      color: { type: 'color' },
+      size: { type: 'options', options: ['xsmall', 'small', 'medium', 'large', 'xlarge'] },
+      fadeIn: { type: 'options', options: ['full', 'half', 'quarter', 'none', 'wordpress'] },
+    },
+  },
+};
+
 export const kind = () => (
   <Box gap='medium'>
     <Spinning kind='circle' />

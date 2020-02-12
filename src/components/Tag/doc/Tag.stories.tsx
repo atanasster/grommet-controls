@@ -11,9 +11,20 @@ export default {
 const tagIcons = [<Github />, <Grommet />];
 
 
-export const main = () => (
-  <Tag label='Tag' onChange={action('onChange')}/>
+export const main = props => (
+  <Tag {...props} />
 );
+
+main.story = {
+  parameters: {
+    controls: {
+      label: { type: 'text', value: 'Tag' },
+      background: { type: 'color' },
+      size: { type: 'options', options: ['xsmall', 'small', 'medium', 'large', 'xlarge', 'xxlarge'] },
+      onChange: { type: 'button', value: action('onChange') },
+    },
+  },
+};
 export const a11yTitle = () => (
   <Tag
     a11yTitle='Tag component'
