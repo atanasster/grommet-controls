@@ -22,21 +22,19 @@ export const main = ({
 );
 
 main.story = {
-  parameters: {
-    controls: {
-      size: {
-        type: 'options', options: ['medium', 'large', 'xlarge', 'xxlarge'], label: 'Size', value: 'medium',
-      },
-      title: {
-        type: 'text', label: 'Title', value: 'Adam Smith',
-      },
-      subTitle: {
-        type: 'text', label: 'Sub-title', value: 'admin',
-      },
-      image: {
-        type: 'text', label: 'Image', value: 'https://s3.amazonaws.com/uifaces/faces/twitter/sta1ex/128.jpg', data: { name: 'internet.avatar' },
-      },
-
+  controls: {
+    size: {
+      type: 'options', options: ['medium', 'large', 'xlarge', 'xxlarge'], label: 'Size', value: 'medium',
     },
+    title: {
+      type: 'text', label: 'Title', value: 'Adam Smith',
+    },
+    subTitle: {
+      type: 'text', label: 'Sub-title', value: 'admin',
+    },
+    image: {
+      type: 'text', label: 'Image', value: 'https://s3.amazonaws.com/uifaces/faces/twitter/sta1ex/128.jpg', data: { name: 'internet.avatar' },
+    },
+
   },
 };

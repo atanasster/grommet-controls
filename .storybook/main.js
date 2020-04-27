@@ -1,13 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  presets: ['@storybook/addon-docs/preset', 
-    {
-      name: require.resolve('webpack-react-docgen-typescript/preset'),
-      options: {
-        fileNameResolver: ({ resourcePath, cacheFolder }) => path.join(cacheFolder, resourcePath.replace(/[^a-z0-9]/gi, '_')),
-      },
-    },  
+  presets: [
     {
       name: 'storybook-addon-deps/preset',
       options: {
@@ -23,21 +17,27 @@ module.exports = {
     '../src/chartjs/**/*.stories.tsx',
   ],
   addons: [
+    'storybook-addon-grommet',
     {
-      name: path.join(path.dirname(require.resolve('@component-controls/storybook')),'preset.js'),
+      name: '@storybook/preset-typescript',
       options: {
-        legacy: true,
+        tsLoaderOptions: {
+          configFile: path.resolve(__dirname, '../tsconfig.json'),
+        },
       },
-    },  
-    '@storybook/addon-google-analytics/register',
-    '@storybook/addon-storysource/register',
-    'storybook-addon-grommet/register',
+    },
+    {
+      name: '@storybook/addon-docs',
+      options: {
+        configureJSX: true,
+      },
+    },
+    '@component-controls/storybook'
   ],
   webpack: async (config, { configType }) => ({
     ...config,
     resolve: {
       ...config.resolve,
-      extensions: [...(config.resolve.extensions || []), '.ts', '.tsx'],
       alias: {...config.resolve.alias, ...{
         "styled-components": path.resolve(path.resolve(__dirname, '..'), "node_modules", "styled-components"),
         "@storybook/addon-docs": path.resolve(path.resolve(__dirname, '..'), "node_modules", "@storybook", "addon-docs"),

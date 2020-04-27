@@ -1,5 +1,4 @@
 import React from 'react';
-import { Box } from 'grommet';
 import * as Icons from 'grommet-icons';
 import { action } from '@storybook/addon-actions';
 import { IconButton } from '../IconButton';
