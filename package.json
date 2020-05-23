@@ -47,11 +47,10 @@
     "text-mask-core": "^5.0.1"
   },
   "devDependencies": {
-    "@component-controls/storybook": "^1.0.2",
-    "@storybook/addon-actions": "6.0.0-alpha.28",
-    "@storybook/addon-docs": "6.0.0-alpha.28",
-    "@storybook/preset-typescript": "*",
-    "@storybook/react": "6.0.0-alpha.28",
+    "@component-controls/storybook": "^1.2.0",
+    "@storybook/addon-actions": "6.0.0-beta.8",
+    "@storybook/addon-docs": "6.0.0-beta.8",
+    "@storybook/react": "6.0.0-beta.8",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "@types/styled-components": "^4.1.18",
