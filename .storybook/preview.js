@@ -1,7 +1,6 @@
 import React from 'react';
 import { addDecorator, addParameters } from '@storybook/react';
 import { themes } from '@storybook/theming';
-import { StorySource } from '@component-controls/storybook';
 
 import { withGrommet } from 'storybook-addon-grommet';
 import { grommet, dark } from 'grommet';

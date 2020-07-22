@@ -1,6 +1,7 @@
 import React from 'react';
 import * as Icons from 'grommet-icons';
 import { action } from '@storybook/addon-actions';
+import { ControlTypes } from '@component-controls/core';
 import { IconButton } from '../IconButton';
 
 export default {
@@ -19,11 +20,7 @@ export const main = ({ icon, onClick }) => {
   );
 };
 
-main.story = {
-  parameters: {
-    controls: {
-      icon: { type: 'options', options: Object.keys(Icons).slice(5, 100), value: Object.keys(Icons).slice(5)[1] },
-      onClick: { type: 'button', value: action('Clicked') },
-    },
-  },
+main.controls = {
+  icon: { type: ControlTypes.OPTIONS, options: Object.keys(Icons).slice(5, 100), value: Object.keys(Icons).slice(5)[1] },
+  onClick: { type: ControlTypes.BUTTON, value: action('Clicked') },
 };

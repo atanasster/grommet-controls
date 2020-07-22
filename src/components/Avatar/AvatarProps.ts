@@ -1,6 +1,6 @@
 import { IImageStampProps } from '../ImageStamp/ImageStampProps';
 
-export interface IAvatarOwnProps  {
+export interface IAvatarOwnProps {
   /** Image to be displayed */
   image?: string,
   /** Main title(name) for the Avatar */
@@ -8,4 +8,4 @@ export interface IAvatarOwnProps  {
   /** Secondary title for the Avatar */
   subTitle?: string,
 }
-export type IAvatarProps = IImageStampProps & IAvatarOwnProps;
+export type IAvatarProps = IAvatarOwnProps & IImageStampProps;

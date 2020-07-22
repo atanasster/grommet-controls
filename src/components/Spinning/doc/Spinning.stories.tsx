@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box } from 'grommet';
+import { ControlTypes } from '@component-controls/core';
 import { Spinning } from '../Spinning';
 
 export default {
@@ -10,19 +11,15 @@ export default {
 
 export const main = props => <Spinning {...props} />;
 
-main.story = {
-  parameters: {
-    controls: {
-      kind: {
-        type: 'options',
-        options: ['circle', 'pulse', 'three-bounce', 'cube-grid', 'wave', 'folding-cube', 'double-bounce', 'wandering-cubes',
-          'chasing-dots', 'rotating-plane'],
-      },
-      color: { type: 'color' },
-      size: { type: 'options', options: ['xsmall', 'small', 'medium', 'large', 'xlarge'] },
-      fadeIn: { type: 'options', options: ['full', 'half', 'quarter', 'none', 'wordpress'] },
-    },
+main.controls = {
+  kind: {
+    type: ControlTypes.OPTIONS,
+    options: ['circle', 'pulse', 'three-bounce', 'cube-grid', 'wave', 'folding-cube', 'double-bounce', 'wandering-cubes',
+      'chasing-dots', 'rotating-plane'],
   },
+  color: { type: ControlTypes.COLOR },
+  size: { type: ControlTypes.OPTIONS, options: ['xsmall', 'small', 'medium', 'large', 'xlarge'] },
+  fadeIn: { type: ControlTypes.OPTIONS, options: ['full', 'half', 'quarter', 'none', 'wordpress'] },
 };
 
 export const kind = () => (

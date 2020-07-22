@@ -1,6 +1,7 @@
 import React from 'react';
 import { Github, Grommet, FormSubtract } from 'grommet-icons';
 import { action } from '@storybook/addon-actions';
+import { ControlTypes } from '@component-controls/core';
 import { Tag } from '../Tag';
 
 export default {
@@ -15,15 +16,11 @@ export const main = props => (
   <Tag {...props} />
 );
 
-main.story = {
-  parameters: {
-    controls: {
-      label: { type: 'text', value: 'Tag' },
-      background: { type: 'color' },
-      size: { type: 'options', options: ['xsmall', 'small', 'medium', 'large', 'xlarge', 'xxlarge'] },
-      onChange: { type: 'button', value: action('onChange') },
-    },
-  },
+main.controls = {
+  label: { type: ControlTypes.TEXT, value: 'Tag' },
+  background: { type: ControlTypes.COLOR },
+  size: { type: ControlTypes.OPTIONS, options: ['xsmall', 'small', 'medium', 'large', 'xlarge', 'xxlarge'] },
+  onChange: { type: ControlTypes.BUTTON, value: action('onChange') },
 };
 export const a11yTitle = () => (
   <Tag

@@ -15,14 +15,11 @@ export const main = props => (
     </Box>
   </Box>
 );
-main.story = {
-  parameters: {
-    controls: {
-      value: { type: 'text', value: '30%' },
-      label: { type: 'text', value: 'last quarter sales' },
-    },
-  },
+main.controls = {
+  value: '30%',
+  label: 'last quarter sales',
 };
+
 export const label = () => (
   <Value
     value='30%'

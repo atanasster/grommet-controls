@@ -1,4 +1,5 @@
 import React from 'react';
+import { ControlTypes } from '@component-controls/core';
 import { ImageStamp } from '../ImageStamp';
 
 export default {
@@ -12,14 +13,10 @@ export const main = props => (
   />
 );
 
-main.story = {
-  parameters: {
-    controls: {
-      src: { type: 'text', value: 'https://s3.amazonaws.com/uifaces/faces/twitter/aaronkwhite/128.jpg' },
-      size: { type: 'options', options: ['medium', 'large', 'xlarge', 'xxlarge'], value: 'large' },
-      round: { type: 'options', options: ['xsmall', 'small', 'medium', 'large', 'full'], value: 'full' },
-    },
-  },
+main.controls = {
+  src: { type: ControlTypes.TEXT, value: 'https://s3.amazonaws.com/uifaces/faces/twitter/aaronkwhite/128.jpg' },
+  size: { type: ControlTypes.OPTIONS, options: ['medium', 'large', 'xlarge', 'xxlarge'], value: 'large' },
+  round: { type: ControlTypes.OPTIONS, options: ['xsmall', 'small', 'medium', 'large', 'full'], value: 'full' },
 };
 export const size = () => (
   <ImageStamp

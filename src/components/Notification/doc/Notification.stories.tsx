@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grommet, CircleQuestion } from 'grommet-icons';
 import { action } from '@storybook/addon-actions';
+import { ControlTypes } from '@component-controls/core';
 import { Notification } from '../Notification';
 
 export default {
@@ -16,40 +17,36 @@ export const main = props => (
   />
 );
 
-main.story = {
-  parameters: {
-    controls: {
-      border: {
-        type: 'object',
-        value: {
-          color: {
-            type: 'color', value: 'brand',
-          },
-          size: {
-            type: 'options', options: ['xsmall', 'small', 'medium', 'large', 'xlarge'], value: 'medium',
-
-          },
-          side: {
-            type: 'options', options: ['top', 'left', 'bottom', 'right', 'horizontal', 'vertical', 'all'], value: 'all',
-          },
-        },
+main.controls = {
+  border: {
+    type: ControlTypes.OBJECT,
+    value: {
+      color: {
+        type: ControlTypes.COLOR, value: 'brand',
       },
-      message: { type: 'text', value: 'Message heading' },
-      state: { type: 'text', value: 'state label' },
-      timestamp: { type: 'date', value: new Date() },
-      strong: { type: 'boolean', value: true },
-      percentComplete: {
-        type: 'number', value: 30, min: 0, max: 100, range: true,
-      },
-      status: {
-        type: 'options',
-        options: ['ok', 'info', 'warning', 'error', 'unknown', 'disabled'],
-        value: 'ok',
+      size: {
+        type: ControlTypes.OPTIONS, options: ['xsmall', 'small', 'medium', 'large', 'xlarge'], value: 'medium',
 
       },
-      onClose: { type: 'button', value: onClose },
+      side: {
+        type: ControlTypes.OPTIONS, options: ['top', 'left', 'bottom', 'right', 'horizontal', 'vertical', 'all'], value: 'all',
+      },
     },
   },
+  message: { type: ControlTypes.TEXT, value: 'Message heading' },
+  state: { type: ControlTypes.TEXT, value: 'state label' },
+  timestamp: { type: ControlTypes.DATE, value: new Date() },
+  strong: { type: ControlTypes.BOOLEAN, value: true },
+  percentComplete: {
+    type: ControlTypes.NUMBER, value: 30, min: 0, max: 100, range: true,
+  },
+  status: {
+    type: ControlTypes.OPTIONS,
+    options: ['ok', 'info', 'warning', 'error', 'unknown', 'disabled'],
+    value: 'ok',
+
+  },
+  onClose: { type: ControlTypes.BUTTON, value: onClose },
 };
 
 

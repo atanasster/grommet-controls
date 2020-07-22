@@ -3,6 +3,7 @@ import {
  Box, Button, Heading, Image, Text,
 } from 'grommet';
 import { Add, Bitcoin, Edit } from 'grommet-icons';
+import { ControlTypes } from '@component-controls/core';
 import { Card } from '../Card';
 import { ImageStamp } from '../../ImageStamp';
 
@@ -48,75 +49,71 @@ export const main = ({
   </Card>
 );
 
-main.story = {
-  parameters: {
-    controls: {
-      border: {
-        type: 'object',
-        value: {
-          color: {
-            type: 'color', value: '#333',
-          },
-          size: {
-            type: 'options', options: ['xsmall', 'small', 'medium', 'large', 'xlarge'],
+main.controls = {
+  border: {
+    type: 'object',
+    value: {
+      color: {
+        type: ControlTypes.COLOR, value: '#333',
+      },
+      size: {
+        type: ControlTypes.OPTIONS, options: ['xsmall', 'small', 'medium', 'large', 'xlarge'],
 
-          },
-          side: {
-            type: 'options', options: ['top', 'left', 'bottom', 'right', 'horizontal', 'vertical', 'all'], value: 'bottom',
-          },
-        },
-        groupId: 'Card.CardTitle',
       },
-      align: {
-        type: 'options', options: ['start', 'center', 'end', 'baseline', 'stretch'], value: 'center', groupId: 'Card.CardTitle',
-      },
-      direction: {
-        type: 'options', options: ['row', 'column', 'row-responsive', 'row-reverse', 'column-reverse'], value: 'column', groupId: 'Card.CardTitle',
-      },
-      pad: {
-        type: 'options', options: ['none', 'xxsmall', 'xsmall', 'small', 'medium', 'large', 'xlarge'], value: 'small', groupId: 'Card.CardTitle',
-      },
-
-      imageStamp: {
-        type: 'object',
-        value: {
-          src: { type: 'text', value: 'https://s3.amazonaws.com/uifaces/faces/twitter/shadeed9/128.jpg' },
-          round: { type: 'options', options: ['xsmall', 'small', 'medium', 'large', 'full'], value: 'full' },
-        },
-        groupId: 'Heading',
-      },
-      title: {
-        type: 'text',
-        value: 'Info card',
-        groupId: 'Heading',
-      },
-      level: {
-        type: 'number',
-        value: 3,
-        min: 1,
-        max: 5,
-        groupId: 'Heading',
-      },
-      fit: {
-        type: 'options',
-        value: 'cover',
-        options: ['cover', 'contain'],
-        groupId: 'Content',
-        display: 'inline-radio',
-      },
-      image: {
-        type: 'text', value: 'https://s3.amazonaws.com/uifaces/faces/twitter/denisepires/128.jpg', groupId: 'Content', data: { name: 'internet.avatar' },
-      },
-      height: {
-        type: 'number',
-        value: 250,
-        min: 100,
-        max: 900,
-        step: 50,
-        range: true,
-        groupId: 'Content',
+      side: {
+        type: ControlTypes.OPTIONS, options: ['top', 'left', 'bottom', 'right', 'horizontal', 'vertical', 'all'], value: 'bottom',
       },
     },
+    groupId: 'Card.CardTitle',
+  },
+  align: {
+    type: ControlTypes.OPTIONS, options: ['start', 'center', 'end', 'baseline', 'stretch'], value: 'center', groupId: 'Card.CardTitle',
+  },
+  direction: {
+    type: ControlTypes.OPTIONS, options: ['row', 'column', 'row-responsive', 'row-reverse', 'column-reverse'], value: 'column', groupId: 'Card.CardTitle',
+  },
+  pad: {
+    type: ControlTypes.OPTIONS, options: ['none', 'xxsmall', 'xsmall', 'small', 'medium', 'large', 'xlarge'], value: 'small', groupId: 'Card.CardTitle',
+  },
+
+  imageStamp: {
+    type: ControlTypes.OBJECT,
+    value: {
+      src: { type: ControlTypes.TEXT, value: 'https://s3.amazonaws.com/uifaces/faces/twitter/shadeed9/128.jpg' },
+      round: { type: ControlTypes.OPTIONS, options: ['xsmall', 'small', 'medium', 'large', 'full'], value: 'full' },
+    },
+    groupId: 'Heading',
+  },
+  title: {
+    type: ControlTypes.TEXT,
+    value: 'Info card',
+    groupId: 'Heading',
+  },
+  level: {
+    type: ControlTypes.NUMBER,
+    value: 3,
+    min: 1,
+    max: 5,
+    groupId: 'Heading',
+  },
+  fit: {
+    type: ControlTypes.OPTIONS,
+    value: 'cover',
+    options: ['cover', 'contain'],
+    groupId: 'Content',
+    display: 'inline-radio',
+  },
+  image: {
+    type: ControlTypes.TEXT, value: 'https://s3.amazonaws.com/uifaces/faces/twitter/denisepires/128.jpg', groupId: 'Content', data: { name: 'internet.avatar' },
+  },
+  height: {
+    type: ControlTypes.NUMBER,
+    value: 250,
+    min: 100,
+    max: 900,
+    step: 50,
+    range: true,
+    groupId: 'Content',
   },
 };
 export const animation = () => (
