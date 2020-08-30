@@ -11,7 +11,6 @@ import {
 
 import { StyledTrComponent } from '../StyledTableComponents';
 
-// eslint-disable-next-line @typescript-eslint/interface-name-prefix
 interface ITrComponentProps {
   selectRow: (nextRow: boolean, childIndex: number) => boolean;
 }

@@ -1,36 +1,63 @@
-import copy from 'rollup-plugin-copy-glob';
 import typescript from 'rollup-plugin-typescript2';
-import external from 'rollup-plugin-peer-deps-external';
-import del from 'rollup-plugin-delete';
+import json from '@rollup/plugin-json';
+import commonjs from '@rollup/plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
 
-import pkg from './package.json';
+const defaultExternal = id =>
+  !id.startsWith('\0') &&
+  !id.startsWith('~') &&
+  !id.startsWith('.') &&
+  !id.startsWith(process.platform === 'win32' ? process.cwd() : '/');
 
-export default {
-  input: 'src/index.ts',
-  external: [...[
-    'text-mask-addons',
-    'text-mask-core',
-  ], ...Object.keys(pkg.peerDependencies || {})],
-  output: [
-    {
-      file: 'dist/index.js',
-      format: 'cjs',
-    },
-    {
-      file: 'dist/index.es.js',
-      format: 'es',
-    },
-  ],
-  plugins: [
-    external(),
-    typescript({
-      // eslint-disable-next-line global-require
-      typescript: require('typescript'),
+const createOutput = (dir = 'dist', defaultOpts) => {
+  const { external, output, plugins = [], filename } = defaultOpts;
+
+  const defaultPlugins = [
+    resolve({
+      mainFields: ['module', 'main'],
+      browser: true,
+      preferBuiltins: false,
     }),
-    copy([
-      { files: 'README.md', dest: 'dist' },
-      { files: 'package.json', dest: 'dist' },
-    ]),
-    del({ targets: 'dist/*' }),
-  ],
+    commonjs({
+      include: /\/node_modules\//,
+    }),
+    json(),
+    typescript({
+      typescript: require('typescript'),
+      rollupCommonJSResolveHack: true,
+    }),
+  ];
+
+  const outputs = [
+    {
+      dir,
+      format: 'cjs',
+      chunkFileNames: filename ? `${filename}.js` : '[name].js',
+      entryFileNames: filename ? `${filename}.js` : '[name].js',
+      ...output,
+    },
+    {
+      dir,
+      format: 'esm',
+      chunkFileNames: filename ? `${filename}.esm.js` : '[name].esm.js',
+      entryFileNames: filename ? `${filename}.esm.js` : '[name].esm.js',
+      ...output,
+    },
+  ];
+
+  return {
+    ...defaultOpts,
+    external: external || defaultExternal,
+    plugins: defaultPlugins.filter(Boolean).concat(plugins),
+    output: outputs,
+  };
 };
+
+export function config(opts) {
+  const inputs = Array.isArray(opts) ? opts : [opts];
+  return inputs.map(({ dest: dir, ...opts }) => createOutput(dir, opts));
+}
+
+export default config({
+  input: ['./src/index.ts', './src/chartjs/index.ts'],
+});

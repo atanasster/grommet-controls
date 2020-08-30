@@ -10,7 +10,6 @@ import {
   StyledWidgetsContainer,
 } from './StyledDropInput';
 
-// eslint-disable-next-line @typescript-eslint/interface-name-prefix
 interface IDropInputState {
   open?: boolean;
   value?: string | number;

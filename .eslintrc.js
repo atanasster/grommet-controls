@@ -32,6 +32,7 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-object-literal-type-assertion': 'off',
     '@typescript-eslint/no-parameter-properties': 'off',
+    '@typescript-eslint/interface-name-prefix': 'off',
     "no-restricted-globals":'error',
     'react-hooks/rules-of-hooks': 'off',
   },

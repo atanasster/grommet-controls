@@ -2,7 +2,6 @@ import { MouseEvent } from 'react';
 import { TextInputProps } from 'grommet';
 import { Omit } from '../../utils';
 
-// eslint-disable-next-line @typescript-eslint/interface-name-prefix
 export interface IDropInputOwnProps {
   /** Custom title to be used by screen readers */
   a11yTitle?: string;

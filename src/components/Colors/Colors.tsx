@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/interface-name-prefix */
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { ThemeContext } from 'styled-components';

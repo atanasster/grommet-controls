@@ -1,2 +1,2 @@
 export { Colors } from './Colors';
-export { IColorsProps } from './ColorsProps';
+export * from './ColorsProps';

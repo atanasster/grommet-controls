@@ -8,7 +8,7 @@ import {
   ChartjsComponentType,
 } from './withChartThemeProps';
 
-const normalizedColor = (color, theme) =>
+const normalizedColor = (color: any, theme: any) =>
   colorForName(normalizeColor(color, theme), theme);
 
 export const withChartTheme = (
@@ -60,7 +60,7 @@ export const withChartTheme = (
       if (data && Array.isArray(data.datasets)) {
         datasets = data.datasets.map((dataset, i) => {
           const { backgroundColor, borderColor, color, ...rest } = dataset;
-          let newOpts;
+          let newOpts: any;
           const themeColors = (index: number, itemOpacity?: number) => {
             const lineColor = borderColor || color || colorFromIndex(index);
             const lineColors = Array.isArray(lineColor)

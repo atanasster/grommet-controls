@@ -1,2 +1,2 @@
 export { EmailInput } from './EmailInput';
-export { IEmailInputProps } from './EmailInputProps';
+export * from './EmailInputProps';

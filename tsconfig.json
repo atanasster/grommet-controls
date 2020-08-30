@@ -1,37 +1,36 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
+    "target": "es2017",
+    "moduleResolution": "node",
+    "inlineSourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "alwaysStrict": false,
+    "noImplicitUseStrict": true, 
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "traceResolution": false,
+    "listEmittedFiles": false,
+    "listFiles": false,
+    "pretty": true,
+    "lib": ["es2017", "dom"],
+    "module": "esnext",
     "outDir": "dist",
     "declaration": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "target": "es5",
-    "jsx": "preserve",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "skipLibCheck": true,
-    "strict": false,
-    "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true
   },
   "include": [
     "src/**/*",
-    ".config/**/*",
-    "tests/*",
   ],
   "exclude": [
-    "node_modules"
+    "node_modules/**"
   ]
 }

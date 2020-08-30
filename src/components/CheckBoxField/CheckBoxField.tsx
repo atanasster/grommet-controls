@@ -14,7 +14,9 @@ export const CheckBoxField = (
       <Box pad={{ vertical: 'small' }}>
         <CheckBox
           checked={value === true}
-          onChange={() => onChange({ target: { value: !value } })}
+          onChange={
+            onChange ? () => onChange({ target: { value: !value } }) : undefined
+          }
           {...rest}
         />
       </Box>

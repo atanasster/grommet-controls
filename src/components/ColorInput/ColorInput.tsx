@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled, { ThemeContext } from 'styled-components';
-import { StopFill } from 'grommet-icons/icons/StopFill';
+import { StopFill } from 'grommet-icons';
 import { MaskedInput } from '../MaskedInput';
 import { Colors } from '../Colors';
 import { IColorInputProps } from './ColorInputProps';
@@ -48,9 +48,11 @@ class ColorInput extends Component<
 
   upDateValue = null;
 
-  constructor(props) {
+  constructor(props: IColorInputProps & IMaskedInputProps & IColorsProps) {
     super(props);
-    this.state = { selectedColor: props.value || props.defaultValue };
+    this.state = {
+      selectedColor: (props.value || props.defaultValue) as string,
+    };
   }
 
   static getDerivedStateFromProps(nextProps) {

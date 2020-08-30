@@ -22,14 +22,14 @@ export interface ValidationObj {
 }
 export type ValidationType = ValidationFunc | ValidationObj;
 
-export interface IFieldProps {
+export interface IFormFieldProps {
   label: string | React.ReactNode;
   description?: string;
   validation: ValidationType | ValidationType[];
 }
 
 export interface IFormContext {
-  attachToForm: (name: string, props: IFieldProps) => void;
+  attachToForm: (name: string, props: IFormFieldProps) => void;
   detachFromForm: (name: string) => void;
   getFieldValue: (name: string) => any;
   getFieldErrors: (name: string) => FormErrorMessageType[];

@@ -2,7 +2,6 @@ import { MouseEvent } from 'react';
 import { BoxProps } from 'grommet';
 import { Omit } from '../../utils';
 
-// eslint-disable-next-line @typescript-eslint/interface-name-prefix
 export interface ITagOwnProps {
   /** Displays a disabled style for the tag */
   disabled?: boolean;

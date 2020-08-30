@@ -7,7 +7,7 @@ import {
   IFormProps,
   IFormContext,
   IFormErrors,
-  IFieldProps,
+  IFormFieldProps,
 } from './FormProps';
 
 export const FormContext = React.createContext<IFormContext>({
@@ -33,7 +33,7 @@ interface IFormState {
  */
 class Form extends Component<IFormProps & BoxProps, IFormState> {
   fields: {
-    [x: string]: IFieldProps;
+    [x: string]: IFormFieldProps;
   } = {};
 
   static defaultProps = {
@@ -142,7 +142,9 @@ class Form extends Component<IFormProps & BoxProps, IFormState> {
     const { focusFirstChild } = this.props;
     if (focusFirstChild) {
       let items = this.containerRef.current.getElementsByTagName('*');
-      items = filterByFocusable(items);
+      items = (filterByFocusable(items) as unknown) as HTMLCollectionOf<
+        Element
+      >;
       if (items.length > 0) {
         setTimeout(() => {
           // @ts-ignore

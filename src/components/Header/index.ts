@@ -1,2 +1,2 @@
 export { Header } from './Header';
-export { IHeaderProps } from './HeaderProps';
+export * from './HeaderProps';

@@ -1,2 +1,2 @@
 export { Tag } from './Tag';
-export { ITagProps } from './TagProps';
+export * from './TagProps';

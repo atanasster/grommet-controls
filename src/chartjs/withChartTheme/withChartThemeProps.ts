@@ -90,10 +90,10 @@ export interface IChartjsTooltips {
   callbacks?: IChartjsTooltipCallbacks;
 
   /** Sort tooltip items */
-  itemSort?: (a, b) => boolean;
+  itemSort?: (a: any, b: any) => boolean;
 
   /** Filter tooltip items. */
-  filter?: (a, b) => boolean;
+  filter?: (a: any, b: any) => boolean;
 
   /** Background color of the tooltip. */
   backgroundColor?: ChartjsColorType;
@@ -348,7 +348,7 @@ export type ChartjsAnimationEasingType =
   | 'easeOutBounce'
   | 'easeInOutBounce';
 
-export interface IChartjsAnimationCallback {
+export type IChartjsAnimationCallback = {
   /** Chart object */
   chart: IChartJsProps;
 
@@ -369,7 +369,7 @@ export interface IChartjsAnimationCallback {
 
   /** User callback */
   onAnimationComplete: (...args: any[]) => void;
-}
+};
 
 export interface IChartjsAnimation {
   /** The number of milliseconds an animation takes. */
