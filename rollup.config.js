@@ -59,5 +59,5 @@ export function config(opts) {
 }
 
 export default config({
-  input: ['./src/index.ts', './src/chartjs/index.ts'],
+  input: ['./src/index.ts', './src/chartjs/index.ts', './src/themes/index.ts'],
 });

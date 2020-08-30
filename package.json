@@ -10,6 +10,8 @@
     "dist/",
     "package.json",
     "README.md",
+    "themes.js",
+    "themes.d.ts",
     "chartjs.js",
     "chartjs.d.ts"
   ],  

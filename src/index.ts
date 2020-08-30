@@ -36,4 +36,3 @@ export * from './components/Value';
 export * from './components/VerticalMenu';
 export * from './utils';
 export * from './components/WithFormField';
-export * from './themes';
