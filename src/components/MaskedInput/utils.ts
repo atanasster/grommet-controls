@@ -14,12 +14,10 @@ const processCaretTraps = (mask: string[]): string[] => {
   return mask;
 };
 
-
-// eslint-disable-next-line import/prefer-default-export
 export const transformMaskedValue = (
-    value: string | number,
-    providedMask: MaskType,
-    props: IMaskProps,
+  value: string | number,
+  providedMask: MaskType,
+  props: IMaskProps,
 ): string => {
   if (!providedMask) {
     return value.toString();
@@ -32,26 +30,36 @@ export const transformMaskedValue = (
     safeValue = value.toString();
   }
   let mask;
-  if (typeof providedMask === 'object' && (providedMask as IMaskObjectType).pipe !== undefined && (providedMask as IMaskObjectType).mask !== undefined) {
+  if (
+    typeof providedMask === 'object' &&
+    (providedMask as IMaskObjectType).pipe !== undefined &&
+    (providedMask as IMaskObjectType).mask !== undefined
+  ) {
     // eslint-disable-next-line no-param-reassign
     providedMask = (providedMask as IMaskObjectType).mask;
-    ({ pipe } = (providedMask as IMaskObjectType));
+    ({ pipe } = providedMask as IMaskObjectType);
   }
   if (typeof providedMask === 'function') {
     mask = providedMask(safeValue, { ...props, pipe });
 
     // disable masking if `mask` is `false`
-    if (mask === false) { return safeValue; }
+    if (mask === false) {
+      return safeValue;
+    }
     // The processed mask is what we're interested in
     mask = processCaretTraps(mask);
-  // If the `providedMask` is not a function, we just use it as-is.
+    // If the `providedMask` is not a function, we just use it as-is.
   } else {
     mask = providedMask;
   }
   let conformedValue = safeValue;
   const {
-    guide, placeholderChar, placeholder, currentCaretPosition,
-    showMask, keepCharPositions,
+    guide,
+    placeholderChar,
+    placeholder,
+    currentCaretPosition,
+    showMask,
+    keepCharPositions,
   } = props;
 
   const conformToMaskConfig = {
@@ -67,7 +75,10 @@ export const transformMaskedValue = (
     ({ conformedValue } = conformed);
   }
   if (typeof pipe === 'function') {
-    const pipeResults = pipe(conformedValue, { rawValue: safeValue, ...conformToMaskConfig });
+    const pipeResults = pipe(conformedValue, {
+      rawValue: safeValue,
+      ...conformToMaskConfig,
+    });
     if (typeof pipeResults === 'string') {
       conformedValue = pipeResults;
     }

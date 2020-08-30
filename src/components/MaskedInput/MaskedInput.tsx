@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { createTextMaskInputElement } from 'text-mask-core';
-import { createAutoCorrectedDatePipe, emailMask, createNumberMask } from 'text-mask-addons';
+import {
+  createAutoCorrectedDatePipe,
+  emailMask,
+  createNumberMask,
+} from 'text-mask-addons';
 import { DropInput } from '../DropInput';
 import { transformMaskedValue } from './utils';
 import { createMinMaxInputPipe, maskedNumberValue } from './minMaxNumberPipe';
 import { IMaskedInputProps } from './MaskedInputProps';
 
-
- /** A masked Input control with an optional drop button with the specified dropContent<br/>
+/** A masked Input control with an optional drop button with the specified dropContent<br/>
  * `import { MakedInput } from 'grommet-controls';`<br/>
  * `<MakedInput mask={...} />`<br/>
  */
@@ -43,7 +46,7 @@ class MaskedInput extends Component<IMaskedInputProps> {
 
   inputControlRef = React.createRef<HTMLInputElement>();
 
-  onInput = (event) => {
+  onInput = event => {
     const { onInput } = this.props;
     if (this.textMaskInputElement) {
       this.textMaskInputElement.update(event.target.value);
@@ -54,10 +57,16 @@ class MaskedInput extends Component<IMaskedInputProps> {
   };
 
   initTextMask() {
-    const { props, props: { value } } = this;
+    const {
+      props,
+      props: { value },
+    } = this;
     if (props.mask && this.inputControlRef) {
       this.textMaskInputElement = createTextMaskInputElement({
-        inputElement: (findDOMNode(this.inputControlRef.current) as HTMLInputElement).getElementsByTagName('input')[0],
+        // eslint-disable-next-line react/no-find-dom-node
+        inputElement: (findDOMNode(
+          this.inputControlRef.current,
+        ) as HTMLInputElement).getElementsByTagName('input')[0],
         ...props,
       });
       this.textMaskInputElement.update(value);
@@ -88,7 +97,19 @@ class MaskedInput extends Component<IMaskedInputProps> {
     const {
       defaultValue,
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      value, mask, guide, showMask, pipe, placeholderChar, keepCharPositions,
+      value,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      mask,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      guide,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      showMask,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      pipe,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      placeholderChar,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      keepCharPositions,
       ...rest
     } = this.props;
     return (

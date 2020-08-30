@@ -1,12 +1,13 @@
-import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+---
+title: Docs/info/typography
+---
+import { Story, Playground } from '@component-controls/blocks';
 import { Heading, Text, Paragraph } from 'grommet';
-
-<Meta title="Docs/info/typography" />
 
 # `<Heading />`
 heading text structured in levels
 
-<Preview>
+<Playground>
   <Story name="Heading 1">
     <Heading level={1}>
       Heading H1
@@ -37,12 +38,12 @@ heading text structured in levels
       Heading H6
     </Heading> 
   </Story> 
-</Preview>    
+</Playground>    
 
 # `<Text />`
 arbitrary text
 
-<Preview>
+<Playground>
   <Story name="Text xxlarge">
     <Text size='xxlarge'>Text xxlarge</Text>
   </Story>
@@ -62,12 +63,12 @@ arbitrary text
     <Text size='xsmall'>Text xsmall</Text>
   </Story>
   
-</Preview>
+</Playground>
 
 # `<Paragraph />`
 a paragraph of text
 
-<Preview>
+<Playground>
   <Story name="Paragraph xlarge">
     <Paragraph size='xlarge'>Paragraph xlarge</Paragraph>
   </Story> 
@@ -80,4 +81,4 @@ a paragraph of text
   <Story name="Paragraph small">
     <Paragraph size='small'>Paragraph small</Paragraph>
   </Story> 
-</Preview>
+</Playground>

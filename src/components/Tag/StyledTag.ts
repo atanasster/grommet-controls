@@ -8,7 +8,7 @@ const disabledStyle = `
 `;
 
 interface IStyledTagProps {
-  disabled: boolean,
+  disabled: boolean;
 }
 export const StyledIcon = styled.span<IStyledTagProps>`
   display: inline-block;
@@ -24,4 +24,3 @@ export const StyledTag = styled(Box)<IStyledTagProps>`
   user-select: none;
   ${props => props.disabled && disabledStyle}
 `;
-

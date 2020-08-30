@@ -2,10 +2,10 @@ import { IImageStampProps } from '../ImageStamp/ImageStampProps';
 
 export interface IAvatarOwnProps {
   /** Image to be displayed */
-  image?: string,
+  image?: string;
   /** Main title(name) for the Avatar */
-  title?: string,
+  title?: string;
   /** Secondary title for the Avatar */
-  subTitle?: string,
+  subTitle?: string;
 }
 export type IAvatarProps = IAvatarOwnProps & IImageStampProps;

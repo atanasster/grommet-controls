@@ -6,23 +6,31 @@ import { ColorType } from 'grommet/utils';
 import { allSpinners } from './spinners';
 import { ISpinningProps } from './SpinningProps';
 import {
- CircleSpinner, ThreeBounceSpinner, CubeGridSpinner, WaveSpinner,
-  FoldingCubeSpinner, DoubleBounceSpinner, WanderingCubesSpinner, ChasingDotsSpinner,
-  RotatingPlaneSpinner, PulseSpinner, WordPressSpinner,
+  CircleSpinner,
+  ThreeBounceSpinner,
+  CubeGridSpinner,
+  WaveSpinner,
+  FoldingCubeSpinner,
+  DoubleBounceSpinner,
+  WanderingCubesSpinner,
+  ChasingDotsSpinner,
+  RotatingPlaneSpinner,
+  PulseSpinner,
+  WordPressSpinner,
 } from './StyledSpinning';
 
 const styledComponents = {
-  'circle': CircleSpinner,
+  circle: CircleSpinner,
   'three-bounce': ThreeBounceSpinner,
   'cube-grid': CubeGridSpinner,
-  'wave': WaveSpinner,
+  wave: WaveSpinner,
   'folding-cube': FoldingCubeSpinner,
   'double-bounce': DoubleBounceSpinner,
   'wandering-cubes': WanderingCubesSpinner,
   'chasing-dots': ChasingDotsSpinner,
   'rotating-plane': RotatingPlaneSpinner,
-  'pulse': PulseSpinner,
-  'wordpress': WordPressSpinner,
+  pulse: PulseSpinner,
+  wordpress: WordPressSpinner,
 };
 
 type StyledSpinnerType = React.ElementType<ISpinningProps & { theme?: object }>;
@@ -30,10 +38,8 @@ type StyledSpinnerType = React.ElementType<ISpinningProps & { theme?: object }>;
 /** A spinning process indicator<br/>
  * `import { Spinning } from 'grommet-controls';`<br/>
  * `<Spinning />`<br/>
-*/
-const Spinning = ({
- kind, fadeIn, color, size,
-}: ISpinningProps) => {
+ */
+const Spinning = ({ kind, fadeIn, color, size }: ISpinningProps) => {
   const spinnerInfo = allSpinners[kind] || allSpinners['three-bounce'];
   const StyledSpinning: StyledSpinnerType = styledComponents[kind];
   return (
@@ -45,7 +51,9 @@ const Spinning = ({
           theme={theme}
           size={size}
         >
-          {Array.from(Array(spinnerInfo.divCount).keys()).map((_, idx) => <div key={idx} />)}
+          {Array.from(Array(spinnerInfo.divCount).keys()).map((_, idx) => (
+            <div key={idx} />
+          ))}
         </StyledSpinning>
       )}
     </ThemeContext.Consumer>

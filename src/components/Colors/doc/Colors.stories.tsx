@@ -1,20 +1,28 @@
 import React from 'react';
 import { Box } from 'grommet';
-import { action } from '@storybook/addon-actions';
 import { Colors } from '../Colors';
-import {
-  materialColors,
-  uiColors,
-  basicColors,
-} from '../../../index';
+import { materialColors, uiColors, basicColors } from '../../../index';
 
 export default {
-  title: 'CONTROLS/controls/Colors',
+  title: 'controls/Colors',
   component: Colors,
 };
 
 const blue = {
-  '50': '#e3f2fd', '100': '#bbdefb', '200': '#90caf9', '300': '#64b5f6', '400': '#42a5f5', '500': '#2196f3', '600': '#1e88e5', '700': '#1976d2', '800': '#1565c0', '900': '#0d47a1', 'a100': '#82b1ff', 'a200': '#448aff', 'a400': '#2979ff', 'a700': '#2962ff',
+  '50': '#e3f2fd',
+  '100': '#bbdefb',
+  '200': '#90caf9',
+  '300': '#64b5f6',
+  '400': '#42a5f5',
+  '500': '#2196f3',
+  '600': '#1e88e5',
+  '700': '#1976d2',
+  '800': '#1565c0',
+  '900': '#0d47a1',
+  a100: '#82b1ff',
+  a200: '#448aff',
+  a400: '#2979ff',
+  a700: '#2962ff',
 };
 const cyan = {
   '50': '#e0f7fa',
@@ -27,10 +35,10 @@ const cyan = {
   '700': '#0097a7',
   '800': '#00838f',
   '900': '#006064',
-  'a100': '#84ffff',
-  'a200': '#18ffff',
-  'a400': '#00e5ff',
-  'a700': '#00b8d4',
+  a100: '#84ffff',
+  a200: '#18ffff',
+  a400: '#00e5ff',
+  a700: '#00b8d4',
 };
 
 const deepOrange = {
@@ -44,10 +52,10 @@ const deepOrange = {
   '700': '#e64a19',
   '800': '#d84315',
   '900': '#bf360c',
-  'a100': '#ff9e80',
-  'a200': '#ff6e40',
-  'a400': '#ff3d00',
-  'a700': '#dd2c00',
+  a100: '#ff9e80',
+  a200: '#ff6e40',
+  a400: '#ff3d00',
+  a700: '#dd2c00',
 };
 const brown = {
   '50': '#efebe9',
@@ -74,72 +82,87 @@ const blueGrey = {
   '900': '#263238',
 };
 
-
 export const main = () => (
-  <Box direction='row'>
-    <Box basis='medium'>
+  <Box direction="row">
+    <Box basis="medium">
       <Colors
-        size='small'
-        onSelect={action('onSelect')}
+        size="small"
+        onSelect={() => console.log('onSelect')}
         colors={materialColors}
       />
     </Box>
   </Box>
 );
 export const colors = () => (
-  <Colors
-    size='small'
-    color='#ff0000'
-    colors={uiColors}
-  />
+  <Colors size="small" color="#ff0000" colors={uiColors} />
 );
 export const onSelect = () => (
   <Colors
-    size='small'
+    size="small"
     colors={basicColors}
-    onSelect={action('onSelect')}
+    onSelect={() => console.log('onSelect')}
   />
 );
 export const size = () => (
-  <Box gap='small'>
+  <Box gap="small">
     <Colors
-      size='small'
+      size="small"
       colors={{
-        blue, blueGrey, brown, cyan, deepOrange,
+        blue,
+        blueGrey,
+        brown,
+        cyan,
+        deepOrange,
       }}
     />
     <Colors
-      size='medium'
+      size="medium"
       columns={5}
       colors={{
-        blue, blueGrey, brown, cyan, deepOrange,
+        blue,
+        blueGrey,
+        brown,
+        cyan,
+        deepOrange,
       }}
     />
     <Colors
-      size='large'
+      size="large"
       columns={3}
       colors={{
-        blue, blueGrey, brown, cyan, deepOrange,
+        blue,
+        blueGrey,
+        brown,
+        cyan,
+        deepOrange,
       }}
     />
   </Box>
 );
 export const columns = () => (
   <Colors
-    size='small'
+    size="small"
     columns={5}
     colors={{
-      blue, blueGrey, brown, cyan, deepOrange,
+      blue,
+      blueGrey,
+      brown,
+      cyan,
+      deepOrange,
     }}
   />
 );
 export const wrap = () => (
   <Colors
-    size='small'
+    size="small"
     columns={5}
     wrap={true}
     colors={{
-      blue, blueGrey, brown, cyan, deepOrange,
+      blue,
+      blueGrey,
+      brown,
+      cyan,
+      deepOrange,
     }}
   />
 );

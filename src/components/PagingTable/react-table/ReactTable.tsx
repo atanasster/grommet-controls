@@ -5,12 +5,15 @@ import _ from './utils';
 import defaultProps from './defaultProps';
 import { focusNextElement, focusPrevElement } from '../DOM';
 import {
- IPagingTableProps, IPagingTableColumn, IPagingTableState, IRowInfo,
+  IPagingTableProps,
+  IPagingTableColumn,
+  IPagingTableState,
+  IRowInfo,
 } from '../PagingTableProps';
 
-
 export default class ReactTable extends Component<
-    IPagingTableProps, IPagingTableState
+  IPagingTableProps,
+  IPagingTableState
 > {
   static defaultProps = defaultProps;
 
@@ -39,13 +42,15 @@ export default class ReactTable extends Component<
     };
   }
 
-  getResolvedState = (props?: IPagingTableProps, state?: IPagingTableState): IPagingTableState => ({
+  getResolvedState = (
+    props?: IPagingTableProps,
+    state?: IPagingTableState,
+  ): IPagingTableState => ({
     ..._.compactObject(this.state),
     ..._.compactObject(this.props),
     ..._.compactObject(state),
     ..._.compactObject(props),
-  })
-
+  });
 
   componentDidMount() {
     this.fireFetchData();
@@ -60,11 +65,11 @@ export default class ReactTable extends Component<
     // Do a deep compare of new and old `defaultOption` and
     // if they are different reset `option = defaultOption`
     const defaultableOptions = ['sorted', 'filtered', 'resized', 'expanded'];
-    defaultableOptions.forEach((x) => {
+    defaultableOptions.forEach(x => {
       const defaultName = `default${x.charAt(0).toUpperCase() + x.slice(1)}`;
       if (
-        JSON.stringify(oldState[defaultName])
-          !== JSON.stringify(newState[defaultName])
+        JSON.stringify(oldState[defaultName]) !==
+        JSON.stringify(newState[defaultName])
       ) {
         newState[x] = newState[defaultName];
       }
@@ -75,35 +80,37 @@ export default class ReactTable extends Component<
     // and then disabled the ability to change it back.
     // e.g. If `filterable` has changed, set `filtered = defaultFiltered`
     const resettableOptions = ['sortable', 'filterable', 'resizable'];
-    resettableOptions.forEach((x) => {
+    resettableOptions.forEach(x => {
       if (oldState[x] !== newState[x]) {
         const baseName = x.replace('able', '');
         const optionName = `${baseName}ed`;
-        const defaultName = `default${optionName.charAt(0).toUpperCase()
-            + optionName.slice(1)}`;
+        const defaultName = `default${optionName.charAt(0).toUpperCase() +
+          optionName.slice(1)}`;
         newState[optionName] = newState[defaultName];
       }
     });
 
     // Props that trigger a data update
     if (
-      oldState.data !== newState.data
-        || JSON.stringify(oldState.columns) !== JSON.stringify(newState.columns)
-        || oldState.pivotBy !== newState.pivotBy
-        || oldState.sorted !== newState.sorted
-        || oldState.filtered !== newState.filtered
+      oldState.data !== newState.data ||
+      JSON.stringify(oldState.columns) !== JSON.stringify(newState.columns) ||
+      oldState.pivotBy !== newState.pivotBy ||
+      oldState.sorted !== newState.sorted ||
+      oldState.filtered !== newState.filtered
     ) {
       return ReactTable.getStateWithData(
-        ReactTable.getDataModel(newState, nextProps), oldState, nextProps
+        ReactTable.getDataModel(newState, nextProps),
+        oldState,
+        nextProps,
       );
     }
     return null;
   }
 
   static getStateWithData(
-      newState: IPagingTableState,
-      oldState: IPagingTableState,
-      props: IPagingTableState,
+    newState: IPagingTableState,
+    oldState: IPagingTableState,
+    props: IPagingTableState,
   ): IPagingTableState {
     const newResolvedState = { ...oldState, ...newState, ...props };
     const { freezeWhenExpanded } = newResolvedState;
@@ -126,28 +133,31 @@ export default class ReactTable extends Component<
     // If the data isn't frozen and either the data or
     // sorting model has changed, update the data
     if (
-      (oldState.frozen && !newResolvedState.frozen)
-        || oldState.sorted !== newResolvedState.sorted
-        || oldState.filtered !== newResolvedState.filtered
-        || oldState.showFilters !== newResolvedState.showFilters
-        || (!newResolvedState.frozen
-          && oldState.resolvedData !== newResolvedState.resolvedData)
+      (oldState.frozen && !newResolvedState.frozen) ||
+      oldState.sorted !== newResolvedState.sorted ||
+      oldState.filtered !== newResolvedState.filtered ||
+      oldState.showFilters !== newResolvedState.showFilters ||
+      (!newResolvedState.frozen &&
+        oldState.resolvedData !== newResolvedState.resolvedData)
     ) {
       // Handle collapseOnsortedChange & collapseOnDataChange
       if (
-        (oldState.sorted !== newResolvedState.sorted
-            && props.collapseOnSortingChange)
-          || oldState.filtered !== newResolvedState.filtered
-          || oldState.showFilters !== newResolvedState.showFilters
-          || (oldState.sortedData
-            && !newResolvedState.frozen
-            && oldState.resolvedData !== newResolvedState.resolvedData
-            && props.collapseOnDataChange)
+        (oldState.sorted !== newResolvedState.sorted &&
+          props.collapseOnSortingChange) ||
+        oldState.filtered !== newResolvedState.filtered ||
+        oldState.showFilters !== newResolvedState.showFilters ||
+        (oldState.sortedData &&
+          !newResolvedState.frozen &&
+          oldState.resolvedData !== newResolvedState.resolvedData &&
+          props.collapseOnDataChange)
       ) {
         newResolvedState.expanded = {};
       }
 
-      Object.assign(newResolvedState, ReactTable.getSortedData(newResolvedState, props));
+      Object.assign(
+        newResolvedState,
+        ReactTable.getSortedData(newResolvedState, props),
+      );
     }
 
     // Set page to 0 if filters change
@@ -160,8 +170,8 @@ export default class ReactTable extends Component<
       newResolvedState.pages = newResolvedState.manual
         ? newResolvedState.pages
         : Math.ceil(
-          newResolvedState.sortedData.length / newResolvedState.pageSize,
-        );
+            newResolvedState.sortedData.length / newResolvedState.pageSize,
+          );
       newResolvedState.page = Math.max(
         newResolvedState.page >= newResolvedState.pages
           ? newResolvedState.pages - 1
@@ -173,19 +183,25 @@ export default class ReactTable extends Component<
   }
 
   setStateWithData(
-      newState: IPagingTableState,
-      oldState: IPagingTableState,
-      props: IPagingTableState,
-      cb?: () => void,
-   ): void {
-    const newResolvedState = ReactTable.getStateWithData(newState, oldState, props);
+    newState: IPagingTableState,
+    oldState: IPagingTableState,
+    props: IPagingTableState,
+    cb?: () => void,
+  ): void {
+    const newResolvedState = ReactTable.getStateWithData(
+      newState,
+      oldState,
+      props,
+    );
     return this.setState(newResolvedState, () => {
-      if (cb) { cb(); }
+      if (cb) {
+        cb();
+      }
       if (
-        oldState.page !== newResolvedState.page
-          || oldState.pageSize !== newResolvedState.pageSize
-          || oldState.sorted !== newResolvedState.sorted
-          || oldState.filtered !== newResolvedState.filtered
+        oldState.page !== newResolvedState.page ||
+        oldState.pageSize !== newResolvedState.pageSize ||
+        oldState.sorted !== newResolvedState.sorted ||
+        oldState.filtered !== newResolvedState.filtered
       ) {
         this.fireFetchData();
       }
@@ -210,7 +226,7 @@ export default class ReactTable extends Component<
 
     // Determine Header Groups
     let hasHeaderGroups = false;
-    columns.forEach((column) => {
+    columns.forEach(column => {
       if (column.columns) {
         hasHeaderGroups = true;
       }
@@ -219,8 +235,9 @@ export default class ReactTable extends Component<
     let columnsWithExpander = [...columns];
 
     let expanderColumn = columns.find(
-      col => col.expander
-          || (col.columns && col.columns.some(col2 => col2.expander)),
+      col =>
+        col.expander ||
+        (col.columns && col.columns.some(col2 => col2.expander)),
     );
     // The actual expander might be in the columns field of a group column
     if (expanderColumn && !expanderColumn.expander) {
@@ -285,15 +302,15 @@ export default class ReactTable extends Component<
 
     // Decorate the columns
     const decorateAndAddToAll = (
-        column: IPagingTableColumn,
-        parentColumn?: IPagingTableColumn
+      column: IPagingTableColumn,
+      parentColumn?: IPagingTableColumn,
     ): IPagingTableColumn => {
       const decoratedColumn = makeDecoratedColumn(column, parentColumn);
       allDecoratedColumns.push(decoratedColumn);
       return decoratedColumn;
     };
 
-    const decoratedColumns = columnsWithExpander.map((column) => {
+    const decoratedColumns = columnsWithExpander.map(column => {
       if (column.columns) {
         return {
           ...column,
@@ -307,13 +324,11 @@ export default class ReactTable extends Component<
     let visibleColumns = decoratedColumns.slice();
     let allVisibleColumns = [];
 
-    visibleColumns = visibleColumns.map((column) => {
+    visibleColumns = visibleColumns.map(column => {
       if (column.columns) {
-        const visibleSubColumns = column.columns.filter(d => (
-          pivotBy.indexOf(d.id) > -1
-            ? false
-            : _.getFirstDefined(d.show, true)
-        ));
+        const visibleSubColumns = column.columns.filter(d =>
+          pivotBy.indexOf(d.id) > -1 ? false : _.getFirstDefined(d.show, true),
+        );
         return {
           ...column,
           columns: visibleSubColumns,
@@ -322,13 +337,13 @@ export default class ReactTable extends Component<
       return column;
     });
 
-    visibleColumns = visibleColumns.filter(column => (
+    visibleColumns = visibleColumns.filter(column =>
       column.columns
         ? column.columns.length
         : pivotBy.indexOf(column.id) > -1
-          ? false
-          : _.getFirstDefined(column.show, true)
-    ));
+        ? false
+        : _.getFirstDefined(column.show, true),
+    );
 
     // Find any custom pivot location
     const pivotIndex = visibleColumns.findIndex(col => col.pivot);
@@ -337,7 +352,7 @@ export default class ReactTable extends Component<
     if (pivotBy.length) {
       // Retrieve the pivot columns in the correct pivot order
       const pivotColumns = [];
-      pivotBy.forEach((pivotID) => {
+      pivotBy.forEach(pivotID => {
         const found = allDecoratedColumns.find(d => d.id === pivotID);
         if (found) {
           pivotColumns.push(found);
@@ -345,14 +360,16 @@ export default class ReactTable extends Component<
       });
 
       const PivotParentColumn = pivotColumns.reduce(
-        (prev, current) => prev && prev === current.parentColumn && current.parentColumn,
+        (prev, current) =>
+          prev && prev === current.parentColumn && current.parentColumn,
         pivotColumns[0].parentColumn,
       );
 
-      const PivotGroupHeader = hasHeaderGroups && (
-        PivotParentColumn ? PivotParentColumn.Header
-          : (pivotColumns[0].PivotHeader || pivotColumns[0].Header)
-      );
+      const PivotGroupHeader =
+        hasHeaderGroups &&
+        (PivotParentColumn
+          ? PivotParentColumn.Header
+          : pivotColumns[0].PivotHeader || pivotColumns[0].Header);
 
       let pivotColumnGroup = {
         Header: PivotGroupHeader,
@@ -390,7 +407,7 @@ export default class ReactTable extends Component<
     };
 
     // Build flast list of allVisibleColumns and HeaderGroups
-    visibleColumns.forEach((column) => {
+    visibleColumns.forEach(column => {
       if (column.columns) {
         allVisibleColumns = allVisibleColumns.concat(column.columns);
         if (currentSpan.length > 0) {
@@ -414,12 +431,14 @@ export default class ReactTable extends Component<
         [subRowsKey]: d[subRowsKey],
         [nestingLevelKey]: level,
       };
-      allDecoratedColumns.forEach((column) => {
+      allDecoratedColumns.forEach(column => {
         if (column.expander) return;
         row[column.id] = column.accessor(d);
       });
       if (row[subRowsKey]) {
-        row[subRowsKey] = row[subRowsKey].map((d, i) => accessRow(d, i, level + 1));
+        row[subRowsKey] = row[subRowsKey].map((d, i) =>
+          accessRow(d, i, level + 1),
+        );
       }
       return row;
     };
@@ -430,9 +449,9 @@ export default class ReactTable extends Component<
     );
 
     // If pivoting, recursively group the data
-    const aggregate = (rows) => {
+    const aggregate = rows => {
       const aggregationValues = {};
-      aggregatingColumns.forEach((column) => {
+      aggregatingColumns.forEach(column => {
         const values = rows.map(d => d[column.id]);
         aggregationValues[column.id] = column.aggregate(values, rows);
       });
@@ -445,18 +464,18 @@ export default class ReactTable extends Component<
           return rows;
         }
         // Group the rows together for this level
-        let groupedRows = Object.entries(
-          _.groupBy(rows, keys[i]),
-        ).map(([key, value]) => ({
-          [pivotIDKey]: keys[i],
-          [pivotValKey]: key,
-          [keys[i]]: key,
-          [subRowsKey]: value,
-          [nestingLevelKey]: i,
-          [groupedByPivotKey]: true,
-        }));
+        let groupedRows = Object.entries(_.groupBy(rows, keys[i])).map(
+          ([key, value]) => ({
+            [pivotIDKey]: keys[i],
+            [pivotValKey]: key,
+            [keys[i]]: key,
+            [subRowsKey]: value,
+            [nestingLevelKey]: i,
+            [groupedByPivotKey]: true,
+          }),
+        );
         // Recurse into the subRows
-        groupedRows = groupedRows.map((rowGroup) => {
+        groupedRows = groupedRows.map(rowGroup => {
           const subRows = groupRecursively(rowGroup[subRowsKey], keys, i + 1);
           return {
             ...rowGroup,
@@ -478,7 +497,7 @@ export default class ReactTable extends Component<
       allDecoratedColumns,
       hasHeaderGroups,
     };
-  }
+  };
 
   static getSortedData = (resolvedState, props: IPagingTableState) => {
     const {
@@ -493,26 +512,28 @@ export default class ReactTable extends Component<
 
     const sortMethodsByColumnID = {};
 
-    allDecoratedColumns.filter(col => col.sortMethod).forEach((col) => {
-      sortMethodsByColumnID[col.id] = col.sortMethod;
-    });
+    allDecoratedColumns
+      .filter(col => col.sortMethod)
+      .forEach(col => {
+        sortMethodsByColumnID[col.id] = col.sortMethod;
+      });
 
     // Resolve the data from either manual data or sorted data
     return {
       sortedData: manual
         ? resolvedData
         : ReactTable.sortData(
-          ReactTable.filterData(
-            resolvedData,
-            filtered,
-            defaultFilterMethod,
-            allVisibleColumns,
+            ReactTable.filterData(
+              resolvedData,
+              filtered,
+              defaultFilterMethod,
+              allVisibleColumns,
+              props,
+            ),
+            sorted,
+            sortMethodsByColumnID,
             props,
           ),
-          sorted,
-          sortMethodsByColumnID,
-          props,
-        ),
     };
   };
 
@@ -520,15 +541,14 @@ export default class ReactTable extends Component<
     this.props.onFetchData(this.getResolvedState(), this);
   };
 
-
   getStateOrProp = key => _.getFirstDefined(this.state[key], this.props[key]);
 
-  static filterData= (
-      data,
-      filtered,
-      defaultFilterMethod,
-      allVisibleColumns,
-      props: IPagingTableState
+  static filterData = (
+    data,
+    filtered,
+    defaultFilterMethod,
+    allVisibleColumns,
+    props: IPagingTableState,
   ) => {
     let filteredData = data;
     if (filtered.length) {
@@ -546,15 +566,15 @@ export default class ReactTable extends Component<
         if (column.filterAll) {
           return filterMethod(nextFilter, filteredSoFar, column);
         }
-        return filteredSoFar.filter(row => (
-          filterMethod(nextFilter, row, column)
-        ));
+        return filteredSoFar.filter(row =>
+          filterMethod(nextFilter, row, column),
+        );
       }, filteredData);
 
       // Apply the filter to the subrows if we are pivoting, and then
       // filter any rows without subcolumns because it would be strange to show
       filteredData = filteredData
-        .map((row) => {
+        .map(row => {
           if (!row[props.subRowsKey]) {
             return row;
           }
@@ -569,7 +589,7 @@ export default class ReactTable extends Component<
             ),
           };
         })
-        .filter((row) => {
+        .filter(row => {
           if (!row[props.subRowsKey]) {
             return true;
           }
@@ -581,10 +601,10 @@ export default class ReactTable extends Component<
   };
 
   static sortData = (
-      data,
-      sorted,
-      sortMethodsByColumnID = {},
-      props: IPagingTableState
+    data,
+    sorted,
+    sortMethodsByColumnID = {},
+    props: IPagingTableState,
   ) => {
     if (!sorted.length) {
       return data;
@@ -592,22 +612,20 @@ export default class ReactTable extends Component<
 
     const sortedData = _.orderBy(
       data,
-      sorted.map((sort) => {
+      sorted.map(sort => {
         // Support custom sorting methods for each column
         if (sortMethodsByColumnID[sort.id]) {
-          return (a, b) => (
-            sortMethodsByColumnID[sort.id](a[sort.id], b[sort.id], sort.desc)
-          );
+          return (a, b) =>
+            sortMethodsByColumnID[sort.id](a[sort.id], b[sort.id], sort.desc);
         }
-        return (a, b) => (
-          props.defaultSortMethod(a[sort.id], b[sort.id], sort.desc)
-        );
+        return (a, b) =>
+          props.defaultSortMethod(a[sort.id], b[sort.id], sort.desc);
       }),
       sorted.map(d => !d.desc),
       props.indexKey,
     );
 
-    sortedData.forEach((row) => {
+    sortedData.forEach(row => {
       if (!row[props.subRowsKey]) {
         return;
       }
@@ -622,13 +640,11 @@ export default class ReactTable extends Component<
     return sortedData;
   };
 
-  getMinRows = () => _.getFirstDefined(
-    this.props.minRows,
-    this.getStateOrProp('pageSize'),
-  );
+  getMinRows = () =>
+    _.getFirstDefined(this.props.minRows, this.getStateOrProp('pageSize'));
 
   // User actions
-  onPageChange = (page) => {
+  onPageChange = page => {
     const { onPageChange, collapseOnPageChange } = this.props;
 
     const newState: IPagingTableState = { page };
@@ -636,14 +652,14 @@ export default class ReactTable extends Component<
       newState.expanded = {};
     }
     this.setStateWithData(
-        newState,
-        this.state,
-        this.props,
-        () => (onPageChange && onPageChange(page))
+      newState,
+      this.state,
+      this.props,
+      () => onPageChange && onPageChange(page),
     );
-  }
+  };
 
-  onPageSizeChange = (newPageSize) => {
+  onPageSizeChange = newPageSize => {
     const { onPageSizeChange } = this.props;
     const { pageSize, page } = this.getResolvedState();
 
@@ -658,16 +674,17 @@ export default class ReactTable extends Component<
       },
       this.state,
       this.props,
-      () => (
-        onPageSizeChange && onPageSizeChange(newPageSize, newPage)
-      ),
+      () => onPageSizeChange && onPageSizeChange(newPageSize, newPage),
     );
   };
 
   sortColumn = (column, additive) => {
     const { sorted, skipNextSort, defaultSortDesc } = this.getResolvedState();
 
-    const firstSortDirection = Object.prototype.hasOwnProperty.call(column, 'defaultSortDesc')
+    const firstSortDirection = Object.prototype.hasOwnProperty.call(
+      column,
+      'defaultSortDesc',
+    )
       ? column.defaultSortDesc
       : defaultSortDesc;
     const secondSortDirection = !firstSortDirection;
@@ -677,17 +694,19 @@ export default class ReactTable extends Component<
     // so we have to prevent the sort function from actually sorting
     // if we click on the column resize element within a header.
     if (skipNextSort) {
-      this.setStateWithData({
-        skipNextSort: false,
-      },
-       this.state,
-       this.props);
+      this.setStateWithData(
+        {
+          skipNextSort: false,
+        },
+        this.state,
+        this.props,
+      );
       return;
     }
 
     const { onSortedChange } = this.props;
 
-    let newSorted = _.clone(sorted || []).map((d) => {
+    let newSorted = _.clone(sorted || []).map(d => {
       d.desc = _.isSortingDesc(d);
       return d;
     });
@@ -763,16 +782,14 @@ export default class ReactTable extends Component<
     this.setStateWithData(
       {
         page:
-            (!sorted.length && newSorted.length) || !additive
-              ? 0
-              : this.state.page,
+          (!sorted.length && newSorted.length) || !additive
+            ? 0
+            : this.state.page,
         sorted: newSorted,
       },
-       this.state,
-       this.props,
-      () => (
-        onSortedChange && onSortedChange(newSorted, column, additive)
-      ),
+      this.state,
+      this.props,
+      () => onSortedChange && onSortedChange(newSorted, column, additive),
     );
   };
 
@@ -781,9 +798,7 @@ export default class ReactTable extends Component<
     const { onFilteredChange } = this.props;
 
     // Remove old filter first if it exists
-    const newFiltering = (filtered || []).filter(x => (
-      x.id !== column.id
-    ));
+    const newFiltering = (filtered || []).filter(x => x.id !== column.id);
 
     if (value !== '') {
       newFiltering.push({
@@ -798,9 +813,7 @@ export default class ReactTable extends Component<
       },
       this.state,
       this.props,
-      () => (
-        onFilteredChange && onFilteredChange(newFiltering, column, value)
-      ),
+      () => onFilteredChange && onFilteredChange(newFiltering, column, value),
     );
   };
 
@@ -824,8 +837,8 @@ export default class ReactTable extends Component<
           parentWidth,
         },
       },
-         this.state,
-        this.props,
+      this.state,
+      this.props,
       () => {
         if (isTouch) {
           document.addEventListener('touchmove', this.resizeColumnMoving);
@@ -840,7 +853,7 @@ export default class ReactTable extends Component<
     );
   };
 
-  resizeColumnMoving = (event) => {
+  resizeColumnMoving = event => {
     event.stopPropagation();
     const { onResizedChange } = this.props;
     const { resized, currentlyResizing } = this.getResolvedState();
@@ -874,13 +887,11 @@ export default class ReactTable extends Component<
       },
       this.state,
       this.props,
-      () => (
-        onResizedChange && onResizedChange(newResized, event)
-      ),
+      () => onResizedChange && onResizedChange(newResized, event),
     );
   };
 
-  resizeColumnEnd = (event) => {
+  resizeColumnEnd = event => {
     event.stopPropagation();
     const isTouch = event.type === 'touchend' || event.type === 'touchcancel';
 
@@ -900,10 +911,14 @@ export default class ReactTable extends Component<
     // no need to prevent it from happening or else the first click after a touch
     // event resize will not sort the column.
     if (!isTouch) {
-      this.setStateWithData({
-        skipNextSort: true,
-        currentlyResizing: undefined,
-      }, this.state, this.props);
+      this.setStateWithData(
+        {
+          skipNextSort: true,
+          currentlyResizing: undefined,
+        },
+        this.state,
+        this.props,
+      );
     }
   };
 
@@ -1003,7 +1018,7 @@ export default class ReactTable extends Component<
     const hasColumnFooter = allVisibleColumns.some(d => d.Footer);
     const hasFilters = filterable || allVisibleColumns.some(d => d.filterable);
 
-    const recurseRowsViewIndex = (rows, path = [], index = -1) => ([
+    const recurseRowsViewIndex = (rows, path = [], index = -1) => [
       rows.map((row, i) => {
         index += 1;
         const rowWithViewIndex = {
@@ -1021,16 +1036,18 @@ export default class ReactTable extends Component<
         return rowWithViewIndex;
       }),
       index,
-    ]);
+    ];
     [pageRows] = recurseRowsViewIndex(pageRows);
 
     const canPrevious = page > 0;
     const canNext = page + 1 < pages;
 
     const rowMinWidth = _.sum(
-      allVisibleColumns.map((d) => {
-        const resizedColumn = resized.find(x => x.id === d.id)
-            || { id: undefined, value: undefined };
+      allVisibleColumns.map(d => {
+        const resizedColumn = resized.find(x => x.id === d.id) || {
+          id: undefined,
+          value: undefined,
+        };
         return _.getFirstDefined(resizedColumn.value, d.width, d.minWidth);
       }),
     );
@@ -1053,28 +1070,52 @@ export default class ReactTable extends Component<
     const rootProps = getProps(finalState, undefined, undefined, this);
     const tableProps = getTableProps(finalState, undefined, undefined, this);
     const tBodyProps = getTbodyProps(finalState, undefined, undefined, this);
-    const loadingProps = getLoadingProps(finalState, undefined, undefined, this);
+    const loadingProps = getLoadingProps(
+      finalState,
+      undefined,
+      undefined,
+      this,
+    );
     const noDataProps = getNoDataProps(finalState, undefined, undefined, this);
 
     // Visual Components
 
     const makeHeaderGroup = (column, i) => {
-      const resizedValue = col => (resized.find(x => x.id === col.id)
-          || { id: undefined, value: undefined }).value;
+      const resizedValue = col =>
+        (
+          resized.find(x => x.id === col.id) || {
+            id: undefined,
+            value: undefined,
+          }
+        ).value;
       const flex = _.sum(
-        column.columns.map(
-          col => (col.width || resizedValue(col) ? 0 : col.minWidth),
+        column.columns.map(col =>
+          col.width || resizedValue(col) ? 0 : col.minWidth,
         ),
       );
       const width = _.sum(
-        column.columns.map(col => _.getFirstDefined(resizedValue(col), col.width, col.minWidth)),
+        column.columns.map(col =>
+          _.getFirstDefined(resizedValue(col), col.width, col.minWidth),
+        ),
       );
       const maxWidth = _.sum(
-        column.columns.map(col => _.getFirstDefined(resizedValue(col), col.width, col.maxWidth)),
+        column.columns.map(col =>
+          _.getFirstDefined(resizedValue(col), col.width, col.maxWidth),
+        ),
       );
 
-      const theadGroupThProps = getTheadGroupProps(finalState, undefined, column, this);
-      const columnHeaderProps = column.getHeaderProps(finalState, undefined, column, this);
+      const theadGroupThProps = getTheadGroupProps(
+        finalState,
+        undefined,
+        column,
+        this,
+      );
+      const columnHeaderProps = column.getHeaderProps(
+        finalState,
+        undefined,
+        column,
+        this,
+      );
 
       const rest = {
         ...theadGroupThProps,
@@ -1088,11 +1129,7 @@ export default class ReactTable extends Component<
       };
 
       return (
-        <ThComponent
-          key={`${i}-${column.id}`}
-          style={flexStyles}
-          {...rest}
-        >
+        <ThComponent key={`${i}-${column.id}`} style={flexStyles} {...rest}>
           {_.normalizeComponent(column.Header, {
             data: sortedData,
             column,
@@ -1101,7 +1138,7 @@ export default class ReactTable extends Component<
       );
     };
     const selectRow = index => (nextRow, childIndex) => {
-      const selectFirstAvailable = (rows) => {
+      const selectFirstAvailable = rows => {
         for (let i = 0; i < rows.length; i += 1) {
           if (rows[i]) {
             return rows[i].selectFirstChild(childIndex);
@@ -1127,7 +1164,11 @@ export default class ReactTable extends Component<
           this.onPageChange(page - 1);
           found = true;
         } else {
-          found = selectFirstAvailable([this.filterRef, this.headerRef, this.headerGroupsRef]);
+          found = selectFirstAvailable([
+            this.filterRef,
+            this.headerRef,
+            this.headerGroupsRef,
+          ]);
         }
       }
       if (!found) {
@@ -1139,15 +1180,27 @@ export default class ReactTable extends Component<
       }
     };
     const makeHeaderGroups = () => {
-      const theadGroupProps = getTheadGroupProps(finalState, undefined, undefined, this);
-      const theadGroupTrProps = getTheadGroupTrProps(finalState, undefined, undefined, this);
+      const theadGroupProps = getTheadGroupProps(
+        finalState,
+        undefined,
+        undefined,
+        this,
+      );
+      const theadGroupTrProps = getTheadGroupTrProps(
+        finalState,
+        undefined,
+        undefined,
+        this,
+      );
       return (
         <TheadComponent
           style={{ minWidth: `${rowMinWidth}px` }}
           {...theadGroupProps}
         >
           <TrComponent
-            ref={(el) => { this.headerGroupsRef = el; }}
+            ref={el => {
+              this.headerGroupsRef = el;
+            }}
             selectRow={selectRow('headerGroup')}
             {...theadGroupTrProps}
           >
@@ -1158,10 +1211,13 @@ export default class ReactTable extends Component<
     };
 
     const makeHeader = (column, i) => {
-      const resizedCol = resized.find(x => x.id === column.id)
-          || { id: undefined, value: undefined };
+      const resizedCol = resized.find(x => x.id === column.id) || {
+        id: undefined,
+        value: undefined,
+      };
       const sort = sorted.find(d => d.id === column.id);
-      const show = typeof column.show === 'function' ? column.show() : column.show;
+      const show =
+        typeof column.show === 'function' ? column.show() : column.show;
       const width = _.getFirstDefined(
         resizedCol.value,
         column.width,
@@ -1173,7 +1229,12 @@ export default class ReactTable extends Component<
         column.maxWidth,
       );
       const theadThProps = getTheadThProps(finalState, undefined, column, this);
-      const columnHeaderProps = column.getHeaderProps(finalState, undefined, column, this);
+      const columnHeaderProps = column.getHeaderProps(
+        finalState,
+        undefined,
+        column,
+        this,
+      );
 
       const rest = {
         ...theadThProps,
@@ -1182,15 +1243,13 @@ export default class ReactTable extends Component<
       };
 
       const isResizable = _.getFirstDefined(column.resizable, resizable, false);
-      const resizer = isResizable
-        ? (
-          <ResizerComponent
-            onMouseDown={e => this.resizeColumnStart(e, column, false)}
-            onTouchStart={e => this.resizeColumnStart(e, column, true)}
-            {...getResizerProps(finalState, undefined, column, this)}
-          />
-)
-        : null;
+      const resizer = isResizable ? (
+        <ResizerComponent
+          onMouseDown={e => this.resizeColumnStart(e, column, false)}
+          onTouchStart={e => this.resizeColumnStart(e, column, true)}
+          {...getResizerProps(finalState, undefined, column, this)}
+        />
+      ) : null;
 
       const isSortable = _.getFirstDefined(column.sortable, sortable, false);
 
@@ -1203,14 +1262,14 @@ export default class ReactTable extends Component<
           hidden={!show}
           expander={column.expander}
           pivot={pivotBy && pivotBy.slice(0, -1).includes(column.id)}
-
           style={{
             flex: `${width} 0 auto`,
             width: _.asPx(width),
             maxWidth: _.asPx(maxWidth),
           }}
-          toggleSort={(e) => {
-            if (isSortable) this.sortColumn(column, multiSort ? e.shiftKey : false);
+          toggleSort={e => {
+            if (isSortable)
+              this.sortColumn(column, multiSort ? e.shiftKey : false);
           }}
           {...rest}
         >
@@ -1225,7 +1284,12 @@ export default class ReactTable extends Component<
 
     const makeHeaders = () => {
       const theadProps = getTheadProps(finalState, undefined, undefined, this);
-      const theadTrProps = getTheadTrProps(finalState, undefined, undefined, this);
+      const theadTrProps = getTheadTrProps(
+        finalState,
+        undefined,
+        undefined,
+        this,
+      );
       return (
         <TheadComponent
           header={true}
@@ -1235,7 +1299,9 @@ export default class ReactTable extends Component<
           {...theadProps}
         >
           <TrComponent
-            ref={(el) => { this.headerRef = el; }}
+            ref={el => {
+              this.headerRef = el;
+            }}
             selectRow={selectRow('header')}
             {...theadTrProps}
           >
@@ -1246,8 +1312,10 @@ export default class ReactTable extends Component<
     };
 
     const makeFilter = (column, i) => {
-      const resizedCol = resized.find(x => x.id === column.id)
-          || { id: undefined, value: undefined };
+      const resizedCol = resized.find(x => x.id === column.id) || {
+        id: undefined,
+        value: undefined,
+      };
       const width = _.getFirstDefined(
         resizedCol.value,
         column.width,
@@ -1258,9 +1326,24 @@ export default class ReactTable extends Component<
         column.width,
         column.maxWidth,
       );
-      const theadFilterThProps = getTheadFilterThProps(finalState, undefined, column, this);
-      const filterInputProps = getFilterInputProps(finalState, undefined, column, this);
-      const columnHeaderProps = column.getFilterProps(finalState, undefined, column, this);
+      const theadFilterThProps = getTheadFilterThProps(
+        finalState,
+        undefined,
+        column,
+        this,
+      );
+      const filterInputProps = getFilterInputProps(
+        finalState,
+        undefined,
+        column,
+        this,
+      );
+      const columnHeaderProps = column.getFilterProps(
+        finalState,
+        undefined,
+        column,
+        this,
+      );
 
       const rest = {
         ...theadFilterThProps,
@@ -1290,24 +1373,33 @@ export default class ReactTable extends Component<
         >
           {isFilterable
             ? _.normalizeComponent(
-              ResolvedFilterComponent,
-              {
-                ...filterInputProps,
-                column,
-                filter,
-                onChange: value => this.filterColumn(column, value),
-
-              },
-              undefined,
-            )
+                ResolvedFilterComponent,
+                {
+                  ...filterInputProps,
+                  column,
+                  filter,
+                  onChange: value => this.filterColumn(column, value),
+                },
+                undefined,
+              )
             : null}
         </ThComponent>
       );
     };
 
     const makeFilters = () => {
-      const theadFilterProps = getTheadFilterProps(finalState, undefined, undefined, this);
-      const theadFilterTrProps = getTheadFilterTrProps(finalState, undefined, undefined, this);
+      const theadFilterProps = getTheadFilterProps(
+        finalState,
+        undefined,
+        undefined,
+        this,
+      );
+      const theadFilterTrProps = getTheadFilterTrProps(
+        finalState,
+        undefined,
+        undefined,
+        this,
+      );
       return (
         <TheadComponent
           filters={true}
@@ -1317,7 +1409,9 @@ export default class ReactTable extends Component<
           {...theadFilterProps}
         >
           <TrComponent
-            ref={(el) => { this.filterRef = el; }}
+            ref={el => {
+              this.filterRef = el;
+            }}
             selectRow={selectRow('filter')}
             {...theadFilterTrProps}
           >
@@ -1343,22 +1437,43 @@ export default class ReactTable extends Component<
       };
 
       const isExpanded = _.get(expanded, rowInfo.nestingPath);
-      const trGroupProps = getTrGroupProps(finalState, rowInfo, undefined, this);
-      const expanderProps = getExpanderProps(finalState, rowInfo, undefined, this);
-      const trProps = getTrProps(row.viewIndex % 2, finalState, rowInfo, undefined, this);
+      const trGroupProps = getTrGroupProps(
+        finalState,
+        rowInfo,
+        undefined,
+        this,
+      );
+      const expanderProps = getExpanderProps(
+        finalState,
+        rowInfo,
+        undefined,
+        this,
+      );
+      const trProps = getTrProps(
+        row.viewIndex % 2,
+        finalState,
+        rowInfo,
+        undefined,
+        this,
+      );
       return (
         <TrGroupComponent key={rowInfo.nestingPath.join('_')} {...trGroupProps}>
           <TrComponent
             selectRow={selectRow(i)}
-            ref={(el) => { this.rowRef[i] = el; }}
+            ref={el => {
+              this.rowRef[i] = el;
+            }}
             rowIndex={row.viewIndex}
             {...trProps}
           >
             {allVisibleColumns.map((column, i2) => {
               let defaultTdProps = {};
-              const resizedCol = resized.find(x => x.id === column.id)
-                  || { id: undefined, value: undefined };
-              const show = typeof column.show === 'function' ? column.show() : column.show;
+              const resizedCol = resized.find(x => x.id === column.id) || {
+                id: undefined,
+                value: undefined,
+              };
+              const show =
+                typeof column.show === 'function' ? column.show() : column.show;
               const width = _.getFirstDefined(
                 resizedCol.value,
                 column.width,
@@ -1394,7 +1509,7 @@ export default class ReactTable extends Component<
               let isBranch;
               let isPreview;
 
-              const onExpanderClick = (e) => {
+              const onExpanderClick = e => {
                 let newExpanded = _.clone(expanded);
                 if (isExpanded) {
                   newExpanded = _.set(newExpanded, cellInfo.nestingPath, false);
@@ -1407,37 +1522,41 @@ export default class ReactTable extends Component<
                   },
                   this.state,
                   this.props,
-                  () => (
-                    onExpandedChange
-                      && onExpandedChange(newExpanded, cellInfo.nestingPath, e)
-                  ),
+                  () =>
+                    onExpandedChange &&
+                    onExpandedChange(newExpanded, cellInfo.nestingPath, e),
                 );
               };
 
               // Default to a standard cell
               if (column.Cell) {
-                value = _.normalizeComponent(
-                  column.Cell,
-                  cellInfo,
-                  value,
-                );
+                value = _.normalizeComponent(column.Cell, cellInfo, value);
               }
               const cellProps = { ...tdProps, ...columnProps };
-              let resolvedCell = <CellTextComponent value={value} {...cellProps} />;
+              let resolvedCell = (
+                <CellTextComponent value={value} {...cellProps} />
+              );
 
               // Resolve Renderers
-              const ResolvedAggregatedComponent = column.Aggregated
-                || (!column.aggregate ? AggregatedComponent : column.Cell);
-              const ResolvedExpanderComponent = column.Expander || ExpanderComponent;
-              const ResolvedPivotValueComponent = column.PivotValue || PivotValueComponent;
-              const DefaultResolvedPivotComponent = PivotComponent
-                || (props => (
+              const ResolvedAggregatedComponent =
+                column.Aggregated ||
+                (!column.aggregate ? AggregatedComponent : column.Cell);
+              const ResolvedExpanderComponent =
+                column.Expander || ExpanderComponent;
+              const ResolvedPivotValueComponent =
+                column.PivotValue || PivotValueComponent;
+              const DefaultResolvedPivotComponent =
+                PivotComponent ||
+                (props => (
                   <React.Fragment>
-                    <ResolvedExpanderComponent {...{ ...props, expanderProps }} />
+                    <ResolvedExpanderComponent
+                      {...{ ...props, expanderProps }}
+                    />
                     <ResolvedPivotValueComponent {...props} />
                   </React.Fragment>
                 ));
-              const ResolvedPivotComponent = column.Pivot || DefaultResolvedPivotComponent;
+              const ResolvedPivotComponent =
+                column.Pivot || DefaultResolvedPivotComponent;
 
               // Is this cell expandable?
               if (cellInfo.pivoted || cellInfo.expander) {
@@ -1453,10 +1572,13 @@ export default class ReactTable extends Component<
 
               if (cellInfo.pivoted) {
                 // Is this column a branch?
-                isBranch = rowInfo.row[pivotIDKey] === column.id && cellInfo.subRows;
+                isBranch =
+                  rowInfo.row[pivotIDKey] === column.id && cellInfo.subRows;
                 // Should this column be blank?
-                isPreview = pivotBy.indexOf(column.id)
-                    > pivotBy.indexOf(rowInfo.row[pivotIDKey]) && cellInfo.subRows;
+                isPreview =
+                  pivotBy.indexOf(column.id) >
+                    pivotBy.indexOf(rowInfo.row[pivotIDKey]) &&
+                  cellInfo.subRows;
                 // Pivot Cell Render Override
                 if (isBranch) {
                   // isPivot
@@ -1515,13 +1637,13 @@ export default class ReactTable extends Component<
               };
 
               if (tdProps.onClick) {
-                interactionProps.onClick = (e) => {
+                interactionProps.onClick = e => {
                   tdProps.onClick(e, () => resolvedOnExpanderClick(e));
                 };
               }
 
               if (columnProps.onClick) {
-                interactionProps.onClick = (e) => {
+                interactionProps.onClick = e => {
                   columnProps.onClick(e, () => resolvedOnExpanderClick(e));
                 };
               }
@@ -1547,21 +1669,26 @@ export default class ReactTable extends Component<
               );
             })}
           </TrComponent>
-          {rowInfo.subRows
-            && isExpanded
-            && rowInfo.subRows.map((d, i) => makePageRow(d, i, rowInfo.nestingPath))}
-          {SubComponent
-            && !rowInfo.subRows
-            && isExpanded
-            && SubComponent(rowInfo)}
+          {rowInfo.subRows &&
+            isExpanded &&
+            rowInfo.subRows.map((d, i) =>
+              makePageRow(d, i, rowInfo.nestingPath),
+            )}
+          {SubComponent &&
+            !rowInfo.subRows &&
+            isExpanded &&
+            SubComponent(rowInfo)}
         </TrGroupComponent>
       );
     };
 
     const makePadColumn = (column, i) => {
-      const resizedCol = resized.find(x => x.id === column.id)
-          || { id: undefined, value: undefined };
-      const show = typeof column.show === 'function' ? column.show() : column.show;
+      const resizedCol = resized.find(x => x.id === column.id) || {
+        id: undefined,
+        value: undefined,
+      };
+      const show =
+        typeof column.show === 'function' ? column.show() : column.show;
       const width = _.getFirstDefined(
         resizedCol.value,
         column.width,
@@ -1597,7 +1724,13 @@ export default class ReactTable extends Component<
         undefined,
         this,
       );
-      const trProps = getTrProps(row.viewIndex % 2, finalState, undefined, undefined, this);
+      const trProps = getTrProps(
+        row.viewIndex % 2,
+        finalState,
+        undefined,
+        undefined,
+        this,
+      );
       return (
         <TrGroupComponent key={i} {...trGroupProps}>
           <TrComponent
@@ -1612,9 +1745,12 @@ export default class ReactTable extends Component<
     };
 
     const makeColumnFooter = (column, i) => {
-      const resizedCol = resized.find(x => x.id === column.id)
-          || { id: undefined, value: undefined };
-      const show = typeof column.show === 'function' ? column.show() : column.show;
+      const resizedCol = resized.find(x => x.id === column.id) || {
+        id: undefined,
+        value: undefined,
+      };
+      const show =
+        typeof column.show === 'function' ? column.show() : column.show;
       const width = _.getFirstDefined(
         resizedCol.value,
         column.width,
@@ -1625,9 +1761,19 @@ export default class ReactTable extends Component<
         column.width,
         column.maxWidth,
       );
-      const tFootTdProps = getTfootTdProps(finalState, undefined, undefined, this);
+      const tFootTdProps = getTfootTdProps(
+        finalState,
+        undefined,
+        undefined,
+        this,
+      );
       const columnProps = column.getProps(finalState, undefined, column, this);
-      const columnFooterProps = column.getFooterProps(finalState, undefined, column, this);
+      const columnFooterProps = column.getFooterProps(
+        finalState,
+        undefined,
+        column,
+        this,
+      );
 
       return (
         <TdComponent
@@ -1652,7 +1798,12 @@ export default class ReactTable extends Component<
 
     const makeColumnFooters = () => {
       const tFootProps = getTfootProps(finalState, undefined, undefined, this);
-      const tFootTrProps = getTfootTrProps(finalState, undefined, undefined, this);
+      const tFootTrProps = getTfootTrProps(
+        finalState,
+        undefined,
+        undefined,
+        this,
+      );
       return (
         <TfootComponent
           style={{
@@ -1661,7 +1812,9 @@ export default class ReactTable extends Component<
           {...tFootProps}
         >
           <TrComponent
-            ref={(el) => { this.footerRef = el; }}
+            ref={el => {
+              this.footerRef = el;
+            }}
             selectRow={selectRow('footer')}
             {...tFootTrProps}
           >
@@ -1672,7 +1825,12 @@ export default class ReactTable extends Component<
     };
 
     const makePagination = () => {
-      const paginationProps = getPaginationProps(finalState, undefined, undefined, this);
+      const paginationProps = getPaginationProps(
+        finalState,
+        undefined,
+        undefined,
+        this,
+      );
       return (
         <PaginationComponent
           {...resolvedState}
@@ -1690,15 +1848,8 @@ export default class ReactTable extends Component<
       const pagination = makePagination();
       return (
         <div {...rootProps}>
-          {showPagination && showPaginationTop ? (
-            <div>
-              {pagination}
-            </div>
-)
-            : null}
-          <TableComponent
-            {...tableProps}
-          >
+          {showPagination && showPaginationTop ? <div>{pagination}</div> : null}
+          <TableComponent {...tableProps}>
             {hasHeaderGroups ? makeHeaderGroups() : null}
             {makeHeaders()}
             {hasFilters ? makeFilters() : null}
@@ -1719,17 +1870,13 @@ export default class ReactTable extends Component<
             {hasColumnFooter ? makeColumnFooters() : null}
           </TableComponent>
           {showPagination && showPaginationBottom ? (
-            <div>
-              {pagination}
-            </div>
-)
-            : null}
-          {!pageRows.length && !loading
-            && (
+            <div>{pagination}</div>
+          ) : null}
+          {!pageRows.length && !loading && (
             <NoDataComponent {...noDataProps}>
               {_.normalizeComponent(noDataText)}
             </NoDataComponent>
-)}
+          )}
         </div>
       );
     };

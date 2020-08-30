@@ -2,16 +2,16 @@ import styled, { css } from 'styled-components';
 import { Button } from 'grommet';
 
 interface IColoSizeProps {
-  size: 'small' | 'medium' | 'large',
+  size: 'small' | 'medium' | 'large';
   theme: {
     calendar: {
       [x: string]: {
-        fontSize: string,
-        lineHeight: string,
-        daySize: string,
-      },
-    }
-  },
+        fontSize: string;
+        lineHeight: string;
+        daySize: string;
+      };
+    };
+  };
 }
 const sizeStyle = (props: IColoSizeProps) => {
   const data = props.theme.calendar[props.size];
@@ -24,7 +24,6 @@ const sizeStyle = (props: IColoSizeProps) => {
 export const StyledColors = styled.div<IColoSizeProps>`
   ${props => sizeStyle(props)}
 `;
-
 
 export const StyledRows = styled.div`
   position: relative;

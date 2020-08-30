@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import {
- Box, Button, Keyboard, Text,
-} from 'grommet';
+import { Box, Button, Keyboard, Text } from 'grommet';
 import { FormDown } from 'grommet-icons/icons/FormDown';
 import { FormNext } from 'grommet-icons/icons/FormNext';
-import { IMenuItem, IVerticalMenuProps, ButtonClassType } from './VerticalMenuProps';
+import {
+  IMenuItem,
+  IVerticalMenuProps,
+  ButtonClassType,
+} from './VerticalMenuProps';
 
-
-const isActive = (active: IMenuItem, item: IMenuItem): boolean => (
-    item.id === active.id || item.label === active.label
-);
+const isActive = (active: IMenuItem, item: IMenuItem): boolean =>
+  item.id === active.id || item.label === active.label;
 
 const hasActiveChidlren = (active: IMenuItem, item: IMenuItem): boolean => {
   if (isActive(active, item)) {
@@ -19,45 +19,46 @@ const hasActiveChidlren = (active: IMenuItem, item: IMenuItem): boolean => {
   }
   return false;
 };
-const getExpandedItems = (children: IMenuItem[], active: IMenuItem): IMenuItem[] => children
-    .reduce((expandedItems, item) => {
-      const {
-      items, expanded, id, label,
-    } = item;
-      if (expanded || (active && hasActiveChidlren(active, item))) {
-        expandedItems.push(id || label);
-      }
-      let childrenExpandedItems = [];
-      if (items) {
-        childrenExpandedItems = getExpandedItems(items, active);
-      }
-      return expandedItems.concat(childrenExpandedItems);
-    }, []);
+const getExpandedItems = (
+  children: IMenuItem[],
+  active: IMenuItem,
+): IMenuItem[] =>
+  children.reduce((expandedItems, item) => {
+    const { items, expanded, id, label } = item;
+    if (expanded || (active && hasActiveChidlren(active, item))) {
+      expandedItems.push(id || label);
+    }
+    let childrenExpandedItems = [];
+    if (items) {
+      childrenExpandedItems = getExpandedItems(items, active);
+    }
+    return expandedItems.concat(childrenExpandedItems);
+  }, []);
 
-const getCollapsibleItems = (children: IMenuItem[]): IMenuItem[] => children
-    .reduce((collapsibleItems, { items, id, label }) => {
-      let childrenCollapsibleItems = [];
-      if (items) {
-        collapsibleItems.push(id || label);
+const getCollapsibleItems = (children: IMenuItem[]): IMenuItem[] =>
+  children.reduce((collapsibleItems, { items, id, label }) => {
+    let childrenCollapsibleItems = [];
+    if (items) {
+      collapsibleItems.push(id || label);
 
-        childrenCollapsibleItems = getCollapsibleItems(items);
-      }
-      return collapsibleItems.concat(childrenCollapsibleItems);
-    }, []);
+      childrenCollapsibleItems = getCollapsibleItems(items);
+    }
+    return collapsibleItems.concat(childrenCollapsibleItems);
+  }, []);
 
-const getFlatChildrenIds = (children: IMenuItem[]): IMenuItem[] => children
-    .reduce((flatChildren, item) => {
-      flatChildren.push(item.id || item.label);
-      if (item.items) {
+const getFlatChildrenIds = (children: IMenuItem[]): IMenuItem[] =>
+  children.reduce((flatChildren, item) => {
+    flatChildren.push(item.id || item.label);
+    if (item.items) {
       // eslint-disable-next-line no-param-reassign
-        flatChildren = flatChildren.concat(getFlatChildrenIds(item.items));
-      }
-      return flatChildren;
-    }, []);
+      flatChildren = flatChildren.concat(getFlatChildrenIds(item.items));
+    }
+    return flatChildren;
+  }, []);
 
 const getChildrenById = (children: IMenuItem[], id: string): IMenuItem[] => {
   let items;
-  children.some((item) => {
+  children.some(item => {
     if (item.id === id || item.label === id) {
       ({ items } = item);
       return true;
@@ -77,21 +78,26 @@ const getChildrenById = (children: IMenuItem[], id: string): IMenuItem[] => {
 const filterItems = (items: IMenuItem[], search: string): IMenuItem[] => {
   if (search && search.length) {
     const searchLC = search.toLowerCase();
-    return items.map(item => Object.assign({}, item)).filter((item) => {
-      const { items: children, label } = item;
-      if (typeof label === 'string' && label.toLowerCase().indexOf(searchLC) >= 0) {
-        return true;
-      }
-      if (children) {
-        const childItems = filterItems(children, search);
-        // eslint-disable-next-line no-param-reassign
-        item.items = childItems;
-        if (childItems.length) {
+    return items
+      .map(item => Object.assign({}, item))
+      .filter(item => {
+        const { items: children, label } = item;
+        if (
+          typeof label === 'string' &&
+          label.toLowerCase().indexOf(searchLC) >= 0
+        ) {
           return true;
         }
-      }
-      return false;
-    });
+        if (children) {
+          const childItems = filterItems(children, search);
+          // eslint-disable-next-line no-param-reassign
+          item.items = childItems;
+          if (childItems.length) {
+            return true;
+          }
+        }
+        return false;
+      });
   }
   return items;
 };
@@ -100,20 +106,21 @@ const compareItems = (items: IMenuItem[], nextItems: IMenuItem[]): boolean => {
   if (!items && !nextItems) {
     return true;
   }
-  if (!items && nextItems || items && !nextItems) {
+  if ((!items && nextItems) || (items && !nextItems)) {
     return false;
   }
   if (items.length !== nextItems.length) {
     return false;
   }
   for (let i = 0; i < items.length; i += 1) {
-    if (items[i].expanded !== nextItems[i].expanded
-        || items[i].href !== nextItems[i].href
-        || items[i].icon !== nextItems[i].icon
-        || items[i].label !== nextItems[i].label
-        || items[i].onClick !== nextItems[i].onClick
-        || items[i].widget !== nextItems[i].widget
-        || !compareItems(items[i].items, nextItems[i].items)
+    if (
+      items[i].expanded !== nextItems[i].expanded ||
+      items[i].href !== nextItems[i].href ||
+      items[i].icon !== nextItems[i].icon ||
+      items[i].label !== nextItems[i].label ||
+      items[i].onClick !== nextItems[i].onClick ||
+      items[i].widget !== nextItems[i].widget ||
+      !compareItems(items[i].items, nextItems[i].items)
     ) {
       return false;
     }
@@ -121,40 +128,41 @@ const compareItems = (items: IMenuItem[], nextItems: IMenuItem[]): boolean => {
   return true;
 };
 
-
 interface IVerticalMenuState {
-  expandedItems? : string[],
-  originalExpandAll? : boolean,
-  search?: string,
-  items? : IMenuItem[],
-  filteredItems?: IMenuItem[],
-  collapsibleItems?: IMenuItem[],
-  allExpanded? : boolean,
-  expandAll?: boolean,
+  expandedItems?: string[];
+  originalExpandAll?: boolean;
+  search?: string;
+  items?: IMenuItem[];
+  filteredItems?: IMenuItem[];
+  collapsibleItems?: IMenuItem[];
+  allExpanded?: boolean;
+  expandAll?: boolean;
 }
 /** Hierarchical collapsible menu
-* ```$ npm install grommet-controls\n
-* import { VerticalMenu } from 'grommet-controls';\n
-* <VerticalMenu items={...} onSelect={...} />
-*```
-*/
+ * ```$ npm install grommet-controls\n
+ * import { VerticalMenu } from 'grommet-controls';\n
+ * <VerticalMenu items={...} onSelect={...} />
+ *```
+ */
 class VerticalMenu extends Component<IVerticalMenuProps, IVerticalMenuState> {
   state: IVerticalMenuState = { expandedItems: [] };
 
   static getDerivedStateFromProps(
-      nextProps: IVerticalMenuProps,
-      prevState: IVerticalMenuState = {}
-      ): IVerticalMenuState {
+    nextProps: IVerticalMenuProps,
+    prevState: IVerticalMenuState = {},
+  ): IVerticalMenuState {
+    const { items, expandAll, activeItem, search } = nextProps;
     const {
- items, expandAll, activeItem, search,
-} = nextProps;
-    const { originalExpandAll, search: stateSearch, items: stateItems = [] } = prevState;
+      originalExpandAll,
+      search: stateSearch,
+      items: stateItems = [],
+    } = prevState;
 
     if (
-      items !== stateItems // when instance are not the same we do not need to do a full compare.
-      || !compareItems(items, stateItems)
-      || expandAll !== originalExpandAll
-      || search !== stateSearch
+      items !== stateItems || // when instance are not the same we do not need to do a full compare.
+      !compareItems(items, stateItems) ||
+      expandAll !== originalExpandAll ||
+      search !== stateSearch
     ) {
       const filteredItems = filterItems(items, search);
       const collapsibleItems = getCollapsibleItems(filteredItems);
@@ -165,7 +173,8 @@ class VerticalMenu extends Component<IVerticalMenuProps, IVerticalMenuState> {
         expandedItems = getExpandedItems(filteredItems, activeItem);
       }
 
-      const allExpanded = typeof expandAll !== 'undefined'
+      const allExpanded =
+        typeof expandAll !== 'undefined'
           ? expandAll
           : collapsibleItems.length === expandedItems.length;
       return {
@@ -193,7 +202,7 @@ class VerticalMenu extends Component<IVerticalMenuProps, IVerticalMenuState> {
         ...getFlatChildrenIds(getChildrenById(filteredItems, id)),
       ];
       newExpandedItems = newExpandedItems.filter(
-        item => toBeCollapsed.indexOf(item) < 0
+        item => toBeCollapsed.indexOf(item) < 0,
       );
     } else {
       newExpandedItems.push(id);
@@ -207,12 +216,11 @@ class VerticalMenu extends Component<IVerticalMenuProps, IVerticalMenuState> {
   renderItem = (item, level = 1) => {
     const { activeItem, onSelect, buttonClass } = this.props;
     const { expandedItems } = this.state;
-    const {
-      items, id, label, widget, icon, ...rest
-    } = item;
+    const { items, id, label, widget, icon, ...rest } = item;
     const itemId = id || label;
     const isExpanded = expandedItems.includes(itemId);
-    const ButtonClass: ButtonClassType = (items ? Button : buttonClass) || Button;
+    const ButtonClass: ButtonClassType =
+      (items ? Button : buttonClass) || Button;
     const itemKey = `item_${itemId}_${level}`;
 
     let background;
@@ -224,36 +232,41 @@ class VerticalMenu extends Component<IVerticalMenuProps, IVerticalMenuState> {
     }
 
     const content = (
-      <Box
-        background={background}
-      >
+      <Box background={background}>
         <ButtonClass
-          onClick={(!rest.route && !rest.path) ? () => (
-              items ? this.onMenuChange(itemId, isExpanded) : (onSelect && onSelect(item))
-              ) : undefined
+          onClick={
+            !rest.route && !rest.path
+              ? () =>
+                  items
+                    ? this.onMenuChange(itemId, isExpanded)
+                    : onSelect && onSelect(item)
+              : undefined
           }
           hoverIndicator={{ color: 'active' }}
           {...rest}
         >
           <Box
-            direction='row'
-            align='center'
-            pad='small'
+            direction="row"
+            align="center"
+            pad="small"
             style={{
               marginLeft: items ? `${12 * level}px` : `${16 * level}px`,
             }}
           >
-            {items
-              && (isExpanded ? <FormDown /> : <FormNext />)}
-            <Box direction='row' justify='between' fill='horizontal' align='center'>
-              <Box direction='row' align='center' gap='small'>
+            {items && (isExpanded ? <FormDown /> : <FormNext />)}
+            <Box
+              direction="row"
+              justify="between"
+              fill="horizontal"
+              align="center"
+            >
+              <Box direction="row" align="center" gap="small">
                 {icon}
                 {typeof label === 'string' ? (
-                  <Text>
-                    {items ? <strong>{label}</strong> : label}
-                  </Text>
-                  ) : label
-                }
+                  <Text>{items ? <strong>{label}</strong> : label}</Text>
+                ) : (
+                  label
+                )}
               </Box>
               {widget}
             </Box>
@@ -275,8 +288,9 @@ class VerticalMenu extends Component<IVerticalMenuProps, IVerticalMenuState> {
         ) : (
           content
         )}
-        {items
-          && (isExpanded && items.map(child => this.renderItem(child, level + 1)))}
+        {items &&
+          isExpanded &&
+          items.map(child => this.renderItem(child, level + 1))}
       </Box>
     );
   };

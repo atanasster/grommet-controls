@@ -1,9 +1,9 @@
 import { filterByFocusable } from '../../utils/dom';
 
-export const focusableChildren = (parent) => {
+export const focusableChildren = parent => {
   let list = [];
   if (parent && parent.childNodes) {
-    parent.childNodes.forEach((node) => {
+    parent.childNodes.forEach(node => {
       if (node.tagName) {
         list.push(node);
         if (filterByFocusable([node]).length !== 1) {
@@ -15,8 +15,7 @@ export const focusableChildren = (parent) => {
   return filterByFocusable(list);
 };
 
-
-export const focusedChildIndex = (parent) => {
+export const focusedChildIndex = parent => {
   const focusable = focusableChildren(parent);
   const focused = document.activeElement;
   for (let i = 0; i < focusable.length; i += 1) {
@@ -37,7 +36,7 @@ export const focusChildByIndex = (parent, index) => {
   return false;
 };
 
-export const focusNextElement = (parent) => {
+export const focusNextElement = parent => {
   const focusable = focusableChildren(parent);
   const focused = document.activeElement;
   let nextFocus;
@@ -56,7 +55,7 @@ export const focusNextElement = (parent) => {
   return false;
 };
 
-export const focusPrevElement = (parent) => {
+export const focusPrevElement = parent => {
   const focusable = focusableChildren(parent);
   const focused = document.activeElement;
   let prevFocus;
@@ -75,7 +74,7 @@ export const focusPrevElement = (parent) => {
   return false;
 };
 
-export const hasKeyboardChildren = (element) => {
+export const hasKeyboardChildren = element => {
   const currentTag = element.tagName.toLowerCase();
   const validTags = /(input|select|textarea)$/;
   if (currentTag.match(validTags)) {
@@ -83,7 +82,10 @@ export const hasKeyboardChildren = (element) => {
   }
   const focusable = focusableChildren(element);
   for (let i = 0; i < focusable.length; i += 1) {
-    if (focusable[i].tagName && focusable[i].tagName.toLowerCase().match(validTags)) {
+    if (
+      focusable[i].tagName &&
+      focusable[i].tagName.toLowerCase().match(validTags)
+    ) {
       return true;
     }
   }

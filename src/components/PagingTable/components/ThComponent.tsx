@@ -5,11 +5,25 @@ import { LinkDown } from 'grommet-icons/icons/LinkDown';
 import { LinkUp } from 'grommet-icons/icons/LinkUp';
 import { StyledThComponent, ThComponentProps } from '../StyledTableComponents';
 
-export default ({
-  toggleSort, sort, resizable, children, pivot, hidden,
-  sortable, expander, CellTextComponent, ...props
+const ThComponent = ({
+  toggleSort,
+  sort,
+  resizable,
+  children,
+  pivot,
+  hidden,
+  sortable,
+  expander,
+  CellTextComponent,
+  ...props
 }: ThComponentProps) => {
-  if (!expander && Array.isArray(children) && children.length > 1 && !children[0] && !children[1]) {
+  if (
+    !expander &&
+    Array.isArray(children) &&
+    children.length > 1 &&
+    !children[0] &&
+    !children[1]
+  ) {
     return null;
   }
   const { style, ...rest } = props;
@@ -23,9 +37,11 @@ export default ({
       SortIcon = sortAsc ? LinkUp : LinkDown;
     }
     content = (
-      <Box direction='row' gap='xsmall' align='center'>
+      <Box direction="row" gap="xsmall" align="center">
         {childRendered}
-        <Button onClick={e => (toggleSort && toggleSort(e))}><SortIcon /></Button>
+        <Button onClick={e => toggleSort && toggleSort(e)}>
+          <SortIcon />
+        </Button>
       </Box>
     );
   } else {
@@ -34,12 +50,10 @@ export default ({
 
   const boxProps = { ...{ pad: 'xsmall' }, ...rest };
   return (
-
-    // eslint-disable-next-line jsx-a11y/interactive-supports-focus
     <StyledThComponent
-      role='columnheader'
-      onClick={e => (toggleSort && toggleSort(e))}
-      direction='row'
+      role="columnheader"
+      onClick={e => toggleSort && toggleSort(e)}
+      direction="row"
       pivot={pivot}
       hidden={hidden}
       sortable={sortable}
@@ -52,3 +66,5 @@ export default ({
     </StyledThComponent>
   );
 };
+
+export default ThComponent;

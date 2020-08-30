@@ -1,7 +1,11 @@
 .idea/**
 dist/**
+public
+out
+.next
 .rpt2_cache
 .eslintcache
+.cache
 coverage
 .vscode
 npm-debug.log

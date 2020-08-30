@@ -3,12 +3,18 @@ import { Box, Text } from 'grommet';
 import { LineChart } from '../LineChart';
 import { colorFromIndex } from '../../../utils';
 import {
- rndDatasets, rndDatasets2d, rndRange, timeFormat, daysAfterStr, daysAfter, rndTimeSerie,
+  rndDatasets,
+  rndDatasets2d,
+  rndRange,
+  timeFormat,
+  daysAfterStr,
+  daysAfter,
+  rndTimeSerie,
 } from '../../data/data';
 import { ChartjsPointStyleType } from '../../withChartTheme/withChartThemeProps';
 
 export default {
-  title: 'CHARTS/chartjs/LineChart',
+  title: 'chartjs/LineChart',
   component: LineChart,
 };
 
@@ -47,8 +53,8 @@ export const title = () => (
 export const multiAxis = () => (
   <LineChart
     data={rndDatasets(2, [
-                { yAxisID: 'y-axis-0', fill: false },
-                { yAxisID: 'y-axis-1', fill: false },
+      { yAxisID: 'y-axis-0', fill: false },
+      { yAxisID: 'y-axis-1', fill: false },
     ])}
     options={{
       legend: { position: 'right' },
@@ -57,20 +63,23 @@ export const multiAxis = () => (
         intersect: true,
       },
       scales: {
-        yAxes: [{
-          type: 'linear',
-          display: true,
-          position: 'left',
-          id: 'y-axis-0',
-        }, {
-          type: 'linear',
-          display: true,
-          position: 'right',
-          id: 'y-axis-1',
-          gridLines: {
-            drawOnChartArea: false,
+        yAxes: [
+          {
+            type: 'linear',
+            display: true,
+            position: 'left',
+            id: 'y-axis-0',
           },
-        }],
+          {
+            type: 'linear',
+            display: true,
+            position: 'right',
+            id: 'y-axis-1',
+            gridLines: {
+              drawOnChartArea: false,
+            },
+          },
+        ],
       },
     }}
   />
@@ -99,38 +108,45 @@ export const lineStyle = () => (
 );
 
 export const pointStyle = () => (
-  <Box fill='horizontal' gap='medium'>
-    {['circle', 'triangle', 'rect', 'rectRounded', 'rectRot', 'cross', 'crossRot', 'star', 'line', 'dash']
-      .map((style, i) => (
-        <Box key={`line_styles_${style}`}>
-          <Text>
-            {`Point style : "${style}"`}
-          </Text>
-          <LineChart
-            data={rndDatasets(1, [
-              {
-                pointRadius: 10,
-                pointHoverRadius: 15,
-                showLine: false,
-                color: colorFromIndex(i),
+  <Box fill="horizontal" gap="medium">
+    {[
+      'circle',
+      'triangle',
+      'rect',
+      'rectRounded',
+      'rectRot',
+      'cross',
+      'crossRot',
+      'star',
+      'line',
+      'dash',
+    ].map((style, i) => (
+      <Box key={`line_styles_${style}`}>
+        <Text>{`Point style : "${style}"`}</Text>
+        <LineChart
+          data={rndDatasets(1, [
+            {
+              pointRadius: 10,
+              pointHoverRadius: 15,
+              showLine: false,
+              color: colorFromIndex(i),
+            },
+          ])}
+          options={{
+            legend: {
+              display: false,
+            },
+            elements: {
+              point: {
+                pointStyle: style as ChartjsPointStyleType,
               },
-            ])}
-            options={{
-              legend: {
-                display: false,
-              },
-              elements: {
-                point: {
-                  pointStyle: style as ChartjsPointStyleType,
-                },
-              },
-            }}
-          />
-        </Box>
-      ))}
+            },
+          }}
+        />
+      </Box>
+    ))}
   </Box>
 );
-
 
 export const pointSizes = () => (
   <LineChart
@@ -166,12 +182,10 @@ export const pointSizes = () => (
 );
 
 export const areaFill = () => (
-  <Box fill='horizontal' gap='medium'>
+  <Box fill="horizontal" gap="medium">
     {[false, 'origin', 'start', 'end'].map((boundary, i) => (
       <Box key={`line_area_fill_${boundary}`}>
-        <Text>
-          {`Line fill=${boundary}`}
-        </Text>
+        <Text>{`Line fill=${boundary}`}</Text>
         <LineChart
           data={rndDatasets(1, [
             {
@@ -191,17 +205,18 @@ export const areaFill = () => (
               },
             },
             scales: {
-              xAxes: [{
-                ticks: {
-                  autoSkip: false,
+              xAxes: [
+                {
+                  ticks: {
+                    autoSkip: false,
+                  },
                 },
-              }],
+              ],
             },
           }}
         />
       </Box>
-        ))
-        }
+    ))}
   </Box>
 );
 
@@ -216,24 +231,27 @@ export const areaStacked = () => (
         mode: 'index',
       },
       scales: {
-        xAxes: [{
-          scaleLabel: {
-            display: true,
-            labelString: 'Month',
+        xAxes: [
+          {
+            scaleLabel: {
+              display: true,
+              labelString: 'Month',
+            },
           },
-        }],
-        yAxes: [{
-          stacked: true,
-          scaleLabel: {
-            display: true,
-            labelString: 'Value',
+        ],
+        yAxes: [
+          {
+            stacked: true,
+            scaleLabel: {
+              display: true,
+              labelString: 'Value',
+            },
           },
-        }],
+        ],
       },
     }}
   />
 );
-
 
 export const mixedScatterLine = () => (
   <LineChart
@@ -260,25 +278,29 @@ export const linearScaleStepSize = () => (
         intersect: true,
       },
       scales: {
-        xAxes: [{
-          display: true,
-          scaleLabel: {
+        xAxes: [
+          {
             display: true,
-            labelString: 'Month',
+            scaleLabel: {
+              display: true,
+              labelString: 'Month',
+            },
           },
-        }],
-        yAxes: [{
-          display: true,
-          scaleLabel: {
+        ],
+        yAxes: [
+          {
             display: true,
-            labelString: 'Value',
+            scaleLabel: {
+              display: true,
+              labelString: 'Value',
+            },
+            ticks: {
+              min: 70,
+              max: 110,
+              stepSize: 5,
+            },
           },
-          ticks: {
-            min: 70,
-            max: 110,
-            stepSize: 5,
-          },
-        }],
+        ],
       },
     }}
   />
@@ -289,14 +311,16 @@ export const linearScaleSuggestedMinMax = () => (
     data={rndDatasets(2, { fill: false }, true)}
     options={{
       scales: {
-        yAxes: [{
-          ticks: {
-                    // the data minimum for determining the ticks is Math.min(dataMin, suggestedMin)
-            suggestedMin: 60,
-                    // the data maximum for determining the ticks is Math.max(dataMax, suggestedMax)
-            suggestedMax: 80,
+        yAxes: [
+          {
+            ticks: {
+              // the data minimum for determining the ticks is Math.min(dataMin, suggestedMin)
+              suggestedMin: 60,
+              // the data maximum for determining the ticks is Math.max(dataMax, suggestedMax)
+              suggestedMax: 80,
+            },
           },
-        }],
+        ],
       },
     }}
   />
@@ -307,13 +331,17 @@ export const logarithmicScale = () => (
     data={rndDatasets(2, { fill: false }, true)}
     options={{
       scales: {
-        xAxes: [{
-          display: true,
-        }],
-        yAxes: [{
-          display: true,
-          type: 'logarithmic',
-        }],
+        xAxes: [
+          {
+            display: true,
+          },
+        ],
+        yAxes: [
+          {
+            display: true,
+            type: 'logarithmic',
+          },
+        ],
       },
     }}
   />
@@ -322,7 +350,8 @@ export const logarithmicScale = () => (
 export const timeScale = () => (
   <LineChart
     data={{
-      labels: [ // Date Objects
+      labels: [
+        // Date Objects
         daysAfter(0),
         daysAfter(1),
         daysAfter(2),
@@ -331,56 +360,68 @@ export const timeScale = () => (
         daysAfter(5),
         daysAfter(6),
       ],
-      datasets: [{
-        label: 'labels data',
-        fill: false,
-        data: [
-          rndRange(),
-          rndRange(),
-          rndRange(),
-          rndRange(),
-          rndRange(),
-          rndRange(),
-          rndRange(),
-        ],
-      }, {
-        label: 'point (x,y) data',
-        fill: false,
-        data: [{
-          x: daysAfterStr(0),
-          y: rndRange(),
-        }, {
-          x: daysAfterStr(5),
-          y: rndRange(),
-        }, {
-          x: daysAfterStr(7),
-          y: rndRange(),
-        }, {
-          x: daysAfterStr(10),
-          y: rndRange(),
-        }],
-      }],
+      datasets: [
+        {
+          label: 'labels data',
+          fill: false,
+          data: [
+            rndRange(),
+            rndRange(),
+            rndRange(),
+            rndRange(),
+            rndRange(),
+            rndRange(),
+            rndRange(),
+          ],
+        },
+        {
+          label: 'point (x,y) data',
+          fill: false,
+          data: [
+            {
+              x: daysAfterStr(0),
+              y: rndRange(),
+            },
+            {
+              x: daysAfterStr(5),
+              y: rndRange(),
+            },
+            {
+              x: daysAfterStr(7),
+              y: rndRange(),
+            },
+            {
+              x: daysAfterStr(10),
+              y: rndRange(),
+            },
+          ],
+        },
+      ],
     }}
     options={{
       scales: {
-        xAxes: [{
-          type: 'time',
-          time: {
-            format: timeFormat,
-                    // round: 'day'
-            tooltipFormat: 'll HH:mm',
+        xAxes: [
+          {
+            type: 'time',
+            time: {
+              format: timeFormat,
+              // round: 'day'
+              tooltipFormat: 'll HH:mm',
+            },
+            scaleLabel: {
+              display: true,
+              labelString: 'Date',
+            },
           },
-          scaleLabel: {
-            display: true,
-            labelString: 'Date',
+        ],
+        yAxes: [
+          {
+            scaleLabel: {
+              display: true,
+              labelString: 'value',
+            },
           },
-        }],
-        yAxes: [{
-          scaleLabel: {
-            display: true,
-            labelString: 'value',
-          },
-        }],
+        ],
       },
     }}
   />
@@ -389,28 +430,34 @@ export const timeScale = () => (
 export const timeSeries = () => (
   <LineChart
     data={{
-      datasets: [{
-        label: 'Closing price',
-        data: rndTimeSerie(),
-        type: 'line',
-        pointRadius: 0,
-        fill: false,
-        lineTension: 0,
-        borderWidth: 2,
-      }],
+      datasets: [
+        {
+          label: 'Closing price',
+          data: rndTimeSerie(),
+          type: 'line',
+          pointRadius: 0,
+          fill: false,
+          lineTension: 0,
+          borderWidth: 2,
+        },
+      ],
     }}
     options={{
       scales: {
-        xAxes: [{
-          type: 'time',
-          distribution: 'series',
-        }],
-        yAxes: [{
-          scaleLabel: {
-            display: true,
-            labelString: 'Price ($)',
+        xAxes: [
+          {
+            type: 'time',
+            distribution: 'series',
           },
-        }],
+        ],
+        yAxes: [
+          {
+            scaleLabel: {
+              display: true,
+              labelString: 'Price ($)',
+            },
+          },
+        ],
       },
     }}
   />

@@ -1,10 +1,14 @@
 import React from 'react';
 import { Box, CheckBox, CheckBoxProps } from 'grommet';
 import {
- WithFormField, IWithFormFieldProps, IFieldProps,
+  WithFormField,
+  IWithFormFieldProps,
+  IFieldProps,
 } from '../WithFormField';
 
-export const CheckBoxField = (props: IWithFormFieldProps & IFieldProps & CheckBoxProps) => (
+export const CheckBoxField = (
+  props: IWithFormFieldProps & IFieldProps & CheckBoxProps,
+) => (
   <WithFormField {...props}>
     {({ value, onChange, ...rest }) => (
       <Box pad={{ vertical: 'small' }}>
@@ -14,6 +18,6 @@ export const CheckBoxField = (props: IWithFormFieldProps & IFieldProps & CheckBo
           {...rest}
         />
       </Box>
-      )}
+    )}
   </WithFormField>
 );

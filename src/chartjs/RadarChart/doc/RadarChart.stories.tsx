@@ -3,7 +3,7 @@ import { RadarChart } from '../RadarChart';
 import { rndDatasets } from '../../data/data';
 
 export default {
-  title: 'CHARTS/chartjs/RadarChart',
+  title: 'chartjs/RadarChart',
   component: RadarChart,
 };
 
@@ -44,14 +44,17 @@ export const options = () => (
 
 export const lineTenstion = () => (
   <RadarChart
-    data={rndDatasets(5, [
-              { label: 'fill: false ', fill: false },
-              { label: 'fill: "-1"', fill: '-1', hidden: true },
-              { label: 'fill: 1', fill: 1 },
-              { label: 'fill: false', fill: false },
-              { label: 'no fill' },
-
-    ], true)}
+    data={rndDatasets(
+      5,
+      [
+        { label: 'fill: false ', fill: false },
+        { label: 'fill: "-1"', fill: '-1', hidden: true },
+        { label: 'fill: 1', fill: 1 },
+        { label: 'fill: false', fill: false },
+        { label: 'no fill' },
+      ],
+      true,
+    )}
     options={{
       elements: {
         line: {
@@ -59,7 +62,7 @@ export const lineTenstion = () => (
         },
       },
       plugins: {
-        'filler': {
+        filler: {
           propagate: false,
         },
       },

@@ -3,7 +3,7 @@ import { DoughnutChart } from '../DoughnutChart';
 import { rndDatasets } from '../../data/data';
 
 export default {
-  title: 'CHARTS/chartjs/DoughnutChart',
+  title: 'chartjs/DoughnutChart',
   component: DoughnutChart,
 };
 
@@ -26,7 +26,6 @@ export const main = () => (
     }}
   />
 );
-
 
 export const animation = () => (
   <DoughnutChart

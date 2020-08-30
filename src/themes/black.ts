@@ -8,84 +8,86 @@ const neutralColors = ['#a4c400', '#006766', '#f3741c', '#8F6C53', '#e82121'];
 const backgroundColor = '#5e5e5e';
 
 const colors = {
-  'active': {
+  active: {
     light: '#3a82b1',
     dark: '#52b7f9',
   },
-  'background': '#444444',
-  'brand': brandColor,
-  'focus': accentColors[0],
-  'control': {
-    'dark': '#f8f8f8',
-    'light': '#444444',
+  background: '#444444',
+  brand: brandColor,
+  focus: accentColors[0],
+  control: {
+    dark: '#f8f8f8',
+    light: '#444444',
   },
 };
 colorsFromArray(colors, accentColors, 'accent');
 colorsFromArray(colors, neutralColors, 'neutral');
 
-export default deepFreeze(deepMerge(base, {
-  global: {
-    colors,
-    drop: {
-      background: '#444444',
-    },
-    font: {
-      family: "'Inconsolata', monospace",
-      size: '16px',
-    },
-    hover: {
-      background: {
-        light: '#dddddd',
-        dark: '#222222',
+export default deepFreeze(
+  deepMerge(base, {
+    global: {
+      colors,
+      drop: {
+        background: '#444444',
       },
-      color: {
-        light: '#333333',
-        dark: '#ffffff',
+      font: {
+        family: "'Inconsolata', monospace",
+        size: '16px',
+      },
+      hover: {
+        background: {
+          light: '#dddddd',
+          dark: '#222222',
+        },
+        color: {
+          light: '#333333',
+          dark: '#ffffff',
+        },
+      },
+      control: {
+        border: {
+          radius: '0px',
+        },
       },
     },
-    control: {
-      border: {
-        radius: '0px',
-      },
+    icon: {
+      colors,
     },
-  },
-  icon: {
-    colors,
-  },
-  anchor: {
-    color: {
-      light: '#0a466e',
-      dark: '#4eadeb',
-    },
-  },
-  button: {
-    border: {
-      radius: '0px',
-    },
-    primary: {
+    anchor: {
       color: {
         light: '#0a466e',
         dark: '#4eadeb',
       },
     },
-  },
-  checkBox: {
-    check: {
-      radius: '0px',
-    },
-    toggle: {
-      radius: '0px',
-    },
-  },
-  layer: {
-    background: backgroundColor,
-  },
-  rangeInput: {
-    track: {
-      color: {
-        'dark': '#3a82b1',
-        'light': '#52b7f9',
+    button: {
+      border: {
+        radius: '0px',
+      },
+      primary: {
+        color: {
+          light: '#0a466e',
+          dark: '#4eadeb',
+        },
       },
     },
-  },
-}));
+    checkBox: {
+      check: {
+        radius: '0px',
+      },
+      toggle: {
+        radius: '0px',
+      },
+    },
+    layer: {
+      background: backgroundColor,
+    },
+    rangeInput: {
+      track: {
+        color: {
+          dark: '#3a82b1',
+          light: '#52b7f9',
+        },
+      },
+    },
+  }),
+);

@@ -8,11 +8,10 @@ export const StyledTableComponent = styled(Box)`
   align-items: stretch;
   width: 100%;
   border-collapse: collapse;
-  overflow: auto
+  overflow: auto;
 `;
 
-export const StyledTableBodyComponent = styled(Box)`
-`;
+export const StyledTableBodyComponent = styled(Box)``;
 
 export const StyledTHeadComponent = styled(Box)`
   -webkit-user-select: none;
@@ -22,7 +21,7 @@ export const StyledTHeadComponent = styled(Box)`
 `;
 
 export const StyledResizerComponent = styled(Box)`
- display: inline-block;
+  display: inline-block;
   position: absolute;
   width: 36px;
   top: 0;
@@ -33,31 +32,37 @@ export const StyledResizerComponent = styled(Box)`
 `;
 
 export interface ThComponentProps {
-  sort?: string | boolean,
-  resizable: boolean,
-  sortable: boolean,
-  hidden: boolean,
-  expander?: ButtonProps,
-  pivot: string | boolean,
-  toggleSort?: (event: MouseEvent<HTMLButtonElement>) => void,
-  children: React.ReactNode,
-  CellTextComponent?: React.ElementType,
-  style: object,
+  sort?: string | boolean;
+  resizable: boolean;
+  sortable: boolean;
+  hidden: boolean;
+  expander?: ButtonProps;
+  pivot: string | boolean;
+  toggleSort?: (event: MouseEvent<HTMLButtonElement>) => void;
+  children: React.ReactNode;
+  CellTextComponent?: React.ElementType;
+  style: object;
 }
 
 export const StyledThComponent = styled(Box)<ThComponentProps>`
   position: relative;
-  ${props => props.sortable && `
+  ${props =>
+    props.sortable &&
+    `
     cursor: pointer;
   `}    
-  ${props => props.hidden && `
+  ${props =>
+    props.hidden &&
+    `
     width: 0 !important;
     min-width: 0 !important;
     padding: 0 !important;
     border: 0 !important;
     opacity: 0 !important;
   `}
-  ${props => props.pivot && `
+  ${props =>
+    props.pivot &&
+    `
     &:after,:before {
       left: 100%;
       top: 50%;
@@ -84,7 +89,9 @@ export const StyledThComponent = styled(Box)<ThComponentProps>`
     }
 
   `}  
-  ${props => props.resizable && `
+  ${props =>
+    props.resizable &&
+    `
     overflow: visible;
 
     &:last-child {
@@ -93,22 +100,29 @@ export const StyledThComponent = styled(Box)<ThComponentProps>`
   `}  
 `;
 
-
 export const StyledTrGroupComponent = styled(Box)`
   align-items: stretch;
 `;
 
 export interface ITrComponentProps {
   hover?: {
-    background: ColorType,
-    color: ColorType,
-  }
+    background: ColorType;
+    color: ColorType;
+  };
 }
 export const StyledTrComponent = styled(Box)<ITrComponentProps>`
-  ${props => props.hover && `
+  ${props =>
+    props.hover &&
+    `
     &:hover {
-      background-color: ${normalizeColor(props.hover.background || props.theme.global.hover.background, props.theme)};
-      color: ${normalizeColor(props.hover.color || props.theme.global.hover.color, props.theme)};
+      background-color: ${normalizeColor(
+        props.hover.background || props.theme.global.hover.background,
+        props.theme,
+      )};
+      color: ${normalizeColor(
+        props.hover.color || props.theme.global.hover.color,
+        props.theme,
+      )};
     }  
   `}
 `;
@@ -116,9 +130,11 @@ export const StyledTrComponent = styled(Box)<ITrComponentProps>`
 export const StyledTdComponent = styled(Box)`
   text-overflow: ellipsis;
   overflow: hidden;
-  display:  block;
+  display: block;
   white-space: nowrap;
-  ${props => props.hidden && `
+  ${props =>
+    props.hidden &&
+    `
     width: 0 !important;
     min-width: 0 !important;
     padding: 0 !important;
@@ -136,6 +152,4 @@ export const StyledExpander = styled(Button)`
   cursor: pointer;
 `;
 
-
-export const StyledTfootComponent = styled(Box)`
-`;
+export const StyledTfootComponent = styled(Box)``;

@@ -5,7 +5,9 @@ import { WithFormField, IWithFormFieldProps } from '../WithFormField';
 /**
  * A Date input field with form validation<br/>
  */
-export const DateInputField = (props: IWithFormFieldProps & IDateInputProps) => (
+export const DateInputField = (
+  props: IWithFormFieldProps & IDateInputProps,
+) => (
   <WithFormField {...props}>
     {childProps => <DateInput {...childProps} />}
   </WithFormField>

@@ -1,13 +1,10 @@
 import React from 'react';
 import { Box, Text } from 'grommet';
-import {
- Inbox, Send, Flag, Star, Document, Tag, Trash,
-} from 'grommet-icons';
-import { action } from '@storybook/addon-actions';
+import { Inbox, Send, Flag, Star, Document, Tag, Trash } from 'grommet-icons';
 import { VerticalMenu } from '../VerticalMenu';
 
 export default {
-  title: 'CONTROLS/navigation/VerticalMenu',
+  title: 'navigation/VerticalMenu',
   component: VerticalMenu,
 };
 
@@ -20,7 +17,11 @@ export const main = () => (
         label: 'Local',
         items: [
           { id: 'c_drive', href: '/c_drive', label: 'C: drive' },
-          { id: 'f_drive', onClick: action('onClick'), label: 'F: drive' },
+          {
+            id: 'f_drive',
+            onClick: () => console.log('onClick'),
+            label: 'F: drive',
+          },
         ],
       },
       {
@@ -28,24 +29,25 @@ export const main = () => (
         label: 'Cloud',
         items: [
           { id: 'drop_box', href: '/drop_box', label: 'DropBox' },
-          { id: 'google_drive', onClick: action('onClick'), label: 'Google drive' },
+          {
+            id: 'google_drive',
+            onClick: () => console.log('onClick'),
+            label: 'Google drive',
+          },
         ],
-
       },
     ]}
   />
-  );
+);
 
 const Badge = ({ label, background = 'light-3' }) => (
   <Box
     background={background}
     pad={{ horizontal: 'small' }}
-    border='all'
+    border="all"
     style={{ borderRadius: '20%' }}
   >
-    <Text size='small'>
-      {label}
-    </Text>
+    <Text size="small">{label}</Text>
   </Box>
 );
 
@@ -63,25 +65,25 @@ export const items = () => (
             id: 'all',
             href: '/inbox/all',
             label: 'All',
-            widget: <Badge label='10' />,
+            widget: <Badge label="10" />,
           },
           {
             id: 'gmail',
             href: '/inbox/gmail',
             label: 'GMail',
-            widget: <Badge label='8' />,
+            widget: <Badge label="8" />,
           },
           {
             id: 'work',
             href: '/inbox/work',
             label: 'Work',
-            widget: <Badge label='1' />,
+            widget: <Badge label="1" />,
           },
           {
             id: 'amazon',
             href: '/inbox/amazon',
             label: 'Amazon',
-            widget: <Badge label='1' />,
+            widget: <Badge label="1" />,
           },
         ],
       },
@@ -96,7 +98,7 @@ export const items = () => (
         href: '/inbox/flagged',
         label: 'Flagged',
         icon: <Flag />,
-        widget: <Badge label='3' background='accent-1' />,
+        widget: <Badge label="3" background="accent-1" />,
       },
       {
         id: 'starred',
@@ -124,4 +126,4 @@ export const items = () => (
       },
     ]}
   />
-  );
+);

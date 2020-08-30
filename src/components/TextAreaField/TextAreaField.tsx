@@ -5,7 +5,11 @@ import { WithFormField, IWithFormFieldProps } from '../WithFormField';
 /**
  * A TextArea field with form validation<br/>
  */
-export const TextAreaField = (props: IWithFormFieldProps & TextAreaProps & JSX.IntrinsicElements['textarea']) => (
+export const TextAreaField = (
+  props: IWithFormFieldProps &
+    TextAreaProps &
+    JSX.IntrinsicElements['textarea'],
+) => (
   <WithFormField {...props}>
     {childProps => <TextArea {...childProps} />}
   </WithFormField>

@@ -17,15 +17,23 @@ const LABEL_SIZE_MAP = {
  * `<Value value={...} label={...} />`<br/>
  */
 const Value = ({
-  label, value, size, weight, gap, units, color,
+  label,
+  value,
+  size,
+  weight,
+  gap,
+  units,
+  color,
 }: IValueProps) => (
   <Box gap={gap}>
-    {React.isValidElement(value) ? value : (
+    {React.isValidElement(value) ? (
+      value
+    ) : (
       <Text size={size} weight={weight} color={color}>
         {`${value !== undefined ? value : '-'}${units ? ` ${units}` : ''}`}
       </Text>
     )}
-    <Box alignSelf='end'>
+    <Box alignSelf="end">
       <Text size={LABEL_SIZE_MAP[size]} color={color}>
         {label}
       </Text>

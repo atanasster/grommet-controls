@@ -47,7 +47,6 @@ const animationBounce = keyframes`
   }
 `;
 
-
 const animationCubeMove = keyframes`
   25% {
     -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
@@ -102,7 +101,7 @@ export const ThreeBounceSpinner = styled.div<ISpinningProps>`
     background-color: ${props => normalizeColor(props.color, props.theme)};
   }
   height: ${props => props.theme.global.edgeSize[props.size]};
-  & >div {
+  & > div {
     width: ${props => props.theme.global.edgeSize[props.size]};
     height: ${props => props.theme.global.edgeSize[props.size]};
     background-color: ${props => normalizeColor(props.color, props.theme)};
@@ -111,14 +110,14 @@ export const ThreeBounceSpinner = styled.div<ISpinningProps>`
     animation: ${animationBounceDelay} 1.4s infinite ease-in-out;
     /* Prevent first frame from flickering when animation starts */
     animation-fill-mode: both;
-  };
-  & >div:first-child {
+  }
+  & > div:first-child {
     animation-delay: -0.32s;
-  };  
-  & >div:nth-child(2) {
+  }
+  & > div:nth-child(2) {
     animation-delay: -0.16s;
-  };
-  animation: ${animationFadeIn} 2s;  
+  }
+  animation: ${animationFadeIn} 2s;
 `;
 
 export const CircleSpinner = styled.div<ISpinningProps>`
@@ -148,29 +147,95 @@ export const CircleSpinner = styled.div<ISpinningProps>`
     animation-fill-mode: both;
   }
 
-  & > div:nth-child(2)  { -webkit-transform: rotate(30deg);  transform: rotate(30deg)  }
-  & > div:nth-child(3)  { -webkit-transform: rotate(60deg);  transform: rotate(60deg)  }
-  & > div:nth-child(4)  { -webkit-transform: rotate(90deg);  transform: rotate(90deg)  }
-  & > div:nth-child(5)  { -webkit-transform: rotate(120deg); transform: rotate(120deg) }
-  & > div:nth-child(6)  { -webkit-transform: rotate(150deg); transform: rotate(150deg) }
-  & > div:nth-child(7)  { -webkit-transform: rotate(180deg); transform: rotate(180deg) }
-  & > div:nth-child(8)  { -webkit-transform: rotate(210deg); transform: rotate(210deg) }
-  & > div:nth-child(9)  { -webkit-transform: rotate(240deg); transform: rotate(240deg) }
-  & > div:nth-child(10) { -webkit-transform: rotate(270deg); transform: rotate(270deg) }
-  & > div:nth-child(11) { -webkit-transform: rotate(300deg); transform: rotate(300deg) }
-  & > div:nth-child(12) { -webkit-transform: rotate(330deg); transform: rotate(330deg) }
+  & > div:nth-child(2) {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  & > div:nth-child(3) {
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+  & > div:nth-child(4) {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  & > div:nth-child(5) {
+    -webkit-transform: rotate(120deg);
+    transform: rotate(120deg);
+  }
+  & > div:nth-child(6) {
+    -webkit-transform: rotate(150deg);
+    transform: rotate(150deg);
+  }
+  & > div:nth-child(7) {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  & > div:nth-child(8) {
+    -webkit-transform: rotate(210deg);
+    transform: rotate(210deg);
+  }
+  & > div:nth-child(9) {
+    -webkit-transform: rotate(240deg);
+    transform: rotate(240deg);
+  }
+  & > div:nth-child(10) {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+  & > div:nth-child(11) {
+    -webkit-transform: rotate(300deg);
+    transform: rotate(300deg);
+  }
+  & > div:nth-child(12) {
+    -webkit-transform: rotate(330deg);
+    transform: rotate(330deg);
+  }
 
-  & > div:nth-child(2)::before  { -webkit-animation-delay: -1.1s; animation-delay: -1.1s }
-  & > div:nth-child(3)::before  { -webkit-animation-delay: -1.0s; animation-delay: -1.0s }
-  & > div:nth-child(4)::before  { -webkit-animation-delay: -0.9s; animation-delay: -0.9s }
-  & > div:nth-child(5)::before  { -webkit-animation-delay: -0.8s; animation-delay: -0.8s }
-  & > div:nth-child(6)::before  { -webkit-animation-delay: -0.7s; animation-delay: -0.7s }
-  & > div:nth-child(7)::before  { -webkit-animation-delay: -0.6s; animation-delay: -0.6s }
-  & > div:nth-child(8)::before  { -webkit-animation-delay: -0.5s; animation-delay: -0.5s }
-  & > div:nth-child(9)::before  { -webkit-animation-delay: -0.4s; animation-delay: -0.4s }
-  & > div:nth-child(10)::before { -webkit-animation-delay: -0.3s; animation-delay: -0.3s }
-  & > div:nth-child(11)::before { -webkit-animation-delay: -0.2s; animation-delay: -0.2s }
-  & > div:nth-child(12)::before { -webkit-animation-delay: -0.1s; animation-delay: -0.1s }
+  & > div:nth-child(2)::before {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  & > div:nth-child(3)::before {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+  }
+  & > div:nth-child(4)::before {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  & > div:nth-child(5)::before {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  & > div:nth-child(6)::before {
+    -webkit-animation-delay: -0.7s;
+    animation-delay: -0.7s;
+  }
+  & > div:nth-child(7)::before {
+    -webkit-animation-delay: -0.6s;
+    animation-delay: -0.6s;
+  }
+  & > div:nth-child(8)::before {
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+  }
+  & > div:nth-child(9)::before {
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s;
+  }
+  & > div:nth-child(10)::before {
+    -webkit-animation-delay: -0.3s;
+    animation-delay: -0.3s;
+  }
+  & > div:nth-child(11)::before {
+    -webkit-animation-delay: -0.2s;
+    animation-delay: -0.2s;
+  }
+  & > div:nth-child(12)::before {
+    -webkit-animation-delay: -0.1s;
+    animation-delay: -0.1s;
+  }
 `;
 
 export const CubeGridSpinner = styled.div<ISpinningProps>`
@@ -192,17 +257,43 @@ export const CubeGridSpinner = styled.div<ISpinningProps>`
   * 7 8 9
   */
 
-  & > div:nth-child(1) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s  }
-  & > div:nth-child(2) { -webkit-animation-delay: 0.3s; animation-delay: 0.3s  }
-  & > div:nth-child(3) { -webkit-animation-delay: 0.4s; animation-delay: 0.4s  }
-  & > div:nth-child(4) { -webkit-animation-delay: 0.1s; animation-delay: 0.1s  }
-  & > div:nth-child(5) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s  }
-  & > div:nth-child(6) { -webkit-animation-delay: 0.3s; animation-delay: 0.3s  }
-  & > div:nth-child(7) { -webkit-animation-delay: 0.0s; animation-delay: 0.0s  }
-  & > div:nth-child(8) { -webkit-animation-delay: 0.1s; animation-delay: 0.1s  }
-  & > div:nth-child(9) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s  }
+  & > div:nth-child(1) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
+  & > div:nth-child(2) {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+  & > div:nth-child(3) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  & > div:nth-child(4) {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+  }
+  & > div:nth-child(5) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
+  & > div:nth-child(6) {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+  & > div:nth-child(7) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  & > div:nth-child(8) {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+  }
+  & > div:nth-child(9) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
 `;
-
 
 export const WaveSpinner = styled.div<ISpinningProps>`
   width: 30px;
@@ -221,7 +312,7 @@ export const WaveSpinner = styled.div<ISpinningProps>`
   }
 
   & > div:nth-child(3) {
-    animation-delay: -1.0s;
+    animation-delay: -1s;
   }
 
   & > div:nth-child(4) {
@@ -231,9 +322,7 @@ export const WaveSpinner = styled.div<ISpinningProps>`
   & > div:nth-child(5) {
     animation-delay: -0.8s;
   }
-
 `;
-
 
 export const FoldingCubeSpinner = styled.div<ISpinningProps>`
   width: ${props => props.theme.global.edgeSize[props.size]};
@@ -249,8 +338,8 @@ export const FoldingCubeSpinner = styled.div<ISpinningProps>`
     position: relative;
 
     -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
   }
   & > div::before {
     content: '';
@@ -298,12 +387,12 @@ export const DoubleBounceSpinner = styled.div<ISpinningProps>`
     top: 0;
     left: 0;
 
-    animation: ${animationBounce} 2.0s infinite ease-in-out;
+    animation: ${animationBounce} 2s infinite ease-in-out;
   }
 
   & > div:last-child {
-    -webkit-animation-delay: -1.0s;
-    animation-delay: -1.0s;
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
   }
 `;
 
@@ -329,12 +418,11 @@ export const WanderingCubesSpinner = styled.div<ISpinningProps>`
   }
 `;
 
-
 export const ChasingDotsSpinner = styled.div<ISpinningProps>`
   width: ${props => props.theme.global.edgeSize[props.size]};
   height: ${props => props.theme.global.edgeSize[props.size]};
   position: relative;
-  animation: ${animationRotate} 2.0s infinite linear;
+  animation: ${animationRotate} 2s infinite linear;
 
   & > div {
     width: 60%;
@@ -344,15 +432,15 @@ export const ChasingDotsSpinner = styled.div<ISpinningProps>`
     top: 0;
     background-color: ${props => normalizeColor(props.color, props.theme)};
     border-radius: 100%;
-    animation: ${animationBounce} 2.0s infinite ease-in-out;
+    animation: ${animationBounce} 2s infinite ease-in-out;
   }
 
   & > div:last-child {
     top: auto;
     bottom: 0;
 
-    -webkit-animation-delay: -1.0s;
-    animation-delay: -1.0s;
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
   }
 `;
 
@@ -369,29 +457,29 @@ export const PulseSpinner = styled.div<ISpinningProps>`
   height: ${props => props.theme.global.edgeSize[props.size]};
   background-color: ${props => normalizeColor(props.color, props.theme)};
   border-radius: 100%;
-  animation: ${animationScaleOut} 1.0s infinite ease-in-out;
+  animation: ${animationScaleOut} 1s infinite ease-in-out;
 `;
 
 export const WordPressSpinner = styled.div<ISpinningProps>`
-& > div {
-  width:${props => props.theme.global.edgeSize[props.size]};
-  height: ${props => props.theme.global.edgeSize[props.size]};
-  background-color: ${props => normalizeColor(props.color, props.theme)};
-  display: inline-block;
-  border-radius: ${props => props.theme.global.edgeSize[props.size]};
-  position: relative;
-  animation: ${animationInnerCircle} 1s linear infinite;
-}
+  & > div {
+    width: ${props => props.theme.global.edgeSize[props.size]};
+    height: ${props => props.theme.global.edgeSize[props.size]};
+    background-color: ${props => normalizeColor(props.color, props.theme)};
+    display: inline-block;
+    border-radius: ${props => props.theme.global.edgeSize[props.size]};
+    position: relative;
+    animation: ${animationInnerCircle} 1s linear infinite;
+  }
 
-& > div::after {
-  content: '';
-  display: block;
-  background-color: #fff;
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  border-radius: 8px;
-  top: 5px;
-  left: 5px;
-}
+  & > div::after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 8px;
+    top: 5px;
+    left: 5px;
+  }
 `;

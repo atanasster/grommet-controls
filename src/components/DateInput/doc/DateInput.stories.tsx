@@ -4,16 +4,15 @@ import { DateInput } from '../DateInput';
 import { smallDate } from '../../../utils/moment';
 
 export default {
-  title: 'CONTROLS/input/DateInput',
+  title: 'input/DateInput',
   component: DateInput,
 };
-
 
 const DateTestBed = ({ value, ...rest }) => {
   const [stateValue, setValue] = React.useState(value);
   return (
-    <Box direction='row'>
-      <Box basis='medium'>
+    <Box direction="row">
+      <Box basis="medium">
         <DateInput
           value={stateValue}
           onChange={({ target }) => setValue(target.value)}
@@ -21,15 +20,17 @@ const DateTestBed = ({ value, ...rest }) => {
         />
       </Box>
     </Box>
-
   );
 };
 
-
 export const main = () => <DateTestBed value={smallDate(new Date())} />;
-export const autocorrect = () => <DateTestBed value={smallDate(new Date())} autocorrect={true} />;
+export const autocorrect = () => (
+  <DateTestBed value={smallDate(new Date())} autocorrect={true} />
+);
 
-export const disabled = () => <DateTestBed value={smallDate(new Date())} disabled={true} />;
+export const disabled = () => (
+  <DateTestBed value={smallDate(new Date())} disabled={true} />
+);
 export const bounds = () => (
   <DateTestBed
     value={smallDate(new Date())}
@@ -44,25 +45,16 @@ export const disabledDates = () => (
     value={smallDate(new Date())}
     disabledDates={[
       smallDate(new Date()),
-      smallDate((new Date()).setDate(new Date().getDate() - 1)),
+      smallDate(new Date().setDate(new Date().getDate() - 1)),
     ]}
   />
 );
 export const firstDayOfWeek = () => (
-  <DateTestBed
-    value={smallDate(new Date())}
-    firstDayOfWeek={1}
-  />
+  <DateTestBed value={smallDate(new Date())} firstDayOfWeek={1} />
 );
 export const locale = () => (
-  <DateTestBed
-    value={smallDate(new Date())}
-    locale='de-DE'
-  />
+  <DateTestBed value={smallDate(new Date())} locale="de-DE" />
 );
 export const size = () => (
-  <DateTestBed
-    value={smallDate(new Date())}
-    size='medium'
-  />
+  <DateTestBed value={smallDate(new Date())} size="medium" />
 );

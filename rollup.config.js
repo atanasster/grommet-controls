@@ -26,7 +26,6 @@ export default {
     typescript({
       // eslint-disable-next-line global-require
       typescript: require('typescript'),
-      objectHashIgnoreUnknownHack: true,
     }),
     copy([
       { files: 'README.md', dest: 'dist' },

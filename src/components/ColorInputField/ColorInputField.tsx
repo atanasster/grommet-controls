@@ -8,7 +8,7 @@ import { IWithFormFieldProps, WithFormField } from '../WithFormField';
 
 const ColorInputField = (props: IWithFormFieldProps & IColorInputProps) => (
   <WithFormField {...props}>
-      {childProps => <ColorInput {...childProps} />}
+    {childProps => <ColorInput {...childProps} />}
   </WithFormField>
 );
 

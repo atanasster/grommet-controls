@@ -1,4 +1,6 @@
 import React from 'react';
 import { StyledTableBodyComponent } from '../StyledTableComponents';
 
-export default props => (<StyledTableBodyComponent {...props} />);
+const TbodyComponent = props => <StyledTableBodyComponent {...props} />;
+
+export default TbodyComponent;

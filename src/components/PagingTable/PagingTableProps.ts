@@ -1,7 +1,5 @@
 import React, { MouseEvent } from 'react';
-import {
- BoxProps, TextInputProps, ButtonProps, TextProps,
-} from 'grommet';
+import { BoxProps, TextInputProps, ButtonProps, TextProps } from 'grommet';
 
 export type IPagingTableRow = object;
 
@@ -9,177 +7,181 @@ export type IPagingTableFilter = object;
 
 export interface IPagingTableDecorators {
   /** Table styling, all **`<Box />`** properties are valid */
-  table?: BoxProps,
+  table?: BoxProps;
   /** Header cell styling, all **`<Box />`** properties are valid */
-  header?: BoxProps,
+  header?: BoxProps;
   /** Grouped columns header styling, all **`<Box />`** properties are valid */
-  headerGroup?: BoxProps,
+  headerGroup?: BoxProps;
   /** Filter row styling, all **`<Box />`** properties are valid */
-  filter?: BoxProps,
+  filter?: BoxProps;
   /** Filter input control styling, all **`<TextInput />`** properties are valid */
-  filterInput?: TextInputProps,
+  filterInput?: TextInputProps;
   /** Body styling, all **`<Box />`** properties are valid */
-  body?: BoxProps,
+  body?: BoxProps;
   /** Row of data styling, all **`<Box />`** properties are valid */
-  row?: BoxProps,
+  row?: BoxProps;
   /** Odd row for striped styling, all **`<Box />`** properties are valid */
-  rowOdd?: BoxProps,
+  rowOdd?: BoxProps;
   /** Even row for striped styling, all **`<Box />`** properties are valid */
-  rowEven?: BoxProps,
+  rowEven?: BoxProps;
   /** Cell of data styling, all **`<Box />`** properties are valid */
-  cell?: BoxProps & TextProps,
+  cell?: BoxProps & TextProps;
   /** Footer row styling, all **`<Box />`** properties are valid */
-  footer?: BoxProps,
+  footer?: BoxProps;
   /** Pagination box styling, all **`<Box />`** properties are valid */
-  pagination?: BoxProps,
+  pagination?: BoxProps;
   /** Expander button styling, all **`<Button />`** properties are valid,
-  *  as well as icons OpenIcon and CloseIcon
-  */
-  expander?: { OpenIcon: React.ReactNode, CloseIcon: React.ReactNode } & ButtonProps,
+   *  as well as icons OpenIcon and CloseIcon
+   */
+  expander?: {
+    OpenIcon: React.ReactNode;
+    CloseIcon: React.ReactNode;
+  } & ButtonProps;
 }
 
 export type FilterMethodType = (
   filter: IPagingTableFilter,
   row: IPagingTableRow,
-  column?: IPagingTableColumn
+  column?: IPagingTableColumn,
 ) => boolean;
 
 export interface IPagingTableColumn {
   /** id of the column */
-  id?: string,
+  id?: string;
   /** Used to render a standard cell, defaults to the accessed value */
-  Cell?: React.ReactNode,
+  Cell?: React.ReactNode;
   /** Used to render the header of a column or column group */
-  Header?: React.ReactNode,
+  Header?: React.ReactNode;
   /** Used to render the footer of a column or column group */
-  Footer?: React.ReactNode,
+  Footer?: React.ReactNode;
   /** Used to render the aggregated value of a column or column group */
-  Aggregated?: React.ReactNode,
+  Aggregated?: React.ReactNode;
   /** Used to render the pivot of a column or column group */
-  Pivot?: React.ReactNode,
+  Pivot?: React.ReactNode;
   /** Used to render the pivot value of a column or column group */
-  PivotValue?: PivotValueComponent,
+  PivotValue?: PivotValueComponent;
   /** Used to render the expander value of a column or column group */
-  Expander?: ExpanderComponent,
+  Expander?: ExpanderComponent;
   /** Used to render the filter of a column or column group */
-  Filter?: React.ReactNode,
+  Filter?: React.ReactNode;
 
   // All Columns
   /** the field name (*)accessor) of the column data */
-  accessor?: string,
+  accessor?: string;
   /** custom formating of the visuals of the column */
-  decorations?: IPagingTableDecorators,
+  decorations?: IPagingTableDecorators;
   /** whether the column can be sorted */
-  sortable?: boolean,
+  sortable?: boolean;
   /** whether the column can be resized */
-  resizable?: boolean,
+  resizable?: boolean;
   /** whether the column can be filtered */
-  filterable?: boolean,
+  filterable?: boolean;
   /** whether the column is visible */
-  show?: () => boolean | boolean,
+  show?: () => boolean | boolean;
   /** width of the column in pixels */
-  width?: number,
+  width?: number;
   /** minimum width of the column in pixels */
-  minWidth?: number,
+  minWidth?: number;
   /** maximum width of the column in pixels */
-  maxWidth?: number,
+  maxWidth?: number;
   /** function to return custom properties for each cell */
   getProps?: (
     state: IPagingTableState,
     rowInfo: IRowInfo,
     column: IPagingTableColumn,
-  ) => IPagingTableColumn,
+  ) => IPagingTableColumn;
   /** function to perform rows aggregation */
-  aggregate?: (rows: IPagingTableRow[]) => object,
+  aggregate?: (rows: IPagingTableRow[]) => object;
   /** function to return custom properties for the column's header */
   getHeaderProps?: (
     state: IPagingTableState,
     rowInfo: IRowInfo,
     column: IPagingTableColumn,
-  ) => IPagingTableColumn,
+  ) => IPagingTableColumn;
 
   /** function to return custom properties for the column's footer */
-  getFooterProps?: (state: object, rowInfo: object, column: object) => object,
+  getFooterProps?: (state: object, rowInfo: object, column: object) => object;
 
   /** custom filtering function for the column */
-  filterMethod?: FilterMethodType,
+  filterMethod?: FilterMethodType;
 
   /** If true, willpass the entire dataset to the filter method */
-  filterAll?: boolean,
+  filterAll?: boolean;
 
   /** custom sorting function for the column */
-  sortMethod?: (a, b, desc: boolean) => number,
+  sortMethod?: (a, b, desc: boolean) => number;
 
   /** whether the column is pivoted */
-  pivoted?: boolean,
+  pivoted?: boolean;
   /** expander properties */
-  expander?: IExpanderProps,
+  expander?: IExpanderProps;
   /** column on click event handler */
-  onClick?: (event?: MouseEvent<HTMLDivElement>, cb?: ()=> void) => void,
+  onClick?: (event?: MouseEvent<HTMLDivElement>, cb?: () => void) => void;
   /** list of child columns for grouped headers */
-  columns?: IPagingTableColumn[],
+  columns?: IPagingTableColumn[];
 }
 
 export interface BoxClickProps {
-  onClick?: (event?: MouseEvent<HTMLDivElement>, cb?: ()=> void) => void,
+  onClick?: (event?: MouseEvent<HTMLDivElement>, cb?: () => void) => void;
 }
-export type BoxComponentProps= (finalState: IPagingTableState,
-    rowInfo: IRowInfo,
-    column: IPagingTableColumn,
-    Table?: React.ReactNode,
-  ) => BoxProps & BoxClickProps;
+export type BoxComponentProps = (
+  finalState: IPagingTableState,
+  rowInfo: IRowInfo,
+  column: IPagingTableColumn,
+  Table?: React.ReactNode,
+) => BoxProps & BoxClickProps;
 
 export interface IPagingTableSort {
-  id: string,
-  desc?: boolean,
+  id: string;
+  desc?: boolean;
 }
 
 export interface IExpanderProps {
-  sortable: boolean,
-  resizable: boolean,
-  filterable: boolean,
-  width: number,
+  sortable: boolean;
+  resizable: boolean;
+  filterable: boolean;
+  width: number;
 }
 
 export interface IExpanderComponentProps {
-  isExpanded?: boolean,
-  children?: React.ReactNode,
-  expanderProps?: IExpanderProps,
+  isExpanded?: boolean;
+  children?: React.ReactNode;
+  expanderProps?: IExpanderProps;
 }
 export type ExpanderComponent = React.ElementType<IExpanderComponentProps>;
 
 export interface IPivotValueComponentProps {
-  subRows: object[],
-  value: any,
+  subRows: object[];
+  value: any;
 }
 
 export type PivotValueComponent = React.ElementType<IPivotValueComponentProps>;
 
 export interface IFilteredProps {
-  id: string,
-  value: number,
+  id: string;
+  value: number;
 }
 
 export interface IResizedProps {
-  id: string,
-  value: number,
+  id: string;
+  value: number;
 }
 
 export interface IDataObject {
-  [x: string]: any,
+  [x: string]: any;
 }
 export interface IRowInfo {
-  original: IDataObject,
-  row: IDataObject,
-  index: number,
-  viewIndex: number,
-  pageSize: number,
-  page: number,
-  level: number,
-  nestingPath: string[],
-  aggregated: string,
-  groupedByPivot: string,
-  subRows: string[],
+  original: IDataObject;
+  row: IDataObject;
+  index: number;
+  viewIndex: number;
+  pageSize: number;
+  page: number;
+  level: number;
+  nestingPath: string[];
+  aggregated: string;
+  groupedByPivot: string;
+  subRows: string[];
 }
 export type IGetPropsFunc = (
   finalState: IPagingTableState,
@@ -190,199 +192,202 @@ export type IGetPropsFunc = (
 
 export interface IPagingTableProps {
   /** Visual settings of the various table elements.
-  *  Where applicable, those settings can be overriden at the column level
-  */
-  decorations?: IPagingTableDecorators,
+   *  Where applicable, those settings can be overriden at the column level
+   */
+  decorations?: IPagingTableDecorators;
   /** Array of column descriptors */
-  columns?: IPagingTableColumn[],
+  columns?: IPagingTableColumn[];
   /** Array of data objects */
-  data?: IDataObject[],
+  data?: IDataObject[];
   /** Default page size */
-  defaultPageSize?: number,
+  defaultPageSize?: number;
   /** If specified, a function responsible for loading the data */
-  onFetchData?: (props : object, Table?: React.ReactNode) => void,
+  onFetchData?: (props: object, Table?: React.ReactNode) => void;
   /** Whether to display a filtering row */
-  filterable?: boolean,
+  filterable?: boolean;
   /** The default filtered rows */
-  defaultFiltered?: IFilteredProps[],
+  defaultFiltered?: IFilteredProps[];
   /** Callback to be called when the filter changes */
   onFilteredChange?: (
     newFiltering: IFilteredProps[],
     column: IPagingTableColumn,
     value: any,
-  ) => void,
+  ) => void;
   /** Whether to display the loading indicator */
-  loading?: boolean,
+  loading?: boolean;
   /** If true, the data is sorted manually in the onFetchData function */
-  manual?: boolean,
+  manual?: boolean;
   /** Number of total pages of data, when loading the data manually */
-  pages?: number,
+  pages?: number;
   /** Array of available page size options ([5, 10, 20, 25, 50, 100]) */
-  pageSizeOptions?: number[],
+  pageSizeOptions?: number[];
   /** Minimum number of rows to display, even if no data is present */
-  minRows?: number,
+  minRows?: number;
   /** callback method called when the page changes */
-  onPageChange?: (page: number) => void,
+  onPageChange?: (page: number) => void;
   /** callback method called when the page size changes */
-  onPageSizeChange?: (newPageSize: number, newPage: number) => void,
+  onPageSizeChange?: (newPageSize: number, newPage: number) => void;
   /** Array of columns to pivot (group) by */
-  pivotBy?: string[],
+  pivotBy?: string[];
   /** Default properties to be passed to the pivot component */
-  pivotDefaults?: object,
+  pivotDefaults?: object;
   /** Whether the columns can be resized */
-  resizable?: boolean,
+  resizable?: boolean;
   /** The default resized columns */
-  defaultResized?: IResizedProps[],
+  defaultResized?: IResizedProps[];
   /** callback method called when a column is resized */
-  onResizedChange?: (newResized: IResizedProps[], event?: MouseEvent<HTMLDivElement>) => void,
+  onResizedChange?: (
+    newResized: IResizedProps[],
+    event?: MouseEvent<HTMLDivElement>,
+  ) => void;
   /** Whether to display a paging row */
-  showPagination?: boolean,
+  showPagination?: boolean;
   /** Whether to display a paging row on top of the table */
-  showPaginationTop?: boolean,
+  showPaginationTop?: boolean;
   /** Whether to display a paging row at the bottom of the table */
-  showPaginationBottom?: boolean,
+  showPaginationBottom?: boolean;
   /** Wheter the table headers will allow sorting of the of the data */
-  sortable?: boolean,
+  sortable?: boolean;
   /** Array of default sorted columns and their sort order */
-  defaultSorted?: IPagingTableSort[],
+  defaultSorted?: IPagingTableSort[];
   /** custom default sorting function */
-  defaultSortMethod?: (a, b, desc: boolean) => number,
+  defaultSortMethod?: (a, b, desc: boolean) => number;
   /** Whether to allow multi-column sorting */
-  multiSort?: boolean,
+  multiSort?: boolean;
   /** Whether the default sorting is descending */
-  defaultSortDesc?: boolean,
+  defaultSortDesc?: boolean;
   /** callback called when sorted changes */
   onSortedChange?: (
     newSorted: IPagingTableSort[],
     column: IPagingTableColumn,
     additive: boolean,
-  ) => void,
+  ) => void;
   /** groups of the header columns */
-  headerGroups?: IPagingTableColumn[],
+  headerGroups?: IPagingTableColumn[];
   /** whether the table has any header groups */
-  hasHeaderGroups?: boolean,
+  hasHeaderGroups?: boolean;
   /** react node for the expander sub row */
-  SubComponent?: (row: IRowInfo) => React.ReactNode,
+  SubComponent?: (row: IRowInfo) => React.ReactNode;
   /** Whether to collapse expanded rows on sorting change */
-  collapseOnSortingChange?: boolean,
+  collapseOnSortingChange?: boolean;
   /** Whether to collapse expanded rows on page change */
-  collapseOnPageChange?: boolean,
+  collapseOnPageChange?: boolean;
   /** Whether to collapse expanded rows on data change */
-  collapseOnDataChange?: boolean,
+  collapseOnDataChange?: boolean;
   /** Whether to freeze expanded rows */
-  freezeWhenExpanded?: boolean,
+  freezeWhenExpanded?: boolean;
   /** The default expanded rows */
-  defaultExpanded?: object,
+  defaultExpanded?: object;
   /** The default column properties */
-  column?: IPagingTableColumn,
+  column?: IPagingTableColumn;
   /** list of the visible columns */
-  allVisibleColumns?: IPagingTableColumn[],
+  allVisibleColumns?: IPagingTableColumn[];
   /** The default properties of the expander */
-  expanderDefaults?: IExpanderProps,
+  expanderDefaults?: IExpanderProps;
   /** default properties for expander Box */
-  expanderTdDefaultProps?: BoxProps,
+  expanderTdDefaultProps?: BoxProps;
   /** callback called when the expanded changes on a row */
   onExpandedChange?: (
     newExpanded: IExpanderProps,
     path: string[],
     event?: MouseEvent<HTMLDivElement>,
-  ) => void,
+  ) => void;
   /** The string text for 'Previous' pagination link */
-  previousText?: string,
+  previousText?: string;
   /** The string text for 'Next' pagination link */
-  nextText?: string,
+  nextText?: string;
   /** The string text for 'loading' label */
-  loadingText?: string,
+  loadingText?: string;
   /** The string text for 'no data' label */
-  noDataText?: string,
+  noDataText?: string;
   /** The string text for 'Page' pagination label */
-  pageText?: string,
+  pageText?: string;
   /** The string text for 'of' pagination label */
-  ofText?: string,
+  ofText?: string;
   /** The string text for 'rows' filtering label */
-  rowsText?: string,
+  rowsText?: string;
   // Key Constants
   /** String key for pivot value */
-  pivotValKey?: string,
+  pivotValKey?: string;
   /** String key for pivot id */
-  pivotIDKey?: string,
+  pivotIDKey?: string;
   /** String key for sub rows */
-  subRowsKey?: string,
+  subRowsKey?: string;
   /** String key for aggregated */
-  aggregatedKey?: string,
+  aggregatedKey?: string;
   /** String key for nesting level */
-  nestingLevelKey?: string,
+  nestingLevelKey?: string;
   /** String key for original */
-  originalKey?: string,
+  originalKey?: string;
   /** String key for index */
-  indexKey?: string,
+  indexKey?: string;
   /** String key for group by pivot */
-  groupedByPivotKey?: string,
+  groupedByPivotKey?: string;
 
   /** React component to render the table element */
-  TableComponent?: React.ElementType,
+  TableComponent?: React.ElementType;
   /** React component to render the thead element */
-  TheadComponent?: React.ElementType,
+  TheadComponent?: React.ElementType;
   /** React component to render the tbody element */
-  TbodyComponent?: React.ElementType,
+  TbodyComponent?: React.ElementType;
   /** React component to render the tr group element */
-  TrGroupComponent?: React.ElementType,
+  TrGroupComponent?: React.ElementType;
   /** React component to render the tr element */
-  TrComponent?: React.ElementType,
+  TrComponent?: React.ElementType;
   /** React component to render the th element */
-  ThComponent?: React.ElementType,
+  ThComponent?: React.ElementType;
   /** React component to render the td element */
-  TdComponent?: React.ElementType,
+  TdComponent?: React.ElementType;
   /** React component to render the cell text element */
-  CellTextComponent?: React.ElementType,
+  CellTextComponent?: React.ElementType;
   /** React component to render the tfoot element */
-  TfootComponent?: React.ElementType,
+  TfootComponent?: React.ElementType;
   /** React component to render the pagination element */
-  PaginationComponent?: React.ElementType,
+  PaginationComponent?: React.ElementType;
   /** React component to render the loading element */
-  LoadingComponent?: React.ElementType,
+  LoadingComponent?: React.ElementType;
   /** React component to render the 'no-data' element */
-  NoDataComponent?: React.ElementType,
+  NoDataComponent?: React.ElementType;
   /** React component to render the resizer element */
-  ResizerComponent?: React.ElementType,
+  ResizerComponent?: React.ElementType;
   /** React component to render the expander element */
-  ExpanderComponent?: ExpanderComponent,
+  ExpanderComponent?: ExpanderComponent;
   /** React component to render the pivot value element */
-  PivotValueComponent?: PivotValueComponent,
+  PivotValueComponent?: PivotValueComponent;
   /** React component to render the pivot element */
-  PivotComponent?: React.ElementType,
+  PivotComponent?: React.ElementType;
   /** React component to render the aggregated element */
-  AggregatedComponent?: React.ElementType,
+  AggregatedComponent?: React.ElementType;
   /** React component to render the filter element */
-  FilterComponent?: React.ElementType,
+  FilterComponent?: React.ElementType;
   /** React component to render the pad row(empty row) element */
-  PadRowComponent?: React.ElementType,
+  PadRowComponent?: React.ElementType;
   /** function to return custom props */
-  getProps?: IGetPropsFunc,
+  getProps?: IGetPropsFunc;
   /** function to return custom props for the table element */
-  getTableProps?: BoxComponentProps,
+  getTableProps?: BoxComponentProps;
   /** function to return custom props for the thead group lement */
-  getTheadGroupProps?: BoxComponentProps,
+  getTheadGroupProps?: BoxComponentProps;
   /** function to return custom props for the thead group tr element */
-  getTheadGroupTrProps?: BoxComponentProps,
+  getTheadGroupTrProps?: BoxComponentProps;
   /** function to return custom props for the thead element */
-  getTheadProps?: BoxComponentProps,
+  getTheadProps?: BoxComponentProps;
   /** function to return custom props for the thead tr element */
-  getTheadTrProps?: BoxComponentProps,
+  getTheadTrProps?: BoxComponentProps;
   /** function to return custom props for the thead th element */
-  getTheadThProps?: BoxComponentProps,
+  getTheadThProps?: BoxComponentProps;
   /** function to return custom props for the thead filter element */
-  getTheadFilterProps?: BoxComponentProps,
+  getTheadFilterProps?: BoxComponentProps;
   /** function to return custom props for the thead filter tr element */
-  getTheadFilterTrProps?: BoxComponentProps,
+  getTheadFilterTrProps?: BoxComponentProps;
   /** function to return custom props for the thead filter th element */
-  getTheadFilterThProps?: BoxComponentProps,
+  getTheadFilterThProps?: BoxComponentProps;
   /** function to return custom props for the thead filter input element */
-  getFilterInputProps?: IGetPropsFunc,
+  getFilterInputProps?: IGetPropsFunc;
   /** function to return custom props for the tbody element */
-  getTbodyProps?: BoxComponentProps,
+  getTbodyProps?: BoxComponentProps;
   /** function to return custom props for the group tr element */
-  getTrGroupProps?: BoxComponentProps,
+  getTrGroupProps?: BoxComponentProps;
   /** function to return custom props for the tr element */
   getTrProps?: (
     rowIndex: number,
@@ -390,45 +395,45 @@ export interface IPagingTableProps {
     rowInfo: IRowInfo,
     column: IPagingTableColumn,
     Table?: React.ReactNode,
-  ) => BoxProps & BoxClickProps,
+  ) => BoxProps & BoxClickProps;
   /** function to return custom props for the group td element */
-  getTdProps?: BoxComponentProps,
+  getTdProps?: BoxComponentProps;
   /** function to return custom props for the expander element */
-  getExpanderProps?: IGetPropsFunc,
+  getExpanderProps?: IGetPropsFunc;
   /** function to return custom props for the tfoot element */
-  getTfootProps?: BoxComponentProps,
+  getTfootProps?: BoxComponentProps;
   /** function to return custom props for the tfoot tr element */
-  getTfootTrProps?: BoxComponentProps,
+  getTfootTrProps?: BoxComponentProps;
   /** function to return custom props for the tfoot td element */
-  getTfootTdProps?: BoxComponentProps,
+  getTfootTdProps?: BoxComponentProps;
   /** function to return custom props for the pagination element */
-  getPaginationProps?: BoxComponentProps,
+  getPaginationProps?: BoxComponentProps;
   /** function to return custom props for the loading element */
-  getLoadingProps?: BoxComponentProps,
+  getLoadingProps?: BoxComponentProps;
   /** function to return custom props for the 'no data' element */
-  getNoDataProps?: BoxComponentProps,
+  getNoDataProps?: BoxComponentProps;
   /** function to return custom props for the resizer element */
-  getResizerProps?: BoxComponentProps,
+  getResizerProps?: BoxComponentProps;
 }
 
 export interface IPagingTableStateProps {
-  page?: number,
-  pageSize?: number,
-  sorted?: IPagingTableSort[],
-  expanded?: object,
-  filtered?: IFilteredProps[],
-  resized?: IResizedProps[],
+  page?: number;
+  pageSize?: number;
+  sorted?: IPagingTableSort[];
+  expanded?: object;
+  filtered?: IFilteredProps[];
+  resized?: IResizedProps[];
   currentlyResizing?: {
-    id: string,
-    startX: number,
-    parentWidth: number,
-  },
-  skipNextSort?: boolean,
-  frozen?: boolean,
-  freezeWhenExpanded? : boolean,
-  showFilters?: boolean,
-  resolvedData?: object[],
-  sortedData?: object[],
+    id: string;
+    startX: number;
+    parentWidth: number;
+  };
+  skipNextSort?: boolean;
+  frozen?: boolean;
+  freezeWhenExpanded?: boolean;
+  showFilters?: boolean;
+  resolvedData?: object[];
+  sortedData?: object[];
 }
 
 export type IPagingTableState = IPagingTableStateProps & IPagingTableProps;

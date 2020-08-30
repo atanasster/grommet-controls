@@ -13,10 +13,7 @@ import { IHeaderProps } from './HeaderProps';
  * ```
  */
 const Header = ({ children, ...rest }: IHeaderProps & BoxProps) => (
-  <StyledHeader
-    tag='header'
-    {...rest}
-  >
+  <StyledHeader tag="header" {...rest}>
     {children}
   </StyledHeader>
 );

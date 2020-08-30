@@ -5,26 +5,25 @@ import { DropInput } from '../DropInput';
 import { smallDate } from '../../../utils/moment';
 
 export default {
-  title: 'CONTROLS/input/DropInput',
+  title: 'input/DropInput',
   component: DropInput,
 };
 
-
-const DateInput = (props) => {
+const DateInput = props => {
   const [date, setDate] = React.useState(smallDate(new Date()));
   return (
-    <Box direction='row'>
-      <Box basis='medium'>
+    <Box direction="row">
+      <Box basis="medium">
         <DropInput
-          dropContent={(
-            <Box pad='small'>
+          dropContent={
+            <Box pad="small">
               <Calendar
-                size='small'
+                size="small"
                 date={date}
                 onSelect={isoDate => setDate(smallDate(new Date(isoDate)))}
               />
             </Box>
-          )}
+          }
           value={date}
           onChange={({ target }) => setDate(target.value)}
           {...props}
@@ -37,8 +36,8 @@ const DateInput = (props) => {
 const NumberInput = () => {
   const [number, setNumber] = React.useState(10);
   return (
-    <Box direction='row'>
-      <Box basis='medium'>
+    <Box direction="row">
+      <Box basis="medium">
         <DropInput
           value={number}
           onChange={({ target: { value } }) => setNumber(parseFloat(value))}
@@ -58,75 +57,42 @@ const NumberInput = () => {
   );
 };
 
-const DropInputTest = (props) => {
+const DropInputTest = props => {
   return (
-    <Box direction='row'>
-      <Box basis='medium'>
-        <DropInput
-          {...props}
-        />
+    <Box direction="row">
+      <Box basis="medium">
+        <DropInput {...props} />
       </Box>
     </Box>
   );
 };
 
-
-export const main = () => (
-  <DateInput />
-);
-export const a11yTitle = () => (
-  <DateInput
-    a11yTitle='Birthdy date'
-  />
-
-);
-export const disabled = () => (
-  <DateInput
-    disabled={true}
-  />
-);
+export const main = () => <DateInput />;
+export const a11yTitle = () => <DateInput a11yTitle="Birthdy date" />;
+export const disabled = () => <DateInput disabled={true} />;
 export const dropContent = () => (
   <DropInputTest
-    a11yDropTitle='Open calendar'
-    dropContent={(
-      <Box pad='small'>
-        <Calendar
-          size='small'
-        />
+    a11yDropTitle="Open calendar"
+    dropContent={
+      <Box pad="small">
+        <Calendar size="small" />
       </Box>
-            )}
+    }
     defaultValue={smallDate(new Date())}
   />
 );
-export const dropIcon = () => (
-  <DateInput
-    dropIcon={<CalendarIcon />}
-  />
-);
+export const dropIcon = () => <DateInput dropIcon={<CalendarIcon />} />;
 export const widgets = () => <NumberInput />;
 
-
 export const plain = () => (
-  <DropInputTest
-    plain={true}
-    defaultValue='Plain no focus'
-  />
+  <DropInputTest plain={true} defaultValue="Plain no focus" />
 );
 export const focusIndicator = () => (
   <DropInputTest
     plain={true}
     focusIndicator={true}
-    defaultValue='Plain with focus'
+    defaultValue="Plain with focus"
   />
 );
-export const placeholder = () => (
-  <DropInputTest
-    placeholder='Enter phone...'
-  />
-);
-export const name = () => (
-  <DropInputTest
-    id='date-id'
-    name='date-name'
-  />
-);
+export const placeholder = () => <DropInputTest placeholder="Enter phone..." />;
+export const name = () => <DropInputTest id="date-id" name="date-name" />;

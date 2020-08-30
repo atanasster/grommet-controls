@@ -4,7 +4,14 @@ import { FormContext } from '../Form/Form';
 import { IWithFormFieldProps } from './WithFormFieldProps';
 
 export const WithFormField = ({
-  validation, label, description, name, controlLabel, inField, children, ...other
+  validation,
+  label,
+  description,
+  name,
+  controlLabel,
+  inField,
+  children,
+  ...other
 }: IWithFormFieldProps) => {
   const form = useContext(FormContext);
   const { onFieldChange, getFieldValue, getFieldErrors } = form;
@@ -15,7 +22,7 @@ export const WithFormField = ({
     };
   });
 
-  const onChange = (e) => {
+  const onChange = e => {
     const { value, target } = e;
     const targetValue = target ? target.value : undefined;
     onFieldChange(name, value || targetValue, e);
@@ -41,7 +48,11 @@ export const WithFormField = ({
     return field;
   }
   return (
-    <FormField htmlFor={name} label={label || (controlLabel === true && name)} error={error}>
+    <FormField
+      htmlFor={name}
+      label={label || (controlLabel === true && name)}
+      error={error}
+    >
       {field}
     </FormField>
   );

@@ -6,30 +6,39 @@ import { smallDate } from '../../utils/moment';
 import { IDateInputProps } from './DateInputProps';
 
 /**
-* A masked date entry field with a drop down calendar<br/>
-* All properties of MaskedInput apply<br/>
-* `import { DateInput } from 'grommet-controls';`<br/>
-* `<DateInput value={...} />`<br/>
-*/
+ * A masked date entry field with a drop down calendar<br/>
+ * All properties of MaskedInput apply<br/>
+ * `import { DateInput } from 'grommet-controls';`<br/>
+ * `<DateInput value={...} />`<br/>
+ */
 
 class DateInput extends Component<IDateInputProps> {
   static defaultProps = {
     dropIcon: <CalendarIcon />,
     size: 'small',
     a11yDropTitle: 'Open calendar',
-  }
+  };
 
   upDateValue = null;
 
-  onSelect = (isoDate) => {
+  onSelect = isoDate => {
     const date = new Date(isoDate);
     this.upDateValue(smallDate(date));
-  }
+  };
 
   render() {
     const {
-      value, bounds, dates, disabledDates, autocorrect,
-      firstDayOfWeek, locale, size, mask: userMask, maskFormat, ...rest
+      value,
+      bounds,
+      dates,
+      disabledDates,
+      autocorrect,
+      firstDayOfWeek,
+      locale,
+      size,
+      mask: userMask,
+      maskFormat,
+      ...rest
     } = this.props;
     let mask;
     if (userMask) {
@@ -41,15 +50,19 @@ class DateInput extends Component<IDateInputProps> {
         keepCharPositions: true,
       };
     } else {
-      mask = { mask: [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/] };
+      mask = {
+        mask: [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/],
+      };
     }
     const controlledValue = value === undefined ? '' : value;
     return (
       <MaskedInput
-        update={(update) => { this.upDateValue = update; }}
+        update={update => {
+          this.upDateValue = update;
+        }}
         value={controlledValue}
-        dropContent={(
-          <Box pad='small'>
+        dropContent={
+          <Box pad="small">
             <Calendar
               date={controlledValue.toString()}
               onSelect={this.onSelect}
@@ -61,7 +74,7 @@ class DateInput extends Component<IDateInputProps> {
               size={size}
             />
           </Box>
-        )}
+        }
         {...{ ...rest, ...mask }}
       />
     );

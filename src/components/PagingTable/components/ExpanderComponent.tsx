@@ -4,7 +4,11 @@ import { Subtract } from 'grommet-icons/icons/Subtract';
 import { StyledExpander } from '../StyledTableComponents';
 import { IExpanderComponentProps } from '../PagingTableProps';
 
-export default ({ isExpanded, children, expanderProps }: IExpanderComponentProps) => {
+const ExpanderComponent = ({
+  isExpanded,
+  children,
+  expanderProps,
+}: IExpanderComponentProps) => {
   const props = {
     ...{
       CloseIcon: <Subtract />,
@@ -17,7 +21,7 @@ export default ({ isExpanded, children, expanderProps }: IExpanderComponentProps
   const { OpenIcon, CloseIcon, ...rest } = props;
   return (
     <StyledExpander
-      a11yTitle='Press Enter to expand this row for more information'
+      a11yTitle="Press Enter to expand this row for more information"
       icon={isExpanded ? CloseIcon : OpenIcon}
       {...rest}
     >
@@ -25,3 +29,5 @@ export default ({ isExpanded, children, expanderProps }: IExpanderComponentProps
     </StyledExpander>
   );
 };
+
+export default ExpanderComponent;

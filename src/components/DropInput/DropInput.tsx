@@ -2,31 +2,34 @@ import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { ThemeContext } from 'styled-components';
 import { FormDown } from 'grommet-icons/icons/FormDown';
-import {
- DropButton, Keyboard, Button,
-} from 'grommet';
+import { DropButton, Keyboard, Button } from 'grommet';
 import { IDropInputProps } from './DropInputProps';
-import { StyledDropInput, StyledDropInputContainer, StyledWidgetsContainer } from './StyledDropInput';
+import {
+  StyledDropInput,
+  StyledDropInputContainer,
+  StyledWidgetsContainer,
+} from './StyledDropInput';
 
+// eslint-disable-next-line @typescript-eslint/interface-name-prefix
 interface IDropInputState {
-  open?: boolean,
-  value?: string | number,
-  defaultValue?: string | number,
+  open?: boolean;
+  value?: string | number;
+  defaultValue?: string | number;
 }
 
 /**
-*  An Input control with an optional drop button with the specified 'dropContent' or widgets<br/>
-*`import { DropInput } from 'grommet-controls';`<br/>
-*`<DropInput`<br/>
-*&nbsp;&nbsp;`dropContent={(`<br/>
-*&nbsp;&nbsp;&nbsp;&nbsp;`...`<br/>
-*&nbsp;&nbsp;`]}`<br/>
-*`/>`<br/>
-*/
+ *  An Input control with an optional drop button with the specified 'dropContent' or widgets<br/>
+ *`import { DropInput } from 'grommet-controls';`<br/>
+ *`<DropInput`<br/>
+ *&nbsp;&nbsp;`dropContent={(`<br/>
+ *&nbsp;&nbsp;&nbsp;&nbsp;`...`<br/>
+ *&nbsp;&nbsp;`]}`<br/>
+ *`/>`<br/>
+ */
 class DropInput extends Component<IDropInputProps, IDropInputState> {
   static defaultProps = {
     dropAlign: { top: 'bottom', right: 'left' },
-    dropIcon: (<FormDown />),
+    dropIcon: <FormDown />,
     type: 'text',
     widgets: [],
   };
@@ -36,10 +39,13 @@ class DropInput extends Component<IDropInputProps, IDropInputState> {
   inputRef = React.createRef<HTMLInputElement>();
 
   static getDerivedStateFromProps(
-      newProps: IDropInputProps,
-      oldState: IDropInputState
+    newProps: IDropInputProps,
+    oldState: IDropInputState,
   ): IDropInputState {
-    if (newProps.value !== oldState.value || newProps.defaultValue !== oldState.defaultValue) {
+    if (
+      newProps.value !== oldState.value ||
+      newProps.defaultValue !== oldState.defaultValue
+    ) {
       return {
         value: newProps.value,
         defaultValue: newProps.defaultValue,
@@ -49,54 +55,70 @@ class DropInput extends Component<IDropInputProps, IDropInputState> {
     return null;
   }
 
-  onUpdateValue = (value) => {
+  onUpdateValue = value => {
     const { onChange } = this.props;
+    // eslint-disable-next-line react/no-find-dom-node
     const input = findDOMNode(this.inputRef.current) as HTMLInputElement;
     input.value = value;
     this.setState({ open: false, value });
     if (onChange) {
       onChange({ target: input });
     }
-  }
+  };
 
-  onOpen = (e) => {
+  onOpen = e => {
     const { onOpen, disabled } = this.props;
     this.setState({ open: true });
     if (onOpen && !disabled) {
       onOpen(e);
     }
-  }
+  };
 
-  onClose = (e) => {
+  onClose = e => {
     const { onClose, disabled } = this.props;
     this.setState({ open: false });
     if (onClose && !disabled) {
       onClose(e);
     }
-  }
+  };
 
-  onKeyDown = (e) => {
+  onKeyDown = e => {
     const { onKeyDown } = this.props;
     this.setState({ open: true });
     if (onKeyDown) {
       onKeyDown(e);
     }
-  }
+  };
 
-  onKeyUp = (e) => {
+  onKeyUp = e => {
     const { onKeyUp } = this.props;
     this.setState({ open: false });
     if (onKeyUp) {
       onKeyUp(e);
     }
-  }
+  };
 
   render() {
     const {
-      a11yTitle, a11yDropTitle, dropAlign, dropTarget, update, widgets,
+      a11yTitle,
+      a11yDropTitle,
+      dropAlign,
+      dropTarget,
+      update,
+      widgets,
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      onOpen, onClose, onKeyDown, onKeyUp,
-      defaultValue, dropContent, dropIcon, disabled, ...rest
+      onOpen,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      onClose,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      onKeyDown,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      onKeyUp,
+      defaultValue,
+      dropContent,
+      dropIcon,
+      disabled,
+      ...rest
     } = this.props;
     const { open } = this.state;
     if (typeof update === 'function') {
@@ -124,10 +146,7 @@ class DropInput extends Component<IDropInputProps, IDropInputState> {
         );
       }
       decorations = (
-        <StyledWidgetsContainer
-          align='center'
-          direction='row'
-        >
+        <StyledWidgetsContainer align="center" direction="row">
           {widgets.map((widget, index) => (
             <Button
               disabled={disabled}
@@ -135,7 +154,7 @@ class DropInput extends Component<IDropInputProps, IDropInputState> {
               key={`widget_${index}`}
               {...widget}
             />
-            ))}
+          ))}
           {drop}
         </StyledWidgetsContainer>
       );
@@ -151,7 +170,9 @@ class DropInput extends Component<IDropInputProps, IDropInputState> {
                 disabled={disabled}
                 numWidgets={numWidgets}
                 aria-label={a11yTitle}
-                defaultValue={defaultValue ? defaultValue.toString() : undefined}
+                defaultValue={
+                  defaultValue ? defaultValue.toString() : undefined
+                }
                 {...rest}
               />
             )}

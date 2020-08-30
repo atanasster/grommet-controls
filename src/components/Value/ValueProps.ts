@@ -2,17 +2,17 @@ import { ColorType } from 'grommet/utils';
 
 export interface IValueProps {
   /** Value label */
-  label?: React.ReactNode,
+  label?: React.ReactNode;
   /** The value color */
-  color?: ColorType,
+  color?: ColorType;
   /** The value */
-  value?: React.ReactNode,
+  value?: React.ReactNode;
   /** Font weight */
-  weight?: 'normal' | 'bold' | number,
+  weight?: 'normal' | 'bold' | number;
   /** Spacing between the value and the label */
-  gap?:'xxsmall' | 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' | string,
+  gap?: 'xxsmall' | 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' | string;
   /** Value element size */
-  size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge',
+  size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge';
   /** 'Units' string */
-  units?: string,
+  units?: string;
 }

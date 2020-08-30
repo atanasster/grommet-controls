@@ -3,40 +3,41 @@ import { ButtonProps } from 'grommet';
 
 export interface IMenuItem {
   /** Unique id */
-  id?: string,
+  id?: string;
   /** Label of the item */
-  label?: React.ReactNode,
+  label?: React.ReactNode;
   /** Initial expanded state */
-  expanded?: boolean,
+  expanded?: boolean;
   /** Icon in front of the label */
-  icon?: React.ReactNode,
+  icon?: React.ReactNode;
   /** Widget or icon to place at the end of the item */
-  widget?: React.ReactNode,
+  widget?: React.ReactNode;
   /** Array of child/sub-menu items */
-  items?: IMenuItem[],
+  items?: IMenuItem[];
   /** href parameter for anchor type child elements */
-  href?: string,
+  href?: string;
   /** event handler onClick */
-  onClick?: (id: string) => void,
+  onClick?: (id: string) => void;
 }
 
-export type ButtonClassType
-    = (React.ComponentClass<ButtonProps> | React.FunctionComponent<ButtonProps>);
+export type ButtonClassType =
+  | React.ComponentClass<ButtonProps>
+  | React.FunctionComponent<ButtonProps>;
 
 export interface IVerticalMenuProps {
   /** Array of menu items */
-  items: IMenuItem[],
+  items: IMenuItem[];
   /** Initially active menu item */
   activeItem?: {
-    id?: string,
-    label?: string,
-  },
+    id?: string;
+    label?: string;
+  };
   /** Custom class to use for the button instead of RoutedButton */
-  buttonClass?: ButtonClassType,
+  buttonClass?: ButtonClassType;
   /** If specified, will expand all items with chidren */
-  expandAll?: boolean,
+  expandAll?: boolean;
   /** Function that will be called when the user selects a menu item */
-  onSelect?: (item?: IMenuItem) => void,
+  onSelect?: (item?: IMenuItem) => void;
   /** If specified, will filter the items by the search terms */
-  search?: string,
+  search?: string;
 }

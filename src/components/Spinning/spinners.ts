@@ -1,15 +1,15 @@
 const spinkitSpinners = {
-  'circle': { divCount: 12 },
+  circle: { divCount: 12 },
   'cube-grid': { divCount: 9 },
-  'wave': { divCount: 5 },
+  wave: { divCount: 5 },
   'folding-cube': { divCount: 4 },
   'three-bounce': { divCount: 3 },
   'double-bounce': { divCount: 2 },
   'wandering-cubes': { divCount: 2 },
   'chasing-dots': { divCount: 2 },
   'rotating-plane': { divCount: 1 },
-  'pulse': { divCount: 1 },
-  'wordpress': { divCount: 1 },
+  pulse: { divCount: 1 },
+  wordpress: { divCount: 1 },
 };
 
 const loadersCssSpinners = {
@@ -21,7 +21,7 @@ const loadersCssSpinners = {
   'line-scale': { divCount: 5 },
   'line-scale-pulse-out': { divCount: 5 },
   'line-scale-pulse-out-rapid': { divCount: 5 },
-  'pacman': { divCount: 5 },
+  pacman: { divCount: 5 },
   'line-scale-party': { divCount: 4 },
   'ball-triangle-path': { divCount: 3 },
   'ball-scale-multiple': { divCount: 3 },
@@ -42,8 +42,4 @@ const allSpinners = {
   ...loadersCssSpinners,
 };
 
-export {
-  spinkitSpinners,
-  loadersCssSpinners,
-  allSpinners,
-};
+export { spinkitSpinners, loadersCssSpinners, allSpinners };

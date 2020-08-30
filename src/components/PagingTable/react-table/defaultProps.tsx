@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 /* eslint-disable no-param-reassign */
 import React from 'react';
 import TableComponent from '../components/TableComponent';
@@ -20,24 +21,23 @@ import TrComponent from '../components/TrComponent';
 const emptyObj = () => ({});
 export const expanderTdDefaultProps = { pad: undefined };
 
-const defaultTableProps = {
-};
+const defaultTableProps = {};
 
 const defaultHeaderProps = {
-  background: 'brand', border: 'all', align: 'center',
+  background: 'brand',
+  border: 'all',
+  align: 'center',
 };
 
 const defaultBodyProps = {
   animation: { type: 'fadeIn', duration: 2000, size: 'large' },
 };
 
-const defaultRowOddProps = {
-};
+const defaultRowOddProps = {};
 
 const defaultRowEvenProps = {};
 const defaultFooterProps = { background: 'light-1' };
 const defaultPaginationProps = { pad: { vertical: 'medium' } };
-
 
 const defaultFilterProps = { border: 'bottom' };
 const defaultFilterInputProps = { size: 'small', placeholder: 'Filter...' };
@@ -130,23 +130,24 @@ export default {
 
   // Component decorators
   getProps: ({ className }) => ({ className }),
-  getTableProps: ({ decorations }) => ((decorations && decorations.table) || defaultTableProps),
-  getTheadGroupProps: ({ decorations }) => (
-    (decorations && (decorations.headerGroup || decorations.header)) || {}
-  ),
+  getTableProps: ({ decorations }) =>
+    (decorations && decorations.table) || defaultTableProps,
+  getTheadGroupProps: ({ decorations }) =>
+    (decorations && (decorations.headerGroup || decorations.header)) || {},
   getTheadGroupTrProps: emptyObj,
   getTheadProps: emptyObj,
   getTheadTrProps: emptyObj,
-  getTheadThProps: ({ decorations }) => ((decorations && decorations.header) || defaultHeaderProps),
+  getTheadThProps: ({ decorations }) =>
+    (decorations && decorations.header) || defaultHeaderProps,
   getTheadFilterProps: emptyObj,
-  getTheadFilterTrProps: ({ decorations }) => ((decorations && decorations.filterRow) || {}),
-  getFilterInputProps: ({ decorations }) => (
-    (decorations && decorations.filterInput) || defaultFilterInputProps
-  ),
-  getTheadFilterThProps: ({ decorations }) => (
-    (decorations && decorations.filter) || defaultFilterProps
-  ),
-  getTbodyProps: ({ decorations }) => ((decorations && decorations.body) || defaultBodyProps),
+  getTheadFilterTrProps: ({ decorations }) =>
+    (decorations && decorations.filterRow) || {},
+  getFilterInputProps: ({ decorations }) =>
+    (decorations && decorations.filterInput) || defaultFilterInputProps,
+  getTheadFilterThProps: ({ decorations }) =>
+    (decorations && decorations.filter) || defaultFilterProps,
+  getTbodyProps: ({ decorations }) =>
+    (decorations && decorations.body) || defaultBodyProps,
   getTrGroupProps: emptyObj,
   getTrProps: (even, { decorations }) => {
     if (decorations) {
@@ -160,14 +161,15 @@ export default {
     }
     return even ? defaultRowEvenProps : defaultRowOddProps;
   },
-  getTdProps: ({ decorations }) => ((decorations && decorations.cell) || {}),
-  getExpanderProps: ({ decorations }) => ((decorations && decorations.expander) || {}),
+  getTdProps: ({ decorations }) => (decorations && decorations.cell) || {},
+  getExpanderProps: ({ decorations }) =>
+    (decorations && decorations.expander) || {},
   getTfootProps: emptyObj,
   getTfootTrProps: emptyObj,
-  getTfootTdProps: ({ decorations }) => ((decorations && decorations.footer) || defaultFooterProps),
-  getPaginationProps: ({ decorations }) => (
-    (decorations && decorations.pagination) || defaultPaginationProps
-  ),
+  getTfootTdProps: ({ decorations }) =>
+    (decorations && decorations.footer) || defaultFooterProps,
+  getPaginationProps: ({ decorations }) =>
+    (decorations && decorations.pagination) || defaultPaginationProps,
   getLoadingProps: emptyObj,
   getNoDataProps: emptyObj,
   getResizerProps: emptyObj,
@@ -199,16 +201,13 @@ export default {
     // Pivot only
     aggregate: undefined,
     // Headers only
-    getHeaderProps: (_state, _rowInfo, column) => (
-      (column && column.decorations && column.decorations.header) || {}
-    ),
-    getFilterProps: (_state, _rowInfo, column) => (
-      (column && column.decorations && column.decorations.filter) || {}
-    ),
+    getHeaderProps: (_state, _rowInfo, column) =>
+      (column && column.decorations && column.decorations.header) || {},
+    getFilterProps: (_state, _rowInfo, column) =>
+      (column && column.decorations && column.decorations.filter) || {},
     // Footers only
-    getFooterProps: (_state, _rowInfo, column) => (
-      (column && column.decorations && column.decorations.footer) || {}
-    ),
+    getFooterProps: (_state, _rowInfo, column) =>
+      (column && column.decorations && column.decorations.footer) || {},
     filterMethod: undefined,
     filterAll: false,
     sortMethod: undefined,
@@ -258,11 +257,7 @@ export default {
           {i < subRows.length - 1 ? ', ' : ''}
         </span>
       ));
-    return (
-      <span>
-        {previewValues}
-      </span>
-    );
+    return <span>{previewValues}</span>;
   },
   PivotComponent: undefined, // this is a computed default generated using
   // the ExpanderComponent and PivotValueComponent at run-time in methods.js

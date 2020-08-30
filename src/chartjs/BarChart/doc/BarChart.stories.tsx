@@ -3,7 +3,7 @@ import { BarChart } from '../BarChart';
 import { rndDatasets } from '../../data/data';
 
 export default {
-  title: 'CHARTS/chartjs/BarChart',
+  title: 'chartjs/BarChart',
   component: BarChart,
 };
 
@@ -36,20 +36,23 @@ export const multiAxis = () => (
         intersect: true,
       },
       scales: {
-        yAxes: [{
-          type: 'linear',
-          display: true,
-          position: 'left',
-          id: 'y-axis-0',
-        }, {
-          type: 'linear',
-          display: true,
-          position: 'right',
-          id: 'y-axis-1',
-          gridLines: {
-            drawOnChartArea: false,
+        yAxes: [
+          {
+            type: 'linear',
+            display: true,
+            position: 'left',
+            id: 'y-axis-0',
           },
-        }],
+          {
+            type: 'linear',
+            display: true,
+            position: 'right',
+            id: 'y-axis-1',
+            gridLines: {
+              drawOnChartArea: false,
+            },
+          },
+        ],
       },
     }}
   />
@@ -64,12 +67,16 @@ export const stacked = () => (
         intersect: true,
       },
       scales: {
-        xAxes: [{
-          stacked: true,
-        }],
-        yAxes: [{
-          stacked: true,
-        }],
+        xAxes: [
+          {
+            stacked: true,
+          },
+        ],
+        yAxes: [
+          {
+            stacked: true,
+          },
+        ],
       },
     }}
   />
@@ -77,19 +84,27 @@ export const stacked = () => (
 
 export const stackedGroup = () => (
   <BarChart
-    data={rndDatasets(3, [{ stack: 'stack-1' }, { stack: 'stack-2' }, { stack: 'stack-1' }])}
+    data={rndDatasets(3, [
+      { stack: 'stack-1' },
+      { stack: 'stack-2' },
+      { stack: 'stack-1' },
+    ])}
     options={{
       tooltips: {
         mode: 'index',
         intersect: true,
       },
       scales: {
-        xAxes: [{
-          stacked: true,
-        }],
-        yAxes: [{
-          stacked: true,
-        }],
+        xAxes: [
+          {
+            stacked: true,
+          },
+        ],
+        yAxes: [
+          {
+            stacked: true,
+          },
+        ],
       },
     }}
   />

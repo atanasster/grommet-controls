@@ -21,7 +21,6 @@ function flattenDeep(arr, newArr = []) {
   return newArr;
 }
 
-
 function makePathArray(obj) {
   return flattenDeep(obj)
     .join('.')
@@ -120,11 +119,8 @@ function getFirstDefined(...args) {
 }
 
 function sum(arr) {
-  return arr.reduce((a, b) => (
-    a + b
-  ), 0);
+  return arr.reduce((a, b) => a + b, 0);
 }
-
 
 function groupBy(xs, key) {
   return xs.reduce((rv, x, i) => {
@@ -143,11 +139,11 @@ function asPx(value) {
 function compactObject(obj) {
   const newObj = {};
   if (obj) {
-    Object.keys(obj).map((key) => {
+    Object.keys(obj).map(key => {
       if (
-        Object.prototype.hasOwnProperty.call(obj, key)
-        && obj[key] !== undefined
-        && typeof obj[key] !== 'undefined'
+        Object.prototype.hasOwnProperty.call(obj, key) &&
+        obj[key] !== undefined &&
+        typeof obj[key] !== 'undefined'
       ) {
         newObj[key] = obj[key];
       }
@@ -162,11 +158,15 @@ function isSortingDesc(d) {
 }
 
 function normalizeComponent(Comp, params = {}, fallback = Comp) {
-  return typeof Comp === 'function'
-    ? Object.getPrototypeOf(Comp).isReactComponent
-      ? <Comp {...params} />
-      : Comp(params)
-    : fallback;
+  return typeof Comp === 'function' ? (
+    Object.getPrototypeOf(Comp).isReactComponent ? (
+      <Comp {...params} />
+    ) : (
+      Comp(params)
+    )
+  ) : (
+    fallback
+  );
 }
 
 export default {

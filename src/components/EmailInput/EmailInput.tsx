@@ -9,11 +9,7 @@ import { IEmailInputProps } from './EmailInputProps';
  * `<EmailInput value={...} />`<br/>
  */
 const EmailInput = (props: IEmailInputProps) => (
-  <MaskedInput
-    mask={MaskedInput.emailMask}
-    inputMode='email'
-    {...props}
-  />
-  );
+  <MaskedInput mask={MaskedInput.emailMask} inputMode="email" {...props} />
+);
 
 export { EmailInput };

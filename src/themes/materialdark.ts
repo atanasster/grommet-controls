@@ -26,70 +26,70 @@ const colors = {
   background: backgroundColor,
   focus: focusColor,
   control: {
-    'dark': '#f8f8f8',
-    'light': '#444444',
+    dark: '#f8f8f8',
+    light: '#444444',
   },
-
 };
 
 colorsFromArray(colors, accentColors, 'accent');
 colorsFromArray(colors, neutralColors, 'neutral');
 colorsFromObject(colors, statusColors, 'status');
 
-export default deepFreeze(deepMerge(base, {
-  global: {
-    colors,
-    drop: {
-      background: '#2a2a2a',
-    },
-    hover: {
-      background: {
-        light: '#dddddd',
-        dark: '#222222',
+export default deepFreeze(
+  deepMerge(base, {
+    global: {
+      colors,
+      drop: {
+        background: '#2a2a2a',
       },
-      text: {
-        light: '#000000',
-        dark: '#f8f8f8',
+      hover: {
+        background: {
+          light: '#dddddd',
+          dark: '#222222',
+        },
+        text: {
+          light: '#000000',
+          dark: '#f8f8f8',
+        },
+      },
+      focus: {
+        border: {
+          color: '#f50057',
+        },
+      },
+      font: {
+        family: '"Roboto", "Helvetica", "Arial", sans-serif',
+      },
+      control: {
+        border: {
+          radius: '0px',
+        },
       },
     },
-    focus: {
-      border: {
-        color: '#f50057',
-      },
-    },
-    font: {
-      family: '"Roboto", "Helvetica", "Arial", sans-serif',
-    },
-    control: {
+    button: {
       border: {
         radius: '0px',
       },
+      primary: {
+        color: {
+          light: '#f50057',
+          dark: '#ff4081',
+        },
+      },
     },
-  },
-  button: {
-    border: {
-      radius: '0px',
+    checkBox: {
+      check: {
+        radius: '0px',
+      },
     },
-    primary: {
+    layer: {
+      background: backgroundColor,
+    },
+    anchor: {
       color: {
         light: '#f50057',
         dark: '#ff4081',
       },
     },
-  },
-  checkBox: {
-    check: {
-      radius: '0px',
-    },
-  },
-  layer: {
-    background: backgroundColor,
-  },
-  anchor: {
-    color: {
-      light: '#f50057',
-      dark: '#ff4081',
-    },
-  },
-}));
-
+  }),
+);

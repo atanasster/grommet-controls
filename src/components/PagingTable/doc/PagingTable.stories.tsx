@@ -1,19 +1,16 @@
 import React from 'react';
-import {
- Box, Text, Image, CheckBox, Select,
-} from 'grommet';
+import { Box, Text, Image, CheckBox, Select } from 'grommet';
 import { Add, Subtract } from 'grommet-icons';
 import { PagingTable, IPagingTableColumn, IDataObject } from '../index';
 
 export default {
-  title: 'CONTROLS/controls/PagingTable',
+  title: 'controls/PagingTable',
   component: PagingTable,
 };
 
-
-const getAllColumns = (columns) => {
+const getAllColumns = columns => {
   let allColumns = [];
-  columns.forEach((column) => {
+  columns.forEach(column => {
     if (column.columns) {
       allColumns = [...allColumns, ...getAllColumns(column.columns)];
     } else {
@@ -23,24 +20,26 @@ const getAllColumns = (columns) => {
   return allColumns;
 };
 
-const updateColumnShow = (allColumns, visible) => (
-  allColumns.map(column => (
-    column.columns ? {
-      ...column, columns: updateColumnShow(column.columns, visible),
-    }
+const updateColumnShow = (allColumns, visible) =>
+  allColumns.map(column =>
+    column.columns
+      ? {
+          ...column,
+          columns: updateColumnShow(column.columns, visible),
+        }
       : {
-        ...column, show: visible.indexOf(column.Header) !== -1,
-      }
-  ))
-);
+          ...column,
+          show: visible.indexOf(column.Header) !== -1,
+        },
+  );
 
 interface TableExampleState {
-    grouping: boolean,
-    filterable: boolean,
-    sortable: boolean,
-    paging: boolean,
-    data: IDataObject[],
-    columns: IPagingTableColumn[],
+  grouping: boolean;
+  filterable: boolean;
+  sortable: boolean;
+  paging: boolean;
+  data: IDataObject[];
+  columns: IPagingTableColumn[];
 }
 class TableExample extends React.Component {
   state: TableExampleState = {
@@ -50,22 +49,40 @@ class TableExample extends React.Component {
     paging: false,
     data: [
       {
-        item: 'Fork', qty: 4, price: 5.50, image: 'http://lorempixel.com/output/food-q-c-264-260-2.jpg',
+        item: 'Fork',
+        qty: 4,
+        price: 5.5,
+        image: 'http://lorempixel.com/output/food-q-c-264-260-2.jpg',
       },
       {
-        item: 'Fork', qty: 1, price: 5.20, image: 'http://lorempixel.com/output/nightlife-q-c-264-260-4.jpg',
+        item: 'Fork',
+        qty: 1,
+        price: 5.2,
+        image: 'http://lorempixel.com/output/nightlife-q-c-264-260-4.jpg',
       },
       {
-        item: 'Knife', qty: 3, price: 2.50, image: 'http://lorempixel.com/output/nature-q-c-264-260-7.jpg',
+        item: 'Knife',
+        qty: 3,
+        price: 2.5,
+        image: 'http://lorempixel.com/output/nature-q-c-264-260-7.jpg',
       },
       {
-        item: 'Spoon', qty: 2, price: 6.50, image: 'http://lorempixel.com/output/sports-q-c-264-260-1.jpg',
+        item: 'Spoon',
+        qty: 2,
+        price: 6.5,
+        image: 'http://lorempixel.com/output/sports-q-c-264-260-1.jpg',
       },
       {
-        item: 'Plate', qty: 1, price: 12.49, image: 'http://lorempixel.com/output/people-q-c-264-260-2.jpg',
+        item: 'Plate',
+        qty: 1,
+        price: 12.49,
+        image: 'http://lorempixel.com/output/people-q-c-264-260-2.jpg',
       },
       {
-        item: 'Glass', qty: 2, price: 8.25, image: 'http://lorempixel.com/output/abstract-q-c-264-260-7.jpg',
+        item: 'Glass',
+        qty: 2,
+        price: 8.25,
+        image: 'http://lorempixel.com/output/abstract-q-c-264-260-7.jpg',
       },
     ],
     columns: [
@@ -90,7 +107,8 @@ class TableExample extends React.Component {
               },
             },
             // aggregate: vals => `Total ${vals.reduce((a, b) => a + b, 0)}`,
-          }, {
+          },
+          {
             Header: 'Price',
             accessor: 'price',
             decorations: {
@@ -99,7 +117,8 @@ class TableExample extends React.Component {
               },
             },
             // aggregate: vals => `Sum ${vals.reduce((a, b) => a + b, 0)}`,
-          }, {
+          },
+          {
             Header: 'Total',
             id: 'total',
             decorations: {
@@ -112,18 +131,18 @@ class TableExample extends React.Component {
                 size: 'large',
               },
             },
-            Cell: props => (
-              props.original ? props.original.price * props.original.qty : 0
-            ),
+            Cell: props =>
+              props.original ? props.original.price * props.original.qty : 0,
             Footer: cell => (
-              <Text size='xlarge' color='brand'>{`Sum ${cell.data.reduce((a, b) => (a + b.price), 0).toFixed(2)}`}</Text>
+              <Text size="xlarge" color="brand">{`Sum ${cell.data
+                .reduce((a, b) => a + b.price, 0)
+                .toFixed(2)}`}</Text>
             ),
           },
         ],
       },
     ],
   };
-
 
   onChangeFields = ({ value }: any) => {
     const { columns } = this.state;
@@ -134,49 +153,63 @@ class TableExample extends React.Component {
 
   render() {
     const {
- data, grouping, sortable, filterable, paging, columns,
-} = this.state;
+      data,
+      grouping,
+      sortable,
+      filterable,
+      paging,
+      columns,
+    } = this.state;
     const allColumns = getAllColumns(columns);
-    const visibleColumns = allColumns.filter(column => !(column.show === false));
+    const visibleColumns = allColumns.filter(
+      column => !(column.show === false),
+    );
     return (
-      <Box gap='small' fill='horizontal'>
-        <Box direction='row' justify='between'>
+      <Box gap="small" fill="horizontal">
+        <Box direction="row" justify="between">
           <CheckBox
             checked={grouping}
-            label='Group rows'
-            onChange={() => this.setState({
-              grouping: !grouping,
-            })}
+            label="Group rows"
+            onChange={() =>
+              this.setState({
+                grouping: !grouping,
+              })
+            }
           />
           <CheckBox
             checked={sortable}
-            label='Sortable'
-            onChange={() => this.setState({
-              sortable: !sortable,
-            })}
+            label="Sortable"
+            onChange={() =>
+              this.setState({
+                sortable: !sortable,
+              })
+            }
           />
           <CheckBox
             checked={filterable}
-            label='Filter'
-            onChange={() => this.setState({
-              filterable: !filterable,
-            })}
+            label="Filter"
+            onChange={() =>
+              this.setState({
+                filterable: !filterable,
+              })
+            }
           />
           <CheckBox
             checked={paging}
-            label='Paging'
-            onChange={() => this.setState({
-              paging: !paging,
-            })}
+            label="Paging"
+            onChange={() =>
+              this.setState({
+                paging: !paging,
+              })
+            }
           />
-          <Box basis='small'>
+          <Box basis="small">
             <Select
               options={allColumns.map(column => column.Header)}
               multiple={true}
-              selected={
-              visibleColumns.map(c => allColumns
-                .findIndex(column => column.Header === c.Header))
-            }
+              selected={visibleColumns.map(c =>
+                allColumns.findIndex(column => column.Header === c.Header),
+              )}
               value={visibleColumns.map(column => column.Header)}
               onChange={this.onChangeFields}
             />
@@ -191,28 +224,37 @@ class TableExample extends React.Component {
           pageSizeOptions={[2, 4, 6]}
           decorations={{
             table: {
-              elevation: 'large', border: 'all',
+              elevation: 'large',
+              border: 'all',
             },
             headerGroup: {
-              background: 'brand', border: 'horizontal', align: 'center',
+              background: 'brand',
+              border: 'horizontal',
+              align: 'center',
             },
             header: {
-              border: 'all', align: 'center',
+              border: 'all',
+              align: 'center',
             },
             filter: {
-              background: 'light-2', border: 'all',
+              background: 'light-2',
+              border: 'all',
             },
             filterInput: {
-              size: 'small', placeholder: 'Filter...',
+              size: 'small',
+              placeholder: 'Filter...',
             },
             body: {
               animation: {
-                type: 'fadeIn', duration: 2000, size: 'large',
+                type: 'fadeIn',
+                duration: 2000,
+                size: 'large',
               },
             },
             rowOdd: {
               background: {
-                color: 'light-1', opacity: 'medium',
+                color: 'light-1',
+                opacity: 'medium',
               },
             },
             footer: {
@@ -224,19 +266,21 @@ class TableExample extends React.Component {
               },
             },
             expander: {
-              CloseIcon: <Subtract color='brand' />, OpenIcon: <Add color='brand' />,
+              CloseIcon: <Subtract color="brand" />,
+              OpenIcon: <Add color="brand" />,
             },
           }}
           SubComponent={row => (
             <Box
-              direction='row'
-              pad='small'
-              gap='medium'
-              round='medium'
+              direction="row"
+              pad="small"
+              gap="medium"
+              round="medium"
               border={{
-                color: 'brand', size: 'large',
+                color: 'brand',
+                size: 'large',
               }}
-              background='light-1'
+              background="light-1"
             >
               <Image src={row.original.image} />
               <Box>
@@ -271,28 +315,35 @@ export const simple = () => (
       {
         Header: 'Item',
         accessor: 'item',
-      }, {
+      },
+      {
         Header: 'Qty',
         accessor: 'qty',
-      }, {
+      },
+      {
         Header: 'Price',
         accessor: 'price',
-      }, {
+      },
+      {
         Header: 'Total',
-        Cell: props => (
-          props.original.price * props.original.qty
-        ),
+        Cell: props => props.original.price * props.original.qty,
       },
     ]}
     data={[
       {
-        item: 'Fork', qty: 4, price: 5.50,
+        item: 'Fork',
+        qty: 4,
+        price: 5.5,
       },
       {
-        item: 'Knife', qty: 3, price: 2.50,
+        item: 'Knife',
+        qty: 3,
+        price: 2.5,
       },
       {
-        item: 'Spoon', qty: 2, price: 6.50,
+        item: 'Spoon',
+        qty: 2,
+        price: 6.5,
       },
     ]}
   />

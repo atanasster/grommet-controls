@@ -3,53 +3,48 @@ import { Box, Text } from 'grommet';
 import { Sidebar } from '../Sidebar';
 
 export default {
-  title: 'CONTROLS/layout/Sidebar',
+  title: 'layout/Sidebar',
   component: Sidebar,
 };
 
 export const main = () => (
-  <Box align='center'>
+  <Box align="center">
     <Sidebar
-      title='My title'
+      title="My title"
       border={{ size: 'small' }}
-      width='small'
-      basis='small'
+      width="small"
+      basis="small"
     >
       <Text>Side item</Text>
     </Sidebar>
   </Box>
-  );
+);
 
 export const collapsible = () => (
   <Sidebar
-    title='title'
+    title="title"
     border={{ size: 'small' }}
-    width='small'
-    basis='small'
+    width="small"
+    basis="small"
     collapsible={false}
   >
     <Text>Side item</Text>
   </Sidebar>
-  );
+);
 
 export const title = () => (
-  <Sidebar
-    title='title'
-    border={{ size: 'small' }}
-    width='small'
-    basis='small'
-  >
+  <Sidebar title="title" border={{ size: 'small' }} width="small" basis="small">
     <Text>Side item</Text>
   </Sidebar>
-  );
+);
 
 export const width = () => (
   <Sidebar
-    title='title'
+    title="title"
     border={{ size: 'small' }}
-    width='medium'
-    basis='small'
+    width="medium"
+    basis="small"
   >
     <Text>Side item</Text>
   </Sidebar>
-  );
+);

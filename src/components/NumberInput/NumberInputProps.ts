@@ -2,33 +2,33 @@ import { IMaskedInputProps } from '../MaskedInput';
 
 export interface INumberInputOwnProps {
   /** Custom increment button title to be used by screen readers */
-  a11yIncrement?: string,
+  a11yIncrement?: string;
   /** Custom increment button title to be used by screen readers */
-  a11yDecrement?: string,
+  a11yDecrement?: string;
   /** How many digits to allow after the decimal */
-  decimals?: number,
+  decimals?: number;
   /** decimal symbol */
-  decimalSymbol?: string,
+  decimalSymbol?: string;
   /** Minimum value */
-  min?: number,
+  min?: number;
   /** Maximum value */
-  max?: number,
+  max?: number;
   /** Steps to increase and decrease by */
-  step?: number,
+  step?: number;
   /** The numeric value */
-  value?: string | number,
+  value?: string | number;
   /** Icon for button to increment by step */
-  addIcon?: JSX.Element,
+  addIcon?: JSX.Element;
   /** Icon for button to subtract a step */
-  subtractIcon?: JSX.Element,
+  subtractIcon?: JSX.Element;
   /** What to display in front of the value */
-  prefix?: string,
+  prefix?: string;
   /** What to display at the end of the value */
-  suffix?: string,
+  suffix?: string;
   /** A character with which to separate thousands */
-  thousandsSeparatorSymbol?: string,
+  thousandsSeparatorSymbol?: string;
   /** Limit on the length of the integer number */
-  integers?: number,
+  integers?: number;
 }
 
 export type INumberInputProps = INumberInputOwnProps & IMaskedInputProps;

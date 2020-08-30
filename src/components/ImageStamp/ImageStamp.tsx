@@ -10,17 +10,15 @@ const SIZE_MAP = {
 };
 
 /**
-*  A small image stamp used for avatars or image thumbnails
-*/
-const ImageStamp = ({ size, src, ...rest }: IImageStampProps) => (
-    src ? <StyledImageStamp src={src} size={SIZE_MAP[size]} {...rest} /> : null
-);
+ *  A small image stamp used for avatars or image thumbnails
+ */
+const ImageStamp = ({ size, src, ...rest }: IImageStampProps) =>
+  src ? <StyledImageStamp src={src} size={SIZE_MAP[size]} {...rest} /> : null;
 
 ImageStamp.defaultProps = {
   contain: null,
   size: 'medium',
   plain: false,
 };
-
 
 export { ImageStamp };

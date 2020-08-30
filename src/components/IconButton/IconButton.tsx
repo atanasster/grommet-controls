@@ -7,7 +7,9 @@ import StyledIconButton from './StyledIconButton';
  * `import { IconButton } from 'grommet-controls';`<br />
  * `<IconButton icon='...' />`<br />
  */
-const IconButton = (props: ButtonProps & Omit<JSX.IntrinsicElements['button'], 'color' | 'ref'>) => (
+const IconButton = (
+  props: ButtonProps & Omit<JSX.IntrinsicElements['button'], 'color' | 'ref'>,
+) => (
   <StyledIconButton
     {...props}
     hoverIndicator={{
@@ -15,6 +17,6 @@ const IconButton = (props: ButtonProps & Omit<JSX.IntrinsicElements['button'], '
       light: 'light-2',
     }}
   />
-    );
+);
 
 export { IconButton };

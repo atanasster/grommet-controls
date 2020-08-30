@@ -2,13 +2,18 @@ import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { Keyboard } from 'grommet';
 import {
- focusedChildIndex, focusChildByIndex, focusNextElement, focusPrevElement, hasKeyboardChildren,
+  focusedChildIndex,
+  focusChildByIndex,
+  focusNextElement,
+  focusPrevElement,
+  hasKeyboardChildren,
 } from '../DOM';
 
 import { StyledTrComponent } from '../StyledTableComponents';
 
+// eslint-disable-next-line @typescript-eslint/interface-name-prefix
 interface ITrComponentProps {
-  selectRow: (nextRow: boolean, childIndex: number) => boolean,
+  selectRow: (nextRow: boolean, childIndex: number) => boolean;
 }
 class TrComponent extends Component<ITrComponentProps> {
   private container: Element | null | Text;
@@ -39,12 +44,13 @@ class TrComponent extends Component<ITrComponentProps> {
     return this.selectPrevRow();
   };
 
-  selectFirstChild = activeIndex => focusChildByIndex(this.container, activeIndex);
+  selectFirstChild = activeIndex =>
+    focusChildByIndex(this.container, activeIndex);
 
   render() {
     return (
       <Keyboard
-        onTab={(e) => {
+        onTab={e => {
           e.preventDefault();
           if (e.shiftKey) {
             this.selectPrevChild();
@@ -52,25 +58,25 @@ class TrComponent extends Component<ITrComponentProps> {
             this.selectNextChild();
           }
         }}
-        onLeft={(e) => {
+        onLeft={e => {
           if (!hasKeyboardChildren(document.activeElement)) {
             e.preventDefault();
             this.selectPrevChild();
           }
         }}
-        onRight={(e) => {
+        onRight={e => {
           if (!hasKeyboardChildren(document.activeElement)) {
             e.preventDefault();
             this.selectNextChild();
           }
         }}
-        onUp={(e) => {
+        onUp={e => {
           if (!hasKeyboardChildren(document.activeElement)) {
             e.preventDefault();
             this.selectPrevRow();
           }
         }}
-        onDown={(e) => {
+        onDown={e => {
           if (!hasKeyboardChildren(document.activeElement)) {
             e.preventDefault();
             this.selectNextRow();
@@ -78,9 +84,12 @@ class TrComponent extends Component<ITrComponentProps> {
         }}
       >
         <StyledTrComponent
-          direction='row'
-          role='row'
-          ref={(el) => { this.container = findDOMNode(el); }}
+          direction="row"
+          role="row"
+          ref={el => {
+            // eslint-disable-next-line react/no-find-dom-node
+            this.container = findDOMNode(el);
+          }}
           {...this.props}
         />
       </Keyboard>

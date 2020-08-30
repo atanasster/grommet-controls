@@ -1,12 +1,12 @@
 export function isObject(item) {
-  return (item && typeof item === 'object' && !Array.isArray(item));
+  return item && typeof item === 'object' && !Array.isArray(item);
 }
 
 export function getValueByKey(resource, key) {
   const group = key.split('.');
   let currentObject = resource;
   let value;
-  group.forEach((currentKey) => {
+  group.forEach(currentKey => {
     if (!currentObject[currentKey]) {
       return false;
     }

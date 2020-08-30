@@ -7,8 +7,6 @@ import { WithFormField, IWithFormFieldProps } from '../WithFormField';
  */
 export const SelectField = (props: IWithFormFieldProps & SelectProps) => (
   <WithFormField {...props}>
-    {({ options, ...rest }) => (
-      <Select options={options} {...rest} />
-    )}
+    {({ options, ...rest }) => <Select options={options} {...rest} />}
   </WithFormField>
 );

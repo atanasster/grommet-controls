@@ -1,7 +1,5 @@
 import React from 'react';
-import {
- Box, Button, Heading, Meter, Text, BoxProps,
-} from 'grommet';
+import { Box, Button, Heading, Meter, Text, BoxProps } from 'grommet';
 import { Close } from 'grommet-icons/icons/Close';
 import { StatusGood } from 'grommet-icons/icons/StatusGood';
 import { StatusWarning } from 'grommet-icons/icons/StatusWarning';
@@ -22,15 +20,15 @@ const StatusIcons = {
 };
 
 interface ITypeLevel {
-  level: '1' | '2' | '3' | '4' | '5' | '6' | 1 | 2 | 3 | 4 | 5 | 6,
-  size: 'xsmall' | 'small' | 'medium',
-  meterSize: 'xsmall' | 'small' | 'large',
+  level: '1' | '2' | '3' | '4' | '5' | '6' | 1 | 2 | 3 | 4 | 5 | 6;
+  size: 'xsmall' | 'small' | 'medium';
+  meterSize: 'xsmall' | 'small' | 'large';
 }
 
 interface ISizeLevels {
-  small: ITypeLevel,
-  medium: ITypeLevel,
-  large: ITypeLevel,
+  small: ITypeLevel;
+  medium: ITypeLevel;
+  large: ITypeLevel;
 }
 
 const SIZE_LEVELS: ISizeLevels = {
@@ -57,8 +55,25 @@ const SIZE_LEVELS: ISizeLevels = {
  * `<Notification message={...} onClose={...} />`<br/>
  */
 const Notification = ({
-  status, message, locale, closer, margin, reverse, a11yTitle, background, border, timestamp,
-  icon, strong, round, pad, size, state, onClose, percentComplete, ...rest
+  status,
+  message,
+  locale,
+  closer,
+  margin,
+  reverse,
+  a11yTitle,
+  background,
+  border,
+  timestamp,
+  icon,
+  strong,
+  round,
+  pad,
+  size,
+  state,
+  onClose,
+  percentComplete,
+  ...rest
 }: INotificationProps & BoxProps) => {
   const sizeLevel = SIZE_LEVELS[size];
   let closeBtn;
@@ -66,10 +81,7 @@ const Notification = ({
     const closeIcon = closer || <Close size={sizeLevel.size} />;
     closeBtn = (
       <Box pad={pad}>
-        <Button
-          a11yTitle={a11yTitle}
-          onClick={onClose}
-        >
+        <Button a11yTitle={a11yTitle} onClick={onClose}>
           {closeIcon}
         </Button>
       </Box>
@@ -82,26 +94,33 @@ const Notification = ({
   let statusIcon;
   if (icon) {
     const StatusIcon = StatusIcons[status];
-    statusIcon = (
-      React.isValidElement(icon) ? icon : <StatusIcon size={sizeLevel.size} />
+    statusIcon = React.isValidElement(icon) ? (
+      icon
+    ) : (
+      <StatusIcon size={sizeLevel.size} />
     );
   }
   let progress;
   if (percentComplete || percentComplete === 0) {
     progress = (
-      <Box direction='row' align='center' gap='medium' style={{ whiteSpace: 'nowrap' }}>
+      <Box
+        direction="row"
+        align="center"
+        gap="medium"
+        style={{ whiteSpace: 'nowrap' }}
+      >
         <Meter
           size={sizeLevel.meterSize}
-          thickness='small'
-          values={[{
-            label: percentComplete.toFixed(0),
-            value: percentComplete,
-            color: 'accent-1',
-          }]}
+          thickness="small"
+          values={[
+            {
+              label: percentComplete.toFixed(0),
+              value: percentComplete,
+              color: 'accent-1',
+            },
+          ]}
         />
-        <Text size='small'>
-          {` ${percentComplete} %`}
-        </Text>
+        <Text size="small">{` ${percentComplete} %`}</Text>
       </Box>
     );
   }
@@ -119,19 +138,19 @@ const Notification = ({
     second = heading;
   }
   const content = (
-    <Box flex='grow' pad={pad}>
-      <Heading level={sizeLevel.level} margin={margin} style={{ maxWidth: '100%' }}>
-        <Box direction='row' align='center' gap='small'>
+    <Box flex="grow" pad={pad}>
+      <Heading
+        level={sizeLevel.level}
+        margin={margin}
+        style={{ maxWidth: '100%' }}
+      >
+        <Box direction="row" align="center" gap="small">
           {first}
           {second}
         </Box>
       </Heading>
-      <Text size={sizeLevel.size}>
-        {state}
-      </Text>
-      <Text size={sizeLevel.size}>
-        {timeStamp}
-      </Text>
+      <Text size={sizeLevel.size}>{state}</Text>
+      <Text size={sizeLevel.size}>{timeStamp}</Text>
       {progress}
     </Box>
   );
@@ -145,14 +164,13 @@ const Notification = ({
   return (
     <Box
       direction={reverse ? 'row-reverse' : 'row'}
-      fill='horizontal'
+      fill="horizontal"
       border={border}
       round={round}
-      role='checkbox'
+      role="checkbox"
       aria-checked={true}
       background={background || `status-${status}`}
       {...rest}
-
     >
       {first}
       {second}
@@ -171,6 +189,5 @@ Notification.defaultProps = {
   margin: 'small',
   locale: 'en-us',
 };
-
 
 export { Notification };

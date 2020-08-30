@@ -4,7 +4,10 @@ import { deepMerge } from 'grommet/utils/object';
 import { StyledForm } from './StyledForm';
 import { filterByFocusable } from '../../utils/dom';
 import {
- IFormProps, IFormContext, IFormErrors, IFieldProps,
+  IFormProps,
+  IFormContext,
+  IFormErrors,
+  IFieldProps,
 } from './FormProps';
 
 export const FormContext = React.createContext<IFormContext>({
@@ -19,18 +22,18 @@ const styledComponents = {
 };
 
 interface IFormState {
-  data: object,
-  errors: IFormErrors,
-  submitted: boolean,
+  data: object;
+  errors: IFormErrors;
+  submitted: boolean;
 }
 
 /** A Form with built-in validation<br/>
-*`import { Form } from 'grommet-controls';`<br/>
-*`<Form onSubmit={...} />`<br/>
-*/
+ *`import { Form } from 'grommet-controls';`<br/>
+ *`<Form onSubmit={...} />`<br/>
+ */
 class Form extends Component<IFormProps & BoxProps, IFormState> {
   fields: {
-    [x: string]: IFieldProps,
+    [x: string]: IFieldProps;
   } = {};
 
   static defaultProps = {
@@ -44,14 +47,16 @@ class Form extends Component<IFormProps & BoxProps, IFormState> {
     object: {},
     tag: 'form',
     basis: 'medium',
-  }
+  };
 
   containerRef = React.createRef<HTMLDivElement>();
 
   constructor(props) {
     super(props);
     this.state = {
-      errors: undefined, submitted: false, data: { ...props.initialValues, ...props.object },
+      errors: undefined,
+      submitted: false,
+      data: { ...props.initialValues, ...props.object },
     };
   }
 
@@ -69,7 +74,7 @@ class Form extends Component<IFormProps & BoxProps, IFormState> {
       }
       errors[key].push(msg);
     };
-    Object.keys(this.fields).forEach((key) => {
+    Object.keys(this.fields).forEach(key => {
       const field = this.fields[key];
       let rules = field.validation;
       if (rules) {
@@ -102,7 +107,13 @@ class Form extends Component<IFormProps & BoxProps, IFormState> {
               const isValid = rule.rule(data, data[key]);
               if (!isValid) {
                 if (typeof rule.message === 'function') {
-                  addError(key, field, rule.message(typeof field.label === 'string' ? field.label : key));
+                  addError(
+                    key,
+                    field,
+                    rule.message(
+                      typeof field.label === 'string' ? field.label : key,
+                    ),
+                  );
                 } else {
                   addError(key, field, rule.message);
                 }
@@ -141,7 +152,7 @@ class Form extends Component<IFormProps & BoxProps, IFormState> {
     }
   }
 
-  onSubmit = (event) => {
+  onSubmit = event => {
     const { onSubmit, onSubmitError } = this.props;
     const { data } = this.state;
     event.preventDefault();
@@ -159,7 +170,7 @@ class Form extends Component<IFormProps & BoxProps, IFormState> {
   };
 
   updateObject = (name, value, e) => {
-    this.setState((prevState) => {
+    this.setState(prevState => {
       const data = { ...prevState.data, [name]: value };
       const { submitted } = this.state;
       const errors = this.validate(data);
@@ -179,22 +190,34 @@ class Form extends Component<IFormProps & BoxProps, IFormState> {
 
   attachToForm = (name, props) => {
     this.fields = { ...this.fields, [name]: props };
-  }
+  };
 
-  detachFromForm = (name) => {
+  detachFromForm = name => {
     delete this.fields[name];
-  }
+  };
 
-  getFieldValue = name => (this.state.data[name])
+  getFieldValue = name => this.state.data[name];
 
-  getFieldErrors = name => (this.state.errors ? this.state.errors[name] : null)
+  getFieldErrors = name => (this.state.errors ? this.state.errors[name] : null);
 
   render() {
     const {
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      onSubmitError, onValidForm, onInvalidForm, onSubmit, onChange,
-      className, children, a11yTitle, tag, ...rest
-} = this.props;
+      onSubmitError,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      onValidForm,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      onInvalidForm,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      onSubmit,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      onChange,
+      className,
+      children,
+      a11yTitle,
+      tag,
+      ...rest
+    } = this.props;
     let StyledComponent = styledComponents[tag];
     if (!StyledComponent) {
       StyledComponent = StyledForm.withComponent(tag);
@@ -206,7 +229,7 @@ class Form extends Component<IFormProps & BoxProps, IFormState> {
         onSubmit={this.onSubmit}
         aria-label={a11yTitle}
       >
-        <Box direction='row'>
+        <Box direction="row">
           <Box {...rest}>
             <div ref={this.containerRef}>
               <FormContext.Provider
