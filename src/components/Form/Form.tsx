@@ -40,6 +40,7 @@ class Form extends Component<IFormProps & BoxProps, IFormState> {
     onSubmitError: undefined,
     onInvalidForm: undefined,
     onValidForm: undefined,
+    initialValues: {},
     object: {},
     tag: 'form',
     basis: 'medium',
@@ -50,7 +51,7 @@ class Form extends Component<IFormProps & BoxProps, IFormState> {
   constructor(props) {
     super(props);
     this.state = {
-      errors: undefined, submitted: false, data: { ...props.object },
+      errors: undefined, submitted: false, data: { ...props.initialValues, ...props.object },
     };
   }
 
