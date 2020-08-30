@@ -36,7 +36,7 @@
     "docs": "gatsby develop",
     "build-docs": "gatsby build",
     "test": "cc-jest -c ./tests",
-    "pub": "pushd ./ && npm run build && cd dist && npm publish && popd"
+    "pub": "npm run build && npm publish"
   },
   "peerDependencies": {
     "grommet": ">= 2.7.10",
