@@ -1,8 +1,8 @@
 import React from 'react';
 import { RunOnlyConfiguration, defaultRunConfig } from "@component-controls/core";
-import { grommet, Grommet } from 'grommet';
+import { Grommet } from 'grommet';
 import { TestingPage } from "./TestingPage";
-import { ThemesPage } from "./ThemesPage";
+// import { ThemesPage } from "./ThemesPage";
 
 const config: RunOnlyConfiguration = {
   siteTitle: `grommet-controls`,
@@ -19,7 +19,7 @@ const config: RunOnlyConfiguration = {
       tabs: [
         ...defaultRunConfig.pages.story.tabs,
         { title: 'Testing', render: () => <TestingPage /> },
-        { title: 'Themes', render: () => <ThemesPage /> },
+        // { title: 'Themes', render: () => <ThemesPage /> },
       ],
     },
   },
@@ -27,7 +27,7 @@ const config: RunOnlyConfiguration = {
     (controls, context) => {
       const { renderFn } = context;
       return (
-        <Grommet theme={grommet}>
+        <Grommet>
           {renderFn(controls, context)}
         </Grommet>
       );
