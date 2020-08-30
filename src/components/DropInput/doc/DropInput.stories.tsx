@@ -10,7 +10,7 @@ export default {
 };
 
 const DateInput = props => {
-  const [date, setDate] = React.useState(smallDate(new Date()));
+  const [date, setDate] = React.useState(smallDate(new Date('08/30/2020')));
   return (
     <Box direction="row">
       <Box basis="medium">
@@ -78,7 +78,7 @@ export const dropContent = () => (
         <Calendar size="small" />
       </Box>
     }
-    defaultValue={smallDate(new Date())}
+    defaultValue={smallDate(new Date('08/30/2020'))}
   />
 );
 export const dropIcon = () => <DateInput dropIcon={<CalendarIcon />} />;
