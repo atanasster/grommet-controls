@@ -27,9 +27,8 @@ interface IFormState {
   submitted: boolean;
 }
 
-/** A Form with built-in validation<br/>
- *`import { Form } from 'grommet-controls';`<br/>
- *`<Form onSubmit={...} />`<br/>
+/**
+ * A Form with built-in validation.
  */
 class Form extends Component<IFormProps & BoxProps, IFormState> {
   fields: {

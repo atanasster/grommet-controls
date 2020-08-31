@@ -5,8 +5,6 @@ import { IAvatarProps } from './AvatarProps';
 
 /**
  * An image with some text, can be used as a user Avatar image<br/>
- * `import { Avatar } from 'grommet-controls;'`<br/>
- * `<Avatar image='...' />`<br/>
  */
 const Avatar = ({ image, title, subTitle, ...rest }: IAvatarProps) => (
   <Box direction="row" align="center" gap="small">

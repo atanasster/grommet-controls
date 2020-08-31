@@ -1,8 +1,6 @@
 import React, { Component, RefObject } from 'react';
 import { findDOMNode } from 'react-dom';
-import {
- Box, Keyboard, Text, BoxProps,
-} from 'grommet';
+import { Box, Keyboard, Text, BoxProps } from 'grommet';
 import { FormClose } from 'grommet-icons/icons/FormClose';
 import { Tag } from '../Tag';
 import { ITagsProps } from './TagsProps';
@@ -21,16 +19,14 @@ export const TagsSelect = (props: ITagsProps) => {
       }}
       {...rest}
     />
-);
+  );
 };
 
 interface ITagsState {
-  selectedTagIndex: number,
+  selectedTagIndex: number;
 }
 /**
- * A list of tags that can be removed<b/>
- * `import { Tags } from 'grommet-controls';`<b/>
- * `<Tags />`<b/>
+ * A list of tags that can be removed.
  */
 class Tags extends Component<ITagsProps & BoxProps, ITagsState> {
   static defaultProps = {
@@ -51,7 +47,7 @@ class Tags extends Component<ITagsProps & BoxProps, ITagsState> {
 
   elementRef = React.createRef<HTMLDivElement>();
 
-  selectTag = (selected) => {
+  selectTag = selected => {
     const { onChange, value } = this.props;
     if (onChange) {
       let tags = selected;
@@ -65,13 +61,19 @@ class Tags extends Component<ITagsProps & BoxProps, ITagsState> {
       } else {
         tags = [tags];
       }
-      onChange({ target: findDOMNode(this.elementRef.current), option: selected, value: tags });
+      onChange({
+        target: findDOMNode(this.elementRef.current),
+        option: selected,
+        value: tags,
+      });
     }
-  }
+  };
 
   focusTag(index) {
     if (index >= 0 && index < this.tagRefs.length) {
-      const tagElement = findDOMNode(this.tagRefs[index].current) as HTMLDivElement;
+      const tagElement = findDOMNode(
+        this.tagRefs[index].current,
+      ) as HTMLDivElement;
       if (tagElement && typeof tagElement.focus === 'function') {
         tagElement.focus();
       }
@@ -79,7 +81,7 @@ class Tags extends Component<ITagsProps & BoxProps, ITagsState> {
     }
   }
 
-  onNextTag = (event) => {
+  onNextTag = event => {
     const { value } = this.props;
     const { selectedTagIndex } = this.state;
     event.preventDefault();
@@ -88,9 +90,9 @@ class Tags extends Component<ITagsProps & BoxProps, ITagsState> {
       index = 0;
     }
     this.focusTag(index);
-  }
+  };
 
-  onPreviousTag = (event) => {
+  onPreviousTag = event => {
     const { selectedTagIndex } = this.state;
     const { value } = this.props;
     event.preventDefault();
@@ -99,9 +101,9 @@ class Tags extends Component<ITagsProps & BoxProps, ITagsState> {
       index = value.length - 1;
     }
     this.focusTag(index);
-  }
+  };
 
-  onSelectTag = (event) => {
+  onSelectTag = event => {
     const { value } = this.props;
     const { selectedTagIndex } = this.state;
     if (selectedTagIndex >= 0 && selectedTagIndex < value.length) {
@@ -109,12 +111,12 @@ class Tags extends Component<ITagsProps & BoxProps, ITagsState> {
       event.stopPropagation();
       this.selectTag(value[selectedTagIndex]);
     }
-  }
+  };
 
   onCloseClick = (e, tag) => {
     e.stopPropagation();
     this.selectTag(tag);
-  }
+  };
 
   render() {
     const {
@@ -130,10 +132,12 @@ class Tags extends Component<ITagsProps & BoxProps, ITagsState> {
       ...rest
     } = this.props;
     let noValues;
-    if ((!value || (Array.isArray(value) && value.length === 0))) {
-      noValues = React.isValidElement(placeholder) ? placeholder : (
+    if (!value || (Array.isArray(value) && value.length === 0)) {
+      noValues = React.isValidElement(placeholder) ? (
+        placeholder
+      ) : (
         // placeholder. minimum height of icon to keep size
-        <Text color='placeholder' style={{ minHeight: '24px' }}>
+        <Text color="placeholder" style={{ minHeight: '24px' }}>
           {placeholder || 'No selection'}
         </Text>
       );
@@ -156,36 +160,40 @@ class Tags extends Component<ITagsProps & BoxProps, ITagsState> {
           tabIndex={focusable ? 0 : undefined}
           ref={this.elementRef as any}
           direction={direction}
-          overflow='auto'
+          overflow="auto"
           style={{ minWidth: 'auto' }}
           {...rest}
         >
-          {noValues || values.map((tag, index) => {
-            if (children) {
-              return children(tag, index, value);
-            }
-            if (!this.tagRefs[index]) {
-              this.tagRefs[index] = React.createRef();
-            }
-            return (
-              <Tag
-                key={`tag_${tag}_${index}`}
-                ariaChecked={true}
-                a11yTitle={`Remove ${tag.toString()}`}
-                label={typeof tag !== 'object' ? tag.toString() : undefined}
-                ref={this.tagRefs[index]}
-                onClick={onClick ? e => onClick(e, tag) : undefined}
-                onChange={onChange ? e => this.onCloseClick(e, tag) : undefined}
-                icon={icon}
-                {...(typeof tag === 'object' ? { ...tagProps, ...tag } : tagProps)}
-              />
-            );
-          })}
+          {noValues ||
+            values.map((tag, index) => {
+              if (children) {
+                return children(tag, index, value);
+              }
+              if (!this.tagRefs[index]) {
+                this.tagRefs[index] = React.createRef();
+              }
+              return (
+                <Tag
+                  key={`tag_${tag}_${index}`}
+                  ariaChecked={true}
+                  a11yTitle={`Remove ${tag.toString()}`}
+                  label={typeof tag !== 'object' ? tag.toString() : undefined}
+                  ref={this.tagRefs[index]}
+                  onClick={onClick ? e => onClick(e, tag) : undefined}
+                  onChange={
+                    onChange ? e => this.onCloseClick(e, tag) : undefined
+                  }
+                  icon={icon}
+                  {...(typeof tag === 'object'
+                    ? { ...tagProps, ...tag }
+                    : tagProps)}
+                />
+              );
+            })}
         </Box>
       </Keyboard>
     );
   }
 }
-
 
 export { Tags };

@@ -35,10 +35,8 @@ const responsiveColumns = (size, columns) =>
     : columns;
 
 /**
- * Table component with pagination, filtering, footer, child rows and grouping<br/>
- * Derived from https://github.com/react-tools/react-table<br/>
- * `import { PagingTable } from 'grommet-controls';`<br/>
- * `<PagingTable columns={...} data={...} />`<br/>
+ * Table component with pagination, filtering, footer, child rows and grouping.
+ * Derived from https://github.com/react-tools/react-table.
  */
 const PagingTable = ({ data, columns, ...rest }: IPagingTableProps) => {
   const defaults = {

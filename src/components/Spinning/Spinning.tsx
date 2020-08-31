@@ -35,9 +35,8 @@ const styledComponents = {
 
 type StyledSpinnerType = React.ElementType<ISpinningProps & { theme?: object }>;
 
-/** A spinning process indicator<br/>
- * `import { Spinning } from 'grommet-controls';`<br/>
- * `<Spinning />`<br/>
+/**
+ * A spinning process indicator.
  */
 const Spinning = ({ kind, fadeIn, color, size }: ISpinningProps) => {
   const spinnerInfo = allSpinners[kind] || allSpinners['three-bounce'];

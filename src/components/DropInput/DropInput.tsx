@@ -17,13 +17,7 @@ interface IDropInputState {
 }
 
 /**
- *  An Input control with an optional drop button with the specified 'dropContent' or widgets<br/>
- *`import { DropInput } from 'grommet-controls';`<br/>
- *`<DropInput`<br/>
- *&nbsp;&nbsp;`dropContent={(`<br/>
- *&nbsp;&nbsp;&nbsp;&nbsp;`...`<br/>
- *&nbsp;&nbsp;`]}`<br/>
- *`/>`<br/>
+ *  An Input control with an optional drop button with the specified 'dropContent' or widgets.
  */
 class DropInput extends Component<IDropInputProps, IDropInputState> {
   static defaultProps = {

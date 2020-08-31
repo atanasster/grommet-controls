@@ -6,10 +6,8 @@ import { DropInput } from '../DropInput';
 import { IPasswordInputProps } from './PasswordInputProps';
 
 /**
- *A password field with show/hide password toggle<br/>
- *All properties of DropInput apply<br/>
- *`import { PasswordInput } from 'grommet-controls';`<br/>
- *`<PasswordInput value={...} />`<br/>
+ * A password field with show/hide password toggle.
+ * All properties of DropInput apply.
  */
 class PasswordInput extends Component<IPasswordInputProps> {
   static defaultProps = {

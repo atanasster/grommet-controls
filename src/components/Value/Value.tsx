@@ -12,9 +12,7 @@ const LABEL_SIZE_MAP = {
 };
 
 /**
- * A single value visualization with a label<br/>
- * `import { Value } from 'grommet-controls';`<br/>
- * `<Value value={...} label={...} />`<br/>
+ * A single value visualization with a label.
  */
 const Value = ({
   label,

@@ -27,10 +27,9 @@ const minMax = ({ value, min, max }) => {
   return val;
 };
 
-/** A masked number input, with widgets to increment/decrement the value<br/>
- *  Additionally, all properties of MaskedInput apply<br/>
- *  `import { NumberInput } from 'grommet-controls';`<br/>
- *  `<NumberInput value={...} />`<br/>
+/**
+ * A masked number input, with widgets to increment/decrement the value.
+ * Additionally, all properties of MaskedInput apply.
  */
 
 class NumberInput extends Component<INumberInputProps> {

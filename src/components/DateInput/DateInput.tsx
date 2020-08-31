@@ -6,10 +6,8 @@ import { smallDate } from '../../utils/moment';
 import { IDateInputProps } from './DateInputProps';
 
 /**
- * A masked date entry field with a drop down calendar<br/>
- * All properties of MaskedInput apply<br/>
- * `import { DateInput } from 'grommet-controls';`<br/>
- * `<DateInput value={...} />`<br/>
+ * A masked date entry field with a drop down calendar.
+ * All properties of MaskedInput apply.
  */
 
 class DateInput extends Component<IDateInputProps> {

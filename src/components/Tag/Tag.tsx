@@ -6,9 +6,7 @@ import { StyledTag, StyledIcon } from './StyledTag';
 import { ITagProps } from './TagProps';
 
 /**
- * A tag control with a label and icon<br/>
- * `import { Tag } from 'grommet-controls';`<br/>
- * `<Tag label={...} icon={...} />`<br/>
+ * A tag control with a label and icon.
  */
 const Tag = React.forwardRef<HTMLDivElement, ITagProps>(
   (

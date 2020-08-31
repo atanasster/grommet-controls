@@ -50,9 +50,7 @@ const SIZE_LEVELS: ISizeLevels = {
 };
 
 /**
- * A Box to display notification messages<br/>
- * `import { Notification } from 'grommet-controls';`<br/>
- * `<Notification message={...} onClose={...} />`<br/>
+ * A Box to display notification messages.
  */
 const Notification = ({
   status,

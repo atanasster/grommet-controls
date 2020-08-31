@@ -4,7 +4,7 @@ import {
   Story,
   Description,
 } from '@component-controls/blocks';
-import { Grommet } from 'grommet';
+import { ThemeProvider } from 'styled-components';
 import { grommet, dark } from 'grommet';
 import { black, light, materialdark, materiallight, metro } from '../src/themes';
 
@@ -22,9 +22,9 @@ export const ThemesPage = () => {
       <Description />
       {Object.keys(themes).map(themeName => (
         <HoverBox key={themeName} label={themeName}>
-        <Grommet  theme={themes[themeName]}>
+        <ThemeProvider theme={themes[themeName]}>
           <Story id="."  sxStyle={{ mb: 0 }}/>
-        </Grommet>
+        </ThemeProvider>
         </HoverBox>
       ))}
     </>

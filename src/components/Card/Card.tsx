@@ -13,15 +13,6 @@ type CardProps = ICardProps & BoxProps;
 
 /**
  * A Card-type container, all props of Box apply<br/>
- * `import { Card } from 'grommet-controls';`<br/>
- * `<Card>`<br/>
- * &nbsp;&nbsp;`<Card.CardTitle>`<br/>
- * &nbsp;&nbsp;&nbsp;&nbsp;`Title`<br/>
- * &nbsp;&nbsp;`</Card.CardTitle>`<br/>
- * &nbsp;&nbsp;`<Card.CardContent>`<br/>
- * &nbsp;&nbsp;&nbsp;&nbsp;`card content goes here`<br/>
- * &nbsp;&nbsp;`</Card.CardContent>`<br/>
- * `</Card>`<br/>
  */
 export const Card = ({ children, ...rest }: CardProps) => (
   <ThemeContext.Consumer>

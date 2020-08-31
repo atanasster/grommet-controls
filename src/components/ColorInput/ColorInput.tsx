@@ -24,10 +24,9 @@ const StyledColorButton = styled.span<StyledColorButtonProps>`
 interface IColorInputState {
   selectedColor: string;
 }
-/** A masked color entry field, with a drop button to select a color<br/>
- * All properties of MaskedInput apply<br/>
- * `import { ColorInput } from 'grommet-controls';`<br/>
- * `<ColorInput colors={...} value={...} />`<br/>
+/**
+ * A masked color entry field, with a drop button to select a color.
+ * All properties of MaskedInput apply.
  */
 class ColorInput extends Component<
   IColorInputProps & IMaskedInputProps & IColorsProps,

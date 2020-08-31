@@ -100,9 +100,8 @@ interface IColorsState {
   activeColor: number;
 }
 
-/** A color selection element, with custom color palettes.<br/>
- *`import { Colors } from 'grommet-controls';`<br/>
- *`<Colors colors={...} />`<br/>
+/**
+ * A color selection element, with custom color palettes.
  */
 class Colors extends Component<IColorsProps, IColorsState> {
   static defaultProps = {

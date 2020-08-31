@@ -11,9 +11,8 @@ import { transformMaskedValue } from './utils';
 import { createMinMaxInputPipe, maskedNumberValue } from './minMaxNumberPipe';
 import { IMaskedInputProps } from './MaskedInputProps';
 
-/** A masked Input control with an optional drop button with the specified dropContent<br/>
- * `import { MakedInput } from 'grommet-controls';`<br/>
- * `<MakedInput mask={...} />`<br/>
+/**
+ * A masked Input control with an optional drop button with the specified dropContent.
  */
 class MaskedInput extends Component<IMaskedInputProps> {
   static defaultProps = {
