@@ -9,7 +9,6 @@ const categories = ['about', 'controls', 'layout', 'navigation', 'input', 'valid
 
 const config: RunOnlyConfiguration = {
   siteTitle: `grommet-controls`,
-  siteUrl: `https:/grommet-controls.netlify.app`,
   siteDescription: `A pack of extensions for grommet 2`,
   author: 'grommet-controls',
   storySort: (a, b) => {
