@@ -79,7 +79,6 @@
     "gatsby": "^2.23.11",
     "grommet": "^2.15.0",
     "grommet-icons": "^4.4.0",
-    "pre-commit": "^1.2.2",
     "react": "^16.9.0",
     "react-chartjs-2": "^2.7.4",
     "react-docgen-typescript": "^1.12.5",
