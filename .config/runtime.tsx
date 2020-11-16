@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { RunOnlyConfiguration, defaultRunConfig } from "@component-controls/core";
+import { RunConfiguration, defaultRunConfig } from "@component-controls/core";
 import { Grommet } from 'grommet';
 import { ThemeContext } from 'styled-components';
 import { TestingPage } from "./TestingPage";
@@ -7,8 +7,9 @@ import { ThemesPage } from "./ThemesPage";
 
 const categories = ['about', 'controls', 'layout', 'navigation', 'input', 'validation', 'chartjs']
 
-const config: RunOnlyConfiguration = {
+const config: RunConfiguration = {
   title: `grommet-controls`,
+  siteUrl: `https://grommet-controls.netlify.app`,
   description: `A pack of extensions for grommet 2`,
   author: 'grommet-controls',
   storySort: (a, b) => {
