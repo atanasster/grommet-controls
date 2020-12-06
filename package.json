@@ -89,13 +89,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "rollup-plugin-typescript2": "^0.27.2",
     "styled-components": "^5.1.1",
-    "theme-ui": "0.4.0-rc.1",
     "tslib": "^2.0.1",
     "typescript": "^3.9.3"
-  },
-  "resolutions": {
-    "@theme-ui/core": "0.4.0-rc.1",
-    "@theme-ui/css": "0.4.0-rc.1",
-    "@theme-ui/mdx": "0.4.0-rc.1"
   }
 }
