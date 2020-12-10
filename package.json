@@ -14,7 +14,7 @@
     "themes.d.ts",
     "chartjs.js",
     "chartjs.d.ts"
-  ],  
+  ],
   "authors": [
     "Atanas Stoyanov"
   ],
@@ -53,14 +53,14 @@
     "text-mask-core": "^5.0.1"
   },
   "devDependencies": {
-    "@component-controls/addon-stats": "^2.2.0",
-    "@component-controls/axe-plugin": "^2.2.0",
-    "@component-controls/blocks": "^2.2.0",
-    "@component-controls/components": "^2.2.0",
+    "@component-controls/addon-stats": "^2.2.3",
+    "@component-controls/axe-plugin": "^2.2.3",
+    "@component-controls/blocks": "^2.2.3",
+    "@component-controls/components": "^2.2.3",
     "@component-controls/core": "^2.2.0",
-    "@component-controls/gatsby-theme-stories": "^2.2.0",
-    "@component-controls/jest-snapshots": "^2.2.0",
-    "@component-controls/viewport-plugin": "^2.2.0",
+    "@component-controls/gatsby-theme-stories": "^2.2.3",
+    "@component-controls/jest-snapshots": "^2.2.3",
+    "@component-controls/viewport-plugin": "^2.2.3",
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-json": "^4.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
