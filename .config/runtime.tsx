@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { RunConfiguration, defaultRunConfig } from '@component-controls/core';
+import { RunConfiguration } from '@component-controls/core';
 import { Grommet } from 'grommet';
 import { ThemeContext } from 'styled-components';
 
