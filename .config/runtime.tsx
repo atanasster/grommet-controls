@@ -1,16 +1,22 @@
 import React, { useContext } from 'react';
-import { RunConfiguration, defaultRunConfig } from "@component-controls/core";
+import { RunConfiguration, defaultRunConfig } from '@component-controls/core';
 import { Grommet } from 'grommet';
 import { ThemeContext } from 'styled-components';
-import { TestingPage } from "./TestingPage";
-import { ThemesPage } from "./ThemesPage";
 
-const categories = ['about', 'controls', 'layout', 'navigation', 'input', 'validation', 'chartjs']
+const categories = [
+  'about',
+  'controls',
+  'layout',
+  'navigation',
+  'input',
+  'validation',
+  'chartjs',
+];
 
 const config: RunConfiguration = {
-  title: `grommet-controls`,
-  siteUrl: `https://grommet-controls.netlify.app`,
-  description: `A pack of extensions for grommet 2`,
+  title: 'grommet-controls',
+  siteUrl: 'https://grommet-controls.netlify.app',
+  description: 'A pack of extensions for grommet 2',
   author: 'grommet-controls',
   storySort: (a, b) => {
     const aSplit = a.split('/')[0];
@@ -22,26 +28,13 @@ const config: RunConfiguration = {
   components: {
     playground: {
       openTab: 'source',
-    }
-  },
-  pages: {
-    story: {
-      tabs: [
-        ...defaultRunConfig.pages.story.tabs,
-        { title: 'Testing', render: () => <TestingPage /> },
-        { title: 'Themes', render: () => <ThemesPage /> },
-      ],
     },
   },
   decorators: [
     (controls, context) => {
       const { renderFn } = context;
-      const theme = useContext(ThemeContext)
-      return (
-        <Grommet theme={theme}>
-          {renderFn(controls, context)}
-        </Grommet>
-      );
+      const theme = useContext(ThemeContext);
+      return <Grommet theme={theme}>{renderFn(controls, context)}</Grommet>;
     },
   ],
 };

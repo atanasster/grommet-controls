@@ -1,3 +1,5 @@
+const { defaultBuildConfig } = require('@component-controls/core');
+
 module.exports = {
   stories: [
     './*.mdx',
@@ -7,7 +9,19 @@ module.exports = {
   siteUrl: `https:/grommet-controls.netlify.app`,
   pages: {
     story: {
-      tabs: [{ route: 'page' }, { route: 'test' }, { route: 'themes' }],
+      tabs: [
+        ...defaultBuildConfig.pages.story.tabs,
+        {
+          route: 'test',
+          title: 'Testing',
+          template: '@component-controls/pages/TestingPage',
+        },
+        {
+          route: 'themes',
+          title: 'Themes',
+          template: require.resolve('./ThemesPage.tsx'),
+        },
+      ],
     },
   },
 };
