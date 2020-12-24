@@ -53,6 +53,7 @@
     "text-mask-core": "^5.0.1"
   },
   "devDependencies": {
+    "@babel/helper-regex": "^7.10.5",
     "@component-controls/addon-stats": "^2.4.2",
     "@component-controls/gatsby-theme-stories": "^2.4.2",
     "@component-controls/jest-snapshots": "^2.4.2",
