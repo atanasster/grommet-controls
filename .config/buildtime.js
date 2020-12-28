@@ -9,19 +9,11 @@ module.exports = {
   siteUrl: `https:/grommet-controls.netlify.app`,
   pages: {
     story: {
-      tabs: [
+      tabs: {
         ...defaultBuildConfig.pages.story.tabs,
-        {
-          route: 'test',
-          title: 'Testing',
-          template: '@component-controls/pages/TestingPage',
-        },
-        {
-          route: 'themes',
-          title: 'Themes',
-          template: require.resolve('./ThemesPage.tsx'),
-        },
-      ],
+        test: '@component-controls/pages/TestingPage',
+        themes: require.resolve('./ThemesPage.tsx'),
+      },
     },
   },
 };
