@@ -1,0 +1,29 @@
+---
+title: index
+order: -1
+---
+
+import { Catalog } from '@component-controls/addon-catalog';
+
+# Overview
+
+`grommet-controls` is a collection of [grommet 2](https://v2.grommet.io)-based components.
+
+# Install
+
+```sh
+  $ npm install grommet-controls
+```
+
+# Cross-usage
+
+You can view a table with the [cross-usage](/docs/internal-usage) of the included components
+
+# Components
+
+<Catalog
+  group={({ doc }) => {
+    const category = doc.title.split('/')[0];
+    return category[0].toUpperCase() + category.slice(1);
+  }}
+/>

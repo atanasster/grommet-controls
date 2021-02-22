@@ -4,7 +4,6 @@ import { Grommet } from 'grommet';
 import { ThemeContext } from 'styled-components';
 
 const categories = [
-  'about',
   'controls',
   'layout',
   'navigation',
