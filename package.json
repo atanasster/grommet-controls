@@ -53,10 +53,10 @@
     "text-mask-core": "^5.0.1"
   },
   "devDependencies": {
-    "@component-controls/addon-catalog": "^2.12.0",
-    "@component-controls/addon-stats": "^2.12.0",
-    "@component-controls/gatsby-theme-stories": "^2.12.0",
-    "@component-controls/jest-snapshots": "^2.12.0",
+    "@component-controls/addon-catalog": "^3.1.2",
+    "@component-controls/addon-stats": "^3.1.2",
+    "@component-controls/gatsby-theme-stories": "^3.1.2",
+    "@component-controls/jest-snapshots": "^3.1.2",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.1",
@@ -73,7 +73,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^4.0.2",
-    "gatsby": "^2.29.2",
+    "gatsby": "^3.0.3",
     "grommet": "^2.15.0",
     "grommet-icons": "^4.4.0",
     "react": "^17.0.1",
