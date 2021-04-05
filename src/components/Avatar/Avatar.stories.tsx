@@ -1,6 +1,7 @@
 import React from 'react';
-import { ControlTypes } from '@component-controls/core';
+import { ControlTypes, Document, Example } from '@component-controls/core';
 import { Avatar } from './Avatar';
+import { IAvatarProps } from './AvatarProps';
 
 export default {
   title: 'controls/Avatar',
@@ -9,11 +10,14 @@ export default {
     componentSubtitle:
       'Displays an image that represents a user or organization',
   },
-};
+} as Document;
 
-export const main = ({ size, title, subTitle, image }) => (
-  <Avatar image={image} title={title} subTitle={subTitle} size={size} />
-);
+export const main: Example<IAvatarProps> = ({
+  size,
+  title,
+  subTitle,
+  image,
+}) => <Avatar image={image} title={title} subTitle={subTitle} size={size} />;
 
 main.controls = {
   size: {

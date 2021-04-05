@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageStamp  1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <img
+      class="sc-bdfBwQ dvgbqd"
+      src="https://s3.amazonaws.com/uifaces/faces/twitter/aaronkwhite/128.jpg"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ImageStamp  2`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <img
+      class="sc-bdfBwQ dTerfF"
+      src="https://s3.amazonaws.com/uifaces/faces/twitter/gojeanyn/128.jpg"
+    />
+  </div>
+</DocumentFragment>
+`;

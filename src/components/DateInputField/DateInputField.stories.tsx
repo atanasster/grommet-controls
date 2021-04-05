@@ -1,14 +1,15 @@
 import React from 'react';
 import { Box, Button } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { DateInputField } from './DateInputField';
 import { Form, validators } from '../../index';
 
 export default {
   title: 'validation/DateInputField',
   component: DateInputField,
-};
+} as Document;
 
-export const main = () => (
+export const main: Example = () => (
   <Form
     onSubmit={() => console.log('onSubmit')}
     pad={{ horizontal: 'small' }}
@@ -25,7 +26,7 @@ export const main = () => (
   </Form>
 );
 
-export const inField = () => (
+export const inField: Example = () => (
   <Form
     onSubmit={() => console.log('onSubmit')}
     pad={{ horizontal: 'small' }}
@@ -44,7 +45,7 @@ export const inField = () => (
   </Form>
 );
 
-export const validation = () => (
+export const validation: Example = () => (
   <Form
     onSubmit={() => console.log('onSubmit')}
     pad={{ horizontal: 'small' }}

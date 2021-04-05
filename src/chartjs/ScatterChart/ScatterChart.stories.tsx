@@ -1,13 +1,14 @@
 import React from 'react';
+import { Document, Example } from '@component-controls/core';
 import { ScatterChart } from './ScatterChart';
 import { rndDatasets2d } from '../data/data';
 
 export default {
   title: 'chartjs/ScatterChart',
   component: ScatterChart,
-};
+} as Document;
 
-export const main = () => (
+export const main: Example = () => (
   <ScatterChart
     data={{
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -41,9 +42,9 @@ export const main = () => (
   />
 );
 
-export const data = () => <ScatterChart data={rndDatasets2d()} />;
+export const data: Example = () => <ScatterChart data={rndDatasets2d()} />;
 
-export const multiAxis = () => (
+export const multiAxis: Example = () => (
   <ScatterChart
     data={rndDatasets2d(2, [{ yAxisID: 'y-axis-0' }, { yAxisID: 'y-axis-1' }])}
     options={{
@@ -85,7 +86,7 @@ export const multiAxis = () => (
   />
 );
 
-export const logarithmicScale = () => (
+export const logarithmicScale: Example = () => (
   <ScatterChart
     data={rndDatasets2d(1)}
     options={{

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Button, Text } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { Form } from './Form';
 import {
   TextInputField,
@@ -13,9 +14,9 @@ import {
 export default {
   title: 'validation/Form',
   component: Form,
-};
+} as Document;
 
-export const main = () => (
+export const main: Example = () => (
   <Form
     onSubmit={() => console.log('onSubmit')}
     pad={{
@@ -72,7 +73,7 @@ export const main = () => (
   </Form>
 );
 
-export const onSubmit = () => (
+export const onSubmit: Example = () => (
   <Form
     focusFirstChild={false}
     onSubmit={() => console.log('onSubmit')}
@@ -81,7 +82,7 @@ export const onSubmit = () => (
     <TextInputField label="Text" name="fieldname" />
   </Form>
 );
-export const onChange = () => {
+export const onChange: Example = () => {
   const [changedValue, setChangedValue] = React.useState('');
   return (
     <Box pad="small">
@@ -99,7 +100,7 @@ export const onChange = () => {
     </Box>
   );
 };
-export const onSubmitError = () => (
+export const onSubmitError: Example = () => (
   <Box pad="small">
     <Form
       focusFirstChild={false}
@@ -115,7 +116,7 @@ export const onSubmitError = () => (
     </Form>
   </Box>
 );
-export const onInvalidForm = () => {
+export const onInvalidForm: Example = () => {
   const [invalid, setInvalid] = React.useState(undefined);
   return (
     <Box pad="small">

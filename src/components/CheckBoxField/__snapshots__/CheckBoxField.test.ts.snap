@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckBoxField  1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <form
+      class="sc-bdfBwQ czeLXL"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+        >
+          <div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 dLXLoO FormField__FormFieldBox-m9hood-0 jGEMXj"
+            >
+              <label
+                class="StyledText-sc-1sadyjn-0 drTEXR"
+                for="tos"
+              >
+                Terms of service
+              </label>
+              <div
+                class="StyledBox-sc-13pk1d4-0 gmReJc FormField__FormFieldContentBox-m9hood-1"
+              >
+                <div
+                  class="StyledBox-sc-13pk1d4-0 iBWTSp"
+                >
+                  <label
+                    class="StyledCheckBox__StyledCheckBoxContainer-sc-1dbk5ju-1 htOOow"
+                    for="tos"
+                  >
+                    <div
+                      class="StyledBox-sc-13pk1d4-0 kDZMxH StyledCheckBox-sc-1dbk5ju-6 hOFfoi"
+                    >
+                      <input
+                        class="StyledCheckBox__StyledCheckBoxInput-sc-1dbk5ju-2 fYuA-Ds"
+                        id="tos"
+                        name="tos"
+                        type="checkbox"
+                      />
+                      <div
+                        class="StyledBox-sc-13pk1d4-0 jYPXhZ StyledCheckBox__StyledCheckBoxBox-sc-1dbk5ju-3 kRWCTA"
+                      />
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 jsieLm"
+            >
+              <button
+                class="StyledButton-sc-323bzc-0 iZFCLM"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CheckBoxField  2`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <form
+      class="sc-bdfBwQ czeLXL"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+        >
+          <div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 dLXLoO FormField__FormFieldBox-m9hood-0 jGEMXj"
+            >
+              <label
+                class="StyledText-sc-1sadyjn-0 drTEXR"
+                for="tos"
+              >
+                Terms of service
+              </label>
+              <div
+                class="StyledBox-sc-13pk1d4-0 gmReJc FormField__FormFieldContentBox-m9hood-1"
+              >
+                <div
+                  class="StyledBox-sc-13pk1d4-0 iBWTSp"
+                >
+                  <label
+                    class="StyledCheckBox__StyledCheckBoxContainer-sc-1dbk5ju-1 htOOow"
+                    for="tos"
+                  >
+                    <div
+                      class="StyledBox-sc-13pk1d4-0 jbIyUK StyledCheckBox-sc-1dbk5ju-6 hOFfoi"
+                    >
+                      <input
+                        class="StyledCheckBox__StyledCheckBoxInput-sc-1dbk5ju-2 fYuA-Ds"
+                        id="tos"
+                        name="tos"
+                        type="checkbox"
+                      />
+                      <div
+                        class="StyledBox-sc-13pk1d4-0 jYPXhZ StyledCheckBox__StyledCheckBoxBox-sc-1dbk5ju-3 kRWCTA"
+                      />
+                    </div>
+                    <span
+                      class="StyledText-sc-1sadyjn-0 JhXAc"
+                    >
+                      Terms of service
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 jsieLm"
+            >
+              <button
+                class="StyledButton-sc-323bzc-0 iZFCLM"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CheckBoxField  3`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <form
+      class="sc-bdfBwQ czeLXL"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+        >
+          <div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 iBWTSp"
+            >
+              <label
+                class="StyledCheckBox__StyledCheckBoxContainer-sc-1dbk5ju-1 htOOow"
+                for="tos"
+              >
+                <div
+                  class="StyledBox-sc-13pk1d4-0 jbIyUK StyledCheckBox-sc-1dbk5ju-6 hOFfoi"
+                >
+                  <input
+                    class="StyledCheckBox__StyledCheckBoxInput-sc-1dbk5ju-2 fYuA-Ds"
+                    id="tos"
+                    name="tos"
+                    type="checkbox"
+                  />
+                  <div
+                    class="StyledBox-sc-13pk1d4-0 jYPXhZ StyledCheckBox__StyledCheckBoxBox-sc-1dbk5ju-3 kRWCTA"
+                  />
+                </div>
+                <span>
+                  Terms of service
+                </span>
+              </label>
+            </div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 jsieLm"
+            >
+              <button
+                class="StyledButton-sc-323bzc-0 iZFCLM"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;

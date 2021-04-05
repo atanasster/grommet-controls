@@ -1,12 +1,13 @@
 import React from 'react';
 import { Box, Button } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { FormSubtract, Trash } from 'grommet-icons';
 import { Tags } from './Tags';
 
 export default {
   title: 'input/Tags',
   component: Tags,
-};
+} as Document;
 
 const stringOptions = ['small', 'medium', 'large', 'xlarge', 'huge'];
 const defaultTags = [stringOptions[0], stringOptions[2]];
@@ -37,11 +38,11 @@ const TagsInput = props => {
   );
 };
 
-export const main = () => <TagsInput />;
+export const main: Example = () => <TagsInput />;
 
-export const a11yTitle = () => <TagsInput a11yTitle="Grommet tags" />;
+export const a11yTitle: Example = () => <TagsInput a11yTitle="Grommet tags" />;
 
-export const children = () => {
+export const children: Example = () => {
   const [tags, setTags] = React.useState(defaultTags);
   const onChangeTags = ({ option }) => setTags(option);
   const removeTag = tagIndex =>
@@ -65,10 +66,10 @@ export const children = () => {
     </Tags>
   );
 };
-export const icon = () => <TagsInput icon={<FormSubtract />} />;
+export const icon: Example = () => <TagsInput icon={<FormSubtract />} />;
 
-export const direction = () => <TagsInput direction="column" />;
-export const tagProps = () => (
+export const direction: Example = () => <TagsInput direction="column" />;
+export const tagProps: Example = () => (
   <TagsInput
     tagProps={{
       background: 'status-critical',
@@ -80,9 +81,11 @@ export const tagProps = () => (
     }}
   />
 );
-export const onClick = () => (
+export const onClick: Example = () => (
   <TagsInput onClick={() => console.log('onClick')} />
 );
-export const focusable = () => <TagsInput focusable={false} />;
-export const placeholder = () => <TagsInput placeholder="No selection" />;
-export const value = () => <TagsInput value="tag" />;
+export const focusable: Example = () => <TagsInput focusable={false} />;
+export const placeholder: Example = () => (
+  <TagsInput placeholder="No selection" />
+);
+export const value: Example = () => <TagsInput value="tag" />;

@@ -1,13 +1,14 @@
 import React from 'react';
+import { Document, Example } from '@component-controls/core';
 import { PolarChart } from './PolarChart';
 import { rndDatasets } from '../data/data';
 
 export default {
   title: 'chartjs/PolarChart',
   component: PolarChart,
-};
+} as Document;
 
-export const main = () => (
+export const main: Example = () => (
   <PolarChart
     data={{
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -34,7 +35,7 @@ export const main = () => (
   />
 );
 
-export const options = () => (
+export const options: Example = () => (
   <PolarChart
     data={rndDatasets(1, { opacity: 0.2 }, true)}
     options={{

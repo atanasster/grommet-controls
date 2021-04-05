@@ -1,0 +1,618 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VerticalMenu  1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dYebPD"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 eDlyyv"
+          type="button"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            style="margin-left: 12px;"
+          >
+            <svg
+              aria-label="FormNext"
+              class="StyledIcon-ofa7kd-0 dEeaTZ"
+              viewBox="0 0 24 24"
+            >
+              <polyline
+                fill="none"
+                points="9 6 15 12 9 18"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox-sc-13pk1d4-0 etOGak"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+              >
+                <span
+                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                >
+                  <strong>
+                    Local
+                  </strong>
+                </span>
+              </div>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dYebPD"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 eDlyyv"
+          type="button"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            style="margin-left: 12px;"
+          >
+            <svg
+              aria-label="FormNext"
+              class="StyledIcon-ofa7kd-0 dEeaTZ"
+              viewBox="0 0 24 24"
+            >
+              <polyline
+                fill="none"
+                points="9 6 15 12 9 18"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox-sc-13pk1d4-0 etOGak"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+              >
+                <span
+                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                >
+                  <strong>
+                    Cloud
+                  </strong>
+                </span>
+              </div>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`VerticalMenu  2`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dYebPD"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 eDlyyv"
+          type="button"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            style="margin-left: 12px;"
+          >
+            <svg
+              aria-label="FormDown"
+              class="StyledIcon-ofa7kd-0 dEeaTZ"
+              viewBox="0 0 24 24"
+            >
+              <polyline
+                fill="none"
+                points="18 9 12 15 6 9"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox-sc-13pk1d4-0 etOGak"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+              >
+                <svg
+                  aria-label="Inbox"
+                  class="StyledIcon-ofa7kd-0 dEeaTZ"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M1,13 L6,2 L18,2 L23,13 L23,22 L1,22 L1,13 Z M1,13 L8,13 L8,16 L16,16 L16,13 L23,13"
+                    fill="none"
+                    stroke="#000"
+                    stroke-width="2"
+                  />
+                </svg>
+                <div
+                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+                />
+                <span
+                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                >
+                  <strong>
+                    Inbox
+                  </strong>
+                </span>
+              </div>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 dYebPD"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 dDMquD"
+        >
+          <a
+            class="StyledButton-sc-323bzc-0 eDlyyv"
+            href="/inbox/all"
+          >
+            <div
+              class="StyledBox-sc-13pk1d4-0 cfaCYy"
+              style="margin-left: 32px;"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 etOGak"
+              >
+                <div
+                  class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                >
+                  <span
+                    class="StyledText-sc-1sadyjn-0 DkZvS"
+                  >
+                    All
+                  </span>
+                </div>
+                <div
+                  class="StyledBox-sc-13pk1d4-0 ccjdes"
+                  style="border-radius: 20%;"
+                >
+                  <span
+                    class="StyledText-sc-1sadyjn-0 gOVGlS"
+                  >
+                    10
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 dYebPD"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 dYebPD"
+        >
+          <a
+            class="StyledButton-sc-323bzc-0 eDlyyv"
+            href="/inbox/gmail"
+          >
+            <div
+              class="StyledBox-sc-13pk1d4-0 cfaCYy"
+              style="margin-left: 32px;"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 etOGak"
+              >
+                <div
+                  class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                >
+                  <span
+                    class="StyledText-sc-1sadyjn-0 DkZvS"
+                  >
+                    GMail
+                  </span>
+                </div>
+                <div
+                  class="StyledBox-sc-13pk1d4-0 ccjdes"
+                  style="border-radius: 20%;"
+                >
+                  <span
+                    class="StyledText-sc-1sadyjn-0 gOVGlS"
+                  >
+                    8
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 dYebPD"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 dYebPD"
+        >
+          <a
+            class="StyledButton-sc-323bzc-0 eDlyyv"
+            href="/inbox/work"
+          >
+            <div
+              class="StyledBox-sc-13pk1d4-0 cfaCYy"
+              style="margin-left: 32px;"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 etOGak"
+              >
+                <div
+                  class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                >
+                  <span
+                    class="StyledText-sc-1sadyjn-0 DkZvS"
+                  >
+                    Work
+                  </span>
+                </div>
+                <div
+                  class="StyledBox-sc-13pk1d4-0 ccjdes"
+                  style="border-radius: 20%;"
+                >
+                  <span
+                    class="StyledText-sc-1sadyjn-0 gOVGlS"
+                  >
+                    1
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 dYebPD"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 dYebPD"
+        >
+          <a
+            class="StyledButton-sc-323bzc-0 eDlyyv"
+            href="/inbox/amazon"
+          >
+            <div
+              class="StyledBox-sc-13pk1d4-0 cfaCYy"
+              style="margin-left: 32px;"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 etOGak"
+              >
+                <div
+                  class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                >
+                  <span
+                    class="StyledText-sc-1sadyjn-0 DkZvS"
+                  >
+                    Amazon
+                  </span>
+                </div>
+                <div
+                  class="StyledBox-sc-13pk1d4-0 ccjdes"
+                  style="border-radius: 20%;"
+                >
+                  <span
+                    class="StyledText-sc-1sadyjn-0 gOVGlS"
+                  >
+                    1
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dYebPD"
+      >
+        <a
+          class="StyledButton-sc-323bzc-0 eDlyyv"
+          href="/inbox/sent"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            style="margin-left: 16px;"
+          >
+            <div
+              class="StyledBox-sc-13pk1d4-0 etOGak"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+              >
+                <svg
+                  aria-label="Send"
+                  class="StyledIcon-ofa7kd-0 dEeaTZ"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22,3 L2,11 L20.5,19 L22,3 Z M10,20.5 L13,16 M15.5,9.5 L9,14 L9.85884537,20.0119176 C9.93680292,20.5576204 10.0751625,20.5490248 10.1651297,20.009222 L11,15 L15.5,9.5 Z"
+                    fill="none"
+                    stroke="#000"
+                    stroke-width="2"
+                  />
+                </svg>
+                <div
+                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+                />
+                <span
+                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                >
+                  Sent
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dYebPD"
+      >
+        <a
+          class="StyledButton-sc-323bzc-0 eDlyyv"
+          href="/inbox/flagged"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            style="margin-left: 16px;"
+          >
+            <div
+              class="StyledBox-sc-13pk1d4-0 etOGak"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+              >
+                <svg
+                  aria-label="Flag"
+                  class="StyledIcon-ofa7kd-0 dEeaTZ"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M2,24 L2,2 C10,-1.5238864 13,6.64375708 22,2 L22,14 C14,18.895222 9,9.89651097 2,14"
+                    fill="none"
+                    stroke="#000"
+                    stroke-width="2"
+                  />
+                </svg>
+                <div
+                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+                />
+                <span
+                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                >
+                  Flagged
+                </span>
+              </div>
+              <div
+                class="StyledBox-sc-13pk1d4-0 bMRUar"
+                style="border-radius: 20%;"
+              >
+                <span
+                  class="StyledText-sc-1sadyjn-0 gOVGlS"
+                >
+                  3
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dYebPD"
+      >
+        <a
+          class="StyledButton-sc-323bzc-0 eDlyyv"
+          href="/inbox/starred"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            style="margin-left: 16px;"
+          >
+            <div
+              class="StyledBox-sc-13pk1d4-0 etOGak"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+              >
+                <svg
+                  aria-label="Star"
+                  class="StyledIcon-ofa7kd-0 dEeaTZ"
+                  viewBox="0 0 24 24"
+                >
+                  <polygon
+                    fill="#FFC95E"
+                    fill-rule="evenodd"
+                    points="12 16.667 5 22 8 14 2 9.5 9.5 9.5 12 2 14.5 9.5 22 9.5 16 14 19 22"
+                  />
+                </svg>
+                <div
+                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+                />
+                <span
+                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                >
+                  Starred
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dYebPD"
+      >
+        <a
+          class="StyledButton-sc-323bzc-0 eDlyyv"
+          href="/inbox/drafts"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            style="margin-left: 16px;"
+          >
+            <div
+              class="StyledBox-sc-13pk1d4-0 etOGak"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+              >
+                <svg
+                  aria-label="Document"
+                  class="StyledIcon-ofa7kd-0 dEeaTZ"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M14,1 L14,8 L21,8 M21,23 L3,23 L3,1 L15,1 L18,4 L21,7 L21,23 L21,23 L21,23 Z"
+                    fill="none"
+                    stroke="#000"
+                    stroke-width="2"
+                  />
+                </svg>
+                <div
+                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+                />
+                <span
+                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                >
+                  Drafts
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dYebPD"
+      >
+        <a
+          class="StyledButton-sc-323bzc-0 eDlyyv"
+          href="/inbox/tagged"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            style="margin-left: 16px;"
+          >
+            <div
+              class="StyledBox-sc-13pk1d4-0 etOGak"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+              >
+                <svg
+                  aria-label="Tag"
+                  class="StyledIcon-ofa7kd-0 dEeaTZ"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.7058543,22.2941457 C11.3160217,22.6839783 10.6897542,22.6897542 10.2968194,22.2968194 L1.70318058,13.7031806 C1.31482467,13.3148247 1.32097101,12.679029 1.70585426,12.2941457 L13,1 L23,1 L23,11 L11.7058543,22.2941457 Z M6,12 L12,18 M9,9 L15,15 M17,6 C17,5.4475 17.4475,5 18,5 C18.5525,5 19,5.4475 19,6 C19,6.5525 18.5525,7 18,7 C17.4475,7 17,6.5525 17,6"
+                    fill="none"
+                    stroke="#000"
+                    stroke-width="2"
+                  />
+                </svg>
+                <div
+                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+                />
+                <span
+                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                >
+                  Tagged
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dYebPD"
+      >
+        <a
+          class="StyledButton-sc-323bzc-0 eDlyyv"
+          href="/inbox/trash"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            style="margin-left: 16px;"
+          >
+            <div
+              class="StyledBox-sc-13pk1d4-0 etOGak"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+              >
+                <svg
+                  aria-label="Trash"
+                  class="StyledIcon-ofa7kd-0 dEeaTZ"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M4,5 L20,5 L20,23 L4,23 L4,5 Z M1,5 L23,5 M9,1 L15,1 L15,5 L9,5 L9,1 Z M9,1 L15,1 L15,5 L9,5 L9,1 Z M15,9 L15,19 M9,9 L9,19"
+                    fill="none"
+                    stroke="#000"
+                    stroke-width="2"
+                  />
+                </svg>
+                <div
+                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+                />
+                <span
+                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                >
+                  Trash
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

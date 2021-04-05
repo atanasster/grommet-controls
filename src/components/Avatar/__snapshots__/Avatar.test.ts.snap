@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar  1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dfYOnT"
+    >
+      <img
+        class="sc-bdfBwQ dTerfF"
+        src="https://s3.amazonaws.com/uifaces/faces/twitter/sta1ex/128.jpg"
+      />
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 ewicQb"
+      >
+        <span
+          class="StyledText-sc-1sadyjn-0 bjiDFt"
+        >
+          Adam Smith
+        </span>
+        <span
+          class="StyledText-sc-1sadyjn-0 jfgsKn"
+        >
+          admin
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Calendar } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { Add, Subtract } from 'grommet-icons';
 import { MaskedInput } from './MaskedInput';
 import { smallDate } from '../../utils/moment';
@@ -7,7 +8,7 @@ import { smallDate } from '../../utils/moment';
 export default {
   title: 'input/MaskedInput',
   component: MaskedInput,
-};
+} as Document;
 
 const MaskedTestBed = ({ value: defaultValue = '', ...props }) => {
   const [value, setValue] = React.useState(defaultValue);
@@ -75,7 +76,7 @@ const NumberInput = () => {
     </Box>
   );
 };
-export const main = () => (
+export const main: Example = () => (
   <MaskedTestBed
     value="8024442131"
     mask={[
@@ -97,7 +98,7 @@ export const main = () => (
   />
 );
 
-export const a11yTitle = () => (
+export const a11yTitle: Example = () => (
   <MaskedTestBed
     a11yTitle="Dollars"
     mask={MaskedInput.createNumberMask({})}
@@ -105,12 +106,12 @@ export const a11yTitle = () => (
   />
 );
 
-export const disabled = () => <DateInput disabled={true} />;
-export const dropContent = () => <DateInput />;
+export const disabled: Example = () => <DateInput disabled={true} />;
+export const dropContent: Example = () => <DateInput />;
 
-export const widgets = () => <NumberInput />;
+export const widgets: Example = () => <NumberInput />;
 
-export const plain = () => (
+export const plain: Example = () => (
   <MaskedTestBed
     value="8024442131"
     mask={[
@@ -133,7 +134,7 @@ export const plain = () => (
   />
 );
 
-export const focusIndicator = () => (
+export const focusIndicator: Example = () => (
   <MaskedTestBed
     value="8024442131"
     mask={[
@@ -157,7 +158,7 @@ export const focusIndicator = () => (
   />
 );
 
-export const mask = () => (
+export const mask: Example = () => (
   <MaskedTestBed
     placeholder="US phone number with country code"
     mask={[
@@ -181,7 +182,7 @@ export const mask = () => (
     ]}
   />
 );
-export const guide = () => (
+export const guide: Example = () => (
   <MaskedTestBed
     value="8024442131"
     guide={false}
@@ -205,7 +206,7 @@ export const guide = () => (
     focusIndicator={true}
   />
 );
-export const pipe = () => (
+export const pipe: Example = () => (
   <MaskedTestBed
     mask={[
       MaskedInput.alphabetic,
@@ -223,7 +224,7 @@ export const pipe = () => (
     placeholderChar={MaskedInput.placeholderChars.underscore}
   />
 );
-export const placeholderChar = () => (
+export const placeholderChar: Example = () => (
   <MaskedTestBed
     mask={[
       '(',
@@ -245,7 +246,7 @@ export const placeholderChar = () => (
     value="8024442131"
   />
 );
-export const keepCharPositions = () => (
+export const keepCharPositions: Example = () => (
   <MaskedTestBed
     mask={[
       '(',
@@ -267,7 +268,7 @@ export const keepCharPositions = () => (
     value="8024442131"
   />
 );
-export const showMask = () => (
+export const showMask: Example = () => (
   <MaskedTestBed
     mask={[
       '(',
@@ -289,7 +290,7 @@ export const showMask = () => (
     value="8024442131"
   />
 );
-export const placeholder = () => (
+export const placeholder: Example = () => (
   <MaskedTestBed
     mask={[
       '(',
@@ -311,7 +312,7 @@ export const placeholder = () => (
     value="8024442131"
   />
 );
-export const name = () => (
+export const name: Example = () => (
   <MaskedTestBed
     mask={[
       '(',

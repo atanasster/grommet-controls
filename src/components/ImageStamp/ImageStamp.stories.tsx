@@ -1,13 +1,16 @@
 import React from 'react';
-import { ControlTypes } from '@component-controls/core';
+import { ControlTypes, Document, Example } from '@component-controls/core';
 import { ImageStamp } from './ImageStamp';
+import { IImageStampProps } from './ImageStampProps';
 
 export default {
   title: 'controls/ImageStamp',
   component: ImageStamp,
-};
+} as Document;
 
-export const main = props => <ImageStamp {...props} />;
+export const main: Example<IImageStampProps> = props => (
+  <ImageStamp {...props} />
+);
 
 main.controls = {
   src: {
@@ -25,7 +28,7 @@ main.controls = {
     value: 'full',
   },
 };
-export const size = () => (
+export const size: Example = () => (
   <ImageStamp
     src="https://s3.amazonaws.com/uifaces/faces/twitter/gojeanyn/128.jpg"
     size="medium"

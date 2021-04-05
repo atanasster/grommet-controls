@@ -1,14 +1,24 @@
 import React from 'react';
 import { Box, Text } from 'grommet';
-import { Inbox, Send, Flag, Star, Document, Tag, Trash } from 'grommet-icons';
+import { Document, Example } from '@component-controls/core';
+import {
+  Inbox,
+  Send,
+  Flag,
+  Star,
+  Document as DocumentIcon,
+  Tag,
+  Trash,
+} from 'grommet-icons';
 import { VerticalMenu } from './VerticalMenu';
+import { IVerticalMenuProps } from './VerticalMenuProps';
 
 export default {
   title: 'navigation/VerticalMenu',
   component: VerticalMenu,
-};
+} as Document<IVerticalMenuProps>;
 
-export const main = () => (
+export const main: Example = () => (
   <VerticalMenu
     activeItem={{ id: 'c_drive' }}
     items={[
@@ -51,7 +61,7 @@ const Badge = ({ label, background = 'light-3' }) => (
   </Box>
 );
 
-export const items = () => (
+export const items: Example = () => (
   <VerticalMenu
     activeItem={{ id: 'all' }}
     items={[
@@ -110,7 +120,7 @@ export const items = () => (
         id: 'drafts',
         href: '/inbox/drafts',
         label: 'Drafts',
-        icon: <Document />,
+        icon: <DocumentIcon />,
       },
       {
         id: 'tagged',

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmailInput  1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 hmIkGn"
+      >
+        <div
+          class="sc-gsTCUz kLVDRr"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ egNCwu"
+              inputmode="email"
+              type="text"
+              value="john.smith@gmail.co.uk"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

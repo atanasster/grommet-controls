@@ -1,16 +1,19 @@
 import React from 'react';
 import { Grommet, CircleQuestion } from 'grommet-icons';
-import { ControlTypes } from '@component-controls/core';
+import { ControlTypes, Document, Example } from '@component-controls/core';
 import { Notification } from './Notification';
+import { INotificationProps } from './NotificationProps';
 
 export default {
   title: 'controls/Notification',
   component: Notification,
-};
+} as Document;
 
 const onClose = () => console.log('Close clicked');
 
-export const main = props => <Notification {...props} />;
+export const main: Example<INotificationProps> = props => (
+  <Notification {...props} />
+);
 
 main.controls = {
   border: {
@@ -62,13 +65,13 @@ main.controls = {
   onClose: { type: ControlTypes.BUTTON, value: onClose },
 };
 
-export const a11yTitle = () => (
+export const a11yTitle: Example = () => (
   <Notification a11yTitle="Close notification" onClose={onClose} />
 );
-export const status = () => (
+export const status: Example = () => (
   <Notification message="Message heading" status="info" onClose={onClose} />
 );
-export const state = () => (
+export const state: Example = () => (
   <Notification
     message="Message heading"
     state="state note"
@@ -77,7 +80,7 @@ export const state = () => (
     onClose={onClose}
   />
 );
-export const strong = () => (
+export const strong: Example = () => (
   <Notification
     message="Bold message"
     strong={true}
@@ -86,7 +89,7 @@ export const strong = () => (
     onClose={onClose}
   />
 );
-export const icon = () => (
+export const icon: Example = () => (
   <Notification
     message="Custom icon"
     icon={<Grommet />}
@@ -94,7 +97,7 @@ export const icon = () => (
     onClose={onClose}
   />
 );
-export const closer = () => (
+export const closer: Example = () => (
   <Notification
     status="disabled"
     message="Custom closer"
@@ -103,7 +106,7 @@ export const closer = () => (
     onClose={onClose}
   />
 );
-export const percentComplete = () => (
+export const percentComplete: Example = () => (
   <Notification
     status="info"
     message="Task percentage"
@@ -112,7 +115,7 @@ export const percentComplete = () => (
     onClose={onClose}
   />
 );
-export const timestamp = () => (
+export const timestamp: Example = () => (
   <Notification
     message="Time stamp"
     timestamp={new Date('Sun, Aug 30, 2020, 11:14 PM')}
@@ -120,7 +123,7 @@ export const timestamp = () => (
     onClose={onClose}
   />
 );
-export const locale = () => (
+export const locale: Example = () => (
   <Notification
     message="Locale de-DE"
     timestamp={new Date('Sun, Aug 30, 2020, 11:14 PM')}
@@ -129,10 +132,10 @@ export const locale = () => (
     onClose={onClose}
   />
 );
-export const size = () => (
+export const size: Example = () => (
   <Notification message="Large" size="large" onClose={onClose} />
 );
-export const reverse = () => (
+export const reverse: Example = () => (
   <Notification
     message="reversed"
     size="small"

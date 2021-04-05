@@ -1,14 +1,15 @@
 import React from 'react';
 import { Box, Button } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { ColorInputField } from './ColorInputField';
 import { Form, validators, uiColors } from '../../index';
 
 export default {
   title: 'validation/ColorInputField',
   component: ColorInputField,
-};
+} as Document;
 
-export const main = () => (
+export const main: Example = () => (
   <Form
     onSubmit={() => console.log('onSubmit')}
     pad={{ horizontal: 'small' }}
@@ -26,7 +27,7 @@ export const main = () => (
   </Form>
 );
 
-export const inField = () => (
+export const inField: Example = () => (
   <Form
     onSubmit={() => console.log('onSubmit')}
     pad={{ horizontal: 'small' }}

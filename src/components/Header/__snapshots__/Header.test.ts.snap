@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header  1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dvrejE"
+    >
+      <header
+        class="StyledBox-sc-13pk1d4-0 kIVmWO sc-bdfBwQ dpQdIw"
+      >
+        <svg
+          aria-label="Grommet"
+          class="StyledIcon-ofa7kd-0 dcacLZ"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12,2 C6.485,2 2,6.485 2,12 C2,17.515 6.485,22 12,22 C17.515,22 22,17.515 22,12 C22,6.485 17.515,2 12,2 Z"
+            fill="none"
+            stroke="#865CD6"
+            stroke-width="4"
+          />
+        </svg>
+        <h2
+          class="StyledHeading-sc-1rdh4aw-0 frzykv"
+        >
+          app title
+        </h2>
+      </header>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+      />
+      <img
+        class="StyledImage-ey4zx9-0 iBeQsm"
+        src="https://picsum.photos/350/120/?image=662"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Header  2`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dvrejE"
+    >
+      <header
+        class="StyledBox-sc-13pk1d4-0 fwSbDn sc-bdfBwQ dpQdIw"
+      >
+        <svg
+          aria-label="Grommet"
+          class="StyledIcon-ofa7kd-0 dcacLZ"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12,2 C6.485,2 2,6.485 2,12 C2,17.515 6.485,22 12,22 C17.515,22 22,17.515 22,12 C22,6.485 17.515,2 12,2 Z"
+            fill="none"
+            stroke="#865CD6"
+            stroke-width="4"
+          />
+        </svg>
+        <h2
+          class="StyledHeading-sc-1rdh4aw-0 frzykv"
+        >
+          app title
+        </h2>
+      </header>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+      />
+      <img
+        class="StyledImage-ey4zx9-0 iBeQsm"
+        src="https://picsum.photos/350/120/?image=662"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Header  3`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dvrejE"
+    >
+      <header
+        class="StyledBox-sc-13pk1d4-0 kIVmWO sc-bdfBwQ gFyDeM"
+      >
+        <svg
+          aria-label="Grommet"
+          class="StyledIcon-ofa7kd-0 dcacLZ"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12,2 C6.485,2 2,6.485 2,12 C2,17.515 6.485,22 12,22 C17.515,22 22,17.515 22,12 C22,6.485 17.515,2 12,2 Z"
+            fill="none"
+            stroke="#865CD6"
+            stroke-width="4"
+          />
+        </svg>
+        <h2
+          class="StyledHeading-sc-1rdh4aw-0 frzykv"
+        >
+          app title
+        </h2>
+      </header>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+      />
+      <img
+        class="StyledImage-ey4zx9-0 iBeQsm"
+        src="https://picsum.photos/350/120/?image=662"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

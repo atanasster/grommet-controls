@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BarChart  1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <canvas
+      class="chartjs-render-monitor"
+      height="0"
+      style="display: block;"
+      width="0"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BarChart  2`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <canvas
+      class="chartjs-render-monitor"
+      height="0"
+      style="display: block;"
+      width="0"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BarChart  3`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <canvas
+      class="chartjs-render-monitor"
+      height="0"
+      style="display: block;"
+      width="0"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BarChart  4`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <canvas
+      class="chartjs-render-monitor"
+      height="0"
+      style="display: block;"
+      width="0"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BarChart  5`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <canvas
+      class="chartjs-render-monitor"
+      height="0"
+      style="display: block;"
+      width="0"
+    />
+  </div>
+</DocumentFragment>
+`;

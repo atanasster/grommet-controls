@@ -1,13 +1,14 @@
 import React from 'react';
+import { Document, Example } from '@component-controls/core';
 import { PieChart } from './PieChart';
 import { rndDatasets } from '../data/data';
 
 export default {
   title: 'chartjs/PieChart',
   component: PieChart,
-};
+} as Document;
 
-export const main = () => (
+export const main: Example = () => (
   <PieChart
     data={{
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -27,7 +28,7 @@ export const main = () => (
   />
 );
 
-export const themedData = () => (
+export const themedData: Example = () => (
   <PieChart
     data={rndDatasets(1)}
     options={{

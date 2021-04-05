@@ -1,14 +1,15 @@
 import React from 'react';
 import { Box } from 'grommet';
-import { ControlTypes } from '@component-controls/core';
+import { ControlTypes, Document, Example } from '@component-controls/core';
 import { Spinning } from './Spinning';
+import { ISpinningProps } from './SpinningProps';
 
 export default {
   title: 'controls/Spinning',
   component: Spinning,
-};
+} as Document;
 
-export const main = props => <Spinning {...props} />;
+export const main: Example<ISpinningProps> = props => <Spinning {...props} />;
 
 main.controls = {
   kind: {
@@ -37,7 +38,7 @@ main.controls = {
   },
 };
 
-export const kind = () => (
+export const kind: Example = () => (
   <Box gap="medium">
     <Spinning kind="circle" />
     <Spinning kind="pulse" />
@@ -51,7 +52,7 @@ export const kind = () => (
     <Spinning kind="rotating-plane" />
   </Box>
 );
-export const color = () => (
+export const color: Example = () => (
   <Box gap="medium">
     <Spinning kind="circle" color="brand" />
     <Spinning kind="pulse" color="accent-1" />
@@ -65,7 +66,7 @@ export const color = () => (
     <Spinning kind="rotating-plane" />
   </Box>
 );
-export const size = () => (
+export const size: Example = () => (
   <Box gap="medium">
     <Spinning kind="circle" color="brand" size="xsmall" />
     <Spinning kind="pulse" color="accent-1" size="small" />

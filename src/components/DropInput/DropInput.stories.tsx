@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Calendar } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { Calendar as CalendarIcon, Add, Subtract } from 'grommet-icons';
 import { DropInput } from './DropInput';
 import { smallDate } from '../../utils/moment';
@@ -7,7 +8,7 @@ import { smallDate } from '../../utils/moment';
 export default {
   title: 'input/DropInput',
   component: DropInput,
-};
+} as Document;
 
 const DateInput = props => {
   const [date, setDate] = React.useState(smallDate(new Date('08/30/2020')));
@@ -67,10 +68,10 @@ const DropInputTest = props => {
   );
 };
 
-export const main = () => <DateInput />;
-export const a11yTitle = () => <DateInput a11yTitle="Birthdy date" />;
-export const disabled = () => <DateInput disabled={true} />;
-export const dropContent = () => (
+export const main: Example = () => <DateInput />;
+export const a11yTitle: Example = () => <DateInput a11yTitle="Birthdy date" />;
+export const disabled: Example = () => <DateInput disabled={true} />;
+export const dropContent: Example = () => (
   <DropInputTest
     a11yDropTitle="Open calendar"
     dropContent={
@@ -81,18 +82,24 @@ export const dropContent = () => (
     defaultValue={smallDate(new Date('08/30/2020'))}
   />
 );
-export const dropIcon = () => <DateInput dropIcon={<CalendarIcon />} />;
-export const widgets = () => <NumberInput />;
+export const dropIcon: Example = () => (
+  <DateInput dropIcon={<CalendarIcon />} />
+);
+export const widgets: Example = () => <NumberInput />;
 
-export const plain = () => (
+export const plain: Example = () => (
   <DropInputTest plain={true} defaultValue="Plain no focus" />
 );
-export const focusIndicator = () => (
+export const focusIndicator: Example = () => (
   <DropInputTest
     plain={true}
     focusIndicator={true}
     defaultValue="Plain with focus"
   />
 );
-export const placeholder = () => <DropInputTest placeholder="Enter phone..." />;
-export const name = () => <DropInputTest id="date-id" name="date-name" />;
+export const placeholder: Example = () => (
+  <DropInputTest placeholder="Enter phone..." />
+);
+export const name: Example = () => (
+  <DropInputTest id="date-id" name="date-name" />
+);

@@ -1,13 +1,14 @@
 import React from 'react';
 import { Box, Text } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { Sidebar } from './Sidebar';
 
 export default {
   title: 'layout/Sidebar',
   component: Sidebar,
-};
+} as Document;
 
-export const main = () => (
+export const main: Example = () => (
   <Box align="center">
     <Sidebar
       title="My title"
@@ -20,7 +21,7 @@ export const main = () => (
   </Box>
 );
 
-export const collapsible = () => (
+export const collapsible: Example = () => (
   <Sidebar
     title="title"
     border={{ size: 'small' }}
@@ -32,13 +33,13 @@ export const collapsible = () => (
   </Sidebar>
 );
 
-export const title = () => (
+export const title: Example = () => (
   <Sidebar title="title" border={{ size: 'small' }} width="small" basis="small">
     <Text>Side item</Text>
   </Sidebar>
 );
 
-export const width = () => (
+export const width: Example = () => (
   <Sidebar
     title="title"
     border={{ size: 'small' }}

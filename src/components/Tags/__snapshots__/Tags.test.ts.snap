@@ -1,0 +1,917 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tags  1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          style="min-width: auto;"
+          tabindex="0"
+        >
+          <div
+            aria-checked="true"
+            aria-label="Remove small"
+            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              small
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+          />
+          <div
+            aria-checked="true"
+            aria-label="Remove large"
+            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              large
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 hmOcFG"
+          type="button"
+        >
+          Reset tags
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tags  2`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          aria-label="Grommet tags"
+          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          style="min-width: auto;"
+          tabindex="0"
+        >
+          <div
+            aria-checked="true"
+            aria-label="Remove small"
+            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              small
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+          />
+          <div
+            aria-checked="true"
+            aria-label="Remove large"
+            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              large
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 hmOcFG"
+          type="button"
+        >
+          Reset tags
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tags  3`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 gjyxzG"
+      style="min-width: auto;"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 kOKFMN"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 iZFCLM"
+          type="button"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 iQEJEP"
+          >
+            <svg
+              aria-label="Trash"
+              class="StyledIcon-ofa7kd-0 dEeaTZ"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4,5 L20,5 L20,23 L4,23 L4,5 Z M1,5 L23,5 M9,1 L15,1 L15,5 L9,5 L9,1 Z M9,1 L15,1 L15,5 L9,5 L9,1 Z M15,9 L15,19 M9,9 L9,19"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 hjorfk"
+            />
+            small
+          </div>
+        </button>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 kOKFMN"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 iZFCLM"
+          type="button"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 iQEJEP"
+          >
+            <svg
+              aria-label="Trash"
+              class="StyledIcon-ofa7kd-0 dEeaTZ"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4,5 L20,5 L20,23 L4,23 L4,5 Z M1,5 L23,5 M9,1 L15,1 L15,5 L9,5 L9,1 Z M9,1 L15,1 L15,5 L9,5 L9,1 Z M15,9 L15,19 M9,9 L9,19"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 hjorfk"
+            />
+            large
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tags  4`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          style="min-width: auto;"
+          tabindex="0"
+        >
+          <div
+            aria-checked="true"
+            aria-label="Remove small"
+            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              small
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormSubtract"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6,12 L18,12"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+          />
+          <div
+            aria-checked="true"
+            aria-label="Remove large"
+            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              large
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormSubtract"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6,12 L18,12"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 hmOcFG"
+          type="button"
+        >
+          Reset tags
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tags  5`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 jIdbuX"
+          style="min-width: auto;"
+          tabindex="0"
+        >
+          <div
+            aria-checked="true"
+            aria-label="Remove small"
+            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              small
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ZUJgG"
+          />
+          <div
+            aria-checked="true"
+            aria-label="Remove large"
+            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              large
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 hmOcFG"
+          type="button"
+        >
+          Reset tags
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tags  6`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          style="min-width: auto;"
+          tabindex="0"
+        >
+          <div
+            aria-checked="true"
+            aria-label="Remove small"
+            class="StyledBox-sc-13pk1d4-0 GqsLr sc-gsTCUz NdQrj"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 eLOxHb"
+            >
+              small
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dcacLZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+          />
+          <div
+            aria-checked="true"
+            aria-label="Remove large"
+            class="StyledBox-sc-13pk1d4-0 GqsLr sc-gsTCUz NdQrj"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 eLOxHb"
+            >
+              large
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dcacLZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 hmOcFG"
+          type="button"
+        >
+          Reset tags
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tags  7`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          style="min-width: auto;"
+          tabindex="0"
+        >
+          <div
+            aria-checked="true"
+            aria-label="Remove small"
+            class="StyledBox-sc-13pk1d4-0 kzEtYJ sc-gsTCUz ezoxjl"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              small
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+          />
+          <div
+            aria-checked="true"
+            aria-label="Remove large"
+            class="StyledBox-sc-13pk1d4-0 kzEtYJ sc-gsTCUz ezoxjl"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              large
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 hmOcFG"
+          type="button"
+        >
+          Reset tags
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tags  8`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          style="min-width: auto;"
+        >
+          <div
+            aria-checked="true"
+            aria-label="Remove small"
+            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              small
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+          />
+          <div
+            aria-checked="true"
+            aria-label="Remove large"
+            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              large
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 hmOcFG"
+          type="button"
+        >
+          Reset tags
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tags  9`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          style="min-width: auto;"
+          tabindex="0"
+        >
+          <div
+            aria-checked="true"
+            aria-label="Remove small"
+            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              small
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+          />
+          <div
+            aria-checked="true"
+            aria-label="Remove large"
+            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              large
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 hmOcFG"
+          type="button"
+        >
+          Reset tags
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tags  10`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 dYebPD"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          style="min-width: auto;"
+          tabindex="0"
+        >
+          <div
+            aria-checked="true"
+            aria-label="Remove tag"
+            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 DkZvS"
+            >
+              tag
+            </span>
+            <span
+              class="sc-bdfBwQ heWKPD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 hmOcFG"
+          type="button"
+        >
+          Reset tags
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

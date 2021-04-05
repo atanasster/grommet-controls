@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Text } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { LineChart } from './LineChart';
 import { colorFromIndex } from '../../utils';
 import {
@@ -16,9 +17,9 @@ import { ChartjsPointStyleType } from '../withChartTheme/withChartThemeProps';
 export default {
   title: 'chartjs/LineChart',
   component: LineChart,
-};
+} as Document;
 
-export const main = () => (
+export const main: Example = () => (
   <LineChart
     data={{
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -38,7 +39,7 @@ export const main = () => (
   />
 );
 
-export const title = () => (
+export const title: Example = () => (
   <LineChart
     data={rndDatasets(2, { fill: false })}
     options={{
@@ -50,7 +51,7 @@ export const title = () => (
   />
 );
 
-export const multiAxis = () => (
+export const multiAxis: Example = () => (
   <LineChart
     data={rndDatasets(2, [
       { yAxisID: 'y-axis-0', fill: false },
@@ -85,19 +86,19 @@ export const multiAxis = () => (
   />
 );
 
-export const steppedTrue = () => (
+export const steppedTrue: Example = () => (
   <LineChart data={rndDatasets(1, { steppedLine: true, fill: false })} />
 );
 
-export const steppedBefore = () => (
+export const steppedBefore: Example = () => (
   <LineChart data={rndDatasets(1, { steppedLine: 'before', fill: false })} />
 );
 
-export const steppedAfter = () => (
+export const steppedAfter: Example = () => (
   <LineChart data={rndDatasets(1, { steppedLine: 'after', fill: false })} />
 );
 
-export const lineStyle = () => (
+export const lineStyle: Example = () => (
   <LineChart
     data={rndDatasets(3, [
       { label: 'Unfilled', fill: false },
@@ -107,7 +108,7 @@ export const lineStyle = () => (
   />
 );
 
-export const pointStyle = () => (
+export const pointStyle: Example = () => (
   <Box fill="horizontal" gap="medium">
     {[
       'circle',
@@ -148,7 +149,7 @@ export const pointStyle = () => (
   </Box>
 );
 
-export const pointSizes = () => (
+export const pointSizes: Example = () => (
   <LineChart
     data={rndDatasets(3, [
       {
@@ -181,7 +182,7 @@ export const pointSizes = () => (
   />
 );
 
-export const areaFill = () => (
+export const areaFill: Example = () => (
   <Box fill="horizontal" gap="medium">
     {[false, 'origin', 'start', 'end'].map((boundary, i) => (
       <Box key={`line_area_fill_${boundary}`}>
@@ -220,7 +221,7 @@ export const areaFill = () => (
   </Box>
 );
 
-export const areaStacked = () => (
+export const areaStacked: Example = () => (
   <LineChart
     data={rndDatasets(3, { opacity: 0.9 })}
     options={{
@@ -253,7 +254,7 @@ export const areaStacked = () => (
   />
 );
 
-export const mixedScatterLine = () => (
+export const mixedScatterLine: Example = () => (
   <LineChart
     data={rndDatasets2d(2, [{ showLine: false, fill: false }, { fill: false }])}
     options={{
@@ -265,7 +266,7 @@ export const mixedScatterLine = () => (
   />
 );
 
-export const linearScaleStepSize = () => (
+export const linearScaleStepSize: Example = () => (
   <LineChart
     data={rndDatasets(2, { fill: false }, true)}
     options={{
@@ -306,7 +307,7 @@ export const linearScaleStepSize = () => (
   />
 );
 
-export const linearScaleSuggestedMinMax = () => (
+export const linearScaleSuggestedMinMax: Example = () => (
   <LineChart
     data={rndDatasets(2, { fill: false }, true)}
     options={{
@@ -326,7 +327,7 @@ export const linearScaleSuggestedMinMax = () => (
   />
 );
 
-export const logarithmicScale = () => (
+export const logarithmicScale: Example = () => (
   <LineChart
     data={rndDatasets(2, { fill: false }, true)}
     options={{
@@ -347,7 +348,7 @@ export const logarithmicScale = () => (
   />
 );
 
-export const timeScale = () => (
+export const timeScale: Example = () => (
   <LineChart
     data={{
       labels: [
@@ -427,7 +428,7 @@ export const timeScale = () => (
   />
 );
 
-export const timeSeries = () => (
+export const timeSeries: Example = () => (
   <LineChart
     data={{
       datasets: [

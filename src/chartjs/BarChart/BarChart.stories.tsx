@@ -1,13 +1,14 @@
 import React from 'react';
+import { Document, Example } from '@component-controls/core';
 import { BarChart } from './BarChart';
 import { rndDatasets } from '../data/data';
 
 export default {
   title: 'chartjs/BarChart',
   component: BarChart,
-};
+} as Document;
 
-export const main = () => (
+export const main: Example = () => (
   <BarChart
     data={{
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -27,7 +28,7 @@ export const main = () => (
   />
 );
 
-export const multiAxis = () => (
+export const multiAxis: Example = () => (
   <BarChart
     data={rndDatasets(2, [{ yAxisID: 'y-axis-0' }, { yAxisID: 'y-axis-1' }])}
     options={{
@@ -58,7 +59,7 @@ export const multiAxis = () => (
   />
 );
 
-export const stacked = () => (
+export const stacked: Example = () => (
   <BarChart
     data={rndDatasets(3)}
     options={{
@@ -82,7 +83,7 @@ export const stacked = () => (
   />
 );
 
-export const stackedGroup = () => (
+export const stackedGroup: Example = () => (
   <BarChart
     data={rndDatasets(3, [
       { stack: 'stack-1' },
@@ -110,7 +111,7 @@ export const stackedGroup = () => (
   />
 );
 
-export const mixedLine = () => (
+export const mixedLine: Example = () => (
   <BarChart
     data={rndDatasets(2, [{ type: 'line', fill: false }, { type: 'bar' }])}
   />

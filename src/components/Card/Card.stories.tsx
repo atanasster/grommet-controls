@@ -1,14 +1,24 @@
 import React from 'react';
-import { Box, Button, Heading, Image, Text } from 'grommet';
+import {
+  Box,
+  BoxProps,
+  Button,
+  Heading,
+  HeadingProps,
+  Image,
+  ImageProps,
+  Text,
+} from 'grommet';
 import { Add, Bitcoin, Edit } from 'grommet-icons';
-import { ControlTypes } from '@component-controls/core';
+import { ControlTypes, Document, Example } from '@component-controls/core';
 import { Card } from './Card';
 import { ImageStamp } from '../ImageStamp';
+import { IImageStampProps } from '../ImageStamp';
 
 export default {
   title: 'controls/Card',
   component: Card,
-};
+} as Document;
 
 const actions = [
   {
@@ -22,7 +32,13 @@ const actions = [
     onClick: () => {},
   },
 ];
-export const main = ({
+export const main: Example<BoxProps &
+  HeadingProps &
+  ImageProps & {
+    title: string;
+    image: string;
+    imageStamp: IImageStampProps;
+  }> = ({
   border,
   align,
   direction,
@@ -69,7 +85,7 @@ export const main = ({
 
 main.controls = {
   border: {
-    type: 'object',
+    type: ControlTypes.OBJECT,
     value: {
       color: {
         type: ControlTypes.COLOR,
@@ -179,7 +195,7 @@ main.controls = {
     groupId: 'Content',
   },
 };
-export const animation = () => (
+export const animation: Example = () => (
   <Card
     animation={{
       type: 'zoomIn',
@@ -197,13 +213,13 @@ export const animation = () => (
     </Card.CardContent>
   </Card>
 );
-export const background = () => (
+export const background: Example = () => (
   <Card background="accent-1">
     <Card.CardTitle border="bottom">Card</Card.CardTitle>
     <Card.CardContent basis="small">Card content</Card.CardContent>
   </Card>
 );
-export const border = () => (
+export const border: Example = () => (
   <Card
     border={{
       color: 'brand',
@@ -214,25 +230,25 @@ export const border = () => (
     <Card.CardContent basis="small">Card content</Card.CardContent>
   </Card>
 );
-export const elevation = () => (
+export const elevation: Example = () => (
   <Card elevation="large">
     <Card.CardTitle border="bottom">Card</Card.CardTitle>
     <Card.CardContent basis="small">Card content</Card.CardContent>
   </Card>
 );
-export const gap = () => (
+export const gap: Example = () => (
   <Card gap="medium">
     <Card.CardTitle border="bottom">Card</Card.CardTitle>
     <Card.CardContent basis="small">Card content</Card.CardContent>
   </Card>
 );
-export const pad = () => (
+export const pad: Example = () => (
   <Card pad="medium">
     <Card.CardTitle border="bottom">Card</Card.CardTitle>
     <Card.CardContent basis="small">Card content</Card.CardContent>
   </Card>
 );
-export const round = () => (
+export const round: Example = () => (
   <Card round="medium" pad="small">
     <Card.CardTitle border="bottom">Card</Card.CardTitle>
     <Card.CardContent basis="small">Card content</Card.CardContent>

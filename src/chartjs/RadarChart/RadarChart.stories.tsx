@@ -1,13 +1,14 @@
 import React from 'react';
+import { Document, Example } from '@component-controls/core';
 import { RadarChart } from './RadarChart';
 import { rndDatasets } from '../data/data';
 
 export default {
   title: 'chartjs/RadarChart',
   component: RadarChart,
-};
+} as Document;
 
-export const main = () => (
+export const main: Example = () => (
   <RadarChart
     data={{
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -29,7 +30,7 @@ export const main = () => (
   />
 );
 
-export const options = () => (
+export const options: Example = () => (
   <RadarChart
     data={rndDatasets(2, { opacity: 0.2 }, true)}
     options={{
@@ -42,7 +43,7 @@ export const options = () => (
   />
 );
 
-export const lineTenstion = () => (
+export const lineTenstion: Example = () => (
   <RadarChart
     data={rndDatasets(
       5,

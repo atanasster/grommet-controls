@@ -1,14 +1,15 @@
 import React from 'react';
 import { Box } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { AddCircle, SubtractCircle } from 'grommet-icons';
 import { NumberInput } from './NumberInput';
 
 export default {
   title: 'input/NumberInput',
   component: NumberInput,
-};
+} as Document;
 
-export const main = () => {
+export const main: Example = () => {
   const [number, setNumber] = React.useState('12000.34');
   return (
     <Box direction="row">
@@ -54,7 +55,7 @@ const FloatInput = props => {
     </Box>
   );
 };
-export const a11yIncrement = () => (
+export const a11yIncrement: Example = () => (
   <IntegerInput
     a11yIncrement="Add to entry"
     step={10}
@@ -63,28 +64,28 @@ export const a11yIncrement = () => (
   />
 );
 
-export const min = () => <IntegerInput min={5} />;
-export const max = () => <IntegerInput max={5} />;
-export const step = () => <IntegerInput step={10} />;
-export const disabled = () => <IntegerInput disabled={true} />;
-export const addIcon = () => (
+export const min: Example = () => <IntegerInput min={5} />;
+export const max: Example = () => <IntegerInput max={5} />;
+export const step: Example = () => <IntegerInput step={10} />;
+export const disabled: Example = () => <IntegerInput disabled={true} />;
+export const addIcon: Example = () => (
   <IntegerInput addIcon={<AddCircle />} subtractIcon={<SubtractCircle />} />
 );
-export const prefix = () => <IntegerInput prefix="$" />;
-export const suffix = () => <IntegerInput suffix=" USD" />;
-export const thousandsSeparatorSymbol = () => (
+export const prefix: Example = () => <IntegerInput prefix="$" />;
+export const suffix: Example = () => <IntegerInput suffix=" USD" />;
+export const thousandsSeparatorSymbol: Example = () => (
   <FloatInput
     thousandsSeparatorSymbol=" "
     decimalSymbol=","
     updateToString={true}
   />
 );
-export const decimalSymbol = () => (
+export const decimalSymbol: Example = () => (
   <FloatInput
     thousandsSeparatorSymbol=""
     decimalSymbol=","
     updateToString={true}
   />
 );
-export const decimals = () => <FloatInput decimals={4} />;
-export const integers = () => <IntegerInput integers={4} />;
+export const decimals: Example = () => <FloatInput decimals={4} />;
+export const integers: Example = () => <IntegerInput integers={4} />;

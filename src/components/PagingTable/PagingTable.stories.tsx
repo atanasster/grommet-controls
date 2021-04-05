@@ -1,12 +1,13 @@
 import React from 'react';
 import { Box, Text, Image, CheckBox, Select } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { Add, Subtract } from 'grommet-icons';
 import { PagingTable, IPagingTableColumn, IDataObject } from './index';
 
 export default {
   title: 'controls/PagingTable',
   component: PagingTable,
-};
+} as Document;
 
 const getAllColumns = columns => {
   let allColumns = [];
@@ -307,9 +308,9 @@ class TableExample extends React.Component {
   }
 }
 
-export const main = () => <TableExample />;
+export const main: Example = () => <TableExample />;
 
-export const simple = () => (
+export const simple: Example = () => (
   <PagingTable
     columns={[
       {

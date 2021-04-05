@@ -1,12 +1,13 @@
 import React from 'react';
 import { Box } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { ColorInput } from './ColorInput';
 import { materialColors, uiColors } from '../../index';
 
 export default {
   title: 'input/ColorInput',
   component: ColorInput,
-};
+} as Document;
 
 const ColorTestBed = ({ color, ...rest }) => {
   const [stateColor, setColor] = React.useState(color);
@@ -23,9 +24,9 @@ const ColorTestBed = ({ color, ...rest }) => {
   );
 };
 
-export const main = () => (
+export const main: Example = () => (
   <ColorTestBed colors={materialColors} color="#000000" />
 );
-export const colors = () => (
+export const colors: Example = () => (
   <ColorTestBed color="#ff0000" columns={9} wrap={true} colors={uiColors} />
 );

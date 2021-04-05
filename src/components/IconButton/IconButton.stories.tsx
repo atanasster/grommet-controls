@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { MouseEventHandler } from 'react';
 import * as Icons from 'grommet-icons';
-import { ControlTypes } from '@component-controls/core';
+import { ControlTypes, Document, Example } from '@component-controls/core';
 import { IconButton } from './IconButton';
 
 export default {
   title: 'controls/IconButton',
   component: IconButton,
-};
+} as Document;
 
-export const main = ({ icon, onClick }) => {
+export const main: Example<{
+  icon: string;
+  onClick: MouseEventHandler<HTMLButtonElement>;
+}> = ({ icon, onClick }) => {
   const Icon = Icons[icon];
   return <IconButton icon={<Icon />} onClick={onClick} />;
 };

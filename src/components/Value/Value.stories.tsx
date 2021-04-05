@@ -1,14 +1,15 @@
 import React from 'react';
 import { Box, Text } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { Down } from 'grommet-icons';
 import { Value } from './Value';
 
 export default {
   title: 'controls/Value',
   component: Value,
-};
+} as Document;
 
-export const main = props => (
+export const main: Example = props => (
   <Box direction="row">
     <Box basis="small">
       <Value {...props} />
@@ -20,8 +21,10 @@ main.controls = {
   label: 'last quarter sales',
 };
 
-export const label = () => <Value value="30%" label="a descriptive label" />;
-export const value = () => (
+export const label: Example = () => (
+  <Value value="30%" label="a descriptive label" />
+);
+export const value: Example = () => (
   <Value
     value={
       <Box direction="row" align="center" gap="xsmall">
@@ -34,10 +37,10 @@ export const value = () => (
     label="custom value"
   />
 );
-export const color = () => (
+export const color: Example = () => (
   <Value label="status-ok" value="30%" color="status-ok" />
 );
-export const weight = () => (
+export const weight: Example = () => (
   <Box direction="row">
     <Box basis="small" gap="small">
       <Value weight="normal" value="30%" label="normal" />
@@ -46,7 +49,7 @@ export const weight = () => (
     </Box>
   </Box>
 );
-export const size = () => (
+export const size: Example = () => (
   <Box direction="row">
     <Box basis="small" gap="small">
       <Value size="xsmall" value="30%" label="xsmall" />

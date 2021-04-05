@@ -1,12 +1,13 @@
 import React from 'react';
 import { Box } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { DateInput } from './DateInput';
 import { smallDate } from '../../utils/moment';
 
 export default {
   title: 'input/DateInput',
   component: DateInput,
-};
+} as Document;
 
 const DateTestBed = ({ value, ...rest }) => {
   const [stateValue, setValue] = React.useState(value);
@@ -23,17 +24,17 @@ const DateTestBed = ({ value, ...rest }) => {
   );
 };
 
-export const main = () => (
+export const main: Example = () => (
   <DateTestBed value={smallDate(new Date('08/30/2020'))} />
 );
-export const autocorrect = () => (
+export const autocorrect: Example = () => (
   <DateTestBed value={smallDate(new Date('08/30/2020'))} autocorrect={true} />
 );
 
-export const disabled = () => (
+export const disabled: Example = () => (
   <DateTestBed value={smallDate(new Date('08/30/2020'))} disabled={true} />
 );
-export const bounds = () => (
+export const bounds: Example = () => (
   <DateTestBed
     value={smallDate(new Date('08/30/2020'))}
     bounds={[
@@ -42,7 +43,7 @@ export const bounds = () => (
     ]}
   />
 );
-export const disabledDates = () => (
+export const disabledDates: Example = () => (
   <DateTestBed
     value={smallDate(new Date('08/30/2020'))}
     disabledDates={[
@@ -53,12 +54,12 @@ export const disabledDates = () => (
     ]}
   />
 );
-export const firstDayOfWeek = () => (
+export const firstDayOfWeek: Example = () => (
   <DateTestBed value={smallDate(new Date('08/30/2020'))} firstDayOfWeek={1} />
 );
-export const locale = () => (
+export const locale: Example = () => (
   <DateTestBed value={smallDate(new Date('08/30/2020'))} locale="de-DE" />
 );
-export const size = () => (
+export const size: Example = () => (
   <DateTestBed value={smallDate(new Date('08/30/2020'))} size="medium" />
 );

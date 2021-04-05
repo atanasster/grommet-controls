@@ -1,15 +1,15 @@
 import React from 'react';
 import { Box, Button, Text } from 'grommet';
-
+import { Document, Example } from '@component-controls/core';
 import { CheckBoxField } from './CheckBoxField';
 import { Form, validators } from '../../index';
 
 export default {
   title: 'validation/CheckBoxField',
   component: CheckBoxField,
-};
+} as Document;
 
-export const main = () => (
+export const main: Example = () => (
   <Form
     onSubmit={() => console.log('onSubmit')}
     pad={{ horizontal: 'small' }}
@@ -29,7 +29,7 @@ export const main = () => (
   </Form>
 );
 
-export const controlLabel = () => (
+export const controlLabel: Example = () => (
   <Form
     onSubmit={() => console.log('onSubmit')}
     pad={{ horizontal: 'small' }}
@@ -50,7 +50,7 @@ export const controlLabel = () => (
   </Form>
 );
 
-export const inField = () => (
+export const inField: Example = () => (
   <Form
     onSubmit={() => console.log('onSubmit')}
     pad={{ horizontal: 'small' }}

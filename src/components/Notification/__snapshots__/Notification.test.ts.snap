@@ -1,0 +1,941 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notification  1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 iUQvOL"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 cfrbFm"
+      >
+        <h3
+          class="StyledHeading-sc-1rdh4aw-0 bNWmvQ"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 dfYOnT"
+          >
+            <svg
+              aria-label="StatusGood"
+              class="StyledIcon-ofa7kd-0 blPEoF"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M7,12 L11,15 L16,8"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+            />
+            <strong>
+              Message heading
+            </strong>
+          </div>
+        </h3>
+        <span
+          class="StyledText-sc-1sadyjn-0 gOVGlS"
+        >
+          state label
+        </span>
+        <span
+          class="StyledText-sc-1sadyjn-0 gOVGlS"
+        >
+          Sun, Aug 30, 2020, 11:14 PM
+        </span>
+        <div
+          class="StyledBox-sc-13pk1d4-0 dfYOnT"
+          style="white-space: nowrap;"
+        >
+          <svg
+            class="StyledMeter-nsxarx-0 lbkssj"
+            height="12"
+            preserveAspectRatio="none"
+            viewBox="0 0 192 12"
+            width="192"
+          >
+            <path
+              d="M 0,6 L 192,6"
+              fill="none"
+              stroke="#F2F2F2"
+              stroke-linecap="square"
+              stroke-opacity="0.4"
+              stroke-width="12"
+            />
+            <path
+              d="M 0,6 L 57.6,6"
+              fill="none"
+              stroke="#6FFFB0"
+              stroke-linecap="butt"
+              stroke-width="12"
+            />
+          </svg>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ffHQai"
+          />
+          <span
+            class="StyledText-sc-1sadyjn-0 gOVGlS"
+          >
+             30 %
+          </span>
+        </div>
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 jsieLm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 ebqXLG"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 blPEoF"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification  2`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 fgmBmm"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 cfrbFm"
+      >
+        <h3
+          class="StyledHeading-sc-1rdh4aw-0 bNWmvQ"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 dfYOnT"
+          >
+            <svg
+              aria-label="StatusInfo"
+              class="StyledIcon-ofa7kd-0 blPEoF"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M12,10 L12,18 M12,6 L12,8"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+            />
+            Notification...
+          </div>
+        </h3>
+        <span
+          class="StyledText-sc-1sadyjn-0 gOVGlS"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 gOVGlS"
+        />
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 jsieLm"
+      >
+        <button
+          aria-label="Close notification"
+          class="StyledButton-sc-323bzc-0 ebqXLG"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 blPEoF"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification  3`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 fgmBmm"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 cfrbFm"
+      >
+        <h3
+          class="StyledHeading-sc-1rdh4aw-0 bNWmvQ"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 dfYOnT"
+          >
+            <svg
+              aria-label="StatusInfo"
+              class="StyledIcon-ofa7kd-0 blPEoF"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M12,10 L12,18 M12,6 L12,8"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+            />
+            Message heading
+          </div>
+        </h3>
+        <span
+          class="StyledText-sc-1sadyjn-0 gOVGlS"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 gOVGlS"
+        />
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 jsieLm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 ebqXLG"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 blPEoF"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification  4`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 kzhinp"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 cfrbFm"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 bpyjiZ"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 dfYOnT"
+          >
+            <svg
+              aria-label="StatusWarning"
+              class="StyledIcon-ofa7kd-0 gHiRbt"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,3 L22,21 L2,21 L12,3 Z M12,9 L12,15 M12,16 L12,18"
+                fill="none"
+                stroke="#000"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+            />
+            Message heading
+          </div>
+        </h4>
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        >
+          state note
+        </span>
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        />
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 jsieLm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 ebqXLG"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 gHiRbt"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification  5`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 gSIBTv"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 cfrbFm"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 bpyjiZ"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 dfYOnT"
+          >
+            <svg
+              aria-label="StatusCritical"
+              class="StyledIcon-ofa7kd-0 jiVxMp"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12.7031806,2.70318058 C12.3148247,2.31482467 11.6897542,2.31024575 11.2968194,2.70318058 L2.70318058,11.2968194 C2.31482467,11.6851753 2.31024575,12.3102458 2.70318058,12.7031806 L11.2968194,21.2968194 C11.6851753,21.6851753 12.3102458,21.6897542 12.7031806,21.2968194 L21.2968194,12.7031806 C21.6851753,12.3148247 21.6897542,11.6897542 21.2968194,11.2968194 L12.7031806,2.70318058 Z M8.98264552,14.7001725 L14.7001725,8.98264552 M8.98264552,8.98264552 L14.7001725,14.7001725"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+            />
+            <strong>
+              Bold message
+            </strong>
+          </div>
+        </h4>
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        />
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 jsieLm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 ebqXLG"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 jiVxMp"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification  6`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 fgmBmm"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 cfrbFm"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 bpyjiZ"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 dfYOnT"
+          >
+            <svg
+              aria-label="Grommet"
+              class="StyledIcon-ofa7kd-0 dEeaTZ"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,2 C6.485,2 2,6.485 2,12 C2,17.515 6.485,22 12,22 C17.515,22 22,17.515 22,12 C22,6.485 17.515,2 12,2 Z"
+                fill="none"
+                stroke="#865CD6"
+                stroke-width="4"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+            />
+            Custom icon
+          </div>
+        </h4>
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        />
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 jsieLm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 ebqXLG"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 gHiRbt"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification  7`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 iIACkp"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 cfrbFm"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 bpyjiZ"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 dfYOnT"
+          >
+            <svg
+              aria-label="StatusDisabled"
+              class="StyledIcon-ofa7kd-0 gHiRbt"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M18,12 L6,12"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+            />
+            Custom closer
+          </div>
+        </h4>
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        />
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 jsieLm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 ebqXLG"
+          type="button"
+        >
+          <svg
+            aria-label="CircleQuestion"
+            class="StyledIcon-ofa7kd-0 dEeaTZ"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M12,15 L12,14 C12,13 12,12.5 13,12 C14,11.5 15,11 15,9.5 C15,8.5 14,7 12,7 C10,7 9,8.26413718 9,10 M12,16 L12,18"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification  8`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 fgmBmm"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 cfrbFm"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 bpyjiZ"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 dfYOnT"
+          >
+            <svg
+              aria-label="StatusInfo"
+              class="StyledIcon-ofa7kd-0 gHiRbt"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M12,10 L12,18 M12,6 L12,8"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+            />
+            Task percentage
+          </div>
+        </h4>
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        />
+        <div
+          class="StyledBox-sc-13pk1d4-0 dfYOnT"
+          style="white-space: nowrap;"
+        >
+          <svg
+            class="StyledMeter-nsxarx-0 lbkssj"
+            height="12"
+            preserveAspectRatio="none"
+            viewBox="0 0 96 12"
+            width="96"
+          >
+            <path
+              d="M 0,6 L 96,6"
+              fill="none"
+              stroke="#F2F2F2"
+              stroke-linecap="square"
+              stroke-opacity="0.4"
+              stroke-width="12"
+            />
+            <path
+              d="M 0,6 L 76.8,6"
+              fill="none"
+              stroke="#6FFFB0"
+              stroke-linecap="butt"
+              stroke-width="12"
+            />
+          </svg>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ffHQai"
+          />
+          <span
+            class="StyledText-sc-1sadyjn-0 gOVGlS"
+          >
+             80 %
+          </span>
+        </div>
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 jsieLm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 ebqXLG"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 gHiRbt"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification  9`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 fgmBmm"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 cfrbFm"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 bpyjiZ"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 dfYOnT"
+          >
+            <svg
+              aria-label="StatusInfo"
+              class="StyledIcon-ofa7kd-0 gHiRbt"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M12,10 L12,18 M12,6 L12,8"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+            />
+            Time stamp
+          </div>
+        </h4>
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        >
+          Sun, Aug 30, 2020, 11:14 PM
+        </span>
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 jsieLm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 ebqXLG"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 gHiRbt"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification  10`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 fgmBmm"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 cfrbFm"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 bpyjiZ"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 dfYOnT"
+          >
+            <svg
+              aria-label="StatusInfo"
+              class="StyledIcon-ofa7kd-0 gHiRbt"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M12,10 L12,18 M12,6 L12,8"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+            />
+            Locale de-DE
+          </div>
+        </h4>
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        >
+          Sun, Aug 30, 2020, 11:14 PM
+        </span>
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 jsieLm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 ebqXLG"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 gHiRbt"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification  11`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 fgmBmm"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 cfrbFm"
+      >
+        <h1
+          class="StyledHeading-sc-1rdh4aw-0 diiDQa"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 dfYOnT"
+          >
+            <svg
+              aria-label="StatusInfo"
+              class="StyledIcon-ofa7kd-0 dEeaTZ"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M12,10 L12,18 M12,6 L12,8"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+            />
+            Large
+          </div>
+        </h1>
+        <span
+          class="StyledText-sc-1sadyjn-0 DkZvS"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 DkZvS"
+        />
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 jsieLm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 ebqXLG"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 dEeaTZ"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification  12`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 jghCKX"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 jsieLm"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 ebqXLG"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 gHiRbt"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 cfrbFm"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 bpyjiZ"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 dfYOnT"
+          >
+            reversed
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+            />
+            <svg
+              aria-label="StatusInfo"
+              class="StyledIcon-ofa7kd-0 gHiRbt"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M12,10 L12,18 M12,6 L12,8"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+        </h4>
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 gJdaHr"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

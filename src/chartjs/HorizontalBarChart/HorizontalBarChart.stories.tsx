@@ -1,13 +1,14 @@
 import React from 'react';
+import { Document, Example } from '@component-controls/core';
 import { HorizontalBarChart } from './HorizontalBarChart';
 import { rndDatasets } from '../data/data';
 
 export default {
   title: 'chartjs/HorizontalBarChart',
   component: HorizontalBarChart,
-};
+} as Document;
 
-export const main = () => (
+export const main: Example = () => (
   <HorizontalBarChart
     data={{
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -27,7 +28,7 @@ export const main = () => (
   />
 );
 
-export const title = () => (
+export const title: Example = () => (
   <HorizontalBarChart
     data={rndDatasets(1)}
     options={{

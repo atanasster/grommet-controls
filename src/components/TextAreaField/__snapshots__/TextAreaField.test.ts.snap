@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextAreaField  1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <form
+      class="sc-bdfBwQ czeLXL"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+        >
+          <div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 dLXLoO FormField__FormFieldBox-m9hood-0 jGEMXj"
+            >
+              <label
+                class="StyledText-sc-1sadyjn-0 drTEXR"
+                for="bio"
+              >
+                Short bio
+              </label>
+              <div
+                class="StyledBox-sc-13pk1d4-0 gmReJc FormField__FormFieldContentBox-m9hood-1"
+              >
+                <textarea
+                  class="StyledTextArea-sc-17i3mwp-0 fyVCNl"
+                  id="bio"
+                  name="bio"
+                  rows="3"
+                />
+              </div>
+            </div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 jsieLm"
+            >
+              <button
+                class="StyledButton-sc-323bzc-0 iZFCLM"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextAreaField  2`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <form
+      class="sc-bdfBwQ czeLXL"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+        >
+          <div>
+            <textarea
+              class="StyledTextArea-sc-17i3mwp-0 jXFLfh"
+              id="bio"
+              label="Short bio"
+              name="bio"
+              rows="6"
+            />
+            <div
+              class="StyledBox-sc-13pk1d4-0 jsieLm"
+            >
+              <button
+                class="StyledButton-sc-323bzc-0 iZFCLM"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextAreaField  3`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <form
+      class="sc-bdfBwQ czeLXL"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+        >
+          <div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 dLXLoO FormField__FormFieldBox-m9hood-0 jGEMXj"
+            >
+              <label
+                class="StyledText-sc-1sadyjn-0 drTEXR"
+                for="bio"
+              >
+                Short bio
+              </label>
+              <div
+                class="StyledBox-sc-13pk1d4-0 gmReJc FormField__FormFieldContentBox-m9hood-1"
+              >
+                <textarea
+                  class="StyledTextArea-sc-17i3mwp-0 fyVCNl"
+                  id="bio"
+                  name="bio"
+                  rows="6"
+                />
+              </div>
+            </div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 jsieLm"
+            >
+              <button
+                class="StyledButton-sc-323bzc-0 iZFCLM"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;

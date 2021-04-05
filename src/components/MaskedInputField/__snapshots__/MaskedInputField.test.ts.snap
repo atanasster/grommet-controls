@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MaskedInputField  1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <form
+      class="sc-hKgILt eqLMWy"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+        >
+          <div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 dLXLoO FormField__FormFieldBox-m9hood-0 jGEMXj"
+            >
+              <label
+                class="StyledText-sc-1sadyjn-0 drTEXR"
+                for="phone"
+              >
+                Phone
+              </label>
+              <div
+                class="StyledBox-sc-13pk1d4-0 gmReJc FormField__FormFieldContentBox-m9hood-1"
+              >
+                <div
+                  class="sc-gsTCUz kLVDRr"
+                >
+                  <div
+                    class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+                  >
+                    <input
+                      autocomplete="off"
+                      class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ egNCwu"
+                      id="phone"
+                      name="phone"
+                      placeholder="US Phone"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 jsieLm"
+            >
+              <button
+                class="StyledButton-sc-323bzc-0 iZFCLM"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MaskedInputField  2`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <form
+      class="sc-hKgILt eqLMWy"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+        >
+          <div>
+            <div
+              class="sc-gsTCUz kLVDRr"
+            >
+              <div
+                class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+              >
+                <input
+                  autocomplete="off"
+                  class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ egNCwu"
+                  id="phone"
+                  label="Phone"
+                  name="phone"
+                  placeholder="US Phone"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 jsieLm"
+            >
+              <button
+                class="StyledButton-sc-323bzc-0 iZFCLM"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MaskedInputField  3`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+  >
+    <form
+      class="sc-hKgILt eqLMWy"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+        >
+          <div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 dLXLoO FormField__FormFieldBox-m9hood-0 jGEMXj"
+            >
+              <label
+                class="StyledText-sc-1sadyjn-0 drTEXR"
+                for="phone"
+              >
+                Phone
+              </label>
+              <div
+                class="StyledBox-sc-13pk1d4-0 gmReJc FormField__FormFieldContentBox-m9hood-1"
+              >
+                <div
+                  class="sc-gsTCUz kLVDRr"
+                >
+                  <div
+                    class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+                  >
+                    <input
+                      autocomplete="off"
+                      class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ egNCwu"
+                      id="phone"
+                      name="phone"
+                      placeholder="US Phone"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 jsieLm"
+            >
+              <button
+                class="StyledButton-sc-323bzc-0 iZFCLM"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;

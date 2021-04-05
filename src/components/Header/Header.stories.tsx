@@ -1,14 +1,15 @@
 import React from 'react';
 import { Box, Heading, Image } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { Grommet } from 'grommet-icons';
 import { Header } from './Header';
 
 export default {
   title: 'layout/Header',
   component: Header,
-};
+} as Document;
 
-export const main = () => (
+export const main: Example = () => (
   <Box fill="horizontal" gap="large">
     <Header position="sticky">
       <Grommet />
@@ -20,7 +21,7 @@ export const main = () => (
   </Box>
 );
 
-export const elevation = () => (
+export const elevation: Example = () => (
   <Box fill="horizontal" gap="large">
     <Header position="sticky" elevation="xlarge">
       <Grommet />
@@ -32,7 +33,7 @@ export const elevation = () => (
   </Box>
 );
 
-export const position = () => (
+export const position: Example = () => (
   <Box fill="horizontal" gap="large">
     <Header position="absolute">
       <Grommet />

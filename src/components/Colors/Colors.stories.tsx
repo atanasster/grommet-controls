@@ -1,12 +1,13 @@
 import React from 'react';
 import { Box } from 'grommet';
+import { Document, Example } from '@component-controls/core';
 import { Colors } from './Colors';
 import { materialColors, uiColors, basicColors } from '../../index';
 
 export default {
   title: 'controls/Colors',
   component: Colors,
-};
+} as Document;
 
 const blue = {
   '50': '#e3f2fd',
@@ -82,7 +83,7 @@ const blueGrey = {
   '900': '#263238',
 };
 
-export const main = () => (
+export const main: Example = () => (
   <Box direction="row">
     <Box basis="medium">
       <Colors
@@ -93,17 +94,17 @@ export const main = () => (
     </Box>
   </Box>
 );
-export const colors = () => (
+export const colors: Example = () => (
   <Colors size="small" color="#ff0000" colors={uiColors} />
 );
-export const onSelect = () => (
+export const onSelect: Example = () => (
   <Colors
     size="small"
     colors={basicColors}
     onSelect={() => console.log('onSelect')}
   />
 );
-export const size = () => (
+export const size: Example = () => (
   <Box gap="small">
     <Colors
       size="small"
@@ -139,7 +140,7 @@ export const size = () => (
     />
   </Box>
 );
-export const columns = () => (
+export const columns: Example = () => (
   <Colors
     size="small"
     columns={5}
@@ -152,7 +153,7 @@ export const columns = () => (
     }}
   />
 );
-export const wrap = () => (
+export const wrap: Example = () => (
   <Colors
     size="small"
     columns={5}
