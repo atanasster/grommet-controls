@@ -109,5 +109,8 @@
       "^.+\\.(ts|tsx)?$": "ts-jest",
       "^.+\\.(js|jsx)$": "babel-jest"
     }
+  },
+  "resolutions": {
+    "mini-css-extract-plugin": "1.3.9"
   }
 }
