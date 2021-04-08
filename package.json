@@ -54,10 +54,10 @@
     "text-mask-core": "^5.0.1"
   },
   "devDependencies": {
-    "@component-controls/addon-catalog": "^3.5.5",
-    "@component-controls/addon-stats": "^3.5.5",
-    "@component-controls/cc-cli": "^3.5.5",
-    "@component-controls/gatsby-theme-stories": "^3.5.5",
+    "@component-controls/addon-catalog": "^3.6.3",
+    "@component-controls/addon-stats": "^3.6.3",
+    "@component-controls/cc-cli": "^3.6.3",
+    "@component-controls/gatsby-theme-stories": "^3.6.3",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.1",
