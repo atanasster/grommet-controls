@@ -3,37 +3,37 @@
 exports[`Tags  1`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          class="StyledBox-sc-13pk1d4-0 ktWQSf"
           style="min-width: auto;"
           tabindex="0"
         >
           <div
             aria-checked="true"
             aria-label="Remove small"
-            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               small
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -46,26 +46,26 @@ exports[`Tags  1`] = `
             </span>
           </div>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kdVHiH"
           />
           <div
             aria-checked="true"
             aria-label="Remove large"
-            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               large
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -80,13 +80,13 @@ exports[`Tags  1`] = `
         </div>
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
       >
         <button
-          class="StyledButton-sc-323bzc-0 hmOcFG"
+          class="StyledButton-sc-323bzc-0 jjojlc"
           type="button"
         >
           Reset tags
@@ -100,38 +100,38 @@ exports[`Tags  1`] = `
 exports[`Tags  2`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
           aria-label="Grommet tags"
-          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          class="StyledBox-sc-13pk1d4-0 ktWQSf"
           style="min-width: auto;"
           tabindex="0"
         >
           <div
             aria-checked="true"
             aria-label="Remove small"
-            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               small
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -144,26 +144,26 @@ exports[`Tags  2`] = `
             </span>
           </div>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kdVHiH"
           />
           <div
             aria-checked="true"
             aria-label="Remove large"
-            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               large
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -178,13 +178,13 @@ exports[`Tags  2`] = `
         </div>
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
       >
         <button
-          class="StyledButton-sc-323bzc-0 hmOcFG"
+          class="StyledButton-sc-323bzc-0 jjojlc"
           type="button"
         >
           Reset tags
@@ -198,25 +198,25 @@ exports[`Tags  2`] = `
 exports[`Tags  3`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 gjyxzG"
+      class="StyledBox-sc-13pk1d4-0 gdyJns"
       style="min-width: auto;"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 kOKFMN"
+        class="StyledBox-sc-13pk1d4-0 hheccf"
       >
         <button
-          class="StyledButton-sc-323bzc-0 iZFCLM"
+          class="StyledButton-sc-323bzc-0 cfaKOi"
           type="button"
         >
           <div
-            class="StyledBox-sc-13pk1d4-0 iQEJEP"
+            class="StyledBox-sc-13pk1d4-0 bbjiaZ"
           >
             <svg
               aria-label="Trash"
-              class="StyledIcon-ofa7kd-0 dEeaTZ"
+              class="StyledIcon-ofa7kd-0 exrjxz"
               viewBox="0 0 24 24"
             >
               <path
@@ -227,28 +227,28 @@ exports[`Tags  3`] = `
               />
             </svg>
             <div
-              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 hjorfk"
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 cvbRFG"
             />
             small
           </div>
         </button>
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kdVHiH"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 kOKFMN"
+        class="StyledBox-sc-13pk1d4-0 hheccf"
       >
         <button
-          class="StyledButton-sc-323bzc-0 iZFCLM"
+          class="StyledButton-sc-323bzc-0 cfaKOi"
           type="button"
         >
           <div
-            class="StyledBox-sc-13pk1d4-0 iQEJEP"
+            class="StyledBox-sc-13pk1d4-0 bbjiaZ"
           >
             <svg
               aria-label="Trash"
-              class="StyledIcon-ofa7kd-0 dEeaTZ"
+              class="StyledIcon-ofa7kd-0 exrjxz"
               viewBox="0 0 24 24"
             >
               <path
@@ -259,7 +259,7 @@ exports[`Tags  3`] = `
               />
             </svg>
             <div
-              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 hjorfk"
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 cvbRFG"
             />
             large
           </div>
@@ -273,37 +273,37 @@ exports[`Tags  3`] = `
 exports[`Tags  4`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          class="StyledBox-sc-13pk1d4-0 ktWQSf"
           style="min-width: auto;"
           tabindex="0"
         >
           <div
             aria-checked="true"
             aria-label="Remove small"
-            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               small
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormSubtract"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -316,26 +316,26 @@ exports[`Tags  4`] = `
             </span>
           </div>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kdVHiH"
           />
           <div
             aria-checked="true"
             aria-label="Remove large"
-            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               large
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormSubtract"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -350,13 +350,13 @@ exports[`Tags  4`] = `
         </div>
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
       >
         <button
-          class="StyledButton-sc-323bzc-0 hmOcFG"
+          class="StyledButton-sc-323bzc-0 jjojlc"
           type="button"
         >
           Reset tags
@@ -370,37 +370,37 @@ exports[`Tags  4`] = `
 exports[`Tags  5`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 jIdbuX"
+          class="StyledBox-sc-13pk1d4-0 dAPPHp"
           style="min-width: auto;"
           tabindex="0"
         >
           <div
             aria-checked="true"
             aria-label="Remove small"
-            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               small
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -413,26 +413,26 @@ exports[`Tags  5`] = `
             </span>
           </div>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ZUJgG"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dcgaqk"
           />
           <div
             aria-checked="true"
             aria-label="Remove large"
-            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               large
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -447,13 +447,13 @@ exports[`Tags  5`] = `
         </div>
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
       >
         <button
-          class="StyledButton-sc-323bzc-0 hmOcFG"
+          class="StyledButton-sc-323bzc-0 jjojlc"
           type="button"
         >
           Reset tags
@@ -467,37 +467,37 @@ exports[`Tags  5`] = `
 exports[`Tags  6`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          class="StyledBox-sc-13pk1d4-0 ktWQSf"
           style="min-width: auto;"
           tabindex="0"
         >
           <div
             aria-checked="true"
             aria-label="Remove small"
-            class="StyledBox-sc-13pk1d4-0 GqsLr sc-gsTCUz NdQrj"
+            class="StyledBox-sc-13pk1d4-0 bEPOhl sc-gsDJrp iAulwJ"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 eLOxHb"
+              class="StyledText-sc-1sadyjn-0 fiigNB"
             >
               small
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dcacLZ"
+                class="StyledIcon-ofa7kd-0 jBvkdz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -510,26 +510,26 @@ exports[`Tags  6`] = `
             </span>
           </div>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kdVHiH"
           />
           <div
             aria-checked="true"
             aria-label="Remove large"
-            class="StyledBox-sc-13pk1d4-0 GqsLr sc-gsTCUz NdQrj"
+            class="StyledBox-sc-13pk1d4-0 bEPOhl sc-gsDJrp iAulwJ"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 eLOxHb"
+              class="StyledText-sc-1sadyjn-0 fiigNB"
             >
               large
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dcacLZ"
+                class="StyledIcon-ofa7kd-0 jBvkdz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -544,13 +544,13 @@ exports[`Tags  6`] = `
         </div>
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
       >
         <button
-          class="StyledButton-sc-323bzc-0 hmOcFG"
+          class="StyledButton-sc-323bzc-0 jjojlc"
           type="button"
         >
           Reset tags
@@ -564,37 +564,37 @@ exports[`Tags  6`] = `
 exports[`Tags  7`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          class="StyledBox-sc-13pk1d4-0 ktWQSf"
           style="min-width: auto;"
           tabindex="0"
         >
           <div
             aria-checked="true"
             aria-label="Remove small"
-            class="StyledBox-sc-13pk1d4-0 kzEtYJ sc-gsTCUz ezoxjl"
+            class="StyledBox-sc-13pk1d4-0 cjovPv sc-gsDJrp fQCdaP"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               small
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -607,26 +607,26 @@ exports[`Tags  7`] = `
             </span>
           </div>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kdVHiH"
           />
           <div
             aria-checked="true"
             aria-label="Remove large"
-            class="StyledBox-sc-13pk1d4-0 kzEtYJ sc-gsTCUz ezoxjl"
+            class="StyledBox-sc-13pk1d4-0 cjovPv sc-gsDJrp fQCdaP"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               large
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -641,13 +641,13 @@ exports[`Tags  7`] = `
         </div>
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
       >
         <button
-          class="StyledButton-sc-323bzc-0 hmOcFG"
+          class="StyledButton-sc-323bzc-0 jjojlc"
           type="button"
         >
           Reset tags
@@ -661,36 +661,36 @@ exports[`Tags  7`] = `
 exports[`Tags  8`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          class="StyledBox-sc-13pk1d4-0 ktWQSf"
           style="min-width: auto;"
         >
           <div
             aria-checked="true"
             aria-label="Remove small"
-            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               small
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -703,26 +703,26 @@ exports[`Tags  8`] = `
             </span>
           </div>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kdVHiH"
           />
           <div
             aria-checked="true"
             aria-label="Remove large"
-            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               large
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -737,13 +737,13 @@ exports[`Tags  8`] = `
         </div>
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
       >
         <button
-          class="StyledButton-sc-323bzc-0 hmOcFG"
+          class="StyledButton-sc-323bzc-0 jjojlc"
           type="button"
         >
           Reset tags
@@ -757,37 +757,37 @@ exports[`Tags  8`] = `
 exports[`Tags  9`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          class="StyledBox-sc-13pk1d4-0 ktWQSf"
           style="min-width: auto;"
           tabindex="0"
         >
           <div
             aria-checked="true"
             aria-label="Remove small"
-            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               small
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -800,26 +800,26 @@ exports[`Tags  9`] = `
             </span>
           </div>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 RSblh"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kdVHiH"
           />
           <div
             aria-checked="true"
             aria-label="Remove large"
-            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               large
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -834,13 +834,13 @@ exports[`Tags  9`] = `
         </div>
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
       >
         <button
-          class="StyledButton-sc-323bzc-0 hmOcFG"
+          class="StyledButton-sc-323bzc-0 jjojlc"
           type="button"
         >
           Reset tags
@@ -854,37 +854,37 @@ exports[`Tags  9`] = `
 exports[`Tags  10`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 dolsDt"
+          class="StyledBox-sc-13pk1d4-0 ktWQSf"
           style="min-width: auto;"
           tabindex="0"
         >
           <div
             aria-checked="true"
             aria-label="Remove tag"
-            class="StyledBox-sc-13pk1d4-0 dGxAxR sc-gsTCUz fVeUqF"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               tag
             </span>
             <span
-              class="sc-bdfBwQ heWKPD"
+              class="sc-bdvvaa hMYmzD"
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -899,13 +899,13 @@ exports[`Tags  10`] = `
         </div>
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 eiXlmm"
+        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
       >
         <button
-          class="StyledButton-sc-323bzc-0 hmOcFG"
+          class="StyledButton-sc-323bzc-0 jjojlc"
           type="button"
         >
           Reset tags

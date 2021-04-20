@@ -3,25 +3,25 @@
 exports[`VerticalMenu  1`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <button
-          class="StyledButton-sc-323bzc-0 eDlyyv"
+          class="StyledButton-sc-323bzc-0 ihSNXZ"
           type="button"
         >
           <div
-            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            class="StyledBox-sc-13pk1d4-0 cTOMus"
             style="margin-left: 12px;"
           >
             <svg
               aria-label="FormNext"
-              class="StyledIcon-ofa7kd-0 dEeaTZ"
+              class="StyledIcon-ofa7kd-0 exrjxz"
               viewBox="0 0 24 24"
             >
               <polyline
@@ -32,13 +32,13 @@ exports[`VerticalMenu  1`] = `
               />
             </svg>
             <div
-              class="StyledBox-sc-13pk1d4-0 etOGak"
+              class="StyledBox-sc-13pk1d4-0 domXEG"
             >
               <div
-                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                class="StyledBox-sc-13pk1d4-0 kuSryJ"
               >
                 <span
-                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                  class="StyledText-sc-1sadyjn-0 cddmqI"
                 >
                   <strong>
                     Local
@@ -51,22 +51,22 @@ exports[`VerticalMenu  1`] = `
       </div>
     </div>
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <button
-          class="StyledButton-sc-323bzc-0 eDlyyv"
+          class="StyledButton-sc-323bzc-0 ihSNXZ"
           type="button"
         >
           <div
-            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            class="StyledBox-sc-13pk1d4-0 cTOMus"
             style="margin-left: 12px;"
           >
             <svg
               aria-label="FormNext"
-              class="StyledIcon-ofa7kd-0 dEeaTZ"
+              class="StyledIcon-ofa7kd-0 exrjxz"
               viewBox="0 0 24 24"
             >
               <polyline
@@ -77,13 +77,13 @@ exports[`VerticalMenu  1`] = `
               />
             </svg>
             <div
-              class="StyledBox-sc-13pk1d4-0 etOGak"
+              class="StyledBox-sc-13pk1d4-0 domXEG"
             >
               <div
-                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                class="StyledBox-sc-13pk1d4-0 kuSryJ"
               >
                 <span
-                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                  class="StyledText-sc-1sadyjn-0 cddmqI"
                 >
                   <strong>
                     Cloud
@@ -102,25 +102,25 @@ exports[`VerticalMenu  1`] = `
 exports[`VerticalMenu  2`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <button
-          class="StyledButton-sc-323bzc-0 eDlyyv"
+          class="StyledButton-sc-323bzc-0 ihSNXZ"
           type="button"
         >
           <div
-            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            class="StyledBox-sc-13pk1d4-0 cTOMus"
             style="margin-left: 12px;"
           >
             <svg
               aria-label="FormDown"
-              class="StyledIcon-ofa7kd-0 dEeaTZ"
+              class="StyledIcon-ofa7kd-0 exrjxz"
               viewBox="0 0 24 24"
             >
               <polyline
@@ -131,14 +131,14 @@ exports[`VerticalMenu  2`] = `
               />
             </svg>
             <div
-              class="StyledBox-sc-13pk1d4-0 etOGak"
+              class="StyledBox-sc-13pk1d4-0 domXEG"
             >
               <div
-                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                class="StyledBox-sc-13pk1d4-0 kuSryJ"
               >
                 <svg
                   aria-label="Inbox"
-                  class="StyledIcon-ofa7kd-0 dEeaTZ"
+                  class="StyledIcon-ofa7kd-0 exrjxz"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -149,10 +149,10 @@ exports[`VerticalMenu  2`] = `
                   />
                 </svg>
                 <div
-                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
                 />
                 <span
-                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                  class="StyledText-sc-1sadyjn-0 cddmqI"
                 >
                   <strong>
                     Inbox
@@ -164,37 +164,37 @@ exports[`VerticalMenu  2`] = `
         </button>
       </div>
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 dDMquD"
+          class="StyledBox-sc-13pk1d4-0 UgJrl"
         >
           <a
-            class="StyledButton-sc-323bzc-0 eDlyyv"
+            class="StyledButton-sc-323bzc-0 ihSNXZ"
             href="/inbox/all"
           >
             <div
-              class="StyledBox-sc-13pk1d4-0 cfaCYy"
+              class="StyledBox-sc-13pk1d4-0 cTOMus"
               style="margin-left: 32px;"
             >
               <div
-                class="StyledBox-sc-13pk1d4-0 etOGak"
+                class="StyledBox-sc-13pk1d4-0 domXEG"
               >
                 <div
-                  class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                  class="StyledBox-sc-13pk1d4-0 kuSryJ"
                 >
                   <span
-                    class="StyledText-sc-1sadyjn-0 DkZvS"
+                    class="StyledText-sc-1sadyjn-0 cddmqI"
                   >
                     All
                   </span>
                 </div>
                 <div
-                  class="StyledBox-sc-13pk1d4-0 ccjdes"
+                  class="StyledBox-sc-13pk1d4-0 kzdRbS"
                   style="border-radius: 20%;"
                 >
                   <span
-                    class="StyledText-sc-1sadyjn-0 gOVGlS"
+                    class="StyledText-sc-1sadyjn-0 ioNTgI"
                   >
                     10
                   </span>
@@ -205,37 +205,37 @@ exports[`VerticalMenu  2`] = `
         </div>
       </div>
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 dYebPD"
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
         >
           <a
-            class="StyledButton-sc-323bzc-0 eDlyyv"
+            class="StyledButton-sc-323bzc-0 ihSNXZ"
             href="/inbox/gmail"
           >
             <div
-              class="StyledBox-sc-13pk1d4-0 cfaCYy"
+              class="StyledBox-sc-13pk1d4-0 cTOMus"
               style="margin-left: 32px;"
             >
               <div
-                class="StyledBox-sc-13pk1d4-0 etOGak"
+                class="StyledBox-sc-13pk1d4-0 domXEG"
               >
                 <div
-                  class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                  class="StyledBox-sc-13pk1d4-0 kuSryJ"
                 >
                   <span
-                    class="StyledText-sc-1sadyjn-0 DkZvS"
+                    class="StyledText-sc-1sadyjn-0 cddmqI"
                   >
                     GMail
                   </span>
                 </div>
                 <div
-                  class="StyledBox-sc-13pk1d4-0 ccjdes"
+                  class="StyledBox-sc-13pk1d4-0 kzdRbS"
                   style="border-radius: 20%;"
                 >
                   <span
-                    class="StyledText-sc-1sadyjn-0 gOVGlS"
+                    class="StyledText-sc-1sadyjn-0 ioNTgI"
                   >
                     8
                   </span>
@@ -246,37 +246,37 @@ exports[`VerticalMenu  2`] = `
         </div>
       </div>
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 dYebPD"
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
         >
           <a
-            class="StyledButton-sc-323bzc-0 eDlyyv"
+            class="StyledButton-sc-323bzc-0 ihSNXZ"
             href="/inbox/work"
           >
             <div
-              class="StyledBox-sc-13pk1d4-0 cfaCYy"
+              class="StyledBox-sc-13pk1d4-0 cTOMus"
               style="margin-left: 32px;"
             >
               <div
-                class="StyledBox-sc-13pk1d4-0 etOGak"
+                class="StyledBox-sc-13pk1d4-0 domXEG"
               >
                 <div
-                  class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                  class="StyledBox-sc-13pk1d4-0 kuSryJ"
                 >
                   <span
-                    class="StyledText-sc-1sadyjn-0 DkZvS"
+                    class="StyledText-sc-1sadyjn-0 cddmqI"
                   >
                     Work
                   </span>
                 </div>
                 <div
-                  class="StyledBox-sc-13pk1d4-0 ccjdes"
+                  class="StyledBox-sc-13pk1d4-0 kzdRbS"
                   style="border-radius: 20%;"
                 >
                   <span
-                    class="StyledText-sc-1sadyjn-0 gOVGlS"
+                    class="StyledText-sc-1sadyjn-0 ioNTgI"
                   >
                     1
                   </span>
@@ -287,37 +287,37 @@ exports[`VerticalMenu  2`] = `
         </div>
       </div>
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 dYebPD"
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
         >
           <a
-            class="StyledButton-sc-323bzc-0 eDlyyv"
+            class="StyledButton-sc-323bzc-0 ihSNXZ"
             href="/inbox/amazon"
           >
             <div
-              class="StyledBox-sc-13pk1d4-0 cfaCYy"
+              class="StyledBox-sc-13pk1d4-0 cTOMus"
               style="margin-left: 32px;"
             >
               <div
-                class="StyledBox-sc-13pk1d4-0 etOGak"
+                class="StyledBox-sc-13pk1d4-0 domXEG"
               >
                 <div
-                  class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                  class="StyledBox-sc-13pk1d4-0 kuSryJ"
                 >
                   <span
-                    class="StyledText-sc-1sadyjn-0 DkZvS"
+                    class="StyledText-sc-1sadyjn-0 cddmqI"
                   >
                     Amazon
                   </span>
                 </div>
                 <div
-                  class="StyledBox-sc-13pk1d4-0 ccjdes"
+                  class="StyledBox-sc-13pk1d4-0 kzdRbS"
                   style="border-radius: 20%;"
                 >
                   <span
-                    class="StyledText-sc-1sadyjn-0 gOVGlS"
+                    class="StyledText-sc-1sadyjn-0 ioNTgI"
                   >
                     1
                   </span>
@@ -329,28 +329,28 @@ exports[`VerticalMenu  2`] = `
       </div>
     </div>
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <a
-          class="StyledButton-sc-323bzc-0 eDlyyv"
+          class="StyledButton-sc-323bzc-0 ihSNXZ"
           href="/inbox/sent"
         >
           <div
-            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            class="StyledBox-sc-13pk1d4-0 cTOMus"
             style="margin-left: 16px;"
           >
             <div
-              class="StyledBox-sc-13pk1d4-0 etOGak"
+              class="StyledBox-sc-13pk1d4-0 domXEG"
             >
               <div
-                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                class="StyledBox-sc-13pk1d4-0 kuSryJ"
               >
                 <svg
                   aria-label="Send"
-                  class="StyledIcon-ofa7kd-0 dEeaTZ"
+                  class="StyledIcon-ofa7kd-0 exrjxz"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -361,10 +361,10 @@ exports[`VerticalMenu  2`] = `
                   />
                 </svg>
                 <div
-                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
                 />
                 <span
-                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                  class="StyledText-sc-1sadyjn-0 cddmqI"
                 >
                   Sent
                 </span>
@@ -375,28 +375,28 @@ exports[`VerticalMenu  2`] = `
       </div>
     </div>
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <a
-          class="StyledButton-sc-323bzc-0 eDlyyv"
+          class="StyledButton-sc-323bzc-0 ihSNXZ"
           href="/inbox/flagged"
         >
           <div
-            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            class="StyledBox-sc-13pk1d4-0 cTOMus"
             style="margin-left: 16px;"
           >
             <div
-              class="StyledBox-sc-13pk1d4-0 etOGak"
+              class="StyledBox-sc-13pk1d4-0 domXEG"
             >
               <div
-                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                class="StyledBox-sc-13pk1d4-0 kuSryJ"
               >
                 <svg
                   aria-label="Flag"
-                  class="StyledIcon-ofa7kd-0 dEeaTZ"
+                  class="StyledIcon-ofa7kd-0 exrjxz"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -407,20 +407,20 @@ exports[`VerticalMenu  2`] = `
                   />
                 </svg>
                 <div
-                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
                 />
                 <span
-                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                  class="StyledText-sc-1sadyjn-0 cddmqI"
                 >
                   Flagged
                 </span>
               </div>
               <div
-                class="StyledBox-sc-13pk1d4-0 bMRUar"
+                class="StyledBox-sc-13pk1d4-0 dcWFdN"
                 style="border-radius: 20%;"
               >
                 <span
-                  class="StyledText-sc-1sadyjn-0 gOVGlS"
+                  class="StyledText-sc-1sadyjn-0 ioNTgI"
                 >
                   3
                 </span>
@@ -431,28 +431,28 @@ exports[`VerticalMenu  2`] = `
       </div>
     </div>
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <a
-          class="StyledButton-sc-323bzc-0 eDlyyv"
+          class="StyledButton-sc-323bzc-0 ihSNXZ"
           href="/inbox/starred"
         >
           <div
-            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            class="StyledBox-sc-13pk1d4-0 cTOMus"
             style="margin-left: 16px;"
           >
             <div
-              class="StyledBox-sc-13pk1d4-0 etOGak"
+              class="StyledBox-sc-13pk1d4-0 domXEG"
             >
               <div
-                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                class="StyledBox-sc-13pk1d4-0 kuSryJ"
               >
                 <svg
                   aria-label="Star"
-                  class="StyledIcon-ofa7kd-0 dEeaTZ"
+                  class="StyledIcon-ofa7kd-0 exrjxz"
                   viewBox="0 0 24 24"
                 >
                   <polygon
@@ -462,10 +462,10 @@ exports[`VerticalMenu  2`] = `
                   />
                 </svg>
                 <div
-                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
                 />
                 <span
-                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                  class="StyledText-sc-1sadyjn-0 cddmqI"
                 >
                   Starred
                 </span>
@@ -476,28 +476,28 @@ exports[`VerticalMenu  2`] = `
       </div>
     </div>
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <a
-          class="StyledButton-sc-323bzc-0 eDlyyv"
+          class="StyledButton-sc-323bzc-0 ihSNXZ"
           href="/inbox/drafts"
         >
           <div
-            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            class="StyledBox-sc-13pk1d4-0 cTOMus"
             style="margin-left: 16px;"
           >
             <div
-              class="StyledBox-sc-13pk1d4-0 etOGak"
+              class="StyledBox-sc-13pk1d4-0 domXEG"
             >
               <div
-                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                class="StyledBox-sc-13pk1d4-0 kuSryJ"
               >
                 <svg
                   aria-label="Document"
-                  class="StyledIcon-ofa7kd-0 dEeaTZ"
+                  class="StyledIcon-ofa7kd-0 exrjxz"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -508,10 +508,10 @@ exports[`VerticalMenu  2`] = `
                   />
                 </svg>
                 <div
-                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
                 />
                 <span
-                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                  class="StyledText-sc-1sadyjn-0 cddmqI"
                 >
                   Drafts
                 </span>
@@ -522,28 +522,28 @@ exports[`VerticalMenu  2`] = `
       </div>
     </div>
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <a
-          class="StyledButton-sc-323bzc-0 eDlyyv"
+          class="StyledButton-sc-323bzc-0 ihSNXZ"
           href="/inbox/tagged"
         >
           <div
-            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            class="StyledBox-sc-13pk1d4-0 cTOMus"
             style="margin-left: 16px;"
           >
             <div
-              class="StyledBox-sc-13pk1d4-0 etOGak"
+              class="StyledBox-sc-13pk1d4-0 domXEG"
             >
               <div
-                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                class="StyledBox-sc-13pk1d4-0 kuSryJ"
               >
                 <svg
                   aria-label="Tag"
-                  class="StyledIcon-ofa7kd-0 dEeaTZ"
+                  class="StyledIcon-ofa7kd-0 exrjxz"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -554,10 +554,10 @@ exports[`VerticalMenu  2`] = `
                   />
                 </svg>
                 <div
-                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
                 />
                 <span
-                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                  class="StyledText-sc-1sadyjn-0 cddmqI"
                 >
                   Tagged
                 </span>
@@ -568,28 +568,28 @@ exports[`VerticalMenu  2`] = `
       </div>
     </div>
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <a
-          class="StyledButton-sc-323bzc-0 eDlyyv"
+          class="StyledButton-sc-323bzc-0 ihSNXZ"
           href="/inbox/trash"
         >
           <div
-            class="StyledBox-sc-13pk1d4-0 cfaCYy"
+            class="StyledBox-sc-13pk1d4-0 cTOMus"
             style="margin-left: 16px;"
           >
             <div
-              class="StyledBox-sc-13pk1d4-0 etOGak"
+              class="StyledBox-sc-13pk1d4-0 domXEG"
             >
               <div
-                class="StyledBox-sc-13pk1d4-0 dfYOnT"
+                class="StyledBox-sc-13pk1d4-0 kuSryJ"
               >
                 <svg
                   aria-label="Trash"
-                  class="StyledIcon-ofa7kd-0 dEeaTZ"
+                  class="StyledIcon-ofa7kd-0 exrjxz"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -600,10 +600,10 @@ exports[`VerticalMenu  2`] = `
                   />
                 </svg>
                 <div
-                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+                  class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
                 />
                 <span
-                  class="StyledText-sc-1sadyjn-0 DkZvS"
+                  class="StyledText-sc-1sadyjn-0 cddmqI"
                 >
                   Trash
                 </span>

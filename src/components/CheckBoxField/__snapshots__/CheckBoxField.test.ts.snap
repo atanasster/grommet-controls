@@ -3,48 +3,48 @@
 exports[`CheckBoxField  1`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <form
-      class="sc-bdfBwQ czeLXL"
+      class="sc-bdvvaa nNUGj"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+          class="StyledBox-sc-13pk1d4-0 jUPATD"
         >
           <div>
             <div
-              class="StyledBox-sc-13pk1d4-0 dLXLoO FormField__FormFieldBox-m9hood-0 jGEMXj"
+              class="StyledBox-sc-13pk1d4-0 eyhXU FormField__FormFieldBox-m9hood-0 gWgpjB"
             >
               <label
-                class="StyledText-sc-1sadyjn-0 drTEXR"
+                class="StyledText-sc-1sadyjn-0 japRIL"
                 for="tos"
               >
                 Terms of service
               </label>
               <div
-                class="StyledBox-sc-13pk1d4-0 gmReJc FormField__FormFieldContentBox-m9hood-1"
+                class="StyledBox-sc-13pk1d4-0 ijhmMK FormField__FormFieldContentBox-m9hood-1"
               >
                 <div
-                  class="StyledBox-sc-13pk1d4-0 iBWTSp"
+                  class="StyledBox-sc-13pk1d4-0 ktlgjz"
                 >
                   <label
-                    class="StyledCheckBox__StyledCheckBoxContainer-sc-1dbk5ju-1 htOOow"
+                    class="StyledCheckBox__StyledCheckBoxContainer-sc-1dbk5ju-1 cQEWce"
                     for="tos"
                   >
                     <div
-                      class="StyledBox-sc-13pk1d4-0 kDZMxH StyledCheckBox-sc-1dbk5ju-6 hOFfoi"
+                      class="StyledBox-sc-13pk1d4-0 jKFhht StyledCheckBox-sc-1dbk5ju-6 fJLUFg"
                     >
                       <input
-                        class="StyledCheckBox__StyledCheckBoxInput-sc-1dbk5ju-2 fYuA-Ds"
+                        class="StyledCheckBox__StyledCheckBoxInput-sc-1dbk5ju-2 gXyGmK"
                         id="tos"
                         name="tos"
                         type="checkbox"
                       />
                       <div
-                        class="StyledBox-sc-13pk1d4-0 jYPXhZ StyledCheckBox__StyledCheckBoxBox-sc-1dbk5ju-3 kRWCTA"
+                        class="StyledBox-sc-13pk1d4-0 iCZFPP StyledCheckBox__StyledCheckBoxBox-sc-1dbk5ju-3 eNpbdq"
                       />
                     </div>
                   </label>
@@ -52,10 +52,10 @@ exports[`CheckBoxField  1`] = `
               </div>
             </div>
             <div
-              class="StyledBox-sc-13pk1d4-0 jsieLm"
+              class="StyledBox-sc-13pk1d4-0 kspWmI"
             >
               <button
-                class="StyledButton-sc-323bzc-0 iZFCLM"
+                class="StyledButton-sc-323bzc-0 cfaKOi"
                 type="submit"
               >
                 Submit
@@ -72,52 +72,52 @@ exports[`CheckBoxField  1`] = `
 exports[`CheckBoxField  2`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <form
-      class="sc-bdfBwQ czeLXL"
+      class="sc-bdvvaa nNUGj"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+          class="StyledBox-sc-13pk1d4-0 jUPATD"
         >
           <div>
             <div
-              class="StyledBox-sc-13pk1d4-0 dLXLoO FormField__FormFieldBox-m9hood-0 jGEMXj"
+              class="StyledBox-sc-13pk1d4-0 eyhXU FormField__FormFieldBox-m9hood-0 gWgpjB"
             >
               <label
-                class="StyledText-sc-1sadyjn-0 drTEXR"
+                class="StyledText-sc-1sadyjn-0 japRIL"
                 for="tos"
               >
                 Terms of service
               </label>
               <div
-                class="StyledBox-sc-13pk1d4-0 gmReJc FormField__FormFieldContentBox-m9hood-1"
+                class="StyledBox-sc-13pk1d4-0 ijhmMK FormField__FormFieldContentBox-m9hood-1"
               >
                 <div
-                  class="StyledBox-sc-13pk1d4-0 iBWTSp"
+                  class="StyledBox-sc-13pk1d4-0 ktlgjz"
                 >
                   <label
-                    class="StyledCheckBox__StyledCheckBoxContainer-sc-1dbk5ju-1 htOOow"
+                    class="StyledCheckBox__StyledCheckBoxContainer-sc-1dbk5ju-1 cQEWce"
                     for="tos"
                   >
                     <div
-                      class="StyledBox-sc-13pk1d4-0 jbIyUK StyledCheckBox-sc-1dbk5ju-6 hOFfoi"
+                      class="StyledBox-sc-13pk1d4-0 itMSJI StyledCheckBox-sc-1dbk5ju-6 fJLUFg"
                     >
                       <input
-                        class="StyledCheckBox__StyledCheckBoxInput-sc-1dbk5ju-2 fYuA-Ds"
+                        class="StyledCheckBox__StyledCheckBoxInput-sc-1dbk5ju-2 gXyGmK"
                         id="tos"
                         name="tos"
                         type="checkbox"
                       />
                       <div
-                        class="StyledBox-sc-13pk1d4-0 jYPXhZ StyledCheckBox__StyledCheckBoxBox-sc-1dbk5ju-3 kRWCTA"
+                        class="StyledBox-sc-13pk1d4-0 iCZFPP StyledCheckBox__StyledCheckBoxBox-sc-1dbk5ju-3 eNpbdq"
                       />
                     </div>
                     <span
-                      class="StyledText-sc-1sadyjn-0 JhXAc"
+                      class="StyledText-sc-1sadyjn-0 jbskW"
                     >
                       Terms of service
                     </span>
@@ -126,10 +126,10 @@ exports[`CheckBoxField  2`] = `
               </div>
             </div>
             <div
-              class="StyledBox-sc-13pk1d4-0 jsieLm"
+              class="StyledBox-sc-13pk1d4-0 kspWmI"
             >
               <button
-                class="StyledButton-sc-323bzc-0 iZFCLM"
+                class="StyledButton-sc-323bzc-0 cfaKOi"
                 type="submit"
               >
                 Submit
@@ -146,36 +146,36 @@ exports[`CheckBoxField  2`] = `
 exports[`CheckBoxField  3`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <form
-      class="sc-bdfBwQ czeLXL"
+      class="sc-bdvvaa nNUGj"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+          class="StyledBox-sc-13pk1d4-0 jUPATD"
         >
           <div>
             <div
-              class="StyledBox-sc-13pk1d4-0 iBWTSp"
+              class="StyledBox-sc-13pk1d4-0 ktlgjz"
             >
               <label
-                class="StyledCheckBox__StyledCheckBoxContainer-sc-1dbk5ju-1 htOOow"
+                class="StyledCheckBox__StyledCheckBoxContainer-sc-1dbk5ju-1 cQEWce"
                 for="tos"
               >
                 <div
-                  class="StyledBox-sc-13pk1d4-0 jbIyUK StyledCheckBox-sc-1dbk5ju-6 hOFfoi"
+                  class="StyledBox-sc-13pk1d4-0 itMSJI StyledCheckBox-sc-1dbk5ju-6 fJLUFg"
                 >
                   <input
-                    class="StyledCheckBox__StyledCheckBoxInput-sc-1dbk5ju-2 fYuA-Ds"
+                    class="StyledCheckBox__StyledCheckBoxInput-sc-1dbk5ju-2 gXyGmK"
                     id="tos"
                     name="tos"
                     type="checkbox"
                   />
                   <div
-                    class="StyledBox-sc-13pk1d4-0 jYPXhZ StyledCheckBox__StyledCheckBoxBox-sc-1dbk5ju-3 kRWCTA"
+                    class="StyledBox-sc-13pk1d4-0 iCZFPP StyledCheckBox__StyledCheckBoxBox-sc-1dbk5ju-3 eNpbdq"
                   />
                 </div>
                 <span>
@@ -184,10 +184,10 @@ exports[`CheckBoxField  3`] = `
               </label>
             </div>
             <div
-              class="StyledBox-sc-13pk1d4-0 jsieLm"
+              class="StyledBox-sc-13pk1d4-0 kspWmI"
             >
               <button
-                class="StyledButton-sc-323bzc-0 iZFCLM"
+                class="StyledButton-sc-323bzc-0 cfaKOi"
                 type="submit"
               >
                 Submit

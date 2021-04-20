@@ -37,7 +37,9 @@ const DateInput = props => {
               <Calendar
                 size="small"
                 date={date}
-                onSelect={isoDate => setDate(smallDate(new Date(isoDate)))}
+                onSelect={isoDate =>
+                  setDate(smallDate(new Date(isoDate as string)))
+                }
               />
             </Box>
           }

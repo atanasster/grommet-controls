@@ -3,7 +3,7 @@
 exports[`RadarChart  1`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -18,7 +18,7 @@ exports[`RadarChart  1`] = `
 exports[`RadarChart  2`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -33,7 +33,7 @@ exports[`RadarChart  2`] = `
 exports[`RadarChart  3`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"

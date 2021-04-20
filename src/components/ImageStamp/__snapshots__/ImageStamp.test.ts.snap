@@ -3,10 +3,10 @@
 exports[`ImageStamp  1`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <img
-      class="sc-bdfBwQ dvgbqd"
+      class="sc-bdvvaa cRbUmd"
       src="https://s3.amazonaws.com/uifaces/faces/twitter/aaronkwhite/128.jpg"
     />
   </div>
@@ -16,10 +16,10 @@ exports[`ImageStamp  1`] = `
 exports[`ImageStamp  2`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <img
-      class="sc-bdfBwQ dTerfF"
+      class="sc-bdvvaa eVoqhh"
       src="https://s3.amazonaws.com/uifaces/faces/twitter/gojeanyn/128.jpg"
     />
   </div>

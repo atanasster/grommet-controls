@@ -3,30 +3,30 @@
 exports[`Value  1`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 gQhLwa"
+        class="StyledBox-sc-13pk1d4-0 hzkwpE"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 dYebPD"
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
         >
           <span
-            class="StyledText-sc-1sadyjn-0 cFsRYN"
+            class="StyledText-sc-1sadyjn-0 dNphxH"
           >
             30%
           </span>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
           />
           <div
-            class="StyledBox-sc-13pk1d4-0 iCrgvf"
+            class="StyledBox-sc-13pk1d4-0 kAUIOR"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 gOVGlS"
+              class="StyledText-sc-1sadyjn-0 ioNTgI"
             >
               last quarter sales
             </span>
@@ -41,24 +41,24 @@ exports[`Value  1`] = `
 exports[`Value  2`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <span
-        class="StyledText-sc-1sadyjn-0 cFsRYN"
+        class="StyledText-sc-1sadyjn-0 dNphxH"
       >
         30%
       </span>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 iCrgvf"
+        class="StyledBox-sc-13pk1d4-0 kAUIOR"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 gOVGlS"
+          class="StyledText-sc-1sadyjn-0 ioNTgI"
         >
           a descriptive label
         </span>
@@ -71,25 +71,25 @@ exports[`Value  2`] = `
 exports[`Value  3`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 dfYOnT"
+        class="StyledBox-sc-13pk1d4-0 kuSryJ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 iYKISq"
+          class="StyledText-sc-1sadyjn-0 bDnMwk"
         >
           30%
         </span>
         <div
-          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 bAwsPu"
+          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 hboplE"
         />
         <svg
           aria-label="Down"
-          class="StyledIcon-ofa7kd-0 ejCNex"
+          class="StyledIcon-ofa7kd-0 pzwSf"
           viewBox="0 0 24 24"
         >
           <polyline
@@ -102,13 +102,13 @@ exports[`Value  3`] = `
         </svg>
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 iCrgvf"
+        class="StyledBox-sc-13pk1d4-0 kAUIOR"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 gOVGlS"
+          class="StyledText-sc-1sadyjn-0 ioNTgI"
         >
           custom value
         </span>
@@ -121,24 +121,24 @@ exports[`Value  3`] = `
 exports[`Value  4`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD"
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
     >
       <span
-        class="StyledText-sc-1sadyjn-0 kJPzWn"
+        class="StyledText-sc-1sadyjn-0 fXlIRd"
       >
         30%
       </span>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 iCrgvf"
+        class="StyledBox-sc-13pk1d4-0 kAUIOR"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 fgFVYY"
+          class="StyledText-sc-1sadyjn-0 gqernu"
         >
           status-ok
         </span>
@@ -151,78 +151,78 @@ exports[`Value  4`] = `
 exports[`Value  5`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 gQhLwa"
+        class="StyledBox-sc-13pk1d4-0 hzkwpE"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 dYebPD"
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
         >
           <span
-            class="StyledText-sc-1sadyjn-0 jTpdaz"
+            class="StyledText-sc-1sadyjn-0 ePvjzN"
           >
             30%
           </span>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
           />
           <div
-            class="StyledBox-sc-13pk1d4-0 iCrgvf"
+            class="StyledBox-sc-13pk1d4-0 kAUIOR"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 gOVGlS"
+              class="StyledText-sc-1sadyjn-0 ioNTgI"
             >
               normal
             </span>
           </div>
         </div>
         <div
-          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
         />
         <div
-          class="StyledBox-sc-13pk1d4-0 dYebPD"
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
         >
           <span
-            class="StyledText-sc-1sadyjn-0 cFsRYN"
+            class="StyledText-sc-1sadyjn-0 dNphxH"
           >
             30%
           </span>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
           />
           <div
-            class="StyledBox-sc-13pk1d4-0 iCrgvf"
+            class="StyledBox-sc-13pk1d4-0 kAUIOR"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 gOVGlS"
+              class="StyledText-sc-1sadyjn-0 ioNTgI"
             >
               bold
             </span>
           </div>
         </div>
         <div
-          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
         />
         <div
-          class="StyledBox-sc-13pk1d4-0 dYebPD"
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
         >
           <span
-            class="StyledText-sc-1sadyjn-0 eArKQg"
+            class="StyledText-sc-1sadyjn-0 cVjjBa"
           >
             30%
           </span>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
           />
           <div
-            class="StyledBox-sc-13pk1d4-0 iCrgvf"
+            class="StyledBox-sc-13pk1d4-0 kAUIOR"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 gOVGlS"
+              class="StyledText-sc-1sadyjn-0 ioNTgI"
             >
               400
             </span>
@@ -237,150 +237,150 @@ exports[`Value  5`] = `
 exports[`Value  6`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 gQhLwa"
+        class="StyledBox-sc-13pk1d4-0 hzkwpE"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 dYebPD"
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
         >
           <span
-            class="StyledText-sc-1sadyjn-0 fHOLAh"
+            class="StyledText-sc-1sadyjn-0 dLAkNr"
           >
             30%
           </span>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
           />
           <div
-            class="StyledBox-sc-13pk1d4-0 iCrgvf"
+            class="StyledBox-sc-13pk1d4-0 kAUIOR"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 gJdaHr"
+              class="StyledText-sc-1sadyjn-0 bIztMF"
             >
               xsmall
             </span>
           </div>
         </div>
         <div
-          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
         />
         <div
-          class="StyledBox-sc-13pk1d4-0 dYebPD"
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
         >
           <span
-            class="StyledText-sc-1sadyjn-0 eNnSXE"
+            class="StyledText-sc-1sadyjn-0 enhnIy"
           >
             30%
           </span>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
           />
           <div
-            class="StyledBox-sc-13pk1d4-0 iCrgvf"
+            class="StyledBox-sc-13pk1d4-0 kAUIOR"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 gJdaHr"
+              class="StyledText-sc-1sadyjn-0 bIztMF"
             >
               small
             </span>
           </div>
         </div>
         <div
-          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
         />
         <div
-          class="StyledBox-sc-13pk1d4-0 dYebPD"
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
         >
           <span
-            class="StyledText-sc-1sadyjn-0 JhXAc"
+            class="StyledText-sc-1sadyjn-0 jbskW"
           >
             30%
           </span>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
           />
           <div
-            class="StyledBox-sc-13pk1d4-0 iCrgvf"
+            class="StyledBox-sc-13pk1d4-0 kAUIOR"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 gJdaHr"
+              class="StyledText-sc-1sadyjn-0 bIztMF"
             >
               medium
             </span>
           </div>
         </div>
         <div
-          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
         />
         <div
-          class="StyledBox-sc-13pk1d4-0 dYebPD"
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
         >
           <span
-            class="StyledText-sc-1sadyjn-0 cFsRYN"
+            class="StyledText-sc-1sadyjn-0 dNphxH"
           >
             30%
           </span>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
           />
           <div
-            class="StyledBox-sc-13pk1d4-0 iCrgvf"
+            class="StyledBox-sc-13pk1d4-0 kAUIOR"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 gOVGlS"
+              class="StyledText-sc-1sadyjn-0 ioNTgI"
             >
               large
             </span>
           </div>
         </div>
         <div
-          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
         />
         <div
-          class="StyledBox-sc-13pk1d4-0 dYebPD"
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
         >
           <span
-            class="StyledText-sc-1sadyjn-0 kGNBmq"
+            class="StyledText-sc-1sadyjn-0 jwrQcQ"
           >
             30%
           </span>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
           />
           <div
-            class="StyledBox-sc-13pk1d4-0 iCrgvf"
+            class="StyledBox-sc-13pk1d4-0 kAUIOR"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 DkZvS"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               xlarge
             </span>
           </div>
         </div>
         <div
-          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
         />
         <div
-          class="StyledBox-sc-13pk1d4-0 dYebPD"
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
         >
           <span
-            class="StyledText-sc-1sadyjn-0 eTkzRk"
+            class="StyledText-sc-1sadyjn-0 ePUrHq"
           >
             30%
           </span>
           <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 ggstca"
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
           />
           <div
-            class="StyledBox-sc-13pk1d4-0 iCrgvf"
+            class="StyledBox-sc-13pk1d4-0 kAUIOR"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 eLOxHb"
+              class="StyledText-sc-1sadyjn-0 fiigNB"
             >
               xxlarge
             </span>

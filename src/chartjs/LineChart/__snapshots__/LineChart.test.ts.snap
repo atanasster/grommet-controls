@@ -3,7 +3,7 @@
 exports[`LineChart  1`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -18,7 +18,7 @@ exports[`LineChart  1`] = `
 exports[`LineChart  2`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -33,7 +33,7 @@ exports[`LineChart  2`] = `
 exports[`LineChart  3`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -48,7 +48,7 @@ exports[`LineChart  3`] = `
 exports[`LineChart  4`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -63,7 +63,7 @@ exports[`LineChart  4`] = `
 exports[`LineChart  5`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -78,7 +78,7 @@ exports[`LineChart  5`] = `
 exports[`LineChart  6`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -93,7 +93,7 @@ exports[`LineChart  6`] = `
 exports[`LineChart  7`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -108,16 +108,16 @@ exports[`LineChart  7`] = `
 exports[`LineChart  8`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dvrejE"
+      class="StyledBox-sc-13pk1d4-0 fBPqci"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
+          class="StyledText-sc-1sadyjn-0 cddmqI"
         >
           Point style : "circle"
         </span>
@@ -129,13 +129,13 @@ exports[`LineChart  8`] = `
         />
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kDNLiy"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
+          class="StyledText-sc-1sadyjn-0 cddmqI"
         >
           Point style : "triangle"
         </span>
@@ -147,13 +147,13 @@ exports[`LineChart  8`] = `
         />
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kDNLiy"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
+          class="StyledText-sc-1sadyjn-0 cddmqI"
         >
           Point style : "rect"
         </span>
@@ -165,13 +165,13 @@ exports[`LineChart  8`] = `
         />
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kDNLiy"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
+          class="StyledText-sc-1sadyjn-0 cddmqI"
         >
           Point style : "rectRounded"
         </span>
@@ -183,13 +183,13 @@ exports[`LineChart  8`] = `
         />
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kDNLiy"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
+          class="StyledText-sc-1sadyjn-0 cddmqI"
         >
           Point style : "rectRot"
         </span>
@@ -201,13 +201,13 @@ exports[`LineChart  8`] = `
         />
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kDNLiy"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
+          class="StyledText-sc-1sadyjn-0 cddmqI"
         >
           Point style : "cross"
         </span>
@@ -219,13 +219,13 @@ exports[`LineChart  8`] = `
         />
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kDNLiy"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
+          class="StyledText-sc-1sadyjn-0 cddmqI"
         >
           Point style : "crossRot"
         </span>
@@ -237,13 +237,13 @@ exports[`LineChart  8`] = `
         />
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kDNLiy"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
+          class="StyledText-sc-1sadyjn-0 cddmqI"
         >
           Point style : "star"
         </span>
@@ -255,13 +255,13 @@ exports[`LineChart  8`] = `
         />
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kDNLiy"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
+          class="StyledText-sc-1sadyjn-0 cddmqI"
         >
           Point style : "line"
         </span>
@@ -273,13 +273,13 @@ exports[`LineChart  8`] = `
         />
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kDNLiy"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
+          class="StyledText-sc-1sadyjn-0 cddmqI"
         >
           Point style : "dash"
         </span>
@@ -298,7 +298,7 @@ exports[`LineChart  8`] = `
 exports[`LineChart  9`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -313,16 +313,16 @@ exports[`LineChart  9`] = `
 exports[`LineChart  10`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dvrejE"
+      class="StyledBox-sc-13pk1d4-0 fBPqci"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
+          class="StyledText-sc-1sadyjn-0 cddmqI"
         >
           Line fill=false
         </span>
@@ -334,13 +334,13 @@ exports[`LineChart  10`] = `
         />
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kDNLiy"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
+          class="StyledText-sc-1sadyjn-0 cddmqI"
         >
           Line fill=origin
         </span>
@@ -352,13 +352,13 @@ exports[`LineChart  10`] = `
         />
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kDNLiy"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
+          class="StyledText-sc-1sadyjn-0 cddmqI"
         >
           Line fill=start
         </span>
@@ -370,13 +370,13 @@ exports[`LineChart  10`] = `
         />
       </div>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kDNLiy"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 dYebPD"
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
+          class="StyledText-sc-1sadyjn-0 cddmqI"
         >
           Line fill=end
         </span>
@@ -395,7 +395,7 @@ exports[`LineChart  10`] = `
 exports[`LineChart  11`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -410,7 +410,7 @@ exports[`LineChart  11`] = `
 exports[`LineChart  12`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -425,7 +425,7 @@ exports[`LineChart  12`] = `
 exports[`LineChart  13`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -440,7 +440,7 @@ exports[`LineChart  13`] = `
 exports[`LineChart  14`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -455,7 +455,7 @@ exports[`LineChart  14`] = `
 exports[`LineChart  15`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -470,7 +470,7 @@ exports[`LineChart  15`] = `
 exports[`LineChart  16`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -485,7 +485,7 @@ exports[`LineChart  16`] = `
 exports[`LineChart  17`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"

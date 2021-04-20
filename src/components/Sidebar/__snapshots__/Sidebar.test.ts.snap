@@ -3,52 +3,31 @@
 exports[`Sidebar  1`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dvIeIL"
+      class="StyledBox-sc-13pk1d4-0 eFtRgN"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 nxubo"
+        class="StyledBox-sc-13pk1d4-0 PQaTA"
       >
-        <div
-          class="StyledBox-sc-13pk1d4-0 eLWzPC"
+        <button
+          class="StyledButton-sc-323bzc-0 knherS"
+          type="button"
         >
-          <button
-            class="StyledButton-sc-323bzc-0 hiyJPE"
-            type="button"
+          <svg
+            aria-label="Menu"
+            class="StyledIcon-ofa7kd-0 exrjxz"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-label="Menu"
-              class="StyledIcon-ofa7kd-0 dEeaTZ"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M2,19 L22,19 M2,5 L22,5 M2,12 L22,12"
-                fill="none"
-                stroke="#000"
-                stroke-width="2"
-              />
-            </svg>
-          </button>
-          <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
-          />
-          <header
-            class="StyledBox-sc-13pk1d4-0 dIHSGy"
-          >
-            <h3
-              class="StyledHeading-sc-1rdh4aw-0 nltgZ"
-            >
-              My title
-            </h3>
-          </header>
-        </div>
-        <span
-          class="StyledText-sc-1sadyjn-0 DkZvS"
-        >
-          Side item
-        </span>
+            <path
+              d="M2,19 L22,19 M2,5 L22,5 M2,12 L22,12"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </div>
@@ -58,29 +37,29 @@ exports[`Sidebar  1`] = `
 exports[`Sidebar  2`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 nxubo"
+      class="StyledBox-sc-13pk1d4-0 eqwCgi"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 eLWzPC"
+        class="StyledBox-sc-13pk1d4-0 gdUVQk"
       >
         <div
-          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
         />
         <header
-          class="StyledBox-sc-13pk1d4-0 dIHSGy"
+          class="StyledBox-sc-13pk1d4-0 iuBOfw"
         >
           <h3
-            class="StyledHeading-sc-1rdh4aw-0 nltgZ"
+            class="StyledHeading-sc-1rdh4aw-0 Fpxij"
           >
             title
           </h3>
         </header>
       </div>
       <span
-        class="StyledText-sc-1sadyjn-0 DkZvS"
+        class="StyledText-sc-1sadyjn-0 cddmqI"
       >
         Side item
       </span>
@@ -92,49 +71,28 @@ exports[`Sidebar  2`] = `
 exports[`Sidebar  3`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 nxubo"
+      class="StyledBox-sc-13pk1d4-0 PQaTA"
     >
-      <div
-        class="StyledBox-sc-13pk1d4-0 eLWzPC"
+      <button
+        class="StyledButton-sc-323bzc-0 knherS"
+        type="button"
       >
-        <button
-          class="StyledButton-sc-323bzc-0 hiyJPE"
-          type="button"
+        <svg
+          aria-label="Menu"
+          class="StyledIcon-ofa7kd-0 exrjxz"
+          viewBox="0 0 24 24"
         >
-          <svg
-            aria-label="Menu"
-            class="StyledIcon-ofa7kd-0 dEeaTZ"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M2,19 L22,19 M2,5 L22,5 M2,12 L22,12"
-              fill="none"
-              stroke="#000"
-              stroke-width="2"
-            />
-          </svg>
-        </button>
-        <div
-          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
-        />
-        <header
-          class="StyledBox-sc-13pk1d4-0 dIHSGy"
-        >
-          <h3
-            class="StyledHeading-sc-1rdh4aw-0 nltgZ"
-          >
-            title
-          </h3>
-        </header>
-      </div>
-      <span
-        class="StyledText-sc-1sadyjn-0 DkZvS"
-      >
-        Side item
-      </span>
+          <path
+            d="M2,19 L22,19 M2,5 L22,5 M2,12 L22,12"
+            fill="none"
+            stroke="#000"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
     </div>
   </div>
 </DocumentFragment>
@@ -143,49 +101,28 @@ exports[`Sidebar  3`] = `
 exports[`Sidebar  4`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 kZPTpl"
+      class="StyledBox-sc-13pk1d4-0 PQaTA"
     >
-      <div
-        class="StyledBox-sc-13pk1d4-0 eLWzPC"
+      <button
+        class="StyledButton-sc-323bzc-0 knherS"
+        type="button"
       >
-        <button
-          class="StyledButton-sc-323bzc-0 hiyJPE"
-          type="button"
+        <svg
+          aria-label="Menu"
+          class="StyledIcon-ofa7kd-0 exrjxz"
+          viewBox="0 0 24 24"
         >
-          <svg
-            aria-label="Menu"
-            class="StyledIcon-ofa7kd-0 dEeaTZ"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M2,19 L22,19 M2,5 L22,5 M2,12 L22,12"
-              fill="none"
-              stroke="#000"
-              stroke-width="2"
-            />
-          </svg>
-        </button>
-        <div
-          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
-        />
-        <header
-          class="StyledBox-sc-13pk1d4-0 dIHSGy"
-        >
-          <h3
-            class="StyledHeading-sc-1rdh4aw-0 nltgZ"
-          >
-            title
-          </h3>
-        </header>
-      </div>
-      <span
-        class="StyledText-sc-1sadyjn-0 DkZvS"
-      >
-        Side item
-      </span>
+          <path
+            d="M2,19 L22,19 M2,5 L22,5 M2,12 L22,12"
+            fill="none"
+            stroke="#000"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
     </div>
   </div>
 </DocumentFragment>

@@ -31,4 +31,5 @@ export interface INumberInputOwnProps {
   integers?: number;
 }
 
-export type INumberInputProps = INumberInputOwnProps & IMaskedInputProps;
+export type INumberInputProps = INumberInputOwnProps &
+  Omit<IMaskedInputProps, 'ref'>;

@@ -3,28 +3,28 @@
 exports[`Avatar  1`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dfYOnT"
+      class="StyledBox-sc-13pk1d4-0 kuSryJ"
     >
       <img
-        class="sc-bdfBwQ dTerfF"
+        class="sc-bdvvaa eVoqhh"
         src="https://s3.amazonaws.com/uifaces/faces/twitter/sta1ex/128.jpg"
       />
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eBVJAG"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
       />
       <div
-        class="StyledBox-sc-13pk1d4-0 ewicQb"
+        class="StyledBox-sc-13pk1d4-0 fCLLHN"
       >
         <span
-          class="StyledText-sc-1sadyjn-0 bjiDFt"
+          class="StyledText-sc-1sadyjn-0 cSDPFr"
         >
           Adam Smith
         </span>
         <span
-          class="StyledText-sc-1sadyjn-0 jfgsKn"
+          class="StyledText-sc-1sadyjn-0 elZBgx"
         >
           admin
         </span>

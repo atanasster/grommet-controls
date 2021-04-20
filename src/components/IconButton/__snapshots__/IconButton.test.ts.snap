@@ -3,15 +3,15 @@
 exports[`IconButton  1`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <button
-      class="StyledButton-sc-323bzc-0 gevYlz sc-bdfBwQ bPnugk"
+      class="StyledButton-sc-323bzc-0 ljIUjJ sc-bdvvaa hVPPTo"
       type="button"
     >
       <svg
         aria-label="Actions"
-        class="StyledIcon-ofa7kd-0 dEeaTZ"
+        class="StyledIcon-ofa7kd-0 exrjxz"
         viewBox="0 0 24 24"
       >
         <path

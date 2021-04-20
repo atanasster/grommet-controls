@@ -3,7 +3,7 @@
 exports[`BarChart  1`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -18,7 +18,7 @@ exports[`BarChart  1`] = `
 exports[`BarChart  2`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -33,7 +33,7 @@ exports[`BarChart  2`] = `
 exports[`BarChart  3`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -48,7 +48,7 @@ exports[`BarChart  3`] = `
 exports[`BarChart  4`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"
@@ -63,7 +63,7 @@ exports[`BarChart  4`] = `
 exports[`BarChart  5`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <canvas
       class="chartjs-render-monitor"

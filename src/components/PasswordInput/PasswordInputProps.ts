@@ -11,4 +11,5 @@ export interface IPasswordInputOwnProps {
   hideIcon?: JSX.Element;
 }
 
-export type IPasswordInputProps = IPasswordInputOwnProps & IDropInputProps;
+export type IPasswordInputProps = IPasswordInputOwnProps &
+  Omit<IDropInputProps, 'ref'>;

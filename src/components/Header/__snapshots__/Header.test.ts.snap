@@ -3,17 +3,17 @@
 exports[`Header  1`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dvrejE"
+      class="StyledBox-sc-13pk1d4-0 fBPqci"
     >
       <header
-        class="StyledBox-sc-13pk1d4-0 kIVmWO sc-bdfBwQ dpQdIw"
+        class="StyledBox-sc-13pk1d4-0 eUuWqQ sc-bdvvaa ixCrgM"
       >
         <svg
           aria-label="Grommet"
-          class="StyledIcon-ofa7kd-0 dcacLZ"
+          class="StyledIcon-ofa7kd-0 jBvkdz"
           viewBox="0 0 24 24"
         >
           <path
@@ -24,16 +24,16 @@ exports[`Header  1`] = `
           />
         </svg>
         <h2
-          class="StyledHeading-sc-1rdh4aw-0 frzykv"
+          class="StyledHeading-sc-1rdh4aw-0 dKhIDB"
         >
           app title
         </h2>
       </header>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
       />
       <img
-        class="StyledImage-ey4zx9-0 iBeQsm"
+        class="StyledImage-ey4zx9-0 fqVCxQ"
         src="https://picsum.photos/350/120/?image=662"
       />
     </div>
@@ -44,17 +44,17 @@ exports[`Header  1`] = `
 exports[`Header  2`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dvrejE"
+      class="StyledBox-sc-13pk1d4-0 fBPqci"
     >
       <header
-        class="StyledBox-sc-13pk1d4-0 fwSbDn sc-bdfBwQ dpQdIw"
+        class="StyledBox-sc-13pk1d4-0 gStneJ sc-bdvvaa ixCrgM"
       >
         <svg
           aria-label="Grommet"
-          class="StyledIcon-ofa7kd-0 dcacLZ"
+          class="StyledIcon-ofa7kd-0 jBvkdz"
           viewBox="0 0 24 24"
         >
           <path
@@ -65,16 +65,16 @@ exports[`Header  2`] = `
           />
         </svg>
         <h2
-          class="StyledHeading-sc-1rdh4aw-0 frzykv"
+          class="StyledHeading-sc-1rdh4aw-0 dKhIDB"
         >
           app title
         </h2>
       </header>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
       />
       <img
-        class="StyledImage-ey4zx9-0 iBeQsm"
+        class="StyledImage-ey4zx9-0 fqVCxQ"
         src="https://picsum.photos/350/120/?image=662"
       />
     </div>
@@ -85,17 +85,17 @@ exports[`Header  2`] = `
 exports[`Header  3`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dvrejE"
+      class="StyledBox-sc-13pk1d4-0 fBPqci"
     >
       <header
-        class="StyledBox-sc-13pk1d4-0 kIVmWO sc-bdfBwQ gFyDeM"
+        class="StyledBox-sc-13pk1d4-0 eUuWqQ sc-bdvvaa ckJHxk"
       >
         <svg
           aria-label="Grommet"
-          class="StyledIcon-ofa7kd-0 dcacLZ"
+          class="StyledIcon-ofa7kd-0 jBvkdz"
           viewBox="0 0 24 24"
         >
           <path
@@ -106,16 +106,16 @@ exports[`Header  3`] = `
           />
         </svg>
         <h2
-          class="StyledHeading-sc-1rdh4aw-0 frzykv"
+          class="StyledHeading-sc-1rdh4aw-0 dKhIDB"
         >
           app title
         </h2>
       </header>
       <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 dLcqZl"
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
       />
       <img
-        class="StyledImage-ey4zx9-0 iBeQsm"
+        class="StyledImage-ey4zx9-0 fqVCxQ"
         src="https://picsum.photos/350/120/?image=662"
       />
     </div>

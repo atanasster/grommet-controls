@@ -3,23 +3,23 @@
 exports[`NumberInput  1`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 hmIkGn"
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
       >
         <div
-          class="sc-gsTCUz kLVDRr"
+          class="sc-gsDJrp ixnOXx"
         >
           <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
               autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ hvvxbw"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
               inputmode="numeric"
               pattern="[0-9]*"
               type="text"
@@ -27,16 +27,16 @@ exports[`NumberInput  1`] = `
             />
           </div>
           <div
-            class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
           >
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Add"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -48,13 +48,13 @@ exports[`NumberInput  1`] = `
               </svg>
             </button>
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -76,23 +76,23 @@ exports[`NumberInput  1`] = `
 exports[`NumberInput  2`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 hmIkGn"
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
       >
         <div
-          class="sc-gsTCUz kLVDRr"
+          class="sc-gsDJrp ixnOXx"
         >
           <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
               autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ hvvxbw"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
               inputmode="numeric"
               pattern="[0-9]*"
               type="text"
@@ -100,16 +100,16 @@ exports[`NumberInput  2`] = `
             />
           </div>
           <div
-            class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
           >
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Add"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -121,13 +121,13 @@ exports[`NumberInput  2`] = `
               </svg>
             </button>
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -149,23 +149,23 @@ exports[`NumberInput  2`] = `
 exports[`NumberInput  3`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 hmIkGn"
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
       >
         <div
-          class="sc-gsTCUz kLVDRr"
+          class="sc-gsDJrp ixnOXx"
         >
           <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
               autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ hvvxbw"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
               inputmode="numeric"
               pattern="[0-9]*"
               type="text"
@@ -173,16 +173,16 @@ exports[`NumberInput  3`] = `
             />
           </div>
           <div
-            class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
           >
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Add"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -194,13 +194,13 @@ exports[`NumberInput  3`] = `
               </svg>
             </button>
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -222,23 +222,23 @@ exports[`NumberInput  3`] = `
 exports[`NumberInput  4`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 hmIkGn"
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
       >
         <div
-          class="sc-gsTCUz kLVDRr"
+          class="sc-gsDJrp ixnOXx"
         >
           <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
               autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ hvvxbw"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
               inputmode="numeric"
               pattern="[0-9]*"
               type="text"
@@ -246,16 +246,16 @@ exports[`NumberInput  4`] = `
             />
           </div>
           <div
-            class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
           >
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Add"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -267,13 +267,13 @@ exports[`NumberInput  4`] = `
               </svg>
             </button>
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -295,23 +295,23 @@ exports[`NumberInput  4`] = `
 exports[`NumberInput  5`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 hmIkGn"
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
       >
         <div
-          class="sc-gsTCUz kLVDRr"
+          class="sc-gsDJrp ixnOXx"
         >
           <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
               autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ hvvxbw"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
               inputmode="numeric"
               pattern="[0-9]*"
               type="text"
@@ -319,16 +319,16 @@ exports[`NumberInput  5`] = `
             />
           </div>
           <div
-            class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
           >
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Add"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -340,13 +340,13 @@ exports[`NumberInput  5`] = `
               </svg>
             </button>
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -368,23 +368,23 @@ exports[`NumberInput  5`] = `
 exports[`NumberInput  6`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 hmIkGn"
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
       >
         <div
-          class="sc-gsTCUz kLVDRr"
+          class="sc-gsDJrp ixnOXx"
         >
           <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
               autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 jwXOFh sc-bdfBwQ hvvxbw"
+              class="StyledTextInput-sc-1x30a0s-0 fAimXg sc-bdvvaa dNjmOA"
               disabled=""
               inputmode="numeric"
               pattern="[0-9]*"
@@ -393,17 +393,17 @@ exports[`NumberInput  6`] = `
             />
           </div>
           <div
-            class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
           >
             <button
-              class="StyledButton-sc-323bzc-0 iyUonS"
+              class="StyledButton-sc-323bzc-0 clVhgk"
               disabled=""
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Add"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -415,14 +415,14 @@ exports[`NumberInput  6`] = `
               </svg>
             </button>
             <button
-              class="StyledButton-sc-323bzc-0 iyUonS"
+              class="StyledButton-sc-323bzc-0 clVhgk"
               disabled=""
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -444,23 +444,23 @@ exports[`NumberInput  6`] = `
 exports[`NumberInput  7`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 hmIkGn"
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
       >
         <div
-          class="sc-gsTCUz kLVDRr"
+          class="sc-gsDJrp ixnOXx"
         >
           <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
               autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ hvvxbw"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
               inputmode="numeric"
               pattern="[0-9]*"
               type="text"
@@ -468,16 +468,16 @@ exports[`NumberInput  7`] = `
             />
           </div>
           <div
-            class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
           >
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="AddCircle"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -489,13 +489,13 @@ exports[`NumberInput  7`] = `
               </svg>
             </button>
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="SubtractCircle"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -517,23 +517,23 @@ exports[`NumberInput  7`] = `
 exports[`NumberInput  8`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 hmIkGn"
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
       >
         <div
-          class="sc-gsTCUz kLVDRr"
+          class="sc-gsDJrp ixnOXx"
         >
           <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
               autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ hvvxbw"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
               inputmode="numeric"
               pattern="[0-9]*"
               type="text"
@@ -541,16 +541,16 @@ exports[`NumberInput  8`] = `
             />
           </div>
           <div
-            class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
           >
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Add"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -562,13 +562,13 @@ exports[`NumberInput  8`] = `
               </svg>
             </button>
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -590,23 +590,23 @@ exports[`NumberInput  8`] = `
 exports[`NumberInput  9`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 hmIkGn"
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
       >
         <div
-          class="sc-gsTCUz kLVDRr"
+          class="sc-gsDJrp ixnOXx"
         >
           <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
               autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ hvvxbw"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
               inputmode="numeric"
               pattern="[0-9]*"
               type="text"
@@ -614,16 +614,16 @@ exports[`NumberInput  9`] = `
             />
           </div>
           <div
-            class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
           >
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Add"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -635,13 +635,13 @@ exports[`NumberInput  9`] = `
               </svg>
             </button>
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -663,23 +663,23 @@ exports[`NumberInput  9`] = `
 exports[`NumberInput  10`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 hmIkGn"
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
       >
         <div
-          class="sc-gsTCUz kLVDRr"
+          class="sc-gsDJrp ixnOXx"
         >
           <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
               autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ hvvxbw"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
               inputmode="numeric"
               pattern="[0-9]*"
               type="text"
@@ -687,16 +687,16 @@ exports[`NumberInput  10`] = `
             />
           </div>
           <div
-            class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
           >
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Add"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -708,13 +708,13 @@ exports[`NumberInput  10`] = `
               </svg>
             </button>
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -736,23 +736,23 @@ exports[`NumberInput  10`] = `
 exports[`NumberInput  11`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 hmIkGn"
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
       >
         <div
-          class="sc-gsTCUz kLVDRr"
+          class="sc-gsDJrp ixnOXx"
         >
           <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
               autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ hvvxbw"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
               inputmode="numeric"
               pattern="[0-9]*"
               type="text"
@@ -760,16 +760,16 @@ exports[`NumberInput  11`] = `
             />
           </div>
           <div
-            class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
           >
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Add"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -781,13 +781,13 @@ exports[`NumberInput  11`] = `
               </svg>
             </button>
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -809,23 +809,23 @@ exports[`NumberInput  11`] = `
 exports[`NumberInput  12`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 hmIkGn"
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
       >
         <div
-          class="sc-gsTCUz kLVDRr"
+          class="sc-gsDJrp ixnOXx"
         >
           <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
               autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ hvvxbw"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
               inputmode="numeric"
               pattern="[0-9]*"
               type="text"
@@ -833,16 +833,16 @@ exports[`NumberInput  12`] = `
             />
           </div>
           <div
-            class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
           >
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Add"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -854,13 +854,13 @@ exports[`NumberInput  12`] = `
               </svg>
             </button>
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -882,23 +882,23 @@ exports[`NumberInput  12`] = `
 exports[`NumberInput  13`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 bEnuwL"
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 hmIkGn"
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
       >
         <div
-          class="sc-gsTCUz kLVDRr"
+          class="sc-gsDJrp ixnOXx"
         >
           <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
               autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ hvvxbw"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
               inputmode="numeric"
               pattern="[0-9]*"
               type="text"
@@ -906,16 +906,16 @@ exports[`NumberInput  13`] = `
             />
           </div>
           <div
-            class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
           >
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Add"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -927,13 +927,13 @@ exports[`NumberInput  13`] = `
               </svg>
             </button>
             <button
-              class="StyledButton-sc-323bzc-0 hiyJPE"
+              class="StyledButton-sc-323bzc-0 knherS"
               tabindex="-1"
               type="button"
             >
               <svg
                 aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 dEeaTZ"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path

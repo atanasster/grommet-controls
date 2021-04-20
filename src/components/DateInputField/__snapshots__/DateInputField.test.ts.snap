@@ -3,39 +3,39 @@
 exports[`DateInputField  1`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <form
-      class="sc-hKgILt eqLMWy"
+      class="sc-hKwCoD ckzNeZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+          class="StyledBox-sc-13pk1d4-0 jUPATD"
         >
           <div>
             <div
-              class="StyledBox-sc-13pk1d4-0 dLXLoO FormField__FormFieldBox-m9hood-0 jGEMXj"
+              class="StyledBox-sc-13pk1d4-0 eyhXU FormField__FormFieldBox-m9hood-0 gWgpjB"
             >
               <label
-                class="StyledText-sc-1sadyjn-0 drTEXR"
+                class="StyledText-sc-1sadyjn-0 japRIL"
                 for="date"
               >
                 Date
               </label>
               <div
-                class="StyledBox-sc-13pk1d4-0 gmReJc FormField__FormFieldContentBox-m9hood-1"
+                class="StyledBox-sc-13pk1d4-0 ijhmMK FormField__FormFieldContentBox-m9hood-1"
               >
                 <div
-                  class="sc-gsTCUz kLVDRr"
+                  class="sc-gsDJrp ixnOXx"
                 >
                   <div
-                    class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+                    class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
                   >
                     <input
                       autocomplete="off"
-                      class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ ipzXGW"
+                      class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa lnWPOq"
                       id="date"
                       name="date"
                       type="text"
@@ -43,17 +43,17 @@ exports[`DateInputField  1`] = `
                     />
                   </div>
                   <div
-                    class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+                    class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
                   >
                     <button
                       aria-label="Open calendar"
-                      class="StyledButton-sc-323bzc-0 kYLWbR"
+                      class="StyledButton-sc-323bzc-0 hLEXAf"
                       tabindex="-1"
                       type="button"
                     >
                       <svg
                         aria-label="Calendar"
-                        class="StyledIcon-ofa7kd-0 dEeaTZ"
+                        class="StyledIcon-ofa7kd-0 exrjxz"
                         viewBox="0 0 24 24"
                       >
                         <path
@@ -69,10 +69,10 @@ exports[`DateInputField  1`] = `
               </div>
             </div>
             <div
-              class="StyledBox-sc-13pk1d4-0 jsieLm"
+              class="StyledBox-sc-13pk1d4-0 kspWmI"
             >
               <button
-                class="StyledButton-sc-323bzc-0 iZFCLM"
+                class="StyledButton-sc-323bzc-0 cfaKOi"
                 type="submit"
               >
                 Submit
@@ -89,27 +89,27 @@ exports[`DateInputField  1`] = `
 exports[`DateInputField  2`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <form
-      class="sc-hKgILt eqLMWy"
+      class="sc-hKwCoD ckzNeZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+          class="StyledBox-sc-13pk1d4-0 jUPATD"
         >
           <div>
             <div
-              class="sc-gsTCUz kLVDRr"
+              class="sc-gsDJrp ixnOXx"
             >
               <div
-                class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+                class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
               >
                 <input
                   autocomplete="off"
-                  class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ ipzXGW"
+                  class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa lnWPOq"
                   id="date"
                   label="Date"
                   name="date"
@@ -118,17 +118,17 @@ exports[`DateInputField  2`] = `
                 />
               </div>
               <div
-                class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+                class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
               >
                 <button
                   aria-label="Open calendar"
-                  class="StyledButton-sc-323bzc-0 kYLWbR"
+                  class="StyledButton-sc-323bzc-0 hLEXAf"
                   tabindex="-1"
                   type="button"
                 >
                   <svg
                     aria-label="Calendar"
-                    class="StyledIcon-ofa7kd-0 dEeaTZ"
+                    class="StyledIcon-ofa7kd-0 exrjxz"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -142,10 +142,10 @@ exports[`DateInputField  2`] = `
               </div>
             </div>
             <div
-              class="StyledBox-sc-13pk1d4-0 jsieLm"
+              class="StyledBox-sc-13pk1d4-0 kspWmI"
             >
               <button
-                class="StyledButton-sc-323bzc-0 iZFCLM"
+                class="StyledButton-sc-323bzc-0 cfaKOi"
                 type="submit"
               >
                 Submit
@@ -162,39 +162,39 @@ exports[`DateInputField  2`] = `
 exports[`DateInputField  3`] = `
 <DocumentFragment>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 djOnwZ"
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <form
-      class="sc-hKgILt eqLMWy"
+      class="sc-hKwCoD ckzNeZ"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 bEnuwL"
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
       >
         <div
-          class="StyledBox-sc-13pk1d4-0 eMyfFh"
+          class="StyledBox-sc-13pk1d4-0 jUPATD"
         >
           <div>
             <div
-              class="StyledBox-sc-13pk1d4-0 dLXLoO FormField__FormFieldBox-m9hood-0 jGEMXj"
+              class="StyledBox-sc-13pk1d4-0 eyhXU FormField__FormFieldBox-m9hood-0 gWgpjB"
             >
               <label
-                class="StyledText-sc-1sadyjn-0 drTEXR"
+                class="StyledText-sc-1sadyjn-0 japRIL"
                 for="date"
               >
                 Date
               </label>
               <div
-                class="StyledBox-sc-13pk1d4-0 gmReJc FormField__FormFieldContentBox-m9hood-1"
+                class="StyledBox-sc-13pk1d4-0 ijhmMK FormField__FormFieldContentBox-m9hood-1"
               >
                 <div
-                  class="sc-gsTCUz kLVDRr"
+                  class="sc-gsDJrp ixnOXx"
                 >
                   <div
-                    class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 dpaJQp"
+                    class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
                   >
                     <input
                       autocomplete="off"
-                      class="StyledTextInput-sc-1x30a0s-0 jKshUE sc-bdfBwQ ipzXGW"
+                      class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa lnWPOq"
                       id="date"
                       name="date"
                       type="text"
@@ -202,17 +202,17 @@ exports[`DateInputField  3`] = `
                     />
                   </div>
                   <div
-                    class="StyledBox-sc-13pk1d4-0 dfYOnT sc-dlfnbm cVArRP"
+                    class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
                   >
                     <button
                       aria-label="Open calendar"
-                      class="StyledButton-sc-323bzc-0 kYLWbR"
+                      class="StyledButton-sc-323bzc-0 hLEXAf"
                       tabindex="-1"
                       type="button"
                     >
                       <svg
                         aria-label="Calendar"
-                        class="StyledIcon-ofa7kd-0 dEeaTZ"
+                        class="StyledIcon-ofa7kd-0 exrjxz"
                         viewBox="0 0 24 24"
                       >
                         <path
@@ -228,10 +228,10 @@ exports[`DateInputField  3`] = `
               </div>
             </div>
             <div
-              class="StyledBox-sc-13pk1d4-0 jsieLm"
+              class="StyledBox-sc-13pk1d4-0 kspWmI"
             >
               <button
-                class="StyledButton-sc-323bzc-0 iZFCLM"
+                class="StyledButton-sc-323bzc-0 cfaKOi"
                 type="submit"
               >
                 Submit

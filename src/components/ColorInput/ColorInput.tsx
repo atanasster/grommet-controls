@@ -29,7 +29,7 @@ interface IColorInputState {
  * All properties of MaskedInput apply.
  */
 class ColorInput extends Component<
-  IColorInputProps & IMaskedInputProps & IColorsProps,
+  IColorInputProps & Omit<IMaskedInputProps, 'ref'> & IColorsProps,
   IColorInputState
 > {
   static defaultProps = {
