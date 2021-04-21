@@ -102,6 +102,11 @@
   },
   "jest": {
     "preset": "ts-jest",
+    "globals": {
+      "ts-jest": {
+        "isolatedModules": true
+      }
+    },
     "setupFiles": [
       "./src/chartjs/setupTests.ts"
     ],
