@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NumberInputField  1`] = `
+exports[`NumberInputField  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -105,7 +105,7 @@ exports[`NumberInputField  1`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInputField  2`] = `
+exports[`NumberInputField  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -197,7 +197,7 @@ exports[`NumberInputField  2`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInputField  3`] = `
+exports[`NumberInputField  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

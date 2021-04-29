@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DropInput  1`] = `
+exports[`DropInput  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -18,6 +18,7 @@ exports[`DropInput  1`] = `
             class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
+              aria-label="select a date"
               autocomplete="off"
               class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa lnWPOq"
               type="text"
@@ -54,7 +55,7 @@ exports[`DropInput  1`] = `
 </DocumentFragment>
 `;
 
-exports[`DropInput  2`] = `
+exports[`DropInput  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -109,7 +110,7 @@ exports[`DropInput  2`] = `
 </DocumentFragment>
 `;
 
-exports[`DropInput  3`] = `
+exports[`DropInput  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -127,6 +128,7 @@ exports[`DropInput  3`] = `
             class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
+              aria-label="select a date"
               autocomplete="off"
               class="StyledTextInput-sc-1x30a0s-0 fAimXg sc-bdvvaa lnWPOq"
               disabled=""
@@ -165,7 +167,7 @@ exports[`DropInput  3`] = `
 </DocumentFragment>
 `;
 
-exports[`DropInput  4`] = `
+exports[`DropInput  snapshot 4`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -185,6 +187,7 @@ exports[`DropInput  4`] = `
             <input
               autocomplete="off"
               class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa lnWPOq"
+              placeholder="select a value"
               type="text"
               value="08/30/2020"
             />
@@ -219,7 +222,7 @@ exports[`DropInput  4`] = `
 </DocumentFragment>
 `;
 
-exports[`DropInput  5`] = `
+exports[`DropInput  snapshot 5`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -237,6 +240,7 @@ exports[`DropInput  5`] = `
             class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
+              aria-label="select a date"
               autocomplete="off"
               class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa lnWPOq"
               type="text"
@@ -273,7 +277,7 @@ exports[`DropInput  5`] = `
 </DocumentFragment>
 `;
 
-exports[`DropInput  6`] = `
+exports[`DropInput  snapshot 6`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -291,6 +295,7 @@ exports[`DropInput  6`] = `
             class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
           >
             <input
+              aria-label="select a number"
               autocomplete="off"
               class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
               type="text"
@@ -344,7 +349,7 @@ exports[`DropInput  6`] = `
 </DocumentFragment>
 `;
 
-exports[`DropInput  7`] = `
+exports[`DropInput  snapshot 7`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -364,6 +369,7 @@ exports[`DropInput  7`] = `
             <input
               autocomplete="off"
               class="StyledTextInput-sc-1x30a0s-0 dsrMSZ sc-bdvvaa hfkuDO"
+              placeholder="select a value"
               type="text"
               value="Plain no focus"
             />
@@ -375,7 +381,7 @@ exports[`DropInput  7`] = `
 </DocumentFragment>
 `;
 
-exports[`DropInput  8`] = `
+exports[`DropInput  snapshot 8`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -395,6 +401,7 @@ exports[`DropInput  8`] = `
             <input
               autocomplete="off"
               class="StyledTextInput-sc-1x30a0s-0 dsrMSZ sc-bdvvaa hfkuDO"
+              placeholder="select a value"
               type="text"
               value="Plain with focus"
             />
@@ -406,7 +413,7 @@ exports[`DropInput  8`] = `
 </DocumentFragment>
 `;
 
-exports[`DropInput  9`] = `
+exports[`DropInput  snapshot 9`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -438,7 +445,7 @@ exports[`DropInput  9`] = `
 </DocumentFragment>
 `;
 
-exports[`DropInput  10`] = `
+exports[`DropInput  snapshot 10`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -460,6 +467,7 @@ exports[`DropInput  10`] = `
               class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
               id="date-id"
               name="date-name"
+              placeholder="select a value"
               type="text"
               value=""
             />

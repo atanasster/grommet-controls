@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sidebar  1`] = `
+exports[`Sidebar  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -34,7 +34,7 @@ exports[`Sidebar  1`] = `
 </DocumentFragment>
 `;
 
-exports[`Sidebar  2`] = `
+exports[`Sidebar  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -68,7 +68,7 @@ exports[`Sidebar  2`] = `
 </DocumentFragment>
 `;
 
-exports[`Sidebar  3`] = `
+exports[`Sidebar  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -98,7 +98,7 @@ exports[`Sidebar  3`] = `
 </DocumentFragment>
 `;
 
-exports[`Sidebar  4`] = `
+exports[`Sidebar  snapshot 4`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

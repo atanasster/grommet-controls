@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LineChart  1`] = `
+exports[`LineChart  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -15,7 +15,7 @@ exports[`LineChart  1`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  2`] = `
+exports[`LineChart  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -30,7 +30,7 @@ exports[`LineChart  2`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  3`] = `
+exports[`LineChart  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -45,7 +45,7 @@ exports[`LineChart  3`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  4`] = `
+exports[`LineChart  snapshot 4`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -60,7 +60,7 @@ exports[`LineChart  4`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  5`] = `
+exports[`LineChart  snapshot 5`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -75,7 +75,7 @@ exports[`LineChart  5`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  6`] = `
+exports[`LineChart  snapshot 6`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -90,7 +90,7 @@ exports[`LineChart  6`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  7`] = `
+exports[`LineChart  snapshot 7`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -105,7 +105,7 @@ exports[`LineChart  7`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  8`] = `
+exports[`LineChart  snapshot 8`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -295,7 +295,7 @@ exports[`LineChart  8`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  9`] = `
+exports[`LineChart  snapshot 9`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -310,7 +310,7 @@ exports[`LineChart  9`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  10`] = `
+exports[`LineChart  snapshot 10`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -392,7 +392,7 @@ exports[`LineChart  10`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  11`] = `
+exports[`LineChart  snapshot 11`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -407,7 +407,7 @@ exports[`LineChart  11`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  12`] = `
+exports[`LineChart  snapshot 12`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -422,7 +422,7 @@ exports[`LineChart  12`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  13`] = `
+exports[`LineChart  snapshot 13`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -437,7 +437,7 @@ exports[`LineChart  13`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  14`] = `
+exports[`LineChart  snapshot 14`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -452,7 +452,7 @@ exports[`LineChart  14`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  15`] = `
+exports[`LineChart  snapshot 15`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -467,7 +467,7 @@ exports[`LineChart  15`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  16`] = `
+exports[`LineChart  snapshot 16`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -482,7 +482,7 @@ exports[`LineChart  16`] = `
 </DocumentFragment>
 `;
 
-exports[`LineChart  17`] = `
+exports[`LineChart  snapshot 17`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DateInputField  1`] = `
+exports[`DateInputField  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -86,7 +86,7 @@ exports[`DateInputField  1`] = `
 </DocumentFragment>
 `;
 
-exports[`DateInputField  2`] = `
+exports[`DateInputField  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -159,7 +159,7 @@ exports[`DateInputField  2`] = `
 </DocumentFragment>
 `;
 
-exports[`DateInputField  3`] = `
+exports[`DateInputField  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

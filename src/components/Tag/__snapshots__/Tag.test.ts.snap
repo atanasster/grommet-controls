@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tag  1`] = `
+exports[`Tag  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -37,7 +37,7 @@ exports[`Tag  1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag  2`] = `
+exports[`Tag  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -58,7 +58,7 @@ exports[`Tag  2`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag  3`] = `
+exports[`Tag  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -94,7 +94,7 @@ exports[`Tag  3`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag  4`] = `
+exports[`Tag  snapshot 4`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -115,7 +115,7 @@ exports[`Tag  4`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag  5`] = `
+exports[`Tag  snapshot 5`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -135,7 +135,7 @@ exports[`Tag  5`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag  6`] = `
+exports[`Tag  snapshot 6`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -155,7 +155,7 @@ exports[`Tag  6`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag  7`] = `
+exports[`Tag  snapshot 7`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -175,7 +175,7 @@ exports[`Tag  7`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag  8`] = `
+exports[`Tag  snapshot 8`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -195,7 +195,7 @@ exports[`Tag  8`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag  9`] = `
+exports[`Tag  snapshot 9`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -216,7 +216,7 @@ exports[`Tag  9`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag  10`] = `
+exports[`Tag  snapshot 10`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -252,7 +252,7 @@ exports[`Tag  10`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag  11`] = `
+exports[`Tag  snapshot 11`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -272,7 +272,7 @@ exports[`Tag  11`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag  12`] = `
+exports[`Tag  snapshot 12`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

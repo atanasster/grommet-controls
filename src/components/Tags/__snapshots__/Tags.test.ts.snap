@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tags  1`] = `
+exports[`Tags  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -97,7 +97,7 @@ exports[`Tags  1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  2`] = `
+exports[`Tags  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -195,7 +195,7 @@ exports[`Tags  2`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  3`] = `
+exports[`Tags  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -270,7 +270,7 @@ exports[`Tags  3`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  4`] = `
+exports[`Tags  snapshot 4`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -367,7 +367,7 @@ exports[`Tags  4`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  5`] = `
+exports[`Tags  snapshot 5`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -464,7 +464,7 @@ exports[`Tags  5`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  6`] = `
+exports[`Tags  snapshot 6`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -561,7 +561,7 @@ exports[`Tags  6`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  7`] = `
+exports[`Tags  snapshot 7`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -658,7 +658,7 @@ exports[`Tags  7`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  8`] = `
+exports[`Tags  snapshot 8`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -754,7 +754,7 @@ exports[`Tags  8`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  9`] = `
+exports[`Tags  snapshot 9`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -851,7 +851,7 @@ exports[`Tags  9`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  10`] = `
+exports[`Tags  snapshot 10`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

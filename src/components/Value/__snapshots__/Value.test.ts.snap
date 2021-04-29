@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Value  1`] = `
+exports[`Value  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -38,7 +38,7 @@ exports[`Value  1`] = `
 </DocumentFragment>
 `;
 
-exports[`Value  2`] = `
+exports[`Value  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -68,7 +68,7 @@ exports[`Value  2`] = `
 </DocumentFragment>
 `;
 
-exports[`Value  3`] = `
+exports[`Value  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -118,7 +118,7 @@ exports[`Value  3`] = `
 </DocumentFragment>
 `;
 
-exports[`Value  4`] = `
+exports[`Value  snapshot 4`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -148,7 +148,7 @@ exports[`Value  4`] = `
 </DocumentFragment>
 `;
 
-exports[`Value  5`] = `
+exports[`Value  snapshot 5`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -234,7 +234,7 @@ exports[`Value  5`] = `
 </DocumentFragment>
 `;
 
-exports[`Value  6`] = `
+exports[`Value  snapshot 6`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NumberInput  1`] = `
+exports[`NumberInput  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -73,7 +73,7 @@ exports[`NumberInput  1`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  2`] = `
+exports[`NumberInput  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -146,7 +146,7 @@ exports[`NumberInput  2`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  3`] = `
+exports[`NumberInput  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -219,7 +219,7 @@ exports[`NumberInput  3`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  4`] = `
+exports[`NumberInput  snapshot 4`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -292,7 +292,7 @@ exports[`NumberInput  4`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  5`] = `
+exports[`NumberInput  snapshot 5`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -365,7 +365,7 @@ exports[`NumberInput  5`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  6`] = `
+exports[`NumberInput  snapshot 6`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -441,7 +441,7 @@ exports[`NumberInput  6`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  7`] = `
+exports[`NumberInput  snapshot 7`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -514,7 +514,7 @@ exports[`NumberInput  7`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  8`] = `
+exports[`NumberInput  snapshot 8`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -587,7 +587,7 @@ exports[`NumberInput  8`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  9`] = `
+exports[`NumberInput  snapshot 9`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -660,7 +660,7 @@ exports[`NumberInput  9`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  10`] = `
+exports[`NumberInput  snapshot 10`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -733,7 +733,7 @@ exports[`NumberInput  10`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  11`] = `
+exports[`NumberInput  snapshot 11`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -806,7 +806,7 @@ exports[`NumberInput  11`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  12`] = `
+exports[`NumberInput  snapshot 12`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -879,7 +879,7 @@ exports[`NumberInput  12`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  13`] = `
+exports[`NumberInput  snapshot 13`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MaskedInput  1`] = `
+exports[`MaskedInput  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -31,7 +31,7 @@ exports[`MaskedInput  1`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  2`] = `
+exports[`MaskedInput  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -63,7 +63,7 @@ exports[`MaskedInput  2`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  3`] = `
+exports[`MaskedInput  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -119,7 +119,7 @@ exports[`MaskedInput  3`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  4`] = `
+exports[`MaskedInput  snapshot 4`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -173,7 +173,7 @@ exports[`MaskedInput  4`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  5`] = `
+exports[`MaskedInput  snapshot 5`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -244,7 +244,7 @@ exports[`MaskedInput  5`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  6`] = `
+exports[`MaskedInput  snapshot 6`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -275,7 +275,7 @@ exports[`MaskedInput  6`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  7`] = `
+exports[`MaskedInput  snapshot 7`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -306,7 +306,7 @@ exports[`MaskedInput  7`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  8`] = `
+exports[`MaskedInput  snapshot 8`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -338,7 +338,7 @@ exports[`MaskedInput  8`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  9`] = `
+exports[`MaskedInput  snapshot 9`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -369,7 +369,7 @@ exports[`MaskedInput  9`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  10`] = `
+exports[`MaskedInput  snapshot 10`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -401,7 +401,7 @@ exports[`MaskedInput  10`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  11`] = `
+exports[`MaskedInput  snapshot 11`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -432,7 +432,7 @@ exports[`MaskedInput  11`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  12`] = `
+exports[`MaskedInput  snapshot 12`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -463,7 +463,7 @@ exports[`MaskedInput  12`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  13`] = `
+exports[`MaskedInput  snapshot 13`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -494,7 +494,7 @@ exports[`MaskedInput  13`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  14`] = `
+exports[`MaskedInput  snapshot 14`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -526,7 +526,7 @@ exports[`MaskedInput  14`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  15`] = `
+exports[`MaskedInput  snapshot 15`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`VerticalMenu  1`] = `
+exports[`VerticalMenu  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -99,7 +99,7 @@ exports[`VerticalMenu  1`] = `
 </DocumentFragment>
 `;
 
-exports[`VerticalMenu  2`] = `
+exports[`VerticalMenu  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

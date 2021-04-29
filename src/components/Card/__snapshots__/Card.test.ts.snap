@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card  1`] = `
+exports[`Card  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -87,7 +87,7 @@ exports[`Card  1`] = `
 </DocumentFragment>
 `;
 
-exports[`Card  2`] = `
+exports[`Card  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -121,7 +121,7 @@ exports[`Card  2`] = `
 </DocumentFragment>
 `;
 
-exports[`Card  3`] = `
+exports[`Card  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -151,7 +151,7 @@ exports[`Card  3`] = `
 </DocumentFragment>
 `;
 
-exports[`Card  4`] = `
+exports[`Card  snapshot 4`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -181,7 +181,7 @@ exports[`Card  4`] = `
 </DocumentFragment>
 `;
 
-exports[`Card  5`] = `
+exports[`Card  snapshot 5`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -211,7 +211,7 @@ exports[`Card  5`] = `
 </DocumentFragment>
 `;
 
-exports[`Card  6`] = `
+exports[`Card  snapshot 6`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -241,7 +241,7 @@ exports[`Card  6`] = `
 </DocumentFragment>
 `;
 
-exports[`Card  7`] = `
+exports[`Card  snapshot 7`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -271,7 +271,7 @@ exports[`Card  7`] = `
 </DocumentFragment>
 `;
 
-exports[`Card  8`] = `
+exports[`Card  snapshot 8`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DateInput  1`] = `
+exports[`DateInput  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -54,7 +54,7 @@ exports[`DateInput  1`] = `
 </DocumentFragment>
 `;
 
-exports[`DateInput  2`] = `
+exports[`DateInput  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -108,7 +108,7 @@ exports[`DateInput  2`] = `
 </DocumentFragment>
 `;
 
-exports[`DateInput  3`] = `
+exports[`DateInput  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -164,7 +164,7 @@ exports[`DateInput  3`] = `
 </DocumentFragment>
 `;
 
-exports[`DateInput  4`] = `
+exports[`DateInput  snapshot 4`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -218,7 +218,7 @@ exports[`DateInput  4`] = `
 </DocumentFragment>
 `;
 
-exports[`DateInput  5`] = `
+exports[`DateInput  snapshot 5`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -272,7 +272,7 @@ exports[`DateInput  5`] = `
 </DocumentFragment>
 `;
 
-exports[`DateInput  6`] = `
+exports[`DateInput  snapshot 6`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -326,7 +326,7 @@ exports[`DateInput  6`] = `
 </DocumentFragment>
 `;
 
-exports[`DateInput  7`] = `
+exports[`DateInput  snapshot 7`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -380,7 +380,7 @@ exports[`DateInput  7`] = `
 </DocumentFragment>
 `;
 
-exports[`DateInput  8`] = `
+exports[`DateInput  snapshot 8`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header  1`] = `
+exports[`Header  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -41,7 +41,7 @@ exports[`Header  1`] = `
 </DocumentFragment>
 `;
 
-exports[`Header  2`] = `
+exports[`Header  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -82,7 +82,7 @@ exports[`Header  2`] = `
 </DocumentFragment>
 `;
 
-exports[`Header  3`] = `
+exports[`Header  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

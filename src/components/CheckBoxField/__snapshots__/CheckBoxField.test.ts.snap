@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CheckBoxField  1`] = `
+exports[`CheckBoxField  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -69,7 +69,7 @@ exports[`CheckBoxField  1`] = `
 </DocumentFragment>
 `;
 
-exports[`CheckBoxField  2`] = `
+exports[`CheckBoxField  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -143,7 +143,7 @@ exports[`CheckBoxField  2`] = `
 </DocumentFragment>
 `;
 
-exports[`CheckBoxField  3`] = `
+exports[`CheckBoxField  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

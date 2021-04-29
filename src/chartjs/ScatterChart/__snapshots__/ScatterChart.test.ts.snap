@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ScatterChart  1`] = `
+exports[`ScatterChart  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -15,7 +15,7 @@ exports[`ScatterChart  1`] = `
 </DocumentFragment>
 `;
 
-exports[`ScatterChart  2`] = `
+exports[`ScatterChart  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -30,7 +30,7 @@ exports[`ScatterChart  2`] = `
 </DocumentFragment>
 `;
 
-exports[`ScatterChart  3`] = `
+exports[`ScatterChart  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -45,7 +45,7 @@ exports[`ScatterChart  3`] = `
 </DocumentFragment>
 `;
 
-exports[`ScatterChart  4`] = `
+exports[`ScatterChart  snapshot 4`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Notification  1`] = `
+exports[`Notification  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -113,7 +113,7 @@ exports[`Notification  1`] = `
 </DocumentFragment>
 `;
 
-exports[`Notification  2`] = `
+exports[`Notification  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -185,7 +185,7 @@ exports[`Notification  2`] = `
 </DocumentFragment>
 `;
 
-exports[`Notification  3`] = `
+exports[`Notification  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -256,7 +256,7 @@ exports[`Notification  3`] = `
 </DocumentFragment>
 `;
 
-exports[`Notification  4`] = `
+exports[`Notification  snapshot 4`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -330,7 +330,7 @@ exports[`Notification  4`] = `
 </DocumentFragment>
 `;
 
-exports[`Notification  5`] = `
+exports[`Notification  snapshot 5`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -403,7 +403,7 @@ exports[`Notification  5`] = `
 </DocumentFragment>
 `;
 
-exports[`Notification  6`] = `
+exports[`Notification  snapshot 6`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -474,7 +474,7 @@ exports[`Notification  6`] = `
 </DocumentFragment>
 `;
 
-exports[`Notification  7`] = `
+exports[`Notification  snapshot 7`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -545,7 +545,7 @@ exports[`Notification  7`] = `
 </DocumentFragment>
 `;
 
-exports[`Notification  8`] = `
+exports[`Notification  snapshot 8`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -652,7 +652,7 @@ exports[`Notification  8`] = `
 </DocumentFragment>
 `;
 
-exports[`Notification  9`] = `
+exports[`Notification  snapshot 9`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -725,7 +725,7 @@ exports[`Notification  9`] = `
 </DocumentFragment>
 `;
 
-exports[`Notification  10`] = `
+exports[`Notification  snapshot 10`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -798,7 +798,7 @@ exports[`Notification  10`] = `
 </DocumentFragment>
 `;
 
-exports[`Notification  11`] = `
+exports[`Notification  snapshot 11`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -869,7 +869,7 @@ exports[`Notification  11`] = `
 </DocumentFragment>
 `;
 
-exports[`Notification  12`] = `
+exports[`Notification  snapshot 12`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

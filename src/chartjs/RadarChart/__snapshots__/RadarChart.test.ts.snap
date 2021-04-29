@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RadarChart  1`] = `
+exports[`RadarChart  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -15,7 +15,7 @@ exports[`RadarChart  1`] = `
 </DocumentFragment>
 `;
 
-exports[`RadarChart  2`] = `
+exports[`RadarChart  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -30,7 +30,7 @@ exports[`RadarChart  2`] = `
 </DocumentFragment>
 `;
 
-exports[`RadarChart  3`] = `
+exports[`RadarChart  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

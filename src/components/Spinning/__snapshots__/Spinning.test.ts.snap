@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Spinning  1`] = `
+exports[`Spinning  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -26,7 +26,7 @@ exports[`Spinning  1`] = `
 </DocumentFragment>
 `;
 
-exports[`Spinning  2`] = `
+exports[`Spinning  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -157,7 +157,7 @@ exports[`Spinning  2`] = `
 </DocumentFragment>
 `;
 
-exports[`Spinning  3`] = `
+exports[`Spinning  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -288,7 +288,7 @@ exports[`Spinning  3`] = `
 </DocumentFragment>
 `;
 
-exports[`Spinning  4`] = `
+exports[`Spinning  snapshot 4`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

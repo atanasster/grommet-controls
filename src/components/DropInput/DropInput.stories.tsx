@@ -16,6 +16,7 @@ const DateInput = props => {
     <Box direction="row">
       <Box basis="medium">
         <DropInput
+          a11yTitle="select a date"
           dropContent={
             <Box pad="small">
               <Calendar
@@ -42,6 +43,7 @@ const NumberInput = () => {
     <Box direction="row">
       <Box basis="medium">
         <DropInput
+          a11yTitle="select a number"
           value={number}
           onChange={({ target: { value } }) => setNumber(parseFloat(value))}
           widgets={[
@@ -64,7 +66,7 @@ const DropInputTest = props => {
   return (
     <Box direction="row">
       <Box basis="medium">
-        <DropInput {...props} />
+        <DropInput placeholder="select a value" {...props} />
       </Box>
     </Box>
   );

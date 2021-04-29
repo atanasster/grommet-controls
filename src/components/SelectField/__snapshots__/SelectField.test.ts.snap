@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SelectField  1`] = `
+exports[`SelectField  snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -93,7 +93,7 @@ exports[`SelectField  1`] = `
 </DocumentFragment>
 `;
 
-exports[`SelectField  2`] = `
+exports[`SelectField  snapshot 2`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -173,7 +173,7 @@ exports[`SelectField  2`] = `
 </DocumentFragment>
 `;
 
-exports[`SelectField  3`] = `
+exports[`SelectField  snapshot 3`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
