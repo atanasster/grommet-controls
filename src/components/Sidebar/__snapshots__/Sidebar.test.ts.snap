@@ -1,40 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sidebar  snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 eFtRgN"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 PQaTA"
-      >
-        <button
-          class="StyledButton-sc-323bzc-0 knherS"
-          type="button"
-        >
-          <svg
-            aria-label="Menu"
-            class="StyledIcon-ofa7kd-0 exrjxz"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M2,19 L22,19 M2,5 L22,5 M2,12 L22,12"
-              fill="none"
-              stroke="#000"
-              stroke-width="2"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Sidebar  snapshot 2`] = `
+exports[`Sidebar collapsible snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -68,7 +34,41 @@ exports[`Sidebar  snapshot 2`] = `
 </DocumentFragment>
 `;
 
-exports[`Sidebar  snapshot 3`] = `
+exports[`Sidebar main snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 eFtRgN"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 PQaTA"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 knherS"
+          type="button"
+        >
+          <svg
+            aria-label="Menu"
+            class="StyledIcon-ofa7kd-0 exrjxz"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M2,19 L22,19 M2,5 L22,5 M2,12 L22,12"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Sidebar title snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -98,7 +98,7 @@ exports[`Sidebar  snapshot 3`] = `
 </DocumentFragment>
 `;
 
-exports[`Sidebar  snapshot 4`] = `
+exports[`Sidebar width snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

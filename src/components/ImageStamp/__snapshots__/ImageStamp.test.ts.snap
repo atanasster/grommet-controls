@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ImageStamp  snapshot 1`] = `
+exports[`ImageStamp main snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -13,7 +13,7 @@ exports[`ImageStamp  snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`ImageStamp  snapshot 2`] = `
+exports[`ImageStamp size snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

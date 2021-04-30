@@ -1,6 +1,293 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Notification  snapshot 1`] = `
+exports[`Notification a11yTitle snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 cAIrvA"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 gcMhEI"
+      >
+        <h3
+          class="StyledHeading-sc-1rdh4aw-0 kEWQvi"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 kuSryJ"
+          >
+            <svg
+              aria-label="StatusInfo"
+              class="StyledIcon-ofa7kd-0 fNeVlP"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M12,10 L12,18 M12,6 L12,8"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
+            />
+            Notification...
+          </div>
+        </h3>
+        <span
+          class="StyledText-sc-1sadyjn-0 ioNTgI"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 ioNTgI"
+        />
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 kspWmI"
+      >
+        <button
+          aria-label="Close notification"
+          class="StyledButton-sc-323bzc-0 heIqNk"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 fNeVlP"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification closer snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 clnvCv"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 gcMhEI"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 bJTLpf"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 kuSryJ"
+          >
+            <svg
+              aria-label="StatusDisabled"
+              class="StyledIcon-ofa7kd-0 iBVMfr"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M18,12 L6,12"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
+            />
+            Custom closer
+          </div>
+        </h4>
+        <span
+          class="StyledText-sc-1sadyjn-0 bIztMF"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 bIztMF"
+        />
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 kspWmI"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 heIqNk"
+          type="button"
+        >
+          <svg
+            aria-label="CircleQuestion"
+            class="StyledIcon-ofa7kd-0 exrjxz"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M12,15 L12,14 C12,13 12,12.5 13,12 C14,11.5 15,11 15,9.5 C15,8.5 14,7 12,7 C10,7 9,8.26413718 9,10 M12,16 L12,18"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification icon snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 cAIrvA"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 gcMhEI"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 bJTLpf"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 kuSryJ"
+          >
+            <svg
+              aria-label="Grommet"
+              class="StyledIcon-ofa7kd-0 exrjxz"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,2 C6.485,2 2,6.485 2,12 C2,17.515 6.485,22 12,22 C17.515,22 22,17.515 22,12 C22,6.485 17.515,2 12,2 Z"
+                fill="none"
+                stroke="#865CD6"
+                stroke-width="4"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
+            />
+            Custom icon
+          </div>
+        </h4>
+        <span
+          class="StyledText-sc-1sadyjn-0 bIztMF"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 bIztMF"
+        />
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 kspWmI"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 heIqNk"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 iBVMfr"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification locale snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 cAIrvA"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 gcMhEI"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 bJTLpf"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 kuSryJ"
+          >
+            <svg
+              aria-label="StatusInfo"
+              class="StyledIcon-ofa7kd-0 iBVMfr"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M12,10 L12,18 M12,6 L12,8"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
+            />
+            Locale de-DE
+          </div>
+        </h4>
+        <span
+          class="StyledText-sc-1sadyjn-0 bIztMF"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 bIztMF"
+        >
+          So., 30. Aug. 2020, 23:14
+        </span>
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 kspWmI"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 heIqNk"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 iBVMfr"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification main snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -113,439 +400,7 @@ exports[`Notification  snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Notification  snapshot 2`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 cAIrvA"
-      role="checkbox"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 gcMhEI"
-      >
-        <h3
-          class="StyledHeading-sc-1rdh4aw-0 kEWQvi"
-          style="max-width: 100%;"
-        >
-          <div
-            class="StyledBox-sc-13pk1d4-0 kuSryJ"
-          >
-            <svg
-              aria-label="StatusInfo"
-              class="StyledIcon-ofa7kd-0 fNeVlP"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M12,10 L12,18 M12,6 L12,8"
-                fill="none"
-                stroke="#000"
-                stroke-width="2"
-              />
-            </svg>
-            <div
-              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
-            />
-            Notification...
-          </div>
-        </h3>
-        <span
-          class="StyledText-sc-1sadyjn-0 ioNTgI"
-        />
-        <span
-          class="StyledText-sc-1sadyjn-0 ioNTgI"
-        />
-      </div>
-      <div
-        class="StyledBox-sc-13pk1d4-0 kspWmI"
-      >
-        <button
-          aria-label="Close notification"
-          class="StyledButton-sc-323bzc-0 heIqNk"
-          type="button"
-        >
-          <svg
-            aria-label="Close"
-            class="StyledIcon-ofa7kd-0 fNeVlP"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M3,3 L21,21 M3,21 L21,3"
-              fill="none"
-              stroke="#000"
-              stroke-width="2"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Notification  snapshot 3`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 cAIrvA"
-      role="checkbox"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 gcMhEI"
-      >
-        <h3
-          class="StyledHeading-sc-1rdh4aw-0 kEWQvi"
-          style="max-width: 100%;"
-        >
-          <div
-            class="StyledBox-sc-13pk1d4-0 kuSryJ"
-          >
-            <svg
-              aria-label="StatusInfo"
-              class="StyledIcon-ofa7kd-0 fNeVlP"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M12,10 L12,18 M12,6 L12,8"
-                fill="none"
-                stroke="#000"
-                stroke-width="2"
-              />
-            </svg>
-            <div
-              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
-            />
-            Message heading
-          </div>
-        </h3>
-        <span
-          class="StyledText-sc-1sadyjn-0 ioNTgI"
-        />
-        <span
-          class="StyledText-sc-1sadyjn-0 ioNTgI"
-        />
-      </div>
-      <div
-        class="StyledBox-sc-13pk1d4-0 kspWmI"
-      >
-        <button
-          class="StyledButton-sc-323bzc-0 heIqNk"
-          type="button"
-        >
-          <svg
-            aria-label="Close"
-            class="StyledIcon-ofa7kd-0 fNeVlP"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M3,3 L21,21 M3,21 L21,3"
-              fill="none"
-              stroke="#000"
-              stroke-width="2"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Notification  snapshot 4`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 dsAsKb"
-      role="checkbox"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 gcMhEI"
-      >
-        <h4
-          class="StyledHeading-sc-1rdh4aw-0 bJTLpf"
-          style="max-width: 100%;"
-        >
-          <div
-            class="StyledBox-sc-13pk1d4-0 kuSryJ"
-          >
-            <svg
-              aria-label="StatusWarning"
-              class="StyledIcon-ofa7kd-0 iBVMfr"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12,3 L22,21 L2,21 L12,3 Z M12,9 L12,15 M12,16 L12,18"
-                fill="none"
-                stroke="#000"
-                stroke-linejoin="round"
-                stroke-width="2"
-              />
-            </svg>
-            <div
-              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
-            />
-            Message heading
-          </div>
-        </h4>
-        <span
-          class="StyledText-sc-1sadyjn-0 bIztMF"
-        >
-          state note
-        </span>
-        <span
-          class="StyledText-sc-1sadyjn-0 bIztMF"
-        />
-      </div>
-      <div
-        class="StyledBox-sc-13pk1d4-0 kspWmI"
-      >
-        <button
-          class="StyledButton-sc-323bzc-0 heIqNk"
-          type="button"
-        >
-          <svg
-            aria-label="Close"
-            class="StyledIcon-ofa7kd-0 iBVMfr"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M3,3 L21,21 M3,21 L21,3"
-              fill="none"
-              stroke="#000"
-              stroke-width="2"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Notification  snapshot 5`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 dLZXNV"
-      role="checkbox"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 gcMhEI"
-      >
-        <h4
-          class="StyledHeading-sc-1rdh4aw-0 bJTLpf"
-          style="max-width: 100%;"
-        >
-          <div
-            class="StyledBox-sc-13pk1d4-0 kuSryJ"
-          >
-            <svg
-              aria-label="StatusCritical"
-              class="StyledIcon-ofa7kd-0 IqScn"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12.7031806,2.70318058 C12.3148247,2.31482467 11.6897542,2.31024575 11.2968194,2.70318058 L2.70318058,11.2968194 C2.31482467,11.6851753 2.31024575,12.3102458 2.70318058,12.7031806 L11.2968194,21.2968194 C11.6851753,21.6851753 12.3102458,21.6897542 12.7031806,21.2968194 L21.2968194,12.7031806 C21.6851753,12.3148247 21.6897542,11.6897542 21.2968194,11.2968194 L12.7031806,2.70318058 Z M8.98264552,14.7001725 L14.7001725,8.98264552 M8.98264552,8.98264552 L14.7001725,14.7001725"
-                fill="none"
-                stroke="#000"
-                stroke-width="2"
-              />
-            </svg>
-            <div
-              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
-            />
-            <strong>
-              Bold message
-            </strong>
-          </div>
-        </h4>
-        <span
-          class="StyledText-sc-1sadyjn-0 bIztMF"
-        />
-        <span
-          class="StyledText-sc-1sadyjn-0 bIztMF"
-        />
-      </div>
-      <div
-        class="StyledBox-sc-13pk1d4-0 kspWmI"
-      >
-        <button
-          class="StyledButton-sc-323bzc-0 heIqNk"
-          type="button"
-        >
-          <svg
-            aria-label="Close"
-            class="StyledIcon-ofa7kd-0 IqScn"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M3,3 L21,21 M3,21 L21,3"
-              fill="none"
-              stroke="#000"
-              stroke-width="2"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Notification  snapshot 6`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 cAIrvA"
-      role="checkbox"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 gcMhEI"
-      >
-        <h4
-          class="StyledHeading-sc-1rdh4aw-0 bJTLpf"
-          style="max-width: 100%;"
-        >
-          <div
-            class="StyledBox-sc-13pk1d4-0 kuSryJ"
-          >
-            <svg
-              aria-label="Grommet"
-              class="StyledIcon-ofa7kd-0 exrjxz"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12,2 C6.485,2 2,6.485 2,12 C2,17.515 6.485,22 12,22 C17.515,22 22,17.515 22,12 C22,6.485 17.515,2 12,2 Z"
-                fill="none"
-                stroke="#865CD6"
-                stroke-width="4"
-              />
-            </svg>
-            <div
-              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
-            />
-            Custom icon
-          </div>
-        </h4>
-        <span
-          class="StyledText-sc-1sadyjn-0 bIztMF"
-        />
-        <span
-          class="StyledText-sc-1sadyjn-0 bIztMF"
-        />
-      </div>
-      <div
-        class="StyledBox-sc-13pk1d4-0 kspWmI"
-      >
-        <button
-          class="StyledButton-sc-323bzc-0 heIqNk"
-          type="button"
-        >
-          <svg
-            aria-label="Close"
-            class="StyledIcon-ofa7kd-0 iBVMfr"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M3,3 L21,21 M3,21 L21,3"
-              fill="none"
-              stroke="#000"
-              stroke-width="2"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Notification  snapshot 7`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 clnvCv"
-      role="checkbox"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 gcMhEI"
-      >
-        <h4
-          class="StyledHeading-sc-1rdh4aw-0 bJTLpf"
-          style="max-width: 100%;"
-        >
-          <div
-            class="StyledBox-sc-13pk1d4-0 kuSryJ"
-          >
-            <svg
-              aria-label="StatusDisabled"
-              class="StyledIcon-ofa7kd-0 iBVMfr"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M18,12 L6,12"
-                fill="none"
-                stroke="#000"
-                stroke-width="2"
-              />
-            </svg>
-            <div
-              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
-            />
-            Custom closer
-          </div>
-        </h4>
-        <span
-          class="StyledText-sc-1sadyjn-0 bIztMF"
-        />
-        <span
-          class="StyledText-sc-1sadyjn-0 bIztMF"
-        />
-      </div>
-      <div
-        class="StyledBox-sc-13pk1d4-0 kspWmI"
-      >
-        <button
-          class="StyledButton-sc-323bzc-0 heIqNk"
-          type="button"
-        >
-          <svg
-            aria-label="CircleQuestion"
-            class="StyledIcon-ofa7kd-0 exrjxz"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M12,15 L12,14 C12,13 12,12.5 13,12 C14,11.5 15,11 15,9.5 C15,8.5 14,7 12,7 C10,7 9,8.26413718 9,10 M12,16 L12,18"
-              fill="none"
-              stroke="#000"
-              stroke-width="2"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Notification  snapshot 8`] = `
+exports[`Notification percentComplete snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -652,53 +507,16 @@ exports[`Notification  snapshot 8`] = `
 </DocumentFragment>
 `;
 
-exports[`Notification  snapshot 9`] = `
+exports[`Notification reverse snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
       aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 cAIrvA"
+      class="StyledBox-sc-13pk1d4-0 csaQfF"
       role="checkbox"
     >
-      <div
-        class="StyledBox-sc-13pk1d4-0 gcMhEI"
-      >
-        <h4
-          class="StyledHeading-sc-1rdh4aw-0 bJTLpf"
-          style="max-width: 100%;"
-        >
-          <div
-            class="StyledBox-sc-13pk1d4-0 kuSryJ"
-          >
-            <svg
-              aria-label="StatusInfo"
-              class="StyledIcon-ofa7kd-0 iBVMfr"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M12,10 L12,18 M12,6 L12,8"
-                fill="none"
-                stroke="#000"
-                stroke-width="2"
-              />
-            </svg>
-            <div
-              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
-            />
-            Time stamp
-          </div>
-        </h4>
-        <span
-          class="StyledText-sc-1sadyjn-0 bIztMF"
-        />
-        <span
-          class="StyledText-sc-1sadyjn-0 bIztMF"
-        >
-          Sun, Aug 30, 2020, 11:14 PM
-        </span>
-      </div>
       <div
         class="StyledBox-sc-13pk1d4-0 kspWmI"
       >
@@ -720,21 +538,6 @@ exports[`Notification  snapshot 9`] = `
           </svg>
         </button>
       </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Notification  snapshot 10`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 cAIrvA"
-      role="checkbox"
-    >
       <div
         class="StyledBox-sc-13pk1d4-0 gcMhEI"
       >
@@ -745,6 +548,10 @@ exports[`Notification  snapshot 10`] = `
           <div
             class="StyledBox-sc-13pk1d4-0 kuSryJ"
           >
+            reversed
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
+            />
             <svg
               aria-label="StatusInfo"
               class="StyledIcon-ofa7kd-0 iBVMfr"
@@ -757,10 +564,6 @@ exports[`Notification  snapshot 10`] = `
                 stroke-width="2"
               />
             </svg>
-            <div
-              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
-            />
-            Locale de-DE
           </div>
         </h4>
         <span
@@ -768,37 +571,14 @@ exports[`Notification  snapshot 10`] = `
         />
         <span
           class="StyledText-sc-1sadyjn-0 bIztMF"
-        >
-          So., 30. Aug. 2020, 23:14
-        </span>
-      </div>
-      <div
-        class="StyledBox-sc-13pk1d4-0 kspWmI"
-      >
-        <button
-          class="StyledButton-sc-323bzc-0 heIqNk"
-          type="button"
-        >
-          <svg
-            aria-label="Close"
-            class="StyledIcon-ofa7kd-0 iBVMfr"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M3,3 L21,21 M3,21 L21,3"
-              fill="none"
-              stroke="#000"
-              stroke-width="2"
-            />
-          </svg>
-        </button>
+        />
       </div>
     </div>
   </div>
 </DocumentFragment>
 `;
 
-exports[`Notification  snapshot 11`] = `
+exports[`Notification size snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -869,16 +649,54 @@ exports[`Notification  snapshot 11`] = `
 </DocumentFragment>
 `;
 
-exports[`Notification  snapshot 12`] = `
+exports[`Notification state snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
   >
     <div
       aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 csaQfF"
+      class="StyledBox-sc-13pk1d4-0 dsAsKb"
       role="checkbox"
     >
+      <div
+        class="StyledBox-sc-13pk1d4-0 gcMhEI"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 bJTLpf"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 kuSryJ"
+          >
+            <svg
+              aria-label="StatusWarning"
+              class="StyledIcon-ofa7kd-0 iBVMfr"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,3 L22,21 L2,21 L12,3 Z M12,9 L12,15 M12,16 L12,18"
+                fill="none"
+                stroke="#000"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
+            />
+            Message heading
+          </div>
+        </h4>
+        <span
+          class="StyledText-sc-1sadyjn-0 bIztMF"
+        >
+          state note
+        </span>
+        <span
+          class="StyledText-sc-1sadyjn-0 bIztMF"
+        />
+      </div>
       <div
         class="StyledBox-sc-13pk1d4-0 kspWmI"
       >
@@ -900,6 +718,92 @@ exports[`Notification  snapshot 12`] = `
           </svg>
         </button>
       </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification status snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 cAIrvA"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 gcMhEI"
+      >
+        <h3
+          class="StyledHeading-sc-1rdh4aw-0 kEWQvi"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 kuSryJ"
+          >
+            <svg
+              aria-label="StatusInfo"
+              class="StyledIcon-ofa7kd-0 fNeVlP"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2,3.99079514 C2,2.89130934 2.89821238,2 3.99079514,2 L20.0092049,2 C21.1086907,2 22,2.89821238 22,3.99079514 L22,20.0092049 C22,21.1086907 21.1017876,22 20.0092049,22 L3.99079514,22 C2.89130934,22 2,21.1017876 2,20.0092049 L2,3.99079514 Z M12,10 L12,18 M12,6 L12,8"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
+            />
+            Message heading
+          </div>
+        </h3>
+        <span
+          class="StyledText-sc-1sadyjn-0 ioNTgI"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 ioNTgI"
+        />
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 kspWmI"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 heIqNk"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 fNeVlP"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification strong snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 dLZXNV"
+      role="checkbox"
+    >
       <div
         class="StyledBox-sc-13pk1d4-0 gcMhEI"
       >
@@ -910,10 +814,79 @@ exports[`Notification  snapshot 12`] = `
           <div
             class="StyledBox-sc-13pk1d4-0 kuSryJ"
           >
-            reversed
+            <svg
+              aria-label="StatusCritical"
+              class="StyledIcon-ofa7kd-0 IqScn"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12.7031806,2.70318058 C12.3148247,2.31482467 11.6897542,2.31024575 11.2968194,2.70318058 L2.70318058,11.2968194 C2.31482467,11.6851753 2.31024575,12.3102458 2.70318058,12.7031806 L11.2968194,21.2968194 C11.6851753,21.6851753 12.3102458,21.6897542 12.7031806,21.2968194 L21.2968194,12.7031806 C21.6851753,12.3148247 21.6897542,11.6897542 21.2968194,11.2968194 L12.7031806,2.70318058 Z M8.98264552,14.7001725 L14.7001725,8.98264552 M8.98264552,8.98264552 L14.7001725,14.7001725"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
             <div
               class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
             />
+            <strong>
+              Bold message
+            </strong>
+          </div>
+        </h4>
+        <span
+          class="StyledText-sc-1sadyjn-0 bIztMF"
+        />
+        <span
+          class="StyledText-sc-1sadyjn-0 bIztMF"
+        />
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 kspWmI"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 heIqNk"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 IqScn"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Notification timestamp snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 cAIrvA"
+      role="checkbox"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 gcMhEI"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 bJTLpf"
+          style="max-width: 100%;"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 kuSryJ"
+          >
             <svg
               aria-label="StatusInfo"
               class="StyledIcon-ofa7kd-0 iBVMfr"
@@ -926,6 +899,10 @@ exports[`Notification  snapshot 12`] = `
                 stroke-width="2"
               />
             </svg>
+            <div
+              class="StyledBox__StyledBoxGap-sc-13pk1d4-1 gLeHbw"
+            />
+            Time stamp
           </div>
         </h4>
         <span
@@ -933,7 +910,30 @@ exports[`Notification  snapshot 12`] = `
         />
         <span
           class="StyledText-sc-1sadyjn-0 bIztMF"
-        />
+        >
+          Sun, Aug 30, 2020, 11:14 PM
+        </span>
+      </div>
+      <div
+        class="StyledBox-sc-13pk1d4-0 kspWmI"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 heIqNk"
+          type="button"
+        >
+          <svg
+            aria-label="Close"
+            class="StyledIcon-ofa7kd-0 iBVMfr"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </div>

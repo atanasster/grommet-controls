@@ -1,6 +1,98 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NumberInputField  snapshot 1`] = `
+exports[`NumberInputField inField snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <form
+      class="sc-hKwCoD ckzNeZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 jUPATD"
+        >
+          <div>
+            <div
+              class="sc-gsDJrp ixnOXx"
+            >
+              <div
+                class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+              >
+                <input
+                  autocomplete="off"
+                  class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
+                  id="age"
+                  inputmode="numeric"
+                  label="Age"
+                  name="age"
+                  pattern="[0-9]*"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
+              >
+                <button
+                  class="StyledButton-sc-323bzc-0 knherS"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <svg
+                    aria-label="Add"
+                    class="StyledIcon-ofa7kd-0 exrjxz"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12,22 L12,2 M2,12 L22,12"
+                      fill="none"
+                      stroke="#000"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="StyledButton-sc-323bzc-0 knherS"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <svg
+                    aria-label="Subtract"
+                    class="StyledIcon-ofa7kd-0 exrjxz"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M2,12 L22,12"
+                      fill="none"
+                      stroke="#000"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="StyledBox-sc-13pk1d4-0 kspWmI"
+            >
+              <button
+                class="StyledButton-sc-323bzc-0 cfaKOi"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`NumberInputField main snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -105,99 +197,7 @@ exports[`NumberInputField  snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInputField  snapshot 2`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <form
-      class="sc-hKwCoD ckzNeZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 iYasFZ"
-      >
-        <div
-          class="StyledBox-sc-13pk1d4-0 jUPATD"
-        >
-          <div>
-            <div
-              class="sc-gsDJrp ixnOXx"
-            >
-              <div
-                class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-              >
-                <input
-                  autocomplete="off"
-                  class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
-                  id="age"
-                  inputmode="numeric"
-                  label="Age"
-                  name="age"
-                  pattern="[0-9]*"
-                  type="text"
-                  value=""
-                />
-              </div>
-              <div
-                class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
-              >
-                <button
-                  class="StyledButton-sc-323bzc-0 knherS"
-                  tabindex="-1"
-                  type="button"
-                >
-                  <svg
-                    aria-label="Add"
-                    class="StyledIcon-ofa7kd-0 exrjxz"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12,22 L12,2 M2,12 L22,12"
-                      fill="none"
-                      stroke="#000"
-                      stroke-width="2"
-                    />
-                  </svg>
-                </button>
-                <button
-                  class="StyledButton-sc-323bzc-0 knherS"
-                  tabindex="-1"
-                  type="button"
-                >
-                  <svg
-                    aria-label="Subtract"
-                    class="StyledIcon-ofa7kd-0 exrjxz"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M2,12 L22,12"
-                      fill="none"
-                      stroke="#000"
-                      stroke-width="2"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div
-              class="StyledBox-sc-13pk1d4-0 kspWmI"
-            >
-              <button
-                class="StyledButton-sc-323bzc-0 cfaKOi"
-                type="submit"
-              >
-                Submit
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`NumberInputField  snapshot 3`] = `
+exports[`NumberInputField validation snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

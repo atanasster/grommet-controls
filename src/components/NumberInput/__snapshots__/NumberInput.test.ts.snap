@@ -1,79 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NumberInput  snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
-              inputmode="numeric"
-              pattern="[0-9]*"
-              type="text"
-              value="12,000.34"
-            />
-          </div>
-          <div
-            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
-          >
-            <button
-              class="StyledButton-sc-323bzc-0 knherS"
-              tabindex="-1"
-              type="button"
-            >
-              <svg
-                aria-label="Add"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12,22 L12,2 M2,12 L22,12"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-            <button
-              class="StyledButton-sc-323bzc-0 knherS"
-              tabindex="-1"
-              type="button"
-            >
-              <svg
-                aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M2,12 L22,12"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`NumberInput  snapshot 2`] = `
+exports[`NumberInput a11yIncrement snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -146,7 +73,7 @@ exports[`NumberInput  snapshot 2`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  snapshot 3`] = `
+exports[`NumberInput addIcon snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -170,6 +97,79 @@ exports[`NumberInput  snapshot 3`] = `
               pattern="[0-9]*"
               type="text"
               value="5"
+            />
+          </div>
+          <div
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
+          >
+            <button
+              class="StyledButton-sc-323bzc-0 knherS"
+              tabindex="-1"
+              type="button"
+            >
+              <svg
+                aria-label="AddCircle"
+                class="StyledIcon-ofa7kd-0 exrjxz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M12,18 L12,6 M6,12 L18,12"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+            <button
+              class="StyledButton-sc-323bzc-0 knherS"
+              tabindex="-1"
+              type="button"
+            >
+              <svg
+                aria-label="SubtractCircle"
+                class="StyledIcon-ofa7kd-0 exrjxz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M6,12 L18,12"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`NumberInput decimalSymbol snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              type="text"
+              value="200023"
             />
           </div>
           <div
@@ -219,7 +219,7 @@ exports[`NumberInput  snapshot 3`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  snapshot 4`] = `
+exports[`NumberInput decimals snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -242,7 +242,7 @@ exports[`NumberInput  snapshot 4`] = `
               inputmode="numeric"
               pattern="[0-9]*"
               type="text"
-              value="5"
+              value="2000.23"
             />
           </div>
           <div
@@ -292,80 +292,7 @@ exports[`NumberInput  snapshot 4`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  snapshot 5`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
-              inputmode="numeric"
-              pattern="[0-9]*"
-              type="text"
-              value="5"
-            />
-          </div>
-          <div
-            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
-          >
-            <button
-              class="StyledButton-sc-323bzc-0 knherS"
-              tabindex="-1"
-              type="button"
-            >
-              <svg
-                aria-label="Add"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12,22 L12,2 M2,12 L22,12"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-            <button
-              class="StyledButton-sc-323bzc-0 knherS"
-              tabindex="-1"
-              type="button"
-            >
-              <svg
-                aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M2,12 L22,12"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`NumberInput  snapshot 6`] = `
+exports[`NumberInput disabled snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -441,7 +368,7 @@ exports[`NumberInput  snapshot 6`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  snapshot 7`] = `
+exports[`NumberInput integers snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -476,12 +403,12 @@ exports[`NumberInput  snapshot 7`] = `
               type="button"
             >
               <svg
-                aria-label="AddCircle"
+                aria-label="Add"
                 class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M12,18 L12,6 M6,12 L18,12"
+                  d="M12,22 L12,2 M2,12 L22,12"
                   fill="none"
                   stroke="#000"
                   stroke-width="2"
@@ -494,12 +421,12 @@ exports[`NumberInput  snapshot 7`] = `
               type="button"
             >
               <svg
-                aria-label="SubtractCircle"
+                aria-label="Subtract"
                 class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M6,12 L18,12"
+                  d="M2,12 L22,12"
                   fill="none"
                   stroke="#000"
                   stroke-width="2"
@@ -514,7 +441,226 @@ exports[`NumberInput  snapshot 7`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  snapshot 8`] = `
+exports[`NumberInput main snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              type="text"
+              value="12,000.34"
+            />
+          </div>
+          <div
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
+          >
+            <button
+              class="StyledButton-sc-323bzc-0 knherS"
+              tabindex="-1"
+              type="button"
+            >
+              <svg
+                aria-label="Add"
+                class="StyledIcon-ofa7kd-0 exrjxz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,22 L12,2 M2,12 L22,12"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+            <button
+              class="StyledButton-sc-323bzc-0 knherS"
+              tabindex="-1"
+              type="button"
+            >
+              <svg
+                aria-label="Subtract"
+                class="StyledIcon-ofa7kd-0 exrjxz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M2,12 L22,12"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`NumberInput max snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              type="text"
+              value="5"
+            />
+          </div>
+          <div
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
+          >
+            <button
+              class="StyledButton-sc-323bzc-0 knherS"
+              tabindex="-1"
+              type="button"
+            >
+              <svg
+                aria-label="Add"
+                class="StyledIcon-ofa7kd-0 exrjxz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,22 L12,2 M2,12 L22,12"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+            <button
+              class="StyledButton-sc-323bzc-0 knherS"
+              tabindex="-1"
+              type="button"
+            >
+              <svg
+                aria-label="Subtract"
+                class="StyledIcon-ofa7kd-0 exrjxz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M2,12 L22,12"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`NumberInput min snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              type="text"
+              value="5"
+            />
+          </div>
+          <div
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
+          >
+            <button
+              class="StyledButton-sc-323bzc-0 knherS"
+              tabindex="-1"
+              type="button"
+            >
+              <svg
+                aria-label="Add"
+                class="StyledIcon-ofa7kd-0 exrjxz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,22 L12,2 M2,12 L22,12"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+            <button
+              class="StyledButton-sc-323bzc-0 knherS"
+              tabindex="-1"
+              type="button"
+            >
+              <svg
+                aria-label="Subtract"
+                class="StyledIcon-ofa7kd-0 exrjxz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M2,12 L22,12"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`NumberInput prefix snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -587,7 +733,80 @@ exports[`NumberInput  snapshot 8`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  snapshot 9`] = `
+exports[`NumberInput step snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              type="text"
+              value="5"
+            />
+          </div>
+          <div
+            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
+          >
+            <button
+              class="StyledButton-sc-323bzc-0 knherS"
+              tabindex="-1"
+              type="button"
+            >
+              <svg
+                aria-label="Add"
+                class="StyledIcon-ofa7kd-0 exrjxz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,22 L12,2 M2,12 L22,12"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+            <button
+              class="StyledButton-sc-323bzc-0 knherS"
+              tabindex="-1"
+              type="button"
+            >
+              <svg
+                aria-label="Subtract"
+                class="StyledIcon-ofa7kd-0 exrjxz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M2,12 L22,12"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`NumberInput suffix snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -660,7 +879,7 @@ exports[`NumberInput  snapshot 9`] = `
 </DocumentFragment>
 `;
 
-exports[`NumberInput  snapshot 10`] = `
+exports[`NumberInput thousandsSeparatorSymbol snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -684,225 +903,6 @@ exports[`NumberInput  snapshot 10`] = `
               pattern="[0-9]*"
               type="text"
               value="200 023"
-            />
-          </div>
-          <div
-            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
-          >
-            <button
-              class="StyledButton-sc-323bzc-0 knherS"
-              tabindex="-1"
-              type="button"
-            >
-              <svg
-                aria-label="Add"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12,22 L12,2 M2,12 L22,12"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-            <button
-              class="StyledButton-sc-323bzc-0 knherS"
-              tabindex="-1"
-              type="button"
-            >
-              <svg
-                aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M2,12 L22,12"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`NumberInput  snapshot 11`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
-              inputmode="numeric"
-              pattern="[0-9]*"
-              type="text"
-              value="200023"
-            />
-          </div>
-          <div
-            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
-          >
-            <button
-              class="StyledButton-sc-323bzc-0 knherS"
-              tabindex="-1"
-              type="button"
-            >
-              <svg
-                aria-label="Add"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12,22 L12,2 M2,12 L22,12"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-            <button
-              class="StyledButton-sc-323bzc-0 knherS"
-              tabindex="-1"
-              type="button"
-            >
-              <svg
-                aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M2,12 L22,12"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`NumberInput  snapshot 12`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
-              inputmode="numeric"
-              pattern="[0-9]*"
-              type="text"
-              value="2000.23"
-            />
-          </div>
-          <div
-            class="StyledBox-sc-13pk1d4-0 kuSryJ sc-dkPtyc fHiZNn"
-          >
-            <button
-              class="StyledButton-sc-323bzc-0 knherS"
-              tabindex="-1"
-              type="button"
-            >
-              <svg
-                aria-label="Add"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12,22 L12,2 M2,12 L22,12"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-            <button
-              class="StyledButton-sc-323bzc-0 knherS"
-              tabindex="-1"
-              type="button"
-            >
-              <svg
-                aria-label="Subtract"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M2,12 L22,12"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`NumberInput  snapshot 13`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa dNjmOA"
-              inputmode="numeric"
-              pattern="[0-9]*"
-              type="text"
-              value="5"
             />
           </div>
           <div

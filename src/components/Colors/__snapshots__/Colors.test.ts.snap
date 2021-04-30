@@ -1,6 +1,1136 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Colors  snapshot 1`] = `
+exports[`Colors colors snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="sc-bdvvaa fbYwlB"
+      color="#ff0000"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+      >
+        <div
+          class="sc-gsDJrp dmkRxm"
+          style="height: 219.42857142857142px;"
+        >
+          <div
+            class="sc-dkPtyc lcwSFG"
+            style="width: 164.57142857142856px; height: 27.428571428571427px;"
+          >
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" aqua"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(0, 255, 255); color: rgb(68, 68, 68); left: 0px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #00ffff
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" azure"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(240, 255, 255); color: rgb(68, 68, 68); left: 27.428571428571427px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #f0ffff
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" beige"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(245, 245, 220); color: rgb(68, 68, 68); left: 54.857142857142854px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #f5f5dc
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" black"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(0, 0, 0); color: rgb(68, 68, 68); left: 82.28571428571428px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #000000
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" blue"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(0, 0, 255); color: rgb(68, 68, 68); left: 109.71428571428571px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #0000ff
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" brown"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(165, 42, 42); color: rgb(68, 68, 68); left: 137.14285714285714px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #a52a2a
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-dkPtyc lcwSFG"
+            style="width: 164.57142857142856px; height: 27.428571428571427px;"
+          >
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" cyan"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(0, 255, 255); color: rgb(68, 68, 68); left: 0px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #00ffff
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" darkblue"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(0, 0, 139); color: rgb(68, 68, 68); left: 27.428571428571427px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #00008b
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" darkcyan"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(0, 139, 139); color: rgb(68, 68, 68); left: 54.857142857142854px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #008b8b
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" darkgrey"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(169, 169, 169); color: rgb(68, 68, 68); left: 82.28571428571428px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #a9a9a9
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" darkgreen"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(0, 100, 0); color: rgb(68, 68, 68); left: 109.71428571428571px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #006400
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" darkkhaki"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(189, 183, 107); color: rgb(68, 68, 68); left: 137.14285714285714px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #bdb76b
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-dkPtyc lcwSFG"
+            style="width: 164.57142857142856px; height: 27.428571428571427px;"
+          >
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" darkmagenta"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(139, 0, 139); color: rgb(68, 68, 68); left: 0px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #8b008b
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" darkolivegreen"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(85, 107, 47); color: rgb(68, 68, 68); left: 27.428571428571427px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #556b2f
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" darkorange"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 140, 0); color: rgb(68, 68, 68); left: 54.857142857142854px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #ff8c00
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" darkorchid"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(153, 50, 204); color: rgb(68, 68, 68); left: 82.28571428571428px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #9932cc
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" darkred"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(139, 0, 0); color: rgb(68, 68, 68); left: 109.71428571428571px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #8b0000
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" darksalmon"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(233, 150, 122); color: rgb(68, 68, 68); left: 137.14285714285714px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #e9967a
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-dkPtyc lcwSFG"
+            style="width: 164.57142857142856px; height: 27.428571428571427px;"
+          >
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" darkviolet"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(148, 0, 211); color: rgb(68, 68, 68); left: 0px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #9400d3
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" fuchsia"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 0, 255); color: rgb(68, 68, 68); left: 27.428571428571427px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #ff00ff
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" gold"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 215, 0); color: rgb(68, 68, 68); left: 54.857142857142854px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #ffd700
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" green"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(0, 128, 0); color: rgb(68, 68, 68); left: 82.28571428571428px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #008000
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" indigo"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(75, 0, 130); color: rgb(68, 68, 68); left: 109.71428571428571px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #4b0082
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" khaki"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(240, 230, 140); color: rgb(68, 68, 68); left: 137.14285714285714px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #f0e68c
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-dkPtyc lcwSFG"
+            style="width: 164.57142857142856px; height: 27.428571428571427px;"
+          >
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" lightblue"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(173, 216, 230); color: rgb(68, 68, 68); left: 0px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #add8e6
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" lightcyan"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(224, 255, 255); color: rgb(68, 68, 68); left: 27.428571428571427px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #e0ffff
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" lightgreen"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(144, 238, 144); color: rgb(68, 68, 68); left: 54.857142857142854px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #90ee90
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" lightgrey"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(211, 211, 211); color: rgb(68, 68, 68); left: 82.28571428571428px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #d3d3d3
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" lightpink"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 182, 193); color: rgb(68, 68, 68); left: 109.71428571428571px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #ffb6c1
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" lightyellow"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 255, 224); color: rgb(68, 68, 68); left: 137.14285714285714px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #ffffe0
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-dkPtyc lcwSFG"
+            style="width: 164.57142857142856px; height: 27.428571428571427px;"
+          >
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" lime"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(0, 255, 0); color: rgb(68, 68, 68); left: 0px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #00ff00
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" magenta"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 0, 255); color: rgb(68, 68, 68); left: 27.428571428571427px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #ff00ff
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" maroon"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(128, 0, 0); color: rgb(68, 68, 68); left: 54.857142857142854px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #800000
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" navy"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(0, 0, 128); color: rgb(68, 68, 68); left: 82.28571428571428px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #000080
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" olive"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(128, 128, 0); color: rgb(68, 68, 68); left: 109.71428571428571px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #808000
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" orange"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 165, 0); color: rgb(68, 68, 68); left: 137.14285714285714px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #ffa500
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-dkPtyc lcwSFG"
+            style="width: 164.57142857142856px; height: 27.428571428571427px;"
+          >
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" pink"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 192, 203); color: rgb(68, 68, 68); left: 0px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #ffc0cb
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" purple"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(128, 0, 128); color: rgb(68, 68, 68); left: 27.428571428571427px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #800080
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" violet"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(128, 0, 128); color: rgb(68, 68, 68); left: 54.857142857142854px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #800080
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" red"
+                class="StyledButton-sc-323bzc-0 TsIzI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 0, 0); color: rgb(68, 68, 68); left: 82.28571428571428px;"
+                tabindex="0"
+                type="button"
+              >
+                <span>
+                  #ff0000
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" silver"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(192, 192, 192); color: rgb(68, 68, 68); left: 109.71428571428571px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #c0c0c0
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" white"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); left: 137.14285714285714px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #ffffff
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-dkPtyc lcwSFG"
+            style="width: 27.428571428571427px; height: 27.428571428571427px;"
+          >
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label=" yellow"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 255, 0); color: rgb(68, 68, 68); left: 0px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #ffff00
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Colors columns snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="sc-bdvvaa fbYwlB"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+      >
+        <div
+          class="sc-gsDJrp dmkRxm"
+          style="height: 137.14285714285714px;"
+        >
+          <div
+            class="sc-dkPtyc lcwSFG"
+            style="width: 137.14285714285714px; height: 27.428571428571427px;"
+          >
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="blue 50"
+                class="StyledButton-sc-323bzc-0 TsIzI sc-eCImvq fiiAuf"
+                style="background-color: rgb(227, 242, 253); color: rgb(68, 68, 68); left: 0px;"
+                tabindex="0"
+                type="button"
+              >
+                <span>
+                  #e3f2fd
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="blue 100"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(187, 222, 251); color: rgb(68, 68, 68); left: 27.428571428571427px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #bbdefb
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="blue 200"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(144, 202, 249); color: rgb(68, 68, 68); left: 54.857142857142854px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #90caf9
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="blue 300"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(100, 181, 246); color: rgb(68, 68, 68); left: 82.28571428571428px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #64b5f6
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="blue 400"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(66, 165, 245); color: rgb(68, 68, 68); left: 109.71428571428571px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #42a5f5
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-dkPtyc lcwSFG"
+            style="width: 137.14285714285714px; height: 27.428571428571427px;"
+          >
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="blueGrey 50"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(236, 239, 241); color: rgb(68, 68, 68); left: 0px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #eceff1
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="blueGrey 100"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(207, 216, 220); color: rgb(68, 68, 68); left: 27.428571428571427px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #cfd8dc
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="blueGrey 200"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(176, 190, 197); color: rgb(68, 68, 68); left: 54.857142857142854px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #b0bec5
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="blueGrey 300"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(144, 164, 174); color: rgb(68, 68, 68); left: 82.28571428571428px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #90a4ae
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="blueGrey 400"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(120, 144, 156); color: rgb(68, 68, 68); left: 109.71428571428571px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #78909c
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-dkPtyc lcwSFG"
+            style="width: 137.14285714285714px; height: 27.428571428571427px;"
+          >
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="brown 50"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(239, 235, 233); color: rgb(68, 68, 68); left: 0px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #efebe9
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="brown 100"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(215, 204, 200); color: rgb(68, 68, 68); left: 27.428571428571427px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #d7ccc8
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="brown 200"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(188, 170, 164); color: rgb(68, 68, 68); left: 54.857142857142854px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #bcaaa4
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="brown 300"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(161, 136, 127); color: rgb(68, 68, 68); left: 82.28571428571428px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #a1887f
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="brown 400"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(141, 110, 99); color: rgb(68, 68, 68); left: 109.71428571428571px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #8d6e63
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-dkPtyc lcwSFG"
+            style="width: 137.14285714285714px; height: 27.428571428571427px;"
+          >
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="cyan 50"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(224, 247, 250); color: rgb(68, 68, 68); left: 0px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #e0f7fa
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="cyan 100"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(178, 235, 242); color: rgb(68, 68, 68); left: 27.428571428571427px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #b2ebf2
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="cyan 200"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(128, 222, 234); color: rgb(68, 68, 68); left: 54.857142857142854px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #80deea
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="cyan 300"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(77, 208, 225); color: rgb(68, 68, 68); left: 82.28571428571428px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #4dd0e1
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="cyan 400"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(38, 198, 218); color: rgb(68, 68, 68); left: 109.71428571428571px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #26c6da
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-dkPtyc lcwSFG"
+            style="width: 137.14285714285714px; height: 27.428571428571427px;"
+          >
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="deepOrange 50"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(251, 233, 231); color: rgb(68, 68, 68); left: 0px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #fbe9e7
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="deepOrange 100"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 204, 188); color: rgb(68, 68, 68); left: 27.428571428571427px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #ffccbc
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="deepOrange 200"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 171, 145); color: rgb(68, 68, 68); left: 54.857142857142854px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #ffab91
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="deepOrange 300"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 138, 101); color: rgb(68, 68, 68); left: 82.28571428571428px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #ff8a65
+                </span>
+              </button>
+            </div>
+            <div
+              class="sc-hKwCoD dtZNPs"
+            >
+              <button
+                aria-label="deepOrange 400"
+                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
+                style="background-color: rgb(255, 112, 67); color: rgb(68, 68, 68); left: 109.71428571428571px;"
+                tabindex="-1"
+                type="button"
+              >
+                <span>
+                  #ff7043
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Colors main snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -2820,715 +3950,7 @@ exports[`Colors  snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Colors  snapshot 2`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="sc-bdvvaa fbYwlB"
-      color="#ff0000"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-      >
-        <div
-          class="sc-gsDJrp dmkRxm"
-          style="height: 219.42857142857142px;"
-        >
-          <div
-            class="sc-dkPtyc lcwSFG"
-            style="width: 164.57142857142856px; height: 27.428571428571427px;"
-          >
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" aqua"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(0, 255, 255); color: rgb(68, 68, 68); left: 0px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #00ffff
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" azure"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(240, 255, 255); color: rgb(68, 68, 68); left: 27.428571428571427px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #f0ffff
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" beige"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(245, 245, 220); color: rgb(68, 68, 68); left: 54.857142857142854px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #f5f5dc
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" black"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(0, 0, 0); color: rgb(68, 68, 68); left: 82.28571428571428px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #000000
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" blue"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(0, 0, 255); color: rgb(68, 68, 68); left: 109.71428571428571px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #0000ff
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" brown"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(165, 42, 42); color: rgb(68, 68, 68); left: 137.14285714285714px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #a52a2a
-                </span>
-              </button>
-            </div>
-          </div>
-          <div
-            class="sc-dkPtyc lcwSFG"
-            style="width: 164.57142857142856px; height: 27.428571428571427px;"
-          >
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" cyan"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(0, 255, 255); color: rgb(68, 68, 68); left: 0px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #00ffff
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" darkblue"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(0, 0, 139); color: rgb(68, 68, 68); left: 27.428571428571427px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #00008b
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" darkcyan"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(0, 139, 139); color: rgb(68, 68, 68); left: 54.857142857142854px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #008b8b
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" darkgrey"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(169, 169, 169); color: rgb(68, 68, 68); left: 82.28571428571428px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #a9a9a9
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" darkgreen"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(0, 100, 0); color: rgb(68, 68, 68); left: 109.71428571428571px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #006400
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" darkkhaki"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(189, 183, 107); color: rgb(68, 68, 68); left: 137.14285714285714px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #bdb76b
-                </span>
-              </button>
-            </div>
-          </div>
-          <div
-            class="sc-dkPtyc lcwSFG"
-            style="width: 164.57142857142856px; height: 27.428571428571427px;"
-          >
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" darkmagenta"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(139, 0, 139); color: rgb(68, 68, 68); left: 0px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #8b008b
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" darkolivegreen"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(85, 107, 47); color: rgb(68, 68, 68); left: 27.428571428571427px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #556b2f
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" darkorange"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 140, 0); color: rgb(68, 68, 68); left: 54.857142857142854px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #ff8c00
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" darkorchid"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(153, 50, 204); color: rgb(68, 68, 68); left: 82.28571428571428px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #9932cc
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" darkred"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(139, 0, 0); color: rgb(68, 68, 68); left: 109.71428571428571px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #8b0000
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" darksalmon"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(233, 150, 122); color: rgb(68, 68, 68); left: 137.14285714285714px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #e9967a
-                </span>
-              </button>
-            </div>
-          </div>
-          <div
-            class="sc-dkPtyc lcwSFG"
-            style="width: 164.57142857142856px; height: 27.428571428571427px;"
-          >
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" darkviolet"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(148, 0, 211); color: rgb(68, 68, 68); left: 0px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #9400d3
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" fuchsia"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 0, 255); color: rgb(68, 68, 68); left: 27.428571428571427px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #ff00ff
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" gold"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 215, 0); color: rgb(68, 68, 68); left: 54.857142857142854px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #ffd700
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" green"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(0, 128, 0); color: rgb(68, 68, 68); left: 82.28571428571428px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #008000
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" indigo"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(75, 0, 130); color: rgb(68, 68, 68); left: 109.71428571428571px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #4b0082
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" khaki"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(240, 230, 140); color: rgb(68, 68, 68); left: 137.14285714285714px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #f0e68c
-                </span>
-              </button>
-            </div>
-          </div>
-          <div
-            class="sc-dkPtyc lcwSFG"
-            style="width: 164.57142857142856px; height: 27.428571428571427px;"
-          >
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" lightblue"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(173, 216, 230); color: rgb(68, 68, 68); left: 0px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #add8e6
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" lightcyan"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(224, 255, 255); color: rgb(68, 68, 68); left: 27.428571428571427px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #e0ffff
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" lightgreen"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(144, 238, 144); color: rgb(68, 68, 68); left: 54.857142857142854px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #90ee90
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" lightgrey"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(211, 211, 211); color: rgb(68, 68, 68); left: 82.28571428571428px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #d3d3d3
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" lightpink"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 182, 193); color: rgb(68, 68, 68); left: 109.71428571428571px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #ffb6c1
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" lightyellow"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 255, 224); color: rgb(68, 68, 68); left: 137.14285714285714px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #ffffe0
-                </span>
-              </button>
-            </div>
-          </div>
-          <div
-            class="sc-dkPtyc lcwSFG"
-            style="width: 164.57142857142856px; height: 27.428571428571427px;"
-          >
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" lime"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(0, 255, 0); color: rgb(68, 68, 68); left: 0px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #00ff00
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" magenta"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 0, 255); color: rgb(68, 68, 68); left: 27.428571428571427px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #ff00ff
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" maroon"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(128, 0, 0); color: rgb(68, 68, 68); left: 54.857142857142854px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #800000
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" navy"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(0, 0, 128); color: rgb(68, 68, 68); left: 82.28571428571428px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #000080
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" olive"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(128, 128, 0); color: rgb(68, 68, 68); left: 109.71428571428571px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #808000
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" orange"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 165, 0); color: rgb(68, 68, 68); left: 137.14285714285714px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #ffa500
-                </span>
-              </button>
-            </div>
-          </div>
-          <div
-            class="sc-dkPtyc lcwSFG"
-            style="width: 164.57142857142856px; height: 27.428571428571427px;"
-          >
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" pink"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 192, 203); color: rgb(68, 68, 68); left: 0px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #ffc0cb
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" purple"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(128, 0, 128); color: rgb(68, 68, 68); left: 27.428571428571427px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #800080
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" violet"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(128, 0, 128); color: rgb(68, 68, 68); left: 54.857142857142854px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #800080
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" red"
-                class="StyledButton-sc-323bzc-0 TsIzI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 0, 0); color: rgb(68, 68, 68); left: 82.28571428571428px;"
-                tabindex="0"
-                type="button"
-              >
-                <span>
-                  #ff0000
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" silver"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(192, 192, 192); color: rgb(68, 68, 68); left: 109.71428571428571px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #c0c0c0
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" white"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); left: 137.14285714285714px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #ffffff
-                </span>
-              </button>
-            </div>
-          </div>
-          <div
-            class="sc-dkPtyc lcwSFG"
-            style="width: 27.428571428571427px; height: 27.428571428571427px;"
-          >
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label=" yellow"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 255, 0); color: rgb(68, 68, 68); left: 0px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #ffff00
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Colors  snapshot 3`] = `
+exports[`Colors onSelect snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -3810,7 +4232,7 @@ exports[`Colors  snapshot 3`] = `
 </DocumentFragment>
 `;
 
-exports[`Colors  snapshot 4`] = `
+exports[`Colors size snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -5293,429 +5715,7 @@ exports[`Colors  snapshot 4`] = `
 </DocumentFragment>
 `;
 
-exports[`Colors  snapshot 5`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="sc-bdvvaa fbYwlB"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-      >
-        <div
-          class="sc-gsDJrp dmkRxm"
-          style="height: 137.14285714285714px;"
-        >
-          <div
-            class="sc-dkPtyc lcwSFG"
-            style="width: 137.14285714285714px; height: 27.428571428571427px;"
-          >
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="blue 50"
-                class="StyledButton-sc-323bzc-0 TsIzI sc-eCImvq fiiAuf"
-                style="background-color: rgb(227, 242, 253); color: rgb(68, 68, 68); left: 0px;"
-                tabindex="0"
-                type="button"
-              >
-                <span>
-                  #e3f2fd
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="blue 100"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(187, 222, 251); color: rgb(68, 68, 68); left: 27.428571428571427px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #bbdefb
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="blue 200"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(144, 202, 249); color: rgb(68, 68, 68); left: 54.857142857142854px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #90caf9
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="blue 300"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(100, 181, 246); color: rgb(68, 68, 68); left: 82.28571428571428px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #64b5f6
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="blue 400"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(66, 165, 245); color: rgb(68, 68, 68); left: 109.71428571428571px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #42a5f5
-                </span>
-              </button>
-            </div>
-          </div>
-          <div
-            class="sc-dkPtyc lcwSFG"
-            style="width: 137.14285714285714px; height: 27.428571428571427px;"
-          >
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="blueGrey 50"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(236, 239, 241); color: rgb(68, 68, 68); left: 0px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #eceff1
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="blueGrey 100"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(207, 216, 220); color: rgb(68, 68, 68); left: 27.428571428571427px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #cfd8dc
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="blueGrey 200"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(176, 190, 197); color: rgb(68, 68, 68); left: 54.857142857142854px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #b0bec5
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="blueGrey 300"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(144, 164, 174); color: rgb(68, 68, 68); left: 82.28571428571428px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #90a4ae
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="blueGrey 400"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(120, 144, 156); color: rgb(68, 68, 68); left: 109.71428571428571px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #78909c
-                </span>
-              </button>
-            </div>
-          </div>
-          <div
-            class="sc-dkPtyc lcwSFG"
-            style="width: 137.14285714285714px; height: 27.428571428571427px;"
-          >
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="brown 50"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(239, 235, 233); color: rgb(68, 68, 68); left: 0px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #efebe9
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="brown 100"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(215, 204, 200); color: rgb(68, 68, 68); left: 27.428571428571427px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #d7ccc8
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="brown 200"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(188, 170, 164); color: rgb(68, 68, 68); left: 54.857142857142854px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #bcaaa4
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="brown 300"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(161, 136, 127); color: rgb(68, 68, 68); left: 82.28571428571428px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #a1887f
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="brown 400"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(141, 110, 99); color: rgb(68, 68, 68); left: 109.71428571428571px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #8d6e63
-                </span>
-              </button>
-            </div>
-          </div>
-          <div
-            class="sc-dkPtyc lcwSFG"
-            style="width: 137.14285714285714px; height: 27.428571428571427px;"
-          >
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="cyan 50"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(224, 247, 250); color: rgb(68, 68, 68); left: 0px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #e0f7fa
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="cyan 100"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(178, 235, 242); color: rgb(68, 68, 68); left: 27.428571428571427px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #b2ebf2
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="cyan 200"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(128, 222, 234); color: rgb(68, 68, 68); left: 54.857142857142854px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #80deea
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="cyan 300"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(77, 208, 225); color: rgb(68, 68, 68); left: 82.28571428571428px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #4dd0e1
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="cyan 400"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(38, 198, 218); color: rgb(68, 68, 68); left: 109.71428571428571px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #26c6da
-                </span>
-              </button>
-            </div>
-          </div>
-          <div
-            class="sc-dkPtyc lcwSFG"
-            style="width: 137.14285714285714px; height: 27.428571428571427px;"
-          >
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="deepOrange 50"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(251, 233, 231); color: rgb(68, 68, 68); left: 0px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #fbe9e7
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="deepOrange 100"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 204, 188); color: rgb(68, 68, 68); left: 27.428571428571427px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #ffccbc
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="deepOrange 200"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 171, 145); color: rgb(68, 68, 68); left: 54.857142857142854px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #ffab91
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="deepOrange 300"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 138, 101); color: rgb(68, 68, 68); left: 82.28571428571428px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #ff8a65
-                </span>
-              </button>
-            </div>
-            <div
-              class="sc-hKwCoD dtZNPs"
-            >
-              <button
-                aria-label="deepOrange 400"
-                class="StyledButton-sc-323bzc-0 kWmbDI sc-eCImvq fiiAuf"
-                style="background-color: rgb(255, 112, 67); color: rgb(68, 68, 68); left: 109.71428571428571px;"
-                tabindex="-1"
-                type="button"
-              >
-                <span>
-                  #ff7043
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Colors  snapshot 6`] = `
+exports[`Colors wrap snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

@@ -1,6 +1,144 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tag  snapshot 1`] = `
+exports[`Tag a11yTitle snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      aria-label="Tag component"
+      class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
+      role="checkbox"
+    >
+      <span
+        class="StyledText-sc-1sadyjn-0 cddmqI"
+      >
+        Text
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag background snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 jopFXq sc-gsDJrp cMzNQF"
+      role="checkbox"
+    >
+      <span
+        class="StyledText-sc-1sadyjn-0 cddmqI"
+      >
+        accent-1
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag border snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 ezZtXS sc-gsDJrp hmttsr"
+      role="checkbox"
+    >
+      <span
+        class="StyledText-sc-1sadyjn-0 cddmqI"
+      >
+        border
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag disabled snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp loNdqH"
+      disabled=""
+      role="checkbox"
+    >
+      <span
+        class="StyledText-sc-1sadyjn-0 cddmqI"
+      >
+        Disabled
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag focusable snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
+      role="checkbox"
+    >
+      <span
+        class="StyledText-sc-1sadyjn-0 cddmqI"
+      >
+        Cant focus
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag icon snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
+      role="checkbox"
+    >
+      <span
+        class="StyledText-sc-1sadyjn-0 cddmqI"
+      >
+        Text
+      </span>
+      <span
+        class="sc-bdvvaa hMYmzD"
+      >
+        <svg
+          aria-label="FormSubtract"
+          class="StyledIcon-ofa7kd-0 exrjxz"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M6,12 L18,12"
+            fill="none"
+            stroke="#000"
+            stroke-width="2"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag main snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -37,186 +175,7 @@ exports[`Tag  snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag  snapshot 2`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      aria-label="Tag component"
-      class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
-      role="checkbox"
-    >
-      <span
-        class="StyledText-sc-1sadyjn-0 cddmqI"
-      >
-        Text
-      </span>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag  snapshot 3`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
-      role="checkbox"
-    >
-      <span
-        class="StyledText-sc-1sadyjn-0 cddmqI"
-      >
-        Text
-      </span>
-      <span
-        class="sc-bdvvaa hMYmzD"
-      >
-        <svg
-          aria-label="FormSubtract"
-          class="StyledIcon-ofa7kd-0 exrjxz"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M6,12 L18,12"
-            fill="none"
-            stroke="#000"
-            stroke-width="2"
-          />
-        </svg>
-      </span>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag  snapshot 4`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp loNdqH"
-      disabled=""
-      role="checkbox"
-    >
-      <span
-        class="StyledText-sc-1sadyjn-0 cddmqI"
-      >
-        Disabled
-      </span>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag  snapshot 5`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
-      role="checkbox"
-    >
-      <span
-        class="StyledText-sc-1sadyjn-0 cddmqI"
-      >
-        Cant focus
-      </span>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag  snapshot 6`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 jopFXq sc-gsDJrp cMzNQF"
-      role="checkbox"
-    >
-      <span
-        class="StyledText-sc-1sadyjn-0 cddmqI"
-      >
-        accent-1
-      </span>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag  snapshot 7`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 ezZtXS sc-gsDJrp hmttsr"
-      role="checkbox"
-    >
-      <span
-        class="StyledText-sc-1sadyjn-0 cddmqI"
-      >
-        border
-      </span>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag  snapshot 8`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 bstkM sc-gsDJrp ZrBbd"
-      role="checkbox"
-    >
-      <span
-        class="StyledText-sc-1sadyjn-0 cddmqI"
-      >
-        round
-      </span>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag  snapshot 9`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      aria-checked="true"
-      class="StyledBox-sc-13pk1d4-0 cjovPv sc-gsDJrp fQCdaP"
-      role="checkbox"
-      tabindex="0"
-    >
-      <span
-        class="StyledText-sc-1sadyjn-0 cddmqI"
-      >
-        Text
-      </span>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tag  snapshot 10`] = `
+exports[`Tag onChange snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -252,7 +211,28 @@ exports[`Tag  snapshot 10`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag  snapshot 11`] = `
+exports[`Tag onClick snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 cjovPv sc-gsDJrp fQCdaP"
+      role="checkbox"
+      tabindex="0"
+    >
+      <span
+        class="StyledText-sc-1sadyjn-0 cddmqI"
+      >
+        Text
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag reverse snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -272,7 +252,27 @@ exports[`Tag  snapshot 11`] = `
 </DocumentFragment>
 `;
 
-exports[`Tag  snapshot 12`] = `
+exports[`Tag round snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      aria-checked="true"
+      class="StyledBox-sc-13pk1d4-0 bstkM sc-gsDJrp ZrBbd"
+      role="checkbox"
+    >
+      <span
+        class="StyledText-sc-1sadyjn-0 cddmqI"
+      >
+        round
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tag size snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PagingTable  snapshot 1`] = `
+exports[`PagingTable main snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -991,7 +991,7 @@ exports[`PagingTable  snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`PagingTable  snapshot 2`] = `
+exports[`PagingTable simple snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

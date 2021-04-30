@@ -1,6 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextAreaField  snapshot 1`] = `
+exports[`TextAreaField inField snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <form
+      class="sc-bdvvaa nNUGj"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 jUPATD"
+        >
+          <div>
+            <textarea
+              class="StyledTextArea-sc-17i3mwp-0 ddTbWI"
+              id="bio"
+              label="Short bio"
+              name="bio"
+              rows="6"
+            />
+            <div
+              class="StyledBox-sc-13pk1d4-0 kspWmI"
+            >
+              <button
+                class="StyledButton-sc-323bzc-0 cfaKOi"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextAreaField main snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -53,47 +93,7 @@ exports[`TextAreaField  snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`TextAreaField  snapshot 2`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <form
-      class="sc-bdvvaa nNUGj"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 iYasFZ"
-      >
-        <div
-          class="StyledBox-sc-13pk1d4-0 jUPATD"
-        >
-          <div>
-            <textarea
-              class="StyledTextArea-sc-17i3mwp-0 ddTbWI"
-              id="bio"
-              label="Short bio"
-              name="bio"
-              rows="6"
-            />
-            <div
-              class="StyledBox-sc-13pk1d4-0 kspWmI"
-            >
-              <button
-                class="StyledButton-sc-323bzc-0 cfaKOi"
-                type="submit"
-              >
-                Submit
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`TextAreaField  snapshot 3`] = `
+exports[`TextAreaField validation snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

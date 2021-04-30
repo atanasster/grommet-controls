@@ -1,6 +1,160 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card  snapshot 1`] = `
+exports[`Card animation snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 hjHMIK sc-bdvvaa bYbBjN"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 jZTkjw"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 ilwqmK"
+        >
+          Card
+        </h4>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 BzKJB"
+      >
+        <img
+          class="StyledImage-ey4zx9-0 cigHgd"
+          height="250"
+          src="//v2.grommet.io/assets/Wilderpeople_Ricky.jpg"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Card background snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 hinIlK sc-bdvvaa bYbBjN"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 jZTkjw"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 ilwqmK"
+        >
+          Card
+        </h4>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 clJfkg"
+      >
+        Card content
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Card border snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 eCFCRM sc-bdvvaa bYbBjN"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 jZTkjw"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 ilwqmK"
+        >
+          Card
+        </h4>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 clJfkg"
+      >
+        Card content
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Card elevation snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 hkCqWB sc-bdvvaa bYbBjN"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 jZTkjw"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 ilwqmK"
+        >
+          Card
+        </h4>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 clJfkg"
+      >
+        Card content
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Card gap snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 cNBLDo sc-bdvvaa bYbBjN"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 jZTkjw"
+      >
+        <h4
+          class="StyledHeading-sc-1rdh4aw-0 ilwqmK"
+        >
+          Card
+        </h4>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 clJfkg"
+      >
+        Card content
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Card main snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -87,161 +241,7 @@ exports[`Card  snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Card  snapshot 2`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 hjHMIK sc-bdvvaa bYbBjN"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 jZTkjw"
-      >
-        <h4
-          class="StyledHeading-sc-1rdh4aw-0 ilwqmK"
-        >
-          Card
-        </h4>
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
-      />
-      <div
-        class="StyledBox-sc-13pk1d4-0 BzKJB"
-      >
-        <img
-          class="StyledImage-ey4zx9-0 cigHgd"
-          height="250"
-          src="//v2.grommet.io/assets/Wilderpeople_Ricky.jpg"
-        />
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Card  snapshot 3`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 hinIlK sc-bdvvaa bYbBjN"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 jZTkjw"
-      >
-        <h4
-          class="StyledHeading-sc-1rdh4aw-0 ilwqmK"
-        >
-          Card
-        </h4>
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
-      />
-      <div
-        class="StyledBox-sc-13pk1d4-0 clJfkg"
-      >
-        Card content
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Card  snapshot 4`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 eCFCRM sc-bdvvaa bYbBjN"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 jZTkjw"
-      >
-        <h4
-          class="StyledHeading-sc-1rdh4aw-0 ilwqmK"
-        >
-          Card
-        </h4>
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
-      />
-      <div
-        class="StyledBox-sc-13pk1d4-0 clJfkg"
-      >
-        Card content
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Card  snapshot 5`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 hkCqWB sc-bdvvaa bYbBjN"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 jZTkjw"
-      >
-        <h4
-          class="StyledHeading-sc-1rdh4aw-0 ilwqmK"
-        >
-          Card
-        </h4>
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
-      />
-      <div
-        class="StyledBox-sc-13pk1d4-0 clJfkg"
-      >
-        Card content
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Card  snapshot 6`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 cNBLDo sc-bdvvaa bYbBjN"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 jZTkjw"
-      >
-        <h4
-          class="StyledHeading-sc-1rdh4aw-0 ilwqmK"
-        >
-          Card
-        </h4>
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
-      />
-      <div
-        class="StyledBox-sc-13pk1d4-0 clJfkg"
-      >
-        Card content
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Card  snapshot 7`] = `
+exports[`Card pad snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -271,7 +271,7 @@ exports[`Card  snapshot 7`] = `
 </DocumentFragment>
 `;
 
-exports[`Card  snapshot 8`] = `
+exports[`Card round snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

@@ -1,163 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Spinning  snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="sc-gsDJrp bcdozm"
-      color="dark-1"
-    >
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-      <div />
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Spinning  snapshot 2`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-    >
-      <div
-        class="sc-gsDJrp bcdozm"
-        color="dark-1"
-      >
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
-      />
-      <div
-        class="sc-pVTma khbJnp"
-        color="dark-1"
-      >
-        <div />
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
-      />
-      <div
-        class="sc-bdvvaa kCrYla"
-        color="dark-1"
-      >
-        <div />
-        <div />
-        <div />
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
-      />
-      <div
-        class="sc-dkPtyc dMzLKC"
-        color="dark-1"
-      >
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
-      />
-      <div
-        class="sc-hKwCoD gLeRVx"
-        color="dark-1"
-      >
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
-      />
-      <div
-        class="sc-eCImvq kEfBVC"
-        color="dark-1"
-      >
-        <div />
-        <div />
-        <div />
-        <div />
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
-      />
-      <div
-        class="sc-jRQAMF kWYHuf"
-        color="dark-1"
-      >
-        <div />
-        <div />
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
-      />
-      <div
-        class="sc-gKckTs hOBDFa"
-        color="dark-1"
-      >
-        <div />
-        <div />
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
-      />
-      <div
-        class="sc-iCfLBT EXdpw"
-        color="dark-1"
-      >
-        <div />
-        <div />
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
-      />
-      <div
-        class="sc-furvIG iSvJhg"
-        color="dark-1"
-      >
-        <div />
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Spinning  snapshot 3`] = `
+exports[`Spinning color snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -288,7 +131,164 @@ exports[`Spinning  snapshot 3`] = `
 </DocumentFragment>
 `;
 
-exports[`Spinning  snapshot 4`] = `
+exports[`Spinning kind snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+    >
+      <div
+        class="sc-gsDJrp bcdozm"
+        color="dark-1"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
+      />
+      <div
+        class="sc-pVTma khbJnp"
+        color="dark-1"
+      >
+        <div />
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
+      />
+      <div
+        class="sc-bdvvaa kCrYla"
+        color="dark-1"
+      >
+        <div />
+        <div />
+        <div />
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
+      />
+      <div
+        class="sc-dkPtyc dMzLKC"
+        color="dark-1"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
+      />
+      <div
+        class="sc-hKwCoD gLeRVx"
+        color="dark-1"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
+      />
+      <div
+        class="sc-eCImvq kEfBVC"
+        color="dark-1"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
+      />
+      <div
+        class="sc-jRQAMF kWYHuf"
+        color="dark-1"
+      >
+        <div />
+        <div />
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
+      />
+      <div
+        class="sc-gKckTs hOBDFa"
+        color="dark-1"
+      >
+        <div />
+        <div />
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
+      />
+      <div
+        class="sc-iCfLBT EXdpw"
+        color="dark-1"
+      >
+        <div />
+        <div />
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eYPsEs"
+      />
+      <div
+        class="sc-furvIG iSvJhg"
+        color="dark-1"
+      >
+        <div />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Spinning main snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="sc-gsDJrp bcdozm"
+      color="dark-1"
+    >
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Spinning size snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

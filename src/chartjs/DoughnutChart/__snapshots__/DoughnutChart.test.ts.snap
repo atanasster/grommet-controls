@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DoughnutChart  snapshot 1`] = `
+exports[`DoughnutChart animation snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -15,7 +15,7 @@ exports[`DoughnutChart  snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`DoughnutChart  snapshot 2`] = `
+exports[`DoughnutChart main snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

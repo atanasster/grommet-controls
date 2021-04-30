@@ -1,37 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MaskedInput  snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
-              type="text"
-              value="(802) 444-2131"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`MaskedInput  snapshot 2`] = `
+exports[`MaskedInput a11yTitle snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -63,7 +32,7 @@ exports[`MaskedInput  snapshot 2`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  snapshot 3`] = `
+exports[`MaskedInput disabled snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -119,7 +88,7 @@ exports[`MaskedInput  snapshot 3`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  snapshot 4`] = `
+exports[`MaskedInput dropContent snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -173,7 +142,353 @@ exports[`MaskedInput  snapshot 4`] = `
 </DocumentFragment>
 `;
 
-exports[`MaskedInput  snapshot 5`] = `
+exports[`MaskedInput focusIndicator snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 dsrMSZ sc-bdvvaa hfkuDO"
+              type="text"
+              value="(802) 444-2131"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MaskedInput guide snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 dsrMSZ sc-bdvvaa hfkuDO"
+              type="text"
+              value="(802) 444-2131"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MaskedInput keepCharPositions snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
+              type="text"
+              value="(802) 444-2131"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MaskedInput main snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
+              type="text"
+              value="(802) 444-2131"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MaskedInput mask snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
+              placeholder="US phone number with country code"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MaskedInput name snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
+              id="date-id"
+              name="date-name"
+              type="text"
+              value="(802) 444-2131"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MaskedInput pipe snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
+              placeholder="K1A 0B2"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MaskedInput placeholder snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
+              placeholder="Enter phone..."
+              type="text"
+              value="(802) 444-2131"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MaskedInput placeholderChar snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
+              type="text"
+              value="(802) 444-2131"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MaskedInput plain snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 dsrMSZ sc-bdvvaa hfkuDO"
+              type="text"
+              value="(802) 444-2131"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MaskedInput showMask snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 dHgsfl"
+      >
+        <div
+          class="sc-gsDJrp ixnOXx"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
+              type="text"
+              value="(802) 444-2131"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MaskedInput widgets snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -236,321 +551,6 @@ exports[`MaskedInput  snapshot 5`] = `
                 />
               </svg>
             </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`MaskedInput  snapshot 6`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 dsrMSZ sc-bdvvaa hfkuDO"
-              type="text"
-              value="(802) 444-2131"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`MaskedInput  snapshot 7`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 dsrMSZ sc-bdvvaa hfkuDO"
-              type="text"
-              value="(802) 444-2131"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`MaskedInput  snapshot 8`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
-              placeholder="US phone number with country code"
-              type="text"
-              value=""
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`MaskedInput  snapshot 9`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 dsrMSZ sc-bdvvaa hfkuDO"
-              type="text"
-              value="(802) 444-2131"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`MaskedInput  snapshot 10`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
-              placeholder="K1A 0B2"
-              type="text"
-              value=""
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`MaskedInput  snapshot 11`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
-              type="text"
-              value="(802) 444-2131"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`MaskedInput  snapshot 12`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
-              type="text"
-              value="(802) 444-2131"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`MaskedInput  snapshot 13`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
-              type="text"
-              value="(802) 444-2131"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`MaskedInput  snapshot 14`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
-              placeholder="Enter phone..."
-              type="text"
-              value="(802) 444-2131"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`MaskedInput  snapshot 15`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 dHgsfl"
-      >
-        <div
-          class="sc-gsDJrp ixnOXx"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 evYMFd sc-bdvvaa hfkuDO"
-              id="date-id"
-              name="date-name"
-              type="text"
-              value="(802) 444-2131"
-            />
           </div>
         </div>
       </div>

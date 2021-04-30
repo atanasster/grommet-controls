@@ -1,6 +1,86 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SelectField  snapshot 1`] = `
+exports[`SelectField inField snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <form
+      class="sc-bdvvaa nNUGj"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 jUPATD"
+        >
+          <div>
+            <button
+              aria-label="Open Drop"
+              class="StyledButton-sc-323bzc-0 heIqNk Select__StyledSelectDropButton-sc-17idtfo-1 dukJWv"
+              id="country"
+              type="button"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 hoBZOR"
+              >
+                <div
+                  class="StyledBox-sc-13pk1d4-0 dtQiSn"
+                >
+                  <div
+                    class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+                  >
+                    <input
+                      autocomplete="off"
+                      class="StyledTextInput-sc-1x30a0s-0 bcUlnk Select__SelectTextInput-sc-17idtfo-0 kMNVoA"
+                      id="country__input"
+                      label="Country"
+                      name="country"
+                      readonly=""
+                      tabindex="-1"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="StyledBox-sc-13pk1d4-0 jzyREm"
+                  style="min-width: auto;"
+                >
+                  <svg
+                    aria-label="FormDown"
+                    class="StyledIcon-ofa7kd-0 gMeCrH"
+                    viewBox="0 0 24 24"
+                  >
+                    <polyline
+                      fill="none"
+                      points="18 9 12 15 6 9"
+                      stroke="#000"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+            <div
+              class="StyledBox-sc-13pk1d4-0 kspWmI"
+            >
+              <button
+                class="StyledButton-sc-323bzc-0 cfaKOi"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SelectField main snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -93,87 +173,7 @@ exports[`SelectField  snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`SelectField  snapshot 2`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <form
-      class="sc-bdvvaa nNUGj"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 iYasFZ"
-      >
-        <div
-          class="StyledBox-sc-13pk1d4-0 jUPATD"
-        >
-          <div>
-            <button
-              aria-label="Open Drop"
-              class="StyledButton-sc-323bzc-0 heIqNk Select__StyledSelectDropButton-sc-17idtfo-1 dukJWv"
-              id="country"
-              type="button"
-            >
-              <div
-                class="StyledBox-sc-13pk1d4-0 hoBZOR"
-              >
-                <div
-                  class="StyledBox-sc-13pk1d4-0 dtQiSn"
-                >
-                  <div
-                    class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-                  >
-                    <input
-                      autocomplete="off"
-                      class="StyledTextInput-sc-1x30a0s-0 bcUlnk Select__SelectTextInput-sc-17idtfo-0 kMNVoA"
-                      id="country__input"
-                      label="Country"
-                      name="country"
-                      readonly=""
-                      tabindex="-1"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                </div>
-                <div
-                  class="StyledBox-sc-13pk1d4-0 jzyREm"
-                  style="min-width: auto;"
-                >
-                  <svg
-                    aria-label="FormDown"
-                    class="StyledIcon-ofa7kd-0 gMeCrH"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline
-                      fill="none"
-                      points="18 9 12 15 6 9"
-                      stroke="#000"
-                      stroke-width="2"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </button>
-            <div
-              class="StyledBox-sc-13pk1d4-0 kspWmI"
-            >
-              <button
-                class="StyledButton-sc-323bzc-0 cfaKOi"
-                type="submit"
-              >
-                Submit
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`SelectField  snapshot 3`] = `
+exports[`SelectField validation snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

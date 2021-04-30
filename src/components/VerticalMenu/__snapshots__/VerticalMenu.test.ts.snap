@@ -1,105 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`VerticalMenu  snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-      >
-        <button
-          class="StyledButton-sc-323bzc-0 ihSNXZ"
-          type="button"
-        >
-          <div
-            class="StyledBox-sc-13pk1d4-0 cTOMus"
-            style="margin-left: 12px;"
-          >
-            <svg
-              aria-label="FormNext"
-              class="StyledIcon-ofa7kd-0 exrjxz"
-              viewBox="0 0 24 24"
-            >
-              <polyline
-                fill="none"
-                points="9 6 15 12 9 18"
-                stroke="#000"
-                stroke-width="2"
-              />
-            </svg>
-            <div
-              class="StyledBox-sc-13pk1d4-0 domXEG"
-            >
-              <div
-                class="StyledBox-sc-13pk1d4-0 kuSryJ"
-              >
-                <span
-                  class="StyledText-sc-1sadyjn-0 cddmqI"
-                >
-                  <strong>
-                    Local
-                  </strong>
-                </span>
-              </div>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-    <div
-      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-      >
-        <button
-          class="StyledButton-sc-323bzc-0 ihSNXZ"
-          type="button"
-        >
-          <div
-            class="StyledBox-sc-13pk1d4-0 cTOMus"
-            style="margin-left: 12px;"
-          >
-            <svg
-              aria-label="FormNext"
-              class="StyledIcon-ofa7kd-0 exrjxz"
-              viewBox="0 0 24 24"
-            >
-              <polyline
-                fill="none"
-                points="9 6 15 12 9 18"
-                stroke="#000"
-                stroke-width="2"
-              />
-            </svg>
-            <div
-              class="StyledBox-sc-13pk1d4-0 domXEG"
-            >
-              <div
-                class="StyledBox-sc-13pk1d4-0 kuSryJ"
-              >
-                <span
-                  class="StyledText-sc-1sadyjn-0 cddmqI"
-                >
-                  <strong>
-                    Cloud
-                  </strong>
-                </span>
-              </div>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`VerticalMenu  snapshot 2`] = `
+exports[`VerticalMenu items snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -611,6 +512,105 @@ exports[`VerticalMenu  snapshot 2`] = `
             </div>
           </div>
         </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`VerticalMenu main snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 ihSNXZ"
+          type="button"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 cTOMus"
+            style="margin-left: 12px;"
+          >
+            <svg
+              aria-label="FormNext"
+              class="StyledIcon-ofa7kd-0 exrjxz"
+              viewBox="0 0 24 24"
+            >
+              <polyline
+                fill="none"
+                points="9 6 15 12 9 18"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox-sc-13pk1d4-0 domXEG"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 kuSryJ"
+              >
+                <span
+                  class="StyledText-sc-1sadyjn-0 cddmqI"
+                >
+                  <strong>
+                    Local
+                  </strong>
+                </span>
+              </div>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 ihSNXZ"
+          type="button"
+        >
+          <div
+            class="StyledBox-sc-13pk1d4-0 cTOMus"
+            style="margin-left: 12px;"
+          >
+            <svg
+              aria-label="FormNext"
+              class="StyledIcon-ofa7kd-0 exrjxz"
+              viewBox="0 0 24 24"
+            >
+              <polyline
+                fill="none"
+                points="9 6 15 12 9 18"
+                stroke="#000"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="StyledBox-sc-13pk1d4-0 domXEG"
+            >
+              <div
+                class="StyledBox-sc-13pk1d4-0 kuSryJ"
+              >
+                <span
+                  class="StyledText-sc-1sadyjn-0 cddmqI"
+                >
+                  <strong>
+                    Cloud
+                  </strong>
+                </span>
+              </div>
+            </div>
+          </div>
+        </button>
       </div>
     </div>
   </div>

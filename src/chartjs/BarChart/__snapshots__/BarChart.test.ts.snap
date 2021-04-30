@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BarChart  snapshot 1`] = `
+exports[`BarChart main snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -15,7 +15,7 @@ exports[`BarChart  snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`BarChart  snapshot 2`] = `
+exports[`BarChart mixedLine snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -30,7 +30,7 @@ exports[`BarChart  snapshot 2`] = `
 </DocumentFragment>
 `;
 
-exports[`BarChart  snapshot 3`] = `
+exports[`BarChart multiAxis snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -45,7 +45,7 @@ exports[`BarChart  snapshot 3`] = `
 </DocumentFragment>
 `;
 
-exports[`BarChart  snapshot 4`] = `
+exports[`BarChart stacked snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -60,7 +60,7 @@ exports[`BarChart  snapshot 4`] = `
 </DocumentFragment>
 `;
 
-exports[`BarChart  snapshot 5`] = `
+exports[`BarChart stackedGroup snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

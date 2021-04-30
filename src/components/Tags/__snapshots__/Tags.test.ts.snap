@@ -1,103 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tags  snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 iYasFZ"
-      >
-        <div
-          class="StyledBox-sc-13pk1d4-0 ktWQSf"
-          style="min-width: auto;"
-          tabindex="0"
-        >
-          <div
-            aria-checked="true"
-            aria-label="Remove small"
-            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
-            role="checkbox"
-            tabindex="0"
-          >
-            <span
-              class="StyledText-sc-1sadyjn-0 cddmqI"
-            >
-              small
-            </span>
-            <span
-              class="sc-bdvvaa hMYmzD"
-            >
-              <svg
-                aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M7,7 L17,17 M7,17 L17,7"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </span>
-          </div>
-          <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kdVHiH"
-          />
-          <div
-            aria-checked="true"
-            aria-label="Remove large"
-            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
-            role="checkbox"
-            tabindex="0"
-          >
-            <span
-              class="StyledText-sc-1sadyjn-0 cddmqI"
-            >
-              large
-            </span>
-            <span
-              class="sc-bdvvaa hMYmzD"
-            >
-              <svg
-                aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M7,7 L17,17 M7,17 L17,7"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
-      />
-      <div
-        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
-      >
-        <button
-          class="StyledButton-sc-323bzc-0 jjojlc"
-          type="button"
-        >
-          Reset tags
-        </button>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tags  snapshot 2`] = `
+exports[`Tags a11yTitle snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -195,7 +98,7 @@ exports[`Tags  snapshot 2`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  snapshot 3`] = `
+exports[`Tags children snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -270,104 +173,7 @@ exports[`Tags  snapshot 3`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  snapshot 4`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 iYasFZ"
-      >
-        <div
-          class="StyledBox-sc-13pk1d4-0 ktWQSf"
-          style="min-width: auto;"
-          tabindex="0"
-        >
-          <div
-            aria-checked="true"
-            aria-label="Remove small"
-            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
-            role="checkbox"
-            tabindex="0"
-          >
-            <span
-              class="StyledText-sc-1sadyjn-0 cddmqI"
-            >
-              small
-            </span>
-            <span
-              class="sc-bdvvaa hMYmzD"
-            >
-              <svg
-                aria-label="FormSubtract"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6,12 L18,12"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </span>
-          </div>
-          <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kdVHiH"
-          />
-          <div
-            aria-checked="true"
-            aria-label="Remove large"
-            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
-            role="checkbox"
-            tabindex="0"
-          >
-            <span
-              class="StyledText-sc-1sadyjn-0 cddmqI"
-            >
-              large
-            </span>
-            <span
-              class="sc-bdvvaa hMYmzD"
-            >
-              <svg
-                aria-label="FormSubtract"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6,12 L18,12"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
-      />
-      <div
-        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
-      >
-        <button
-          class="StyledButton-sc-323bzc-0 jjojlc"
-          type="button"
-        >
-          Reset tags
-        </button>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tags  snapshot 5`] = `
+exports[`Tags direction snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -464,7 +270,7 @@ exports[`Tags  snapshot 5`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  snapshot 6`] = `
+exports[`Tags focusable snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -478,17 +284,16 @@ exports[`Tags  snapshot 6`] = `
         <div
           class="StyledBox-sc-13pk1d4-0 ktWQSf"
           style="min-width: auto;"
-          tabindex="0"
         >
           <div
             aria-checked="true"
             aria-label="Remove small"
-            class="StyledBox-sc-13pk1d4-0 bEPOhl sc-gsDJrp iAulwJ"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 fiigNB"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               small
             </span>
@@ -497,7 +302,7 @@ exports[`Tags  snapshot 6`] = `
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 jBvkdz"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -515,12 +320,12 @@ exports[`Tags  snapshot 6`] = `
           <div
             aria-checked="true"
             aria-label="Remove large"
-            class="StyledBox-sc-13pk1d4-0 bEPOhl sc-gsDJrp iAulwJ"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
             role="checkbox"
             tabindex="0"
           >
             <span
-              class="StyledText-sc-1sadyjn-0 fiigNB"
+              class="StyledText-sc-1sadyjn-0 cddmqI"
             >
               large
             </span>
@@ -529,7 +334,7 @@ exports[`Tags  snapshot 6`] = `
             >
               <svg
                 aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 jBvkdz"
+                class="StyledIcon-ofa7kd-0 exrjxz"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -561,7 +366,201 @@ exports[`Tags  snapshot 6`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  snapshot 7`] = `
+exports[`Tags icon snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 ktWQSf"
+          style="min-width: auto;"
+          tabindex="0"
+        >
+          <div
+            aria-checked="true"
+            aria-label="Remove small"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 cddmqI"
+            >
+              small
+            </span>
+            <span
+              class="sc-bdvvaa hMYmzD"
+            >
+              <svg
+                aria-label="FormSubtract"
+                class="StyledIcon-ofa7kd-0 exrjxz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6,12 L18,12"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kdVHiH"
+          />
+          <div
+            aria-checked="true"
+            aria-label="Remove large"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 cddmqI"
+            >
+              large
+            </span>
+            <span
+              class="sc-bdvvaa hMYmzD"
+            >
+              <svg
+                aria-label="FormSubtract"
+                class="StyledIcon-ofa7kd-0 exrjxz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6,12 L18,12"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 jjojlc"
+          type="button"
+        >
+          Reset tags
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tags main snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 ktWQSf"
+          style="min-width: auto;"
+          tabindex="0"
+        >
+          <div
+            aria-checked="true"
+            aria-label="Remove small"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 cddmqI"
+            >
+              small
+            </span>
+            <span
+              class="sc-bdvvaa hMYmzD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 exrjxz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kdVHiH"
+          />
+          <div
+            aria-checked="true"
+            aria-label="Remove large"
+            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 cddmqI"
+            >
+              large
+            </span>
+            <span
+              class="sc-bdvvaa hMYmzD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 exrjxz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 jjojlc"
+          type="button"
+        >
+          Reset tags
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tags onClick snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -658,103 +657,7 @@ exports[`Tags  snapshot 7`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  snapshot 8`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 iYasFZ"
-      >
-        <div
-          class="StyledBox-sc-13pk1d4-0 ktWQSf"
-          style="min-width: auto;"
-        >
-          <div
-            aria-checked="true"
-            aria-label="Remove small"
-            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
-            role="checkbox"
-            tabindex="0"
-          >
-            <span
-              class="StyledText-sc-1sadyjn-0 cddmqI"
-            >
-              small
-            </span>
-            <span
-              class="sc-bdvvaa hMYmzD"
-            >
-              <svg
-                aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M7,7 L17,17 M7,17 L17,7"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </span>
-          </div>
-          <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kdVHiH"
-          />
-          <div
-            aria-checked="true"
-            aria-label="Remove large"
-            class="StyledBox-sc-13pk1d4-0 iHGkTX sc-gsDJrp hmttsr"
-            role="checkbox"
-            tabindex="0"
-          >
-            <span
-              class="StyledText-sc-1sadyjn-0 cddmqI"
-            >
-              large
-            </span>
-            <span
-              class="sc-bdvvaa hMYmzD"
-            >
-              <svg
-                aria-label="FormClose"
-                class="StyledIcon-ofa7kd-0 exrjxz"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M7,7 L17,17 M7,17 L17,7"
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="2"
-                />
-              </svg>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
-      />
-      <div
-        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
-      >
-        <button
-          class="StyledButton-sc-323bzc-0 jjojlc"
-          type="button"
-        >
-          Reset tags
-        </button>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Tags  snapshot 9`] = `
+exports[`Tags placeholder snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -851,7 +754,104 @@ exports[`Tags  snapshot 9`] = `
 </DocumentFragment>
 `;
 
-exports[`Tags  snapshot 10`] = `
+exports[`Tags tagProps snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 iYasFZ"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 ktWQSf"
+          style="min-width: auto;"
+          tabindex="0"
+        >
+          <div
+            aria-checked="true"
+            aria-label="Remove small"
+            class="StyledBox-sc-13pk1d4-0 bEPOhl sc-gsDJrp iAulwJ"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 fiigNB"
+            >
+              small
+            </span>
+            <span
+              class="sc-bdvvaa hMYmzD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 jBvkdz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 kdVHiH"
+          />
+          <div
+            aria-checked="true"
+            aria-label="Remove large"
+            class="StyledBox-sc-13pk1d4-0 bEPOhl sc-gsDJrp iAulwJ"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 fiigNB"
+            >
+              large
+            </span>
+            <span
+              class="sc-bdvvaa hMYmzD"
+            >
+              <svg
+                aria-label="FormClose"
+                class="StyledIcon-ofa7kd-0 jBvkdz"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7,7 L17,17 M7,17 L17,7"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 fqwiwT"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 cmtmLQ"
+      >
+        <button
+          class="StyledButton-sc-323bzc-0 jjojlc"
+          type="button"
+        >
+          Reset tags
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tags value snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

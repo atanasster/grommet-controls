@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HorizontalBarChart  snapshot 1`] = `
+exports[`HorizontalBarChart main snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -15,7 +15,7 @@ exports[`HorizontalBarChart  snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`HorizontalBarChart  snapshot 2`] = `
+exports[`HorizontalBarChart title snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"

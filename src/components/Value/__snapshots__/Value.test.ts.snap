@@ -1,6 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Value  snapshot 1`] = `
+exports[`Value color snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+    >
+      <span
+        class="StyledText-sc-1sadyjn-0 fXlIRd"
+      >
+        30%
+      </span>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 kAUIOR"
+      >
+        <span
+          class="StyledText-sc-1sadyjn-0 gqernu"
+        >
+          status-ok
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Value label snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+    >
+      <span
+        class="StyledText-sc-1sadyjn-0 dNphxH"
+      >
+        30%
+      </span>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 kAUIOR"
+      >
+        <span
+          class="StyledText-sc-1sadyjn-0 ioNTgI"
+        >
+          a descriptive label
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Value main snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -38,203 +98,7 @@ exports[`Value  snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Value  snapshot 2`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-    >
-      <span
-        class="StyledText-sc-1sadyjn-0 dNphxH"
-      >
-        30%
-      </span>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
-      />
-      <div
-        class="StyledBox-sc-13pk1d4-0 kAUIOR"
-      >
-        <span
-          class="StyledText-sc-1sadyjn-0 ioNTgI"
-        >
-          a descriptive label
-        </span>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Value  snapshot 3`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 kuSryJ"
-      >
-        <span
-          class="StyledText-sc-1sadyjn-0 bDnMwk"
-        >
-          30%
-        </span>
-        <div
-          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 hboplE"
-        />
-        <svg
-          aria-label="Down"
-          class="StyledIcon-ofa7kd-0 pzwSf"
-          viewBox="0 0 24 24"
-        >
-          <polyline
-            fill="none"
-            points="7.086 3.174 17.086 13.174 7.086 23.174"
-            stroke="#000"
-            stroke-width="2"
-            transform="scale(1 -1) rotate(-89 -1.32 0)"
-          />
-        </svg>
-      </div>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
-      />
-      <div
-        class="StyledBox-sc-13pk1d4-0 kAUIOR"
-      >
-        <span
-          class="StyledText-sc-1sadyjn-0 ioNTgI"
-        >
-          custom value
-        </span>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Value  snapshot 4`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-    >
-      <span
-        class="StyledText-sc-1sadyjn-0 fXlIRd"
-      >
-        30%
-      </span>
-      <div
-        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
-      />
-      <div
-        class="StyledBox-sc-13pk1d4-0 kAUIOR"
-      >
-        <span
-          class="StyledText-sc-1sadyjn-0 gqernu"
-        >
-          status-ok
-        </span>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Value  snapshot 5`] = `
-<DocumentFragment>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
-  >
-    <div
-      class="StyledBox-sc-13pk1d4-0 iYasFZ"
-    >
-      <div
-        class="StyledBox-sc-13pk1d4-0 hzkwpE"
-      >
-        <div
-          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-        >
-          <span
-            class="StyledText-sc-1sadyjn-0 ePvjzN"
-          >
-            30%
-          </span>
-          <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
-          />
-          <div
-            class="StyledBox-sc-13pk1d4-0 kAUIOR"
-          >
-            <span
-              class="StyledText-sc-1sadyjn-0 ioNTgI"
-            >
-              normal
-            </span>
-          </div>
-        </div>
-        <div
-          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
-        />
-        <div
-          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-        >
-          <span
-            class="StyledText-sc-1sadyjn-0 dNphxH"
-          >
-            30%
-          </span>
-          <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
-          />
-          <div
-            class="StyledBox-sc-13pk1d4-0 kAUIOR"
-          >
-            <span
-              class="StyledText-sc-1sadyjn-0 ioNTgI"
-            >
-              bold
-            </span>
-          </div>
-        </div>
-        <div
-          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
-        />
-        <div
-          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
-        >
-          <span
-            class="StyledText-sc-1sadyjn-0 cVjjBa"
-          >
-            30%
-          </span>
-          <div
-            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
-          />
-          <div
-            class="StyledBox-sc-13pk1d4-0 kAUIOR"
-          >
-            <span
-              class="StyledText-sc-1sadyjn-0 ioNTgI"
-            >
-              400
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Value  snapshot 6`] = `
+exports[`Value size snapshot 1`] = `
 <DocumentFragment>
   <div
     class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
@@ -383,6 +247,142 @@ exports[`Value  snapshot 6`] = `
               class="StyledText-sc-1sadyjn-0 fiigNB"
             >
               xxlarge
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Value value snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 kuSryJ"
+      >
+        <span
+          class="StyledText-sc-1sadyjn-0 bDnMwk"
+        >
+          30%
+        </span>
+        <div
+          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 hboplE"
+        />
+        <svg
+          aria-label="Down"
+          class="StyledIcon-ofa7kd-0 pzwSf"
+          viewBox="0 0 24 24"
+        >
+          <polyline
+            fill="none"
+            points="7.086 3.174 17.086 13.174 7.086 23.174"
+            stroke="#000"
+            stroke-width="2"
+            transform="scale(1 -1) rotate(-89 -1.32 0)"
+          />
+        </svg>
+      </div>
+      <div
+        class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
+      />
+      <div
+        class="StyledBox-sc-13pk1d4-0 kAUIOR"
+      >
+        <span
+          class="StyledText-sc-1sadyjn-0 ioNTgI"
+        >
+          custom value
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Value weight snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 bFLhoX"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 iYasFZ"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 hzkwpE"
+      >
+        <div
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+        >
+          <span
+            class="StyledText-sc-1sadyjn-0 ePvjzN"
+          >
+            30%
+          </span>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
+          />
+          <div
+            class="StyledBox-sc-13pk1d4-0 kAUIOR"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 ioNTgI"
+            >
+              normal
+            </span>
+          </div>
+        </div>
+        <div
+          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
+        />
+        <div
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+        >
+          <span
+            class="StyledText-sc-1sadyjn-0 dNphxH"
+          >
+            30%
+          </span>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
+          />
+          <div
+            class="StyledBox-sc-13pk1d4-0 kAUIOR"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 ioNTgI"
+            >
+              bold
+            </span>
+          </div>
+        </div>
+        <div
+          class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
+        />
+        <div
+          class="StyledBox-sc-13pk1d4-0 hvUCKZ"
+        >
+          <span
+            class="StyledText-sc-1sadyjn-0 cVjjBa"
+          >
+            30%
+          </span>
+          <div
+            class="StyledBox__StyledBoxGap-sc-13pk1d4-1 eCikKQ"
+          />
+          <div
+            class="StyledBox-sc-13pk1d4-0 kAUIOR"
+          >
+            <span
+              class="StyledText-sc-1sadyjn-0 ioNTgI"
+            >
+              400
             </span>
           </div>
         </div>
