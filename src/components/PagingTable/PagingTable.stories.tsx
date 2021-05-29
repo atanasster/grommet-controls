@@ -104,7 +104,7 @@ class TableExample extends React.Component {
             accessor: 'qty',
             decorations: {
               cell: {
-                align: 'end',
+                justify: 'end',
               },
             },
             // aggregate: vals => `Total ${vals.reduce((a, b) => a + b, 0)}`,
@@ -114,7 +114,7 @@ class TableExample extends React.Component {
             accessor: 'price',
             decorations: {
               cell: {
-                align: 'end',
+                justify: 'end',
               },
             },
             // aggregate: vals => `Sum ${vals.reduce((a, b) => a + b, 0)}`,
@@ -127,7 +127,7 @@ class TableExample extends React.Component {
                 background: {
                   color: 'light-1',
                 },
-                align: 'end',
+                justify: 'end',
                 color: 'brand',
                 size: 'large',
               },
