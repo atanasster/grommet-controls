@@ -13,7 +13,7 @@
     "strictFunctionTypes": true,
     "noImplicitThis": true,
     "alwaysStrict": false,
-    "noImplicitUseStrict": true, 
+    "noImplicitUseStrict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": false,
     "noImplicitReturns": true,
@@ -23,14 +23,11 @@
     "listFiles": false,
     "pretty": true,
     "lib": ["es2017", "dom"],
+    "types": ["node", "jest"],
     "module": "esnext",
     "outDir": "dist",
-    "declaration": true,
+    "declaration": true
   },
-  "include": [
-    "src/**/*",
-  ],
-  "exclude": [
-    "node_modules/**"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/**", "src/**/*.test.ts", "src/**/*.stories.tsx"]
 }
